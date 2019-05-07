@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("#site-layer"),{layer:t}=window.AD_CONFIG;e.addEventListener("click",r=>{(r.target.matches("#site-layer-close")||r.target.matches("#site-layer"))&&(t.trigger(),e.style.display="none")})})();
