@@ -1,1 +1,33 @@
-(()=>{const e=(()=>{const e=document.querySelector("#site-process");let t=!1;return()=>{t||(t=!0,window.requestAnimationFrame(o=>{let n=document.documentElement.scrollTop||document.body.scrollTop,c=document.documentElement.scrollHeight||document.body.scrollHeight,l=document.documentElement.clientHeight||document.body.clientHeight;t=!1;let d=100*n/(c-l);d>99?d=100:d<1&&(d=0),e.style.width=`${d}%`}))}})();e(),document.addEventListener("scroll",e,!1)})();
+(() => {
+  const handleScoll = (() => {
+    const process = document.querySelector('#site-process');
+    let isRunning = false;
+    
+    return () => {
+      if (isRunning) return;
+      isRunning = true;
+
+      window.requestAnimationFrame(ts => {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+          scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight,
+          clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+
+        isRunning = false;
+
+        let percent = 100 * scrollTop / (scrollHeight - clientHeight);
+        if(percent > 99) {
+          percent = 100;
+        } else if (percent < 1) {
+          percent = 0;
+        }
+
+        process.style.width = `${percent}%`;
+      });
+    };
+  })();
+
+  // Refresh Page
+  handleScoll();
+
+  document.addEventListener('scroll', handleScoll, false);
+})();

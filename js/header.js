@@ -1,1 +1,63 @@
-(()=>{function e(e){let t=`https://www.google.com/search?q=${e=`site:${window.location.hostname} ${decodeURIComponent(e)}`}`;window.open(t)}const t=document.querySelector("#site-search"),l=document.querySelector("#site-nav"),n=document.querySelector("#site-nav-btn"),o=document.querySelector("#site-layer"),r=o.querySelector(".site-layer-content"),i=document.querySelector("#site-layer-title"),s=document.querySelector("#site-layer-search"),c=s.querySelector("input"),y=s.querySelector("i");t.addEventListener("click",e=>{o.style.display="block",s.style.display="flex",c.focus(),i.innerHTML="搜索",window.AD_CONFIG.layer.add(()=>{i.innerHTML="",c.blur(),s.style.display="none"})}),c.addEventListener("keypress",t=>{let l=t.which||t.keyCode,n=c.value.trim();13===l&&n.length>0&&e(n)}),y.addEventListener("click",t=>{c.focus();let l=c.value.trim();l.length>0&&e(l)}),n.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation(),o.style.display="block",r.style.display="none",l.style.right="0",window.AD_CONFIG.layer.add(()=>{l.style.right="",o.style.display="none",r.style.display=""})})})();
+(() => {
+  function openGoogle(keywords) {
+    keywords = `site:${window.location.hostname} ${decodeURIComponent(keywords)}`;
+    let href = `https://www.google.com/search?q=${keywords}`;
+    window.open(href);
+  }
+
+  const searchBtn = document.querySelector('#site-search'),
+    nav = document.querySelector('#site-nav'),
+    navBtn = document.querySelector('#site-nav-btn'),
+    layer = document.querySelector('#site-layer'),
+    layerContent = layer.querySelector('.site-layer-content'),
+    title = document.querySelector('#site-layer-title'),
+    searchDOM = document.querySelector('#site-layer-search');
+
+  const inputDOM = searchDOM.querySelector('input'),
+    iconDOM = searchDOM.querySelector('i');
+
+  searchBtn.addEventListener('click', (e) => {
+    layer.style.display = 'block';
+    searchDOM.style.display = 'flex';
+    inputDOM.focus();
+    title.innerHTML = '搜索';
+
+    window.AD_CONFIG.layer.add(() => {
+      title.innerHTML = '';
+      inputDOM.blur();
+      searchDOM.style.display = 'none';
+    });
+  });
+
+  inputDOM.addEventListener('keypress', (e) => {
+    let key = e.which || e.keyCode,
+      value = inputDOM.value.trim();
+
+    if(key === 13 && value.length > 0) {
+      openGoogle(value);
+    }
+  });
+
+  iconDOM.addEventListener('click', (e) => {
+    inputDOM.focus();
+    let value = inputDOM.value.trim();
+    if(value.length > 0) {
+      openGoogle(value);
+    }
+  });
+
+  navBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    layer.style.display = 'block';
+    layerContent.style.display = 'none';
+    nav.style.right = '0';
+
+    window.AD_CONFIG.layer.add(() => {
+      nav.style.right = '';
+      layer.style.display = 'none';
+      layerContent.style.display = '';
+    });
+  });
+  
+})();

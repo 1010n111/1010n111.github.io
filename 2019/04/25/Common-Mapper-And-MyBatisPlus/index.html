@@ -1,1 +1,452 @@
-<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="author" content="1010n111"><title>通用Mapper &amp; MyBatis Plus | Program | Idea | Tips</title><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="keywords" content="mybatis,mybatis,mybatis plus,"><meta name="description" content><script>window.AD_CONFIG={leancloud:{appid:null,appkey:null,comment:!1,count:!1},welcome:{enable:!1,interval:30},start_time:"2019-04-25",passwords:[],is_post:!0,lock:!1,author:"1010n111",share:{twitter:!1,facebook:!1,weibo:!1,qq:!1,wechat:!1},mathjax:!1,page_type:"",root:"/"}</script><script src="/vendor/sha256.min.js"></script><script src="/js/auth.js"></script><script src="/js/index.js"></script><script src="/vendor/qrcode.min.js"></script><link rel="icon" href="/images/favicon.ico"><link rel="apple-touch-icon" href="/images/touch-icon.png"><link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/styles/components/highlight/highlight.css"></head><body><header class="site-header"><div class="site-header-brand"><span class="site-header-brand-title"><a href="/">1010n111</a> </span><span class="site-header-brand-motto">| Live long and prosper</span></div><div class="site-header-right"><nav class="site-header-navigation"><a href="/" target="_self">首页</a> <a href="/archives/" target="_self">归档</a> <a href="/tags/" target="_self">标签</a> <a href="/categories/" target="_self">分类</a> <a href="/about/" target="_self">关于</a></nav><div class="site-header-btn"><a href="https://github.com/1010n111/" target="_blank" id="site-github"><i class="fa fa-github-alt"></i> </a><a href="javascript:void(0);" id="site-search"><i class="fa fa-search"></i> </a><a href="javascript:void(0);" id="site-nav-btn"><i class="fa fa-ellipsis-v"></i></a></div></div></header><nav class="table-content" id="site-nav"><div class="table-content-title"><span>导航</span></div><div class="table-content-main"><ol class="toc"><li class="toc-item"><a href="/" target="_self">首页</a></li><li class="toc-item"><a href="/archives/" target="_self">归档</a></li><li class="toc-item"><a href="/tags/" target="_self">标签</a></li><li class="toc-item"><a href="/categories/" target="_self">分类</a></li><li class="toc-item"><a href="/about/" target="_self">关于</a></li></ol></div></nav><div id="site-process"></div><main><div class="passage"><div class="passage-meta"><span><i class="fa fa-calendar"></i>2019-04-25 </span><span>| <a href="/categories/mybatis/"><i class="fa fa-bookmark"></i>mybatis</a> </span><span>| <i class="fa fa-unlock-alt"></i>UNLOCK</span></div><h1 class="passage-title">通用Mapper & MyBatis Plus</h1><article class="passage-article"><h1 id="一-通用mapper"><a href="#一-通用mapper" class="headerlink" title="一. 通用mapper"></a>一. 通用mapper</h1><h2 id="1-引入依赖"><a href="#1-引入依赖" class="headerlink" title="1. 引入依赖"></a>1. 引入依赖</h2><ul><li><code>springboot</code></li></ul><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>tk.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mapper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="2-DAO"><a href="#2-DAO" class="headerlink" title="2. DAO"></a>2. DAO</h2><ul><li>DAO接口继承Mapper接口,并表明泛型</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">BannerDao</span> <span class="keyword">extends</span> <span class="title">Mapper</span>&lt;<span class="title">Banner</span>&gt; </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="3-数据库映射"><a href="#3-数据库映射" class="headerlink" title="3. 数据库映射"></a>3. 数据库映射</h2><ul><li>默认情况根据 <em>驼峰命名法</em> 自动进行映射<h4 id="3-1-Table-注解"><a href="#3-1-Table-注解" class="headerlink" title="3.1 @Table 注解"></a>3.1 <strong>@Table</strong> 注解</h4><blockquote><p>实体类类上</p></blockquote></li></ul><table><thead><tr><th>属性名</th><th>属性值</th></tr></thead><tbody><tr><td>name</td><td>表名</td></tr><tr><td>catalog</td><td>目录(MySql不支持)</td></tr><tr><td>schema</td><td>数据库名(MySql支持)</td></tr></tbody></table><blockquote><p>catalog 与 schema 同时设置时, catalog 的优先级高于 schema,也就是只有 catalog 生效</p></blockquote><h4 id="3-2-Column-注解"><a href="#3-2-Column-注解" class="headerlink" title="3.2 @Column 注解"></a>3.2 <code>@Column</code> 注解</h4><blockquote><p>实体类属性</p></blockquote><table><thead><tr><th>属性名</th><th>属性值</th><th>说明</th></tr></thead><tbody><tr><td>name</td><td>列名</td><td></td></tr><tr><td>insertable</td><td>true/false</td><td>设为false不会出现在insert sql语句中</td></tr><tr><td>updateable</td><td>true/false</td><td>设为false不会出现在update sql语句中</td></tr></tbody></table><h4 id="3-3-ColumnType注解"><a href="#3-3-ColumnType注解" class="headerlink" title="3.3 @ColumnType注解"></a>3.3 <code>@ColumnType</code>注解</h4><blockquote><p>实体类属性</p></blockquote><table><thead><tr><th>属性名</th><th>属性值</th><th>说明</th></tr></thead><tbody><tr><td>column</td><td>列名</td><td>和<code>@column</code>注解的name属性作用相同，但是<code>@Column</code>注解优先级更高</td></tr><tr><td>jdbcType</td><td>JdbcType.XXX</td><td>设置特殊数据库类型时指定指定数据库中的 jdbcType</td></tr><tr><td>typeHandler</td><td></td><td>设置特殊类型处理器</td></tr></tbody></table><h4 id="3-4-Transient注解"><a href="#3-4-Transient注解" class="headerlink" title="3.4 @Transient注解"></a>3.4 <code>@Transient</code>注解</h4><blockquote><p>实体类属性<br>告诉通用Mapper，该属性不是数据库中的字段</p></blockquote><h4 id="3-5-Id注解"><a href="#3-5-Id注解" class="headerlink" title="3.5 @Id注解"></a>3.5 <code>@Id</code>注解</h4><blockquote><p>实体类属性<br>标明该属性为 <strong>主键</strong> 或 <strong>联合主键</strong></p></blockquote><h4 id="3-6-KeySql注解"><a href="#3-6-KeySql注解" class="headerlink" title="3.6 @KeySql注解"></a>3.6 <code>@KeySql</code>注解</h4><blockquote><p>实体类属性<br>主键策略注解</p><ul><li>自增(以MySql为例)</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="meta">@Id</span></span><br><span class="line">&gt; <span class="meta">@KeySql</span>(useGeneratedKeys = <span class="keyword">true</span>)</span><br><span class="line">&gt; <span class="keyword">private</span> Integer id;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></blockquote><blockquote><ul><li>UUID(以MySql为例)</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="meta">@Id</span></span><br><span class="line">&gt; <span class="meta">@KeySql</span>(sql = <span class="string">"select uuid()"</span>,order = ORDER.BEFORE)</span><br><span class="line">&gt; <span class="keyword">private</span> String id;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></blockquote><table><thead><tr><th>属性名</th><th>属性值</th><th>说明</th></tr></thead><tbody><tr><td>useGeneratedKeys</td><td>true/false</td><td>是否使用JDBC方式获取主键，优先级最高</td></tr><tr><td>dialect</td><td>IdentityDialect.XXX</td><td>根据配置的数据库类型取回主键，优先级第二</td></tr><tr><td>sql</td><td>SQL语句</td><td>取主键的SQL语句</td></tr><tr><td>order</td><td>ORDER.XXX</td><td>取主键的语句执行的顺序顺序</td></tr></tbody></table><h2 id="4-Example用法"><a href="#4-Example用法" class="headerlink" title="4. Example用法"></a>4. Example用法</h2><h4 id="4-1-批量删除"><a href="#4-1-批量删除" class="headerlink" title="4.1 批量删除"></a>4.1 批量删除</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;Integer&gt; integers = <span class="keyword">new</span> ArrayList&lt;&gt;(); <span class="comment">//声明一个集合，存储ID</span></span><br><span class="line">integers.add(<span class="number">61</span>);</span><br><span class="line">integers.add(<span class="number">62</span>);</span><br><span class="line">integers.add(<span class="number">63</span>);</span><br><span class="line">integers.add(<span class="number">64</span>);</span><br><span class="line">integers.add(<span class="number">65</span>);</span><br><span class="line">integers.add(<span class="number">66</span>);</span><br><span class="line">Example example = <span class="keyword">new</span> Example(Banner.class);</span><br><span class="line">Example.Criteria criteria = example.createCriteria();</span><br><span class="line"><span class="keyword">for</span> (Integer integer : integers) &#123; <span class="comment">//遍历集合</span></span><br><span class="line">	criteria.orEqualTo(<span class="string">"id"</span>,integer);</span><br><span class="line">&#125;</span><br><span class="line">bannerDao.deleteByExample(example);</span><br></pre></td></tr></table></figure><ul><li>生成的SQL语句</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span></span><br><span class="line"> <span class="keyword">FROM</span> banner</span><br><span class="line"> <span class="keyword">WHERE</span> ( ( <span class="keyword">id</span> = <span class="number">61</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">62</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">63</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">64</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">65</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">66</span> ) );</span><br></pre></td></tr></table></figure><h4 id="4-2-批量假删除"><a href="#4-2-批量假删除" class="headerlink" title="4.2 批量假删除"></a>4.2 批量假删除</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; integers = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">integers.add(<span class="string">"10"</span>);</span><br><span class="line">integers.add(<span class="string">"11"</span>);</span><br><span class="line">integers.add(<span class="string">"4"</span>);</span><br><span class="line">integers.add(<span class="string">"5"</span>);</span><br><span class="line">Example example = <span class="keyword">new</span> Example(User.class);</span><br><span class="line">Example.Criteria criteria = example.createCriteria();</span><br><span class="line"><span class="keyword">for</span> (String s : integers) &#123;</span><br><span class="line">	criteria.orLike(<span class="string">"id"</span>,s);</span><br><span class="line">&#125;</span><br><span class="line">User user = <span class="keyword">new</span> User();</span><br><span class="line">user.setStatus(<span class="number">1</span>);</span><br><span class="line">userDao.updateByExampleSelective(user,example);</span><br></pre></td></tr></table></figure><ul><li>生成的SQL语句</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> <span class="keyword">user</span> <span class="keyword">SET</span> <span class="keyword">status</span> = <span class="number">1</span></span><br><span class="line"> <span class="keyword">WHERE</span> ( ( <span class="keyword">id</span> <span class="keyword">like</span> <span class="string">'10'</span> <span class="keyword">or</span> <span class="keyword">id</span> <span class="keyword">like</span> <span class="string">'11'</span> <span class="keyword">or</span> <span class="keyword">id</span> <span class="keyword">like</span> <span class="string">'4'</span> <span class="keyword">or</span> <span class="keyword">id</span> <span class="keyword">like</span> <span class="string">'5'</span> ) );</span><br></pre></td></tr></table></figure><h4 id="4-3-使用Weekend进行条件查询"><a href="#4-3-使用Weekend进行条件查询" class="headerlink" title="4.3 使用Weekend进行条件查询"></a>4.3 使用Weekend进行条件查询</h4><blockquote><p>适用于<strong>JDK8</strong>及以上<br>避免输入错误</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Banner banner = <span class="keyword">new</span> Banner(); </span><br><span class="line">banner.setId(<span class="number">4</span>);</span><br><span class="line">banner.setTitle(<span class="string">"23"</span>);</span><br><span class="line">banner.setImgPath(<span class="string">"e8c"</span>); <span class="comment">//查询条件</span></span><br><span class="line">Example title = <span class="keyword">new</span> Example.Builder(Banner.class).</span><br><span class="line">    select(<span class="string">"title"</span>). <span class="comment">//查询结果</span></span><br><span class="line">    andWhere(</span><br><span class="line">        WeekendSqls.&lt;Banner&gt;custom().</span><br><span class="line">        andLike(Banner::getTitle, <span class="string">"%"</span> + banner.getTitle())</span><br><span class="line">        .orLike(Banner::getImgPath, <span class="string">"%"</span> + banner.getImgPath() + <span class="string">"%"</span>)) <span class="comment">//% 模糊查询</span></span><br><span class="line">    .orWhere(WeekendSqls.&lt;Banner&gt;custom(). <span class="comment">//注意SQL中的 or</span></span><br><span class="line">		andLessThan(Banner::getId, banner.getId()))</span><br><span class="line">    .build();</span><br><span class="line">List&lt;Banner&gt; banners = bannerDao.selectByExample(title);</span><br></pre></td></tr></table></figure><ul><li>生成的SQL语句</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> title</span><br><span class="line"> <span class="keyword">FROM</span> banner</span><br><span class="line"> <span class="keyword">WHERE</span> ( ( title <span class="keyword">like</span> <span class="string">'%23'</span> <span class="keyword">or</span> img_path <span class="keyword">like</span> <span class="string">'%e8c%'</span> ) <span class="keyword">or</span> ( <span class="keyword">id</span> &lt; <span class="number">4</span> ) );</span><br></pre></td></tr></table></figure><h4 id="4-4-普通的条件查询"><a href="#4-4-普通的条件查询" class="headerlink" title="4.4 普通的条件查询"></a>4.4 普通的条件查询</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Banner banner = <span class="keyword">new</span> Banner();</span><br><span class="line">banner.setId(<span class="number">4</span>);</span><br><span class="line">banner.setTitle(<span class="string">"23"</span>);</span><br><span class="line">banner.setImgPath(<span class="string">"e8c"</span>);</span><br><span class="line">Example example = <span class="keyword">new</span> Example(Banner.class);</span><br><span class="line"></span><br><span class="line">example.createCriteria().andLike(<span class="string">"title"</span>,<span class="string">"%"</span>+banner.getTitle()+<span class="string">"%"</span>)</span><br><span class="line">        .orLike(<span class="string">"imgPath"</span>,<span class="string">"%"</span>+banner.getImgPath()+<span class="string">"%"</span>);</span><br><span class="line"></span><br><span class="line">example.and().andLessThan(<span class="string">"id"</span>,banner.getId()); </span><br><span class="line"></span><br><span class="line">bannerDao.selectByExample(example);</span><br></pre></td></tr></table></figure><ul><li>生成的SQL语句</li></ul><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">id</span>,title,img_path,creat_date,<span class="keyword">status</span></span><br><span class="line"> <span class="keyword">FROM</span> banner</span><br><span class="line"> <span class="keyword">WHERE</span> ( ( title <span class="keyword">like</span> <span class="string">'%23%'</span> <span class="keyword">or</span> img_path <span class="keyword">like</span> <span class="string">'%e8c%'</span> ) <span class="keyword">and</span> ( <span class="keyword">id</span> &lt; <span class="number">4</span> ) );</span><br></pre></td></tr></table></figure><h2 id="5-分页"><a href="#5-分页" class="headerlink" title="5. 分页"></a>5. 分页</h2><blockquote><p>使用分页插件<strong>Pagehelper</strong></p></blockquote><h4 id="5-1-引入依赖"><a href="#5-1-引入依赖" class="headerlink" title="5.1 引入依赖"></a>5.1 引入依赖</h4><blockquote><p><code>Springboot</code></p></blockquote><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.pagehelper<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>pagehelper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="5-2-配置"><a href="#5-2-配置" class="headerlink" title="5.2 配置"></a>5.2 配置</h4><blockquote><p>一般情况下不需要配置<br>如果需要配置,在 application 配置文件中,使用<br>pagehelper.propertyName=propertyValue</p></blockquote><h1 id="二-MyBatis-Plus"><a href="#二-MyBatis-Plus" class="headerlink" title="二. MyBatis Plus"></a>二. MyBatis Plus</h1><blockquote><p><a href="https://mybatis.plus/guide/" target="_blank" rel="noopener">文档</a></p></blockquote><p>MyBatis Plus 的使用与 通用Mapper 基本相同<br>MyBatis Plus 的条件构造器，主键生成策略比 通用Mapper 更为强大，同时还具有逻辑删除等功能</p></article><aside class="table-content" id="site-toc"><div class="table-content-title"><i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i> <span>目录</span></div><div class="table-content-main"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一-通用mapper"><span class="toc-text">一. 通用mapper</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-引入依赖"><span class="toc-text">1. 引入依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-DAO"><span class="toc-text">2. DAO</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-数据库映射"><span class="toc-text">3. 数据库映射</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-Table-注解"><span class="toc-text">3.1 @Table 注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-Column-注解"><span class="toc-text">3.2 @Column 注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-ColumnType注解"><span class="toc-text">3.3 @ColumnType注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-Transient注解"><span class="toc-text">3.4 @Transient注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-5-Id注解"><span class="toc-text">3.5 @Id注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-6-KeySql注解"><span class="toc-text">3.6 @KeySql注解</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Example用法"><span class="toc-text">4. Example用法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-批量删除"><span class="toc-text">4.1 批量删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-批量假删除"><span class="toc-text">4.2 批量假删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-使用Weekend进行条件查询"><span class="toc-text">4.3 使用Weekend进行条件查询</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-普通的条件查询"><span class="toc-text">4.4 普通的条件查询</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#5-分页"><span class="toc-text">5. 分页</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-引入依赖"><span class="toc-text">5.1 引入依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-配置"><span class="toc-text">5.2 配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-MyBatis-Plus"><span class="toc-text">二. MyBatis Plus</span></a></li></div></aside><div class="passage-tags"><a href="/tags/mybatis/"><i class="fa fa-tags"></i>mybatis</a> <a href="/tags/mybatis-plus/"><i class="fa fa-tags"></i>mybatis plus</a></div></div></main><div class="site-footer-wrapper"><footer class="site-footer"><div class="site-footer-info"><i class="fa fa-clock-o"></i> 本站已稳定运行<span id="site-time"></span></div><div class="site-footer-info"><i class="fa fa-copyright"></i> 2019 <a href="https://github.com/dongyuanxin/theme-ad/" target="_blank">Theme-AD</a>. Created by <a href="https://godbmw.com/" target="_blank">GodBMW</a>. All rights reserved.</div></footer></div><div id="site-layer" style="display:none"><div class="site-layer-content"><div class="site-layer-header"><span class="site-layer-header-title" id="site-layer-title"></span> <i class="fa fa-close" id="site-layer-close"></i></div><div class="site-layer-body" id="site-layer-container"><div class="site-layer-input" id="site-layer-search" style="display:none"><input type="text"> <i class="fa fa-search"></i></div><div id="site-layer-welcome" style="display:none"></div></div></div></div><div class="bottom-bar"><div class="bottom-bar-left"><a href="/2019/04/25/How-To-Build-HEXO-With-GitHubPages/" data-enable="true"><i class="fa fa-arrow-left"></i> </a><a href="/2019/04/25/MyBatis-Second-Cache/" data-enable="true"><i class="fa fa-arrow-right"></i></a></div><div class="bottom-bar-right"><a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn"><i class="fa fa-bars"></i> </a><a href="javascript:void(0);" id="site-toggle-share-btn"><i class="fa fa-share-alt"></i> </a><a href="javascript:void(0);" id="back-top-btn"><i class="fa fa-chevron-up"></i></a></div></div><div id="share-btn"></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"superSample":2,"width":150,"height":300,"position":"left","hOffset":0,"vOffset":0},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body></html>
+<!DOCTYPE html>
+<html>
+  
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta name="author" content="1010n111">
+  
+  
+  <title>通用Mapper &amp; MyBatis Plus | Program | Idea | Tips</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="mybatis,mybatis,mybatis plus,">
+  
+
+  
+  <meta name="description" content>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script>
+  // theme-ad's config script
+  // it can be used in every script
+  
+  window.AD_CONFIG = {
+    leancloud: {"appid":null,"appkey":null,"comment":false,"count":false},
+    welcome: {"enable":false,"interval":30},
+    start_time: "2019-04-25",
+    passwords: [],
+    is_post: true,
+    lock: false,
+    author: "1010n111",
+    share: {"twitter":false,"facebook":false,"weibo":false,"qq":false,"wechat":false},
+    mathjax: false,
+    page_type: "",
+    root: "/"
+  };
+</script>
+
+  <script src="/vendor/sha256.min.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/index.js"></script>
+<script src="/vendor/qrcode.min.js"></script>
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/touch-icon.png">
+  
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/styles/components/highlight/highlight.css">
+
+  
+</head>
+  <body>
+    <header class="site-header">
+  <div class="site-header-brand">
+    
+      <span class="site-header-brand-title">
+        <a href="/">1010n111</a>
+      </span>
+    
+    
+      <span class="site-header-brand-motto"> | Live long and prosper</span>
+    
+  </div>
+  <div class="site-header-right">
+    <nav class="site-header-navigation">
+      
+        <a href="/" target="_self">首页</a>
+      
+        <a href="/archives/" target="_self">归档</a>
+      
+        <a href="/tags/" target="_self">标签</a>
+      
+        <a href="/categories/" target="_self">分类</a>
+      
+        <a href="/about/" target="_self">关于</a>
+      
+    </nav>
+    <div class="site-header-btn">
+      
+        <a href="https://github.com/1010n111/" target="_blank" id="site-github">
+          <i class="fa fa-github-alt"></i>
+        </a>
+      
+      <a href="javascript:void(0);" id="site-search">
+        <i class="fa fa-search"></i>
+      </a>
+      <a href="javascript:void(0);" id="site-nav-btn">
+        <i class="fa fa-ellipsis-v"></i>
+      </a>
+    </div>
+  </div>
+</header>
+<nav class="table-content" id="site-nav">
+  <div class="table-content-title">
+    <span>导航</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc">
+      
+        <li class="toc-item">
+          <a href="/" target="_self">
+            首页
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/archives/" target="_self">
+            归档
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/tags/" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/categories/" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/about/" target="_self">
+            关于
+          </a>
+        </li>
+      
+    </ol>
+  </div>
+</nav>
+<div id="site-process"></div>
+    <main>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2019-04-25
+    </span>
+    
+      <span>
+        | <a href="/categories/mybatis/"><i class="fa fa-bookmark"></i>mybatis</a>
+      </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    通用Mapper & MyBatis Plus
+  </h1>
+  
+  <article class="passage-article">
+    <h2 id="通用mapper"><a href="#通用mapper" class="headerlink" title="通用mapper"></a>通用mapper</h2><h2 id="1-引入依赖"><a href="#1-引入依赖" class="headerlink" title="1. 引入依赖"></a>1. 引入依赖</h2><ul>
+<li><code>springboot</code></li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>tk.mybatis<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mapper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-DAO"><a href="#2-DAO" class="headerlink" title="2. DAO"></a>2. DAO</h2><ul>
+<li>DAO接口继承Mapper接口,并表明泛型</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">BannerDao</span> <span class="keyword">extends</span> <span class="title">Mapper</span>&lt;<span class="title">Banner</span>&gt; </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="3-数据库映射"><a href="#3-数据库映射" class="headerlink" title="3. 数据库映射"></a>3. 数据库映射</h2><ul>
+<li>默认情况根据 <em>驼峰命名法</em> 自动进行映射<h4 id="3-1-Table-注解"><a href="#3-1-Table-注解" class="headerlink" title="3.1 @Table 注解"></a>3.1 <strong>@Table</strong> 注解</h4><blockquote>
+<p>实体类类上</p>
+</blockquote>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>表名</td>
+</tr>
+<tr>
+<td>catalog</td>
+<td>目录(MySql不支持)</td>
+</tr>
+<tr>
+<td>schema</td>
+<td>数据库名(MySql支持)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>catalog 与 schema 同时设置时, catalog 的优先级高于 schema,也就是只有 catalog 生效</p>
+</blockquote>
+<h4 id="3-2-Column-注解"><a href="#3-2-Column-注解" class="headerlink" title="3.2 @Column 注解"></a>3.2 <code>@Column</code> 注解</h4><blockquote>
+<p>实体类属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>列名</td>
+<td></td>
+</tr>
+<tr>
+<td>insertable</td>
+<td>true/false</td>
+<td>设为false不会出现在insert sql语句中</td>
+</tr>
+<tr>
+<td>updateable</td>
+<td>true/false</td>
+<td>设为false不会出现在update sql语句中</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-3-ColumnType注解"><a href="#3-3-ColumnType注解" class="headerlink" title="3.3 @ColumnType注解"></a>3.3 <code>@ColumnType</code>注解</h4><blockquote>
+<p>实体类属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>column</td>
+<td>列名</td>
+<td>和<code>@column</code>注解的name属性作用相同，但是<code>@Column</code>注解优先级更高</td>
+</tr>
+<tr>
+<td>jdbcType</td>
+<td>JdbcType.XXX</td>
+<td>设置特殊数据库类型时指定指定数据库中的 jdbcType</td>
+</tr>
+<tr>
+<td>typeHandler</td>
+<td></td>
+<td>设置特殊类型处理器</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-4-Transient注解"><a href="#3-4-Transient注解" class="headerlink" title="3.4 @Transient注解"></a>3.4 <code>@Transient</code>注解</h4><blockquote>
+<p>实体类属性<br>告诉通用Mapper，该属性不是数据库中的字段</p>
+</blockquote>
+<h4 id="3-5-Id注解"><a href="#3-5-Id注解" class="headerlink" title="3.5 @Id注解"></a>3.5 <code>@Id</code>注解</h4><blockquote>
+<p>实体类属性<br>标明该属性为 <strong>主键</strong> 或 <strong>联合主键</strong></p>
+</blockquote>
+<h4 id="3-6-KeySql注解"><a href="#3-6-KeySql注解" class="headerlink" title="3.6 @KeySql注解"></a>3.6 <code>@KeySql</code>注解</h4><blockquote>
+<p>实体类属性<br>主键策略注解</p>
+<ul>
+<li>自增(以MySql为例)</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="meta">@Id</span></span><br><span class="line">&gt; <span class="meta">@KeySql</span>(useGeneratedKeys = <span class="keyword">true</span>)</span><br><span class="line">&gt; <span class="keyword">private</span> Integer id;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<ul>
+<li>UUID(以MySql为例)</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="meta">@Id</span></span><br><span class="line">&gt; <span class="meta">@KeySql</span>(sql = <span class="string">"select uuid()"</span>,order = ORDER.BEFORE)</span><br><span class="line">&gt; <span class="keyword">private</span> String id;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>useGeneratedKeys</td>
+<td>true/false</td>
+<td>是否使用JDBC方式获取主键，优先级最高</td>
+</tr>
+<tr>
+<td>dialect</td>
+<td>IdentityDialect.XXX</td>
+<td>根据配置的数据库类型取回主键，优先级第二</td>
+</tr>
+<tr>
+<td>sql</td>
+<td>SQL语句</td>
+<td>取主键的SQL语句</td>
+</tr>
+<tr>
+<td>order</td>
+<td>ORDER.XXX</td>
+<td>取主键的语句执行的顺序顺序</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-Example用法"><a href="#4-Example用法" class="headerlink" title="4. Example用法"></a>4. Example用法</h2><h4 id="4-1-批量删除"><a href="#4-1-批量删除" class="headerlink" title="4.1 批量删除"></a>4.1 批量删除</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;Integer&gt; integers = <span class="keyword">new</span> ArrayList&lt;&gt;(); <span class="comment">//声明一个集合，存储ID</span></span><br><span class="line">integers.add(<span class="number">61</span>);</span><br><span class="line">integers.add(<span class="number">62</span>);</span><br><span class="line">integers.add(<span class="number">63</span>);</span><br><span class="line">integers.add(<span class="number">64</span>);</span><br><span class="line">integers.add(<span class="number">65</span>);</span><br><span class="line">integers.add(<span class="number">66</span>);</span><br><span class="line">Example example = <span class="keyword">new</span> Example(Banner.class);</span><br><span class="line">Example.Criteria criteria = example.createCriteria();</span><br><span class="line"><span class="keyword">for</span> (Integer integer : integers) &#123; <span class="comment">//遍历集合</span></span><br><span class="line">	criteria.orEqualTo(<span class="string">"id"</span>,integer);</span><br><span class="line">&#125;</span><br><span class="line">bannerDao.deleteByExample(example);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成的SQL语句</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span></span><br><span class="line"> <span class="keyword">FROM</span> banner</span><br><span class="line"> <span class="keyword">WHERE</span> ( ( <span class="keyword">id</span> = <span class="number">61</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">62</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">63</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">64</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">65</span> <span class="keyword">or</span> <span class="keyword">id</span> = <span class="number">66</span> ) );</span><br></pre></td></tr></table></figure>
+<h4 id="4-2-批量假删除"><a href="#4-2-批量假删除" class="headerlink" title="4.2 批量假删除"></a>4.2 批量假删除</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; integers = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">integers.add(<span class="string">"10"</span>);</span><br><span class="line">integers.add(<span class="string">"11"</span>);</span><br><span class="line">integers.add(<span class="string">"4"</span>);</span><br><span class="line">integers.add(<span class="string">"5"</span>);</span><br><span class="line">Example example = <span class="keyword">new</span> Example(User.class);</span><br><span class="line">Example.Criteria criteria = example.createCriteria();</span><br><span class="line"><span class="keyword">for</span> (String s : integers) &#123;</span><br><span class="line">	criteria.orLike(<span class="string">"id"</span>,s);</span><br><span class="line">&#125;</span><br><span class="line">User user = <span class="keyword">new</span> User();</span><br><span class="line">user.setStatus(<span class="number">1</span>);</span><br><span class="line">userDao.updateByExampleSelective(user,example);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成的SQL语句</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> <span class="keyword">user</span> <span class="keyword">SET</span> <span class="keyword">status</span> = <span class="number">1</span></span><br><span class="line"> <span class="keyword">WHERE</span> ( ( <span class="keyword">id</span> <span class="keyword">like</span> <span class="string">'10'</span> <span class="keyword">or</span> <span class="keyword">id</span> <span class="keyword">like</span> <span class="string">'11'</span> <span class="keyword">or</span> <span class="keyword">id</span> <span class="keyword">like</span> <span class="string">'4'</span> <span class="keyword">or</span> <span class="keyword">id</span> <span class="keyword">like</span> <span class="string">'5'</span> ) );</span><br></pre></td></tr></table></figure>
+<h4 id="4-3-使用Weekend进行条件查询"><a href="#4-3-使用Weekend进行条件查询" class="headerlink" title="4.3 使用Weekend进行条件查询"></a>4.3 使用Weekend进行条件查询</h4><blockquote>
+<p>适用于<strong>JDK8</strong>及以上<br>避免输入错误</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Banner banner = <span class="keyword">new</span> Banner(); </span><br><span class="line">banner.setId(<span class="number">4</span>);</span><br><span class="line">banner.setTitle(<span class="string">"23"</span>);</span><br><span class="line">banner.setImgPath(<span class="string">"e8c"</span>); <span class="comment">//查询条件</span></span><br><span class="line">Example title = <span class="keyword">new</span> Example.Builder(Banner.class).</span><br><span class="line">    select(<span class="string">"title"</span>). <span class="comment">//查询结果</span></span><br><span class="line">    andWhere(</span><br><span class="line">        WeekendSqls.&lt;Banner&gt;custom().</span><br><span class="line">        andLike(Banner::getTitle, <span class="string">"%"</span> + banner.getTitle())</span><br><span class="line">        .orLike(Banner::getImgPath, <span class="string">"%"</span> + banner.getImgPath() + <span class="string">"%"</span>)) <span class="comment">//% 模糊查询</span></span><br><span class="line">    .orWhere(WeekendSqls.&lt;Banner&gt;custom(). <span class="comment">//注意SQL中的 or</span></span><br><span class="line">		andLessThan(Banner::getId, banner.getId()))</span><br><span class="line">    .build();</span><br><span class="line">List&lt;Banner&gt; banners = bannerDao.selectByExample(title);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成的SQL语句</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> title</span><br><span class="line"> <span class="keyword">FROM</span> banner</span><br><span class="line"> <span class="keyword">WHERE</span> ( ( title <span class="keyword">like</span> <span class="string">'%23'</span> <span class="keyword">or</span> img_path <span class="keyword">like</span> <span class="string">'%e8c%'</span> ) <span class="keyword">or</span> ( <span class="keyword">id</span> &lt; <span class="number">4</span> ) );</span><br></pre></td></tr></table></figure>
+<h4 id="4-4-普通的条件查询"><a href="#4-4-普通的条件查询" class="headerlink" title="4.4 普通的条件查询"></a>4.4 普通的条件查询</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Banner banner = <span class="keyword">new</span> Banner();</span><br><span class="line">banner.setId(<span class="number">4</span>);</span><br><span class="line">banner.setTitle(<span class="string">"23"</span>);</span><br><span class="line">banner.setImgPath(<span class="string">"e8c"</span>);</span><br><span class="line">Example example = <span class="keyword">new</span> Example(Banner.class);</span><br><span class="line"></span><br><span class="line">example.createCriteria().andLike(<span class="string">"title"</span>,<span class="string">"%"</span>+banner.getTitle()+<span class="string">"%"</span>)</span><br><span class="line">        .orLike(<span class="string">"imgPath"</span>,<span class="string">"%"</span>+banner.getImgPath()+<span class="string">"%"</span>);</span><br><span class="line"></span><br><span class="line">example.and().andLessThan(<span class="string">"id"</span>,banner.getId()); </span><br><span class="line"></span><br><span class="line">bannerDao.selectByExample(example);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>生成的SQL语句</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">id</span>,title,img_path,creat_date,<span class="keyword">status</span></span><br><span class="line"> <span class="keyword">FROM</span> banner</span><br><span class="line"> <span class="keyword">WHERE</span> ( ( title <span class="keyword">like</span> <span class="string">'%23%'</span> <span class="keyword">or</span> img_path <span class="keyword">like</span> <span class="string">'%e8c%'</span> ) <span class="keyword">and</span> ( <span class="keyword">id</span> &lt; <span class="number">4</span> ) );</span><br></pre></td></tr></table></figure>
+<h2 id="5-分页"><a href="#5-分页" class="headerlink" title="5. 分页"></a>5. 分页</h2><blockquote>
+<p>使用分页插件<strong>Pagehelper</strong></p>
+</blockquote>
+<h4 id="5-1-引入依赖"><a href="#5-1-引入依赖" class="headerlink" title="5.1 引入依赖"></a>5.1 引入依赖</h4><blockquote>
+<p><code>Springboot</code></p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.pagehelper<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>pagehelper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="5-2-配置"><a href="#5-2-配置" class="headerlink" title="5.2 配置"></a>5.2 配置</h4><blockquote>
+<p>一般情况下不需要配置<br>如果需要配置,在 application 配置文件中,使用<br>pagehelper.propertyName=propertyValue</p>
+</blockquote>
+<h2 id="MyBatis-Plus"><a href="#MyBatis-Plus" class="headerlink" title="MyBatis Plus"></a>MyBatis Plus</h2><blockquote>
+<p><a href="https://mybatis.plus/guide/" target="_blank" rel="noopener">文档</a></p>
+</blockquote>
+<p>MyBatis Plus 的使用与 通用Mapper 基本相同<br>MyBatis Plus 的条件构造器，主键生成策略比 通用Mapper 更为强大，同时还具有逻辑删除等功能</p>
+
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#通用mapper"><span class="toc-text">通用mapper</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-引入依赖"><span class="toc-text">1. 引入依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-DAO"><span class="toc-text">2. DAO</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-数据库映射"><span class="toc-text">3. 数据库映射</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-Table-注解"><span class="toc-text">3.1 @Table 注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-Column-注解"><span class="toc-text">3.2 @Column 注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-ColumnType注解"><span class="toc-text">3.3 @ColumnType注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-Transient注解"><span class="toc-text">3.4 @Transient注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-5-Id注解"><span class="toc-text">3.5 @Id注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-6-KeySql注解"><span class="toc-text">3.6 @KeySql注解</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Example用法"><span class="toc-text">4. Example用法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-批量删除"><span class="toc-text">4.1 批量删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-批量假删除"><span class="toc-text">4.2 批量假删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-使用Weekend进行条件查询"><span class="toc-text">4.3 使用Weekend进行条件查询</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-普通的条件查询"><span class="toc-text">4.4 普通的条件查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-分页"><span class="toc-text">5. 分页</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-引入依赖"><span class="toc-text">5.1 引入依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-配置"><span class="toc-text">5.2 配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MyBatis-Plus"><span class="toc-text">MyBatis Plus</span></a></li>
+  </div>
+</aside>
+  
+  
+    <div class="passage-tags">
+     
+      <a href="/tags/mybatis/"><i class="fa fa-tags"></i>mybatis</a>
+     
+      <a href="/tags/mybatis-plus/"><i class="fa fa-tags"></i>mybatis plus</a>
+    
+    </div>
+  
+</div>
+
+    </main>
+    
+    <div class="site-footer-wrapper">
+  <footer class="site-footer">
+    
+    <div class="site-footer-info">
+      <i class="fa fa-clock-o"></i> 本站已稳定运行<span id="site-time"></span>
+    </div>
+    
+    
+    <div class="site-footer-info">
+      <i class="fa fa-copyright"></i> 
+      2019 <a href="https://github.com/dongyuanxin/theme-ad/" target="_blank">Theme-AD</a>.
+      Created by <a href="https://godbmw.com/" target="_blank">GodBMW</a>.
+      All rights reserved.
+    </div>
+  </footer>
+</div>
+    <div id="site-layer" style="display:none;">
+  <div class="site-layer-content">
+    <div class="site-layer-header">
+      <span class="site-layer-header-title" id="site-layer-title"></span>
+      <i class="fa fa-close" id="site-layer-close"></i>
+    </div>
+    <div class="site-layer-body" id="site-layer-container">
+      <div class="site-layer-input" id="site-layer-search" style="display: none;">
+        <input type="text">
+        <i class="fa fa-search"></i>
+      </div>
+      
+      <div id="site-layer-welcome" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+    
+
+<div class="bottom-bar">
+  <div class="bottom-bar-left">
+    <a href="/2019/04/25/How-To-Build-HEXO-With-GitHubPages/" data-enable="true">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a href="/2019/04/25/MyBatis-Second-Cache/" data-enable="true">
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+  <div class="bottom-bar-right">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    <a href="javascript:void(0);" id="site-toggle-share-btn">
+      <i class="fa fa-share-alt"></i>
+    </a>
+    
+    <a href="javascript:void(0);" id="back-top-btn">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+</div>
+    <div id="share-btn">
+  
+  
+  
+  
+  
+</div>
+    
+
+
+
+
+
+    
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"superSample":2,"width":150,"height":300,"position":"left","hOffset":0,"vOffset":0},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>

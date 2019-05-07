@@ -1,1 +1,42 @@
-(()=>{function e(e){window.open(e.target.getAttribute("src"),"_blank")}const{is_post:t,page_type:r}=window.AD_CONFIG;if(document.querySelectorAll(".passage-article").forEach(t=>t.querySelectorAll("img").forEach(t=>t.addEventListener("click",e))),!t&&!1===["about","friends"].includes(r))return;const o=document.querySelector("#site-layer"),n=o.querySelector(".site-layer-content"),l=document.querySelector("#site-toc"),i=document.querySelector("#site-toc-show-btn"),c=document.querySelector("#site-toc-hide-btn");i&&i.addEventListener("click",e=>{e.preventDefault(),e.stopPropagation(),o.style.display="block",n.style.display="none",l.style.right="0",window.AD_CONFIG.layer.add(()=>{l.style.right="",o.style.display="none",n.style.display=""})}),c&&c.addEventListener("click",window.AD_CONFIG.layer.trigger)})();
+(() => {
+  function handleImgClick(event) {
+    window.open(event.target.getAttribute('src'), '_blank');
+  }
+
+  const { is_post, page_type } = window.AD_CONFIG;
+
+  document
+    .querySelectorAll('.passage-article')
+    .forEach(
+      passage => 
+        passage
+          .querySelectorAll('img')
+          .forEach(image => image.addEventListener('click', handleImgClick))
+    );
+
+  if(!is_post && ['about', 'friends'].includes(page_type) === false) {
+    return;
+  }
+
+  const layer = document.querySelector('#site-layer'),
+    layerContent = layer.querySelector('.site-layer-content'),
+    toc = document.querySelector('#site-toc'),
+    tocShowBtn = document.querySelector('#site-toc-show-btn'),
+    tocHideBtn = document.querySelector('#site-toc-hide-btn');
+
+  tocShowBtn && tocShowBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    layer.style.display = 'block';
+    layerContent.style.display = 'none';
+    toc.style.right = '0';
+
+    window.AD_CONFIG.layer.add(() => {
+      toc.style.right = '';
+      layer.style.display = 'none';
+      layerContent.style.display = '';
+    });
+  });
+  
+  tocHideBtn && tocHideBtn.addEventListener('click', window.AD_CONFIG.layer.trigger);
+})();

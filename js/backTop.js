@@ -1,1 +1,42 @@
-document.querySelector("#back-top-btn").addEventListener("click",(()=>{let o=!1;return()=>{if(o)return;o=!0;let e=document.documentElement.scrollTop||document.body.scrollTop;if(e<=10)return document.documentElement.scrollTop=0,document.body.scrollTop=0,void(o=!1);let t=Math.ceil(10*e/200),l=setInterval(()=>{(e=document.documentElement.scrollTop||document.body.scrollTop)<=t?(document.documentElement.scrollTop=0,document.body.scrollTop=0,o=!1,clearInterval(l)):(document.documentElement.scrollTop=e-t,document.body.scrollTop=e-t)},10)}})(),!1);
+(() => {
+  const backTopBtn = document.querySelector('#back-top-btn');
+
+  const backTop = () => {
+    const delay = 10, 
+      time = 200;
+    let running = false;
+
+    return () => {
+      if(running) return;
+      running = true;
+
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  
+      if(scrollTop <= 10) {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        running = false;
+        return;
+      }
+  
+      let step = Math.ceil(scrollTop * delay / time);
+  
+      let timer = setInterval(() => {
+        scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if(scrollTop <= step) {
+          document.documentElement.scrollTop = 0;
+          document.body.scrollTop = 0;
+          running = false;
+          clearInterval(timer);
+        } else {
+          document.documentElement.scrollTop = scrollTop - step;
+          document.body.scrollTop = scrollTop - step;
+        }
+      }, delay);
+    };
+  };
+
+  backTopBtn.addEventListener('click', backTop(), false);
+  
+})();

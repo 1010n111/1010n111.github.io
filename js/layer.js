@@ -1,1 +1,13 @@
-(()=>{const e=document.querySelector("#site-layer"),{layer:t}=window.AD_CONFIG;e.addEventListener("click",r=>{(r.target.matches("#site-layer-close")||r.target.matches("#site-layer"))&&(t.trigger(),e.style.display="none")})})();
+(() => {
+  const layerDOM = document.querySelector('#site-layer');
+  const { layer } = window.AD_CONFIG;
+
+  layerDOM.addEventListener('click', (e) => {
+    if(!e.target.matches('#site-layer-close') && !e.target.matches('#site-layer')) {
+      return;
+    }
+
+    layer.trigger();
+    layerDOM.style.display = 'none';
+  });
+})();
