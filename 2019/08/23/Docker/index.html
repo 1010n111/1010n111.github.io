@@ -6,12 +6,12 @@
   <meta name="author" content="1010n111">
   
   
-  <title>标签 | Program | Idea | Tips</title>
+  <title>Docker入门 | Program | Idea | Tips</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="Hexo, Theme-AD">
+    <meta name="keywords" content="docker,docker,">
   
 
   
@@ -36,12 +36,12 @@
     welcome: {"enable":false,"interval":30},
     start_time: "2019-04-25",
     passwords: [],
-    is_post: false,
+    is_post: true,
     lock: false,
     author: "1010n111",
     share: {"twitter":false,"facebook":false,"weibo":false,"qq":false,"wechat":false},
     mathjax: false,
-    page_type: "tags",
+    page_type: "",
     root: "/"
   };
 </script>
@@ -146,13 +146,134 @@
 </nav>
 <div id="site-process"></div>
     <main>
-      <div class="set">
-  <h3 style="text-align: center;">
-    <i class="fa fa-tags"></i>
-    标签云
-  </h3>
-  <a href="/tags/IDEA/" style="font-size: 14px; color: #9e9e9e">IDEA</a> <a href="/tags/cache/" style="font-size: 14px; color: #9e9e9e">cache</a> <a href="/tags/chrome/" style="font-size: 14px; color: #9e9e9e">chrome</a> <a href="/tags/docker/" style="font-size: 36px; color: #212121">docker</a> <a href="/tags/github/" style="font-size: 14px; color: #9e9e9e">github</a> <a href="/tags/hexo/" style="font-size: 14px; color: #9e9e9e">hexo</a> <a href="/tags/mybatis/" style="font-size: 36px; color: #212121">mybatis</a> <a href="/tags/mybatis-plus/" style="font-size: 14px; color: #9e9e9e">mybatis plus</a> <a href="/tags/mysql/" style="font-size: 36px; color: #212121">mysql</a> <a href="/tags/plugin/" style="font-size: 36px; color: #212121">plugin</a> <a href="/tags/redis/" style="font-size: 14px; color: #9e9e9e">redis</a> <a href="/tags/tips/" style="font-size: 14px; color: #9e9e9e">tips</a> <a href="/tags/tool/" style="font-size: 14px; color: #9e9e9e">tool</a>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2019-08-23
+    </span>
+    
+      <span>
+        | <a href="/categories/docker/"><i class="fa fa-bookmark"></i>docker</a>
+      </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    Docker入门
+  </h1>
+  
+  <article class="passage-article">
+    <p><a href="https://www.runoob.com/docker/docker-tutorial.html" target="_blank" rel="noopener">菜鸟Docker教程</a></p>
+<h1 id="1-Docker安装"><a href="#1-Docker安装" class="headerlink" title="1 Docker安装"></a>1 Docker安装</h1><p><strong>windows10</strong></p>
+<ul>
+<li><p>开启Hyper-V</p>
+</li>
+<li><p>安装<a href="https://www.docker.com/get-docker" target="_blank" rel="noopener">Toolbox</a></p>
+</li>
+<li><p>配置镜像</p>
+<blockquote>
+<p>Settings→Daemon→Registry mirrors</p>
+<p>网易镜像 <a href="http://hub-mirror.c.163.com" target="_blank" rel="noopener">http://hub-mirror.c.163.com</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="2-Docker使用"><a href="#2-Docker使用" class="headerlink" title="2 Docker使用"></a>2 Docker使用</h1><h2 id="1-Docker-Hello-World"><a href="#1-Docker-Hello-World" class="headerlink" title="1 Docker Hello World"></a>1 Docker Hello World</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run ubuntu /bin/<span class="built_in">echo</span> <span class="string">"Hello world"</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-Docker容器使用"><a href="#2-Docker容器使用" class="headerlink" title="2 Docker容器使用"></a>2 Docker容器使用</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+<th>参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker ps</td>
+<td>查看正在运行的容器</td>
+<td></td>
+</tr>
+<tr>
+<td>docker stop</td>
+<td>停止容器</td>
+<td></td>
+</tr>
+<tr>
+<td>docker start</td>
+<td>启动容器</td>
+<td></td>
+</tr>
+<tr>
+<td>docker rm</td>
+<td>删除容器</td>
+<td></td>
+</tr>
+<tr>
+<td>docker run</td>
+<td>运行容器</td>
+<td>-d：后台  -P：容器内部的网络端口映射到主机</td>
+</tr>
+<tr>
+<td>docker top</td>
+<td>查看容器内部运行的进程</td>
+<td></td>
+</tr>
+<tr>
+<td>docker inspect</td>
+<td>查看容器的配置和状态信息</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-Docker镜像使用"><a href="#3-Docker镜像使用" class="headerlink" title="3 Docker镜像使用"></a>3 Docker镜像使用</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+<th>参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker images</td>
+<td>列出本地主机镜像</td>
+<td></td>
+</tr>
+<tr>
+<td>docker search</td>
+<td>搜索远程仓库镜像</td>
+<td></td>
+</tr>
+<tr>
+<td>docker pull</td>
+<td>下载镜像</td>
+</tr>
+</tbody>
+</table>
+
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Docker安装"><span class="toc-text">1 Docker安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Docker使用"><span class="toc-text">2 Docker使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Docker-Hello-World"><span class="toc-text">1 Docker Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Docker容器使用"><span class="toc-text">2 Docker容器使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Docker镜像使用"><span class="toc-text">3 Docker镜像使用</span></a></li></ol></li></ol>
+  </div>
+</aside>
+  
+  
+    <div class="passage-tags">
+     
+      <a href="/tags/docker/"><i class="fa fa-tags"></i>docker</a>
+    
+    </div>
+  
 </div>
+
     </main>
     
     <div class="site-footer-wrapper">
@@ -194,12 +315,12 @@
     <a href="javascript:void(0);" data-enable="false">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="javascript:void(0);" data-enable="false">
+    <a href="/2019/08/23/Docker-Redis/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>
   <div class="bottom-bar-right">
-    <a href="javascript:void(0);" data-enable="false" id="site-toc-show-btn">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
       <i class="fa fa-bars"></i>
     </a>
     

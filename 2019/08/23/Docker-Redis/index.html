@@ -6,12 +6,12 @@
   <meta name="author" content="1010n111">
   
   
-  <title>标签 | Program | Idea | Tips</title>
+  <title>Docker安装Redis | Program | Idea | Tips</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="Hexo, Theme-AD">
+    <meta name="keywords" content="docker,docker,redis,">
   
 
   
@@ -36,12 +36,12 @@
     welcome: {"enable":false,"interval":30},
     start_time: "2019-04-25",
     passwords: [],
-    is_post: false,
+    is_post: true,
     lock: false,
     author: "1010n111",
     share: {"twitter":false,"facebook":false,"weibo":false,"qq":false,"wechat":false},
     mathjax: false,
-    page_type: "tags",
+    page_type: "",
     root: "/"
   };
 </script>
@@ -146,13 +146,60 @@
 </nav>
 <div id="site-process"></div>
     <main>
-      <div class="set">
-  <h3 style="text-align: center;">
-    <i class="fa fa-tags"></i>
-    标签云
-  </h3>
-  <a href="/tags/IDEA/" style="font-size: 14px; color: #9e9e9e">IDEA</a> <a href="/tags/cache/" style="font-size: 14px; color: #9e9e9e">cache</a> <a href="/tags/chrome/" style="font-size: 14px; color: #9e9e9e">chrome</a> <a href="/tags/docker/" style="font-size: 36px; color: #212121">docker</a> <a href="/tags/github/" style="font-size: 14px; color: #9e9e9e">github</a> <a href="/tags/hexo/" style="font-size: 14px; color: #9e9e9e">hexo</a> <a href="/tags/mybatis/" style="font-size: 36px; color: #212121">mybatis</a> <a href="/tags/mybatis-plus/" style="font-size: 14px; color: #9e9e9e">mybatis plus</a> <a href="/tags/mysql/" style="font-size: 36px; color: #212121">mysql</a> <a href="/tags/plugin/" style="font-size: 36px; color: #212121">plugin</a> <a href="/tags/redis/" style="font-size: 14px; color: #9e9e9e">redis</a> <a href="/tags/tips/" style="font-size: 14px; color: #9e9e9e">tips</a> <a href="/tags/tool/" style="font-size: 14px; color: #9e9e9e">tool</a>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2019-08-23
+    </span>
+    
+      <span>
+        | <a href="/categories/docker/"><i class="fa fa-bookmark"></i>docker</a>
+      </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    Docker安装Redis
+  </h1>
+  
+  <article class="passage-article">
+    <h1 id="1-下载镜像"><a href="#1-下载镜像" class="headerlink" title="1 下载镜像"></a>1 下载镜像</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker search redis</span><br><span class="line">docker pull redis</span><br></pre></td></tr></table></figure>
+<h1 id="2-使用镜像"><a href="#2-使用镜像" class="headerlink" title="2 使用镜像"></a>2 使用镜像</h1><ul>
+<li>运行容器</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 6379:6379 -v D:\DockerDesktop\data\redisData:/data  -d redis redis-server --appendonly yes</span><br><span class="line"></span><br><span class="line">-p 6379:6379 将容器的6379端口映射到主机的6379端口</span><br><span class="line">-v D:\DockerDesktop\data\redisData:/data 将主机中D:\DockerDesktop\data\redisData目录挂载到容器的/data，做数据持久化</span><br><span class="line">redis-server --appendonly yes 在容器执行redis-server启动命令，并打开redis持久化配置</span><br></pre></td></tr></table></figure>
+<ul>
+<li>连接，查看容器</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it 43f7a65ec7f8 redis-cli</span><br></pre></td></tr></table></figure>
+
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-下载镜像"><span class="toc-text">1 下载镜像</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-使用镜像"><span class="toc-text">2 使用镜像</span></a></li></ol>
+  </div>
+</aside>
+  
+  
+    <div class="passage-tags">
+     
+      <a href="/tags/docker/"><i class="fa fa-tags"></i>docker</a>
+     
+      <a href="/tags/redis/"><i class="fa fa-tags"></i>redis</a>
+    
+    </div>
+  
 </div>
+
     </main>
     
     <div class="site-footer-wrapper">
@@ -191,15 +238,15 @@
 
 <div class="bottom-bar">
   <div class="bottom-bar-left">
-    <a href="javascript:void(0);" data-enable="false">
+    <a href="/2019/08/23/Docker/" data-enable="true">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="javascript:void(0);" data-enable="false">
+    <a href="/2019/08/21/Plugins-Of-IDEA/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>
   <div class="bottom-bar-right">
-    <a href="javascript:void(0);" data-enable="false" id="site-toc-show-btn">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
       <i class="fa fa-bars"></i>
     </a>
     
