@@ -6,12 +6,12 @@
   <meta name="author" content="1010n111">
   
   
-  <title>标签: github | Program | Idea | Tips</title>
+  <title>Docker安装MongoDB | Program | Idea | Tips</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="Hexo, Theme-AD">
+    <meta name="keywords" content="docker,docker,redis,">
   
 
   
@@ -36,7 +36,7 @@
     welcome: {"enable":false,"interval":30},
     start_time: "2019-04-25",
     passwords: [],
-    is_post: false,
+    is_post: true,
     lock: false,
     author: "1010n111",
     share: {"twitter":false,"facebook":false,"weibo":false,"qq":false,"wechat":false},
@@ -146,18 +146,60 @@
 </nav>
 <div id="site-process"></div>
     <main>
-      <div class="timeline">
-  <h2 class="timeline-title">标签: github</h2>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2019-08-26
+    </span>
+    
+      <span>
+        | <a href="/categories/docker/"><i class="fa fa-bookmark"></i>docker</a>
+      </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    Docker安装MongoDB
+  </h1>
   
+  <article class="passage-article">
+    <h1 id="1-下载镜像"><a href="#1-下载镜像" class="headerlink" title="1 下载镜像"></a>1 下载镜像</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker search mongo</span><br><span class="line">docker pull mongo</span><br></pre></td></tr></table></figure>
+<h1 id="2-使用镜像"><a href="#2-使用镜像" class="headerlink" title="2 使用镜像"></a>2 使用镜像</h1><ul>
+<li>运行容器</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 27017:27017 -d mongo</span><br></pre></td></tr></table></figure>
+<ul>
+<li>连接</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it mongo mongo --host 172.17.0.1</span><br></pre></td></tr></table></figure>
+
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-下载镜像"><span class="toc-text">1 下载镜像</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-使用镜像"><span class="toc-text">2 使用镜像</span></a></li></ol>
+  </div>
+</aside>
+  
+  
+    <div class="passage-tags">
+     
+      <a href="/tags/docker/"><i class="fa fa-tags"></i>docker</a>
+     
+      <a href="/tags/redis/"><i class="fa fa-tags"></i>redis</a>
     
-      <h3 class="timeline-subtitle">2019</h3>
-    
-    <div class="timeline-item">
-      <time>2019-04-25</time>
-      <a target="_self" href="/2019/04/25/How-To-Build-HEXO-With-GitHubPages/">GitHubPages搭建Hexo博客</a>
     </div>
   
 </div>
+
     </main>
     
     <div class="site-footer-wrapper">
@@ -199,12 +241,12 @@
     <a href="javascript:void(0);" data-enable="false">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="javascript:void(0);" data-enable="false">
+    <a href="/2019/08/23/Docker/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>
   <div class="bottom-bar-right">
-    <a href="javascript:void(0);" data-enable="false" id="site-toc-show-btn">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
       <i class="fa fa-bars"></i>
     </a>
     
