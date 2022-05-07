@@ -6,12 +6,12 @@
   <meta name="author" content="John Doe" />
   
   
-  <title>MySQL常用操作 | Document</title>
+  <title>Maven使用 | Document</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="MySQL," />
+    <meta name="keywords" content="Maven," />
   
 
   
@@ -146,17 +146,21 @@
     
   </div>
   <h1 class="passage-title">
-    MySQL常用操作
+    Maven使用
   </h1>
   
   <article class="passage-article">
-    <h1 id="通过Bash导出"><a href="#通过Bash导出" class="headerlink" title="通过Bash导出"></a>通过Bash导出</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;SELECT table_name,field_name,field_memo,field_name_chs,field_type,col_size,col_digits,enuma_value FROM easydc_db.assets_raw_fields WHERE version=&#x27;T820211122&#x27; &quot;</span> | mysql -udb_admin -p -h192.168.50.209 &gt; /home/readonly/jiekou.txt</span><br></pre></td></tr></table></figure>
-
-<h1 id="更改时区"><a href="#更改时区" class="headerlink" title="更改时区"></a>更改时区</h1><ul>
-<li>查看当前时区<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show variables like <span class="string">&quot;%time_zone%&quot;</span>;</span><br></pre></td></tr></table></figure></li>
-<li>更改时区<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">修改mysql全局时区为北京时间</span><br><span class="line"><span class="keyword">set</span> <span class="keyword">global</span> time_zone <span class="operator">=</span> <span class="string">&#x27;+8:00&#x27;</span>; </span><br><span class="line">修改当前会话时区</span><br><span class="line"><span class="keyword">set</span> time_zone <span class="operator">=</span> <span class="string">&#x27;+8:00&#x27;</span>; </span><br><span class="line">立马生效</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure></li>
-<li>或者修改my.cnf<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="attr">default-time_zone</span> = <span class="string">&#x27;+8:00&#x27;</span></span><br></pre></td></tr></table></figure></li>
+    <h1 id="Maven安装"><a href="#Maven安装" class="headerlink" title="Maven安装"></a>Maven安装</h1><ul>
+<li><p>环境变量</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MAVEN_HOME=D:\maven\apache-maven-3.8.4</span><br><span class="line">Path:%MAVEN_HOME%\bin</span><br><span class="line">验证</span><br><span class="line">mvn -version</span><br></pre></td></tr></table></figure></li>
+<li><p>配置文件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:\Maven\repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ul>
+<h1 id="导入本地Jar包到仓库"><a href="#导入本地Jar包到仓库" class="headerlink" title="导入本地Jar包到仓库"></a>导入本地Jar包到仓库</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn install:install-file &quot;-Dfile=本地jar包所在路径&quot; &quot;-DgroupId=设置groupId&quot; &quot;-DartifactId=设置artifactId&quot;  &quot;-Dversion=设置版本&quot;  &quot;-Dpackaging=jar&quot;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="清除仓库缓存"><a href="#清除仓库缓存" class="headerlink" title="清除仓库缓存"></a>清除仓库缓存</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">set REPOSITORY_PATH=D:\Maven</span><br><span class="line">rem 正在搜索...</span><br><span class="line">for /f &quot;delims=&quot; %%i in (&#x27;dir /b /s &quot;%REPOSITORY_PATH%\*lastUpdated*&quot;&#x27;) do (</span><br><span class="line">    del /s /q %%i</span><br><span class="line">)</span><br><span class="line">rem 搜索完毕</span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+
 
   </article>
   <aside class="table-content" id="site-toc">
@@ -165,14 +169,14 @@
     <span>目录</span>
   </div>
   <div class="table-content-main">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E8%BF%87Bash%E5%AF%BC%E5%87%BA"><span class="toc-text">通过Bash导出</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E6%97%B6%E5%8C%BA"><span class="toc-text">更改时区</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Maven%E5%AE%89%E8%A3%85"><span class="toc-text">Maven安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5%E6%9C%AC%E5%9C%B0Jar%E5%8C%85%E5%88%B0%E4%BB%93%E5%BA%93"><span class="toc-text">导入本地Jar包到仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E4%BB%93%E5%BA%93%E7%BC%93%E5%AD%98"><span class="toc-text">清除仓库缓存</span></a></li></ol>
   </div>
 </aside>
   
   
     <div class="passage-tags">
      
-      <a href="/tags/MySQL/"><i class="fa fa-tags"></i>MySQL</a>
+      <a href="/tags/Maven/"><i class="fa fa-tags"></i>Maven</a>
     
     </div>
   
@@ -219,10 +223,10 @@
 
 <div class="bottom-bar">
   <div class="bottom-bar-left">
-    <a href="/passages/MongoDB%E6%93%8D%E4%BD%9C/" data-enable="true">
+    <a href="/passages/Linux%E6%93%8D%E4%BD%9C/" data-enable="true">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="javascript:void(0);" data-enable="false">
+    <a href="/passages/Docker%E5%AE%89%E8%A3%85%E5%8F%8A%E5%B8%B8%E7%94%A8%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>
