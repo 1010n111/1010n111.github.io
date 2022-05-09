@@ -194,7 +194,7 @@
 <ul>
 <li>安装</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 3306:3306 --name mysql57 \</span><br><span class="line">-v /home/docker/mysql/config:/etc/mysql/ \</span><br><span class="line">-v /home/docker/mysql/data:/var/lib/mysql \</span><br><span class="line">-e MYSQL_ROOT_PASSWORD=root \</span><br><span class="line">-d mysql:5.7</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run --restart=always -p 3306:3306 --name mysql57 \</span><br><span class="line">-v /home/docker/mysql/config:/etc/mysql/ \</span><br><span class="line">-v /home/docker/mysql/data:/var/lib/mysql \</span><br><span class="line">-e MYSQL_ROOT_PASSWORD=root \</span><br><span class="line">-d mysql:5.7</span><br></pre></td></tr></table></figure>
 
 <h1 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -itd --name mongo -p 27017:27017 mongo --auth</span><br></pre></td></tr></table></figure>
 
@@ -277,7 +277,7 @@
     <a href="javascript:void(0);" data-enable="false">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="/passages/Linux%E6%93%8D%E4%BD%9C/" data-enable="true">
+    <a href="/passages/Maven%E6%93%8D%E4%BD%9C/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>

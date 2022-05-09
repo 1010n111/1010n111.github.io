@@ -159,6 +159,16 @@
 <li>安装字体</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">字体复制到</span><br><span class="line">/usr/share/fonts/</span><br><span class="line">更新字体缓存</span><br><span class="line"><span class="built_in">cd</span> /usr/share/fonts/</span><br><span class="line">mkfontscale</span><br><span class="line">mkfontdir</span><br><span class="line">fc-cache</span><br></pre></td></tr></table></figure>
+
+<h1 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-c ：create 建立压缩档案的参数；</span><br><span class="line">-x ： 解压缩压缩档案的参数；</span><br><span class="line">-z ： 是否需用用gzip压缩；</span><br><span class="line">-v： 压缩的过程中显示档案；</span><br><span class="line">-f： 置顶文档名，在f后面立即接文件名，不能再加参数</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>压缩</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zcvf /home/www/images.tar.gz /home/www/images </span><br></pre></td></tr></table></figure></li>
+<li><p>解压</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf /home/images.tar.gz</span><br></pre></td></tr></table></figure></li>
+</ul>
+
   </article>
   <aside class="table-content" id="site-toc">
   <div class="table-content-title">
@@ -166,7 +176,7 @@
     <span>目录</span>
   </div>
   <div class="table-content-main">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93"><span class="toc-text">Linux安装中文字体</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93"><span class="toc-text">Linux安装中文字体</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#tar"><span class="toc-text">tar</span></a></li></ol>
   </div>
 </aside>
   
@@ -220,10 +230,10 @@
 
 <div class="bottom-bar">
   <div class="bottom-bar-left">
-    <a href="/passages/Docker%E5%AE%89%E8%A3%85%E5%8F%8A%E5%B8%B8%E7%94%A8%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" data-enable="true">
+    <a href="/passages/Maven%E6%93%8D%E4%BD%9C/" data-enable="true">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="/passages/Maven%E6%93%8D%E4%BD%9C/" data-enable="true">
+    <a href="/passages/MongoDB%E6%93%8D%E4%BD%9C/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>
