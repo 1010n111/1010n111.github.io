@@ -168,6 +168,10 @@
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[mysqld]</span></span><br><span class="line"><span class="attr">default-time_zone</span> = <span class="string">&#x27;+8:00&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="mysqldump备份"><a href="#mysqldump备份" class="headerlink" title="mysqldump备份"></a>mysqldump备份</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqldump -udcmmsysoper1 -p -h127.0.0.1 -P13305  dcmmsys &gt; /home/dcmmsys.sql</span><br></pre></td></tr></table></figure>
+
+<h1 id="mysqldump备份表结构"><a href="#mysqldump备份表结构" class="headerlink" title="mysqldump备份表结构"></a>mysqldump备份表结构</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqldump -uroot -p  -d easy_dc_cloud_db &gt; /home/easy_dc_cloud_db_old_test.sql</span><br></pre></td></tr></table></figure>
+
+<h1 id="mysqldump导出指定表数据"><a href="#mysqldump导出指定表数据" class="headerlink" title="mysqldump导出指定表数据"></a>mysqldump导出指定表数据</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqldump -t easy_dc_cloud_db -uroot -p --tables sys_config sys_dept sys_dict_data sys_dict_type sys_job sys_menu sys_role_menu  &gt;/home/table.sql</span><br></pre></td></tr></table></figure>
   </article>
   <aside class="table-content" id="site-toc">
   <div class="table-content-title">
@@ -175,7 +179,7 @@
     <span>目录</span>
   </div>
   <div class="table-content-main">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E8%BF%87Bash%E5%AF%BC%E5%87%BA"><span class="toc-text">通过Bash导出</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E6%97%B6%E5%8C%BA"><span class="toc-text">更改时区</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysqldump%E5%A4%87%E4%BB%BD"><span class="toc-text">mysqldump备份</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E8%BF%87Bash%E5%AF%BC%E5%87%BA"><span class="toc-text">通过Bash导出</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E6%97%B6%E5%8C%BA"><span class="toc-text">更改时区</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysqldump%E5%A4%87%E4%BB%BD"><span class="toc-text">mysqldump备份</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysqldump%E5%A4%87%E4%BB%BD%E8%A1%A8%E7%BB%93%E6%9E%84"><span class="toc-text">mysqldump备份表结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysqldump%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AE%9A%E8%A1%A8%E6%95%B0%E6%8D%AE"><span class="toc-text">mysqldump导出指定表数据</span></a></li></ol>
   </div>
 </aside>
   
