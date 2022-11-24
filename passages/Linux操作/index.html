@@ -195,7 +195,7 @@
 <ul>
 <li>重启RPC Bind服务,NFS服务</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart rpcbind</span><br><span class="line">systemctl <span class="built_in">enable</span> rpcbind</span><br><span class="line">systemctl start nfs-server</span><br><span class="line">systemctl <span class="built_in">enable</span> nfs-server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart rpcbind</span><br><span class="line">systemctl <span class="built_in">enable</span> rpcbind</span><br><span class="line">systemctl restart nfs-server</span><br><span class="line">systemctl <span class="built_in">enable</span> nfs-server</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>使配置生效</li>
@@ -220,12 +220,12 @@
 <ul>
 <li>挂载共享目录</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount 192.168.1.22:/home/upload	/home/upload</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount 服务端IP:/home/upload	/home/upload</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>开机自动挂载</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">192.168.127.200:/home/nfs_database /nfs_database nfs defaults 0 0</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/fstab</span><br><span class="line">服务端IP:/home/nfs_database /nfs_database nfs defaults 0 0</span><br></pre></td></tr></table></figure>
 
 
 
@@ -311,10 +311,10 @@
 
 <div class="bottom-bar">
   <div class="bottom-bar-left">
-    <a href="/passages/Maven%E6%93%8D%E4%BD%9C/" data-enable="true">
+    <a href="/passages/Git%E6%93%8D%E4%BD%9C/" data-enable="true">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="/passages/MongoDB%E6%93%8D%E4%BD%9C/" data-enable="true">
+    <a href="/passages/Maven%E6%93%8D%E4%BD%9C/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>

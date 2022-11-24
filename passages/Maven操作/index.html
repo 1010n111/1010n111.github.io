@@ -155,9 +155,7 @@
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MAVEN_HOME=D:\maven\apache-maven-3.8.4</span><br><span class="line">Path:%MAVEN_HOME%\bin</span><br><span class="line">验证</span><br><span class="line">mvn -version</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>配置文件</li>
-</ul>
+
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:\Maven\repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="导入本地Jar包到仓库"><a href="#导入本地Jar包到仓库" class="headerlink" title="导入本地Jar包到仓库"></a>导入本地Jar包到仓库</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn install:install-file &quot;-Dfile=本地jar包所在路径&quot; &quot;-DgroupId=设置groupId&quot; &quot;-DartifactId=设置artifactId&quot;  &quot;-Dversion=设置版本&quot;  &quot;-Dpackaging=jar&quot;</span><br></pre></td></tr></table></figure>
@@ -227,10 +225,10 @@
 
 <div class="bottom-bar">
   <div class="bottom-bar-left">
-    <a href="/passages/Docker%E5%AE%89%E8%A3%85%E5%8F%8A%E5%B8%B8%E7%94%A8%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" data-enable="true">
+    <a href="/passages/Linux%E6%93%8D%E4%BD%9C/" data-enable="true">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="/passages/Linux%E6%93%8D%E4%BD%9C/" data-enable="true">
+    <a href="/passages/MongoDB%E6%93%8D%E4%BD%9C/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>
