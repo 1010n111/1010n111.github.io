@@ -1,0 +1,691 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="MySQL中INSERT IGNORE与INSERT … ON DUPLICATE KEY UPDATE的对比技术背景在执行包含多行数据的INSERT语句时，常常会遇到重复记录的问题，这些重复记录可能会导致插入操作失败。为了避免这种情况，MySQL提供了INSERT IGNORE和INSERT ... ON DUPLICATE KEY UPDATE两种解决方案。 实现步骤INSERT IGNORE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL中INSERT IGNORE与INSERT ... ON DUPLICATE KEY UPDATE的对比">
+<meta property="og:url" content="http://example.com/2025/04/23/2025-04-23.comparison-between-insert-ignore-and-insert-on-duplicate-key-update-in-mysql_hexo/index.html">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="MySQL中INSERT IGNORE与INSERT … ON DUPLICATE KEY UPDATE的对比技术背景在执行包含多行数据的INSERT语句时，常常会遇到重复记录的问题，这些重复记录可能会导致插入操作失败。为了避免这种情况，MySQL提供了INSERT IGNORE和INSERT ... ON DUPLICATE KEY UPDATE两种解决方案。 实现步骤INSERT IGNORE">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-23T03:14:08.000Z">
+<meta property="article:modified_time" content="2025-04-23T03:14:08.596Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="SQL">
+<meta property="article:tag" content="数据库开发">
+<meta property="article:tag" content="INSERT IGNORE">
+<meta property="article:tag" content="INSERT ... ON DUPLICATE KEY UPDATE">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>MySQL中INSERT IGNORE与INSERT ... ON DUPLICATE KEY UPDATE的对比 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="MySQL中INSERT IGNORE与INSERT ... ON DUPLICATE KEY UPDATE的对比"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-04-23 11:14" pubdate>
+          2025年4月23日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          588 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          5 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">MySQL中INSERT IGNORE与INSERT ... ON DUPLICATE KEY UPDATE的对比</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="MySQL中INSERT-IGNORE与INSERT-…-ON-DUPLICATE-KEY-UPDATE的对比"><a href="#MySQL中INSERT-IGNORE与INSERT-…-ON-DUPLICATE-KEY-UPDATE的对比" class="headerlink" title="MySQL中INSERT IGNORE与INSERT … ON DUPLICATE KEY UPDATE的对比"></a>MySQL中INSERT IGNORE与INSERT … ON DUPLICATE KEY UPDATE的对比</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在执行包含多行数据的INSERT语句时，常常会遇到重复记录的问题，这些重复记录可能会导致插入操作失败。为了避免这种情况，MySQL提供了<code>INSERT IGNORE</code>和<code>INSERT ... ON DUPLICATE KEY UPDATE</code>两种解决方案。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="INSERT-IGNORE"><a href="#INSERT-IGNORE" class="headerlink" title="INSERT IGNORE"></a>INSERT IGNORE</h3><p>当使用<code>INSERT IGNORE</code>时，如果插入的数据会导致唯一键冲突（如主键或唯一索引），MySQL不会抛出错误，而是将其作为警告处理，该记录将不会被插入。示例代码如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- 创建测试表</span><br><span class="hljs-keyword">CREATE TABLE</span> users_partners (<br>  uid <span class="hljs-type">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-string">&#x27;0&#x27;</span>,<br>  pid <span class="hljs-type">int</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT NULL</span> <span class="hljs-keyword">DEFAULT</span> <span class="hljs-string">&#x27;0&#x27;</span>,<br>  <span class="hljs-keyword">PRIMARY KEY</span> (uid,pid),<br>  KEY partner_user (pid,uid)<br>) ENGINE<span class="hljs-operator">=</span>MyISAM <span class="hljs-keyword">DEFAULT</span> CHARSET<span class="hljs-operator">=</span>utf8;<br><br><span class="hljs-comment">-- 插入重复记录</span><br><span class="hljs-keyword">INSERT</span> IGNORE <span class="hljs-keyword">INTO</span> users_partners (uid,pid) <span class="hljs-keyword">VALUES</span> (<span class="hljs-number">1</span>,<span class="hljs-number">1</span>);<br></code></pre></td></tr></table></figure>
+
+<h3 id="INSERT-…-ON-DUPLICATE-KEY-UPDATE"><a href="#INSERT-…-ON-DUPLICATE-KEY-UPDATE" class="headerlink" title="INSERT … ON DUPLICATE KEY UPDATE"></a>INSERT … ON DUPLICATE KEY UPDATE</h3><p>当使用<code>INSERT ... ON DUPLICATE KEY UPDATE</code>时，如果插入的数据导致唯一键冲突，MySQL会执行更新操作。示例代码如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- 插入数据，若冲突则更新</span><br><span class="hljs-keyword">INSERT INTO</span> users_partners (uid,pid) <span class="hljs-keyword">VALUES</span> (<span class="hljs-number">1</span>,<span class="hljs-number">1</span>) <span class="hljs-keyword">ON</span> DUPLICATE KEY <span class="hljs-keyword">UPDATE</span> uid<span class="hljs-operator">=</span>uid;<br></code></pre></td></tr></table></figure>
+
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><h3 id="INSERT-IGNORE-1"><a href="#INSERT-IGNORE-1" class="headerlink" title="INSERT IGNORE"></a>INSERT IGNORE</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT</span> IGNORE <span class="hljs-keyword">INTO</span> table_name (column1, column2, ...) <span class="hljs-keyword">VALUES</span> (value1, value2, ...);<br></code></pre></td></tr></table></figure>
+
+<h3 id="INSERT-…-ON-DUPLICATE-KEY-UPDATE-1"><a href="#INSERT-…-ON-DUPLICATE-KEY-UPDATE-1" class="headerlink" title="INSERT … ON DUPLICATE KEY UPDATE"></a>INSERT … ON DUPLICATE KEY UPDATE</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT INTO</span> table_name (column1, column2, ...) <span class="hljs-keyword">VALUES</span> (value1, value2, ...)<br><span class="hljs-keyword">ON</span> DUPLICATE KEY <span class="hljs-keyword">UPDATE</span> column1 <span class="hljs-operator">=</span> value1, column2 <span class="hljs-operator">=</span> value2, ...;<br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>使用INSERT … ON DUPLICATE KEY UPDATE</strong>：如果需要在遇到重复记录时更新已有记录，或者需要知道哪些记录发生了冲突，建议使用<code>INSERT ... ON DUPLICATE KEY UPDATE</code>。它虽然可能会有一些额外的开销，但可以避免<code>INSERT IGNORE</code>带来的一些潜在问题，如自动递增ID的浪费。</li>
+<li><strong>使用INSERT IGNORE</strong>：如果只关心插入操作的整体成功，不关心个别记录是否因为冲突而未插入，并且不需要处理冲突记录，可以使用<code>INSERT IGNORE</code>。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="INSERT-IGNORE的潜在风险"><a href="#INSERT-IGNORE的潜在风险" class="headerlink" title="INSERT IGNORE的潜在风险"></a>INSERT IGNORE的潜在风险</h3><ul>
+<li><strong>自动递增ID问题</strong>：即使插入失败，<code>INSERT IGNORE</code>也可能会导致自动递增ID的值增加。</li>
+<li><strong>数据截断问题</strong>：如果插入的<code>VARCHAR</code>值超过了列定义的长度，即使启用了严格模式，该值也会被截断并插入。</li>
+<li><strong>无警告提示</strong>：当发生键冲突时，MySQL不会抛出警告，需要通过<code>mysql_info()</code>函数解析“Duplicates”值来获取相关信息。</li>
+</ul>
+<h3 id="INSERT-…-ON-DUPLICATE-KEY-UPDATE的问题"><a href="#INSERT-…-ON-DUPLICATE-KEY-UPDATE的问题" class="headerlink" title="INSERT … ON DUPLICATE KEY UPDATE的问题"></a>INSERT … ON DUPLICATE KEY UPDATE的问题</h3><ul>
+<li><strong>非标准语法</strong>：<code>INSERT ... ON DUPLICATE KEY UPDATE</code>不是标准的SQL语法，是MySQL特有的。</li>
+<li><strong>自动递增ID生成</strong>：虽然新的自动递增ID会被生成，但不会在变更的行中使用。</li>
+<li><strong>死锁问题</strong>：在并发环境下，多个事务以不同顺序更新记录时可能会导致死锁。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/" class="category-chain-item">数据库开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="category-chain-item">MySQL使用技巧</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/MySQL/" class="print-no-link">#MySQL</a>
+      
+        <a href="/tags/SQL/" class="print-no-link">#SQL</a>
+      
+        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/" class="print-no-link">#数据库开发</a>
+      
+        <a href="/tags/INSERT-IGNORE/" class="print-no-link">#INSERT IGNORE</a>
+      
+        <a href="/tags/INSERT-ON-DUPLICATE-KEY-UPDATE/" class="print-no-link">#INSERT ... ON DUPLICATE KEY UPDATE</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>MySQL中INSERT IGNORE与INSERT ... ON DUPLICATE KEY UPDATE的对比</div>
+      <div>http://example.com/2025/04/23/2025-04-23.comparison-between-insert-ignore-and-insert-on-duplicate-key-update-in-mysql_hexo/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年4月23日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/04/23/2025-04-23.bettergi-genshin-impact-automation-tool_hexo/" title="BetterGI：让原神游戏更便捷的自动化工具">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">BetterGI：让原神游戏更便捷的自动化工具</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/04/23/2025-04-23.connect-supabase-to-ai-assistants-guide_hexo/" title="将Supabase连接到AI助手的配置指南">
+                        <span class="hidden-mobile">将Supabase连接到AI助手的配置指南</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

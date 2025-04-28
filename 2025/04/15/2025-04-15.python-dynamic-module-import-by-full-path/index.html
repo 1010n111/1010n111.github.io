@@ -1,0 +1,691 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Python中如何根据完整路径动态导入模块技术背景在Python开发中，有时需要根据文件的完整路径动态导入模块，而不是通过常规的import语句。这在处理用户自定义模块、插件系统或从不同目录加载模块时非常有用。由于Python版本的更新，不同版本提供了不同的方法来实现这一功能。 实现步骤Python 3.5+12345678import importlib.utilimport sysspec &#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python中如何根据完整路径动态导入模块">
+<meta property="og:url" content="http://example.com/2025/04/15/2025-04-15.python-dynamic-module-import-by-full-path/index.html">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="Python中如何根据完整路径动态导入模块技术背景在Python开发中，有时需要根据文件的完整路径动态导入模块，而不是通过常规的import语句。这在处理用户自定义模块、插件系统或从不同目录加载模块时非常有用。由于Python版本的更新，不同版本提供了不同的方法来实现这一功能。 实现步骤Python 3.5+12345678import importlib.utilimport sysspec &#x3D;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-15T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-04-15T00:35:17.209Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="后端开发">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="importlib">
+<meta property="article:tag" content="模块动态导入">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Python中如何根据完整路径动态导入模块 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Python中如何根据完整路径动态导入模块"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-04-15 08:00" pubdate>
+          2025年4月15日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          764 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          7 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Python中如何根据完整路径动态导入模块</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Python中如何根据完整路径动态导入模块"><a href="#Python中如何根据完整路径动态导入模块" class="headerlink" title="Python中如何根据完整路径动态导入模块"></a>Python中如何根据完整路径动态导入模块</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在Python开发中，有时需要根据文件的完整路径动态导入模块，而不是通过常规的<code>import</code>语句。这在处理用户自定义模块、插件系统或从不同目录加载模块时非常有用。由于Python版本的更新，不同版本提供了不同的方法来实现这一功能。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="Python-3-5"><a href="#Python-3-5" class="headerlink" title="Python 3.5+"></a>Python 3.5+</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> importlib.util<br><span class="hljs-keyword">import</span> sys<br><br>spec = importlib.util.spec_from_file_location(<span class="hljs-string">&quot;module.name&quot;</span>, <span class="hljs-string">&quot;/path/to/file.py&quot;</span>)<br>foo = importlib.util.module_from_spec(spec)<br>sys.modules[<span class="hljs-string">&quot;module.name&quot;</span>] = foo<br>spec.loader.exec_module(foo)<br>foo.MyClass()<br></code></pre></td></tr></table></figure>
+<p>步骤解释：</p>
+<ol>
+<li>使用<code>importlib.util.spec_from_file_location</code>创建模块的规格对象，指定模块名和文件路径。</li>
+<li>使用<code>importlib.util.module_from_spec</code>根据规格对象创建模块对象。</li>
+<li>将模块对象添加到<code>sys.modules</code>字典中。</li>
+<li>使用<code>spec.loader.exec_module</code>执行模块代码。</li>
+</ol>
+<h3 id="Python-3-3-和-3-4"><a href="#Python-3-3-和-3-4" class="headerlink" title="Python 3.3 和 3.4"></a>Python 3.3 和 3.4</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> importlib.machinery <span class="hljs-keyword">import</span> SourceFileLoader<br><br>foo = SourceFileLoader(<span class="hljs-string">&quot;module.name&quot;</span>, <span class="hljs-string">&quot;/path/to/file.py&quot;</span>).load_module()<br>foo.MyClass()<br></code></pre></td></tr></table></figure>
+<p>步骤解释：<br>使用<code>SourceFileLoader</code>类加载模块，指定模块名和文件路径，然后调用<code>load_module</code>方法加载模块。</p>
+<h3 id="Python-2"><a href="#Python-2" class="headerlink" title="Python 2"></a>Python 2</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> imp<br><br>foo = imp.load_source(<span class="hljs-string">&#x27;module.name&#x27;</span>, <span class="hljs-string">&#x27;/path/to/file.py&#x27;</span>)<br>foo.MyClass()<br></code></pre></td></tr></table></figure>
+<p>步骤解释：<br>使用<code>imp.load_source</code>函数加载模块，指定模块名和文件路径。</p>
+<h3 id="添加路径到sys-path"><a href="#添加路径到sys-path" class="headerlink" title="添加路径到sys.path"></a>添加路径到<code>sys.path</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> sys<br>sys.path.append(<span class="hljs-string">&#x27;/foo/bar/mock-0.3.1&#x27;</span>)<br><br><span class="hljs-keyword">from</span> testcase <span class="hljs-keyword">import</span> TestCase<br><span class="hljs-keyword">from</span> testutils <span class="hljs-keyword">import</span> RunTests<br><span class="hljs-keyword">from</span> mock <span class="hljs-keyword">import</span> Mock, sentinel, patch<br></code></pre></td></tr></table></figure>
+<p>步骤解释：<br>将模块所在的目录添加到<code>sys.path</code>列表中，然后可以像常规导入一样导入模块。</p>
+<h3 id="使用runpy-run-path"><a href="#使用runpy-run-path" class="headerlink" title="使用runpy.run_path"></a>使用<code>runpy.run_path</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> runpy <span class="hljs-keyword">import</span> run_path<br>settings = run_path(<span class="hljs-string">&quot;/path/to/file.py&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p>步骤解释：<br>使用<code>runpy.run_path</code>函数运行指定路径的文件，并返回文件中定义的命名空间。</p>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>以下是一个综合示例，根据Python版本选择合适的导入方法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> sys<br><span class="hljs-keyword">import</span> importlib.util<br><span class="hljs-keyword">from</span> importlib.machinery <span class="hljs-keyword">import</span> SourceFileLoader<br><span class="hljs-keyword">import</span> imp<br><span class="hljs-keyword">from</span> runpy <span class="hljs-keyword">import</span> run_path<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">import_module_by_path</span>(<span class="hljs-params">module_path</span>):<br>    <span class="hljs-keyword">if</span> sys.version_info &gt;= (<span class="hljs-number">3</span>, <span class="hljs-number">5</span>):<br>        spec = importlib.util.spec_from_file_location(<span class="hljs-string">&quot;module.name&quot;</span>, module_path)<br>        module = importlib.util.module_from_spec(spec)<br>        sys.modules[<span class="hljs-string">&quot;module.name&quot;</span>] = module<br>        spec.loader.exec_module(module)<br>    <span class="hljs-keyword">elif</span> sys.version_info &gt;= (<span class="hljs-number">3</span>, <span class="hljs-number">3</span>):<br>        module = SourceFileLoader(<span class="hljs-string">&quot;module.name&quot;</span>, module_path).load_module()<br>    <span class="hljs-keyword">elif</span> sys.version_info &lt; (<span class="hljs-number">3</span>, <span class="hljs-number">0</span>):<br>        module = imp.load_source(<span class="hljs-string">&#x27;module.name&#x27;</span>, module_path)<br>    <span class="hljs-keyword">return</span> module<br><br><span class="hljs-comment"># 使用示例</span><br>module_path = <span class="hljs-string">&quot;/path/to/file.py&quot;</span><br>module = import_module_by_path(module_path)<br><span class="hljs-comment"># 假设模块中有一个函数名为test_function</span><br>module.test_function()<br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>版本兼容性</strong>：在编写代码时，考虑不同Python版本的兼容性，根据版本选择合适的导入方法。</li>
+<li><strong>错误处理</strong>：在导入模块时，添加适当的错误处理代码，以捕获可能的导入错误。</li>
+<li><strong>模块命名</strong>：在动态导入模块时，确保模块名的唯一性，避免命名冲突。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="1-imp模块已被弃用"><a href="#1-imp模块已被弃用" class="headerlink" title="1. imp模块已被弃用"></a>1. <code>imp</code>模块已被弃用</h3><p>在Python 3.4及以后的版本中，<code>imp</code>模块已被弃用，建议使用<code>importlib</code>模块代替。</p>
+<h3 id="2-相对导入问题"><a href="#2-相对导入问题" class="headerlink" title="2. 相对导入问题"></a>2. 相对导入问题</h3><p>在使用动态导入时，可能会遇到相对导入问题。可以通过设置<code>sys.modules</code>来解决这个问题，确保父模块已被正确加载。</p>
+<h3 id="3-模块缓存问题"><a href="#3-模块缓存问题" class="headerlink" title="3. 模块缓存问题"></a>3. 模块缓存问题</h3><p>Python会缓存已导入的模块，当多次导入同一个模块时，可能会使用缓存的模块。如果需要重新加载模块，可以使用<code>importlib.reload</code>函数。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#后端开发</a>
+      
+        <a href="/tags/Python/" class="print-no-link">#Python</a>
+      
+        <a href="/tags/importlib/" class="print-no-link">#importlib</a>
+      
+        <a href="/tags/%E6%A8%A1%E5%9D%97%E5%8A%A8%E6%80%81%E5%AF%BC%E5%85%A5/" class="print-no-link">#模块动态导入</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Python中如何根据完整路径动态导入模块</div>
+      <div>http://example.com/2025/04/15/2025-04-15.python-dynamic-module-import-by-full-path/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年4月15日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/04/15/2025-04-15.python-3-relative-imports-guide/" title="Python 3 中的相对导入问题解析">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Python 3 中的相对导入问题解析</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/04/15/2025-04-15.python-random-integer-generation-between-0-and-9/" title="Python中生成0到9之间随机整数的方法">
+                        <span class="hidden-mobile">Python中生成0到9之间随机整数的方法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

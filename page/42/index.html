@@ -1,0 +1,1101 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="小破站">
+<meta property="og:url" content="http://example.com/page/42/index.html">
+<meta property="og:site_name" content="小破站">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="ww">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="小破站"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.java-timestamp-subtraction-anomaly/" target="_self">
+          Java中1927年时间戳相减结果异常原因解析
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.java-timestamp-subtraction-anomaly/" target="_self">
+        <div>
+          Java中1927年时间戳相减结果异常原因解析技术背景在Java编程中，处理日期和时间是常见的任务。通常，我们会使用SimpleDateFormat类来解析日期字符串，并使用Date类的getTime()方法获取时间戳（自1970年1月1日午夜以来的毫秒数）。然而，在某些特殊情况下，时间戳的计算可能会出现意想不到的结果。 实现步骤问题代码示例以下是一段示例代码，用于解析两个日期字符串，并计算它们的
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E7%BC%96%E7%A8%8B/" class="category-chain-item">Java编程</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Java/">#Java</a>
+            
+              <a href="/tags/SimpleDateFormat/">#SimpleDateFormat</a>
+            
+              <a href="/tags/%E6%97%B6%E9%97%B4%E6%88%B3%E8%AE%A1%E7%AE%97/">#时间戳计算</a>
+            
+              <a href="/tags/%E6%97%B6%E5%8C%BA%E9%97%AE%E9%A2%98/">#时区问题</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.javascript-array-loop-methods-analysis/" target="_self">
+          JavaScript数组循环方法全解析
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.javascript-array-loop-methods-analysis/" target="_self">
+        <div>
+          JavaScript数组循环方法全解析技术背景在JavaScript开发中，经常需要对数组进行遍历操作。随着JavaScript的发展，提供了多种循环数组的方式，每种方式都有其特点和适用场景。了解这些方法有助于开发者根据具体需求选择最合适的循环方式，提高代码的效率和可读性。 实现步骤1. 使用for-of（隐式使用迭代器，ES2015+）1234const a = [&quot;a&quot;,
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/%E6%95%B0%E7%BB%84%E5%BE%AA%E7%8E%AF/">#数组循环</a>
+            
+              <a href="/tags/for-of/">#for-of</a>
+            
+              <a href="/tags/forEach/">#forEach</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.javascript-comparison-operators-choice/" target="_self">
+          JavaScript 中 == 与 === 比较运算符的选择
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.javascript-comparison-operators-choice/" target="_self">
+        <div>
+          JavaScript 中 &#x3D;&#x3D; 与 &#x3D;&#x3D;&#x3D; 比较运算符的选择技术背景在 JavaScript 编程里，比较操作是非常常见的操作。==（相等运算符）和 ===（严格相等运算符）是用于比较两个值是否相等的运算符。然而，它们在比较时的行为存在显著差异，这可能会导致代码出现意外的结果。JSLint 工具常常建议将 == 替换为 ===，这引发了开发者对于二
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7%E6%8E%A2%E7%A9%B6/" class="category-chain-item">语言特性探究</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6/">#比较运算符</a>
+            
+              <a href="/tags/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/">#类型转换</a>
+            
+              <a href="/tags/%E4%B8%A5%E6%A0%BC%E7%9B%B8%E7%AD%89/">#严格相等</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.javascript-closures-explained/" target="_self">
+          JavaScript闭包工作原理详解
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.javascript-closures-explained/" target="_self">
+        <div>
+          JavaScript闭包工作原理详解技术背景在JavaScript编程中，闭包是一个非常重要且强大的特性。对于有函数、变量等基本概念基础，但不理解闭包的开发者来说，闭包可能显得有些神秘。闭包允许函数访问并操作其外部作用域中的变量，即使该外部函数已经执行完毕。这一特性为数据隐藏、封装以及函数状态的持久化提供了有力的支持。在早期，JavaScript没有类语法和私有字段语法，闭包成为了实现这些功能的重
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0/" class="category-chain-item">JavaScript深入学习</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/">#作用域</a>
+            
+              <a href="/tags/%E9%97%AD%E5%8C%85/">#闭包</a>
+            
+              <a href="/tags/%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/">#函数封装</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.javascript-object-property-removal-methods/" target="_self">
+          JavaScript对象属性移除方法全解析
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.javascript-object-property-removal-methods/" target="_self">
+        <div>
+          JavaScript对象属性移除方法全解析技术背景在JavaScript编程中，操作对象是一项常见的任务。有时我们需要从对象中移除某个属性，以满足特定的业务需求。移除对象属性的需求在数据处理、状态管理等场景中尤为常见。例如，在数据传输时，可能需要过滤掉对象中的某些敏感或不必要的属性。 实现步骤1. 使用delete关键字delete关键字是最常用的移除对象属性的方法，它可以直接从对象中移除指定的属
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/Lodash/">#Lodash</a>
+            
+              <a href="/tags/Ramda/">#Ramda</a>
+            
+              <a href="/tags/%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%A7%BB%E9%99%A4/">#对象属性移除</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.javascript-string-replace-all-methods/" target="_self">
+          JavaScript中替换字符串所有出现位置的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.javascript-string-replace-all-methods/" target="_self">
+        <div>
+          JavaScript中替换字符串所有出现位置的方法技术背景在JavaScript开发中，经常会遇到需要替换字符串中所有指定子字符串的场景。然而，String.prototype.replace() 方法默认仅替换第一个匹配项，无法满足替换所有匹配项的需求。因此，我们需要寻找合适的方法来实现字符串的全局替换。 实现步骤1. 使用正则表达式正则表达式是实现字符串全局替换的常用方法。可以通过在正则表达式
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
+            
+              <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">#正则表达式</a>
+            
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9B%BF%E6%8D%A2/">#字符串替换</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.javascript-string-substring-check/" target="_self">
+          JavaScript中检查字符串是否包含子字符串的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.javascript-string-substring-check/" target="_self">
+        <div>
+          JavaScript中检查字符串是否包含子字符串的方法技术背景在JavaScript编程中，经常会遇到需要检查一个字符串是否包含另一个子字符串的需求。然而，JavaScript本身一开始并没有像其他一些编程语言那样提供直接的String.contains()方法。不过，随着语言的发展和标准的更新，有了多种可行的解决方案。 实现步骤1. 使用String.prototype.includes（ES6
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/ECMAScript/">#ECMAScript</a>
+            
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/">#字符串匹配</a>
+            
+              <a href="/tags/%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A3%80%E6%9F%A5/">#子字符串检查</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.max-url-length-in-different-browsers/" target="_self">
+          不同浏览器中URL的最大长度
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.max-url-length-in-different-browsers/" target="_self">
+        <div>
+          不同浏览器中URL的最大长度技术背景在Web开发和使用过程中，URL（Uniform Resource Locator，统一资源定位符）是访问互联网资源的重要标识。然而，不同的浏览器和服务器对于URL的长度有不同的限制。了解这些限制对于开发者确保网站在各种环境下的兼容性以及进行有效的SEO优化都具有重要意义。 实现步骤标准规范 原始HTTP&#x2F;1.1规范（RFC 2616）：1999年发布
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/" class="category-chain-item">网络技术</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/">#浏览器</a>
+            
+              <a href="/tags/HTTP/">#HTTP</a>
+            
+              <a href="/tags/URL%E9%95%BF%E5%BA%A6%E9%99%90%E5%88%B6/">#URL长度限制</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.javascript-use-strict-explanation/" target="_self">
+          JavaScript 中 &#39;use strict&#39; 的作用及原理
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.javascript-use-strict-explanation/" target="_self">
+        <div>
+          JavaScript 中 ‘use strict’ 的作用及原理技术背景在 JavaScript 的早期版本中，语言的设计较为宽松，这虽然使得开发者编写代码更加便捷，但也容易导致一些难以调试的错误和不安全的行为。为了解决这些问题，ECMAScript 5 引入了严格模式（Strict Mode），通过使用 &quot;use strict&quot;; 指令来开启。严格模式对 JavaScript
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript-%E8%AF%AD%E6%B3%95%E7%89%B9%E6%80%A7/" class="category-chain-item">JavaScript 语法特性</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/">#严格模式</a>
+            
+              <a href="/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/">#代码规范</a>
+            
+              <a href="/tags/%E9%94%99%E8%AF%AF%E6%A3%80%E6%9F%A5/">#错误检查</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/16/2025-04-16.methods-to-get-script-directory-in-bash/" target="_self">
+          在Bash脚本中获取自身所在目录的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/16/2025-04-16.methods-to-get-script-directory-in-bash/" target="_self">
+        <div>
+          在Bash脚本中获取自身所在目录的方法技术背景在使用Bash脚本时，有时需要获取脚本自身所在的目录。比如，当脚本作为另一个应用程序的启动器时，需要将工作目录更改为脚本所在的目录，以便对该目录中的文件进行操作。然而，由于脚本的调用方式多样（如绝对路径、相对路径、符号链接等），获取脚本所在目录并非总是 straightforward。 实现步骤1. 使用dirname和$0这是最基本的方法，$0代表脚
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-16 08:00" pubdate>
+              2025-04-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/" class="category-chain-item">脚本编程</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Bash/">#Bash</a>
+            
+              <a href="/tags/Shell%E8%84%9A%E6%9C%AC/">#Shell脚本</a>
+            
+              <a href="/tags/%E8%84%9A%E6%9C%AC%E7%9B%AE%E5%BD%95%E8%8E%B7%E5%8F%96/">#脚本目录获取</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/41/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/#board">40</a><a class="page-number" href="/page/41/#board">41</a><span class="page-number current">42</span><a class="page-number" href="/page/43/#board">43</a><a class="page-number" href="/page/44/#board">44</a><span class="space">&hellip;</span><a class="page-number" href="/page/55/#board">55</a><a class="extend next" rel="next" href="/page/43/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

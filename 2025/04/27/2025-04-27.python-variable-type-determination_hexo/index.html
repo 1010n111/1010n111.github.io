@@ -1,0 +1,694 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Python变量类型判断方法详解技术背景在Python编程中，变量类型的判断是一项基础且重要的操作。由于Python是动态类型语言，变量的类型在运行时才能确定，因此在开发过程中，我们常常需要明确变量的类型，以便进行相应的操作。同时，Python没有像C&#x2F;C++那样的固定位数的有符号或无符号整数类型，这也给变量类型的判断带来了一些特殊情况。 实现步骤使用type()函数type()是Pyt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python变量类型判断方法详解">
+<meta property="og:url" content="http://example.com/2025/04/27/2025-04-27.python-variable-type-determination_hexo/index.html">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="Python变量类型判断方法详解技术背景在Python编程中，变量类型的判断是一项基础且重要的操作。由于Python是动态类型语言，变量的类型在运行时才能确定，因此在开发过程中，我们常常需要明确变量的类型，以便进行相应的操作。同时，Python没有像C&#x2F;C++那样的固定位数的有符号或无符号整数类型，这也给变量类型的判断带来了一些特殊情况。 实现步骤使用type()函数type()是Pyt">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-27T00:55:52.000Z">
+<meta property="article:modified_time" content="2025-04-27T00:55:52.171Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="后端开发">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="type函数">
+<meta property="article:tag" content="isinstance函数">
+<meta property="article:tag" content="变量类型判断">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Python变量类型判断方法详解 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Python变量类型判断方法详解"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-04-27 08:55" pubdate>
+          2025年4月27日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          761 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          7 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Python变量类型判断方法详解</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Python变量类型判断方法详解"><a href="#Python变量类型判断方法详解" class="headerlink" title="Python变量类型判断方法详解"></a>Python变量类型判断方法详解</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在Python编程中，变量类型的判断是一项基础且重要的操作。由于Python是动态类型语言，变量的类型在运行时才能确定，因此在开发过程中，我们常常需要明确变量的类型，以便进行相应的操作。同时，Python没有像C&#x2F;C++那样的固定位数的有符号或无符号整数类型，这也给变量类型的判断带来了一些特殊情况。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="使用type-函数"><a href="#使用type-函数" class="headerlink" title="使用type()函数"></a>使用<code>type()</code>函数</h3><p><code>type()</code>是Python的内置函数，可用于返回变量的类型。以下是具体示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 整数类型</span><br>i = <span class="hljs-number">123</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(i))  <span class="hljs-comment"># 输出：&lt;class &#x27;int&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(i) <span class="hljs-keyword">is</span> <span class="hljs-built_in">int</span>)  <span class="hljs-comment"># 输出：True</span><br><br><span class="hljs-comment"># 浮点数类型</span><br>i = <span class="hljs-number">123.456</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(i))  <span class="hljs-comment"># 输出：&lt;class &#x27;float&#x27;&gt;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(i) <span class="hljs-keyword">is</span> <span class="hljs-built_in">float</span>)  <span class="hljs-comment"># 输出：True</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="使用isinstance-函数"><a href="#使用isinstance-函数" class="headerlink" title="使用isinstance()函数"></a>使用<code>isinstance()</code>函数</h3><p><code>isinstance()</code>函数用于检查变量是否为指定类型或指定类型元组中的某一类型。示例如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">i = <span class="hljs-number">123</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">isinstance</span>(i, <span class="hljs-built_in">int</span>))  <span class="hljs-comment"># 输出：True</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">isinstance</span>(i, (<span class="hljs-built_in">float</span>, <span class="hljs-built_in">str</span>, <span class="hljs-built_in">set</span>, <span class="hljs-built_in">dict</span>)))  <span class="hljs-comment"># 输出：False</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="其他方法"><a href="#其他方法" class="headerlink" title="其他方法"></a>其他方法</h3><ul>
+<li><strong>使用<code>__class__</code>属性</strong>：虽然可以使用<code>__class__</code>属性获取变量的类型，但由于以双下划线开头的名称在语义上不属于公共API，不建议使用。示例：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]<br><span class="hljs-built_in">print</span>(a.__class__)  <span class="hljs-comment"># 输出：&lt;class &#x27;list&#x27;&gt;</span><br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>使用<code>struct</code>模块</strong>：若要生成具有C语言原始类型语义的Python对象，可使用<code>struct</code>模块。示例：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> struct<br><span class="hljs-built_in">print</span>(struct.calcsize(<span class="hljs-string">&#x27;c&#x27;</span>))  <span class="hljs-comment"># 输出：1，表示char类型的字节数</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 使用type()函数</span><br>num = <span class="hljs-number">10</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(num))  <span class="hljs-comment"># 输出：&lt;class &#x27;int&#x27;&gt;</span><br><br><span class="hljs-comment"># 使用isinstance()函数</span><br>str_var = <span class="hljs-string">&quot;hello&quot;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">isinstance</span>(str_var, <span class="hljs-built_in">str</span>))  <span class="hljs-comment"># 输出：True</span><br><br><span class="hljs-comment"># 不建议使用的__class__属性</span><br>lst = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]<br><span class="hljs-built_in">print</span>(lst.__class__)  <span class="hljs-comment"># 输出：&lt;class &#x27;list&#x27;&gt;</span><br><br><span class="hljs-comment"># 使用struct模块</span><br><span class="hljs-keyword">import</span> struct<br><span class="hljs-built_in">print</span>(struct.calcsize(<span class="hljs-string">&#x27;i&#x27;</span>))  <span class="hljs-comment"># 输出：4，表示int类型的字节数</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h3 id="优先使用isinstance"><a href="#优先使用isinstance" class="headerlink" title="优先使用isinstance()"></a>优先使用<code>isinstance()</code></h3><p><code>isinstance()</code>不仅速度更快，还能考虑到继承关系，通常是比较类型的首选方法。示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyList</span>(<span class="hljs-title class_ inherited__">list</span>):<br>    <span class="hljs-keyword">pass</span><br><br>my_list = MyList()<br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">isinstance</span>(my_list, <span class="hljs-built_in">list</span>))  <span class="hljs-comment"># 输出：True</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="使用type-明确检查特定类型"><a href="#使用type-明确检查特定类型" class="headerlink" title="使用type()明确检查特定类型"></a>使用<code>type()</code>明确检查特定类型</h3><p>当需要明确检查变量是否为特定类型（而非其子类）时，使用<code>type()</code>函数，并且使用<code>is</code>运算符。示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">var = <span class="hljs-string">&quot;string&quot;</span><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(var) <span class="hljs-keyword">is</span> <span class="hljs-built_in">str</span>)  <span class="hljs-comment"># 输出：True</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="Python是否有固定位数的整数类型"><a href="#Python是否有固定位数的整数类型" class="headerlink" title="Python是否有固定位数的整数类型"></a>Python是否有固定位数的整数类型</h3><p>Python没有像C&#x2F;C++那样的固定位数的有符号或无符号整数类型。在Python 2中，<code>int</code>通常是有符号整数，等于实现的字宽；当整数超出范围时，会转换为<code>long</code>类型（具有无限精度）。在Python 3中，<code>int</code>就是Python 2中的<code>long</code>，具有无限精度。</p>
+<h3 id="type-和isinstance-的性能差异"><a href="#type-和isinstance-的性能差异" class="headerlink" title="type()和isinstance()的性能差异"></a><code>type()</code>和<code>isinstance()</code>的性能差异</h3><p><code>isinstance()</code>通常比<code>type()</code>更快。例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 测试type()的性能</span><br><span class="hljs-keyword">import</span> timeit<br>result_type = timeit.timeit(stmt=<span class="hljs-string">&quot;type(variable) is int&quot;</span>, setup=<span class="hljs-string">&quot;variable = &#x27;hello_world&#x27;&quot;</span>, number=<span class="hljs-number">5000000</span>)<br><span class="hljs-built_in">print</span>(result_type)<br><br><span class="hljs-comment"># 测试isinstance()的性能</span><br>result_isinstance = timeit.timeit(stmt=<span class="hljs-string">&quot;isinstance(variable, str)&quot;</span>, setup=<span class="hljs-string">&quot;variable = &#x27;hello_world&#x27;&quot;</span>, number=<span class="hljs-number">10000000</span>)<br><span class="hljs-built_in">print</span>(result_isinstance)<br></code></pre></td></tr></table></figure>
+<p>通过上述测试可以发现，<code>isinstance()</code>的性能更优。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/" class="category-chain-item">Python编程</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#后端开发</a>
+      
+        <a href="/tags/Python/" class="print-no-link">#Python</a>
+      
+        <a href="/tags/type%E5%87%BD%E6%95%B0/" class="print-no-link">#type函数</a>
+      
+        <a href="/tags/isinstance%E5%87%BD%E6%95%B0/" class="print-no-link">#isinstance函数</a>
+      
+        <a href="/tags/%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD/" class="print-no-link">#变量类型判断</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Python变量类型判断方法详解</div>
+      <div>http://example.com/2025/04/27/2025-04-27.python-variable-type-determination_hexo/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年4月27日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/04/27/2025-04-27.jvm-xms-xmx-parameters-explanation_hexo/" title="JVM启动时-Xms和-Xmx参数详解">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">JVM启动时-Xms和-Xmx参数详解</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/04/25/2025-04-25.methods-to-remove-specific-elements-from-arrays-in-javascript_hexo/" title="JavaScript中移除数组特定元素的方法">
+                        <span class="hidden-mobile">JavaScript中移除数组特定元素的方法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
