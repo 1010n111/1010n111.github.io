@@ -223,15 +223,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.listing-linux-directory-sizes_hexo/" target="_self">
-          使用命令列出Linux目录及其总大小
+        <a href="/2025/04/23/2025-04-23.linux-variable-definition-with-or-without-export_hexo/" target="_self">
+          Linux中带或不带export定义变量的区别
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.listing-linux-directory-sizes_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.linux-variable-definition-with-or-without-export_hexo/" target="_self">
         <div>
-          使用命令列出Linux目录及其总大小技术背景在Linux系统中，ls 命令通常用于列出文件和目录，但它默认显示的目录大小只是目录文件本身的大小，并非目录及其所有内容的总大小。而在实际管理和维护系统时，我们常常需要了解各个目录占用磁盘空间的真实情况，以便进行磁盘空间的优化和管理。 实现步骤1. 使用 du 命令du（Disk Usage）是一个用于估计文件和目录磁盘使用情况的命令。以下是一些常见的用
+          Linux中带或不带export定义变量的区别技术背景在Linux系统的Bash等shell环境中，变量的定义和使用是日常操作的基础。变量可以用来存储各种信息，如路径、配置参数等。而export是一个重要的命令，它与变量的作用域密切相关，影响着变量在不同进程间的可见性。理解带或不带export定义变量的区别，对于编写高效、正确的shell脚本以及进行系统配置至关重要。 实现步骤不带export定义
         </div>
       </a>
 
@@ -255,12 +255,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/" class="category-chain-item">系统管理</a>
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/" class="category-chain-item">系统运维</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/Linux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/" class="category-chain-item">Linux命令使用</a>
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/Linux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/" class="category-chain-item">Linux命令使用</a>
   
   
 
@@ -279,13 +279,13 @@
             
               <a href="/tags/Linux/">#Linux</a>
             
-              <a href="/tags/Shell/">#Shell</a>
+              <a href="/tags/Bash/">#Bash</a>
             
-              <a href="/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/">#系统管理</a>
+              <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/">#系统运维</a>
             
-              <a href="/tags/%E7%A3%81%E7%9B%98%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/">#磁盘使用统计</a>
+              <a href="/tags/%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89/">#变量定义</a>
             
-              <a href="/tags/%E7%9B%AE%E5%BD%95%E5%A4%A7%E5%B0%8F%E7%BB%9F%E8%AE%A1/">#目录大小统计</a>
+              <a href="/tags/export%E5%91%BD%E4%BB%A4/">#export命令</a>
             
           </div>
         
@@ -579,15 +579,91 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
               <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
             
               <a href="/tags/MarkItDown/">#MarkItDown</a>
             
               <a href="/tags/%E6%96%87%E4%BB%B6%E8%BD%AC%E6%8D%A2/">#文件转换</a>
             
               <a href="/tags/Markdown/">#Markdown</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/23/2025-04-23.meaning-of-colon-exclamation-exclamation-in-c_hexo/" target="_self">
+          C语言中 &#39;:-!!&#39; 的含义解析
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.meaning-of-colon-exclamation-exclamation-in-c_hexo/" target="_self">
+        <div>
+          C语言中 ‘:-!!’ 的含义解析技术背景在Linux内核代码（如 /usr/include/linux/kernel.h 或 /usr/include/linux/build_bug.h）中，存在如下宏定义： 12#define BUILD_BUG_ON_ZERO(e) (sizeof(struct &#123; int:-!!(e); &#125;))#define BUILD_BUG_ON_
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-23 11:14" pubdate>
+              2025-04-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B/" class="category-chain-item">C语言编程</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/C%E8%AF%AD%E8%A8%80/">#C语言</a>
+            
+              <a href="/tags/Linux%E5%86%85%E6%A0%B8/">#Linux内核</a>
+            
+              <a href="/tags/%E7%BC%96%E8%AF%91%E6%97%B6%E6%A3%80%E6%9F%A5/">#编译时检查</a>
+            
+              <a href="/tags/%E5%AE%8F%E5%AE%9A%E4%B9%89/">#宏定义</a>
             
           </div>
         
@@ -671,82 +747,6 @@
               <a href="/tags/%E7%BB%88%E7%AB%AF%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE/">#终端颜色设置</a>
             
               <a href="/tags/echo%E5%91%BD%E4%BB%A4/">#echo命令</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/23/2025-04-23.meaning-of-colon-exclamation-exclamation-in-c_hexo/" target="_self">
-          C语言中 &#39;:-!!&#39; 的含义解析
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.meaning-of-colon-exclamation-exclamation-in-c_hexo/" target="_self">
-        <div>
-          C语言中 ‘:-!!’ 的含义解析技术背景在Linux内核代码（如 /usr/include/linux/kernel.h 或 /usr/include/linux/build_bug.h）中，存在如下宏定义： 12#define BUILD_BUG_ON_ZERO(e) (sizeof(struct &#123; int:-!!(e); &#125;))#define BUILD_BUG_ON_
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-23 11:14" pubdate>
-              2025-04-23
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B/" class="category-chain-item">C语言编程</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/C%E8%AF%AD%E8%A8%80/">#C语言</a>
-            
-              <a href="/tags/Linux%E5%86%85%E6%A0%B8/">#Linux内核</a>
-            
-              <a href="/tags/%E7%BC%96%E8%AF%91%E6%97%B6%E6%A3%80%E6%9F%A5/">#编译时检查</a>
-            
-              <a href="/tags/%E5%AE%8F%E5%AE%9A%E4%B9%89/">#宏定义</a>
             
           </div>
         
