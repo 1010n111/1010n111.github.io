@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -605,82 +630,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/17/2025-04-17.transitioning-from-jquery-to-angularjs/" target="_self">
-          从jQuery背景过渡到AngularJS的思维转变
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/17/2025-04-17.transitioning-from-jquery-to-angularjs/" target="_self">
-        <div>
-          从jQuery背景过渡到AngularJS的思维转变技术背景jQuery是一个功能强大的JavaScript库，以其简洁的语法和出色的DOM操作能力受到广泛欢迎。它让开发者可以方便地选择和操作DOM元素，处理事件，以及实现动画效果等。而AngularJS则是一个完整的前端框架，采用MVC（Model-View-Controller）模式，强调数据绑定、依赖注入和模块化开发。对于有jQuery开发经
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-17 08:00" pubdate>
-              2025-04-17
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E8%BF%81%E7%A7%BB%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架迁移实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
-            
-              <a href="/tags/JavaScript/">#JavaScript</a>
-            
-              <a href="/tags/jQuery/">#jQuery</a>
-            
-              <a href="/tags/AngularJS/">#AngularJS</a>
-            
-              <a href="/tags/%E6%A1%86%E6%9E%B6%E6%80%9D%E7%BB%B4%E8%BD%AC%E5%8F%98/">#框架思维转变</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/17/2025-04-17.solution-to-pass-null-surname-to-soap-service-in-actionscript3/" target="_self">
           在ActionScript 3中向SOAP Web服务传递“Null”姓氏的解决方案
         </a>
@@ -744,6 +693,82 @@
               <a href="/tags/SOAP-Web%E6%9C%8D%E5%8A%A1/">#SOAP Web服务</a>
             
               <a href="/tags/%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">#数据传递问题解决</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/17/2025-04-17.transitioning-from-jquery-to-angularjs/" target="_self">
+          从jQuery背景过渡到AngularJS的思维转变
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/17/2025-04-17.transitioning-from-jquery-to-angularjs/" target="_self">
+        <div>
+          从jQuery背景过渡到AngularJS的思维转变技术背景jQuery是一个功能强大的JavaScript库，以其简洁的语法和出色的DOM操作能力受到广泛欢迎。它让开发者可以方便地选择和操作DOM元素，处理事件，以及实现动画效果等。而AngularJS则是一个完整的前端框架，采用MVC（Model-View-Controller）模式，强调数据绑定、依赖注入和模块化开发。对于有jQuery开发经
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-17 08:00" pubdate>
+              2025-04-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E8%BF%81%E7%A7%BB%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架迁移实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/jQuery/">#jQuery</a>
+            
+              <a href="/tags/AngularJS/">#AngularJS</a>
+            
+              <a href="/tags/%E6%A1%86%E6%9E%B6%E6%80%9D%E7%BB%B4%E8%BD%AC%E5%8F%98/">#框架思维转变</a>
             
           </div>
         

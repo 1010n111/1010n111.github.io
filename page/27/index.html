@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -455,6 +480,89 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2025/04/22/2025-04-22.requestparam-vs-pathvariable/" target="_self">
+          @RequestParam vs @PathVariable
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/22/2025-04-22.requestparam-vs-pathvariable/" target="_self">
+        <div>
+          @RequestParam vs @PathVariable技术背景在Java的Spring框架中，@RequestParam和@PathVariable是两个常用的注解，用于从HTTP请求中获取参数。理解它们的区别和使用场景，对于开发高效、清晰的Spring应用至关重要。 实现步骤@RequestParam@RequestParam 用于从请求的查询参数中获取值。查询参数通常是URL中问号（?）
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-22 08:31" pubdate>
+              2025-04-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E5%BC%80%E5%8F%91/" class="category-chain-item">Java开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E5%BC%80%E5%8F%91/Spring%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/" class="category-chain-item">Spring框架应用</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Java/">#Java</a>
+            
+              <a href="/tags/Spring/">#Spring</a>
+            
+              <a href="/tags/RequestParam/">#@RequestParam</a>
+            
+              <a href="/tags/PathVariable/">#@PathVariable</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2025/04/22/2025-04-22.reason-different-performances-binary-categorical-crossentropy/" target="_self">
           二元交叉熵和分类交叉熵在同一问题中表现不同的原因
         </a>
@@ -531,15 +639,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/22/2025-04-22.requestparam-vs-pathvariable/" target="_self">
-          @RequestParam vs @PathVariable
+        <a href="/2025/04/22/2025-04-22.running-tensorboard-on-remote-server/" target="_self">
+          在远程服务器上运行TensorBoard的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/22/2025-04-22.requestparam-vs-pathvariable/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/22/2025-04-22.running-tensorboard-on-remote-server/" target="_self">
         <div>
-          @RequestParam vs @PathVariable技术背景在Java的Spring框架中，@RequestParam和@PathVariable是两个常用的注解，用于从HTTP请求中获取参数。理解它们的区别和使用场景，对于开发高效、清晰的Spring应用至关重要。 实现步骤@RequestParam@RequestParam 用于从请求的查询参数中获取值。查询参数通常是URL中问号（?）
+          在远程服务器上运行TensorBoard的方法技术背景TensorFlow是一个广泛使用的开源机器学习框架，而TensorBoard是TensorFlow提供的一个强大的可视化工具，它可以帮助开发者更好地理解、调试和优化机器学习模型。当我们在远程服务器上进行机器学习实验时，可能需要使用TensorBoard来可视化训练过程和结果。然而，由于服务器的远程特性，需要一些额外的步骤来在本地浏览器中访问远
         </div>
       </a>
 
@@ -563,20 +671,13 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="category-chain-item">机器学习</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E5%BC%80%E5%8F%91/" class="category-chain-item">Java开发</a>
+  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%B7%A5%E5%85%B7%E5%AE%9E%E8%B7%B5/" class="category-chain-item">工具实践</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E5%BC%80%E5%8F%91/Spring%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/" class="category-chain-item">Spring框架应用</a>
-  
-  
-
   
 
   
@@ -592,15 +693,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+              <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/Java/">#Java</a>
+              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">#机器学习</a>
             
-              <a href="/tags/Spring/">#Spring</a>
+              <a href="/tags/TensorFlow/">#TensorFlow</a>
             
-              <a href="/tags/RequestParam/">#@RequestParam</a>
+              <a href="/tags/TensorBoard/">#TensorBoard</a>
             
-              <a href="/tags/PathVariable/">#@PathVariable</a>
+              <a href="/tags/%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/">#远程服务器</a>
             
           </div>
         
@@ -697,15 +798,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/22/2025-04-22.running-tensorboard-on-remote-server/" target="_self">
-          在远程服务器上运行TensorBoard的方法
+        <a href="/2025/04/22/2025-04-22.simple-explanation-of-naive-bayes-classification/" target="_self">
+          朴素贝叶斯分类的简单解释
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/22/2025-04-22.running-tensorboard-on-remote-server/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/22/2025-04-22.simple-explanation-of-naive-bayes-classification/" target="_self">
         <div>
-          在远程服务器上运行TensorBoard的方法技术背景TensorFlow是一个广泛使用的开源机器学习框架，而TensorBoard是TensorFlow提供的一个强大的可视化工具，它可以帮助开发者更好地理解、调试和优化机器学习模型。当我们在远程服务器上进行机器学习实验时，可能需要使用TensorBoard来可视化训练过程和结果。然而，由于服务器的远程特性，需要一些额外的步骤来在本地浏览器中访问远
+          朴素贝叶斯分类的简单解释技术背景朴素贝叶斯是一种基于贝叶斯定理和特征条件独立假设的分类算法。在机器学习领域，分类问题是一个常见的任务，例如判断一封邮件是否为垃圾邮件、识别一张图片中的物体类别等。朴素贝叶斯算法由于其简单高效的特点，在文本分类、垃圾邮件过滤、情感分析等领域有着广泛的应用。 实现步骤1. 理解条件概率和贝叶斯规则 条件概率：指在某个事件已经发生的条件下，另一个事件发生的概率。用公式表示
         </div>
       </a>
 
@@ -734,7 +835,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%B7%A5%E5%85%B7%E5%AE%9E%E8%B7%B5/" class="category-chain-item">工具实践</a>
+  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95/" class="category-chain-item">分类算法</a>
   
   
 
@@ -755,11 +856,11 @@
             
               <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">#机器学习</a>
             
-              <a href="/tags/TensorFlow/">#TensorFlow</a>
+              <a href="/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF/">#朴素贝叶斯</a>
             
-              <a href="/tags/TensorBoard/">#TensorBoard</a>
+              <a href="/tags/%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95/">#分类算法</a>
             
-              <a href="/tags/%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/">#远程服务器</a>
+              <a href="/tags/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/">#条件概率</a>
             
           </div>
         
@@ -912,82 +1013,6 @@
               <a href="/tags/K-Means%E8%81%9A%E7%B1%BB/">#K - Means聚类</a>
             
               <a href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%9D%E7%A6%BB%E5%87%BD%E6%95%B0/">#自定义距离函数</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/22/2025-04-22.simple-explanation-of-naive-bayes-classification/" target="_self">
-          朴素贝叶斯分类的简单解释
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/22/2025-04-22.simple-explanation-of-naive-bayes-classification/" target="_self">
-        <div>
-          朴素贝叶斯分类的简单解释技术背景朴素贝叶斯是一种基于贝叶斯定理和特征条件独立假设的分类算法。在机器学习领域，分类问题是一个常见的任务，例如判断一封邮件是否为垃圾邮件、识别一张图片中的物体类别等。朴素贝叶斯算法由于其简单高效的特点，在文本分类、垃圾邮件过滤、情感分析等领域有着广泛的应用。 实现步骤1. 理解条件概率和贝叶斯规则 条件概率：指在某个事件已经发生的条件下，另一个事件发生的概率。用公式表示
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-22 08:31" pubdate>
-              2025-04-22
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="category-chain-item">机器学习</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95/" class="category-chain-item">分类算法</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">#机器学习</a>
-            
-              <a href="/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF/">#朴素贝叶斯</a>
-            
-              <a href="/tags/%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95/">#分类算法</a>
-            
-              <a href="/tags/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87/">#条件概率</a>
             
           </div>
         

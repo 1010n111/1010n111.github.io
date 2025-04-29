@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -227,15 +252,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/18/2025-04-18.python-switch-statement-alternatives/" target="_self">
-          Python中switch语句的替代方案
+        <a href="/2025/04/18/2025-04-18.python-script-profiling-methods/" target="_self">
+          Python脚本性能分析方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/18/2025-04-18.python-switch-statement-alternatives/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/18/2025-04-18.python-script-profiling-methods/" target="_self">
         <div>
-          Python中switch语句的替代方案技术背景在许多编程语言中，switch 或 case 语句是一种常用的条件分支结构，用于根据不同的输入值执行不同的代码块。然而，Python 语言并没有直接提供 switch 语句。这可能会让习惯使用 switch 语句的开发者在 Python 中处理多分支条件时感到困惑。不过，Python 提供了多种方法来实现类似 switch 语句的功能。 实现步骤Py
+          Python脚本性能分析方法技术背景在Python编程中，尤其是处理复杂任务或参与编程竞赛（如Project Euler）时，了解程序的运行时间至关重要。有时Python代码的性能可能不理想，需要找出性能瓶颈并进行优化。性能分析（Profiling）是一种有效的方法，它可以帮助我们确定程序中哪些部分运行缓慢，从而有针对性地进行优化。 实现步骤使用cProfile进行性能分析cProfile是Pyt
         </div>
       </a>
 
@@ -264,7 +289,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/" class="category-chain-item">性能分析</a>
   
   
 
@@ -285,85 +310,11 @@
             
               <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/%E8%AF%AD%E6%B3%95%E7%89%B9%E6%80%A7/">#语法特性</a>
+              <a href="/tags/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/">#代码优化</a>
             
-              <a href="/tags/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E6%9B%BF%E4%BB%A3/">#条件语句替代</a>
+              <a href="/tags/cProfile/">#cProfile</a>
             
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/18/2025-04-18.why-python-classes-inherit-object/" target="_self">
-          Python类为何继承object
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/18/2025-04-18.why-python-classes-inherit-object/" target="_self">
-        <div>
-          Python类为何继承object技术背景在Python编程中，我们常常会看到类似class MyClass(object):的类声明方式。这涉及到Python中“旧风格类”（old-style classes）和“新风格类”（new-style classes）的概念。Python在2.2版本引入了新风格类，它对旧风格类进行了改进。旧风格类在Python 2.x时代存在一些缺陷，而新风格类通过继
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-18 08:00" pubdate>
-              2025-04-18
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/" class="category-chain-item">Python编程</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/">#面向对象编程</a>
-            
-              <a href="/tags/%E7%B1%BB%E7%BB%A7%E6%89%BF/">#类继承</a>
-            
-              <a href="/tags/%E6%96%B0%E9%A3%8E%E6%A0%BC%E7%B1%BB/">#新风格类</a>
+              <a href="/tags/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/">#性能分析</a>
             
           </div>
         
@@ -440,6 +391,82 @@
               <a href="/tags/UPDATE%E6%93%8D%E4%BD%9C/">#UPDATE操作</a>
             
               <a href="/tags/SELECT%E8%AF%AD%E5%8F%A5/">#SELECT语句</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/18/2025-04-18.why-python-classes-inherit-object/" target="_self">
+          Python类为何继承object
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/18/2025-04-18.why-python-classes-inherit-object/" target="_self">
+        <div>
+          Python类为何继承object技术背景在Python编程中，我们常常会看到类似class MyClass(object):的类声明方式。这涉及到Python中“旧风格类”（old-style classes）和“新风格类”（new-style classes）的概念。Python在2.2版本引入了新风格类，它对旧风格类进行了改进。旧风格类在Python 2.x时代存在一些缺陷，而新风格类通过继
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-18 08:00" pubdate>
+              2025-04-18
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/" class="category-chain-item">Python编程</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/">#面向对象编程</a>
+            
+              <a href="/tags/%E7%B1%BB%E7%BB%A7%E6%89%BF/">#类继承</a>
+            
+              <a href="/tags/%E6%96%B0%E9%A3%8E%E6%A0%BC%E7%B1%BB/">#新风格类</a>
             
           </div>
         

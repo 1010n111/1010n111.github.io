@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -683,82 +708,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/18/2025-04-18.differences-between-hashmap-and-hashtable-in-java/" target="_self">
-          Java中HashMap和Hashtable的区别
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/18/2025-04-18.differences-between-hashmap-and-hashtable-in-java/" target="_self">
-        <div>
-          Java中HashMap和Hashtable的区别技术背景在Java编程中，HashMap 和 Hashtable 都是用于存储键值对的数据结构，它们都利用哈希技术来存储唯一的键。Hashtable 是JDK 1.0中引入的遗留类，而 HashMap 是JDK 1.2中作为Java集合框架的一部分引入的。随着Java的发展，了解它们之间的区别对于选择合适的数据结构至关重要。 实现步骤1. 同步性
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-18 08:00" pubdate>
-              2025-04-18
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/" class="category-chain-item">Java集合框架</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Java/">#Java</a>
-            
-              <a href="/tags/HashMap/">#HashMap</a>
-            
-              <a href="/tags/Hashtable/">#Hashtable</a>
-            
-              <a href="/tags/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/">#集合框架</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/18/2025-04-18.csharp-enum-enumeration-methods/" target="_self">
           C#中枚举类型的枚举方法
         </a>
@@ -822,6 +771,82 @@
               <a href="/tags/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/">#枚举类型</a>
             
               <a href="/tags/%E6%9E%9A%E4%B8%BE%E6%96%B9%E6%B3%95/">#枚举方法</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/18/2025-04-18.differences-between-hashmap-and-hashtable-in-java/" target="_self">
+          Java中HashMap和Hashtable的区别
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/18/2025-04-18.differences-between-hashmap-and-hashtable-in-java/" target="_self">
+        <div>
+          Java中HashMap和Hashtable的区别技术背景在Java编程中，HashMap 和 Hashtable 都是用于存储键值对的数据结构，它们都利用哈希技术来存储唯一的键。Hashtable 是JDK 1.0中引入的遗留类，而 HashMap 是JDK 1.2中作为Java集合框架的一部分引入的。随着Java的发展，了解它们之间的区别对于选择合适的数据结构至关重要。 实现步骤1. 同步性
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-18 08:00" pubdate>
+              2025-04-18
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/" class="category-chain-item">Java集合框架</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Java/">#Java</a>
+            
+              <a href="/tags/HashMap/">#HashMap</a>
+            
+              <a href="/tags/Hashtable/">#Hashtable</a>
+            
+              <a href="/tags/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/">#集合框架</a>
             
           </div>
         
@@ -911,15 +936,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/18/2025-04-18.how-to-delete-a-commit-from-a-branch/" target="_self">
-          如何从分支中删除提交
+        <a href="/2025/04/18/2025-04-18.git-rebase-undo-guide/" target="_self">
+          撤销 Git 变基操作全攻略
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/18/2025-04-18.how-to-delete-a-commit-from-a-branch/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/18/2025-04-18.git-rebase-undo-guide/" target="_self">
         <div>
-          如何从分支中删除提交技术背景在使用Git进行版本控制的过程中，我们可能会因为各种原因需要从分支历史中删除某个提交，比如误提交了敏感信息、错误的代码修改等。掌握删除提交的方法，能帮助我们更好地管理代码仓库，保持代码历史的整洁和准确。 实现步骤1. 未推送提交的情况如果要删除的提交还未推送到远程仓库，可以使用git rebase -i命令。  步骤1：确定提交位置：通过git log查看提交历史，找到
+          撤销 Git 变基操作全攻略技术背景在使用 Git 进行版本控制时，git rebase 是一个强大的工具，它可以将一系列提交移动或合并到另一个基础提交上，使提交历史看起来更加线性。然而，有时候我们可能会在执行 git rebase 后发现操作有误，需要撤销这个变基操作。手动撤销变基操作可能会很繁琐且容易出错，因此掌握一些简单有效的撤销方法是很有必要的。 实现步骤方法一：使用 git reflog
         </div>
       </a>
 
@@ -943,12 +968,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/" class="category-chain-item">版本控制</a>
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Git实践</a>
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7%E5%AE%9E%E8%B7%B5/" class="category-chain-item">版本控制工具实践</a>
   
   
 
@@ -965,15 +990,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
               <a href="/tags/Git/">#Git</a>
             
               <a href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">#版本控制</a>
             
-              <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/">#命令行工具</a>
+              <a href="/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/">#代码管理</a>
             
-              <a href="/tags/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/">#分支管理</a>
-            
-              <a href="/tags/%E6%8F%90%E4%BA%A4%E5%88%A0%E9%99%A4/">#提交删除</a>
+              <a href="/tags/%E5%8F%98%E5%9F%BA%E6%92%A4%E9%94%80/">#变基撤销</a>
             
           </div>
         

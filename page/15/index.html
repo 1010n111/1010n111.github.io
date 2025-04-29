@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -227,91 +252,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.linux-variable-definition-with-or-without-export_hexo/" target="_self">
-          Linux中带或不带export定义变量的区别
+        <a href="/2025/04/23/2025-04-23.linux-symbolic-link-creation-methods_hexo/" target="_self">
+          Linux 中创建符号链接的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.linux-variable-definition-with-or-without-export_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.linux-symbolic-link-creation-methods_hexo/" target="_self">
         <div>
-          Linux中带或不带export定义变量的区别技术背景在Linux系统的Bash等shell环境中，变量的定义和使用是日常操作的基础。变量可以用来存储各种信息，如路径、配置参数等。而export是一个重要的命令，它与变量的作用域密切相关，影响着变量在不同进程间的可见性。理解带或不带export定义变量的区别，对于编写高效、正确的shell脚本以及进行系统配置至关重要。 实现步骤不带export定义
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-23 11:14" pubdate>
-              2025-04-23
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/" class="category-chain-item">系统运维</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/Linux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/" class="category-chain-item">Linux命令使用</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Linux/">#Linux</a>
-            
-              <a href="/tags/Bash/">#Bash</a>
-            
-              <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/">#系统运维</a>
-            
-              <a href="/tags/%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89/">#变量定义</a>
-            
-              <a href="/tags/export%E5%91%BD%E4%BB%A4/">#export命令</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/23/2025-04-23.listing-linux-directory-sizes_hexo/" target="_self">
-          使用命令列出Linux目录及其总大小
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.listing-linux-directory-sizes_hexo/" target="_self">
-        <div>
-          使用命令列出Linux目录及其总大小技术背景在Linux系统中，ls 命令通常用于列出文件和目录，但它默认显示的目录大小只是目录文件本身的大小，并非目录及其所有内容的总大小。而在实际管理和维护系统时，我们常常需要了解各个目录占用磁盘空间的真实情况，以便进行磁盘空间的优化和管理。 实现步骤1. 使用 du 命令du（Disk Usage）是一个用于估计文件和目录磁盘使用情况的命令。以下是一些常见的用
+          Linux 中创建符号链接的方法技术背景在 Linux 系统里，符号链接（Symbolic Link），也被叫做软链接（Soft Link），是一种特殊的文件，它指向另一个文件或者目录。符号链接为文件和目录的管理带来了极大的便利，比如可以在不移动实际文件的情况下，在不同位置访问该文件；还能解决文件路径过长或者复杂的问题。 实现步骤1. 基本命令格式创建符号链接主要使用 ln 命令，基本语法如下：
         </div>
       </a>
 
@@ -340,7 +289,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/Linux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/" class="category-chain-item">Linux命令使用</a>
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/" class="category-chain-item">文件操作</a>
   
   
 
@@ -359,13 +308,11 @@
             
               <a href="/tags/Linux/">#Linux</a>
             
-              <a href="/tags/Shell/">#Shell</a>
+              <a href="/tags/Bash/">#Bash</a>
             
               <a href="/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/">#系统管理</a>
             
-              <a href="/tags/%E7%A3%81%E7%9B%98%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/">#磁盘使用统计</a>
-            
-              <a href="/tags/%E7%9B%AE%E5%BD%95%E5%A4%A7%E5%B0%8F%E7%BB%9F%E8%AE%A1/">#目录大小统计</a>
+              <a href="/tags/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5%E5%88%9B%E5%BB%BA/">#符号链接创建</a>
             
           </div>
         
@@ -442,6 +389,82 @@
               <a href="/tags/%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86/">#模型推理</a>
             
               <a href="/tags/%E6%A8%A1%E5%9E%8B%E5%BE%AE%E8%B0%83/">#模型微调</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/23/2025-04-23.listing-linux-directory-sizes_hexo/" target="_self">
+          使用命令列出Linux目录及其总大小
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.listing-linux-directory-sizes_hexo/" target="_self">
+        <div>
+          使用命令列出Linux目录及其总大小技术背景在Linux系统中，ls 命令通常用于列出文件和目录，但它默认显示的目录大小只是目录文件本身的大小，并非目录及其所有内容的总大小。而在实际管理和维护系统时，我们常常需要了解各个目录占用磁盘空间的真实情况，以便进行磁盘空间的优化和管理。 实现步骤1. 使用 du 命令du（Disk Usage）是一个用于估计文件和目录磁盘使用情况的命令。以下是一些常见的用
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-23 11:14" pubdate>
+              2025-04-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/" class="category-chain-item">系统管理</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/Linux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/" class="category-chain-item">Linux命令使用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Linux/">#Linux</a>
+            
+              <a href="/tags/Shell/">#Shell</a>
+            
+              <a href="/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/">#系统管理</a>
+            
+              <a href="/tags/%E7%A3%81%E7%9B%98%E4%BD%BF%E7%94%A8%E7%BB%9F%E8%AE%A1/">#磁盘使用统计</a>
+            
+              <a href="/tags/%E7%9B%AE%E5%BD%95%E5%A4%A7%E5%B0%8F%E7%BB%9F%E8%AE%A1/">#目录大小统计</a>
             
           </div>
         
@@ -916,15 +939,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.mysql-multiple-columns-unique-constraint_hexo/" target="_self">
-          MySQL中如何为多列指定唯一约束
+        <a href="/2025/04/23/2025-04-23.mysql-text-types-maximum-storage-sizes_hexo/" target="_self">
+          MySQL中TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT的最大存储大小
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.mysql-multiple-columns-unique-constraint_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.mysql-text-types-maximum-storage-sizes_hexo/" target="_self">
         <div>
-          MySQL中如何为多列指定唯一约束技术背景在数据库设计中，有时需要确保表中多列的组合值是唯一的。例如，在一个投票表中，需要保证user、email和address这三列的组合值在表中是唯一的，以避免重复投票或重复记录。MySQL 提供了多种方法来实现多列的唯一约束。 实现步骤创建表时指定唯一约束在创建表时，可以直接指定多列的唯一约束。以下是一个示例： 12345678CREATE TABLE `v
+          MySQL中TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT的最大存储大小技术背景在MySQL数据库中，为了满足不同长度文本数据的存储需求，提供了四种TEXT类型，分别是TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT。了解这些数据类型的最大存储大小，对于数据库表结构的设计和数据存储的规划至关重要。特别是在使用UTF - 8字符编码时，由于UTF - 8包含多字
         </div>
       </a>
 
@@ -953,7 +976,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E5%BA%94%E7%94%A8/" class="category-chain-item">MySQL应用</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E4%BD%BF%E7%94%A8/" class="category-chain-item">MySQL使用</a>
   
   
 
@@ -976,9 +999,7 @@
             
               <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/">#数据库开发</a>
             
-              <a href="/tags/%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F/">#唯一约束</a>
-            
-              <a href="/tags/%E5%A4%9A%E5%88%97%E7%BA%A6%E6%9D%9F/">#多列约束</a>
+              <a href="/tags/%E6%96%87%E6%9C%AC%E5%AD%97%E6%AE%B5%E5%AD%98%E5%82%A8/">#文本字段存储</a>
             
           </div>
         

@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -227,15 +252,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/15/2025-04-15.difference-between-git-pull-and-git-fetch/" target="_self">
-          Git中git pull和git fetch的区别
+        <a href="/2025/04/15/2025-04-15.create-database-table-structure-from-excel-data-using-vba/" target="_self">
+          使用VBA根据Excel数据创建数据库表结构
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.difference-between-git-pull-and-git-fetch/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.create-database-table-structure-from-excel-data-using-vba/" target="_self">
         <div>
-          Git中git pull和git fetch的区别技术背景在软件开发过程中，版本控制是一项至关重要的工作。Git作为目前最流行的分布式版本控制系统，提供了丰富的命令来管理代码的版本和协作开发。git pull和git fetch是Git中用于从远程仓库获取更新的两个常用命令，但它们的功能和使用场景有所不同。理解它们之间的区别对于高效地使用Git进行开发非常重要。 实现步骤git fetch 获取更
+          代码功能概述这段VBA代码旨在通过读取Excel文件中的数据，在当前活动模型（ActiveModel）中创建相应的数据库表结构。它首先检查是否有活动模型以及Excel是否安装，然后遍历Excel工作表中的数据行，根据特定列的值来创建表和列，并为其赋予相应的属性。 代码详细解析 初始化与检查  1234567891011121314151617181920Option ExplicitDim mdl
         </div>
       </a>
 
@@ -259,12 +284,86 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" class="category-chain-item">软件开发</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/" class="category-chain-item">版本控制</a>
+  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/" class="category-chain-item">自动化脚本编写</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/VBA/">#VBA</a>
+            
+              <a href="/tags/Excel/">#Excel</a>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E6%A8%A1/">#数据库建模</a>
+            
+              <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%81%E7%A8%8B/">#自动化流程</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/15/2025-04-15.git-branch-deletion-guide/" target="_self">
+          Git 分支本地和远程删除方法详解
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.git-branch-deletion-guide/" target="_self">
+        <div>
+          Git 分支本地和远程删除方法详解技术背景在使用 Git 进行版本控制的过程中，我们会创建多个分支来进行不同功能的开发、测试和修复。当某个分支的任务完成后，为了保持仓库的整洁和清晰，我们需要删除不再使用的分支。这就涉及到如何正确地删除本地分支和远程分支。 实现步骤删除本地分支要删除本地分支，可以使用以下命令：  git branch -d &lt;branch_name&gt;：该命令是 --de
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-15 08:00" pubdate>
+              2025-04-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/" class="category-chain-item">后端架构</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">版本控制实践</a>
   
   
 
@@ -287,9 +386,85 @@
             
               <a href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">#版本控制</a>
             
-              <a href="/tags/git-pull/">#git pull</a>
+              <a href="/tags/%E5%88%86%E6%94%AF%E5%88%A0%E9%99%A4/">#分支删除</a>
             
-              <a href="/tags/git-fetch/">#git fetch</a>
+              <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5/">#远程同步</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/15/2025-04-15.docker-installation-and-common-environment-deployment/" target="_self">
+          Docker安装及常用环境部署
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.docker-installation-and-common-environment-deployment/" target="_self">
+        <div>
+          Docker安装及常用环境部署技术背景Docker 是一个用于开发、部署和运行应用程序的开源平台，它使用容器化技术将应用及其依赖项打包成一个独立的容器，实现了应用的快速部署和隔离运行。在不同的项目中，我们可能需要部署各种不同的环境，如数据库、缓存等，使用 Docker 可以方便地管理这些环境。 实现步骤卸载 Docker不同的 Linux 发行版卸载 Docker 的命令不同：  Ubuntu
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-15 08:00" pubdate>
+              2025-04-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/" class="category-chain-item">后端架构</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/%E5%AE%B9%E5%99%A8%E5%8C%96%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/" class="category-chain-item">容器化技术实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Shell/">#Shell</a>
+            
+              <a href="/tags/Docker/">#Docker</a>
+            
+              <a href="/tags/Docker%E5%AE%89%E8%A3%85/">#Docker安装</a>
+            
+              <a href="/tags/%E5%B8%B8%E7%94%A8%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/">#常用环境部署</a>
             
           </div>
         
@@ -455,15 +630,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/15/2025-04-15.git-branch-deletion-guide/" target="_self">
-          Git 分支本地和远程删除方法详解
+        <a href="/2025/04/15/2025-04-15.how-to-checkout-remote-git-branch/" target="_self">
+          如何检出远程Git分支
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.git-branch-deletion-guide/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.how-to-checkout-remote-git-branch/" target="_self">
         <div>
-          Git 分支本地和远程删除方法详解技术背景在使用 Git 进行版本控制的过程中，我们会创建多个分支来进行不同功能的开发、测试和修复。当某个分支的任务完成后，为了保持仓库的整洁和清晰，我们需要删除不再使用的分支。这就涉及到如何正确地删除本地分支和远程分支。 实现步骤删除本地分支要删除本地分支，可以使用以下命令：  git branch -d &lt;branch_name&gt;：该命令是 --de
+          如何检出远程Git分支技术背景在使用Git进行版本控制时，我们经常需要与远程仓库协作。远程仓库中会有多个分支，为了在本地对这些分支进行开发和修改，就需要将远程分支检出到本地。然而，由于Git的分支管理机制较为复杂，不同的Git版本和不同的仓库配置（如单远程仓库和多远程仓库），在检出远程分支时可能会有不同的操作方法。 实现步骤单远程仓库情况 获取最新远程更新： 首先，使用git fetch命令从远程
         </div>
       </a>
 
@@ -487,12 +662,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/" class="category-chain-item">后端架构</a>
+  <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/" class="category-chain-item">版本控制</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">版本控制实践</a>
+  <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="category-chain-item">Git使用技巧</a>
   
   
 
@@ -509,15 +684,13 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
               <a href="/tags/Git/">#Git</a>
             
               <a href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">#版本控制</a>
             
-              <a href="/tags/%E5%88%86%E6%94%AF%E5%88%A0%E9%99%A4/">#分支删除</a>
+              <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/">#命令行工具</a>
             
-              <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5/">#远程同步</a>
+              <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%A3%80%E5%87%BA/">#远程分支检出</a>
             
           </div>
         
@@ -607,80 +780,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/15/2025-04-15.how-to-checkout-remote-git-branch/" target="_self">
-          如何检出远程Git分支
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.how-to-checkout-remote-git-branch/" target="_self">
-        <div>
-          如何检出远程Git分支技术背景在使用Git进行版本控制时，我们经常需要与远程仓库协作。远程仓库中会有多个分支，为了在本地对这些分支进行开发和修改，就需要将远程分支检出到本地。然而，由于Git的分支管理机制较为复杂，不同的Git版本和不同的仓库配置（如单远程仓库和多远程仓库），在检出远程分支时可能会有不同的操作方法。 实现步骤单远程仓库情况 获取最新远程更新： 首先，使用git fetch命令从远程
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-15 08:00" pubdate>
-              2025-04-15
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/" class="category-chain-item">版本控制</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="category-chain-item">Git使用技巧</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Git/">#Git</a>
-            
-              <a href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">#版本控制</a>
-            
-              <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/">#命令行工具</a>
-            
-              <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%A3%80%E5%87%BA/">#远程分支检出</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/15/2025-04-15.how-to-undo-git-add-before-commit/" target="_self">
           如何在提交前撤销 &#39;git add&#39;
         </a>
@@ -744,82 +843,6 @@
               <a href="/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/">#代码管理</a>
             
               <a href="/tags/%E6%92%A4%E9%94%80git-add/">#撤销git add</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/15/2025-04-15.docker-installation-and-common-environment-deployment/" target="_self">
-          Docker安装及常用环境部署
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.docker-installation-and-common-environment-deployment/" target="_self">
-        <div>
-          Docker安装及常用环境部署技术背景Docker 是一个用于开发、部署和运行应用程序的开源平台，它使用容器化技术将应用及其依赖项打包成一个独立的容器，实现了应用的快速部署和隔离运行。在不同的项目中，我们可能需要部署各种不同的环境，如数据库、缓存等，使用 Docker 可以方便地管理这些环境。 实现步骤卸载 Docker不同的 Linux 发行版卸载 Docker 的命令不同：  Ubuntu
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-15 08:00" pubdate>
-              2025-04-15
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/" class="category-chain-item">后端架构</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/%E5%AE%B9%E5%99%A8%E5%8C%96%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/" class="category-chain-item">容器化技术实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Shell/">#Shell</a>
-            
-              <a href="/tags/Docker/">#Docker</a>
-            
-              <a href="/tags/Docker%E5%AE%89%E8%A3%85/">#Docker安装</a>
-            
-              <a href="/tags/%E5%B8%B8%E7%94%A8%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/">#常用环境部署</a>
             
           </div>
         

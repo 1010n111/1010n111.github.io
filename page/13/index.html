@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -227,15 +252,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.comparison-between-insert-ignore-and-insert-on-duplicate-key-update-in-mysql_hexo/" target="_self">
-          MySQL中INSERT IGNORE与INSERT ... ON DUPLICATE KEY UPDATE的对比
+        <a href="/2025/04/23/2025-04-23.connect-supabase-to-ai-assistants-guide_hexo/" target="_self">
+          将Supabase连接到AI助手的配置指南
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.comparison-between-insert-ignore-and-insert-on-duplicate-key-update-in-mysql_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.connect-supabase-to-ai-assistants-guide_hexo/" target="_self">
         <div>
-          MySQL中INSERT IGNORE与INSERT … ON DUPLICATE KEY UPDATE的对比技术背景在执行包含多行数据的INSERT语句时，常常会遇到重复记录的问题，这些重复记录可能会导致插入操作失败。为了避免这种情况，MySQL提供了INSERT IGNORE和INSERT ... ON DUPLICATE KEY UPDATE两种解决方案。 实现步骤INSERT IGNORE
+          将Supabase连接到AI助手的配置指南技术背景Model Context Protocol (MCP) 对大语言模型（LLMs）与外部服务（如Supabase）的通信方式进行了标准化。supabase-mcp 项目可以将AI助手直接连接到Supabase项目，使其能够执行管理表、获取配置和查询数据等任务。 实现步骤前提条件需要在机器上安装 Node.js，可以通过以下命令检查： 1node -
         </div>
       </a>
 
@@ -259,12 +284,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/" class="category-chain-item">数据库开发</a>
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="category-chain-item">MySQL使用技巧</a>
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9B%86%E6%88%90/" class="category-chain-item">数据库集成</a>
   
   
 
@@ -281,15 +306,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/MySQL/">#MySQL</a>
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
             
-              <a href="/tags/SQL/">#SQL</a>
+              <a href="/tags/TypeScript/">#TypeScript</a>
             
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/">#数据库开发</a>
+              <a href="/tags/Supabase/">#Supabase</a>
             
-              <a href="/tags/INSERT-IGNORE/">#INSERT IGNORE</a>
+              <a href="/tags/AI%E9%9B%86%E6%88%90/">#AI集成</a>
             
-              <a href="/tags/INSERT-ON-DUPLICATE-KEY-UPDATE/">#INSERT ... ON DUPLICATE KEY UPDATE</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/">#数据库操作</a>
             
           </div>
         
@@ -614,15 +639,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.how-to-delete-exported-environment-variables_hexo/" target="_self">
-          如何删除已导出的环境变量
+        <a href="/2025/04/23/2025-04-23.front-end-development-interview-questions-collection_hexo/" target="_self">
+          前端开发面试题大收集及相关资源汇总
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.how-to-delete-exported-environment-variables_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.front-end-development-interview-questions-collection_hexo/" target="_self">
         <div>
-          如何删除已导出的环境变量技术背景在Linux和Windows系统中，环境变量是操作系统中非常重要的一部分，它可以影响程序的运行环境。在某些情况下，如安装软件时设置了错误的环境变量，或者不再需要某个环境变量，就需要将其删除。 实现步骤Linux系统临时删除在当前会话中删除环境变量，可以使用unset命令。例如，要删除GNUPLOT_DRIVER_DIR环境变量，可执行以下命令： 1unset GNU
+          前端开发面试题大收集及相关资源汇总技术背景在前端开发领域，面试是获取理想工作的重要环节。为了帮助开发者更好地准备面试，paddingme在 GitHub 上创建了名为Front-end-Web-Development-Interview-Question的仓库，该仓库收集了大量前端面试题及相关资源，涵盖了 CSS、HTML、JavaScript 等多个方面，同时还包含前端面经和简历撰写的相关内容。
         </div>
       </a>
 
@@ -646,12 +671,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/" class="category-chain-item">系统管理</a>
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%AE%A1%E7%90%86/" class="category-chain-item">环境变量管理</a>
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%BA%90/" class="category-chain-item">面试资源</a>
   
   
 
@@ -668,15 +693,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Linux/">#Linux</a>
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
             
-              <a href="/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/">#系统管理</a>
+              <a href="/tags/JavaScript/">#JavaScript</a>
             
-              <a href="/tags/Windows/">#Windows</a>
+              <a href="/tags/GitHub/">#GitHub</a>
             
-              <a href="/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%88%A0%E9%99%A4/">#环境变量删除</a>
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">#前端面试题</a>
             
-              <a href="/tags/unset%E5%91%BD%E4%BB%A4/">#unset命令</a>
+              <a href="/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/">#面试资源收集</a>
             
           </div>
         
@@ -766,15 +791,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.front-end-development-interview-questions-collection_hexo/" target="_self">
-          前端开发面试题大收集及相关资源汇总
+        <a href="/2025/04/23/2025-04-23.how-to-delete-exported-environment-variables_hexo/" target="_self">
+          如何删除已导出的环境变量
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.front-end-development-interview-questions-collection_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.how-to-delete-exported-environment-variables_hexo/" target="_self">
         <div>
-          前端开发面试题大收集及相关资源汇总技术背景在前端开发领域，面试是获取理想工作的重要环节。为了帮助开发者更好地准备面试，paddingme在 GitHub 上创建了名为Front-end-Web-Development-Interview-Question的仓库，该仓库收集了大量前端面试题及相关资源，涵盖了 CSS、HTML、JavaScript 等多个方面，同时还包含前端面经和简历撰写的相关内容。
+          如何删除已导出的环境变量技术背景在Linux和Windows系统中，环境变量是操作系统中非常重要的一部分，它可以影响程序的运行环境。在某些情况下，如安装软件时设置了错误的环境变量，或者不再需要某个环境变量，就需要将其删除。 实现步骤Linux系统临时删除在当前会话中删除环境变量，可以使用unset命令。例如，要删除GNUPLOT_DRIVER_DIR环境变量，可执行以下命令： 1unset GNU
         </div>
       </a>
 
@@ -798,12 +823,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/" class="category-chain-item">系统管理</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%BA%90/" class="category-chain-item">面试资源</a>
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%AE%A1%E7%90%86/" class="category-chain-item">环境变量管理</a>
   
   
 
@@ -820,15 +845,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+              <a href="/tags/Linux/">#Linux</a>
             
-              <a href="/tags/JavaScript/">#JavaScript</a>
+              <a href="/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/">#系统管理</a>
             
-              <a href="/tags/GitHub/">#GitHub</a>
+              <a href="/tags/Windows/">#Windows</a>
             
-              <a href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">#前端面试题</a>
+              <a href="/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E5%88%A0%E9%99%A4/">#环境变量删除</a>
             
-              <a href="/tags/%E9%9D%A2%E8%AF%95%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/">#面试资源收集</a>
+              <a href="/tags/unset%E5%91%BD%E4%BB%A4/">#unset命令</a>
             
           </div>
         

@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -227,82 +252,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.vuejs-component-missing-template-or-render-function-solve/" target="_self">
-          Vue.js组件缺少模板或渲染函数问题解决
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.vuejs-component-missing-template-or-render-function-solve/" target="_self">
-        <div>
-          Vue.js组件缺少模板或渲染函数问题解决技术背景在使用Vue 3和Vue Router构建单页面应用时，开发者可能会遇到 “Component is missing template or render function” 错误。这个错误通常表示Vue组件没有正确定义模板或渲染函数，导致Vue无法渲染该组件。 实现步骤1. 问题示例在Vue 3中，创建了如下的Home组件、Foo和Bar组件，并
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架使用实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
-            
-              <a href="/tags/JavaScript/">#JavaScript</a>
-            
-              <a href="/tags/Vue-js/">#Vue.js</a>
-            
-              <a href="/tags/Vue-Router/">#Vue Router</a>
-            
-              <a href="/tags/%E7%BB%84%E4%BB%B6%E6%B8%B2%E6%9F%93%E9%97%AE%E9%A2%98/">#组件渲染问题</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/14/2025-04-14.vuejs3-event-bus-guide/" target="_self">
           Vue.js 3 Event Bus
         </a>
@@ -379,15 +328,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.watch-props-change-with-vue-composition-api/" target="_self">
-          使用Vue Composition API / Vue 3监听props变化
+        <a href="/2025/04/14/2025-04-14.vuejs-component-missing-template-or-render-function-solve/" target="_self">
+          Vue.js组件缺少模板或渲染函数问题解决
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.watch-props-change-with-vue-composition-api/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.vuejs-component-missing-template-or-render-function-solve/" target="_self">
         <div>
-          使用Vue Composition API &#x2F; Vue 3监听props变化技术背景在Vue 3中引入了Composition API，它提供了更灵活的方式来组织和复用组件逻辑。在开发过程中，经常需要监听组件props的变化以执行相应的操作，但Vue Composition API RFC参考站点和相关文档中并没有明确给出监听props变化的示例。 实现步骤1. 直接监听单个prop通过
+          Vue.js组件缺少模板或渲染函数问题解决技术背景在使用Vue 3和Vue Router构建单页面应用时，开发者可能会遇到 “Component is missing template or render function” 错误。这个错误通常表示Vue组件没有正确定义模板或渲染函数，导致Vue无法渲染该组件。 实现步骤1. 问题示例在Vue 3中，创建了如下的Home组件、Foo和Bar组件，并
         </div>
       </a>
 
@@ -416,7 +365,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/" class="category-chain-item">框架应用</a>
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架使用实践</a>
   
   
 
@@ -439,9 +388,9 @@
             
               <a href="/tags/Vue-js/">#Vue.js</a>
             
-              <a href="/tags/Vue-Composition-API/">#Vue Composition API</a>
+              <a href="/tags/Vue-Router/">#Vue Router</a>
             
-              <a href="/tags/%E7%9B%91%E5%90%ACprops%E5%8F%98%E5%8C%96/">#监听props变化</a>
+              <a href="/tags/%E7%BB%84%E4%BB%B6%E6%B8%B2%E6%9F%93%E9%97%AE%E9%A2%98/">#组件渲染问题</a>
             
           </div>
         
@@ -518,6 +467,82 @@
               <a href="/tags/Webpack/">#Webpack</a>
             
               <a href="/tags/vue-template-compiler/">#vue-template-compiler</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/14/2025-04-14.watch-props-change-with-vue-composition-api/" target="_self">
+          使用Vue Composition API / Vue 3监听props变化
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.watch-props-change-with-vue-composition-api/" target="_self">
+        <div>
+          使用Vue Composition API &#x2F; Vue 3监听props变化技术背景在Vue 3中引入了Composition API，它提供了更灵活的方式来组织和复用组件逻辑。在开发过程中，经常需要监听组件props的变化以执行相应的操作，但Vue Composition API RFC参考站点和相关文档中并没有明确给出监听props变化的示例。 实现步骤1. 直接监听单个prop通过
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/" class="category-chain-item">框架应用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/Vue-js/">#Vue.js</a>
+            
+              <a href="/tags/Vue-Composition-API/">#Vue Composition API</a>
+            
+              <a href="/tags/%E7%9B%91%E5%90%ACprops%E5%8F%98%E5%8C%96/">#监听props变化</a>
             
           </div>
         

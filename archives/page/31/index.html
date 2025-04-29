@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -229,15 +254,15 @@
       
       <p class="h5">2025</p>
     
-    <a href="/2025/04/21/2025-04-21.python-dictionary-copy-and-edit/" class="list-group-item list-group-item-action">
-      <time>04-21</time>
-      <div class="list-group-item-title">Python中复制字典并仅修改副本的方法</div>
-    </a>
-  
-    
     <a href="/2025/04/21/2025-04-21.python-dictionary-creation-with-comprehension/" class="list-group-item list-group-item-action">
       <time>04-21</time>
       <div class="list-group-item-title">Python中使用推导式创建字典</div>
+    </a>
+  
+    
+    <a href="/2025/04/21/2025-04-21.python-dictionary-copy-and-edit/" class="list-group-item list-group-item-action">
+      <time>04-21</time>
+      <div class="list-group-item-title">Python中复制字典并仅修改副本的方法</div>
     </a>
   
     
@@ -277,15 +302,15 @@
     </a>
   
     
-    <a href="/2025/04/21/2025-04-21.python-print-function-output-flushing-summary/" class="list-group-item list-group-item-action">
-      <time>04-21</time>
-      <div class="list-group-item-title">Python中print函数输出刷新方法总结</div>
-    </a>
-  
-    
     <a href="/2025/04/21/2025-04-21.python-print-object-properties-and-values/" class="list-group-item list-group-item-action">
       <time>04-21</time>
       <div class="list-group-item-title">Python中打印对象所有属性和值的方法</div>
+    </a>
+  
+    
+    <a href="/2025/04/21/2025-04-21.python-print-function-output-flushing-summary/" class="list-group-item list-group-item-action">
+      <time>04-21</time>
+      <div class="list-group-item-title">Python中print函数输出刷新方法总结</div>
     </a>
   
 </div>

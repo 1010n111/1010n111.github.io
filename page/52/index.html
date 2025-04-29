@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -755,80 +780,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.python-print-without-newline-or-space/" target="_self">
-          Python中无换行和空格打印的方法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-print-without-newline-or-space/" target="_self">
-        <div>
-          Python中无换行和空格打印的方法技术背景在Python编程中，使用print函数输出内容时，默认会在每个值之间添加空格或在末尾添加换行符。但在某些场景下，我们可能希望避免这种情况，让输出内容紧密相连。例如，实现进度条、输出特定格式的字符串等。本文将详细介绍在不同Python版本中实现无换行和空格打印的方法。 实现步骤Python 3在Python 3中，print函数有sep和end两个参数，
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E6%89%93%E5%8D%B0%E5%87%BD%E6%95%B0/">#打印函数</a>
-            
-              <a href="/tags/%E6%97%A0%E6%8D%A2%E8%A1%8C%E7%A9%BA%E6%A0%BC%E6%89%93%E5%8D%B0/">#无换行空格打印</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/14/2025-04-14.python-remove-list-element-by-index/" target="_self">
           Python中按索引删除列表元素的方法
         </a>
@@ -905,15 +856,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.python-static-methods/" target="_self">
-          Python中的静态方法
+        <a href="/2025/04/14/2025-04-14.python-print-without-newline-or-space/" target="_self">
+          Python中无换行和空格打印的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-static-methods/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-print-without-newline-or-space/" target="_self">
         <div>
-          Python中的静态方法技术背景在Python中，静态方法是一种属于类但不需要访问类或实例的特定状态的方法。与实例方法不同，静态方法不会接收隐式的第一个参数（如self或cls）。静态方法类似于普通函数，但它们与类相关联，通常用于执行与类相关但不依赖于类实例的操作。 实现步骤使用@staticmethod装饰器这是Python 2.4及以后版本推荐的方式，使用装饰器语法可以让代码更简洁易读。 12
+          Python中无换行和空格打印的方法技术背景在Python编程中，使用print函数输出内容时，默认会在每个值之间添加空格或在末尾添加换行符。但在某些场景下，我们可能希望避免这种情况，让输出内容紧密相连。例如，实现进度条、输出特定格式的字符串等。本文将详细介绍在不同Python版本中实现无换行和空格打印的方法。 实现步骤Python 3在Python 3中，print函数有sep和end两个参数，
         </div>
       </a>
 
@@ -942,7 +893,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/" class="category-chain-item">Python编程</a>
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
   
   
 
@@ -963,11 +914,83 @@
             
               <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95/">#静态方法</a>
+              <a href="/tags/%E6%89%93%E5%8D%B0%E5%87%BD%E6%95%B0/">#打印函数</a>
             
-              <a href="/tags/%E7%B1%BB%E6%96%B9%E6%B3%95/">#类方法</a>
+              <a href="/tags/%E6%97%A0%E6%8D%A2%E8%A1%8C%E7%A9%BA%E6%A0%BC%E6%89%93%E5%8D%B0/">#无换行空格打印</a>
             
-              <a href="/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/">#装饰器</a>
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/14/2025-04-14.python-remove-trailing-newline-methods/" target="_self">
+          Python中去除字符串末尾换行符的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-remove-trailing-newline-methods/" target="_self">
+        <div>
+          Python中去除字符串末尾换行符的方法技术背景在Python编程中，处理字符串时经常会遇到字符串末尾包含换行符的情况，如从文件中读取每一行内容时，换行符会作为字符串的一部分被读取进来。为了满足后续处理需求，需要将这些换行符去除。 实现步骤1. 使用rstrip()方法rstrip()方法可以去除字符串末尾的指定字符，默认去除所有空白字符，包括换行符。 123456789# 去除所有末尾空白字符s
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
+            
+              <a href="/tags/%E6%8D%A2%E8%A1%8C%E7%AC%A6%E5%8E%BB%E9%99%A4/">#换行符去除</a>
             
           </div>
         

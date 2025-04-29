@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -227,80 +252,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.python-remove-trailing-newline-methods/" target="_self">
-          Python中去除字符串末尾换行符的方法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-remove-trailing-newline-methods/" target="_self">
-        <div>
-          Python中去除字符串末尾换行符的方法技术背景在Python编程中，处理字符串时经常会遇到字符串末尾包含换行符的情况，如从文件中读取每一行内容时，换行符会作为字符串的一部分被读取进来。为了满足后续处理需求，需要将这些换行符去除。 实现步骤1. 使用rstrip()方法rstrip()方法可以去除字符串末尾的指定字符，默认去除所有空白字符，包括换行符。 123456789# 去除所有末尾空白字符s
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
-            
-              <a href="/tags/%E6%8D%A2%E8%A1%8C%E7%AC%A6%E5%8E%BB%E9%99%A4/">#换行符去除</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/14/2025-04-14.python-string-formatting-escape-curly-braces/" target="_self">
           Python中使用.format时如何转义花括号（{}）字符
         </a>
@@ -375,15 +326,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.python-string-lowercase-conversion/" target="_self">
-          Python中字符串转换为小写的方法
+        <a href="/2025/04/14/2025-04-14.python-static-methods/" target="_self">
+          Python中的静态方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-string-lowercase-conversion/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-static-methods/" target="_self">
         <div>
-          Python中字符串转换为小写的方法技术背景在Python编程中，经常需要对字符串进行大小写转换操作。将字符串转换为小写是一种常见的需求，例如在进行字符串比较时，为了实现不区分大小写的匹配，就需要先将字符串统一转换为小写。 实现步骤使用str.lower()方法这是最常用的方法，适用于大多数情况。 123string = &quot;Kilometers&quot;lowercase_string
+          Python中的静态方法技术背景在Python中，静态方法是一种属于类但不需要访问类或实例的特定状态的方法。与实例方法不同，静态方法不会接收隐式的第一个参数（如self或cls）。静态方法类似于普通函数，但它们与类相关联，通常用于执行与类相关但不依赖于类实例的操作。 实现步骤使用@staticmethod装饰器这是Python 2.4及以后版本推荐的方式，使用装饰器语法可以让代码更简洁易读。 12
         </div>
       </a>
 
@@ -433,9 +384,85 @@
             
               <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
+              <a href="/tags/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95/">#静态方法</a>
             
-              <a href="/tags/%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2/">#小写转换</a>
+              <a href="/tags/%E7%B1%BB%E6%96%B9%E6%B3%95/">#类方法</a>
+            
+              <a href="/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/">#装饰器</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/14/2025-04-14.python-string-to-float-int-conversion/" target="_self">
+          Python字符串转浮点数或整数的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-string-to-float-int-conversion/" target="_self">
+        <div>
+          Python字符串转浮点数或整数的方法技术背景在Python编程中，经常会遇到需要将字符串类型的数据转换为浮点数或整数类型的情况，例如从用户输入、文件读取等场景中获取的数字通常是字符串形式，需要将其转换为合适的数值类型进行后续计算和处理。 实现步骤1. 简单转换 字符串转浮点数：使用float()函数可以将字符串转换为浮点数。 字符串转整数：使用int()函数可以将字符串转换为整数。需要注意的是，
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/">#数据类型转换</a>
+            
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%A7%A3%E6%9E%90/">#字符串解析</a>
             
           </div>
         
@@ -525,15 +552,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.python-string-to-float-int-conversion/" target="_self">
-          Python字符串转浮点数或整数的方法
+        <a href="/2025/04/14/2025-04-14.python-time-delay-implementation/" target="_self">
+          Python中实现时间延迟的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-string-to-float-int-conversion/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-time-delay-implementation/" target="_self">
         <div>
-          Python字符串转浮点数或整数的方法技术背景在Python编程中，经常会遇到需要将字符串类型的数据转换为浮点数或整数类型的情况，例如从用户输入、文件读取等场景中获取的数字通常是字符串形式，需要将其转换为合适的数值类型进行后续计算和处理。 实现步骤1. 简单转换 字符串转浮点数：使用float()函数可以将字符串转换为浮点数。 字符串转整数：使用int()函数可以将字符串转换为整数。需要注意的是，
+          Python中实现时间延迟的方法技术背景在Python编程中，我们经常会遇到需要程序暂停一段时间的场景，例如模拟现实中的等待过程、控制程序的执行速度、定时执行任务等。实现时间延迟是解决这些问题的关键。 实现步骤1. 使用time.sleep()函数这是最常见的实现时间延迟的方法，它可以让程序暂停执行指定的秒数。 123456789import time# 延迟2.5秒time.sleep(2.5)
         </div>
       </a>
 
@@ -583,9 +610,85 @@
             
               <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/">#数据类型转换</a>
+              <a href="/tags/time%E6%A8%A1%E5%9D%97/">#time模块</a>
             
-              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%A7%A3%E6%9E%90/">#字符串解析</a>
+              <a href="/tags/%E6%97%B6%E9%97%B4%E5%BB%B6%E8%BF%9F/">#时间延迟</a>
+            
+              <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">#多线程</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/14/2025-04-14.python-string-lowercase-conversion/" target="_self">
+          Python中字符串转换为小写的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-string-lowercase-conversion/" target="_self">
+        <div>
+          Python中字符串转换为小写的方法技术背景在Python编程中，经常需要对字符串进行大小写转换操作。将字符串转换为小写是一种常见的需求，例如在进行字符串比较时，为了实现不区分大小写的匹配，就需要先将字符串统一转换为小写。 实现步骤使用str.lower()方法这是最常用的方法，适用于大多数情况。 123string = &quot;Kilometers&quot;lowercase_string
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/" class="category-chain-item">Python编程</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
+            
+              <a href="/tags/%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2/">#小写转换</a>
             
           </div>
         
@@ -660,82 +763,6 @@
               <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
             
               <a href="/tags/%E9%9B%B6%E5%A1%AB%E5%85%85/">#零填充</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.python-time-delay-implementation/" target="_self">
-          Python中实现时间延迟的方法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-time-delay-implementation/" target="_self">
-        <div>
-          Python中实现时间延迟的方法技术背景在Python编程中，我们经常会遇到需要程序暂停一段时间的场景，例如模拟现实中的等待过程、控制程序的执行速度、定时执行任务等。实现时间延迟是解决这些问题的关键。 实现步骤1. 使用time.sleep()函数这是最常见的实现时间延迟的方法，它可以让程序暂停执行指定的秒数。 123456789import time# 延迟2.5秒time.sleep(2.5)
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/time%E6%A8%A1%E5%9D%97/">#time模块</a>
-            
-              <a href="/tags/%E6%97%B6%E9%97%B4%E5%BB%B6%E8%BF%9F/">#时间延迟</a>
-            
-              <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">#多线程</a>
             
           </div>
         
@@ -901,15 +928,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.running-python-on-android-methods/" target="_self">
-          在安卓设备上运行Python的方法
+        <a href="/2025/04/14/2025-04-14.set-compileroptions-iscustomelement-for-vuejs3-in-laravel/" target="_self">
+          在Laravel项目中为VueJS 3设置compilerOptions.isCustomElement
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.running-python-on-android-methods/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.set-compileroptions-iscustomelement-for-vuejs3-in-laravel/" target="_self">
         <div>
-          在安卓设备上运行Python的方法技术背景在安卓设备上运行Python可以为开发者提供更多的开发选择和灵活性，能够利用Python丰富的库和简洁的语法来开发各种应用，如游戏、脚本工具等。然而，由于安卓系统原生不支持Python，需要借助一些工具和框架来实现。 实现步骤Kivy 安装：Kivy是一个开源的Python库，可在多种平台上运行。可以按照其官方文档进行安装。 开发：使用Python编写应用
+          在Laravel项目中为VueJS 3设置compilerOptions.isCustomElement技术背景在Laravel项目中使用VueJS 3时，若引入了提供自定义元素的JS文件，可能会遇到组件解析失败的控制台错误，提示需要通过compilerOptions.isCustomElement将某些元素排除在组件解析之外。 实现步骤Webpack项目（webpack.mix.js）在webp
         </div>
       </a>
 
@@ -933,12 +960,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/" class="category-chain-item">移动开发</a>
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/Python%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python应用实践</a>
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E9%9B%86%E6%88%90%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架集成实践</a>
   
   
 
@@ -955,15 +982,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
             
-              <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/">#移动开发</a>
+              <a href="/tags/JavaScript/">#JavaScript</a>
             
-              <a href="/tags/Kivy/">#Kivy</a>
+              <a href="/tags/Vue-js/">#Vue.js</a>
             
-              <a href="/tags/SL4A/">#SL4A</a>
+              <a href="/tags/Laravel/">#Laravel</a>
             
-              <a href="/tags/Chaquopy/">#Chaquopy</a>
+              <a href="/tags/%E7%BC%96%E8%AF%91%E5%99%A8%E9%85%8D%E7%BD%AE/">#编译器配置</a>
             
           </div>
         

@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -75,6 +75,31 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -453,6 +478,80 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2025/04/14/2025-04-14.deleting-columns-from-pandas-dataframe/" target="_self">
+          Python中删除Pandas DataFrame的列
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.deleting-columns-from-pandas-dataframe/" target="_self">
+        <div>
+          Python中删除Pandas DataFrame的列技术背景在数据处理和分析过程中，经常需要对Pandas DataFrame进行操作，其中删除列是常见需求。比如在清洗数据时，某些列包含无用信息，或者在特征工程中，需要移除不相关的特征列。 实现步骤1. 使用del关键字123456789import pandas as pd# 创建DataFramedata = &#123;&#x27;col1
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" class="category-chain-item">数据处理</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/Pandas%E5%BA%93%E4%BD%BF%E7%94%A8/" class="category-chain-item">Pandas库使用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/Pandas/">#Pandas</a>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">#数据处理</a>
+            
+              <a href="/tags/DataFrame%E5%88%97%E5%88%A0%E9%99%A4/">#DataFrame列删除</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2025/04/14/2025-04-14.difference-between-python-append-and-extend/" target="_self">
           Python列表方法append和extend的区别
         </a>
@@ -516,80 +615,6 @@
               <a href="/tags/append%E6%96%B9%E6%B3%95/">#append方法</a>
             
               <a href="/tags/extend%E6%96%B9%E6%B3%95/">#extend方法</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.deleting-columns-from-pandas-dataframe/" target="_self">
-          Python中删除Pandas DataFrame的列
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.deleting-columns-from-pandas-dataframe/" target="_self">
-        <div>
-          Python中删除Pandas DataFrame的列技术背景在数据处理和分析过程中，经常需要对Pandas DataFrame进行操作，其中删除列是常见需求。比如在清洗数据时，某些列包含无用信息，或者在特征工程中，需要移除不相关的特征列。 实现步骤1. 使用del关键字123456789import pandas as pd# 创建DataFramedata = &#123;&#x27;col1
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" class="category-chain-item">数据处理</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/Pandas%E5%BA%93%E4%BD%BF%E7%94%A8/" class="category-chain-item">Pandas库使用</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/Pandas/">#Pandas</a>
-            
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">#数据处理</a>
-            
-              <a href="/tags/DataFrame%E5%88%97%E5%88%A0%E9%99%A4/">#DataFrame列删除</a>
             
           </div>
         
@@ -679,82 +704,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.extract-data-from-java-drag-and-drop-to-pyside2/" target="_self">
-          从 Java 拖放操作中提取数据到 PySide2 应用程序
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.extract-data-from-java-drag-and-drop-to-pyside2/" target="_self">
-        <div>
-          从 Java 拖放操作中提取数据到 PySide2 应用程序技术背景在软件开发中，有时需要实现不同语言编写的应用程序之间的交互。例如，有一个 Java GUI 应用程序，其中的 treeView 部件已启用拖放功能，当从这个 treeView 中拖动一个项目并尝试将其放到另一个使用 Python 和 PySide2 构建的应用程序的 QTableWidget 上时，会遇到数据提取的问题。在拖放操作
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%B7%A8%E8%AF%AD%E8%A8%80%E4%BA%A4%E4%BA%92/" class="category-chain-item">跨语言交互</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Java/">#Java</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/PySide2/">#PySide2</a>
-            
-              <a href="/tags/%E6%8B%96%E6%94%BE%E6%95%B0%E6%8D%AE%E6%8F%90%E5%8F%96/">#拖放数据提取</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/14/2025-04-14.getting-the-class-name-of-a-python-instance/" target="_self">
           获取Python对象实例的类名
         </a>
@@ -818,6 +767,82 @@
               <a href="/tags/%E7%B1%BB%E5%90%8D%E8%8E%B7%E5%8F%96/">#类名获取</a>
             
               <a href="/tags/%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7/">#实例属性</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/14/2025-04-14.extract-data-from-java-drag-and-drop-to-pyside2/" target="_self">
+          从 Java 拖放操作中提取数据到 PySide2 应用程序
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.extract-data-from-java-drag-and-drop-to-pyside2/" target="_self">
+        <div>
+          从 Java 拖放操作中提取数据到 PySide2 应用程序技术背景在软件开发中，有时需要实现不同语言编写的应用程序之间的交互。例如，有一个 Java GUI 应用程序，其中的 treeView 部件已启用拖放功能，当从这个 treeView 中拖动一个项目并尝试将其放到另一个使用 Python 和 PySide2 构建的应用程序的 QTableWidget 上时，会遇到数据提取的问题。在拖放操作
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%B7%A8%E8%AF%AD%E8%A8%80%E4%BA%A4%E4%BA%92/" class="category-chain-item">跨语言交互</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Java/">#Java</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/PySide2/">#PySide2</a>
+            
+              <a href="/tags/%E6%8B%96%E6%94%BE%E6%95%B0%E6%8D%AE%E6%8F%90%E5%8F%96/">#拖放数据提取</a>
             
           </div>
         
