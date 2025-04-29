@@ -227,15 +227,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/21/2025-04-21.python-dictionary-copy-and-edit/" target="_self">
-          Python中复制字典并仅修改副本的方法
+        <a href="/2025/04/21/2025-04-21.python-dictionary-creation-with-comprehension/" target="_self">
+          Python中使用推导式创建字典
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/21/2025-04-21.python-dictionary-copy-and-edit/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/21/2025-04-21.python-dictionary-creation-with-comprehension/" target="_self">
         <div>
-          Python中复制字典并仅修改副本的方法技术背景在Python编程中，当我们想要复制一个字典并对副本进行修改，而不影响原始字典时，可能会遇到一些问题。直接使用赋值语句 dict2 = dict1 并不能实现真正的复制，而是让 dict2 和 dict1 指向同一个字典对象，这样在修改 dict2 时，dict1 也会随之改变。因此，我们需要掌握正确的复制字典的方法。 实现步骤1. 浅拷贝方法浅拷贝
+          Python中使用推导式创建字典技术背景在Python编程中，字典（dict）是一种非常重要的数据结构，它以键值对的形式存储数据，提供了高效的数据访问能力。Python中的推导式是一种简洁且强大的语法，用于快速创建列表、集合和字典等数据结构。使用推导式创建字典可以让代码更加简洁、易读，提高开发效率。 实现步骤1. 使用字典推导式（Python 2.7及以后版本）如果要通过迭代键值对来创建字典，可以
         </div>
       </a>
 
@@ -285,11 +285,9 @@
             
               <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/%E5%AD%97%E5%85%B8%E6%93%8D%E4%BD%9C/">#字典操作</a>
+              <a href="/tags/%E5%AD%97%E5%85%B8%E6%8E%A8%E5%AF%BC%E5%BC%8F/">#字典推导式</a>
             
-              <a href="/tags/%E5%AD%97%E5%85%B8%E5%A4%8D%E5%88%B6/">#字典复制</a>
-            
-              <a href="/tags/%E6%B5%85%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B7%B1%E6%8B%B7%E8%B4%9D/">#浅拷贝与深拷贝</a>
+              <a href="/tags/%E5%AD%97%E5%85%B8%E5%88%9B%E5%BB%BA/">#字典创建</a>
             
           </div>
         
@@ -377,15 +375,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/21/2025-04-21.python-dictionary-creation-with-comprehension/" target="_self">
-          Python中使用推导式创建字典
+        <a href="/2025/04/21/2025-04-21.python-dictionary-copy-and-edit/" target="_self">
+          Python中复制字典并仅修改副本的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/21/2025-04-21.python-dictionary-creation-with-comprehension/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/21/2025-04-21.python-dictionary-copy-and-edit/" target="_self">
         <div>
-          Python中使用推导式创建字典技术背景在Python编程中，字典（dict）是一种非常重要的数据结构，它以键值对的形式存储数据，提供了高效的数据访问能力。Python中的推导式是一种简洁且强大的语法，用于快速创建列表、集合和字典等数据结构。使用推导式创建字典可以让代码更加简洁、易读，提高开发效率。 实现步骤1. 使用字典推导式（Python 2.7及以后版本）如果要通过迭代键值对来创建字典，可以
+          Python中复制字典并仅修改副本的方法技术背景在Python编程中，当我们想要复制一个字典并对副本进行修改，而不影响原始字典时，可能会遇到一些问题。直接使用赋值语句 dict2 = dict1 并不能实现真正的复制，而是让 dict2 和 dict1 指向同一个字典对象，这样在修改 dict2 时，dict1 也会随之改变。因此，我们需要掌握正确的复制字典的方法。 实现步骤1. 浅拷贝方法浅拷贝
         </div>
       </a>
 
@@ -435,9 +433,11 @@
             
               <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/%E5%AD%97%E5%85%B8%E6%8E%A8%E5%AF%BC%E5%BC%8F/">#字典推导式</a>
+              <a href="/tags/%E5%AD%97%E5%85%B8%E6%93%8D%E4%BD%9C/">#字典操作</a>
             
-              <a href="/tags/%E5%AD%97%E5%85%B8%E5%88%9B%E5%BB%BA/">#字典创建</a>
+              <a href="/tags/%E5%AD%97%E5%85%B8%E5%A4%8D%E5%88%B6/">#字典复制</a>
+            
+              <a href="/tags/%E6%B5%85%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B7%B1%E6%8B%B7%E8%B4%9D/">#浅拷贝与深拷贝</a>
             
           </div>
         
@@ -603,82 +603,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/21/2025-04-21.python-file-copying-methods/" target="_self">
-          Python 中复制文件的方法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/21/2025-04-21.python-file-copying-methods/" target="_self">
-        <div>
-          Python 中复制文件的方法技术背景在 Python 编程中，经常会遇到需要复制文件的场景，例如数据备份、文件迁移等。Python 提供了多种方式来实现文件复制，这些方式各有特点，可以根据具体需求进行选择。 实现步骤1. 使用 shutil 模块shutil 模块提供了多个用于文件和目录操作的高级函数，以下是几种常用的文件复制方法：  shutil.copyfile(src, dst)：将 sr
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-21 08:00" pubdate>
-              2025-04-21
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/shutil/">#shutil</a>
-            
-              <a href="/tags/os/">#os</a>
-            
-              <a href="/tags/%E6%96%87%E4%BB%B6%E5%A4%8D%E5%88%B6/">#文件复制</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/21/2025-04-21.python-get-current-time-methods/" target="_self">
           Python中获取当前时间的方法
         </a>
@@ -742,6 +666,82 @@
               <a href="/tags/time/">#time</a>
             
               <a href="/tags/%E6%97%B6%E9%97%B4%E8%8E%B7%E5%8F%96/">#时间获取</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/21/2025-04-21.python-file-copying-methods/" target="_self">
+          Python 中复制文件的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/21/2025-04-21.python-file-copying-methods/" target="_self">
+        <div>
+          Python 中复制文件的方法技术背景在 Python 编程中，经常会遇到需要复制文件的场景，例如数据备份、文件迁移等。Python 提供了多种方式来实现文件复制，这些方式各有特点，可以根据具体需求进行选择。 实现步骤1. 使用 shutil 模块shutil 模块提供了多个用于文件和目录操作的高级函数，以下是几种常用的文件复制方法：  shutil.copyfile(src, dst)：将 sr
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-21 08:00" pubdate>
+              2025-04-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/shutil/">#shutil</a>
+            
+              <a href="/tags/os/">#os</a>
+            
+              <a href="/tags/%E6%96%87%E4%BB%B6%E5%A4%8D%E5%88%B6/">#文件复制</a>
             
           </div>
         
@@ -829,6 +829,80 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2025/04/21/2025-04-21.python-print-function-output-flushing-summary/" target="_self">
+          Python中print函数输出刷新方法总结
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/21/2025-04-21.python-print-function-output-flushing-summary/" target="_self">
+        <div>
+          Python中print函数输出刷新方法总结技术背景在Python编程中，print 函数的输出有时会被缓冲，不会立即显示在屏幕上。这在某些场景下可能会造成困扰，比如需要实时显示进度信息等。因此，了解如何强制刷新 print 函数的缓冲输出是很有必要的。 实现步骤Python 3 使用 flush 参数：在Python 3中，print 函数可以接受一个可选的 flush 参数。将其设置为 Tru
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-21 08:00" pubdate>
+              2025-04-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E6%A0%87%E5%87%86%E8%BE%93%E5%87%BA/">#标准输出</a>
+            
+              <a href="/tags/%E8%BE%93%E5%87%BA%E5%88%B7%E6%96%B0/">#输出刷新</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2025/04/21/2025-04-21.python-print-object-properties-and-values/" target="_self">
           Python中打印对象所有属性和值的方法
         </a>
@@ -892,80 +966,6 @@
               <a href="/tags/%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/">#调试工具</a>
             
               <a href="/tags/%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E6%89%93%E5%8D%B0/">#对象属性打印</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/21/2025-04-21.python-print-function-output-flushing-summary/" target="_self">
-          Python中print函数输出刷新方法总结
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/21/2025-04-21.python-print-function-output-flushing-summary/" target="_self">
-        <div>
-          Python中print函数输出刷新方法总结技术背景在Python编程中，print 函数的输出有时会被缓冲，不会立即显示在屏幕上。这在某些场景下可能会造成困扰，比如需要实时显示进度信息等。因此，了解如何强制刷新 print 函数的缓冲输出是很有必要的。 实现步骤Python 3 使用 flush 参数：在Python 3中，print 函数可以接受一个可选的 flush 参数。将其设置为 Tru
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-21 08:00" pubdate>
-              2025-04-21
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编程语言实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E6%A0%87%E5%87%86%E8%BE%93%E5%87%BA/">#标准输出</a>
-            
-              <a href="/tags/%E8%BE%93%E5%87%BA%E5%88%B7%E6%96%B0/">#输出刷新</a>
             
           </div>
         
