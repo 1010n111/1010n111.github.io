@@ -31,7 +31,21 @@
   
   
   
-    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843507635528842" crossorigin="anonymous"></script> <!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-BWT1XBMWZ7");</script>
+    '<meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />  
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843507635528842" crossorigin="anonymous"></script> 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BWT1XBMWZ7');
+</script>'
+
+
+   
+
   
   <title>小破站</title>
 
@@ -252,89 +266,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/15/2025-04-15.create-database-table-structure-from-excel-data-using-vba/" target="_self">
-          使用VBA根据Excel数据创建数据库表结构
+        <a href="/2025/04/15/2025-04-15.deploy-and-develop-openlookeng-using-wsl2/" target="_self">
+          使用WSL2部署开发OpenLookeng
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.create-database-table-structure-from-excel-data-using-vba/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.deploy-and-develop-openlookeng-using-wsl2/" target="_self">
         <div>
-          代码功能概述这段VBA代码旨在通过读取Excel文件中的数据，在当前活动模型（ActiveModel）中创建相应的数据库表结构。它首先检查是否有活动模型以及Excel是否安装，然后遍历Excel工作表中的数据行，根据特定列的值来创建表和列，并为其赋予相应的属性。 代码详细解析 初始化与检查  1234567891011121314151617181920Option ExplicitDim mdl
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-15 08:00" pubdate>
-              2025-04-15
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" class="category-chain-item">软件开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/" class="category-chain-item">自动化脚本编写</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/VBA/">#VBA</a>
-            
-              <a href="/tags/Excel/">#Excel</a>
-            
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BB%BA%E6%A8%A1/">#数据库建模</a>
-            
-              <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%81%E7%A8%8B/">#自动化流程</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/15/2025-04-15.git-branch-deletion-guide/" target="_self">
-          Git 分支本地和远程删除方法详解
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.git-branch-deletion-guide/" target="_self">
-        <div>
-          Git 分支本地和远程删除方法详解技术背景在使用 Git 进行版本控制的过程中，我们会创建多个分支来进行不同功能的开发、测试和修复。当某个分支的任务完成后，为了保持仓库的整洁和清晰，我们需要删除不再使用的分支。这就涉及到如何正确地删除本地分支和远程分支。 实现步骤删除本地分支要删除本地分支，可以使用以下命令：  git branch -d &lt;branch_name&gt;：该命令是 --de
+          一、启用WSL2在Windows系统上启用WSL2并进行相关配置，是后续部署开发OpenLookeng的基础。  打开“启用或关闭Windows功能”：通过windows+Q搜索”启用或关闭Windows功能”。 启用相关功能：在弹出的窗口中，启用”适用于Linux的Windows的子系统”与”虚拟机平台”。 设置WSL版本为WSL2：以管理员身份打开终端，输入以下命令：  1wsl --set-
         </div>
       </a>
 
@@ -363,7 +303,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">版本控制实践</a>
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%BC%80%E5%8F%91/" class="category-chain-item">大数据工具部署与开发</a>
   
   
 
@@ -382,13 +322,21 @@
             
               <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
             
+              <a href="/tags/Java/">#Java</a>
+            
               <a href="/tags/Git/">#Git</a>
             
-              <a href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">#版本控制</a>
+              <a href="/tags/Windows-Subsystem-for-Linux-2%EF%BC%88WSL2%EF%BC%89/">#Windows Subsystem for Linux 2（WSL2）</a>
             
-              <a href="/tags/%E5%88%86%E6%94%AF%E5%88%A0%E9%99%A4/">#分支删除</a>
+              <a href="/tags/Maven/">#Maven</a>
             
-              <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5/">#远程同步</a>
+              <a href="/tags/IntelliJ-IDEA/">#IntelliJ IDEA</a>
+            
+              <a href="/tags/OpenLookeng/">#OpenLookeng</a>
+            
+              <a href="/tags/%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/">#环境部署</a>
+            
+              <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91/">#大数据工具开发</a>
             
           </div>
         
@@ -465,6 +413,82 @@
               <a href="/tags/Docker%E5%AE%89%E8%A3%85/">#Docker安装</a>
             
               <a href="/tags/%E5%B8%B8%E7%94%A8%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/">#常用环境部署</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/15/2025-04-15.git-branch-deletion-guide/" target="_self">
+          Git 分支本地和远程删除方法详解
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.git-branch-deletion-guide/" target="_self">
+        <div>
+          Git 分支本地和远程删除方法详解技术背景在使用 Git 进行版本控制的过程中，我们会创建多个分支来进行不同功能的开发、测试和修复。当某个分支的任务完成后，为了保持仓库的整洁和清晰，我们需要删除不再使用的分支。这就涉及到如何正确地删除本地分支和远程分支。 实现步骤删除本地分支要删除本地分支，可以使用以下命令：  git branch -d &lt;branch_name&gt;：该命令是 --de
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-15 08:00" pubdate>
+              2025-04-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/" class="category-chain-item">后端架构</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">版本控制实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Git/">#Git</a>
+            
+              <a href="/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">#版本控制</a>
+            
+              <a href="/tags/%E5%88%86%E6%94%AF%E5%88%A0%E9%99%A4/">#分支删除</a>
+            
+              <a href="/tags/%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5/">#远程同步</a>
             
           </div>
         
@@ -856,6 +880,82 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2025/04/15/2025-04-15.install-packages-using-pip-from-requirements-txt/" target="_self">
+          使用pip根据本地目录的requirements.txt文件安装包
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.install-packages-using-pip-from-requirements-txt/" target="_self">
+        <div>
+          使用pip根据本地目录的requirements.txt文件安装包技术背景在Python开发中，我们经常会使用requirements.txt文件来记录项目所依赖的包及其版本。当需要在不同环境中部署项目时，通过pip工具可以根据requirements.txt文件快速安装所有依赖包。有时，由于网络限制或其他原因，我们希望从本地目录安装这些包，这就需要掌握如何使用pip结合本地目录的requirem
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-15 08:00" pubdate>
+              2025-04-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E5%8C%85%E7%AE%A1%E7%90%86/" class="category-chain-item">Python包管理</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/pip/">#pip</a>
+            
+              <a href="/tags/%E5%8C%85%E5%AE%89%E8%A3%85/">#包安装</a>
+            
+              <a href="/tags/requirements-txt/">#requirements.txt</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2025/04/15/2025-04-15.install-and-configure-openjdk-17-and-neo4j-on-server/" target="_self">
           在服务器上安装与配置OpenJDK 17和Neo4J
         </a>
@@ -921,82 +1021,6 @@
               <a href="/tags/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/">#环境安装</a>
             
               <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/">#数据库配置</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/15/2025-04-15.install-packages-using-pip-from-requirements-txt/" target="_self">
-          使用pip根据本地目录的requirements.txt文件安装包
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.install-packages-using-pip-from-requirements-txt/" target="_self">
-        <div>
-          使用pip根据本地目录的requirements.txt文件安装包技术背景在Python开发中，我们经常会使用requirements.txt文件来记录项目所依赖的包及其版本。当需要在不同环境中部署项目时，通过pip工具可以根据requirements.txt文件快速安装所有依赖包。有时，由于网络限制或其他原因，我们希望从本地目录安装这些包，这就需要掌握如何使用pip结合本地目录的requirem
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-15 08:00" pubdate>
-              2025-04-15
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E5%8C%85%E7%AE%A1%E7%90%86/" class="category-chain-item">Python包管理</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/pip/">#pip</a>
-            
-              <a href="/tags/%E5%8C%85%E5%AE%89%E8%A3%85/">#包安装</a>
-            
-              <a href="/tags/requirements-txt/">#requirements.txt</a>
             
           </div>
         
