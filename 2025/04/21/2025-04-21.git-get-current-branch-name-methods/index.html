@@ -1,0 +1,736 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Git中获取当前分支名称的方法技术背景在使用Git进行版本控制时，我们经常需要知道当前所在的分支名称。例如，在自动化脚本中，根据不同的分支执行不同的操作；或者在日常开发中，快速确认自己当前的工作分支。因此，掌握获取当前分支名称的方法是很有必要的。 实现步骤1. 使用git branch命令 显示所有分支并标记当前分支： 执行git branch命令，会列出所有本地分支，当前分支会用星号*标记。 示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git中获取当前分支名称的方法">
+<meta property="og:url" content="https://1010n111.github.io/2025/04/21/2025-04-21.git-get-current-branch-name-methods/index.html">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="Git中获取当前分支名称的方法技术背景在使用Git进行版本控制时，我们经常需要知道当前所在的分支名称。例如，在自动化脚本中，根据不同的分支执行不同的操作；或者在日常开发中，快速确认自己当前的工作分支。因此，掌握获取当前分支名称的方法是很有必要的。 实现步骤1. 使用git branch命令 显示所有分支并标记当前分支： 执行git branch命令，会列出所有本地分支，当前分支会用星号*标记。 示">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-21T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-04-21T01:19:13.113Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="后端开发">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="Shell">
+<meta property="article:tag" content="获取当前分支">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843507635528842" crossorigin="anonymous"></script>
+  
+  <title>Git中获取当前分支名称的方法 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Git中获取当前分支名称的方法"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-04-21 08:00" pubdate>
+          2025年4月21日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          964 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Git中获取当前分支名称的方法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Git中获取当前分支名称的方法"><a href="#Git中获取当前分支名称的方法" class="headerlink" title="Git中获取当前分支名称的方法"></a>Git中获取当前分支名称的方法</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在使用Git进行版本控制时，我们经常需要知道当前所在的分支名称。例如，在自动化脚本中，根据不同的分支执行不同的操作；或者在日常开发中，快速确认自己当前的工作分支。因此，掌握获取当前分支名称的方法是很有必要的。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="1-使用git-branch命令"><a href="#1-使用git-branch命令" class="headerlink" title="1. 使用git branch命令"></a>1. 使用<code>git branch</code>命令</h3><ul>
+<li><strong>显示所有分支并标记当前分支</strong>：<ul>
+<li>执行<code>git branch</code>命令，会列出所有本地分支，当前分支会用星号<code>*</code>标记。</li>
+<li>示例输出：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">* master<br>  feature-branch<br>  another-branch<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>提取当前分支名称</strong>：可以结合其他工具如<code>grep</code>和<code>cut</code>来提取当前分支名称。<ul>
+<li>命令：<code>git branch | grep -e &quot;^*&quot; | cut -d&#39; &#39; -f 2</code></li>
+<li>解释：<code>grep -e &quot;^*&quot;</code>用于匹配以星号开头的行，<code>cut -d&#39; &#39; -f 2</code>用于以空格为分隔符，提取第二列的内容，即分支名称。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-使用git-rev-parse命令"><a href="#2-使用git-rev-parse命令" class="headerlink" title="2. 使用git rev-parse命令"></a>2. 使用<code>git rev-parse</code>命令</h3><ul>
+<li><strong>获取当前分支名称</strong>：执行<code>git rev-parse --abbrev-ref HEAD</code>命令可以直接获取当前分支的名称。<ul>
+<li>示例输出：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">master<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>处理特殊情况</strong>：如果在新初始化的仓库中，可能还没有<code>HEAD</code>，可以使用<code>git rev-parse --abbrev-ref HEAD 2&gt;/dev/null</code>来避免错误信息的显示。</li>
+</ul>
+<h3 id="3-使用git-symbolic-ref命令"><a href="#3-使用git-symbolic-ref命令" class="headerlink" title="3. 使用git symbolic-ref命令"></a>3. 使用<code>git symbolic-ref</code>命令</h3><ul>
+<li><strong>获取完整的引用名称</strong>：执行<code>git symbolic-ref HEAD</code>命令会显示完整的引用名称。<ul>
+<li>示例输出：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">refs/heads/master<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>提取分支名称</strong>：结合<code>sed</code>命令可以提取出分支名称。<ul>
+<li>命令：<code>git symbolic-ref HEAD | sed -e &quot;s/^refs\/heads\///&quot;</code></li>
+<li>解释：<code>sed -e &quot;s/^refs\/heads\///&quot;</code>用于替换以<code>refs/heads/</code>开头的内容为空，从而得到分支名称。</li>
+</ul>
+</li>
+<li><strong>使用<code>--short</code>选项</strong>：在Git v1.8及以后的版本中，可以使用<code>git symbolic-ref --short HEAD</code>直接获取分支名称。</li>
+</ul>
+<h3 id="4-使用git-branch-show-current命令"><a href="#4-使用git-branch-show-current命令" class="headerlink" title="4. 使用git branch --show-current命令"></a>4. 使用<code>git branch --show-current</code>命令</h3><ul>
+<li><strong>获取当前分支名称</strong>：在Git 2.22及以上版本中，可以使用<code>git branch --show-current</code>命令直接获取当前分支的名称。<ul>
+<li>示例输出：</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">master<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>处理分离头指针状态</strong>：在分离头指针（detached HEAD）状态下，该命令不会输出任何内容。</li>
+</ul>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><h3 id="提取当前分支名称的脚本"><a href="#提取当前分支名称的脚本" class="headerlink" title="提取当前分支名称的脚本"></a>提取当前分支名称的脚本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>current_branch=$(git rev-parse --abbrev-ref HEAD)<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;当前分支名称: <span class="hljs-variable">$current_branch</span>&quot;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="兼容不同Git版本的脚本"><a href="#兼容不同Git版本的脚本" class="headerlink" title="兼容不同Git版本的脚本"></a>兼容不同Git版本的脚本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br><span class="hljs-keyword">if</span> git --version | grep -q <span class="hljs-string">&quot;2.22&quot;</span>; <span class="hljs-keyword">then</span><br>    current_branch=$(git branch --show-current)<br><span class="hljs-keyword">else</span><br>    current_branch=$(git rev-parse --abbrev-ref HEAD)<br><span class="hljs-keyword">fi</span><br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;当前分支名称: <span class="hljs-variable">$current_branch</span>&quot;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>在自动化脚本中使用</strong>：在自动化部署脚本、持续集成脚本等中，可以使用上述方法获取当前分支名称，根据不同的分支执行不同的操作。</li>
+<li><strong>设置别名</strong>：为了方便使用，可以在<code>.bashrc</code>或<code>.zshrc</code>文件中设置别名。例如：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">alias</span> current-branch=<span class="hljs-string">&#x27;git rev-parse --abbrev-ref HEAD&#x27;</span><br></code></pre></td></tr></table></figure>
+<p>这样，在终端中输入<code>current-branch</code>就可以快速获取当前分支名称。</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="1-在分离头指针（detached-HEAD）状态下无法获取正确的分支名称"><a href="#1-在分离头指针（detached-HEAD）状态下无法获取正确的分支名称" class="headerlink" title="1. 在分离头指针（detached HEAD）状态下无法获取正确的分支名称"></a>1. 在分离头指针（detached HEAD）状态下无法获取正确的分支名称</h3><ul>
+<li><strong>问题描述</strong>：在分离头指针状态下，很多方法会返回<code>HEAD</code>或没有输出。</li>
+<li><strong>解决方法</strong>：可以结合<code>git describe</code>命令来处理这种情况。例如：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>branch_name=$(git symbolic-ref --short HEAD 2&gt;/dev/null)<br><span class="hljs-keyword">if</span> [ -z <span class="hljs-string">&quot;<span class="hljs-variable">$branch_name</span>&quot;</span> ]; <span class="hljs-keyword">then</span><br>    branch_name=$(git describe --exact-match --tags HEAD 2&gt;/dev/null)<br>    <span class="hljs-keyword">if</span> [ -z <span class="hljs-string">&quot;<span class="hljs-variable">$branch_name</span>&quot;</span> ]; <span class="hljs-keyword">then</span><br>        branch_name=$(git rev-parse --short HEAD)<br>    <span class="hljs-keyword">fi</span><br><span class="hljs-keyword">fi</span><br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;当前分支/提交: <span class="hljs-variable">$branch_name</span>&quot;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="2-不同Git版本的兼容性问题"><a href="#2-不同Git版本的兼容性问题" class="headerlink" title="2. 不同Git版本的兼容性问题"></a>2. 不同Git版本的兼容性问题</h3><ul>
+<li><strong>问题描述</strong>：一些命令在不同的Git版本中可能有不同的行为或不支持。</li>
+<li><strong>解决方法</strong>：在使用命令之前，可以先检查Git版本，根据版本选择合适的命令。例如：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>git_version=$(git --version | <span class="hljs-built_in">cut</span> -d<span class="hljs-string">&#x27; &#x27;</span> -f 3)<br><span class="hljs-keyword">if</span> [[ $(<span class="hljs-built_in">printf</span> <span class="hljs-string">&#x27;%s\n&#x27;</span> <span class="hljs-string">&quot;2.22&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$git_version</span>&quot;</span> | <span class="hljs-built_in">sort</span> -V | <span class="hljs-built_in">head</span> -n1) == <span class="hljs-string">&quot;2.22&quot;</span> ]]; <span class="hljs-keyword">then</span><br>    current_branch=$(git branch --show-current)<br><span class="hljs-keyword">else</span><br>    current_branch=$(git rev-parse --abbrev-ref HEAD)<br><span class="hljs-keyword">fi</span><br><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;当前分支名称: <span class="hljs-variable">$current_branch</span>&quot;</span><br></code></pre></td></tr></table></figure>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">版本控制实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#后端开发</a>
+      
+        <a href="/tags/Git/" class="print-no-link">#Git</a>
+      
+        <a href="/tags/Shell/" class="print-no-link">#Shell</a>
+      
+        <a href="/tags/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF/" class="print-no-link">#获取当前分支</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Git中获取当前分支名称的方法</div>
+      <div>https://1010n111.github.io/2025/04/21/2025-04-21.git-get-current-branch-name-methods/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年4月21日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/04/21/2025-04-21.git-push-error-fix/" title="解决Git推送提交时&#39;src refspec master does not match any&#39;错误">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">解决Git推送提交时&#39;src refspec master does not match any&#39;错误</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/04/21/2025-04-21.how-to-clone-a-specific-git-branch/" title="如何克隆特定的Git分支">
+                        <span class="hidden-mobile">如何克隆特定的Git分支</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
