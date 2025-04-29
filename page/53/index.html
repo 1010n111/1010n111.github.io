@@ -223,15 +223,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.python-remove-trailing-newline-methods/" target="_self">
-          Python中去除字符串末尾换行符的方法
+        <a href="/2025/04/14/2025-04-14.python-static-methods/" target="_self">
+          Python中的静态方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-remove-trailing-newline-methods/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-static-methods/" target="_self">
         <div>
-          Python中去除字符串末尾换行符的方法技术背景在Python编程中，处理字符串时经常会遇到字符串末尾包含换行符的情况，如从文件中读取每一行内容时，换行符会作为字符串的一部分被读取进来。为了满足后续处理需求，需要将这些换行符去除。 实现步骤1. 使用rstrip()方法rstrip()方法可以去除字符串末尾的指定字符，默认去除所有空白字符，包括换行符。 123456789# 去除所有末尾空白字符s
+          Python中的静态方法技术背景在Python中，静态方法是一种属于类但不需要访问类或实例的特定状态的方法。与实例方法不同，静态方法不会接收隐式的第一个参数（如self或cls）。静态方法类似于普通函数，但它们与类相关联，通常用于执行与类相关但不依赖于类实例的操作。 实现步骤使用@staticmethod装饰器这是Python 2.4及以后版本推荐的方式，使用装饰器语法可以让代码更简洁易读。 12
         </div>
       </a>
 
@@ -260,7 +260,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/" class="category-chain-item">Python编程</a>
   
   
 
@@ -277,13 +277,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
-            
               <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
             
-              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
+              <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/%E6%8D%A2%E8%A1%8C%E7%AC%A6%E5%8E%BB%E9%99%A4/">#换行符去除</a>
+              <a href="/tags/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95/">#静态方法</a>
+            
+              <a href="/tags/%E7%B1%BB%E6%96%B9%E6%B3%95/">#类方法</a>
+            
+              <a href="/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/">#装饰器</a>
             
           </div>
         
@@ -351,9 +353,9 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
-            
               <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
             
               <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%96/">#字符串格式化</a>
             
@@ -425,89 +427,13 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
-            
               <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
             
               <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
             
               <a href="/tags/%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2/">#小写转换</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.python-string-to-datetime-conversion/" target="_self">
-          Python将字符串转换为datetime对象
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-string-to-datetime-conversion/" target="_self">
-        <div>
-          Python将字符串转换为datetime对象技术背景在Python编程中，我们经常会遇到需要将字符串形式的日期和时间转换为datetime对象的情况。例如，从文件、数据库或网络接口中获取的数据通常是以字符串形式存在的，而在进行日期和时间的计算、比较等操作时，使用datetime对象会更加方便。 实现步骤1. 使用datetime.strptime方法datetime.strptime可以根据指定
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/datetime/">#datetime</a>
-            
-              <a href="/tags/dateutil/">#dateutil</a>
-            
-              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/">#字符串转换</a>
             
           </div>
         
@@ -575,9 +501,9 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
-            
               <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
             
               <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/">#数据类型转换</a>
             
@@ -649,13 +575,89 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
-            
               <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
             
               <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/">#字符串处理</a>
             
               <a href="/tags/%E9%9B%B6%E5%A1%AB%E5%85%85/">#零填充</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/14/2025-04-14.python-string-to-datetime-conversion/" target="_self">
+          Python将字符串转换为datetime对象
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.python-string-to-datetime-conversion/" target="_self">
+        <div>
+          Python将字符串转换为datetime对象技术背景在Python编程中，我们经常会遇到需要将字符串形式的日期和时间转换为datetime对象的情况。例如，从文件、数据库或网络接口中获取的数据通常是以字符串形式存在的，而在进行日期和时间的计算、比较等操作时，使用datetime对象会更加方便。 实现步骤1. 使用datetime.strptime方法datetime.strptime可以根据指定
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/datetime/">#datetime</a>
+            
+              <a href="/tags/dateutil/">#dateutil</a>
+            
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/">#字符串转换</a>
             
           </div>
         
@@ -723,9 +725,9 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
-            
               <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
             
               <a href="/tags/time%E6%A8%A1%E5%9D%97/">#time模块</a>
             
@@ -799,9 +801,9 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
-            
               <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
             
               <a href="/tags/%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/">#函数参数传递</a>
             
@@ -897,15 +899,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.set-compileroptions-iscustomelement-for-vuejs3-in-laravel/" target="_self">
-          在Laravel项目中为VueJS 3设置compilerOptions.isCustomElement
+        <a href="/2025/04/14/2025-04-14.running-python-on-android-methods/" target="_self">
+          在安卓设备上运行Python的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.set-compileroptions-iscustomelement-for-vuejs3-in-laravel/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.running-python-on-android-methods/" target="_self">
         <div>
-          在Laravel项目中为VueJS 3设置compilerOptions.isCustomElement技术背景在Laravel项目中使用VueJS 3时，若引入了提供自定义元素的JS文件，可能会遇到组件解析失败的控制台错误，提示需要通过compilerOptions.isCustomElement将某些元素排除在组件解析之外。 实现步骤Webpack项目（webpack.mix.js）在webp
+          在安卓设备上运行Python的方法技术背景在安卓设备上运行Python可以为开发者提供更多的开发选择和灵活性，能够利用Python丰富的库和简洁的语法来开发各种应用，如游戏、脚本工具等。然而，由于安卓系统原生不支持Python，需要借助一些工具和框架来实现。 实现步骤Kivy 安装：Kivy是一个开源的Python库，可在多种平台上运行。可以按照其官方文档进行安装。 开发：使用Python编写应用
         </div>
       </a>
 
@@ -929,12 +931,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  <a href="/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/" class="category-chain-item">移动开发</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E9%9B%86%E6%88%90%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架集成实践</a>
+  <a href="/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/Python%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python应用实践</a>
   
   
 
@@ -951,15 +953,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+              <a href="/tags/Python/">#Python</a>
             
-              <a href="/tags/JavaScript/">#JavaScript</a>
+              <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/">#移动开发</a>
             
-              <a href="/tags/Vue-js/">#Vue.js</a>
+              <a href="/tags/Kivy/">#Kivy</a>
             
-              <a href="/tags/Laravel/">#Laravel</a>
+              <a href="/tags/SL4A/">#SL4A</a>
             
-              <a href="/tags/%E7%BC%96%E8%AF%91%E5%99%A8%E9%85%8D%E7%BD%AE/">#编译器配置</a>
+              <a href="/tags/Chaquopy/">#Chaquopy</a>
             
           </div>
         
@@ -1021,7 +1023,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
     </div>
   
   

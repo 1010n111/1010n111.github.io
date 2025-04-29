@@ -223,15 +223,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.mysql-multiple-columns-unique-constraint_hexo/" target="_self">
-          MySQL中如何为多列指定唯一约束
+        <a href="/2025/04/23/2025-04-23.mysql-insert-if-not-exists-methods_hexo/" target="_self">
+          MySQL中实现“不存在则插入”的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.mysql-multiple-columns-unique-constraint_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.mysql-insert-if-not-exists-methods_hexo/" target="_self">
         <div>
-          MySQL中如何为多列指定唯一约束技术背景在数据库设计中，有时需要确保表中多列的组合值是唯一的。例如，在一个投票表中，需要保证user、email和address这三列的组合值在表中是唯一的，以避免重复投票或重复记录。MySQL 提供了多种方法来实现多列的唯一约束。 实现步骤创建表时指定唯一约束在创建表时，可以直接指定多列的唯一约束。以下是一个示例： 12345678CREATE TABLE `v
+          MySQL中实现“不存在则插入”的方法技术背景在MySQL数据库操作中，当需要向已有大量数据（如拥有约1400万条记录的表）的表中添加新数据时，为避免数据重复，需要实现“不存在则插入”的功能。传统的使用一对查询（一个查询检查，一个查询插入）的方式效率较低，因此需要探索更高效的方法。 实现步骤1. 使用INSERT IGNORE INTO这种方法会忽略插入过程中出现的错误，若插入的记录已存在（违反唯
         </div>
       </a>
 
@@ -260,7 +260,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E5%BA%94%E7%94%A8/" class="category-chain-item">MySQL应用</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E6%93%8D%E4%BD%9C/" class="category-chain-item">MySQL操作</a>
   
   
 
@@ -285,7 +285,7 @@
             
               <a href="/tags/%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F/">#唯一约束</a>
             
-              <a href="/tags/%E5%A4%9A%E5%88%97%E7%BA%A6%E6%9D%9F/">#多列约束</a>
+              <a href="/tags/%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE/">#插入数据</a>
             
           </div>
         
@@ -299,15 +299,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.mysql-text-types-maximum-storage-sizes_hexo/" target="_self">
-          MySQL中TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT的最大存储大小
+        <a href="/2025/04/23/2025-04-23.postgresql-version-query-methods_hexo/" target="_self">
+          查询PostgreSQL运行版本的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.mysql-text-types-maximum-storage-sizes_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.postgresql-version-query-methods_hexo/" target="_self">
         <div>
-          MySQL中TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT的最大存储大小技术背景在MySQL数据库中，为了满足不同长度文本数据的存储需求，提供了四种TEXT类型，分别是TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT。了解这些数据类型的最大存储大小，对于数据库表结构的设计和数据存储的规划至关重要。特别是在使用UTF - 8字符编码时，由于UTF - 8包含多字
+          查询PostgreSQL运行版本的方法技术背景在使用PostgreSQL数据库时，了解其运行版本至关重要。不同版本的PostgreSQL可能在功能特性、性能表现以及安全性等方面存在差异。在企业环境中，由于无法直接参与数据库的安装和管理，准确查询数据库版本变得尤为关键。 实现步骤1. 通过SQL查询 SELECT version();：此查询会返回包含数据库版本、编译环境等详细信息的字符串。  1S
         </div>
       </a>
 
@@ -331,12 +331,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/" class="category-chain-item">数据库开发</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/" class="category-chain-item">数据库管理</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E4%BD%BF%E7%94%A8/" class="category-chain-item">MySQL使用</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/PostgreSQL%E6%93%8D%E4%BD%9C/" class="category-chain-item">PostgreSQL操作</a>
   
   
 
@@ -353,13 +353,13 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/MySQL/">#MySQL</a>
-            
               <a href="/tags/SQL/">#SQL</a>
             
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/">#数据库开发</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/">#数据库管理</a>
             
-              <a href="/tags/%E6%96%87%E6%9C%AC%E5%AD%97%E6%AE%B5%E5%AD%98%E5%82%A8/">#文本字段存储</a>
+              <a href="/tags/PostgreSQL/">#PostgreSQL</a>
+            
+              <a href="/tags/%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2/">#版本查询</a>
             
           </div>
         
@@ -449,15 +449,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.postgresql-version-query-methods_hexo/" target="_self">
-          查询PostgreSQL运行版本的方法
+        <a href="/2025/04/23/2025-04-23.mysql-text-types-maximum-storage-sizes_hexo/" target="_self">
+          MySQL中TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT的最大存储大小
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.postgresql-version-query-methods_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.mysql-text-types-maximum-storage-sizes_hexo/" target="_self">
         <div>
-          查询PostgreSQL运行版本的方法技术背景在使用PostgreSQL数据库时，了解其运行版本至关重要。不同版本的PostgreSQL可能在功能特性、性能表现以及安全性等方面存在差异。在企业环境中，由于无法直接参与数据库的安装和管理，准确查询数据库版本变得尤为关键。 实现步骤1. 通过SQL查询 SELECT version();：此查询会返回包含数据库版本、编译环境等详细信息的字符串。  1S
+          MySQL中TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT的最大存储大小技术背景在MySQL数据库中，为了满足不同长度文本数据的存储需求，提供了四种TEXT类型，分别是TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT。了解这些数据类型的最大存储大小，对于数据库表结构的设计和数据存储的规划至关重要。特别是在使用UTF - 8字符编码时，由于UTF - 8包含多字
         </div>
       </a>
 
@@ -481,12 +481,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/" class="category-chain-item">数据库管理</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/" class="category-chain-item">数据库开发</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/PostgreSQL%E6%93%8D%E4%BD%9C/" class="category-chain-item">PostgreSQL操作</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E4%BD%BF%E7%94%A8/" class="category-chain-item">MySQL使用</a>
   
   
 
@@ -503,13 +503,13 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
+              <a href="/tags/MySQL/">#MySQL</a>
+            
               <a href="/tags/SQL/">#SQL</a>
             
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/">#数据库管理</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/">#数据库开发</a>
             
-              <a href="/tags/PostgreSQL/">#PostgreSQL</a>
-            
-              <a href="/tags/%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2/">#版本查询</a>
+              <a href="/tags/%E6%96%87%E6%9C%AC%E5%AD%97%E6%AE%B5%E5%AD%98%E5%82%A8/">#文本字段存储</a>
             
           </div>
         
@@ -586,82 +586,6 @@
               <a href="/tags/shell%E8%84%9A%E6%9C%AC/">#shell脚本</a>
             
               <a href="/tags/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%8F%90%E7%A4%BA/">#用户输入提示</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/23/2025-04-23.recursive-file-search-based-on-wildcard_hexo/" target="_self">
-          在当前及子文件夹中基于通配符递归查找文件的方法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.recursive-file-search-based-on-wildcard_hexo/" target="_self">
-        <div>
-          在当前及子文件夹中基于通配符递归查找文件的方法技术背景在Linux系统的日常使用中，经常需要在当前目录及其子目录下查找符合特定通配符模式的文件。这在管理大量文件、调试程序、备份数据等场景中非常常见。通配符查找可以让我们更灵活地定位所需文件，提高工作效率。 实现步骤使用find命令find 是Linux系统中最常用的文件查找工具，它可以递归地遍历目录树，并根据指定的条件查找文件。  基本查找：查找以
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-23 11:14" pubdate>
-              2025-04-23
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/" class="category-chain-item">系统运维</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/" class="category-chain-item">文件查找</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Shell/">#Shell</a>
-            
-              <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/">#系统运维</a>
-            
-              <a href="/tags/find%E5%91%BD%E4%BB%A4/">#find命令</a>
-            
-              <a href="/tags/fd%E5%B7%A5%E5%85%B7/">#fd工具</a>
-            
-              <a href="/tags/%E9%80%9A%E9%85%8D%E7%AC%A6%E6%9F%A5%E6%89%BE/">#通配符查找</a>
             
           </div>
         
@@ -814,6 +738,82 @@
               <a href="/tags/%E7%9B%AE%E5%BD%95%E6%89%93%E5%8C%85/">#目录打包</a>
             
               <a href="/tags/%E6%96%87%E4%BB%B6%E6%8E%92%E9%99%A4/">#文件排除</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/23/2025-04-23.recursive-file-search-based-on-wildcard_hexo/" target="_self">
+          在当前及子文件夹中基于通配符递归查找文件的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.recursive-file-search-based-on-wildcard_hexo/" target="_self">
+        <div>
+          在当前及子文件夹中基于通配符递归查找文件的方法技术背景在Linux系统的日常使用中，经常需要在当前目录及其子目录下查找符合特定通配符模式的文件。这在管理大量文件、调试程序、备份数据等场景中非常常见。通配符查找可以让我们更灵活地定位所需文件，提高工作效率。 实现步骤使用find命令find 是Linux系统中最常用的文件查找工具，它可以递归地遍历目录树，并根据指定的条件查找文件。  基本查找：查找以
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-23 11:14" pubdate>
+              2025-04-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/" class="category-chain-item">系统运维</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/" class="category-chain-item">文件查找</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Shell/">#Shell</a>
+            
+              <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/">#系统运维</a>
+            
+              <a href="/tags/find%E5%91%BD%E4%BB%A4/">#find命令</a>
+            
+              <a href="/tags/fd%E5%B7%A5%E5%85%B7/">#fd工具</a>
+            
+              <a href="/tags/%E9%80%9A%E9%85%8D%E7%AC%A6%E6%9F%A5%E6%89%BE/">#通配符查找</a>
             
           </div>
         
@@ -1034,7 +1034,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
     </div>
   
   
