@@ -299,15 +299,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.mysql-insert-if-not-exists-methods_hexo/" target="_self">
-          MySQL中实现“不存在则插入”的方法
+        <a href="/2025/04/23/2025-04-23.mysql-text-types-maximum-storage-sizes_hexo/" target="_self">
+          MySQL中TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT的最大存储大小
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.mysql-insert-if-not-exists-methods_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.mysql-text-types-maximum-storage-sizes_hexo/" target="_self">
         <div>
-          MySQL中实现“不存在则插入”的方法技术背景在MySQL数据库操作中，当需要向已有大量数据（如拥有约1400万条记录的表）的表中添加新数据时，为避免数据重复，需要实现“不存在则插入”的功能。传统的使用一对查询（一个查询检查，一个查询插入）的方式效率较低，因此需要探索更高效的方法。 实现步骤1. 使用INSERT IGNORE INTO这种方法会忽略插入过程中出现的错误，若插入的记录已存在（违反唯
+          MySQL中TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT的最大存储大小技术背景在MySQL数据库中，为了满足不同长度文本数据的存储需求，提供了四种TEXT类型，分别是TINYTEXT、TEXT、MEDIUMTEXT和LONGTEXT。了解这些数据类型的最大存储大小，对于数据库表结构的设计和数据存储的规划至关重要。特别是在使用UTF - 8字符编码时，由于UTF - 8包含多字
         </div>
       </a>
 
@@ -336,7 +336,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E6%93%8D%E4%BD%9C/" class="category-chain-item">MySQL操作</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E4%BD%BF%E7%94%A8/" class="category-chain-item">MySQL使用</a>
   
   
 
@@ -359,9 +359,7 @@
             
               <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/">#数据库开发</a>
             
-              <a href="/tags/%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F/">#唯一约束</a>
-            
-              <a href="/tags/%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE/">#插入数据</a>
+              <a href="/tags/%E6%96%87%E6%9C%AC%E5%AD%97%E6%AE%B5%E5%AD%98%E5%82%A8/">#文本字段存储</a>
             
           </div>
         
@@ -451,80 +449,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.postgresql-version-query-methods_hexo/" target="_self">
-          查询PostgreSQL运行版本的方法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.postgresql-version-query-methods_hexo/" target="_self">
-        <div>
-          查询PostgreSQL运行版本的方法技术背景在使用PostgreSQL数据库时，了解其运行版本至关重要。不同版本的PostgreSQL可能在功能特性、性能表现以及安全性等方面存在差异。在企业环境中，由于无法直接参与数据库的安装和管理，准确查询数据库版本变得尤为关键。 实现步骤1. 通过SQL查询 SELECT version();：此查询会返回包含数据库版本、编译环境等详细信息的字符串。  1S
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-23 11:14" pubdate>
-              2025-04-23
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/" class="category-chain-item">数据库管理</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/PostgreSQL%E6%93%8D%E4%BD%9C/" class="category-chain-item">PostgreSQL操作</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/SQL/">#SQL</a>
-            
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/">#数据库管理</a>
-            
-              <a href="/tags/PostgreSQL/">#PostgreSQL</a>
-            
-              <a href="/tags/%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2/">#版本查询</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
         <a href="/2025/04/23/2025-04-23.prompting-yes-no-cancel-in-linux-shell-script_hexo/" target="_self">
           在Linux shell脚本中提示用户选择Yes/No/Cancel的方法
         </a>
@@ -588,82 +512,6 @@
               <a href="/tags/shell%E8%84%9A%E6%9C%AC/">#shell脚本</a>
             
               <a href="/tags/%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E6%8F%90%E7%A4%BA/">#用户输入提示</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/23/2025-04-23.recursive-grep-search-methods_hexo/" target="_self">
-          递归使用grep搜索所有目录和子目录的方法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.recursive-grep-search-methods_hexo/" target="_self">
-        <div>
-          递归使用grep搜索所有目录和子目录的方法技术背景在Linux或Unix系统中，grep 是一个强大的文本搜索工具，常用于在文件中查找匹配的字符串。当需要在一个目录及其所有子目录中递归搜索特定文本时，就需要掌握一些特殊的使用技巧。 实现步骤基本的递归grep命令 使用 -r 选项：对于GNU grep，可以使用 -r 选项进行递归搜索。例如，要在当前目录及其子目录中搜索包含 “texthere”
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-23 11:14" pubdate>
-              2025-04-23
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/" class="category-chain-item">系统运维</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/Linux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/" class="category-chain-item">Linux命令使用</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Shell/">#Shell</a>
-            
-              <a href="/tags/grep/">#grep</a>
-            
-              <a href="/tags/Linux%E5%91%BD%E4%BB%A4/">#Linux命令</a>
-            
-              <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/">#系统运维</a>
-            
-              <a href="/tags/%E9%80%92%E5%BD%92%E6%90%9C%E7%B4%A2/">#递归搜索</a>
             
           </div>
         
@@ -753,15 +601,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/23/2025-04-23.snowbreak-auto-assistant-usage-guide_hexo/" target="_self">
-          尘白禁区自动化助手使用指南
+        <a href="/2025/04/23/2025-04-23.postgresql-version-query-methods_hexo/" target="_self">
+          查询PostgreSQL运行版本的方法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.snowbreak-auto-assistant-usage-guide_hexo/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.postgresql-version-query-methods_hexo/" target="_self">
         <div>
-          尘白禁区自动化助手使用指南技术背景在游戏《尘白禁区》中，日常任务、活动材料本等操作较为繁琐，玩家需要花费大量时间。尘白禁区自动化助手应运而生，它基于Python开发，借助图像识别等技术，实现游戏内部分操作的自动化，帮助玩家节省时间和精力。 实现步骤1. 安装助手普通用户不懂代码的直接下载release中的安装包进行安装，不需要下载源码。需确保游戏窗口是16:9，全屏或者窗口化都支持，如果是窗口化把
+          查询PostgreSQL运行版本的方法技术背景在使用PostgreSQL数据库时，了解其运行版本至关重要。不同版本的PostgreSQL可能在功能特性、性能表现以及安全性等方面存在差异。在企业环境中，由于无法直接参与数据库的安装和管理，准确查询数据库版本变得尤为关键。 实现步骤1. 通过SQL查询 SELECT version();：此查询会返回包含数据库版本、编译环境等详细信息的字符串。  1S
         </div>
       </a>
 
@@ -785,12 +633,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B8%8E%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/" class="category-chain-item">游戏开发与辅助工具</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/" class="category-chain-item">数据库管理</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B8%8E%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E5%AE%9E%E8%B7%B5/" class="category-chain-item">自动化脚本实践</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/PostgreSQL%E6%93%8D%E4%BD%9C/" class="category-chain-item">PostgreSQL操作</a>
   
   
 
@@ -807,15 +655,13 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Python/">#Python</a>
+              <a href="/tags/SQL/">#SQL</a>
             
-              <a href="/tags/%E6%B8%B8%E6%88%8F%E8%BE%85%E5%8A%A9%E5%BC%80%E5%8F%91/">#游戏辅助开发</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/">#数据库管理</a>
             
-              <a href="/tags/%E5%B0%98%E7%99%BD%E7%A6%81%E5%8C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8A%A9%E6%89%8B/">#尘白禁区自动化助手</a>
+              <a href="/tags/PostgreSQL/">#PostgreSQL</a>
             
-              <a href="/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB%E8%87%AA%E5%8A%A8%E5%8C%96/">#图像识别自动化</a>
-            
-              <a href="/tags/GPU%E5%8A%A0%E9%80%9FOCR/">#GPU加速OCR</a>
+              <a href="/tags/%E7%89%88%E6%9C%AC%E6%9F%A5%E8%AF%A2/">#版本查询</a>
             
           </div>
         
@@ -975,6 +821,158 @@
               <a href="/tags/SQL%E6%9F%A5%E8%AF%A2%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/">#SQL查询错误处理</a>
             
               <a href="/tags/SQL%E6%B3%A8%E5%85%A5%E9%98%B2%E8%8C%83/">#SQL注入防范</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/23/2025-04-23.snowbreak-auto-assistant-usage-guide_hexo/" target="_self">
+          尘白禁区自动化助手使用指南
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.snowbreak-auto-assistant-usage-guide_hexo/" target="_self">
+        <div>
+          尘白禁区自动化助手使用指南技术背景在游戏《尘白禁区》中，日常任务、活动材料本等操作较为繁琐，玩家需要花费大量时间。尘白禁区自动化助手应运而生，它基于Python开发，借助图像识别等技术，实现游戏内部分操作的自动化，帮助玩家节省时间和精力。 实现步骤1. 安装助手普通用户不懂代码的直接下载release中的安装包进行安装，不需要下载源码。需确保游戏窗口是16:9，全屏或者窗口化都支持，如果是窗口化把
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-23 11:14" pubdate>
+              2025-04-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B8%8E%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/" class="category-chain-item">游戏开发与辅助工具</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B8%8E%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E5%AE%9E%E8%B7%B5/" class="category-chain-item">自动化脚本实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E6%B8%B8%E6%88%8F%E8%BE%85%E5%8A%A9%E5%BC%80%E5%8F%91/">#游戏辅助开发</a>
+            
+              <a href="/tags/%E5%B0%98%E7%99%BD%E7%A6%81%E5%8C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8A%A9%E6%89%8B/">#尘白禁区自动化助手</a>
+            
+              <a href="/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB%E8%87%AA%E5%8A%A8%E5%8C%96/">#图像识别自动化</a>
+            
+              <a href="/tags/GPU%E5%8A%A0%E9%80%9FOCR/">#GPU加速OCR</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/04/23/2025-04-23.recursive-grep-search-methods_hexo/" target="_self">
+          递归使用grep搜索所有目录和子目录的方法
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/23/2025-04-23.recursive-grep-search-methods_hexo/" target="_self">
+        <div>
+          递归使用grep搜索所有目录和子目录的方法技术背景在Linux或Unix系统中，grep 是一个强大的文本搜索工具，常用于在文件中查找匹配的字符串。当需要在一个目录及其所有子目录中递归搜索特定文本时，就需要掌握一些特殊的使用技巧。 实现步骤基本的递归grep命令 使用 -r 选项：对于GNU grep，可以使用 -r 选项进行递归搜索。例如，要在当前目录及其子目录中搜索包含 “texthere”
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-23 11:14" pubdate>
+              2025-04-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/" class="category-chain-item">系统运维</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/Linux%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/" class="category-chain-item">Linux命令使用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Shell/">#Shell</a>
+            
+              <a href="/tags/grep/">#grep</a>
+            
+              <a href="/tags/Linux%E5%91%BD%E4%BB%A4/">#Linux命令</a>
+            
+              <a href="/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/">#系统运维</a>
+            
+              <a href="/tags/%E9%80%92%E5%BD%92%E6%90%9C%E7%B4%A2/">#递归搜索</a>
             
           </div>
         
