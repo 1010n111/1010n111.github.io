@@ -19,15 +19,19 @@
   <meta name="author" content="ww">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
+    <meta name="description" content="这里是面向开发者的编程技术共享空间，专注于输出兼具深度与实用性的技术内容。我们聚焦全栈开发（前端 &#x2F; 后端 &#x2F; 移动端）、算法与数据结构、系统架构设计、云原生技术（Docker&#x2F;K8s）等核心领域，通过原理剖析、实战案例拆解、踩坑经验分享，帮助开发者理解技术本质并落地应用。同时，定期解读行业前沿动态（如 AIGC 工具链、低代码开发、边缘计算等），评测热门开发工具（IDE、调试工具、效能平台），并">
+<meta property="og:type" content="website">
 <meta property="og:title" content="小破站">
-<meta property="og:url" content="http://example.com/page/55/index.html">
+<meta property="og:url" content="https://1010n111.github.io/page/55/index.html">
 <meta property="og:site_name" content="小破站">
+<meta property="og:description" content="这里是面向开发者的编程技术共享空间，专注于输出兼具深度与实用性的技术内容。我们聚焦全栈开发（前端 &#x2F; 后端 &#x2F; 移动端）、算法与数据结构、系统架构设计、云原生技术（Docker&#x2F;K8s）等核心领域，通过原理剖析、实战案例拆解、踩坑经验分享，帮助开发者理解技术本质并落地应用。同时，定期解读行业前沿动态（如 AIGC 工具链、低代码开发、边缘计算等），评测热门开发工具（IDE、调试工具、效能平台），并">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="ww">
 <meta name="twitter:card" content="summary_large_image">
   
   
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />
   
   <title>小破站</title>
 
@@ -61,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -223,241 +227,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.vuejs-code-running-in-mounted-and-restart-functionality/" target="_self">
-          Vue.js运行代码于mounted并实现重启功能
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.vuejs-code-running-in-mounted-and-restart-functionality/" target="_self">
-        <div>
-          Vue.js运行代码于mounted并实现重启功能技术背景在使用Vue.js创建游戏时，通常需要在页面加载时执行一些初始化操作，如进行API调用并创建数据属性。当玩家赢得一轮游戏后，可能希望提供一个重启游戏的功能。而游戏的初始化代码通常放在mounted()钩子中，但mounted()钩子在组件挂载时只会执行一次，所以需要找到一种方法来实现重启功能。 实现步骤方法一：抽象初始化方法将初始化逻辑抽象
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
-            
-              <a href="/tags/JavaScript/">#JavaScript</a>
-            
-              <a href="/tags/Vue-js/">#Vue.js</a>
-            
-              <a href="/tags/%E7%BB%84%E4%BB%B6%E5%88%9D%E5%A7%8B%E5%8C%96/">#组件初始化</a>
-            
-              <a href="/tags/%E9%87%8D%E5%90%AF%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0/">#重启功能实现</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.vuejs3-event-bus-guide/" target="_self">
-          Vue.js 3 Event Bus
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.vuejs3-event-bus-guide/" target="_self">
-        <div>
-          Vue.js 3 Event Bus技术背景在 Vue 2 中，创建事件总线（Event Bus）很简单，只需创建一个 Vue 实例，然后使用 $on 和 $emit 方法来监听和触发事件。但在 Vue 3 中，Vue 不再是一个构造函数，Vue.createApp(&#123;&#125;) 返回的对象也没有 $on 和 $emit 方法，因此需要新的方式来实现事件总线。 实现步骤使用 mitt
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
-            
-              <a href="/tags/JavaScript/">#JavaScript</a>
-            
-              <a href="/tags/Vue-js-3/">#Vue.js 3</a>
-            
-              <a href="/tags/Event-Bus/">#Event Bus</a>
-            
-              <a href="/tags/%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/">#组件通信</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.vuejs3-webpack-vue-template-compiler-problem/" target="_self">
-          Vuejs 3 webpack: Problem with vue-template-compiler
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.vuejs3-webpack-vue-template-compiler-problem/" target="_self">
-        <div>
-          Vuejs 3 webpack: Problem with vue-template-compiler技术背景在将 Vue.js 3 集成到使用 Webpack 的现有项目时，会遇到 vue-template-compiler 版本不匹配的问题。官方文档指出，每次发布新的 Vue 版本时，都会同时发布相应版本的 vue-template-compiler，编译器的版本必须与基础 Vue 包保持同步
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E9%9B%86%E6%88%90%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架集成实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
-            
-              <a href="/tags/JavaScript/">#JavaScript</a>
-            
-              <a href="/tags/Vue-js/">#Vue.js</a>
-            
-              <a href="/tags/Webpack/">#Webpack</a>
-            
-              <a href="/tags/vue-template-compiler/">#vue-template-compiler</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.watch-props-change-with-vue-composition-api/" target="_self">
+        <a href="/2025-04-14.watch-props-change-with-vue-composition-api.html" target="_self">
           使用Vue Composition API / Vue 3监听props变化
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.watch-props-change-with-vue-composition-api/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.watch-props-change-with-vue-composition-api.html" target="_self">
         <div>
           使用Vue Composition API &#x2F; Vue 3监听props变化技术背景在Vue 3中引入了Composition API，它提供了更灵活的方式来组织和复用组件逻辑。在开发过程中，经常需要监听组件props的变化以执行相应的操作，但Vue Composition API RFC参考站点和相关文档中并没有明确给出监听props变化的示例。 实现步骤1. 直接监听单个prop通过
         </div>
@@ -527,13 +303,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.why-is-range-in-python3-so-fast/" target="_self">
+        <a href="/2025-04-14.why-is-range-in-python3-so-fast.html" target="_self">
           为什么在Python 3中 “1000000000000000 in range(1000000000000001)” 如此之快？
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.why-is-range-in-python3-so-fast/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.why-is-range-in-python3-so-fast.html" target="_self">
         <div>
           为什么在Python 3中 “1000000000000000 in range(1000000000000001)” 如此之快？技术背景在Python 3中，range() 函数返回的是一个 range 对象，它与Python 2中的 xrange 类似，是一种可迭代对象。很多人认为 range() 函数像生成器一样，会在迭代时逐个生成值。因此，当使用 in 操作符检查一个非常大的数是否在 ra
         </div>
@@ -603,15 +379,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.why-string-join-list-instead-of-list-join-string/" target="_self">
-          为何是 string.join(list) 而非 list.join(string)？
+        <a href="/2025-04-14.vuejs-component-missing-template-or-render-function-solve.html" target="_self">
+          Vue.js组件缺少模板或渲染函数问题解决
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.why-string-join-list-instead-of-list-join-string/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.vuejs-component-missing-template-or-render-function-solve.html" target="_self">
         <div>
-          为何是 string.join(list) 而非 list.join(string)？技术背景在Python编程中，字符串连接是一个常见的操作。join() 方法用于将可迭代对象中的元素连接成一个字符串。但该方法的调用方式 string.join(list) 与一些开发者的直观认知 list.join(string) 有所不同，这引发了关于其设计原因的讨论。 实现步骤在Python里，使用 joi
+          Vue.js组件缺少模板或渲染函数问题解决技术背景在使用Vue 3和Vue Router构建单页面应用时，开发者可能会遇到 “Component is missing template or render function” 错误。这个错误通常表示Vue组件没有正确定义模板或渲染函数，导致Vue无法渲染该组件。 实现步骤1. 问题示例在Vue 3中，创建了如下的Home组件、Foo和Bar组件，并
         </div>
       </a>
 
@@ -635,12 +411,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
   
   
     <span>></span>
     
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架使用实践</a>
   
   
 
@@ -657,13 +433,15 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
             
-              <a href="/tags/Python/">#Python</a>
+              <a href="/tags/JavaScript/">#JavaScript</a>
             
-              <a href="/tags/Python%E5%86%85%E7%BD%AE%E6%96%B9%E6%B3%95/">#Python内置方法</a>
+              <a href="/tags/Vue-js/">#Vue.js</a>
             
-              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5/">#字符串连接</a>
+              <a href="/tags/Vue-Router/">#Vue Router</a>
+            
+              <a href="/tags/%E7%BB%84%E4%BB%B6%E6%B8%B2%E6%9F%93%E9%97%AE%E9%A2%98/">#组件渲染问题</a>
             
           </div>
         
@@ -677,13 +455,165 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.why-is-reading-lines-from-stdin-much-slower-in-cpp-than-python/" target="_self">
+        <a href="/2025-04-14.vuejs3-event-bus-guide.html" target="_self">
+          Vue.js 3 Event Bus
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.vuejs3-event-bus-guide.html" target="_self">
+        <div>
+          Vue.js 3 Event Bus技术背景在 Vue 2 中，创建事件总线（Event Bus）很简单，只需创建一个 Vue 实例，然后使用 $on 和 $emit 方法来监听和触发事件。但在 Vue 3 中，Vue 不再是一个构造函数，Vue.createApp(&#123;&#125;) 返回的对象也没有 $on 和 $emit 方法，因此需要新的方式来实现事件总线。 实现步骤使用 mitt
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/Vue-js-3/">#Vue.js 3</a>
+            
+              <a href="/tags/Event-Bus/">#Event Bus</a>
+            
+              <a href="/tags/%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/">#组件通信</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025-04-14.vuejs3-webpack-vue-template-compiler-problem.html" target="_self">
+          Vuejs 3 webpack: Problem with vue-template-compiler
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.vuejs3-webpack-vue-template-compiler-problem.html" target="_self">
+        <div>
+          Vuejs 3 webpack: Problem with vue-template-compiler技术背景在将 Vue.js 3 集成到使用 Webpack 的现有项目时，会遇到 vue-template-compiler 版本不匹配的问题。官方文档指出，每次发布新的 Vue 版本时，都会同时发布相应版本的 vue-template-compiler，编译器的版本必须与基础 Vue 包保持同步
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E9%9B%86%E6%88%90%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架集成实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">#前端开发</a>
+            
+              <a href="/tags/JavaScript/">#JavaScript</a>
+            
+              <a href="/tags/Vue-js/">#Vue.js</a>
+            
+              <a href="/tags/Webpack/">#Webpack</a>
+            
+              <a href="/tags/vue-template-compiler/">#vue-template-compiler</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025-04-14.why-is-reading-lines-from-stdin-much-slower-in-cpp-than-python.html" target="_self">
           为什么C++从标准输入读取行比Python慢很多？
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.why-is-reading-lines-from-stdin-much-slower-in-cpp-than-python/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.why-is-reading-lines-from-stdin-much-slower-in-cpp-than-python.html" target="_self">
         <div>
           为什么C++从标准输入读取行比Python慢很多？技术背景在编程过程中，从标准输入读取数据是常见的操作。然而，不同编程语言在处理这一操作时可能会有不同的性能表现。有人对比了C++和Python从标准输入读取行的速度，发现C++代码比Python代码慢一个数量级，这引发了对背后原因的探讨。 实现步骤C++代码示例12345678910111213141516171819202122232425262
         </div>
@@ -740,6 +670,80 @@
               <a href="/tags/C/">#C++</a>
             
               <a href="/tags/%E6%A0%87%E5%87%86%E8%BE%93%E5%85%A5%E8%AF%BB%E5%8F%96/">#标准输入读取</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025-04-14.why-string-join-list-instead-of-list-join-string.html" target="_self">
+          为何是 string.join(list) 而非 list.join(string)？
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.why-string-join-list-instead-of-list-join-string.html" target="_self">
+        <div>
+          为何是 string.join(list) 而非 list.join(string)？技术背景在Python编程中，字符串连接是一个常见的操作。join() 方法用于将可迭代对象中的元素连接成一个字符串。但该方法的调用方式 string.join(list) 与一些开发者的直观认知 list.join(string) 有所不同，这引发了关于其设计原因的讨论。 实现步骤在Python里，使用 joi
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/Python%E5%86%85%E7%BD%AE%E6%96%B9%E6%B3%95/">#Python内置方法</a>
+            
+              <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5/">#字符串连接</a>
             
           </div>
         

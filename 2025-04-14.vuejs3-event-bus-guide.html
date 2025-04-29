@@ -1,0 +1,802 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Vue.js 3 Event Bus技术背景在 Vue 2 中，创建事件总线（Event Bus）很简单，只需创建一个 Vue 实例，然后使用 $on 和 $emit 方法来监听和触发事件。但在 Vue 3 中，Vue 不再是一个构造函数，Vue.createApp(&#123;&#125;) 返回的对象也没有 $on 和 $emit 方法，因此需要新的方式来实现事件总线。 实现步骤使用 mitt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue.js 3 Event Bus">
+<meta property="og:url" content="https://1010n111.github.io/2025-04-14.vuejs3-event-bus-guide.html">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="Vue.js 3 Event Bus技术背景在 Vue 2 中，创建事件总线（Event Bus）很简单，只需创建一个 Vue 实例，然后使用 $on 和 $emit 方法来监听和触发事件。但在 Vue 3 中，Vue 不再是一个构造函数，Vue.createApp(&#123;&#125;) 返回的对象也没有 $on 和 $emit 方法，因此需要新的方式来实现事件总线。 实现步骤使用 mitt">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-14T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-04-14T03:36:38.616Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="前端开发">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Vue.js 3">
+<meta property="article:tag" content="Event Bus">
+<meta property="article:tag" content="组件通信">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />
+  
+  <title>Vue.js 3 Event Bus - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Vue.js 3 Event Bus"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-04-14 08:00" pubdate>
+          2025年4月14日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          15 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Vue.js 3 Event Bus</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Vue-js-3-Event-Bus"><a href="#Vue-js-3-Event-Bus" class="headerlink" title="Vue.js 3 Event Bus"></a>Vue.js 3 Event Bus</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在 Vue 2 中，创建事件总线（Event Bus）很简单，只需创建一个 Vue 实例，然后使用 <code>$on</code> 和 <code>$emit</code> 方法来监听和触发事件。但在 Vue 3 中，<code>Vue</code> 不再是一个构造函数，<code>Vue.createApp(&#123;&#125;)</code> 返回的对象也没有 <code>$on</code> 和 <code>$emit</code> 方法，因此需要新的方式来实现事件总线。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="使用-mitt-库"><a href="#使用-mitt-库" class="headerlink" title="使用 mitt 库"></a>使用 mitt 库</h3><ol>
+<li><strong>安装 mitt</strong>：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install --save mitt<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>在 main.js 中创建并定义全局属性</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123; createApp &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span><br><span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./App.vue&#x27;</span><br><span class="hljs-keyword">import</span> mitt <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;mitt&#x27;</span>;<br><span class="hljs-keyword">const</span> emitter = <span class="hljs-title function_">mitt</span>();<br><span class="hljs-keyword">const</span> app = <span class="hljs-title function_">createApp</span>(<span class="hljs-title class_">App</span>);<br>app.<span class="hljs-property">config</span>.<span class="hljs-property">globalProperties</span>.<span class="hljs-property">emitter</span> = emitter;<br>app.<span class="hljs-title function_">mount</span>(<span class="hljs-string">&#x27;#app&#x27;</span>);<br></code></pre></td></tr></table></figure>
+<ol start="3">
+<li><strong>在组件中使用</strong>：<ul>
+<li><strong>在 header 组件中触发事件</strong>：</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>  &lt;header&gt;<br>    &lt;button @click=&quot;toggleSidebar&quot;&gt;toggle&lt;/button&gt;<br>  &lt;/header&gt;<br>&lt;/template&gt;<br>&lt;script&gt;<br>export default &#123; <br>  data() &#123;<br>    return &#123;<br>      sidebarOpen: true<br>    &#125;;<br>  &#125;,<br>  methods: &#123;<br>    toggleSidebar() &#123;<br>      this.sidebarOpen = !this.sidebarOpen;<br>      this.emitter.emit(&quot;toggle-sidebar&quot;, this.sidebarOpen);<br>    &#125;<br>  &#125;<br>&#125;;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+<pre><code class="hljs">- **在 sidebar 组件中接收事件**：
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>  &lt;aside class=&quot;sidebar&quot; :class=&quot;&#123;&#x27;sidebar--toggled&#x27;: !isOpen&#125;&quot;&gt;<br>  ....<br>  &lt;/aside&gt;<br>&lt;/template&gt;<br>&lt;script&gt;<br>export default &#123;<br>  name: &quot;sidebar&quot;,<br>  data() &#123;<br>    return &#123;<br>      isOpen: true<br>    &#125;;<br>  &#125;,<br>  mounted() &#123; <br>    this.emitter.on(&quot;toggle-sidebar&quot;, isOpen =&gt; &#123;<br>      this.isOpen = isOpen;<br>    &#125;);<br>  &#125;<br>&#125;;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+<ol start="4">
+<li><strong>使用组合式 API</strong>：<ul>
+<li><strong>创建 src&#x2F;composables&#x2F;useEmitter.js</strong>：</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123; getCurrentInstance &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span><br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">useEmitter</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-keyword">const</span> internalInstance = <span class="hljs-title function_">getCurrentInstance</span>(); <br>    <span class="hljs-keyword">const</span> emitter = internalInstance.<span class="hljs-property">appContext</span>.<span class="hljs-property">config</span>.<span class="hljs-property">globalProperties</span>.<span class="hljs-property">emitter</span>;<br><br>    <span class="hljs-keyword">return</span> emitter;<br>&#125;<br></code></pre></td></tr></table></figure>
+<pre><code class="hljs">- **在组件中使用**：
+</code></pre>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> useEmitter <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@/composables/useEmitter&#x27;</span><br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;<br>  <span class="hljs-title function_">setup</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-keyword">const</span> emitter = <span class="hljs-title function_">useEmitter</span>()<br>    ...<br>  &#125;<br>  ...<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="自定义事件类"><a href="#自定义事件类" class="headerlink" title="自定义事件类"></a>自定义事件类</h3><ol>
+<li><strong>创建 event.js</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Event</span>&#123;<br>    <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>)&#123;<br>        <span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span> = &#123;&#125;;<br>    &#125;<br><br>    <span class="hljs-title function_">on</span>(<span class="hljs-params">eventName, fn</span>) &#123;<br>        <span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName] = <span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName] || [];<br>        <span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName].<span class="hljs-title function_">push</span>(fn);<br>    &#125;<br><br>    <span class="hljs-title function_">off</span>(<span class="hljs-params">eventName, fn</span>) &#123;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName]) &#123;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName].<span class="hljs-property">length</span>; i++) &#123;<br>                <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName][i] === fn) &#123;<br>                    <span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName].<span class="hljs-title function_">splice</span>(i, <span class="hljs-number">1</span>);<br>                    <span class="hljs-keyword">break</span>;<br>                &#125;<br>            &#125;;<br>        &#125;<br>    &#125;<br><br>    <span class="hljs-title function_">trigger</span>(<span class="hljs-params">eventName, data</span>) &#123;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName]) &#123;<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">events</span>[eventName].<span class="hljs-title function_">forEach</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">fn</span>) &#123;<br>                <span class="hljs-title function_">fn</span>(data);<br>            &#125;);<br>        &#125;<br>    &#125;<br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Event</span>();<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>在 index.js 中使用</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Vue</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span>;<br><span class="hljs-keyword">import</span> $bus <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;.../event.js&#x27;</span>;<br><br><span class="hljs-keyword">const</span> app = <span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">createApp</span>(&#123;&#125;)<br>app.<span class="hljs-property">config</span>.<span class="hljs-property">globalProperties</span>.<span class="hljs-property">$bus</span> = $bus;<br></code></pre></td></tr></table></figure>
+
+<h3 id="使用-EventTarget"><a href="#使用-EventTarget" class="headerlink" title="使用 EventTarget"></a>使用 EventTarget</h3><ol>
+<li><strong>创建 EventBus 类文件</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">EventBusEvent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Event</span> &#123;<br>  public <span class="hljs-attr">data</span>: any<br><br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">&#123;type, data&#125; : &#123;type: string, data: any&#125;</span>) &#123;<br>    <span class="hljs-variable language_">super</span>(type)<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span> = data<br>  &#125;<br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">EventBus</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">EventTarget</span> &#123;<br>  private <span class="hljs-keyword">static</span> <span class="hljs-attr">_instance</span>: <span class="hljs-title class_">EventBus</span><br><br>  public <span class="hljs-keyword">static</span> <span class="hljs-title function_">getInstance</span>() : <span class="hljs-title class_">EventBus</span> &#123;<br>    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">_instance</span>) <span class="hljs-variable language_">this</span>.<span class="hljs-property">_instance</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">EventBus</span>()<br>    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">_instance</span><br>  &#125;<br><br>  public <span class="hljs-title function_">emit</span>(type : string, data?: any) : <span class="hljs-keyword">void</span> &#123;<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">dispatchEvent</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EventBusEvent</span>(&#123;type, data&#125;))<br>  &#125;<br>&#125;<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">EventBus</span>.<span class="hljs-title function_">getInstance</span>()<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>在项目中使用</strong>：<ul>
+<li><strong>触发事件</strong>：</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">EventBus</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;...path to eventbus file with class&#x27;</span><br><span class="hljs-comment">//...bla bla bla... code...</span><br><span class="hljs-title class_">EventBus</span>.<span class="hljs-title function_">emit</span>(<span class="hljs-string">&#x27;event type&#x27;</span>, &#123;..<span class="hljs-property">some</span> data..&#125;)<br></code></pre></td></tr></table></figure>
+<pre><code class="hljs">- **监听事件**：
+</code></pre>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">EventBus</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;...path to eventbus file with class&#x27;</span> <br><span class="hljs-comment">//...bla bla bla... code...</span><br><span class="hljs-title class_">EventBus</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;event type&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> &#123; <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(event.<span class="hljs-property">data</span>) &#125;)<br></code></pre></td></tr></table></figure>
+
+<h3 id="使用-VueUse-的-useEventBus"><a href="#使用-VueUse-的-useEventBus" class="headerlink" title="使用 VueUse 的 useEventBus"></a>使用 VueUse 的 useEventBus</h3><ol>
+<li><strong>定义注入键</strong>：</li>
+</ol>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-comment">//myInjectionKey.ts</span><br><span class="hljs-keyword">import</span> <span class="hljs-keyword">type</span> &#123; <span class="hljs-title class_">EventBusKey</span> &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@vueuse/core&#x27;</span><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-attr">myInjectionKey</span>: <span class="hljs-title class_">EventBusKey</span>&lt;<span class="hljs-built_in">string</span>&gt; = <span class="hljs-title class_">Symbol</span>(<span class="hljs-string">&#x27;my-injection-key&#x27;</span>)<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>触发事件</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123; useEventBus &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@vueuse/core&#x27;</span><br><span class="hljs-keyword">import</span> &#123; myInjectionKey &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;src/config/myInjectionKey&quot;</span>;<br><br><span class="hljs-keyword">const</span> bus = <span class="hljs-title function_">useEventBus</span>(mapInjectionKey)<br>bus.<span class="hljs-title function_">emit</span>(<span class="hljs-string">&quot;Hello&quot;</span>)<br></code></pre></td></tr></table></figure>
+<ol start="3">
+<li><strong>接收事件</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123; useEventBus &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@vueuse/core&#x27;</span><br><span class="hljs-keyword">import</span> &#123; myInjectionKey &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;src/config/myInjectionKey&quot;</span>;<br><span class="hljs-keyword">const</span> bus = <span class="hljs-title function_">useEventBus</span>(myInjectionKey)<br>bus.<span class="hljs-title function_">on</span>(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(e) <span class="hljs-comment">// &quot;Hello&quot;</span><br>&#125;)<br></code></pre></td></tr></table></figure>
+
+<h3 id="自定义事件总线类"><a href="#自定义事件总线类" class="headerlink" title="自定义事件总线类"></a>自定义事件总线类</h3><ol>
+<li><strong>创建 event-bus.js</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * Replacement for the Vue 2-based EventBus.</span><br><span class="hljs-comment"> *</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@template</span> <span class="hljs-variable">EventName</span></span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Bus</span> &#123;<br>  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@type</span> &#123;<span class="hljs-type">Map&lt;EventName, Array&lt;&#123; callback: Function, once: boolean </span>&#125;&gt;&gt;&#125;</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-variable language_">this</span>.<span class="hljs-property">eventListeners</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>()<br>  &#125;<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">EventName</span>&#125; <span class="hljs-variable">eventName</span></span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">Function</span>&#125; <span class="hljs-variable">callback</span></span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">boolean</span>&#125; [once]</span><br><span class="hljs-comment">   * <span class="hljs-doctag">@private</span></span><br><span class="hljs-comment">   */</span><br>  <span class="hljs-title function_">registerEventListener</span>(<span class="hljs-params">eventName, callback, once = <span class="hljs-literal">false</span></span>) &#123;<br>    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">eventListeners</span>.<span class="hljs-title function_">has</span>(eventName)) &#123;<br>      <span class="hljs-variable language_">this</span>.<span class="hljs-property">eventListeners</span>.<span class="hljs-title function_">set</span>(eventName, [])<br>    &#125;<br><br>    <span class="hljs-keyword">const</span> eventListeners = <span class="hljs-variable language_">this</span>.<span class="hljs-property">eventListeners</span>.<span class="hljs-title function_">get</span>(eventName)<br>    eventListeners.<span class="hljs-title function_">push</span>(&#123; callback, once &#125;)<br>  &#125;<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * See: https://v2.vuejs.org/v2/api/#vm-on</span><br><span class="hljs-comment">   *</span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">EventName</span>&#125; <span class="hljs-variable">eventName</span></span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">Function</span>&#125; <span class="hljs-variable">callback</span></span><br><span class="hljs-comment">   */</span><br>  $on(eventName, callback) &#123;<br>    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">registerEventListener</span>(eventName, callback)<br>  &#125;<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * See: https://v2.vuejs.org/v2/api/#vm-once</span><br><span class="hljs-comment">   *</span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">EventName</span>&#125; <span class="hljs-variable">eventName</span></span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">Function</span>&#125; <span class="hljs-variable">callback</span></span><br><span class="hljs-comment">   */</span><br>  $once(eventName, callback) &#123;<br>    <span class="hljs-keyword">const</span> once = <span class="hljs-literal">true</span><br>    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">registerEventListener</span>(eventName, callback, once)<br>  &#125;<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * Removes all event listeners for the given event name or names.</span><br><span class="hljs-comment">   *</span><br><span class="hljs-comment">   * When provided with a callback function, removes only event listeners matching the provided function.</span><br><span class="hljs-comment">   *</span><br><span class="hljs-comment">   * See: https://v2.vuejs.org/v2/api/#vm-off</span><br><span class="hljs-comment">   *</span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">EventName | EventName[]</span>&#125; <span class="hljs-variable">eventNameOrNames</span></span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">Function</span>&#125; [callback]</span><br><span class="hljs-comment">   */</span><br>  $off(eventNameOrNames, callback = <span class="hljs-literal">undefined</span>) &#123;<br>    <span class="hljs-keyword">const</span> eventNames = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(eventNameOrNames) ? eventNameOrNames : [eventNameOrNames]<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> eventName <span class="hljs-keyword">of</span> eventNames) &#123;<br>      <span class="hljs-keyword">const</span> eventListeners = <span class="hljs-variable language_">this</span>.<span class="hljs-property">eventListeners</span>.<span class="hljs-title function_">get</span>(eventName)<br><br>      <span class="hljs-keyword">if</span> (eventListeners === <span class="hljs-literal">undefined</span>) &#123;<br>        <span class="hljs-keyword">continue</span><br>      &#125;<br><br>      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> callback === <span class="hljs-string">&#x27;function&#x27;</span>) &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = eventListeners.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>          <span class="hljs-keyword">if</span> (eventListeners[i].<span class="hljs-property">callback</span> === callback) &#123;<br>            eventListeners.<span class="hljs-title function_">splice</span>(i, <span class="hljs-number">1</span>)<br>          &#125;<br>        &#125;<br>      &#125; <span class="hljs-keyword">else</span> &#123;<br>        <span class="hljs-variable language_">this</span>.<span class="hljs-property">eventListeners</span>.<span class="hljs-title function_">delete</span>(eventName)<br>      &#125;<br>    &#125;<br>  &#125;<br><br>  <span class="hljs-comment">/**</span><br><span class="hljs-comment">   * See: https://v2.vuejs.org/v2/api/#vm-emit</span><br><span class="hljs-comment">   *</span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">EventName</span>&#125; <span class="hljs-variable">eventName</span></span><br><span class="hljs-comment">   * <span class="hljs-doctag">@param</span> &#123;<span class="hljs-type">any</span>&#125; <span class="hljs-variable">args</span></span><br><span class="hljs-comment">   */</span><br>  $emit(eventName, ...args) &#123;<br>    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">eventListeners</span>.<span class="hljs-title function_">has</span>(eventName)) &#123;<br>      <span class="hljs-keyword">return</span><br>    &#125;<br><br>    <span class="hljs-keyword">const</span> eventListeners = <span class="hljs-variable language_">this</span>.<span class="hljs-property">eventListeners</span>.<span class="hljs-title function_">get</span>(eventName)<br>    <span class="hljs-keyword">const</span> eventListenerIndexesToDelete = []<br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [eventListenerIndex, eventListener] <span class="hljs-keyword">of</span> eventListeners.<span class="hljs-title function_">entries</span>()) &#123;<br>      eventListener.<span class="hljs-title function_">callback</span>(...args)<br><br>      <span class="hljs-keyword">if</span> (eventListener.<span class="hljs-property">once</span>) &#123;<br>        eventListenerIndexesToDelete.<span class="hljs-title function_">push</span>(eventListenerIndex)<br>      &#125;<br>    &#125;<br><br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = eventListenerIndexesToDelete.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>      eventListeners.<span class="hljs-title function_">splice</span>(eventListenerIndexesToDelete[i], <span class="hljs-number">1</span>)<br>    &#125;<br>  &#125;<br>&#125;<br><br><span class="hljs-keyword">const</span> <span class="hljs-title class_">EventBus</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Bus</span>()<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">EventBus</span><br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>在项目中使用</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// import EventBus from &#x27;./old-event-bus.js&#x27;</span><br><span class="hljs-keyword">import</span> <span class="hljs-title class_">EventBus</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./event-bus.js&#x27;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="基于组合式-API-的改进方案"><a href="#基于组合式-API-的改进方案" class="headerlink" title="基于组合式 API 的改进方案"></a>基于组合式 API 的改进方案</h3><ol>
+<li><strong>创建 useEventBus.js</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> &#123; ref, watch &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span>;<br><br><span class="hljs-keyword">const</span> bus = <span class="hljs-title function_">ref</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Map</span>());<br><br><span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">useEventsBus</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-keyword">const</span> <span class="hljs-title function_">emit</span> = (<span class="hljs-params">event, props</span>) =&gt; &#123;<br>    <span class="hljs-keyword">const</span> currentValue = bus.<span class="hljs-property">value</span>.<span class="hljs-title function_">get</span>(event);<br>    <span class="hljs-keyword">const</span> counter = currentValue ? ++currentValue[<span class="hljs-number">1</span>] : <span class="hljs-number">1</span>;<br>    bus.<span class="hljs-property">value</span>.<span class="hljs-title function_">set</span>(event, [props, counter]);<br>  &#125;;<br><br>  <span class="hljs-keyword">const</span> <span class="hljs-title function_">on</span> = (<span class="hljs-params">event, callback</span>) =&gt; &#123;<br>    <span class="hljs-title function_">watch</span>(<span class="hljs-function">() =&gt;</span> bus.<span class="hljs-property">value</span>.<span class="hljs-title function_">get</span>(event), <span class="hljs-function">(<span class="hljs-params">val</span>) =&gt;</span> &#123;<br>      <span class="hljs-title function_">callback</span>(val[<span class="hljs-number">0</span>]);<br>    &#125;);<br>  &#125;;<br><br>  <span class="hljs-keyword">return</span> &#123;<br>    emit,<br>    on,<br>    bus,<br>  &#125;;<br>&#125;<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>在组件中使用</strong>：<ul>
+<li><strong>发布者组件</strong>：</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;script setup lang=&quot;ts&quot;&gt;<br>import &#123; useEventsBus &#125; from &#x27;~/composables/useEventsBus&#x27;;<br>&lt;/script&gt;<br><br>&lt;template&gt;<br>  &lt;Button<br>    @click=&quot;useEventsBus().emit(&#x27;btn-clicked&#x27;, &#x27;Hello there&#x27;)&quot;<br>  &gt;<br>    Button with payload<br>  &lt;/Button&gt;<br>  &lt;Button<br>    @click=&quot;useEventsBus().emit(&#x27;btn-another-clicked&#x27;)&quot;<br>  &gt;<br>    Button without payload<br>  &lt;/Button&gt;<br>&lt;/template&gt;<br></code></pre></td></tr></table></figure>
+<pre><code class="hljs">- **订阅者组件**：
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;script setup lang=&quot;ts&quot;&gt;<br>import &#123; useEventsBus &#125; from &#x27;~/composables/useEventsBus&#x27;;<br><br>useEventsBus().on(&#x27;btn-clicked&#x27;, (payload) =&gt; &#123;<br>  console.log(payload); // &#x27;Hello there&#x27;<br>&#125;);<br><br>useEventsBus().on(&#x27;btn-another-clicked&#x27;, (payload) =&gt; &#123;<br>  console.log(payload); // undefined<br>&#125;)<br>// you can subscribe on the event several times<br>useEventsBus().on(&#x27;btn-another-clicked&#x27;, (payload) =&gt; &#123;<br>  console.log(payload); // undefined<br>&#125;)<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="使用-JavaScript-自定义事件"><a href="#使用-JavaScript-自定义事件" class="headerlink" title="使用 JavaScript 自定义事件"></a>使用 JavaScript 自定义事件</h3><ol>
+<li><strong>在源组件中触发事件</strong>：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;script setup&gt;<br>function showMyCustomModal() &#123;<br>  const showModal = new CustomEvent(&#x27;modal::show&#x27;, &#123;<br>    // for hiding, send `modal::hide`, just make sure<br>    // the component is currently mounted and it can listen to this event<br>    detail: &#x27;my-custom-modal&#x27;,<br>  &#125;)<br>  window.dispatchEvent(showModal);<br>&#125;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>在模态框组件中监听事件</strong>：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;script setup&gt;<br>  // define function for handling show modal event<br>  function handleModalShowEvent(event) &#123;<br>    if (event.detail === props.id) &#123;<br>      show();<br>    &#125;<br>  &#125;<br><br>  // define another for handling hide modal<br>  function handleModalHideEvent(event) &#123;<br>    if (event.detail === props.id) &#123;<br>      hide();<br>    &#125;<br>  &#125;<br><br>  onMounted(() =&gt; &#123;<br>    // on mounted, listen to the events<br>    window.addEventListener(&#x27;modal::show&#x27;, handleModalShowEvent);<br>    window.addEventListener(&#x27;modal::hide&#x27;, handleModalHideEvent);<br>  &#125;)<br><br>  onUnmounted(() =&gt; &#123;<br>    // on unmounted, remove them:<br>    window.removeEventListener(&#x27;modal::show&#x27;, handleModalShowEvent);<br>    window.removeEventListener(&#x27;modal::hide&#x27;, handleModalHideEvent);<br>  &#125;)<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="使用-vue-eventer-库"><a href="#使用-vue-eventer-库" class="headerlink" title="使用 vue-eventer 库"></a>使用 vue-eventer 库</h3><ol>
+<li><strong>安装 vue-eventer</strong>：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install vue-eventer<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>在项目中使用</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// Vue 3.x</span><br><span class="hljs-keyword">import</span> <span class="hljs-title class_">VueEventer</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue-eventer&#x27;</span>;<br><span class="hljs-title class_">YourVueApp</span>.<span class="hljs-property">config</span>.<span class="hljs-property">globalProperties</span>.<span class="hljs-property">$eventBus</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">VueEventer</span>();<br></code></pre></td></tr></table></figure>
+
+<h3 id="使用简单的-mitt-封装"><a href="#使用简单的-mitt-封装" class="headerlink" title="使用简单的 mitt 封装"></a>使用简单的 mitt 封装</h3><ol>
+<li><strong>创建 EventBus.js</strong>：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> mitt <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;mitt&#x27;</span><br><br><span class="hljs-keyword">const</span> emitter = <span class="hljs-title function_">mitt</span>()<br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;<br>    <span class="hljs-attr">$on</span>: <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> emitter.<span class="hljs-title function_">on</span>(...args),<br>    <span class="hljs-attr">$once</span>: <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> emitter.<span class="hljs-title function_">once</span>(...args),<br>    <span class="hljs-attr">$off</span>: <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> emitter.<span class="hljs-title function_">off</span>(...args),<br>    <span class="hljs-attr">$emit</span>: <span class="hljs-function">(<span class="hljs-params">...args</span>) =&gt;</span> emitter.<span class="hljs-title function_">emit</span>(...args)<br>&#125;<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>在项目中使用</strong>：<ul>
+<li><strong>触发事件</strong>：</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">EventBus</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../EventBus&quot;</span>; <span class="hljs-comment">// path to EventBus.js</span><br><br><span class="hljs-comment">// ... code ...</span><br><span class="hljs-title class_">EventBus</span>.$emit(<span class="hljs-string">&#x27;event name&#x27;</span>,&#123;<span class="hljs-string">&#x27;some&#x27;</span>: <span class="hljs-string">&#x27;data&#x27;</span>&#125;);<br></code></pre></td></tr></table></figure>
+<pre><code class="hljs">- **监听事件**：
+</code></pre>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">EventBus</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../EventBus&quot;</span>; <span class="hljs-comment">// path to EventBus.js</span><br><br><span class="hljs-comment">// ... code ...</span><br><span class="hljs-title class_">EventBus</span>.$on(<span class="hljs-string">&#x27;event name&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Event emitted&#x27;</span>, data);      <br>&#125;);<br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>选择合适的方案</strong>：根据项目的规模和需求选择合适的事件总线实现方式。对于小型项目，简单的自定义事件类或 mitt 库可能就足够了；对于大型项目，使用成熟的库如 VueUse 的 <code>useEventBus</code> 可能更合适。</li>
+<li><strong>避免滥用</strong>：事件总线虽然方便，但过度使用会导致代码难以维护。尽量使用组件间的 props 和 emits 进行通信，只有在确实需要跨组件通信时才使用事件总线。</li>
+<li><strong>注意事件命名</strong>：使用有意义的事件名，避免命名冲突。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li><strong>类型问题</strong>：在 TypeScript 项目中，可能需要添加类型声明文件来确保类型检查正常工作。</li>
+<li><strong>SSR 问题</strong>：在使用组合式 API 实现事件总线时，要注意 SSR 环境下的状态共享问题，可以将事件总线实现为插件并通过组合式函数暴露。</li>
+<li><strong>内存泄漏</strong>：确保在组件销毁时移除事件监听器，避免内存泄漏。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5/" class="category-chain-item">框架实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#前端开发</a>
+      
+        <a href="/tags/JavaScript/" class="print-no-link">#JavaScript</a>
+      
+        <a href="/tags/Vue-js-3/" class="print-no-link">#Vue.js 3</a>
+      
+        <a href="/tags/Event-Bus/" class="print-no-link">#Event Bus</a>
+      
+        <a href="/tags/%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/" class="print-no-link">#组件通信</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Vue.js 3 Event Bus</div>
+      <div>https://1010n111.github.io/2025-04-14.vuejs3-event-bus-guide.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年4月14日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025-04-14.vuejs-component-missing-template-or-render-function-solve.html" title="Vue.js组件缺少模板或渲染函数问题解决">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Vue.js组件缺少模板或渲染函数问题解决</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025-04-14.vuejs3-webpack-vue-template-compiler-problem.html" title="Vuejs 3 webpack: Problem with vue-template-compiler">
+                        <span class="hidden-mobile">Vuejs 3 webpack: Problem with vue-template-compiler</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

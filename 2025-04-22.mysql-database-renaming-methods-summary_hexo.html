@@ -1,0 +1,718 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="MySQL数据库重命名方法汇总技术背景在MySQL中，直接使用RENAME &#123;DATABASE | SCHEMA&#125; db_name TO new_db_name; 来重命名数据库存在问题，该语句仅在少数版本中存在，且会产生不良影响，总体而言不是一个好的选择。尤其是对于使用InnoDB存储引擎的数据库，其存储方式与MyISAM不同，需要更合适的重命名方法。 实现步骤方法一：逐个重">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL数据库重命名方法汇总">
+<meta property="og:url" content="https://1010n111.github.io/2025-04-22.mysql-database-renaming-methods-summary_hexo.html">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="MySQL数据库重命名方法汇总技术背景在MySQL中，直接使用RENAME &#123;DATABASE | SCHEMA&#125; db_name TO new_db_name; 来重命名数据库存在问题，该语句仅在少数版本中存在，且会产生不良影响，总体而言不是一个好的选择。尤其是对于使用InnoDB存储引擎的数据库，其存储方式与MyISAM不同，需要更合适的重命名方法。 实现步骤方法一：逐个重">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-23T03:14:08.000Z">
+<meta property="article:modified_time" content="2025-04-23T03:14:08.531Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="SQL">
+<meta property="article:tag" content="数据库管理">
+<meta property="article:tag" content="数据库重命名">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />
+  
+  <title>MySQL数据库重命名方法汇总 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="MySQL数据库重命名方法汇总"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-04-23 11:14" pubdate>
+          2025年4月23日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">MySQL数据库重命名方法汇总</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="MySQL数据库重命名方法汇总"><a href="#MySQL数据库重命名方法汇总" class="headerlink" title="MySQL数据库重命名方法汇总"></a>MySQL数据库重命名方法汇总</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在MySQL中，直接使用<code>RENAME &#123;DATABASE | SCHEMA&#125; db_name TO new_db_name;</code> 来重命名数据库存在问题，该语句仅在少数版本中存在，且会产生不良影响，总体而言不是一个好的选择。尤其是对于使用InnoDB存储引擎的数据库，其存储方式与MyISAM不同，需要更合适的重命名方法。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="方法一：逐个重命名表"><a href="#方法一：逐个重命名表" class="headerlink" title="方法一：逐个重命名表"></a>方法一：逐个重命名表</h3><ol>
+<li><strong>创建新的空数据库</strong>：使用<code>CREATE DATABASE new_db;</code> 语句创建新的数据库。</li>
+<li><strong>重命名每个表</strong>：使用<code>RENAME TABLE old_db.table TO new_db.table;</code> 语句将旧数据库中的表逐个重命名到新数据库中。</li>
+<li><strong>调整权限</strong>：重命名完成后，需要手动调整新数据库的权限。</li>
+</ol>
+<p>示例脚本：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">mysql -u username -ppassword old_db -sNe <span class="hljs-string">&#x27;show tables&#x27;</span> | <span class="hljs-keyword">while</span> <span class="hljs-built_in">read</span> table; \<br>    <span class="hljs-keyword">do</span> mysql -u username -ppassword -sNe <span class="hljs-string">&quot;rename table old_db.<span class="hljs-variable">$table</span> to new_db.<span class="hljs-variable">$table</span>&quot;</span>; <span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="方法二：使用mysqldump-和mysqladmin"><a href="#方法二：使用mysqldump-和mysqladmin" class="headerlink" title="方法二：使用mysqldump 和mysqladmin"></a>方法二：使用<code>mysqldump</code> 和<code>mysqladmin</code></h3><ol>
+<li><strong>创建新数据库</strong>：使用<code>mysqladmin -u username -p create newdatabase</code> 命令创建新数据库。</li>
+<li><strong>导出旧数据库</strong>：使用<code>mysqldump -u username -p -v olddatabase &gt; olddbdump.sql</code> 命令将旧数据库导出到一个SQL文件中。</li>
+<li><strong>导入到新数据库</strong>：使用<code>mysql -u username -p newdatabase &lt; olddbdump.sql</code> 命令将导出的SQL文件导入到新数据库中。</li>
+<li><strong>删除旧数据库</strong>：确认新数据库导入成功后，使用<code>mysqladmin -u username -p drop olddatabase</code> 命令删除旧数据库。</li>
+</ol>
+<p>示例脚本：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">mysqladmin -u username -p create newdatabase<br>mysqldump -u username -v olddatabase -p | mysql -u username -p -D newdatabase<br></code></pre></td></tr></table></figure>
+
+<h3 id="方法三：使用phpMyAdmin"><a href="#方法三：使用phpMyAdmin" class="headerlink" title="方法三：使用phpMyAdmin"></a>方法三：使用phpMyAdmin</h3><ol>
+<li><strong>选择数据库</strong>：在phpMyAdmin中选择要重命名的数据库。</li>
+<li><strong>进入操作页面</strong>：点击“Operations”标签，进入操作页面。</li>
+<li><strong>重命名数据库</strong>：在“Rename database to”字段中输入新的数据库名称，然后点击“Go”按钮。</li>
+<li><strong>确认操作</strong>：根据提示确认删除旧数据库和重新加载表数据。</li>
+</ol>
+<h3 id="方法四：生成SQL脚本"><a href="#方法四：生成SQL脚本" class="headerlink" title="方法四：生成SQL脚本"></a>方法四：生成SQL脚本</h3><ol>
+<li><strong>创建新数据库</strong>：使用<code>CREATE DATABASE new_db;</code> 语句创建新的数据库。</li>
+<li><strong>生成重命名脚本</strong>：使用以下SQL语句生成重命名脚本：</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> CONCAT(<span class="hljs-string">&#x27;RENAME TABLE old_db.&#x27;</span>, table_name, <span class="hljs-string">&#x27; TO new_db.&#x27;</span>, table_name, <span class="hljs-string">&#x27;; &#x27;</span>)<br><span class="hljs-keyword">FROM</span> information_schema.TABLES <br><span class="hljs-keyword">WHERE</span> table_schema<span class="hljs-operator">=</span><span class="hljs-string">&#x27;old_db&#x27;</span>;<br></code></pre></td></tr></table></figure>
+<ol start="3">
+<li><strong>执行脚本</strong>：将生成的脚本复制到MySQL客户端中执行。</li>
+</ol>
+<h3 id="方法五：使用Percona脚本"><a href="#方法五：使用Percona脚本" class="headerlink" title="方法五：使用Percona脚本"></a>方法五：使用Percona脚本</h3><ol>
+<li><strong>下载脚本</strong>：从<a target="_blank" rel="noopener" href="https://gist.github.com/ryantm/76944318b0473ff25993ef2a7186213d">https://gist.github.com/ryantm/76944318b0473ff25993ef2a7186213d</a> 下载脚本。</li>
+<li><strong>修改脚本权限</strong>：使用<code>chmod +x rename_db</code> 命令将脚本设置为可执行。</li>
+<li><strong>执行脚本</strong>：使用<code>./rename_db localhost old_db new_db</code> 命令执行脚本。</li>
+</ol>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><h3 id="生成重命名脚本的SQL代码"><a href="#生成重命名脚本的SQL代码" class="headerlink" title="生成重命名脚本的SQL代码"></a>生成重命名脚本的SQL代码</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> CONCAT(<span class="hljs-string">&#x27;RENAME TABLE old_db.&#x27;</span>, table_name, <span class="hljs-string">&#x27; TO new_db.&#x27;</span>, table_name, <span class="hljs-string">&#x27;; &#x27;</span>)<br><span class="hljs-keyword">FROM</span> information_schema.TABLES <br><span class="hljs-keyword">WHERE</span> table_schema<span class="hljs-operator">=</span><span class="hljs-string">&#x27;old_db&#x27;</span>;<br></code></pre></td></tr></table></figure>
+
+<h3 id="重命名数据库的Shell脚本"><a href="#重命名数据库的Shell脚本" class="headerlink" title="重命名数据库的Shell脚本"></a>重命名数据库的Shell脚本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br><span class="hljs-built_in">set</span> -e <span class="hljs-comment"># terminate execution on command failure</span><br><br>mysqlconn=<span class="hljs-string">&quot;mysql -u root -proot&quot;</span><br>olddb=<span class="hljs-variable">$1</span><br>newdb=<span class="hljs-variable">$2</span><br><span class="hljs-variable">$mysqlconn</span> -e <span class="hljs-string">&quot;CREATE DATABASE <span class="hljs-variable">$newdb</span>&quot;</span><br>params=$(<span class="hljs-variable">$mysqlconn</span> -N -e <span class="hljs-string">&quot;SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES \</span><br><span class="hljs-string">                           WHERE table_schema=&#x27;<span class="hljs-variable">$olddb</span>&#x27;&quot;</span>)<br><span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> <span class="hljs-variable">$params</span>; <span class="hljs-keyword">do</span><br>      <span class="hljs-variable">$mysqlconn</span> -e <span class="hljs-string">&quot;RENAME TABLE <span class="hljs-variable">$olddb</span>.<span class="hljs-variable">$name</span> to <span class="hljs-variable">$newdb</span>.<span class="hljs-variable">$name</span>&quot;</span>;<br><span class="hljs-keyword">done</span>;<br><span class="hljs-variable">$mysqlconn</span> -e <span class="hljs-string">&quot;DROP DATABASE <span class="hljs-variable">$olddb</span>&quot;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>备份数据</strong>：在进行数据库重命名操作之前，务必备份重要的数据，以防止数据丢失。</li>
+<li><strong>测试环境验证</strong>：在生产环境中进行重命名操作之前，先在测试环境中进行验证，确保操作的正确性。</li>
+<li><strong>注意权限问题</strong>：重命名数据库后，需要确保用户对新数据库具有正确的权限。</li>
+<li><strong>处理特殊对象</strong>：如果数据库中包含视图、触发器、存储过程等特殊对象，需要特别处理，确保这些对象在重命名后仍然可用。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li><strong>触发器问题</strong>：如果表中存在触发器，使用<code>RENAME TABLE</code> 方法会导致<code>Trigger in wrong schema</code> 错误。解决方法是先使用<code>mysqldump -d -t -R -E</code> 命令将触发器、事件和存储过程导出到一个文件中，然后删除触发器，重命名表后再导入这些对象。</li>
+<li><strong>视图问题</strong>：<code>RENAME TABLE</code> 方法无法直接重命名视图，需要使用<code>DROP VIEW</code> 和<code>CREATE VIEW</code> 语句手动处理。</li>
+<li><strong>性能问题</strong>：对于非常大的数据库，使用<code>mysqldump</code> 和<code>mysql</code> 方法可能会非常耗时，建议使用逐个重命名表的方法。</li>
+<li><strong>权限问题</strong>：如果用户没有足够的权限，重命名操作可能会失败。确保用户具有创建数据库、重命名表和删除数据库的权限。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/" class="category-chain-item">数据库管理</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/MySQL%E6%93%8D%E4%BD%9C/" class="category-chain-item">MySQL操作</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/MySQL/" class="print-no-link">#MySQL</a>
+      
+        <a href="/tags/SQL/" class="print-no-link">#SQL</a>
+      
+        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/" class="print-no-link">#数据库管理</a>
+      
+        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%87%8D%E5%91%BD%E5%90%8D/" class="print-no-link">#数据库重命名</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>MySQL数据库重命名方法汇总</div>
+      <div>https://1010n111.github.io/2025-04-22.mysql-database-renaming-methods-summary_hexo.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年4月23日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025-04-22.mysql-concatenate-multiple-rows-into-one-field_hexo.html" title="MySQL多行数据合并为一个字段的方法">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">MySQL多行数据合并为一个字段的方法</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025-04-22.mysql-datetime-vs-timestamp-selection_hexo.html" title="MySQL中应使用datetime还是timestamp数据类型">
+                        <span class="hidden-mobile">MySQL中应使用datetime还是timestamp数据类型</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

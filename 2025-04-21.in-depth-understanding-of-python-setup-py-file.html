@@ -1,0 +1,716 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="深入了解Python的setup.py文件技术背景在Python开发中，经常需要安装和管理各种包和模块。setup.py文件是Python的一个重要工具，它是使用Distutils（Python标准库中用于分发Python模块的工具）打包和分发Python模块的标志。通过setup.py，可以方便地安装、打包和发布Python包，实现包的自动化管理。 实现步骤安装Python包如果你下载的Pyth">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深入了解Python的setup.py文件">
+<meta property="og:url" content="https://1010n111.github.io/2025-04-21.in-depth-understanding-of-python-setup-py-file.html">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="深入了解Python的setup.py文件技术背景在Python开发中，经常需要安装和管理各种包和模块。setup.py文件是Python的一个重要工具，它是使用Distutils（Python标准库中用于分发Python模块的工具）打包和分发Python模块的标志。通过setup.py，可以方便地安装、打包和发布Python包，实现包的自动化管理。 实现步骤安装Python包如果你下载的Pyth">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-04-21T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-04-21T01:19:13.169Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="后端开发">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="setuptools">
+<meta property="article:tag" content="Python包安装">
+<meta property="article:tag" content="Python包发布">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />
+  
+  <title>深入了解Python的setup.py文件 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="深入了解Python的setup.py文件"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-04-21 08:00" pubdate>
+          2025年4月21日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          960 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">深入了解Python的setup.py文件</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="深入了解Python的setup-py文件"><a href="#深入了解Python的setup-py文件" class="headerlink" title="深入了解Python的setup.py文件"></a>深入了解Python的setup.py文件</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在Python开发中，经常需要安装和管理各种包和模块。<code>setup.py</code>文件是Python的一个重要工具，它是使用Distutils（Python标准库中用于分发Python模块的工具）打包和分发Python模块的标志。通过<code>setup.py</code>，可以方便地安装、打包和发布Python包，实现包的自动化管理。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="安装Python包"><a href="#安装Python包" class="headerlink" title="安装Python包"></a>安装Python包</h3><p>如果你下载的Python包的根目录下有<code>setup.py</code>文件，可以使用以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">python setup.py install<br></code></pre></td></tr></table></figure>
+<p>不过，现在更推荐使用<code>pip</code>来安装，因为直接调用<code>setup.py</code>有一些潜在问题，使用<code>pip</code>安装时，它会自动使用<code>setup.py</code>来完成安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip install .<br></code></pre></td></tr></table></figure>
+
+<h3 id="创建Python包"><a href="#创建Python包" class="headerlink" title="创建Python包"></a>创建Python包</h3><p>如果要创建自己的Python包，需要编写<code>setup.py</code>文件。以下是不同复杂度的包对应的<code>setup.py</code>编写示例：</p>
+<h4 id="简单包结构"><a href="#简单包结构" class="headerlink" title="简单包结构"></a>简单包结构</h4><p>假设包结构如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">foo<br>├── foo<br>│   ├── data_struct.py<br>│   ├── __init__.py<br>│   └── internals.py<br>├── README<br>├── requirements.txt<br>└── setup.py<br></code></pre></td></tr></table></figure>
+<p>对应的<code>setup.py</code>文件内容如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> setuptools <span class="hljs-keyword">import</span> setup<br><br>setup(<br>    name=<span class="hljs-string">&#x27;foo&#x27;</span>,<br>    version=<span class="hljs-string">&#x27;1.0&#x27;</span>,<br>    description=<span class="hljs-string">&#x27;A useful module&#x27;</span>,<br>    author=<span class="hljs-string">&#x27;Man Foo&#x27;</span>,<br>    author_email=<span class="hljs-string">&#x27;[email protected]&#x27;</span>,<br>    packages=[<span class="hljs-string">&#x27;foo&#x27;</span>],  <span class="hljs-comment"># 与包名相同</span><br>    install_requires=[<span class="hljs-string">&#x27;wheel&#x27;</span>, <span class="hljs-string">&#x27;bar&#x27;</span>, <span class="hljs-string">&#x27;greek&#x27;</span>],  <span class="hljs-comment"># 外部依赖包</span><br>)<br></code></pre></td></tr></table></figure>
+
+<h4 id="复杂包结构"><a href="#复杂包结构" class="headerlink" title="复杂包结构"></a>复杂包结构</h4><p>当包结构更复杂，包含脚本文件时，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">foo<br>├── foo<br>│   ├── data_struct.py<br>│   ├── __init__.py<br>│   └── internals.py<br>├── README<br>├── requirements.txt<br>├── scripts<br>│   ├── cool<br>│   └── skype<br>└── setup.py<br></code></pre></td></tr></table></figure>
+<p><code>setup.py</code>文件内容如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> setuptools <span class="hljs-keyword">import</span> setup<br><br>setup(<br>    name=<span class="hljs-string">&#x27;foo&#x27;</span>,<br>    version=<span class="hljs-string">&#x27;1.0&#x27;</span>,<br>    description=<span class="hljs-string">&#x27;A useful module&#x27;</span>,<br>    author=<span class="hljs-string">&#x27;Man Foo&#x27;</span>,<br>    author_email=<span class="hljs-string">&#x27;[email protected]&#x27;</span>,<br>    packages=[<span class="hljs-string">&#x27;foo&#x27;</span>],  <span class="hljs-comment"># 与包名相同</span><br>    install_requires=[<span class="hljs-string">&#x27;wheel&#x27;</span>, <span class="hljs-string">&#x27;bar&#x27;</span>, <span class="hljs-string">&#x27;greek&#x27;</span>],  <span class="hljs-comment"># 外部依赖包</span><br>    scripts=[<br>        <span class="hljs-string">&#x27;scripts/cool&#x27;</span>,<br>        <span class="hljs-string">&#x27;scripts/skype&#x27;</span>,<br>    ]<br>)<br></code></pre></td></tr></table></figure>
+
+<h3 id="发布Python包到PyPI"><a href="#发布Python包到PyPI" class="headerlink" title="发布Python包到PyPI"></a>发布Python包到PyPI</h3><p>如果要将包发布到PyPI供他人使用，可以按照以下步骤操作：</p>
+<ol>
+<li>首先，在本地构建分发文件：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 前提：安装wheel</span><br>pip install wheel<br>python setup.py sdist bdist_wheel<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li>然后，使用<code>twine</code>上传到测试服务器<code>test.pypi.org</code>进行测试：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">twine upload --repository testpypi dist/*<br></code></pre></td></tr></table></figure>
+<p>输入用户名和密码后，等待几分钟，包就会出现在<code>test.pypi.org</code>上。<br>3. 若测试通过，将包上传到正式的<code>pypi.org</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">twine upload dist/*<br></code></pre></td></tr></table></figure>
+<p>还可以选择使用GPG对包中的文件进行签名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">twine upload dist/* --sign<br></code></pre></td></tr></table></figure>
+
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>以下是一个较为完整的<code>setup.py</code>示例，包含读取<code>README</code>文件作为长描述：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> setuptools <span class="hljs-keyword">import</span> setup<br><br><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;README&quot;</span>, <span class="hljs-string">&#x27;r&#x27;</span>) <span class="hljs-keyword">as</span> f:<br>    long_description = f.read()<br><br>setup(<br>    name=<span class="hljs-string">&#x27;foo&#x27;</span>,<br>    version=<span class="hljs-string">&#x27;1.0&#x27;</span>,<br>    description=<span class="hljs-string">&#x27;A useful module&#x27;</span>,<br>    license=<span class="hljs-string">&quot;MIT&quot;</span>,<br>    long_description=long_description,<br>    author=<span class="hljs-string">&#x27;Man Foo&#x27;</span>,<br>    author_email=<span class="hljs-string">&#x27;[email protected]&#x27;</span>,<br>    url=<span class="hljs-string">&quot;http://www.foopackage.example/&quot;</span>,<br>    packages=[<span class="hljs-string">&#x27;foo&#x27;</span>],  <span class="hljs-comment"># 与包名相同</span><br>    install_requires=[<span class="hljs-string">&#x27;wheel&#x27;</span>, <span class="hljs-string">&#x27;bar&#x27;</span>, <span class="hljs-string">&#x27;greek&#x27;</span>],  <span class="hljs-comment"># 外部依赖包</span><br>    scripts=[<br>        <span class="hljs-string">&#x27;scripts/cool&#x27;</span>,<br>        <span class="hljs-string">&#x27;scripts/skype&#x27;</span>,<br>    ]<br>)<br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>使用<code>pip</code>安装</strong>：避免直接调用<code>setup.py</code>进行安装，因为<code>pip</code>能更好地处理依赖和版本管理。</li>
+<li><strong>读取<code>requirements.txt</code></strong>：可以解析<code>requirements.txt</code>文件并将其内容赋值给<code>install_requires</code>，使依赖管理更清晰。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&#x27;requirements.txt&#x27;</span>) <span class="hljs-keyword">as</span> f:<br>    requirements = f.read().splitlines()<br><br>setup(<br>    <span class="hljs-comment"># ...</span><br>    install_requires=requirements,<br>    <span class="hljs-comment"># ...</span><br>)<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>使用<code>setuptools</code></strong>：<code>setuptools</code>是<code>Distutils</code>的增强版本，提供了更多功能，如自动发现包和子包。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> setuptools <span class="hljs-keyword">import</span> setup, find_packages<br><br>setup(<br>    <span class="hljs-comment"># ...</span><br>    packages=find_packages(),<br>    <span class="hljs-comment"># ...</span><br>)<br></code></pre></td></tr></table></figure>
+
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="1-直接调用setup-py-install有什么问题？"><a href="#1-直接调用setup-py-install有什么问题？" class="headerlink" title="1. 直接调用setup.py install有什么问题？"></a>1. 直接调用<code>setup.py install</code>有什么问题？</h3><p>直接调用<code>setup.py install</code>可能会破坏版本管理，并且在某些情况下会导致安装混乱。而<code>pip</code>会处理依赖解析和版本控制，提供更稳定的安装环境。</p>
+<h3 id="2-如何处理子包？"><a href="#2-如何处理子包？" class="headerlink" title="2. 如何处理子包？"></a>2. 如何处理子包？</h3><p>使用<code>setuptools</code>的<code>find_packages()</code>函数可以自动发现包和子包，无需手动列出每个子包。</p>
+<h3 id="3-setup-py是否必须命名为setup-py？"><a href="#3-setup-py是否必须命名为setup-py？" class="headerlink" title="3. setup.py是否必须命名为setup.py？"></a>3. <code>setup.py</code>是否必须命名为<code>setup.py</code>？</h3><p><code>setup.py</code>只是一个约定的名称，可以使用其他名称，但这样会使安装和使用的过程变得不统一，增加用户的使用成本。</p>
+<h3 id="4-新的Python版本是否还需要setup-py？"><a href="#4-新的Python版本是否还需要setup-py？" class="headerlink" title="4. 新的Python版本是否还需要setup.py？"></a>4. 新的Python版本是否还需要<code>setup.py</code>？</h3><p>较新的<code>setuptools</code>和<code>pip</code>版本可以省略<code>setup.py</code>，但目前<code>setup.py</code>仍然被广泛使用，并且在一些场景下还是必要的。 </p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E5%8C%85%E7%AE%A1%E7%90%86/" class="category-chain-item">Python包管理</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#后端开发</a>
+      
+        <a href="/tags/Python/" class="print-no-link">#Python</a>
+      
+        <a href="/tags/setuptools/" class="print-no-link">#setuptools</a>
+      
+        <a href="/tags/Python%E5%8C%85%E5%AE%89%E8%A3%85/" class="print-no-link">#Python包安装</a>
+      
+        <a href="/tags/Python%E5%8C%85%E5%8F%91%E5%B8%83/" class="print-no-link">#Python包发布</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>深入了解Python的setup.py文件</div>
+      <div>https://1010n111.github.io/2025-04-21.in-depth-understanding-of-python-setup-py-file.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年4月21日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025-04-21.how-to-clone-a-specific-git-branch.html" title="如何克隆特定的Git分支">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何克隆特定的Git分支</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025-04-21.install-pip-on-macos-or-osx.html" title="在 macOS 或 OS X 上安装 pip 的方法">
+                        <span class="hidden-mobile">在 macOS 或 OS X 上安装 pip 的方法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

@@ -19,15 +19,19 @@
   <meta name="author" content="ww">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
+    <meta name="description" content="这里是面向开发者的编程技术共享空间，专注于输出兼具深度与实用性的技术内容。我们聚焦全栈开发（前端 &#x2F; 后端 &#x2F; 移动端）、算法与数据结构、系统架构设计、云原生技术（Docker&#x2F;K8s）等核心领域，通过原理剖析、实战案例拆解、踩坑经验分享，帮助开发者理解技术本质并落地应用。同时，定期解读行业前沿动态（如 AIGC 工具链、低代码开发、边缘计算等），评测热门开发工具（IDE、调试工具、效能平台），并">
+<meta property="og:type" content="website">
 <meta property="og:title" content="小破站">
-<meta property="og:url" content="http://example.com/page/48/index.html">
+<meta property="og:url" content="https://1010n111.github.io/page/48/index.html">
 <meta property="og:site_name" content="小破站">
+<meta property="og:description" content="这里是面向开发者的编程技术共享空间，专注于输出兼具深度与实用性的技术内容。我们聚焦全栈开发（前端 &#x2F; 后端 &#x2F; 移动端）、算法与数据结构、系统架构设计、云原生技术（Docker&#x2F;K8s）等核心领域，通过原理剖析、实战案例拆解、踩坑经验分享，帮助开发者理解技术本质并落地应用。同时，定期解读行业前沿动态（如 AIGC 工具链、低代码开发、边缘计算等），评测热门开发工具（IDE、调试工具、效能平台），并">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="ww">
 <meta name="twitter:card" content="summary_large_image">
   
   
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />
   
   <title>小破站</title>
 
@@ -61,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"1010n111.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -223,13 +227,89 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/15/2025-04-15.why-html-thinks-chucknorris-is-a-color/" target="_self">
+        <a href="/2025-04-15.solve-gcc-python-h-missing-issue.html" target="_self">
+          解决gcc编译时找不到Python.h文件的问题
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-15.solve-gcc-python-h-missing-issue.html" target="_self">
+        <div>
+          解决gcc编译时找不到Python.h文件的问题技术背景在使用gcc编译C扩展文件时，有时会遇到 fatal error: Python.h: No such file or directory 错误。这通常是因为系统中缺少Python开发所需的头文件和静态库，或者编译器无法找到这些文件的路径。当你尝试构建一个使用Python C API的共享库或可执行文件时，就可能会遇到这个问题。 实现步骤1.
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-15 08:00" pubdate>
+              2025-04-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E5%AE%9E%E8%B7%B5/" class="category-chain-item">编译工具实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/C%E8%AF%AD%E8%A8%80/">#C语言</a>
+            
+              <a href="/tags/gcc/">#gcc</a>
+            
+              <a href="/tags/Python-C-API/">#Python C API</a>
+            
+              <a href="/tags/%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/">#编译错误处理</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025-04-15.why-html-thinks-chucknorris-is-a-color.html" target="_self">
           为何HTML认为“chucknorris”是一种颜色？
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.why-html-thinks-chucknorris-is-a-color/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-15.why-html-thinks-chucknorris-is-a-color.html" target="_self">
         <div>
           为何HTML认为“chucknorris”是一种颜色？技术背景在HTML中，当我们为元素（如&lt;body&gt;）的bgcolor属性指定值时，通常会使用标准的颜色名称（如red）或十六进制颜色代码（如#FF0000）。然而，令人惊讶的是，某些随机字符串（如“chucknorris”）也能产生颜色效果，这一现象在不同浏览器和平台上都存在。 实现步骤1. 替换非十六进制字符浏览器会将字符串中的所
         </div>
@@ -297,315 +377,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/15/2025-04-15.why-is-processing-a-sorted-array-faster-than-an-unsorted-array/" target="_self">
-          为什么处理有序数组比处理无序数组更快？
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/15/2025-04-15.why-is-processing-a-sorted-array-faster-than-an-unsorted-array/" target="_self">
-        <div>
-          为什么处理有序数组比处理无序数组更快？技术背景在编写程序时，我们经常会遇到需要对数组进行处理的场景。有时会发现，处理有序数组的速度明显快于处理无序数组。例如，在以下 C++ 和 Java 代码中，对数组进行排序后，主要循环的执行速度提升了数倍。 C++ 示例代码123456789101112131415161718192021222324252627282930313233#include &lt
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-15 08:00" pubdate>
-              2025-04-15
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="category-chain-item">性能优化</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Java/">#Java</a>
-            
-              <a href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">#性能优化</a>
-            
-              <a href="/tags/C/">#C++</a>
-            
-              <a href="/tags/%E5%88%86%E6%94%AF%E9%A2%84%E6%B5%8B/">#分支预测</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.difference-between-python-append-and-extend/" target="_self">
-          Python列表方法append和extend的区别
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.difference-between-python-append-and-extend/" target="_self">
-        <div>
-          Python列表方法append和extend的区别技术背景在Python编程中，列表（list）是一种常用的数据结构，用于存储一系列元素。append() 和 extend() 是列表对象提供的两个重要方法，它们都可以用于向列表中添加元素，但在功能和使用场景上有所不同。理解它们的区别对于高效地操作列表非常重要。 实现步骤append()方法append() 方法用于在列表的末尾添加一个元素。这个
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C/">#列表操作</a>
-            
-              <a href="/tags/append%E6%96%B9%E6%B3%95/">#append方法</a>
-            
-              <a href="/tags/extend%E6%96%B9%E6%B3%95/">#extend方法</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.deleting-columns-from-pandas-dataframe/" target="_self">
-          Python中删除Pandas DataFrame的列
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.deleting-columns-from-pandas-dataframe/" target="_self">
-        <div>
-          Python中删除Pandas DataFrame的列技术背景在数据处理和分析过程中，经常需要对Pandas DataFrame进行操作，其中删除列是常见需求。比如在清洗数据时，某些列包含无用信息，或者在特征工程中，需要移除不相关的特征列。 实现步骤1. 使用del关键字123456789import pandas as pd# 创建DataFramedata = &#123;&#x27;col1
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" class="category-chain-item">数据处理</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/Pandas%E5%BA%93%E4%BD%BF%E7%94%A8/" class="category-chain-item">Pandas库使用</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/Pandas/">#Pandas</a>
-            
-              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">#数据处理</a>
-            
-              <a href="/tags/DataFrame%E5%88%97%E5%88%A0%E9%99%A4/">#DataFrame列删除</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.differences-between-python-venv-tools/" target="_self">
-          Python虚拟环境与版本管理工具的区别
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.differences-between-python-venv-tools/" target="_self">
-        <div>
-          Python虚拟环境与版本管理工具的区别技术背景在Python开发中，管理不同的Python版本和依赖库是一项常见需求。不同项目可能需要不同版本的Python解释器，或者使用不同版本的第三方库。为了满足这些需求，出现了多种工具，如venv、pyvenv、pyenv、virtualenv、virtualenvwrapper、pipenv等。这些工具名称相似，但功能和用途有所不同。 实现步骤非标准库工
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="category-chain-item">开发工具</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/venv/">#venv</a>
-            
-              <a href="/tags/virtualenv/">#virtualenv</a>
-            
-              <a href="/tags/pyenv/">#pyenv</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.calling-python-module-function-by-string/" target="_self">
+        <a href="/2025-04-14.calling-python-module-function-by-string.html" target="_self">
           使用字符串调用Python模块的函数
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.calling-python-module-function-by-string/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.calling-python-module-function-by-string.html" target="_self">
         <div>
           使用字符串调用Python模块的函数技术背景在Python编程中，有时我们需要根据字符串动态地调用函数。这种需求在很多场景下都会出现，比如实现插件系统、根据用户输入调用相应的函数等。Python提供了多种方法来实现这一功能。 实现步骤1. 使用getattr函数如果已知模块和函数名，可以使用getattr函数来调用函数。示例代码如下： 123import foobar = getattr(foo,
         </div>
@@ -675,13 +453,239 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.extract-data-from-java-drag-and-drop-to-pyside2/" target="_self">
+        <a href="/2025-04-14.deleting-columns-from-pandas-dataframe.html" target="_self">
+          Python中删除Pandas DataFrame的列
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.deleting-columns-from-pandas-dataframe.html" target="_self">
+        <div>
+          Python中删除Pandas DataFrame的列技术背景在数据处理和分析过程中，经常需要对Pandas DataFrame进行操作，其中删除列是常见需求。比如在清洗数据时，某些列包含无用信息，或者在特征工程中，需要移除不相关的特征列。 实现步骤1. 使用del关键字123456789import pandas as pd# 创建DataFramedata = &#123;&#x27;col1
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" class="category-chain-item">数据处理</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/Pandas%E5%BA%93%E4%BD%BF%E7%94%A8/" class="category-chain-item">Pandas库使用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/Pandas/">#Pandas</a>
+            
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">#数据处理</a>
+            
+              <a href="/tags/DataFrame%E5%88%97%E5%88%A0%E9%99%A4/">#DataFrame列删除</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025-04-14.difference-between-python-append-and-extend.html" target="_self">
+          Python列表方法append和extend的区别
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.difference-between-python-append-and-extend.html" target="_self">
+        <div>
+          Python列表方法append和extend的区别技术背景在Python编程中，列表（list）是一种常用的数据结构，用于存储一系列元素。append() 和 extend() 是列表对象提供的两个重要方法，它们都可以用于向列表中添加元素，但在功能和使用场景上有所不同。理解它们的区别对于高效地操作列表非常重要。 实现步骤append()方法append() 方法用于在列表的末尾添加一个元素。这个
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C/">#列表操作</a>
+            
+              <a href="/tags/append%E6%96%B9%E6%B3%95/">#append方法</a>
+            
+              <a href="/tags/extend%E6%96%B9%E6%B3%95/">#extend方法</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025-04-14.differences-between-python-venv-tools.html" target="_self">
+          Python虚拟环境与版本管理工具的区别
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.differences-between-python-venv-tools.html" target="_self">
+        <div>
+          Python虚拟环境与版本管理工具的区别技术背景在Python开发中，管理不同的Python版本和依赖库是一项常见需求。不同项目可能需要不同版本的Python解释器，或者使用不同版本的第三方库。为了满足这些需求，出现了多种工具，如venv、pyvenv、pyenv、virtualenv、virtualenvwrapper、pipenv等。这些工具名称相似，但功能和用途有所不同。 实现步骤非标准库工
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="category-chain-item">开发工具</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/venv/">#venv</a>
+            
+              <a href="/tags/virtualenv/">#virtualenv</a>
+            
+              <a href="/tags/pyenv/">#pyenv</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025-04-14.extract-data-from-java-drag-and-drop-to-pyside2.html" target="_self">
           从 Java 拖放操作中提取数据到 PySide2 应用程序
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.extract-data-from-java-drag-and-drop-to-pyside2/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.extract-data-from-java-drag-and-drop-to-pyside2.html" target="_self">
         <div>
           从 Java 拖放操作中提取数据到 PySide2 应用程序技术背景在软件开发中，有时需要实现不同语言编写的应用程序之间的交互。例如，有一个 Java GUI 应用程序，其中的 treeView 部件已启用拖放功能，当从这个 treeView 中拖动一个项目并尝试将其放到另一个使用 Python 和 PySide2 构建的应用程序的 QTableWidget 上时，会遇到数据提取的问题。在拖放操作
         </div>
@@ -751,89 +755,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.how-to-determine-python-variable-type/" target="_self">
-          如何确定Python变量的类型
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.how-to-determine-python-variable-type/" target="_self">
-        <div>
-          如何确定Python变量的类型技术背景在Python编程中，变量是动态类型的，即变量在使用过程中可以被赋予不同类型的值。这在带来灵活性的同时，也可能导致在某些情况下需要明确变量的具体类型。例如，在进行数据处理、类型转换或错误检查时，我们需要知道变量的类型，以便采取合适的操作。 实现步骤使用type()函数type()是Python的内置函数，用于返回对象的类型。可以通过以下方式使用： 123456
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-04-14 08:00" pubdate>
-              2025-04-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
-            
-              <a href="/tags/Python/">#Python</a>
-            
-              <a href="/tags/%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/">#变量类型检查</a>
-            
-              <a href="/tags/type%E5%87%BD%E6%95%B0/">#type函数</a>
-            
-              <a href="/tags/isinstance%E5%87%BD%E6%95%B0/">#isinstance函数</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/04/14/2025-04-14.getting-the-class-name-of-a-python-instance/" target="_self">
+        <a href="/2025-04-14.getting-the-class-name-of-a-python-instance.html" target="_self">
           获取Python对象实例的类名
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.getting-the-class-name-of-a-python-instance/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.getting-the-class-name-of-a-python-instance.html" target="_self">
         <div>
           获取Python对象实例的类名技术背景在Python编程中，有时需要动态获取对象实例所属的类名。这在调试、日志记录、元编程等场景中非常有用。例如，在日志记录中，我们可能希望记录某个操作涉及的对象类型，以便更好地追踪程序的执行流程。 实现步骤1. 使用__name__属性可以通过type(x).__name__或x.__class__.__name__来获取类名。 123456789import i
         </div>
@@ -903,13 +831,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/04/14/2025-04-14.how-to-change-matplotlib-figure-size/" target="_self">
+        <a href="/2025-04-14.how-to-change-matplotlib-figure-size.html" target="_self">
           如何更改Matplotlib绘制图形的大小
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/04/14/2025-04-14.how-to-change-matplotlib-figure-size/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.how-to-change-matplotlib-figure-size.html" target="_self">
         <div>
           如何更改Matplotlib绘制图形的大小技术背景在使用Matplotlib进行数据可视化时，我们常常需要根据不同的需求调整图形的大小，例如在论文中插入合适尺寸的图表，或者在展示时让图形更清晰美观。Matplotlib提供了多种方法来实现图形大小的调整。 实现步骤1. 创建图形时指定大小在创建图形对象时，可以通过figsize参数指定图形的大小，单位为英寸。figsize是一个包含两个元素的元组，
         </div>
@@ -964,6 +892,82 @@
               <a href="/tags/Matplotlib/">#Matplotlib</a>
             
               <a href="/tags/%E5%9B%BE%E5%BD%A2%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4/">#图形大小调整</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025-04-14.how-to-determine-python-variable-type.html" target="_self">
+          如何确定Python变量的类型
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025-04-14.how-to-determine-python-variable-type.html" target="_self">
+        <div>
+          如何确定Python变量的类型技术背景在Python编程中，变量是动态类型的，即变量在使用过程中可以被赋予不同类型的值。这在带来灵活性的同时，也可能导致在某些情况下需要明确变量的具体类型。例如，在进行数据处理、类型转换或错误检查时，我们需要知道变量的类型，以便采取合适的操作。 实现步骤使用type()函数type()是Python的内置函数，用于返回对象的类型。可以通过以下方式使用： 123456
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-04-14 08:00" pubdate>
+              2025-04-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5/" class="category-chain-item">Python编程实践</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">#后端开发</a>
+            
+              <a href="/tags/Python/">#Python</a>
+            
+              <a href="/tags/%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/">#变量类型检查</a>
+            
+              <a href="/tags/type%E5%87%BD%E6%95%B0/">#type函数</a>
+            
+              <a href="/tags/isinstance%E5%87%BD%E6%95%B0/">#isinstance函数</a>
             
           </div>
         
