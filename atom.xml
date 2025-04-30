@@ -303,39 +303,6 @@
   </entry>
   
   <entry>
-    <title>解决Docker权限被拒问题</title>
-    <link href="https://1010n111.github.io/posts/2f04b319.html"/>
-    <id>https://1010n111.github.io/posts/2f04b319.html</id>
-    <published>2025-04-28T00:52:34.000Z</published>
-    <updated>2025-04-29T23:55:08.399Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;解决Docker权限被拒问题&quot;&gt;&lt;a href=&quot;#解决Docker权限被拒问题&quot; class=&quot;headerlink&quot; title=&quot;解决Docker权限被拒问题&quot;&gt;&lt;/a&gt;解决Docker权限被拒问题&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="容器技术" scheme="https://1010n111.github.io/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="Docker使用" scheme="https://1010n111.github.io/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/Docker%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="Linux" scheme="https://1010n111.github.io/tags/Linux/"/>
-    
-    <category term="Docker" scheme="https://1010n111.github.io/tags/Docker/"/>
-    
-    <category term="容器技术" scheme="https://1010n111.github.io/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="权限管理" scheme="https://1010n111.github.io/tags/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
     <title>在Spring Boot中从命令行设置活动配置文件和配置位置</title>
     <link href="https://1010n111.github.io/posts/7667b778.html"/>
     <id>https://1010n111.github.io/posts/7667b778.html</id>
@@ -367,6 +334,39 @@
     <category term="配置文件设置" scheme="https://1010n111.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE/"/>
     
     <category term="活动配置文件" scheme="https://1010n111.github.io/tags/%E6%B4%BB%E5%8A%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决Docker权限被拒问题</title>
+    <link href="https://1010n111.github.io/posts/2f04b319.html"/>
+    <id>https://1010n111.github.io/posts/2f04b319.html</id>
+    <published>2025-04-28T00:52:34.000Z</published>
+    <updated>2025-04-29T23:55:08.399Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;解决Docker权限被拒问题&quot;&gt;&lt;a href=&quot;#解决Docker权限被拒问题&quot; class=&quot;headerlink&quot; title=&quot;解决Docker权限被拒问题&quot;&gt;&lt;/a&gt;解决Docker权限被拒问题&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="容器技术" scheme="https://1010n111.github.io/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Docker使用" scheme="https://1010n111.github.io/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/Docker%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="Linux" scheme="https://1010n111.github.io/tags/Linux/"/>
+    
+    <category term="Docker" scheme="https://1010n111.github.io/tags/Docker/"/>
+    
+    <category term="容器技术" scheme="https://1010n111.github.io/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="权限管理" scheme="https://1010n111.github.io/tags/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -476,6 +476,41 @@
   </entry>
   
   <entry>
+    <title>Spring Boot中spring.jpa.open-in-view=true属性解析</title>
+    <link href="https://1010n111.github.io/posts/119c98b1.html"/>
+    <id>https://1010n111.github.io/posts/119c98b1.html</id>
+    <published>2025-04-28T00:52:34.000Z</published>
+    <updated>2025-04-29T23:55:08.402Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Spring-Boot中spring-jpa-open-in-view-true属性解析&quot;&gt;&lt;a href=&quot;#Spring-Boot中spring-jpa-open-in-view-true属性解析&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
+    
+    <category term="Spring Boot" scheme="https://1010n111.github.io/tags/Spring-Boot/"/>
+    
+    <category term="Spring Data JPA" scheme="https://1010n111.github.io/tags/Spring-Data-JPA/"/>
+    
+    <category term="Open Session in View" scheme="https://1010n111.github.io/tags/Open-Session-in-View/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Spring定时任务每天凌晨1:01执行的Cron表达式</title>
     <link href="https://1010n111.github.io/posts/f55d86e3.html"/>
     <id>https://1010n111.github.io/posts/f55d86e3.html</id>
@@ -509,41 +544,6 @@
     <category term="Cron表达式" scheme="https://1010n111.github.io/tags/Cron%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
     <category term="定时任务" scheme="https://1010n111.github.io/tags/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring Boot中spring.jpa.open-in-view=true属性解析</title>
-    <link href="https://1010n111.github.io/posts/119c98b1.html"/>
-    <id>https://1010n111.github.io/posts/119c98b1.html</id>
-    <published>2025-04-28T00:52:34.000Z</published>
-    <updated>2025-04-29T23:55:08.402Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Spring-Boot中spring-jpa-open-in-view-true属性解析&quot;&gt;&lt;a href=&quot;#Spring-Boot中spring-jpa-open-in-view-true属性解析&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
-    
-    <category term="Spring Boot" scheme="https://1010n111.github.io/tags/Spring-Boot/"/>
-    
-    <category term="Spring Data JPA" scheme="https://1010n111.github.io/tags/Spring-Data-JPA/"/>
-    
-    <category term="Open Session in View" scheme="https://1010n111.github.io/tags/Open-Session-in-View/"/>
     
   </entry>
   
@@ -655,6 +655,41 @@
   </entry>
   
   <entry>
+    <title>Spring Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法</title>
+    <link href="https://1010n111.github.io/posts/17f54056.html"/>
+    <id>https://1010n111.github.io/posts/17f54056.html</id>
+    <published>2025-04-28T00:52:34.000Z</published>
+    <updated>2025-04-29T23:55:08.405Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Spring-Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法&quot;&gt;&lt;a href=&quot;#Spring-Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Spring框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Spring%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
+    
+    <category term="Spring" scheme="https://1010n111.github.io/tags/Spring/"/>
+    
+    <category term="Spring Security" scheme="https://1010n111.github.io/tags/Spring-Security/"/>
+    
+    <category term="用户信息获取" scheme="https://1010n111.github.io/tags/%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>为何 Spring 的 ApplicationContext.getBean 被认为不佳？</title>
     <link href="https://1010n111.github.io/posts/37e4d194.html"/>
     <id>https://1010n111.github.io/posts/37e4d194.html</id>
@@ -688,41 +723,6 @@
     <category term="依赖注入" scheme="https://1010n111.github.io/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/"/>
     
     <category term="ApplicationContext.getBean" scheme="https://1010n111.github.io/tags/ApplicationContext-getBean/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法</title>
-    <link href="https://1010n111.github.io/posts/17f54056.html"/>
-    <id>https://1010n111.github.io/posts/17f54056.html</id>
-    <published>2025-04-28T00:52:34.000Z</published>
-    <updated>2025-04-29T23:55:08.405Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Spring-Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法&quot;&gt;&lt;a href=&quot;#Spring-Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Spring框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Spring%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
-    
-    <category term="Spring" scheme="https://1010n111.github.io/tags/Spring/"/>
-    
-    <category term="Spring Security" scheme="https://1010n111.github.io/tags/Spring-Security/"/>
-    
-    <category term="用户信息获取" scheme="https://1010n111.github.io/tags/%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96/"/>
     
   </entry>
   
