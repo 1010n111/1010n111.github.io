@@ -6,7 +6,7 @@
   <link href="https://1010n111.github.io/atom.xml" rel="self"/>
   
   <link href="https://1010n111.github.io/"/>
-  <updated>2025-04-29T23:55:08.409Z</updated>
+  <updated>2025-04-30T00:59:30.510Z</updated>
   <id>https://1010n111.github.io/</id>
   
   <author>
@@ -15,6 +15,111 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mockito: 向私有 @Autowired 字段注入真实对象</title>
+    <link href="https://1010n111.github.io/posts/7bb21ee3.html"/>
+    <id>https://1010n111.github.io/posts/7bb21ee3.html</id>
+    <published>2025-04-30T00:59:10.000Z</published>
+    <updated>2025-04-30T00:59:30.510Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Mockito-向私有-Autowired-字段注入真实对象&quot;&gt;&lt;a href=&quot;#Mockito-向私有-Autowired-字段注入真实对象&quot; class=&quot;headerlink&quot; title=&quot;Mockito: 向私有 @Autowired</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="单元测试" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
+    
+    <category term="Spring" scheme="https://1010n111.github.io/tags/Spring/"/>
+    
+    <category term="依赖注入" scheme="https://1010n111.github.io/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/"/>
+    
+    <category term="Mockito" scheme="https://1010n111.github.io/tags/Mockito/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中检查对象是否具有某属性的方法</title>
+    <link href="https://1010n111.github.io/posts/df3763e6.html"/>
+    <id>https://1010n111.github.io/posts/df3763e6.html</id>
+    <published>2025-04-30T00:59:10.000Z</published>
+    <updated>2025-04-30T00:59:30.512Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python中检查对象是否具有某属性的方法&quot;&gt;&lt;a href=&quot;#Python中检查对象是否具有某属性的方法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://1010n111.github.io/tags/Python/"/>
+    
+    <category term="面向对象编程" scheme="https://1010n111.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="属性检查" scheme="https://1010n111.github.io/tags/%E5%B1%9E%E6%80%A7%E6%A3%80%E6%9F%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring CrudRepository 实现 IN 子句查询</title>
+    <link href="https://1010n111.github.io/posts/3e310bda.html"/>
+    <id>https://1010n111.github.io/posts/3e310bda.html</id>
+    <published>2025-04-30T00:59:10.000Z</published>
+    <updated>2025-04-30T00:59:30.513Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Spring-CrudRepository-实现-IN-子句查询&quot;&gt;&lt;a href=&quot;#Spring-CrudRepository-实现-IN-子句查询&quot; class=&quot;headerlink&quot; title=&quot;Spring CrudRepository 实现 IN</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Spring框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E5%BC%80%E5%8F%91/Spring%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
+    
+    <category term="Spring" scheme="https://1010n111.github.io/tags/Spring/"/>
+    
+    <category term="Spring Data JPA" scheme="https://1010n111.github.io/tags/Spring-Data-JPA/"/>
+    
+    <category term="IN子句查询" scheme="https://1010n111.github.io/tags/IN%E5%AD%90%E5%8F%A5%E6%9F%A5%E8%AF%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>Mockito: Inject real objects into private @Autowired fields</title>
@@ -198,6 +303,39 @@
   </entry>
   
   <entry>
+    <title>解决Docker权限被拒问题</title>
+    <link href="https://1010n111.github.io/posts/2f04b319.html"/>
+    <id>https://1010n111.github.io/posts/2f04b319.html</id>
+    <published>2025-04-28T00:52:34.000Z</published>
+    <updated>2025-04-29T23:55:08.399Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;解决Docker权限被拒问题&quot;&gt;&lt;a href=&quot;#解决Docker权限被拒问题&quot; class=&quot;headerlink&quot; title=&quot;解决Docker权限被拒问题&quot;&gt;&lt;/a&gt;解决Docker权限被拒问题&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="容器技术" scheme="https://1010n111.github.io/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Docker使用" scheme="https://1010n111.github.io/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/Docker%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="Linux" scheme="https://1010n111.github.io/tags/Linux/"/>
+    
+    <category term="Docker" scheme="https://1010n111.github.io/tags/Docker/"/>
+    
+    <category term="容器技术" scheme="https://1010n111.github.io/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="权限管理" scheme="https://1010n111.github.io/tags/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>在Spring Boot中从命令行设置活动配置文件和配置位置</title>
     <link href="https://1010n111.github.io/posts/7667b778.html"/>
     <id>https://1010n111.github.io/posts/7667b778.html</id>
@@ -229,39 +367,6 @@
     <category term="配置文件设置" scheme="https://1010n111.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE/"/>
     
     <category term="活动配置文件" scheme="https://1010n111.github.io/tags/%E6%B4%BB%E5%8A%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Docker权限被拒问题</title>
-    <link href="https://1010n111.github.io/posts/2f04b319.html"/>
-    <id>https://1010n111.github.io/posts/2f04b319.html</id>
-    <published>2025-04-28T00:52:34.000Z</published>
-    <updated>2025-04-29T23:55:08.399Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;解决Docker权限被拒问题&quot;&gt;&lt;a href=&quot;#解决Docker权限被拒问题&quot; class=&quot;headerlink&quot; title=&quot;解决Docker权限被拒问题&quot;&gt;&lt;/a&gt;解决Docker权限被拒问题&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="容器技术" scheme="https://1010n111.github.io/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="Docker使用" scheme="https://1010n111.github.io/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/Docker%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="Linux" scheme="https://1010n111.github.io/tags/Linux/"/>
-    
-    <category term="Docker" scheme="https://1010n111.github.io/tags/Docker/"/>
-    
-    <category term="容器技术" scheme="https://1010n111.github.io/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="权限管理" scheme="https://1010n111.github.io/tags/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -371,41 +476,6 @@
   </entry>
   
   <entry>
-    <title>Spring Boot中spring.jpa.open-in-view=true属性解析</title>
-    <link href="https://1010n111.github.io/posts/119c98b1.html"/>
-    <id>https://1010n111.github.io/posts/119c98b1.html</id>
-    <published>2025-04-28T00:52:34.000Z</published>
-    <updated>2025-04-29T23:55:08.402Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Spring-Boot中spring-jpa-open-in-view-true属性解析&quot;&gt;&lt;a href=&quot;#Spring-Boot中spring-jpa-open-in-view-true属性解析&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
-    
-    <category term="Spring Boot" scheme="https://1010n111.github.io/tags/Spring-Boot/"/>
-    
-    <category term="Spring Data JPA" scheme="https://1010n111.github.io/tags/Spring-Data-JPA/"/>
-    
-    <category term="Open Session in View" scheme="https://1010n111.github.io/tags/Open-Session-in-View/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Spring定时任务每天凌晨1:01执行的Cron表达式</title>
     <link href="https://1010n111.github.io/posts/f55d86e3.html"/>
     <id>https://1010n111.github.io/posts/f55d86e3.html</id>
@@ -439,6 +509,41 @@
     <category term="Cron表达式" scheme="https://1010n111.github.io/tags/Cron%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
     <category term="定时任务" scheme="https://1010n111.github.io/tags/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot中spring.jpa.open-in-view=true属性解析</title>
+    <link href="https://1010n111.github.io/posts/119c98b1.html"/>
+    <id>https://1010n111.github.io/posts/119c98b1.html</id>
+    <published>2025-04-28T00:52:34.000Z</published>
+    <updated>2025-04-29T23:55:08.402Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Spring-Boot中spring-jpa-open-in-view-true属性解析&quot;&gt;&lt;a href=&quot;#Spring-Boot中spring-jpa-open-in-view-true属性解析&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
+    
+    <category term="Spring Boot" scheme="https://1010n111.github.io/tags/Spring-Boot/"/>
+    
+    <category term="Spring Data JPA" scheme="https://1010n111.github.io/tags/Spring-Data-JPA/"/>
+    
+    <category term="Open Session in View" scheme="https://1010n111.github.io/tags/Open-Session-in-View/"/>
     
   </entry>
   
@@ -550,41 +655,6 @@
   </entry>
   
   <entry>
-    <title>Spring Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法</title>
-    <link href="https://1010n111.github.io/posts/17f54056.html"/>
-    <id>https://1010n111.github.io/posts/17f54056.html</id>
-    <published>2025-04-28T00:52:34.000Z</published>
-    <updated>2025-04-29T23:55:08.405Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Spring-Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法&quot;&gt;&lt;a href=&quot;#Spring-Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Spring框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Spring%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
-    
-    <category term="Spring" scheme="https://1010n111.github.io/tags/Spring/"/>
-    
-    <category term="Spring Security" scheme="https://1010n111.github.io/tags/Spring-Security/"/>
-    
-    <category term="用户信息获取" scheme="https://1010n111.github.io/tags/%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96/"/>
-    
-  </entry>
-  
-  <entry>
     <title>为何 Spring 的 ApplicationContext.getBean 被认为不佳？</title>
     <link href="https://1010n111.github.io/posts/37e4d194.html"/>
     <id>https://1010n111.github.io/posts/37e4d194.html</id>
@@ -622,53 +692,18 @@
   </entry>
   
   <entry>
-    <title>自动创建 Python 的 requirements.txt 文件</title>
-    <link href="https://1010n111.github.io/posts/51dbaba6.html"/>
-    <id>https://1010n111.github.io/posts/51dbaba6.html</id>
-    <published>2025-04-27T00:55:52.000Z</published>
-    <updated>2025-04-29T23:55:08.386Z</updated>
+    <title>Spring Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法</title>
+    <link href="https://1010n111.github.io/posts/17f54056.html"/>
+    <id>https://1010n111.github.io/posts/17f54056.html</id>
+    <published>2025-04-28T00:52:34.000Z</published>
+    <updated>2025-04-29T23:55:08.405Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;自动创建-Python-的-requirements-txt-文件&quot;&gt;&lt;a href=&quot;#自动创建-Python-的-requirements-txt-文件&quot; class=&quot;headerlink&quot; title=&quot;自动创建 Python 的</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python 开发实践" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python-%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://1010n111.github.io/tags/Python/"/>
-    
-    <category term="pipreqs" scheme="https://1010n111.github.io/tags/pipreqs/"/>
-    
-    <category term="pip-tools" scheme="https://1010n111.github.io/tags/pip-tools/"/>
-    
-    <category term="requirements.txt 生成" scheme="https://1010n111.github.io/tags/requirements-txt-%E7%94%9F%E6%88%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用JSP 2避免JSP文件中的Java代码</title>
-    <link href="https://1010n111.github.io/posts/86c0ef09.html"/>
-    <id>https://1010n111.github.io/posts/86c0ef09.html</id>
-    <published>2025-04-27T00:55:52.000Z</published>
-    <updated>2025-04-29T23:55:08.386Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;使用JSP-2避免JSP文件中的Java代码&quot;&gt;&lt;a href=&quot;#使用JSP-2避免JSP文件中的Java代码&quot; class=&quot;headerlink&quot; title=&quot;使用JSP 2避免JSP文件中的Java代码&quot;&gt;&lt;/a&gt;使用JSP</summary>
+    <summary type="html">&lt;h1 id=&quot;Spring-Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法&quot;&gt;&lt;a href=&quot;#Spring-Security中在Bean里获取当前用户名（即SecurityContext）信息的正确方法&quot;</summary>
         
       
     
@@ -676,53 +711,18 @@
     
     <category term="后端开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="Java Web开发" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java-Web%E5%BC%80%E5%8F%91/"/>
+    <category term="Spring框架应用" scheme="https://1010n111.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Spring%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
     
     
     <category term="后端开发" scheme="https://1010n111.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
     
-    <category term="JSP" scheme="https://1010n111.github.io/tags/JSP/"/>
+    <category term="Spring" scheme="https://1010n111.github.io/tags/Spring/"/>
     
-    <category term="JSTL" scheme="https://1010n111.github.io/tags/JSTL/"/>
+    <category term="Spring Security" scheme="https://1010n111.github.io/tags/Spring-Security/"/>
     
-    <category term="EL表达式" scheme="https://1010n111.github.io/tags/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何将本地JAR文件添加到Maven项目中</title>
-    <link href="https://1010n111.github.io/posts/a352df8a.html"/>
-    <id>https://1010n111.github.io/posts/a352df8a.html</id>
-    <published>2025-04-27T00:55:52.000Z</published>
-    <updated>2025-04-29T23:55:08.388Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何将本地JAR文件添加到Maven项目中&quot;&gt;&lt;a href=&quot;#如何将本地JAR文件添加到Maven项目中&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java开发" scheme="https://1010n111.github.io/categories/Java%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="项目依赖管理" scheme="https://1010n111.github.io/categories/Java%E5%BC%80%E5%8F%91/%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/"/>
-    
-    
-    <category term="Java" scheme="https://1010n111.github.io/tags/Java/"/>
-    
-    <category term="Maven" scheme="https://1010n111.github.io/tags/Maven/"/>
-    
-    <category term="Java开发" scheme="https://1010n111.github.io/tags/Java%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="本地JAR依赖" scheme="https://1010n111.github.io/tags/%E6%9C%AC%E5%9C%B0JAR%E4%BE%9D%E8%B5%96/"/>
-    
-    <category term="项目配置" scheme="https://1010n111.github.io/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"/>
+    <category term="用户信息获取" scheme="https://1010n111.github.io/tags/%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96/"/>
     
   </entry>
   
