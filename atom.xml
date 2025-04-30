@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>小破站</title>
   
-  <subtitle>聚焦全栈开发、算法解析与技术前沿，助力开发者从入门到精通</subtitle>
+  <subtitle>个人学习与分享笔记</subtitle>
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
