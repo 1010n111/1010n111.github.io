@@ -13,5 +13,5 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /images/
 
-Sitemap: https://1010n111.github.io/sitemap.xml
-Sitemap: https://1010n111.github.io/baidusitemap.xml
+Sitemap: https://119291.xyz/sitemap.xml
+Sitemap: https://119291.xyz/baidusitemap.xml
