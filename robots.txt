@@ -1,6 +1,9 @@
 User-agent: *
 
 Allow: /
+Allow: /sitemap.xml
+Allow: /baidusitemap.xml
+Allow: /categories/
 Allow: /archives/
 Allow: /page/
 Allow: /schedule/
