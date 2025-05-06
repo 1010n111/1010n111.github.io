@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-05-06T08:40:58.953Z</updated>
+  <updated>2025-05-06T08:45:39.359Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://119291.xyz/posts/c8b0413e.html"/>
     <id>https://119291.xyz/posts/c8b0413e.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:40:58.953Z</updated>
+    <updated>2025-05-06T08:45:39.359Z</updated>
     
     
       
@@ -56,7 +56,7 @@
     <link href="https://119291.xyz/posts/19a6c6f3.html"/>
     <id>https://119291.xyz/posts/19a6c6f3.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:40:59.081Z</updated>
+    <updated>2025-05-06T08:45:39.360Z</updated>
     
     
       
@@ -91,7 +91,7 @@
     <link href="https://119291.xyz/posts/7c78644.html"/>
     <id>https://119291.xyz/posts/7c78644.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:40:59.018Z</updated>
+    <updated>2025-05-06T08:45:39.361Z</updated>
     
     
       
@@ -124,7 +124,7 @@
     <link href="https://119291.xyz/posts/fbdf13a7.html"/>
     <id>https://119291.xyz/posts/fbdf13a7.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:38:18.205Z</updated>
+    <updated>2025-05-06T08:45:39.362Z</updated>
     
     
       
@@ -159,7 +159,7 @@
     <link href="https://119291.xyz/posts/e8f42cc6.html"/>
     <id>https://119291.xyz/posts/e8f42cc6.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:40:59.060Z</updated>
+    <updated>2025-05-06T08:45:39.363Z</updated>
     
     
       
@@ -194,7 +194,7 @@
     <link href="https://119291.xyz/posts/8323e292.html"/>
     <id>https://119291.xyz/posts/8323e292.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:40:59.040Z</updated>
+    <updated>2025-05-06T08:45:39.363Z</updated>
     
     
       
@@ -229,7 +229,7 @@
     <link href="https://119291.xyz/posts/66d9845c.html"/>
     <id>https://119291.xyz/posts/66d9845c.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:36:11.064Z</updated>
+    <updated>2025-05-06T08:45:39.364Z</updated>
     
     
       
@@ -402,6 +402,43 @@
   </entry>
   
   <entry>
+    <title>Spring Security中Role和GrantedAuthority的区别</title>
+    <link href="https://119291.xyz/posts/f1a99e08.html"/>
+    <id>https://119291.xyz/posts/f1a99e08.html</id>
+    <published>2025-04-28T00:52:34.000Z</published>
+    <updated>2025-04-29T23:55:08.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Spring-Security中Role和GrantedAuthority的区别&quot;&gt;&lt;a href=&quot;#Spring-Security中Role和GrantedAuthority的区别&quot; class=&quot;headerlink&quot; title=&quot;Spring</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java框架应用" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
+    
+    <category term="Spring Security" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/Spring-Security/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
+    
+    <category term="权限管理" scheme="https://119291.xyz/tags/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="Spring Security" scheme="https://119291.xyz/tags/Spring-Security/"/>
+    
+    <category term="Role与GrantedAuthority区别" scheme="https://119291.xyz/tags/Role%E4%B8%8EGrantedAuthority%E5%8C%BA%E5%88%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>IntelliJ错误提示@Autowired注入的仓库类型的Bean未找到的解决办法</title>
     <link href="https://119291.xyz/posts/eb9cf2fa.html"/>
     <id>https://119291.xyz/posts/eb9cf2fa.html</id>
@@ -507,43 +544,6 @@
     <category term="@Value注解" scheme="https://119291.xyz/tags/Value%E6%B3%A8%E8%A7%A3/"/>
     
     <category term="属性文件读取" scheme="https://119291.xyz/tags/%E5%B1%9E%E6%80%A7%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring Security中Role和GrantedAuthority的区别</title>
-    <link href="https://119291.xyz/posts/f1a99e08.html"/>
-    <id>https://119291.xyz/posts/f1a99e08.html</id>
-    <published>2025-04-28T00:52:34.000Z</published>
-    <updated>2025-04-29T23:55:08.396Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Spring-Security中Role和GrantedAuthority的区别&quot;&gt;&lt;a href=&quot;#Spring-Security中Role和GrantedAuthority的区别&quot; class=&quot;headerlink&quot; title=&quot;Spring</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java框架应用" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
-    
-    <category term="Spring Security" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/Spring-Security/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
-    
-    <category term="权限管理" scheme="https://119291.xyz/tags/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="Spring Security" scheme="https://119291.xyz/tags/Spring-Security/"/>
-    
-    <category term="Role与GrantedAuthority区别" scheme="https://119291.xyz/tags/Role%E4%B8%8EGrantedAuthority%E5%8C%BA%E5%88%AB/"/>
     
   </entry>
   
