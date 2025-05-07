@@ -18,8 +18,8 @@
   
   <entry>
     <title>1927年时间戳相减结果异常原因解析</title>
-    <link href="https://119291.xyz/posts/2025-05-07.analysis-of-strange-result-when-subtracting-epoch-milli-times-in-1927-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.analysis-of-strange-result-when-subtracting-epoch-milli-times-in-1927-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.analysis-of-strange-result-when-subtracting-epoch-milli-times-in-1927/"/>
+    <id>https://119291.xyz/posts/2025-05-07.analysis-of-strange-result-when-subtracting-epoch-milli-times-in-1927/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.859Z</updated>
     
@@ -53,8 +53,8 @@
   
   <entry>
     <title>HTTP中POST和PUT的区别</title>
-    <link href="https://119291.xyz/posts/2025-05-07.difference-between-post-and-put-in-http-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.difference-between-post-and-put-in-http-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.difference-between-post-and-put-in-http/"/>
+    <id>https://119291.xyz/posts/2025-05-07.difference-between-post-and-put-in-http/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.862Z</updated>
     
@@ -87,44 +87,9 @@
   </entry>
   
   <entry>
-    <title>What is the difference between &quot;let&quot; and &quot;var&quot;?</title>
-    <link href="https://119291.xyz/posts/2025-05-07.difference-between-let-and-var-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.difference-between-let-and-var-hexo/</id>
-    <published>2025-05-07T00:00:00.000Z</published>
-    <updated>2025-05-07T07:59:20.861Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;What-is-the-difference-between-“let”-and-“var”&quot;&gt;&lt;a href=&quot;#What-is-the-difference-between-“let”-and-“var”&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript语法" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E8%AF%AD%E6%B3%95/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="变量提升" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/"/>
-    
-    <category term="变量声明" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E/"/>
-    
-    <category term="变量作用域" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>What is the difference between px, dip, dp, and sp?</title>
-    <link href="https://119291.xyz/posts/2025-05-07.difference-between-px-dip-dp-and-sp-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.difference-between-px-dip-dp-and-sp-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.difference-between-px-dip-dp-and-sp/"/>
+    <id>https://119291.xyz/posts/2025-05-07.difference-between-px-dip-dp-and-sp/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.863Z</updated>
     
@@ -157,9 +122,42 @@
   </entry>
   
   <entry>
+    <title>Git中丢弃未暂存更改的方法</title>
+    <link href="https://119291.xyz/posts/2025-05-07.git-discard-unstaged-changes-guide/"/>
+    <id>https://119291.xyz/posts/2025-05-07.git-discard-unstaged-changes-guide/</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T07:59:20.865Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Git中丢弃未暂存更改的方法&quot;&gt;&lt;a href=&quot;#Git中丢弃未暂存更改的方法&quot; class=&quot;headerlink&quot; title=&quot;Git中丢弃未暂存更改的方法&quot;&gt;&lt;/a&gt;Git中丢弃未暂存更改的方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="Git使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
+    
+    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="代码管理" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="丢弃未暂存更改" scheme="https://119291.xyz/tags/%E4%B8%A2%E5%BC%83%E6%9C%AA%E6%9A%82%E5%AD%98%E6%9B%B4%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C#中String和string的区别</title>
-    <link href="https://119291.xyz/posts/2025-05-07.difference-between-string-and-string-in-csharp-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.difference-between-string-and-string-in-csharp-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.difference-between-string-and-string-in-csharp/"/>
+    <id>https://119291.xyz/posts/2025-05-07.difference-between-string-and-string-in-csharp/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.864Z</updated>
     
@@ -192,77 +190,77 @@
   </entry>
   
   <entry>
-    <title>在Linux中查找包含特定文本（字符串）的所有文件</title>
-    <link href="https://119291.xyz/posts/2025-05-07.find-all-files-containing-specific-text-on-linux-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.find-all-files-containing-specific-text-on-linux-hexo/</id>
+    <title>如何更改远程Git仓库的URI（URL）</title>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-change-remote-git-repository-url/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-change-remote-git-repository-url/</id>
     <published>2025-05-07T00:00:00.000Z</published>
-    <updated>2025-05-07T07:59:20.865Z</updated>
+    <updated>2025-05-07T07:59:20.867Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;在Linux中查找包含特定文本（字符串）的所有文件&quot;&gt;&lt;a href=&quot;#在Linux中查找包含特定文本（字符串）的所有文件&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;如何更改远程Git仓库的URI（URL）&quot;&gt;&lt;a href=&quot;#如何更改远程Git仓库的URI（URL）&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="系统运维" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/"/>
+    <category term="版本控制管理" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
     
-    <category term="文件查找" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/"/>
-    
-    
-    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
-    
-    <category term="grep" scheme="https://119291.xyz/tags/grep/"/>
-    
-    <category term="find" scheme="https://119291.xyz/tags/find/"/>
-    
-    <category term="系统运维" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/"/>
-    
-    <category term="文件查找" scheme="https://119291.xyz/tags/%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git中丢弃未暂存更改的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-07.git-discard-unstaged-changes-guide-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.git-discard-unstaged-changes-guide-hexo/</id>
-    <published>2025-05-07T00:00:00.000Z</published>
-    <updated>2025-05-07T07:59:20.865Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Git中丢弃未暂存更改的方法&quot;&gt;&lt;a href=&quot;#Git中丢弃未暂存更改的方法&quot; class=&quot;headerlink&quot; title=&quot;Git中丢弃未暂存更改的方法&quot;&gt;&lt;/a&gt;Git中丢弃未暂存更改的方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="Git使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8/"/>
+    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     
     
     <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
     
-    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    <category term="版本控制管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
     
-    <category term="代码管理" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/"/>
+    <category term="仓库管理" scheme="https://119291.xyz/tags/%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86/"/>
     
-    <category term="丢弃未暂存更改" scheme="https://119291.xyz/tags/%E4%B8%A2%E5%BC%83%E6%9C%AA%E6%9A%82%E5%AD%98%E6%9B%B4%E6%94%B9/"/>
+    <category term="远程仓库URL更改" scheme="https://119291.xyz/tags/%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93URL%E6%9B%B4%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>What is the difference between &quot;let&quot; and &quot;var&quot;?</title>
+    <link href="https://119291.xyz/posts/2025-05-07.difference-between-let-and-var/"/>
+    <id>https://119291.xyz/posts/2025-05-07.difference-between-let-and-var/</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T07:59:20.861Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;What-is-the-difference-between-“let”-and-“var”&quot;&gt;&lt;a href=&quot;#What-is-the-difference-between-“let”-and-“var”&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript语法" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E8%AF%AD%E6%B3%95/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="变量提升" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/"/>
+    
+    <category term="变量声明" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E/"/>
+    
+    <category term="变量作用域" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript闭包的工作原理</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-do-javascript-closures-work-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-do-javascript-closures-work-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-do-javascript-closures-work/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-do-javascript-closures-work/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.866Z</updated>
     
@@ -295,42 +293,9 @@
   </entry>
   
   <entry>
-    <title>如何更改远程Git仓库的URI（URL）</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-change-remote-git-repository-url-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-change-remote-git-repository-url-hexo/</id>
-    <published>2025-05-07T00:00:00.000Z</published>
-    <updated>2025-05-07T07:59:20.867Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何更改远程Git仓库的URI（URL）&quot;&gt;&lt;a href=&quot;#如何更改远程Git仓库的URI（URL）&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="版本控制管理" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    
-    
-    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
-    
-    <category term="版本控制管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="仓库管理" scheme="https://119291.xyz/tags/%E4%BB%93%E5%BA%93%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="远程仓库URL更改" scheme="https://119291.xyz/tags/%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93URL%E6%9B%B4%E6%94%B9/"/>
-    
-  </entry>
-  
-  <entry>
     <title>如何使用jQuery检查元素是否隐藏</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-check-if-an-element-is-hidden-in-jquery-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-check-if-an-element-is-hidden-in-jquery-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-check-if-an-element-is-hidden-in-jquery/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-check-if-an-element-is-hidden-in-jquery/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T02:52:05.522Z</updated>
     
@@ -363,9 +328,44 @@
   </entry>
   
   <entry>
+    <title>在Linux中查找包含特定文本（字符串）的所有文件</title>
+    <link href="https://119291.xyz/posts/2025-05-07.find-all-files-containing-specific-text-on-linux/"/>
+    <id>https://119291.xyz/posts/2025-05-07.find-all-files-containing-specific-text-on-linux/</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T07:59:20.865Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在Linux中查找包含特定文本（字符串）的所有文件&quot;&gt;&lt;a href=&quot;#在Linux中查找包含特定文本（字符串）的所有文件&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="系统运维" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="文件查找" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/"/>
+    
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="grep" scheme="https://119291.xyz/tags/grep/"/>
+    
+    <category term="find" scheme="https://119291.xyz/tags/find/"/>
+    
+    <category term="系统运维" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/"/>
+    
+    <category term="文件查找" scheme="https://119291.xyz/tags/%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何在不引发异常的情况下检查文件是否存在</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-check-file-existence-without-exceptions-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-check-file-existence-without-exceptions-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-check-file-existence-without-exceptions/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-check-file-existence-without-exceptions/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.869Z</updated>
     
@@ -398,44 +398,9 @@
   </entry>
   
   <entry>
-    <title>如何创建目录及缺失的父目录</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-create-directory-and-missing-parent-directories-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-create-directory-and-missing-parent-directories-hexo/</id>
-    <published>2025-05-07T00:00:00.000Z</published>
-    <updated>2025-05-07T07:59:20.870Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何创建目录及缺失的父目录&quot;&gt;&lt;a href=&quot;#如何创建目录及缺失的父目录&quot; class=&quot;headerlink&quot; title=&quot;如何创建目录及缺失的父目录&quot;&gt;&lt;/a&gt;如何创建目录及缺失的父目录&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python开发实践" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="os模块" scheme="https://119291.xyz/tags/os%E6%A8%A1%E5%9D%97/"/>
-    
-    <category term="目录创建" scheme="https://119291.xyz/tags/%E7%9B%AE%E5%BD%95%E5%88%9B%E5%BB%BA/"/>
-    
-    <category term="pathlib" scheme="https://119291.xyz/tags/pathlib/"/>
-    
-  </entry>
-  
-  <entry>
     <title>在JavaScript中如何检查字符串是否包含子字符串</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-check-string-contains-substring-in-javascript-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-check-string-contains-substring-in-javascript-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-check-string-contains-substring-in-javascript/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-check-string-contains-substring-in-javascript/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.870Z</updated>
     
@@ -469,8 +434,8 @@
   
   <entry>
     <title>如何禁用文本选择高亮显示</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-disable-text-selection-highlighting-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-disable-text-selection-highlighting-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-disable-text-selection-highlighting/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-disable-text-selection-highlighting/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.871Z</updated>
     
@@ -503,44 +468,44 @@
   </entry>
   
   <entry>
-    <title>在另一个JavaScript文件中引入JavaScript文件的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-include-a-javascript-file-in-another-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-include-a-javascript-file-in-another-hexo/</id>
+    <title>如何创建目录及缺失的父目录</title>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-create-directory-and-missing-parent-directories/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-create-directory-and-missing-parent-directories/</id>
     <published>2025-05-07T00:00:00.000Z</published>
-    <updated>2025-05-07T07:59:20.871Z</updated>
+    <updated>2025-05-07T07:59:20.870Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;在另一个JavaScript文件中引入JavaScript文件的方法&quot;&gt;&lt;a href=&quot;#在另一个JavaScript文件中引入JavaScript文件的方法&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;如何创建目录及缺失的父目录&quot;&gt;&lt;a href=&quot;#如何创建目录及缺失的父目录&quot; class=&quot;headerlink&quot; title=&quot;如何创建目录及缺失的父目录&quot;&gt;&lt;/a&gt;如何创建目录及缺失的父目录&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
         
       
     
     
     
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="JavaScript应用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E5%BA%94%E7%94%A8/"/>
+    <category term="Python开发实践" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/"/>
     
     
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
     
-    <category term="Node.js" scheme="https://119291.xyz/tags/Node-js/"/>
+    <category term="os模块" scheme="https://119291.xyz/tags/os%E6%A8%A1%E5%9D%97/"/>
     
-    <category term="ES6模块" scheme="https://119291.xyz/tags/ES6%E6%A8%A1%E5%9D%97/"/>
+    <category term="目录创建" scheme="https://119291.xyz/tags/%E7%9B%AE%E5%BD%95%E5%88%9B%E5%BB%BA/"/>
     
-    <category term="脚本加载" scheme="https://119291.xyz/tags/%E8%84%9A%E6%9C%AC%E5%8A%A0%E8%BD%BD/"/>
+    <category term="pathlib" scheme="https://119291.xyz/tags/pathlib/"/>
     
   </entry>
   
   <entry>
     <title>如何在Python中用单个表达式合并两个字典</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-merge-two-dictionaries-in-python-with-a-single-expression-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-merge-two-dictionaries-in-python-with-a-single-expression-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-merge-two-dictionaries-in-python-with-a-single-expression/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-merge-two-dictionaries-in-python-with-a-single-expression/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.872Z</updated>
     
@@ -574,8 +539,8 @@
   
   <entry>
     <title>如何修改已存在但未推送的提交信息？</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-modify-existing-unpushed-commit-messages-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-modify-existing-unpushed-commit-messages-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-modify-existing-unpushed-commit-messages/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-modify-existing-unpushed-commit-messages/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.873Z</updated>
     
@@ -608,9 +573,44 @@
   </entry>
   
   <entry>
+    <title>在另一个JavaScript文件中引入JavaScript文件的方法</title>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-include-a-javascript-file-in-another/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-include-a-javascript-file-in-another/</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T07:59:20.871Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在另一个JavaScript文件中引入JavaScript文件的方法&quot;&gt;&lt;a href=&quot;#在另一个JavaScript文件中引入JavaScript文件的方法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript应用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="Node.js" scheme="https://119291.xyz/tags/Node-js/"/>
+    
+    <category term="ES6模块" scheme="https://119291.xyz/tags/ES6%E6%A8%A1%E5%9D%97/"/>
+    
+    <category term="脚本加载" scheme="https://119291.xyz/tags/%E8%84%9A%E6%9C%AC%E5%8A%A0%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何将新的本地分支推送到远程Git仓库并进行跟踪</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-push-new-local-branch-to-remote-git-repo-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-push-new-local-branch-to-remote-git-repo-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-push-new-local-branch-to-remote-git-repo/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-push-new-local-branch-to-remote-git-repo/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.873Z</updated>
     
@@ -643,44 +643,9 @@
   </entry>
   
   <entry>
-    <title>如何从当前Git工作树中移除本地（未跟踪）文件</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-remove-local-untracked-files-from-git-working-tree-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-remove-local-untracked-files-from-git-working-tree-hexo/</id>
-    <published>2025-05-07T00:00:00.000Z</published>
-    <updated>2025-05-07T02:52:05.523Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何从当前Git工作树中移除本地（未跟踪）文件&quot;&gt;&lt;a href=&quot;#如何从当前Git工作树中移除本地（未跟踪）文件&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="版本控制管理" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="Git工具使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/Git%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
-    
-    <category term="命令行工具" scheme="https://119291.xyz/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="版本控制管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="未跟踪文件移除" scheme="https://119291.xyz/tags/%E6%9C%AA%E8%B7%9F%E8%B8%AA%E6%96%87%E4%BB%B6%E7%A7%BB%E9%99%A4/"/>
-    
-    <category term="Git命令使用" scheme="https://119291.xyz/tags/Git%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>如何从JavaScript对象中移除属性</title>
-    <link href="https://119291.xyz/posts/2025-05-07.how-to-remove-property-from-javascript-object-hexo/"/>
-    <id>https://119291.xyz/posts/2025-05-07.how-to-remove-property-from-javascript-object-hexo/</id>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-remove-property-from-javascript-object/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-remove-property-from-javascript-object/</id>
     <published>2025-05-07T00:00:00.000Z</published>
     <updated>2025-05-07T07:59:20.875Z</updated>
     
@@ -709,6 +674,41 @@
     <category term="Ramda" scheme="https://119291.xyz/tags/Ramda/"/>
     
     <category term="对象属性移除" scheme="https://119291.xyz/tags/%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%A7%BB%E9%99%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何从当前Git工作树中移除本地（未跟踪）文件</title>
+    <link href="https://119291.xyz/posts/2025-05-07.how-to-remove-local-untracked-files-from-git-working-tree/"/>
+    <id>https://119291.xyz/posts/2025-05-07.how-to-remove-local-untracked-files-from-git-working-tree/</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T02:52:05.523Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何从当前Git工作树中移除本地（未跟踪）文件&quot;&gt;&lt;a href=&quot;#如何从当前Git工作树中移除本地（未跟踪）文件&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="版本控制管理" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="Git工具使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/Git%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
+    
+    <category term="命令行工具" scheme="https://119291.xyz/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="版本控制管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="未跟踪文件移除" scheme="https://119291.xyz/tags/%E6%9C%AA%E8%B7%9F%E8%B8%AA%E6%96%87%E4%BB%B6%E7%A7%BB%E9%99%A4/"/>
+    
+    <category term="Git命令使用" scheme="https://119291.xyz/tags/Git%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
