@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-05-06T09:10:26.322Z</updated>
+  <updated>2025-05-07T02:44:00.170Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -17,11 +17,256 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Is Java &quot;pass-by-reference&quot; or &quot;pass-by-value&quot;?</title>
+    <link href="https://119291.xyz/posts/d592321a.html"/>
+    <id>https://119291.xyz/posts/d592321a.html</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T02:44:00.170Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Is-Java-“pass-by-reference”-or-“pass-by-value”&quot;&gt;&lt;a href=&quot;#Is-Java-“pass-by-reference”-or-“pass-by-value”&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
+    
+    <category term="方法参数传递" scheme="https://119291.xyz/tags/%E6%96%B9%E6%B3%95%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/"/>
+    
+    <category term="按值传递" scheme="https://119291.xyz/tags/%E6%8C%89%E5%80%BC%E4%BC%A0%E9%80%92/"/>
+    
+    <category term="按引用传递" scheme="https://119291.xyz/tags/%E6%8C%89%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用jQuery检查元素是否隐藏</title>
+    <link href="https://119291.xyz/posts/47557991.html"/>
+    <id>https://119291.xyz/posts/47557991.html</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T02:44:00.047Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何使用jQuery检查元素是否隐藏&quot;&gt;&lt;a href=&quot;#如何使用jQuery检查元素是否隐藏&quot; class=&quot;headerlink&quot; title=&quot;如何使用jQuery检查元素是否隐藏&quot;&gt;&lt;/a&gt;如何使用jQuery检查元素是否隐藏&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="jQuery应用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/jQuery%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="jQuery" scheme="https://119291.xyz/tags/jQuery/"/>
+    
+    <category term="元素隐藏检查" scheme="https://119291.xyz/tags/%E5%85%83%E7%B4%A0%E9%9A%90%E8%97%8F%E6%A3%80%E6%9F%A5/"/>
+    
+    <category term="选择器应用" scheme="https://119291.xyz/tags/%E9%80%89%E6%8B%A9%E5%99%A8%E5%BA%94%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何从当前Git工作树中移除本地（未跟踪）文件</title>
+    <link href="https://119291.xyz/posts/cb96da84.html"/>
+    <id>https://119291.xyz/posts/cb96da84.html</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T02:44:00.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何从当前Git工作树中移除本地（未跟踪）文件&quot;&gt;&lt;a href=&quot;#如何从当前Git工作树中移除本地（未跟踪）文件&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="版本控制管理" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="Git工具使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/Git%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
+    
+    <category term="命令行工具" scheme="https://119291.xyz/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="版本控制管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="未跟踪文件移除" scheme="https://119291.xyz/tags/%E6%9C%AA%E8%B7%9F%E8%B8%AA%E6%96%87%E4%BB%B6%E7%A7%BB%E9%99%A4/"/>
+    
+    <category term="Git命令使用" scheme="https://119291.xyz/tags/Git%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript中&#39;use strict&#39;的作用及原理</title>
+    <link href="https://119291.xyz/posts/8bf692c5.html"/>
+    <id>https://119291.xyz/posts/8bf692c5.html</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T02:44:00.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript中’use-strict’的作用及原理&quot;&gt;&lt;a href=&quot;#JavaScript中’use-strict’的作用及原理&quot; class=&quot;headerlink&quot; title=&quot;JavaScript中’use</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript语法特性" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E8%AF%AD%E6%B3%95%E7%89%B9%E6%80%A7/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="严格模式" scheme="https://119291.xyz/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="代码规范" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+    <category term="ECMAScript 5" scheme="https://119291.xyz/tags/ECMAScript-5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让Git遗忘已跟踪但现被列入.gitignore的文件的方法</title>
+    <link href="https://119291.xyz/posts/6dbff06c.html"/>
+    <id>https://119291.xyz/posts/6dbff06c.html</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T02:44:00.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;让Git遗忘已跟踪但现被列入-gitignore的文件的方法&quot;&gt;&lt;a href=&quot;#让Git遗忘已跟踪但现被列入-gitignore的文件的方法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
+    
+    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="版本管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="忽略已跟踪文件" scheme="https://119291.xyz/tags/%E5%BF%BD%E7%95%A5%E5%B7%B2%E8%B7%9F%E8%B8%AA%E6%96%87%E4%BB%B6/"/>
+    
+    <category term=".gitignore配置" scheme="https://119291.xyz/tags/gitignore%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中if __name__ == &quot;__main__&quot;的作用解析</title>
+    <link href="https://119291.xyz/posts/86a0a7bb.html"/>
+    <id>https://119291.xyz/posts/86a0a7bb.html</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T02:44:00.110Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python中if-name-main-的作用解析&quot;&gt;&lt;a href=&quot;#Python中if-name-main-的作用解析&quot; class=&quot;headerlink&quot; title=&quot;Python中if name ==</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="模块导入" scheme="https://119291.xyz/tags/%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5/"/>
+    
+    <category term="代码结构" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="主程序入口" scheme="https://119291.xyz/tags/%E4%B8%BB%E7%A8%8B%E5%BA%8F%E5%85%A5%E5%8F%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python是否有三元条件运算符</title>
+    <link href="https://119291.xyz/posts/5a50b464.html"/>
+    <id>https://119291.xyz/posts/5a50b464.html</id>
+    <published>2025-05-07T00:00:00.000Z</published>
+    <updated>2025-05-07T02:44:00.151Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python是否有三元条件运算符&quot;&gt;&lt;a href=&quot;#Python是否有三元条件运算符&quot; class=&quot;headerlink&quot; title=&quot;Python是否有三元条件运算符&quot;&gt;&lt;/a&gt;Python是否有三元条件运算符&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="三元条件运算符" scheme="https://119291.xyz/tags/%E4%B8%89%E5%85%83%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    
+    <category term="条件表达式" scheme="https://119291.xyz/tags/%E6%9D%A1%E4%BB%B6%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+    <category term="短路求值" scheme="https://119291.xyz/tags/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C/C++ 中 &#39;--&gt;&#39; 符号的解析</title>
     <link href="https://119291.xyz/posts/896aa24f.html"/>
     <id>https://119291.xyz/posts/896aa24f.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T09:10:26.322Z</updated>
+    <updated>2025-05-06T09:13:42.887Z</updated>
     
     
       
@@ -50,46 +295,11 @@
   </entry>
   
   <entry>
-    <title>JSON中是否可以使用注释</title>
-    <link href="https://119291.xyz/posts/9b151dcb.html"/>
-    <id>https://119291.xyz/posts/9b151dcb.html</id>
-    <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T09:10:26.362Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JSON中是否可以使用注释&quot;&gt;&lt;a href=&quot;#JSON中是否可以使用注释&quot; class=&quot;headerlink&quot; title=&quot;JSON中是否可以使用注释&quot;&gt;&lt;/a&gt;JSON中是否可以使用注释&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="数据处理" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    <category term="JSON技术" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/JSON%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="数据处理" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="JSON" scheme="https://119291.xyz/tags/JSON/"/>
-    
-    <category term="JSON注释" scheme="https://119291.xyz/tags/JSON%E6%B3%A8%E9%87%8A/"/>
-    
-    <category term="JSON解析" scheme="https://119291.xyz/tags/JSON%E8%A7%A3%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
     <title>强制使用git pull覆盖本地文件的方法</title>
     <link href="https://119291.xyz/posts/8591faa9.html"/>
     <id>https://119291.xyz/posts/8591faa9.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T09:10:26.342Z</updated>
+    <updated>2025-05-06T09:13:42.890Z</updated>
     
     
       
@@ -116,6 +326,41 @@
     <category term="版本控制管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%AE%A1%E7%90%86/"/>
     
     <category term="本地文件覆盖" scheme="https://119291.xyz/tags/%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E8%A6%86%E7%9B%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JSON中是否可以使用注释</title>
+    <link href="https://119291.xyz/posts/9b151dcb.html"/>
+    <id>https://119291.xyz/posts/9b151dcb.html</id>
+    <published>2025-05-06T00:00:00.000Z</published>
+    <updated>2025-05-06T09:13:42.888Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JSON中是否可以使用注释&quot;&gt;&lt;a href=&quot;#JSON中是否可以使用注释&quot; class=&quot;headerlink&quot; title=&quot;JSON中是否可以使用注释&quot;&gt;&lt;/a&gt;JSON中是否可以使用注释&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="数据处理" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+    <category term="JSON技术" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/JSON%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="数据处理" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="JSON" scheme="https://119291.xyz/tags/JSON/"/>
+    
+    <category term="JSON注释" scheme="https://119291.xyz/tags/JSON%E6%B3%A8%E9%87%8A/"/>
+    
+    <category term="JSON解析" scheme="https://119291.xyz/tags/JSON%E8%A7%A3%E6%9E%90/"/>
     
   </entry>
   
@@ -155,18 +400,18 @@
   </entry>
   
   <entry>
-    <title>Git分支重命名全攻略</title>
-    <link href="https://119291.xyz/posts/19a6c6f3.html"/>
-    <id>https://119291.xyz/posts/19a6c6f3.html</id>
+    <title>如何检出远程Git分支</title>
+    <link href="https://119291.xyz/posts/c30c7af7.html"/>
+    <id>https://119291.xyz/posts/c30c7af7.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:45:39.360Z</updated>
+    <updated>2025-05-06T09:13:42.890Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Git分支重命名全攻略&quot;&gt;&lt;a href=&quot;#Git分支重命名全攻略&quot; class=&quot;headerlink&quot; title=&quot;Git分支重命名全攻略&quot;&gt;&lt;/a&gt;Git分支重命名全攻略&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;如何检出远程Git分支&quot;&gt;&lt;a href=&quot;#如何检出远程Git分支&quot; class=&quot;headerlink&quot; title=&quot;如何检出远程Git分支&quot;&gt;&lt;/a&gt;如何检出远程Git分支&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
         
       
     
@@ -174,18 +419,16 @@
     
     <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
-    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <category term="Git使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8/"/>
     
     
     <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
     
     <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
-    <category term="分支重命名" scheme="https://119291.xyz/tags/%E5%88%86%E6%94%AF%E9%87%8D%E5%91%BD%E5%90%8D/"/>
+    <category term="远程分支检出" scheme="https://119291.xyz/tags/%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%A3%80%E5%87%BA/"/>
     
-    <category term="本地分支操作" scheme="https://119291.xyz/tags/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="远程分支操作" scheme="https://119291.xyz/tags/%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/"/>
+    <category term="版本管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -258,18 +501,18 @@
   </entry>
   
   <entry>
-    <title>如何检出远程Git分支</title>
-    <link href="https://119291.xyz/posts/c30c7af7.html"/>
-    <id>https://119291.xyz/posts/c30c7af7.html</id>
+    <title>Git分支重命名全攻略</title>
+    <link href="https://119291.xyz/posts/19a6c6f3.html"/>
+    <id>https://119291.xyz/posts/19a6c6f3.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T09:12:29.004Z</updated>
+    <updated>2025-05-06T08:45:39.360Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;如何检出远程Git分支&quot;&gt;&lt;a href=&quot;#如何检出远程Git分支&quot; class=&quot;headerlink&quot; title=&quot;如何检出远程Git分支&quot;&gt;&lt;/a&gt;如何检出远程Git分支&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;Git分支重命名全攻略&quot;&gt;&lt;a href=&quot;#Git分支重命名全攻略&quot; class=&quot;headerlink&quot; title=&quot;Git分支重命名全攻略&quot;&gt;&lt;/a&gt;Git分支重命名全攻略&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
         
       
     
@@ -277,51 +520,53 @@
     
     <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
-    <category term="Git使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8/"/>
+    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     
     
     <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
     
     <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
-    <category term="远程分支检出" scheme="https://119291.xyz/tags/%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%A3%80%E5%87%BA/"/>
+    <category term="分支重命名" scheme="https://119291.xyz/tags/%E5%88%86%E6%94%AF%E9%87%8D%E5%91%BD%E5%90%8D/"/>
     
-    <category term="版本管理" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    <category term="本地分支操作" scheme="https://119291.xyz/tags/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/"/>
+    
+    <category term="远程分支操作" scheme="https://119291.xyz/tags/%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
-    <title>JavaScript数组元素移除方法详解</title>
-    <link href="https://119291.xyz/posts/e8f42cc6.html"/>
-    <id>https://119291.xyz/posts/e8f42cc6.html</id>
+    <title>栈和堆的定义与位置</title>
+    <link href="https://119291.xyz/posts/b277c16e.html"/>
+    <id>https://119291.xyz/posts/b277c16e.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:45:39.363Z</updated>
+    <updated>2025-05-06T09:13:42.891Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;JavaScript数组元素移除方法详解&quot;&gt;&lt;a href=&quot;#JavaScript数组元素移除方法详解&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;栈和堆的定义与位置&quot;&gt;&lt;a href=&quot;#栈和堆的定义与位置&quot; class=&quot;headerlink&quot; title=&quot;栈和堆的定义与位置&quot;&gt;&lt;/a&gt;栈和堆的定义与位置&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
         
       
     
     
     
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="JavaScript数组操作" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/"/>
+    <category term="内存管理" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
     
     
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    <category term="C++" scheme="https://119291.xyz/tags/C/"/>
     
-    <category term="性能优化" scheme="https://119291.xyz/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
+    <category term="内存管理" scheme="https://119291.xyz/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
     
-    <category term="Array方法" scheme="https://119291.xyz/tags/Array%E6%96%B9%E6%B3%95/"/>
+    <category term="栈" scheme="https://119291.xyz/tags/%E6%A0%88/"/>
     
-    <category term="数组元素移除" scheme="https://119291.xyz/tags/%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%A7%BB%E9%99%A4/"/>
+    <category term="堆" scheme="https://119291.xyz/tags/%E5%A0%86/"/>
     
   </entry>
   
@@ -361,118 +606,11 @@
   </entry>
   
   <entry>
-    <title>栈和堆的定义与位置</title>
-    <link href="https://119291.xyz/posts/b277c16e.html"/>
-    <id>https://119291.xyz/posts/b277c16e.html</id>
-    <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T09:10:26.380Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;栈和堆的定义与位置&quot;&gt;&lt;a href=&quot;#栈和堆的定义与位置&quot; class=&quot;headerlink&quot; title=&quot;栈和堆的定义与位置&quot;&gt;&lt;/a&gt;栈和堆的定义与位置&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="内存管理" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="C++" scheme="https://119291.xyz/tags/C/"/>
-    
-    <category term="内存管理" scheme="https://119291.xyz/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="栈" scheme="https://119291.xyz/tags/%E6%A0%88/"/>
-    
-    <category term="堆" scheme="https://119291.xyz/tags/%E5%A0%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深入理解分支预测及其对代码性能的影响</title>
-    <link href="https://119291.xyz/posts/66d9845c.html"/>
-    <id>https://119291.xyz/posts/66d9845c.html</id>
-    <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T08:45:39.364Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;深入理解分支预测及其对代码性能的影响&quot;&gt;&lt;a href=&quot;#深入理解分支预测及其对代码性能的影响&quot; class=&quot;headerlink&quot; title=&quot;深入理解分支预测及其对代码性能的影响&quot;&gt;&lt;/a&gt;深入理解分支预测及其对代码性能的影响&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学" scheme="https://119291.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="处理器架构" scheme="https://119291.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84/"/>
-    
-    <category term="性能优化" scheme="https://119291.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
-    
-    
-    <category term="性能优化" scheme="https://119291.xyz/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
-    
-    <category term="C++" scheme="https://119291.xyz/tags/C/"/>
-    
-    <category term="分支预测" scheme="https://119291.xyz/tags/%E5%88%86%E6%94%AF%E9%A2%84%E6%B5%8B/"/>
-    
-    <category term="计算机科学" scheme="https://119291.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="指令流水线" scheme="https://119291.xyz/tags/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在提交前撤销 &#39;git add&#39; 的方法</title>
-    <link href="https://119291.xyz/posts/4d4c644.html"/>
-    <id>https://119291.xyz/posts/4d4c644.html</id>
-    <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T09:10:26.301Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;在提交前撤销-‘git-add’-的方法&quot;&gt;&lt;a href=&quot;#在提交前撤销-‘git-add’-的方法&quot; class=&quot;headerlink&quot; title=&quot;在提交前撤销 ‘git add’ 的方法&quot;&gt;&lt;/a&gt;在提交前撤销 ‘git add’</summary>
-        
-      
-    
-    
-    
-    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    
-    
-    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
-    
-    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="代码管理" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="撤销操作" scheme="https://119291.xyz/tags/%E6%92%A4%E9%94%80%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="工作流优化" scheme="https://119291.xyz/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JSON 与 JSONP 的 MIME 类型详解</title>
     <link href="https://119291.xyz/posts/f533839b.html"/>
     <id>https://119291.xyz/posts/f533839b.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T09:10:26.279Z</updated>
+    <updated>2025-05-06T09:13:42.893Z</updated>
     
     
       
@@ -503,18 +641,18 @@
   </entry>
   
   <entry>
-    <title>Why does HTML think “chucknorris” is a color?</title>
-    <link href="https://119291.xyz/posts/aa044909.html"/>
-    <id>https://119291.xyz/posts/aa044909.html</id>
+    <title>JavaScript数组元素移除方法详解</title>
+    <link href="https://119291.xyz/posts/e8f42cc6.html"/>
+    <id>https://119291.xyz/posts/e8f42cc6.html</id>
     <published>2025-05-06T00:00:00.000Z</published>
-    <updated>2025-05-06T09:12:28.983Z</updated>
+    <updated>2025-05-06T08:45:39.363Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Why-does-HTML-think-“chucknorris”-is-a-color&quot;&gt;&lt;a href=&quot;#Why-does-HTML-think-“chucknorris”-is-a-color&quot; class=&quot;headerlink&quot; title=&quot;Why</summary>
+    <summary type="html">&lt;h1 id=&quot;JavaScript数组元素移除方法详解&quot;&gt;&lt;a href=&quot;#JavaScript数组元素移除方法详解&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -522,195 +660,53 @@
     
     <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="HTML技术研究" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/HTML%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+    <category term="JavaScript数组操作" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/"/>
     
     
     <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
     
-    <category term="颜色解析" scheme="https://119291.xyz/tags/%E9%A2%9C%E8%89%B2%E8%A7%A3%E6%9E%90/"/>
+    <category term="性能优化" scheme="https://119291.xyz/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
     
-    <category term="浏览器兼容性" scheme="https://119291.xyz/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
+    <category term="Array方法" scheme="https://119291.xyz/tags/Array%E6%96%B9%E6%B3%95/"/>
     
-    <category term="遗留颜色值解析" scheme="https://119291.xyz/tags/%E9%81%97%E7%95%99%E9%A2%9C%E8%89%B2%E5%80%BC%E8%A7%A3%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mockito: 向私有 @Autowired 字段注入真实对象</title>
-    <link href="https://119291.xyz/posts/7bb21ee3.html"/>
-    <id>https://119291.xyz/posts/7bb21ee3.html</id>
-    <published>2025-04-30T00:59:10.000Z</published>
-    <updated>2025-04-30T00:59:30.510Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Mockito-向私有-Autowired-字段注入真实对象&quot;&gt;&lt;a href=&quot;#Mockito-向私有-Autowired-字段注入真实对象&quot; class=&quot;headerlink&quot; title=&quot;Mockito: 向私有 @Autowired</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="单元测试" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
-    
-    <category term="Spring" scheme="https://119291.xyz/tags/Spring/"/>
-    
-    <category term="依赖注入" scheme="https://119291.xyz/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/"/>
-    
-    <category term="Mockito" scheme="https://119291.xyz/tags/Mockito/"/>
+    <category term="数组元素移除" scheme="https://119291.xyz/tags/%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%A7%BB%E9%99%A4/"/>
     
   </entry>
   
   <entry>
-    <title>Python中检查对象是否具有某属性的方法</title>
-    <link href="https://119291.xyz/posts/df3763e6.html"/>
-    <id>https://119291.xyz/posts/df3763e6.html</id>
-    <published>2025-04-30T00:59:10.000Z</published>
-    <updated>2025-04-30T00:59:30.512Z</updated>
+    <title>在提交前撤销 &#39;git add&#39; 的方法</title>
+    <link href="https://119291.xyz/posts/4d4c644.html"/>
+    <id>https://119291.xyz/posts/4d4c644.html</id>
+    <published>2025-05-06T00:00:00.000Z</published>
+    <updated>2025-05-06T09:13:42.892Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Python中检查对象是否具有某属性的方法&quot;&gt;&lt;a href=&quot;#Python中检查对象是否具有某属性的方法&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;在提交前撤销-‘git-add’-的方法&quot;&gt;&lt;a href=&quot;#在提交前撤销-‘git-add’-的方法&quot; class=&quot;headerlink&quot; title=&quot;在提交前撤销 ‘git add’ 的方法&quot;&gt;&lt;/a&gt;在提交前撤销 ‘git add’</summary>
         
       
     
     
     
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
-    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="面向对象编程" scheme="https://119291.xyz/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="属性检查" scheme="https://119291.xyz/tags/%E5%B1%9E%E6%80%A7%E6%A3%80%E6%9F%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring CrudRepository 实现 IN 子句查询</title>
-    <link href="https://119291.xyz/posts/3e310bda.html"/>
-    <id>https://119291.xyz/posts/3e310bda.html</id>
-    <published>2025-04-30T00:59:10.000Z</published>
-    <updated>2025-04-30T00:59:30.513Z</updated>
+    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Spring-CrudRepository-实现-IN-子句查询&quot;&gt;&lt;a href=&quot;#Spring-CrudRepository-实现-IN-子句查询&quot; class=&quot;headerlink&quot; title=&quot;Spring CrudRepository 实现 IN</summary>
-        
-      
+    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
     
+    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
+    <category term="代码管理" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/"/>
     
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="撤销操作" scheme="https://119291.xyz/tags/%E6%92%A4%E9%94%80%E6%93%8D%E4%BD%9C/"/>
     
-    <category term="Java开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Spring框架应用" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E5%BC%80%E5%8F%91/Spring%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
-    
-    <category term="Spring" scheme="https://119291.xyz/tags/Spring/"/>
-    
-    <category term="Spring Data JPA" scheme="https://119291.xyz/tags/Spring-Data-JPA/"/>
-    
-    <category term="IN子句查询" scheme="https://119291.xyz/tags/IN%E5%AD%90%E5%8F%A5%E6%9F%A5%E8%AF%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mockito: Inject real objects into private @Autowired fields</title>
-    <link href="https://119291.xyz/posts/c712e1dd.html"/>
-    <id>https://119291.xyz/posts/c712e1dd.html</id>
-    <published>2025-04-28T23:58:21.000Z</published>
-    <updated>2025-04-29T23:55:08.409Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Mockito-Inject-real-objects-into-private-Autowired-fields&quot;&gt;&lt;a href=&quot;#Mockito-Inject-real-objects-into-private-Autowired-fields&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="单元测试" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
-    
-    <category term="Spring" scheme="https://119291.xyz/tags/Spring/"/>
-    
-    <category term="依赖注入" scheme="https://119291.xyz/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/"/>
-    
-    <category term="Mockito" scheme="https://119291.xyz/tags/Mockito/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring Security中Role和GrantedAuthority的区别</title>
-    <link href="https://119291.xyz/posts/f1a99e08.html"/>
-    <id>https://119291.xyz/posts/f1a99e08.html</id>
-    <published>2025-04-28T00:52:34.000Z</published>
-    <updated>2025-04-29T23:55:08.396Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Spring-Security中Role和GrantedAuthority的区别&quot;&gt;&lt;a href=&quot;#Spring-Security中Role和GrantedAuthority的区别&quot; class=&quot;headerlink&quot; title=&quot;Spring</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java框架应用" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/"/>
-    
-    <category term="Spring Security" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8/Spring-Security/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
-    
-    <category term="权限管理" scheme="https://119291.xyz/tags/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="Spring Security" scheme="https://119291.xyz/tags/Spring-Security/"/>
-    
-    <category term="Role与GrantedAuthority区别" scheme="https://119291.xyz/tags/Role%E4%B8%8EGrantedAuthority%E5%8C%BA%E5%88%AB/"/>
+    <category term="工作流优化" scheme="https://119291.xyz/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
