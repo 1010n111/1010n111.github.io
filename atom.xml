@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-05-09T00:48:04.854Z</updated>
+  <updated>2025-05-09T00:49:38.399Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.android-usermanager-isuseragoat-method-use-cases/"/>
     <id>https://119291.xyz/posts/2025-05-09.android-usermanager-isuseragoat-method-use-cases/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:48:04.854Z</updated>
+    <updated>2025-05-09T00:49:38.399Z</updated>
     
     
       
@@ -52,81 +52,11 @@
   </entry>
   
   <entry>
-    <title>C++书籍权威指南与清单</title>
-    <link href="https://119291.xyz/posts/2025-05-09.c-plus-plus-book-guide-and-list/"/>
-    <id>https://119291.xyz/posts/2025-05-09.c-plus-plus-book-guide-and-list/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:48:04.660Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;C-书籍权威指南与清单&quot;&gt;&lt;a href=&quot;#C-书籍权威指南与清单&quot; class=&quot;headerlink&quot; title=&quot;C++书籍权威指南与清单&quot;&gt;&lt;/a&gt;C++书籍权威指南与清单&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="编程语言学习" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="C++学习" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/C-%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="C++" scheme="https://119291.xyz/tags/C/"/>
-    
-    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="技术书籍" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E4%B9%A6%E7%B1%8D/"/>
-    
-    <category term="C++学习指南" scheme="https://119291.xyz/tags/C-%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>检查JavaScript对象中键是否存在的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-09.checking-if-a-key-exists-in-a-javascript-object/"/>
-    <id>https://119291.xyz/posts/2025-05-09.checking-if-a-key-exists-in-a-javascript-object/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:48:04.774Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;检查JavaScript对象中键是否存在的方法&quot;&gt;&lt;a href=&quot;#检查JavaScript对象中键是否存在的方法&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript应用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="lodash" scheme="https://119291.xyz/tags/lodash/"/>
-    
-    <category term="键检查" scheme="https://119291.xyz/tags/%E9%94%AE%E6%A3%80%E6%9F%A5/"/>
-    
-    <category term="Object.hasOwn" scheme="https://119291.xyz/tags/Object-hasOwn/"/>
-    
-  </entry>
-  
-  <entry>
     <title>使用CSS更改HTML输入框的占位符颜色</title>
     <link href="https://119291.xyz/posts/2025-05-09.change-html-input-placeholder-color-with-css/"/>
     <id>https://119291.xyz/posts/2025-05-09.change-html-input-placeholder-color-with-css/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.493Z</updated>
+    <updated>2025-05-09T00:49:38.403Z</updated>
     
     
       
@@ -157,37 +87,37 @@
   </entry>
   
   <entry>
-    <title>JavaScript链接中“href”值的选择：“#”还是“javascript:void(0)”？</title>
-    <link href="https://119291.xyz/posts/2025-05-09.choice-of-href-value-in-javascript-links/"/>
-    <id>https://119291.xyz/posts/2025-05-09.choice-of-href-value-in-javascript-links/</id>
+    <title>C++书籍权威指南与清单</title>
+    <link href="https://119291.xyz/posts/2025-05-09.c-plus-plus-book-guide-and-list/"/>
+    <id>https://119291.xyz/posts/2025-05-09.c-plus-plus-book-guide-and-list/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.455Z</updated>
+    <updated>2025-05-09T00:49:38.402Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;JavaScript链接中“href”值的选择：“-”还是“javascript-void-0-”？&quot;&gt;&lt;a href=&quot;#JavaScript链接中“href”值的选择：“-”还是“javascript-void-0-”？&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;C-书籍权威指南与清单&quot;&gt;&lt;a href=&quot;#C-书籍权威指南与清单&quot; class=&quot;headerlink&quot; title=&quot;C++书籍权威指南与清单&quot;&gt;&lt;/a&gt;C++书籍权威指南与清单&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
         
       
     
     
     
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
     
-    <category term="网页链接处理" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%E5%A4%84%E7%90%86/"/>
+    <category term="编程语言学习" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="C++学习" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/C-%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="C++" scheme="https://119291.xyz/tags/C/"/>
     
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
     
-    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    <category term="技术书籍" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E4%B9%A6%E7%B1%8D/"/>
     
-    <category term="链接href属性" scheme="https://119291.xyz/tags/%E9%93%BE%E6%8E%A5href%E5%B1%9E%E6%80%A7/"/>
-    
-    <category term="无干扰JavaScript" scheme="https://119291.xyz/tags/%E6%97%A0%E5%B9%B2%E6%89%B0JavaScript/"/>
+    <category term="C++学习指南" scheme="https://119291.xyz/tags/C-%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
     
   </entry>
   
@@ -196,7 +126,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.check-directory-existence-in-bash/"/>
     <id>https://119291.xyz/posts/2025-05-09.check-directory-existence-in-bash/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:34:18.262Z</updated>
+    <updated>2025-05-09T00:49:38.405Z</updated>
     
     
       
@@ -227,11 +157,81 @@
   </entry>
   
   <entry>
+    <title>检查JavaScript对象中键是否存在的方法</title>
+    <link href="https://119291.xyz/posts/2025-05-09.checking-if-a-key-exists-in-a-javascript-object/"/>
+    <id>https://119291.xyz/posts/2025-05-09.checking-if-a-key-exists-in-a-javascript-object/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T00:49:38.403Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;检查JavaScript对象中键是否存在的方法&quot;&gt;&lt;a href=&quot;#检查JavaScript对象中键是否存在的方法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript应用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="lodash" scheme="https://119291.xyz/tags/lodash/"/>
+    
+    <category term="键检查" scheme="https://119291.xyz/tags/%E9%94%AE%E6%A3%80%E6%9F%A5/"/>
+    
+    <category term="Object.hasOwn" scheme="https://119291.xyz/tags/Object-hasOwn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript链接中“href”值的选择：“#”还是“javascript:void(0)”？</title>
+    <link href="https://119291.xyz/posts/2025-05-09.choice-of-href-value-in-javascript-links/"/>
+    <id>https://119291.xyz/posts/2025-05-09.choice-of-href-value-in-javascript-links/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T00:49:38.404Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript链接中“href”值的选择：“-”还是“javascript-void-0-”？&quot;&gt;&lt;a href=&quot;#JavaScript链接中“href”值的选择：“-”还是“javascript-void-0-”？&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="网页链接处理" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    
+    <category term="链接href属性" scheme="https://119291.xyz/tags/%E9%93%BE%E6%8E%A5href%E5%B1%9E%E6%80%A7/"/>
+    
+    <category term="无干扰JavaScript" scheme="https://119291.xyz/tags/%E6%97%A0%E5%B9%B2%E6%89%B0JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Create ArrayList from array</title>
     <link href="https://119291.xyz/posts/2025-05-09.create-arraylist-from-array/"/>
     <id>https://119291.xyz/posts/2025-05-09.create-arraylist-from-array/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:48:04.813Z</updated>
+    <updated>2025-05-09T00:49:38.405Z</updated>
     
     
       
@@ -262,46 +262,11 @@
   </entry>
   
   <entry>
-    <title>Python中@staticmethod和@classmethod的区别</title>
-    <link href="https://119291.xyz/posts/2025-05-09.difference-between-staticmethod-and-classmethod-in-python/"/>
-    <id>https://119291.xyz/posts/2025-05-09.difference-between-staticmethod-and-classmethod-in-python/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:34:18.212Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Python中-staticmethod和-classmethod的区别&quot;&gt;&lt;a href=&quot;#Python中-staticmethod和-classmethod的区别&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="类方法" scheme="https://119291.xyz/tags/%E7%B1%BB%E6%96%B9%E6%B3%95/"/>
-    
-    <category term="静态方法" scheme="https://119291.xyz/tags/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95/"/>
-    
-    <category term="装饰器" scheme="https://119291.xyz/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java中HashMap和Hashtable的区别</title>
     <link href="https://119291.xyz/posts/2025-05-09.differences-between-hashmap-and-hashtable-in-java/"/>
     <id>https://119291.xyz/posts/2025-05-09.differences-between-hashmap-and-hashtable-in-java/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.551Z</updated>
+    <updated>2025-05-09T00:49:38.407Z</updated>
     
     
       
@@ -332,11 +297,46 @@
   </entry>
   
   <entry>
+    <title>Python中@staticmethod和@classmethod的区别</title>
+    <link href="https://119291.xyz/posts/2025-05-09.difference-between-staticmethod-and-classmethod-in-python/"/>
+    <id>https://119291.xyz/posts/2025-05-09.difference-between-staticmethod-and-classmethod-in-python/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T00:49:38.406Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python中-staticmethod和-classmethod的区别&quot;&gt;&lt;a href=&quot;#Python中-staticmethod和-classmethod的区别&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="静态方法" scheme="https://119291.xyz/tags/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95/"/>
+    
+    <category term="类方法" scheme="https://119291.xyz/tags/%E7%B1%BB%E6%96%B9%E6%B3%95/"/>
+    
+    <category term="装饰器" scheme="https://119291.xyz/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Docker与虚拟机的区别</title>
     <link href="https://119291.xyz/posts/2025-05-09.docker-vs-virtual-machine/"/>
     <id>https://119291.xyz/posts/2025-05-09.docker-vs-virtual-machine/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.431Z</updated>
+    <updated>2025-05-09T00:49:38.409Z</updated>
     
     
       
@@ -367,11 +367,44 @@
   </entry>
   
   <entry>
+    <title>在Python列表中查找给定元素的索引</title>
+    <link href="https://119291.xyz/posts/2025-05-09.find-index-of-item-in-python-list/"/>
+    <id>https://119291.xyz/posts/2025-05-09.find-index-of-item-in-python-list/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T00:49:38.410Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在Python列表中查找给定元素的索引&quot;&gt;&lt;a href=&quot;#在Python列表中查找给定元素的索引&quot; class=&quot;headerlink&quot; title=&quot;在Python列表中查找给定元素的索引&quot;&gt;&lt;/a&gt;在Python列表中查找给定元素的索引&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="列表操作" scheme="https://119291.xyz/tags/%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C/"/>
+    
+    <category term="元素索引查找" scheme="https://119291.xyz/tags/%E5%85%83%E7%B4%A0%E7%B4%A2%E5%BC%95%E6%9F%A5%E6%89%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>高效配对一堆袜子的方法</title>
     <link href="https://119291.xyz/posts/2025-05-09.efficient-sock-pairing-methods/"/>
     <id>https://119291.xyz/posts/2025-05-09.efficient-sock-pairing-methods/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:48:04.712Z</updated>
+    <updated>2025-05-09T00:49:38.409Z</updated>
     
     
       
@@ -402,44 +435,11 @@
   </entry>
   
   <entry>
-    <title>在Python列表中查找给定元素的索引</title>
-    <link href="https://119291.xyz/posts/2025-05-09.find-index-of-item-in-python-list/"/>
-    <id>https://119291.xyz/posts/2025-05-09.find-index-of-item-in-python-list/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.443Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;在Python列表中查找给定元素的索引&quot;&gt;&lt;a href=&quot;#在Python列表中查找给定元素的索引&quot; class=&quot;headerlink&quot; title=&quot;在Python列表中查找给定元素的索引&quot;&gt;&lt;/a&gt;在Python列表中查找给定元素的索引&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="列表操作" scheme="https://119291.xyz/tags/%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="元素索引查找" scheme="https://119291.xyz/tags/%E5%85%83%E7%B4%A0%E7%B4%A2%E5%BC%95%E6%9F%A5%E6%89%BE/"/>
-    
-  </entry>
-  
-  <entry>
     <title>在Git中获取当前分支名称的方法</title>
     <link href="https://119291.xyz/posts/2025-05-09.git-get-current-branch-name-methods/"/>
     <id>https://119291.xyz/posts/2025-05-09.git-get-current-branch-name-methods/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.633Z</updated>
+    <updated>2025-05-09T00:49:38.411Z</updated>
     
     
       
@@ -468,46 +468,11 @@
   </entry>
   
   <entry>
-    <title>grep: show lines surrounding each match</title>
-    <link href="https://119291.xyz/posts/2025-05-09.grep-show-lines-surrounding-each-match/"/>
-    <id>https://119291.xyz/posts/2025-05-09.grep-show-lines-surrounding-each-match/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:48:04.762Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;grep-show-lines-surrounding-each-match&quot;&gt;&lt;a href=&quot;#grep-show-lines-surrounding-each-match&quot; class=&quot;headerlink&quot; title=&quot;grep: show</summary>
-        
-      
-    
-    
-    
-    <category term="系统工具使用" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    <category term="文本搜索工具" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%96%87%E6%9C%AC%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="文本搜索" scheme="https://119291.xyz/tags/%E6%96%87%E6%9C%AC%E6%90%9C%E7%B4%A2/"/>
-    
-    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
-    
-    <category term="grep" scheme="https://119291.xyz/tags/grep/"/>
-    
-    <category term="系统工具" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="ripgrep" scheme="https://119291.xyz/tags/ripgrep/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Git推送提交时出现&#39;src refspec master does not match any&#39;错误的解决办法</title>
     <link href="https://119291.xyz/posts/2025-05-09.git-push-error-solve/"/>
     <id>https://119291.xyz/posts/2025-05-09.git-push-error-solve/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.623Z</updated>
+    <updated>2025-05-09T00:49:38.412Z</updated>
     
     
       
@@ -540,7 +505,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.how-to-clone-all-remote-branches/"/>
     <id>https://119291.xyz/posts/2025-05-09.how-to-clone-all-remote-branches/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:34:18.161Z</updated>
+    <updated>2025-05-09T00:49:38.413Z</updated>
     
     
       
@@ -569,35 +534,37 @@
   </entry>
   
   <entry>
-    <title>如何克隆特定的Git分支</title>
-    <link href="https://119291.xyz/posts/2025-05-09.how-to-clone-specific-git-branch/"/>
-    <id>https://119291.xyz/posts/2025-05-09.how-to-clone-specific-git-branch/</id>
+    <title>grep: show lines surrounding each match</title>
+    <link href="https://119291.xyz/posts/2025-05-09.grep-show-lines-surrounding-each-match/"/>
+    <id>https://119291.xyz/posts/2025-05-09.grep-show-lines-surrounding-each-match/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:48:04.738Z</updated>
+    <updated>2025-05-09T00:49:38.412Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;如何克隆特定的Git分支&quot;&gt;&lt;a href=&quot;#如何克隆特定的Git分支&quot; class=&quot;headerlink&quot; title=&quot;如何克隆特定的Git分支&quot;&gt;&lt;/a&gt;如何克隆特定的Git分支&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;grep-show-lines-surrounding-each-match&quot;&gt;&lt;a href=&quot;#grep-show-lines-surrounding-each-match&quot; class=&quot;headerlink&quot; title=&quot;grep: show</summary>
         
       
     
     
     
-    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    <category term="系统工具使用" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
-    <category term="Git使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8/"/>
+    <category term="文本搜索工具" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/%E6%96%87%E6%9C%AC%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
+    <category term="文本搜索" scheme="https://119291.xyz/tags/%E6%96%87%E6%9C%AC%E6%90%9C%E7%B4%A2/"/>
     
-    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
     
-    <category term="代码管理" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/"/>
+    <category term="grep" scheme="https://119291.xyz/tags/grep/"/>
     
-    <category term="分支克隆" scheme="https://119291.xyz/tags/%E5%88%86%E6%94%AF%E5%85%8B%E9%9A%86/"/>
+    <category term="系统工具" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="ripgrep" scheme="https://119291.xyz/tags/ripgrep/"/>
     
   </entry>
   
@@ -606,7 +573,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.how-to-close-hide-android-soft-keyboard-programmatically/"/>
     <id>https://119291.xyz/posts/2025-05-09.how-to-close-hide-android-soft-keyboard-programmatically/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.527Z</updated>
+    <updated>2025-05-09T00:49:38.414Z</updated>
     
     
       
@@ -637,37 +604,35 @@
   </entry>
   
   <entry>
-    <title>JavaScript 中如何复制内容到剪贴板</title>
-    <link href="https://119291.xyz/posts/2025-05-09.how-to-copy-to-clipboard-in-javascript/"/>
-    <id>https://119291.xyz/posts/2025-05-09.how-to-copy-to-clipboard-in-javascript/</id>
+    <title>如何克隆特定的Git分支</title>
+    <link href="https://119291.xyz/posts/2025-05-09.how-to-clone-specific-git-branch/"/>
+    <id>https://119291.xyz/posts/2025-05-09.how-to-clone-specific-git-branch/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:39:38.539Z</updated>
+    <updated>2025-05-09T00:49:38.413Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;JavaScript-中如何复制内容到剪贴板&quot;&gt;&lt;a href=&quot;#JavaScript-中如何复制内容到剪贴板&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 中如何复制内容到剪贴板&quot;&gt;&lt;/a&gt;JavaScript</summary>
+    <summary type="html">&lt;h1 id=&quot;如何克隆特定的Git分支&quot;&gt;&lt;a href=&quot;#如何克隆特定的Git分支&quot; class=&quot;headerlink&quot; title=&quot;如何克隆特定的Git分支&quot;&gt;&lt;/a&gt;如何克隆特定的Git分支&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
         
       
     
     
     
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
-    <category term="JavaScript 应用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript-%E5%BA%94%E7%94%A8/"/>
+    <category term="Git使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8/"/>
     
     
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
     
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
-    <category term="浏览器兼容性" scheme="https://119291.xyz/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
+    <category term="代码管理" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86/"/>
     
-    <category term="Clipboard API" scheme="https://119291.xyz/tags/Clipboard-API/"/>
-    
-    <category term="内容复制" scheme="https://119291.xyz/tags/%E5%86%85%E5%AE%B9%E5%A4%8D%E5%88%B6/"/>
+    <category term="分支克隆" scheme="https://119291.xyz/tags/%E5%88%86%E6%94%AF%E5%85%8B%E9%9A%86/"/>
     
   </entry>
   
@@ -676,7 +641,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.how-to-delete-a-commit-from-a-branch/"/>
     <id>https://119291.xyz/posts/2025-05-09.how-to-delete-a-commit-from-a-branch/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:48:04.646Z</updated>
+    <updated>2025-05-09T00:49:38.415Z</updated>
     
     
       
@@ -703,6 +668,41 @@
     <category term="分支管理" scheme="https://119291.xyz/tags/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/"/>
     
     <category term="提交删除" scheme="https://119291.xyz/tags/%E6%8F%90%E4%BA%A4%E5%88%A0%E9%99%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 中如何复制内容到剪贴板</title>
+    <link href="https://119291.xyz/posts/2025-05-09.how-to-copy-to-clipboard-in-javascript/"/>
+    <id>https://119291.xyz/posts/2025-05-09.how-to-copy-to-clipboard-in-javascript/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T00:49:38.414Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript-中如何复制内容到剪贴板&quot;&gt;&lt;a href=&quot;#JavaScript-中如何复制内容到剪贴板&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 中如何复制内容到剪贴板&quot;&gt;&lt;/a&gt;JavaScript</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript 应用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript-%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="浏览器兼容性" scheme="https://119291.xyz/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
+    
+    <category term="Clipboard API" scheme="https://119291.xyz/tags/Clipboard-API/"/>
+    
+    <category term="内容复制" scheme="https://119291.xyz/tags/%E5%86%85%E5%AE%B9%E5%A4%8D%E5%88%B6/"/>
     
   </entry>
   
