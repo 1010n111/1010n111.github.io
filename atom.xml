@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-05-09T01:21:13.533Z</updated>
+  <updated>2025-05-09T01:59:20.690Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.403-forbidden-vs-401-unauthorized-http-responses/"/>
     <id>https://119291.xyz/posts/2025-05-09.403-forbidden-vs-401-unauthorized-http-responses/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:21:13.533Z</updated>
+    <updated>2025-05-09T01:59:20.690Z</updated>
     
     
       
@@ -56,7 +56,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.add-column-with-default-value-to-existing-table-in-sql-server/"/>
     <id>https://119291.xyz/posts/2025-05-09.add-column-with-default-value-to-existing-table-in-sql-server/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:26:50.697Z</updated>
+    <updated>2025-05-09T01:59:20.691Z</updated>
     
     
       
@@ -91,7 +91,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.adding-images-to-github-readme/"/>
     <id>https://119291.xyz/posts/2025-05-09.adding-images-to-github-readme/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:24:46.649Z</updated>
+    <updated>2025-05-09T01:59:20.692Z</updated>
     
     
       
@@ -124,7 +124,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.angularjs-service-provider-factory-comparison/"/>
     <id>https://119291.xyz/posts/2025-05-09.angularjs-service-provider-factory-comparison/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:26:50.538Z</updated>
+    <updated>2025-05-09T01:59:20.693Z</updated>
     
     
       
@@ -153,6 +153,111 @@
     <category term="AngularJS" scheme="https://119291.xyz/tags/AngularJS/"/>
     
     <category term="服务对比" scheme="https://119291.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%AF%B9%E6%AF%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在forEach循环中使用async/await的问题与解决方案</title>
+    <link href="https://119291.xyz/posts/2025-05-09.async-await-in-foreach-loop/"/>
+    <id>https://119291.xyz/posts/2025-05-09.async-await-in-foreach-loop/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T01:59:20.695Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在forEach循环中使用async-await的问题与解决方案&quot;&gt;&lt;a href=&quot;#在forEach循环中使用async-await的问题与解决方案&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript异步编程" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="异步编程" scheme="https://119291.xyz/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="async/await" scheme="https://119291.xyz/tags/async-await/"/>
+    
+    <category term="forEach循环" scheme="https://119291.xyz/tags/forEach%E5%BE%AA%E7%8E%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bash中字符串变量的拼接方法</title>
+    <link href="https://119291.xyz/posts/2025-05-09.bash-string-variable-concatenation/"/>
+    <id>https://119291.xyz/posts/2025-05-09.bash-string-variable-concatenation/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T01:59:20.696Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Bash中字符串变量的拼接方法&quot;&gt;&lt;a href=&quot;#Bash中字符串变量的拼接方法&quot; class=&quot;headerlink&quot; title=&quot;Bash中字符串变量的拼接方法&quot;&gt;&lt;/a&gt;Bash中字符串变量的拼接方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="脚本编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Bash" scheme="https://119291.xyz/tags/Bash/"/>
+    
+    <category term="脚本编程" scheme="https://119291.xyz/tags/%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="字符串拼接" scheme="https://119291.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5/"/>
+    
+    <category term="变量操作" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Case insensitive &#39;Contains(string)&#39;</title>
+    <link href="https://119291.xyz/posts/2025-05-09.case-insensitive-contains-string/"/>
+    <id>https://119291.xyz/posts/2025-05-09.case-insensitive-contains-string/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T01:59:20.697Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Case-insensitive-‘Contains-string-’&quot;&gt;&lt;a href=&quot;#Case-insensitive-‘Contains-string-’&quot; class=&quot;headerlink&quot; title=&quot;Case insensitive</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term=".NET开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/NET%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C#" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term=".NET" scheme="https://119291.xyz/tags/NET/"/>
+    
+    <category term="字符串比较" scheme="https://119291.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83/"/>
+    
+    <category term="大小写不敏感" scheme="https://119291.xyz/tags/%E5%A4%A7%E5%B0%8F%E5%86%99%E4%B8%8D%E6%95%8F%E6%84%9F/"/>
     
   </entry>
   
@@ -192,111 +297,6 @@
   </entry>
   
   <entry>
-    <title>在forEach循环中使用async/await的问题与解决方案</title>
-    <link href="https://119291.xyz/posts/2025-05-09.async-await-in-foreach-loop/"/>
-    <id>https://119291.xyz/posts/2025-05-09.async-await-in-foreach-loop/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:26:50.712Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;在forEach循环中使用async-await的问题与解决方案&quot;&gt;&lt;a href=&quot;#在forEach循环中使用async-await的问题与解决方案&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript异步编程" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="异步编程" scheme="https://119291.xyz/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="async/await" scheme="https://119291.xyz/tags/async-await/"/>
-    
-    <category term="forEach循环" scheme="https://119291.xyz/tags/forEach%E5%BE%AA%E7%8E%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bash中字符串变量的拼接方法</title>
-    <link href="https://119291.xyz/posts/2025-05-09.bash-string-variable-concatenation/"/>
-    <id>https://119291.xyz/posts/2025-05-09.bash-string-variable-concatenation/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:21:13.619Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Bash中字符串变量的拼接方法&quot;&gt;&lt;a href=&quot;#Bash中字符串变量的拼接方法&quot; class=&quot;headerlink&quot; title=&quot;Bash中字符串变量的拼接方法&quot;&gt;&lt;/a&gt;Bash中字符串变量的拼接方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="脚本编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Bash" scheme="https://119291.xyz/tags/Bash/"/>
-    
-    <category term="脚本编程" scheme="https://119291.xyz/tags/%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="字符串拼接" scheme="https://119291.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5/"/>
-    
-    <category term="变量操作" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E6%93%8D%E4%BD%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Case insensitive &#39;Contains(string)&#39;</title>
-    <link href="https://119291.xyz/posts/2025-05-09.case-insensitive-contains-string/"/>
-    <id>https://119291.xyz/posts/2025-05-09.case-insensitive-contains-string/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:24:46.739Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Case-insensitive-‘Contains-string-’&quot;&gt;&lt;a href=&quot;#Case-insensitive-‘Contains-string-’&quot; class=&quot;headerlink&quot; title=&quot;Case insensitive</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term=".NET开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/NET%E5%BC%80%E5%8F%91/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="C#" scheme="https://119291.xyz/tags/C/"/>
-    
-    <category term=".NET" scheme="https://119291.xyz/tags/NET/"/>
-    
-    <category term="字符串比较" scheme="https://119291.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83/"/>
-    
-    <category term="大小写不敏感" scheme="https://119291.xyz/tags/%E5%A4%A7%E5%B0%8F%E5%86%99%E4%B8%8D%E6%95%8F%E6%84%9F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C++书籍权威指南与清单</title>
     <link href="https://119291.xyz/posts/2025-05-09.c-plus-plus-book-guide-and-list/"/>
     <id>https://119291.xyz/posts/2025-05-09.c-plus-plus-book-guide-and-list/</id>
@@ -328,6 +328,74 @@
     <category term="技术书籍" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E4%B9%A6%E7%B1%8D/"/>
     
     <category term="C++学习指南" scheme="https://119291.xyz/tags/C-%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Bash shell脚本中检查目录是否存在的方法</title>
+    <link href="https://119291.xyz/posts/2025-05-09.check-directory-existence-in-bash/"/>
+    <id>https://119291.xyz/posts/2025-05-09.check-directory-existence-in-bash/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T00:49:38.405Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在Bash-shell脚本中检查目录是否存在的方法&quot;&gt;&lt;a href=&quot;#在Bash-shell脚本中检查目录是否存在的方法&quot; class=&quot;headerlink&quot; title=&quot;在Bash shell脚本中检查目录是否存在的方法&quot;&gt;&lt;/a&gt;在Bash</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell脚本编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="Bash" scheme="https://119291.xyz/tags/Bash/"/>
+    
+    <category term="脚本编程" scheme="https://119291.xyz/tags/%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="目录检查" scheme="https://119291.xyz/tags/%E7%9B%AE%E5%BD%95%E6%A3%80%E6%9F%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Bash脚本中检查程序是否存在的方法</title>
+    <link href="https://119291.xyz/posts/2025-05-09.check-if-program-exists-in-bash-script/"/>
+    <id>https://119291.xyz/posts/2025-05-09.check-if-program-exists-in-bash-script/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T05:24:27.167Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在Bash脚本中检查程序是否存在的方法&quot;&gt;&lt;a href=&quot;#在Bash脚本中检查程序是否存在的方法&quot; class=&quot;headerlink&quot; title=&quot;在Bash脚本中检查程序是否存在的方法&quot;&gt;&lt;/a&gt;在Bash脚本中检查程序是否存在的方法&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell脚本编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Bash" scheme="https://119291.xyz/tags/Bash/"/>
+    
+    <category term="Shell脚本" scheme="https://119291.xyz/tags/Shell%E8%84%9A%E6%9C%AC/"/>
+    
+    <category term="程序存在性检查" scheme="https://119291.xyz/tags/%E7%A8%8B%E5%BA%8F%E5%AD%98%E5%9C%A8%E6%80%A7%E6%A3%80%E6%9F%A5/"/>
     
   </entry>
   
@@ -367,37 +435,72 @@
   </entry>
   
   <entry>
-    <title>在Bash shell脚本中检查目录是否存在的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-09.check-directory-existence-in-bash/"/>
-    <id>https://119291.xyz/posts/2025-05-09.check-directory-existence-in-bash/</id>
+    <title>从 Docker 容器内部连接到主机的 localhost</title>
+    <link href="https://119291.xyz/posts/2025-05-09.connect-to-localhost-from-docker-container/"/>
+    <id>https://119291.xyz/posts/2025-05-09.connect-to-localhost-from-docker-container/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:49:38.405Z</updated>
+    <updated>2025-05-09T01:59:20.697Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;在Bash-shell脚本中检查目录是否存在的方法&quot;&gt;&lt;a href=&quot;#在Bash-shell脚本中检查目录是否存在的方法&quot; class=&quot;headerlink&quot; title=&quot;在Bash shell脚本中检查目录是否存在的方法&quot;&gt;&lt;/a&gt;在Bash</summary>
+    <summary type="html">&lt;h1 id=&quot;从-Docker-容器内部连接到主机的-localhost&quot;&gt;&lt;a href=&quot;#从-Docker-容器内部连接到主机的-localhost&quot; class=&quot;headerlink&quot; title=&quot;从 Docker 容器内部连接到主机的</summary>
         
       
     
     
     
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="容器技术" scheme="https://119291.xyz/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
     
-    <category term="Shell脚本编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    <category term="Docker 网络配置" scheme="https://119291.xyz/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/Docker-%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/"/>
     
     
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="Docker" scheme="https://119291.xyz/tags/Docker/"/>
+    
+    <category term="MySQL" scheme="https://119291.xyz/tags/MySQL/"/>
+    
+    <category term="容器技术" scheme="https://119291.xyz/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="网络连接" scheme="https://119291.xyz/tags/%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/"/>
+    
+    <category term="容器与主机通信" scheme="https://119291.xyz/tags/%E5%AE%B9%E5%99%A8%E4%B8%8E%E4%B8%BB%E6%9C%BA%E9%80%9A%E4%BF%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用scp将文件夹从远程复制到本地的方法</title>
+    <link href="https://119291.xyz/posts/2025-05-09.copy-folder-from-remote-to-local-using-scp/"/>
+    <id>https://119291.xyz/posts/2025-05-09.copy-folder-from-remote-to-local-using-scp/</id>
+    <published>2025-05-09T00:00:00.000Z</published>
+    <updated>2025-05-09T01:59:20.698Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用scp将文件夹从远程复制到本地的方法&quot;&gt;&lt;a href=&quot;#使用scp将文件夹从远程复制到本地的方法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="系统管理" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="文件传输" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/"/>
+    
     
     <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
     
-    <category term="Bash" scheme="https://119291.xyz/tags/Bash/"/>
+    <category term="系统管理" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
     
-    <category term="脚本编程" scheme="https://119291.xyz/tags/%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    <category term="scp" scheme="https://119291.xyz/tags/scp/"/>
     
-    <category term="目录检查" scheme="https://119291.xyz/tags/%E7%9B%AE%E5%BD%95%E6%A3%80%E6%9F%A5/"/>
+    <category term="sftp" scheme="https://119291.xyz/tags/sftp/"/>
+    
+    <category term="rsync" scheme="https://119291.xyz/tags/rsync/"/>
     
   </entry>
   
@@ -472,81 +575,11 @@
   </entry>
   
   <entry>
-    <title>从 Docker 容器内部连接到主机的 localhost</title>
-    <link href="https://119291.xyz/posts/2025-05-09.connect-to-localhost-from-docker-container/"/>
-    <id>https://119291.xyz/posts/2025-05-09.connect-to-localhost-from-docker-container/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:24:46.625Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;从-Docker-容器内部连接到主机的-localhost&quot;&gt;&lt;a href=&quot;#从-Docker-容器内部连接到主机的-localhost&quot; class=&quot;headerlink&quot; title=&quot;从 Docker 容器内部连接到主机的</summary>
-        
-      
-    
-    
-    
-    <category term="容器技术" scheme="https://119291.xyz/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="Docker 网络配置" scheme="https://119291.xyz/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/Docker-%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/"/>
-    
-    
-    <category term="Docker" scheme="https://119291.xyz/tags/Docker/"/>
-    
-    <category term="MySQL" scheme="https://119291.xyz/tags/MySQL/"/>
-    
-    <category term="容器技术" scheme="https://119291.xyz/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="网络连接" scheme="https://119291.xyz/tags/%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/"/>
-    
-    <category term="容器与主机通信" scheme="https://119291.xyz/tags/%E5%AE%B9%E5%99%A8%E4%B8%8E%E4%B8%BB%E6%9C%BA%E9%80%9A%E4%BF%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用scp将文件夹从远程复制到本地的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-09.copy-folder-from-remote-to-local-using-scp/"/>
-    <id>https://119291.xyz/posts/2025-05-09.copy-folder-from-remote-to-local-using-scp/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:24:46.601Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;使用scp将文件夹从远程复制到本地的方法&quot;&gt;&lt;a href=&quot;#使用scp将文件夹从远程复制到本地的方法&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="系统管理" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="文件传输" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/"/>
-    
-    
-    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
-    
-    <category term="系统管理" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="scp" scheme="https://119291.xyz/tags/scp/"/>
-    
-    <category term="sftp" scheme="https://119291.xyz/tags/sftp/"/>
-    
-    <category term="rsync" scheme="https://119291.xyz/tags/rsync/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C++中explicit关键字的含义与用法</title>
     <link href="https://119291.xyz/posts/2025-05-09.cpp-explicit-keyword-meaning-and-usage/"/>
     <id>https://119291.xyz/posts/2025-05-09.cpp-explicit-keyword-meaning-and-usage/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:21:13.439Z</updated>
+    <updated>2025-05-09T01:59:20.699Z</updated>
     
     
       
@@ -577,46 +610,11 @@
   </entry>
   
   <entry>
-    <title>Create ArrayList from array</title>
-    <link href="https://119291.xyz/posts/2025-05-09.create-arraylist-from-array/"/>
-    <id>https://119291.xyz/posts/2025-05-09.create-arraylist-from-array/</id>
-    <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T00:49:38.405Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Create-ArrayList-from-array&quot;&gt;&lt;a href=&quot;#Create-ArrayList-from-array&quot; class=&quot;headerlink&quot; title=&quot;Create ArrayList from</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java集合操作" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Java%E9%9B%86%E5%90%88%E6%93%8D%E4%BD%9C/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
-    
-    <category term="Guava" scheme="https://119291.xyz/tags/Guava/"/>
-    
-    <category term="ArrayList创建" scheme="https://119291.xyz/tags/ArrayList%E5%88%9B%E5%BB%BA/"/>
-    
-    <category term="数组转换" scheme="https://119291.xyz/tags/%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#中字典的遍历方法</title>
     <link href="https://119291.xyz/posts/2025-05-09.csharp-dictionary-iteration-methods/"/>
     <id>https://119291.xyz/posts/2025-05-09.csharp-dictionary-iteration-methods/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:26:50.660Z</updated>
+    <updated>2025-05-09T01:59:20.700Z</updated>
     
     
       
@@ -651,7 +649,7 @@
     <link href="https://119291.xyz/posts/2025-05-09.csharp-int-to-enum-conversion/"/>
     <id>https://119291.xyz/posts/2025-05-09.csharp-int-to-enum-conversion/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:19:26.702Z</updated>
+    <updated>2025-05-09T01:59:20.701Z</updated>
     
     
       
@@ -682,18 +680,18 @@
   </entry>
   
   <entry>
-    <title>JavaScript对象是否为空的检测方法</title>
-    <link href="https://119291.xyz/posts/2025-05-09.detection-methods-for-empty-javascript-objects/"/>
-    <id>https://119291.xyz/posts/2025-05-09.detection-methods-for-empty-javascript-objects/</id>
+    <title>检测未定义的对象属性</title>
+    <link href="https://119291.xyz/posts/2025-05-09.detecting-undefined-object-property/"/>
+    <id>https://119291.xyz/posts/2025-05-09.detecting-undefined-object-property/</id>
     <published>2025-05-09T00:00:00.000Z</published>
-    <updated>2025-05-09T01:19:26.738Z</updated>
+    <updated>2025-05-09T05:24:27.079Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;JavaScript对象是否为空的检测方法&quot;&gt;&lt;a href=&quot;#JavaScript对象是否为空的检测方法&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;检测未定义的对象属性&quot;&gt;&lt;a href=&quot;#检测未定义的对象属性&quot; class=&quot;headerlink&quot; title=&quot;检测未定义的对象属性&quot;&gt;&lt;/a&gt;检测未定义的对象属性&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
         
       
     
@@ -701,18 +699,18 @@
     
     <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="JavaScript技巧" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E6%8A%80%E5%B7%A7/"/>
+    <category term="JavaScript应用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E5%BA%94%E7%94%A8/"/>
     
     
     <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
     
-    <category term="jQuery" scheme="https://119291.xyz/tags/jQuery/"/>
+    <category term="ECMAScript" scheme="https://119291.xyz/tags/ECMAScript/"/>
     
-    <category term="Lodash" scheme="https://119291.xyz/tags/Lodash/"/>
+    <category term="对象属性检测" scheme="https://119291.xyz/tags/%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E6%A3%80%E6%B5%8B/"/>
     
-    <category term="对象检测" scheme="https://119291.xyz/tags/%E5%AF%B9%E8%B1%A1%E6%A3%80%E6%B5%8B/"/>
+    <category term="未定义值判断" scheme="https://119291.xyz/tags/%E6%9C%AA%E5%AE%9A%E4%B9%89%E5%80%BC%E5%88%A4%E6%96%AD/"/>
     
   </entry>
   
