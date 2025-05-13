@@ -1,147 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.python-string-lowercase-conversion/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.quickly-indent-multiple-lines-in-vi/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.validate-decimal-numbers-in-javascript-isnumeric/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.equivalent-of-document-ready-without-jquery/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.what-is-reflection-and-why-is-it-useful/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-create-an-array-containing-1-n/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.git-export-like-svn-export/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.javascript-check-if-variable-exists/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.disable-enable-an-input-with-jquery/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.get-size-of-screen-webpage-browser-window/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.generate-random-number-between-two-numbers-in-javascript/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-make-a-great-r-reproducible-example/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.postgresql-show-tables-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.discard-local-commits-in-git/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.javascript-remove-last-character-in-string/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.javascript-equivalent-to-printf-string-format/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.bash-command-line-argument-parsing-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-generate-random-integer-in-csharp/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-delete-file-from-git-repository/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.replace-character-with-newline-in-vim/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.class-static-variables-and-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-stash-untracked-files/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-recover-a-dropped-stash-in-git/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.difference-between-decimal-float-and-double-in-dotnet/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.catch-multiple-exceptions-at-once/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.c-plus-plus-operator-overloading-rules-and-idioms/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.difference-between-component-repository-service-in-spring/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.what-is-jsonp-and-why-was-it-created/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.importing-files-from-different-folder/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.call-function-of-module-by-string-name/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.css-margin-vs-padding/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.bash-variable-checking-methods/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-check-if-a-string-contains-a-specific-word/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.what-is-a-non-capturing-group-in-regular-expressions/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-show-staged-changes/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.set-variable-to-command-output-in-bash/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.explore-differences-between-gitignore-and-gitkeep/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.python-print-without-newline-or-space/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.check-if-a-given-key-exists-in-a-dictionary/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.prop-vs-attr/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.adding-a-table-row-in-jquery/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.when-to-use-git-rebase-instead-of-git-merge/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.deep-cloning-objects/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.difference-between-scss-and-sass/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.escape-curly-brace-characters-in-string-using-format/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.python-object-attribute-checking-methods/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.set-default-parameter-value-for-javascript-function/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-format-numbers-as-currency-strings/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.the-purpose-of-dot-phony-in-makefile/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.remove-duplicate-values-from-js-array/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-get-query-string-values-in-javascript/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.finding-duplicate-values-in-a-sql-table/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.can-a-equal-1-and-a-equal-2-and-a-equal-3-evaluate-to-true/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.should-you-commit-package-lock-json/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-safely-merge-git-branch-into-master/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-delete-exported-environment-variable/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-make-a-div-100-percent-height-of-the-browser-window/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-make-div-not-larger-than-its-contents/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.python-string-substring-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-git-stash-specific-files/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.java-constructor-calling-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.error-message-digital-envelope-routines-unsupported/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-branch-from-a-previous-commit/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.get-selected-text-from-dropdown-using-jquery/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.java-finally-block-execution/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-reduce-element-background-opacity-with-css/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-determine-if-a-variable-is-undefined-or-null/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-name-and-retrieve-git-stash-by-name/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-revert-all-local-changes-in-git-project/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.c-plus-plus-rule-of-three-five-zero-explanation/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.scroll-to-an-element-with-jquery/</loc>
+    <loc>https://119291.xyz/posts/2025-05-14.javascript-string-to-integer-conversion/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-14.generate-random-integers-in-javascript/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-14.how-to-copy-files-from-host-to-docker-container/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-14.java-array-declaration-and-initialization/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-14.role-of-question-mark-exclamation-mark-operator-in-c/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
@@ -149,15 +165,11 @@
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.make-gitignore-ignore-everything-except-few-files/</loc>
+    <loc>https://119291.xyz/posts/2025-05-13.what-is-reflection-and-why-is-it-useful/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-delete-all-merged-git-branches/</loc>
-    <lastmod>2025-05-13</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-fix-android-os-networkonmainthreadexception/</loc>
+    <loc>https://119291.xyz/posts/2025-05-13.validate-decimal-numbers-in-javascript-isnumeric/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
@@ -165,15 +177,15 @@
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.java-array-contains-specific-value/</loc>
+    <loc>https://119291.xyz/posts/2025-05-13.the-purpose-of-dot-phony-in-makefile/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-create-an-html-button-that-acts-like-a-link/</loc>
+    <loc>https://119291.xyz/posts/2025-05-13.set-default-parameter-value-for-javascript-function/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.pull-latest-changes-for-all-git-submodules/</loc>
+    <loc>https://119291.xyz/posts/2025-05-13.scroll-to-an-element-with-jquery/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
@@ -181,15 +193,43 @@
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-13.how-to-format-number-with-commas-as-thousands-separators/</loc>
-    <lastmod>2025-05-13</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-05-13.python-string-to-float-int-parsing/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
+    <loc>https://119291.xyz/posts/2025-05-13.python-string-substring-methods/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.python-string-lowercase-conversion/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.pull-latest-changes-for-all-git-submodules/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.postgresql-show-tables-guide/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
     <loc>https://119291.xyz/posts/2025-05-13.php-sql-injection-prevention/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.make-gitignore-ignore-everything-except-few-files/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.javascript-remove-last-character-in-string/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.java-finally-block-execution/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.java-constructor-calling-guide/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
@@ -198,6 +238,126 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-05-13.in-depth-understanding-of-o-log-n-time-complexity/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.java-array-contains-specific-value/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.importing-files-from-different-folder/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-show-staged-changes/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-safely-merge-git-branch-into-master/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-revert-all-local-changes-in-git-project/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-recover-a-dropped-stash-in-git/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-make-a-div-100-percent-height-of-the-browser-window/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-format-number-with-commas-as-thousands-separators/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-get-query-string-values-in-javascript/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-fix-android-os-networkonmainthreadexception/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-determine-if-a-variable-is-undefined-or-null/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-delete-all-merged-git-branches/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-delete-file-from-git-repository/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-create-an-html-button-that-acts-like-a-link/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-branch-from-a-previous-commit/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.how-to-check-if-a-string-contains-a-specific-word/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.git-export-like-svn-export/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.generate-random-number-between-two-numbers-in-javascript/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.explore-differences-between-gitignore-and-gitkeep/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.escape-curly-brace-characters-in-string-using-format/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.difference-between-component-repository-service-in-spring/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.deep-cloning-objects/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.disable-enable-an-input-with-jquery/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.css-margin-vs-padding/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.check-if-a-given-key-exists-in-a-dictionary/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.class-static-variables-and-methods/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.catch-multiple-exceptions-at-once/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.can-a-equal-1-and-a-equal-2-and-a-equal-3-evaluate-to-true/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.bash-command-line-argument-parsing-methods/</loc>
+    <lastmod>2025-05-13</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-13.adding-a-table-row-in-jquery/</loc>
     <lastmod>2025-05-13</lastmod>
   </url>
   <url>
@@ -297,11 +457,11 @@
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.solve-powershell-script-execution-disabled-issue/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.renaming-column-names-in-pandas/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.renaming-column-names-in-pandas/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.solve-powershell-script-execution-disabled-issue/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
@@ -365,11 +525,11 @@
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.homebrew-install-specific-version-of-formula/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.how-does-database-indexing-work/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.how-does-database-indexing-work/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.homebrew-install-specific-version-of-formula/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
@@ -381,11 +541,11 @@
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.generate-a-string-of-random-characters/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.get-all-unique-values-in-a-javascript-array-remove-duplicates/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.get-all-unique-values-in-a-javascript-array-remove-duplicates/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.generate-a-string-of-random-characters/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
@@ -425,11 +585,11 @@
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.create-executable-jar-with-dependencies-using-maven/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.copying-files-from-docker-container-to-host/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.copying-files-from-docker-container-to-host/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.create-executable-jar-with-dependencies-using-maven/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
@@ -477,11 +637,11 @@
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.how-to-set-clear-and-toggle-a-single-bit/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.how-to-split-a-list-into-equally-sized-chunks/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-12.how-to-split-a-list-into-equally-sized-chunks/</loc>
+    <loc>https://119291.xyz/posts/2025-05-12.how-to-set-clear-and-toggle-a-single-bit/</loc>
     <lastmod>2025-05-12</lastmod>
   </url>
   <url>
@@ -621,11 +781,11 @@
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.view-file-change-history-using-git/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.what-is-dependency-injection/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.what-is-dependency-injection/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.view-file-change-history-using-git/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
@@ -645,11 +805,11 @@
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.reasons-and-solutions-for-cors-error-in-js-but-not-in-postman/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.python-terminal-colored-text-printing-methods/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.python-terminal-colored-text-printing-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.reasons-and-solutions-for-cors-error-in-js-but-not-in-postman/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
@@ -773,11 +933,11 @@
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.how-to-modify-a-specific-commit/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.how-to-pass-a-variable-by-reference-in-python/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.how-to-pass-a-variable-by-reference-in-python/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.how-to-modify-a-specific-commit/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
@@ -793,11 +953,11 @@
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.how-to-create-a-memory-leak-in-java/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.how-to-create-a-remote-git-branch/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.how-to-create-a-remote-git-branch/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.how-to-create-a-memory-leak-in-java/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
@@ -825,11 +985,11 @@
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.git-tag-push-to-remote-repository/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.how-to-add-new-keys-to-a-python-dictionary/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.how-to-add-new-keys-to-a-python-dictionary/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.git-tag-push-to-remote-repository/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
@@ -1049,11 +1209,11 @@
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.how-to-copy-to-clipboard-in-javascript/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.how-to-close-hide-android-soft-keyboard-programmatically/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-09.how-to-close-hide-android-soft-keyboard-programmatically/</loc>
+    <loc>https://119291.xyz/posts/2025-05-09.how-to-copy-to-clipboard-in-javascript/</loc>
     <lastmod>2025-05-09</lastmod>
   </url>
   <url>
@@ -1165,11 +1325,11 @@
     <lastmod>2025-05-08</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-08.how-to-resolve-merge-conflicts-in-git-repository/</loc>
+    <loc>https://119291.xyz/posts/2025-05-08.how-to-squash-last-n-commits/</loc>
     <lastmod>2025-05-08</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-08.how-to-squash-last-n-commits/</loc>
+    <loc>https://119291.xyz/posts/2025-05-08.how-to-resolve-merge-conflicts-in-git-repository/</loc>
     <lastmod>2025-05-08</lastmod>
   </url>
   <url>
@@ -1245,11 +1405,11 @@
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-07.reset-or-revert-file-to-specific-revision/</loc>
+    <loc>https://119291.xyz/posts/2025-05-07.reset-local-repository-branch-to-remote-head/</loc>
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-07.reset-local-repository-branch-to-remote-head/</loc>
+    <loc>https://119291.xyz/posts/2025-05-07.reset-or-revert-file-to-specific-revision/</loc>
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
@@ -1257,11 +1417,11 @@
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-07.methods-to-get-script-directory-in-bash/</loc>
+    <loc>https://119291.xyz/posts/2025-05-07.move-the-most-recent-commits-to-a-new-branch-with-git/</loc>
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-07.move-the-most-recent-commits-to-a-new-branch-with-git/</loc>
+    <loc>https://119291.xyz/posts/2025-05-07.methods-to-get-script-directory-in-bash/</loc>
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
@@ -1269,11 +1429,11 @@
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-07.how-to-return-response-from-asynchronous-call/</loc>
+    <loc>https://119291.xyz/posts/2025-05-07.how-to-revert-git-repo-to-previous-commit/</loc>
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-07.how-to-revert-git-repo-to-previous-commit/</loc>
+    <loc>https://119291.xyz/posts/2025-05-07.how-to-return-response-from-asynchronous-call/</loc>
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
@@ -1321,11 +1481,11 @@
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-07.git-discard-unstaged-changes-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-05-07.find-all-files-containing-specific-text-on-linux/</loc>
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-07.find-all-files-containing-specific-text-on-linux/</loc>
+    <loc>https://119291.xyz/posts/2025-05-07.git-discard-unstaged-changes-guide/</loc>
     <lastmod>2025-05-07</lastmod>
   </url>
   <url>
@@ -1485,19 +1645,19 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-28.spring-bean-property-injection-via-annotations/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-28.spring-boot-app-startup-shutdown-issue/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-28.solve-docker-permission-denied-problem/</loc>
+    <loc>https://119291.xyz/posts/2025-04-28.spring-bean-property-injection-via-annotations/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-04-28.setting-active-profile-and-config-location-in-spring-boot/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-04-28.solve-docker-permission-denied-problem/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1517,19 +1677,19 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-27.jvm-xms-xmx-parameters-explanation/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-27.python-variable-type-determination/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-27.java-stack-trace-to-string-conversion/</loc>
+    <loc>https://119291.xyz/posts/2025-04-27.jvm-xms-xmx-parameters-explanation/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-04-27.java-transient-fields-explanation/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-04-27.java-stack-trace-to-string-conversion/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1557,11 +1717,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-27.java-array-concatenation/</loc>
+    <loc>https://119291.xyz/posts/2025-04-27.in-depth-analysis-of-apache-camel/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-27.in-depth-analysis-of-apache-camel/</loc>
+    <loc>https://119291.xyz/posts/2025-04-27.java-array-concatenation/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1577,11 +1737,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-27.avoid-java-code-in-jsp-using-jsp2/</loc>
+    <loc>https://119291.xyz/posts/2025-04-27.automatic-creation-of-python-requirements-txt-file/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-27.automatic-creation-of-python-requirements-txt-file/</loc>
+    <loc>https://119291.xyz/posts/2025-04-27.avoid-java-code-in-jsp-using-jsp2/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1593,11 +1753,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-24.java-random-string-hello-world-explanation/</loc>
+    <loc>https://119291.xyz/posts/2025-04-24.java-string-splitting-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-24.java-string-splitting-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-04-24.java-random-string-hello-world-explanation/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1609,11 +1769,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-24.java-get-enum-value-from-string/</loc>
+    <loc>https://119291.xyz/posts/2025-04-24.java-implements-runnable-vs-extends-thread/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-24.java-implements-runnable-vs-extends-thread/</loc>
+    <loc>https://119291.xyz/posts/2025-04-24.java-get-enum-value-from-string/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1661,19 +1821,19 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.solve-mysql-fetch-array-parameter-error/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-23.sql-inner-join-on-vs-where-clause/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.snowbreak-auto-assistant-usage-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.solve-mysql-fetch-array-parameter-error/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-04-23.shell-command-to-tar-directory-excluding-certain-files-folders/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-04-23.snowbreak-auto-assistant-usage-guide/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1689,15 +1849,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.postgresql-version-query-methods/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-23.plugin-customizable-ad-free-music-player-musicfree/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.mysql-text-types-maximum-storage-sizes/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.postgresql-version-query-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1705,11 +1861,15 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.mysql-insert-if-not-exists-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.mysql-text-types-maximum-storage-sizes/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-04-23.multiplayer-at-the-speed-of-light/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-04-23.mysql-insert-if-not-exists-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1721,11 +1881,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.meaning-of-colon-exclamation-exclamation-in-c/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.methods-to-change-echo-output-color-in-linux/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.methods-to-change-echo-output-color-in-linux/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.meaning-of-colon-exclamation-exclamation-in-c/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1733,11 +1893,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.llama-model-usage-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.llama-cookbook-guide/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.llama-cookbook-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.llama-model-usage-guide/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1765,11 +1925,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.linux-directory-recursive-file-counting-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.kill-process-on-specific-port-in-linux/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-23.kill-process-on-specific-port-in-linux/</loc>
+    <loc>https://119291.xyz/posts/2025-04-23.linux-directory-recursive-file-counting-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1857,11 +2017,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.why-not-use-mysql-functions-in-php/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.why-printing-b-is-slower-than-printing-hash/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.why-printing-b-is-slower-than-printing-hash/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.why-not-use-mysql-functions-in-php/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1921,11 +2081,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.solve-mysql-error-code-1175-during-update-in-mysql-workbench/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.solve-git-rebase-unrelated-histories-issue/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.solve-git-rebase-unrelated-histories-issue/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.solve-mysql-error-code-1175-during-update-in-mysql-workbench/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1937,11 +2097,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.solve-docker-daemon-connection-issue/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.simple-explanation-of-naive-bayes-classification/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.simple-explanation-of-naive-bayes-classification/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.solve-docker-daemon-connection-issue/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -1953,11 +2113,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.resource-vs-autowired-comparison/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.running-tensorboard-on-remote-server/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.running-tensorboard-on-remote-server/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.resource-vs-autowired-comparison/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2053,11 +2213,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.mysql-get-user-accounts-list-in-command-line/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.mysql-datetime-vs-timestamp-selection/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.mysql-datetime-vs-timestamp-selection/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.mysql-get-user-accounts-list-in-command-line/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2069,11 +2229,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.methods-to-get-docker-container-ip-address-from-host/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.mysql-boolean-data-type-selection/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.mysql-boolean-data-type-selection/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.methods-to-get-docker-container-ip-address-from-host/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2097,19 +2257,19 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.java-memory-leak-creation-methods/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-22.java-hashmap-iteration-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.java-constructor-calling-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.java-memory-leak-creation-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-04-22.java-finally-block-execution/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-04-22.java-constructor-calling-guide/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2125,19 +2285,19 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.java-array-simplest-printing-method/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-22.java-array-declaration-and-initialization/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.intuitive-understanding-of-1d-2d-and-3d-convolutions-in-cnn/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.java-array-simplest-printing-method/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-04-22.java-array-contains-value-methods/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-04-22.intuitive-understanding-of-1d-2d-and-3d-convolutions-in-cnn/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2153,11 +2313,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.how-to-reset-auto-increment-in-mysql/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.how-to-stash-only-one-file-out-of-multiple-changed-files/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.how-to-stash-only-one-file-out-of-multiple-changed-files/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.how-to-reset-auto-increment-in-mysql/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2173,11 +2333,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.how-to-make-python-class-json-serializable/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.how-to-pass-environment-variables-to-docker-containers/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.how-to-pass-environment-variables-to-docker-containers/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.how-to-make-python-class-json-serializable/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2193,19 +2353,19 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.how-to-include-files-outside-of-dockers-build-context/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-22.how-to-force-docker-for-a-clean-build-of-an-image/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.how-to-drop-rows-with-nan-in-a-specific-column-of-pandas-dataframe/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.how-to-include-files-outside-of-dockers-build-context/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-04-22.how-to-fix-android-os-networkonmainthreadexception/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-04-22.how-to-drop-rows-with-nan-in-a-specific-column-of-pandas-dataframe/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2233,11 +2393,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.extract-decision-rules-from-scikit-learn-decision-tree/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.get-current-url-with-javascript/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.get-current-url-with-javascript/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.extract-decision-rules-from-scikit-learn-decision-tree/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2341,11 +2501,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.connect-to-localhost-from-docker-container/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.convert-array-of-indices-to-one-hot-encoded-array-in-numpy/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-22.convert-array-of-indices-to-one-hot-encoded-array-in-numpy/</loc>
+    <loc>https://119291.xyz/posts/2025-04-22.connect-to-localhost-from-docker-container/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2445,11 +2605,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.python-star-double-star-parameters-explanation/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.python-print-object-properties-and-values/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.python-print-object-properties-and-values/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.python-star-double-star-parameters-explanation/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2469,11 +2629,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.python-how-to-use-global-variables-in-functions/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.python-init-py-file-function/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.python-init-py-file-function/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.python-how-to-use-global-variables-in-functions/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2513,11 +2673,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.python-args-kwargs-usage/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.python-catching-multiple-exceptions-in-one-line/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.python-catching-multiple-exceptions-in-one-line/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.python-args-kwargs-usage/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2541,11 +2701,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.open-source-neural-network-library-recommendations/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.javascript-sort-array-of-objects-by-string-property/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.javascript-sort-array-of-objects-by-string-property/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.open-source-neural-network-library-recommendations/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2569,11 +2729,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.how-to-use-neural-networks-with-variable-inputs/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.in-depth-understanding-of-python-setup-py-file/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.in-depth-understanding-of-python-setup-py-file/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.how-to-use-neural-networks-with-variable-inputs/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2601,11 +2761,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.git-get-current-branch-name-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.estimation-of-neurons-and-layers-in-ann/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.estimation-of-neurons-and-layers-in-ann/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.git-get-current-branch-name-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2649,19 +2809,19 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-21.c-plus-plus-book-guide-and-list/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-18.why-python-classes-inherit-object/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-18.python-switch-statement-alternatives/</loc>
+    <loc>https://119291.xyz/posts/2025-04-21.c-plus-plus-book-guide-and-list/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/2025-04-18.sql-server-update-from-select-methods/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-04-18.python-switch-statement-alternatives/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2685,11 +2845,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-18.python-merge-lists-into-dictionary/</loc>
+    <loc>https://119291.xyz/posts/2025-04-18.python-matplotlib-save-plot-to-image/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-18.python-matplotlib-save-plot-to-image/</loc>
+    <loc>https://119291.xyz/posts/2025-04-18.python-merge-lists-into-dictionary/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2737,11 +2897,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-18.how-to-delete-a-commit-from-a-branch/</loc>
+    <loc>https://119291.xyz/posts/2025-04-18.html-javascript-link-href-choice/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-18.html-javascript-link-href-choice/</loc>
+    <loc>https://119291.xyz/posts/2025-04-18.how-to-delete-a-commit-from-a-branch/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2757,11 +2917,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-18.change-html-input-placeholder-color-with-css/</loc>
+    <loc>https://119291.xyz/posts/2025-04-18.csharp-enum-enumeration-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-18.csharp-enum-enumeration-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-04-18.change-html-input-placeholder-color-with-css/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2789,11 +2949,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.reset-or-revert-file-to-specific-revision/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.reset-local-repo-branch-to-remote-head-guide/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.reset-local-repo-branch-to-remote-head-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.reset-or-revert-file-to-specific-revision/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2805,11 +2965,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.python-slicing-operation-explanation/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.python-for-loop-index-access/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.python-for-loop-index-access/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.python-slicing-operation-explanation/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2821,11 +2981,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.plain-english-explanation-of-big-o-notation/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.push-new-local-branch-to-remote-git-repo/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.push-new-local-branch-to-remote-git-repo/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.plain-english-explanation-of-big-o-notation/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2833,11 +2993,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.javascript-timestamp-getting-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.max-url-length-in-different-browsers/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.max-url-length-in-different-browsers/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.javascript-timestamp-getting-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2937,11 +3097,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.difference-between-inner-join-and-outer-join-in-sql/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.difference-between-staticmethod-and-classmethod-in-python/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-17.difference-between-staticmethod-and-classmethod-in-python/</loc>
+    <loc>https://119291.xyz/posts/2025-04-17.difference-between-inner-join-and-outer-join-in-sql/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2953,15 +3113,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.reset-or-revert-file-to-specific-revision/</loc>
-    <lastmod>2025-04-29</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-04-16.ways-to-include-javascript-file-in-another/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.reset-local-repo-branch-to-remote-head-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.reset-or-revert-file-to-specific-revision/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -2969,15 +3125,19 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
+    <loc>https://119291.xyz/posts/2025-04-16.reset-local-repo-branch-to-remote-head-guide/</loc>
+    <lastmod>2025-04-29</lastmod>
+  </url>
+  <url>
     <loc>https://119291.xyz/posts/2025-04-16.python-metaclasses-concepts-usage-and-practice/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.python-for-loop-index-access/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.python-execute-system-command-guide/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.python-execute-system-command-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.python-for-loop-index-access/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -3033,11 +3193,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.javascript-array-loop-methods-analysis/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.javascript-closures-explained/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.javascript-closures-explained/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.javascript-array-loop-methods-analysis/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -3053,11 +3213,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.how-to-revert-git-repo-to-previous-commit/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.java-parameter-passing-value-or-reference/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.java-parameter-passing-value-or-reference/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.how-to-revert-git-repo-to-previous-commit/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -3081,11 +3241,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.how-to-add-empty-directory-to-git-repo/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.how-to-change-git-remote-repository-uri/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-16.how-to-change-git-remote-repository-uri/</loc>
+    <loc>https://119291.xyz/posts/2025-04-16.how-to-add-empty-directory-to-git-repo/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -3365,11 +3525,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.python-time-delay-implementation/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.python-variable-pass-by-reference/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.python-variable-pass-by-reference/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.python-time-delay-implementation/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -3389,11 +3549,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.python-string-formatting-escape-curly-braces/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.python-string-lowercase-conversion/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.python-string-lowercase-conversion/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.python-string-formatting-escape-curly-braces/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -3405,11 +3565,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.python-print-without-newline-or-space/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.python-read-file-line-by-line-into-list/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.python-read-file-line-by-line-into-list/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.python-print-without-newline-or-space/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -3521,11 +3681,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.python-check-empty-list-methods/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.pretty-print-json-file-in-python/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.pretty-print-json-file-in-python/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.python-check-empty-list-methods/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
@@ -3533,11 +3693,11 @@
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.install-pip-on-windows-guide/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.how-to-use-vue-prototype-or-global-variable-in-vue3/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-04-14.how-to-use-vue-prototype-or-global-variable-in-vue3/</loc>
+    <loc>https://119291.xyz/posts/2025-04-14.install-pip-on-windows-guide/</loc>
     <lastmod>2025-04-29</lastmod>
   </url>
   <url>
