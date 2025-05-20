@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-05-19T00:29:48.569Z</updated>
+  <updated>2025-05-20T01:28:04.154Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -17,18 +17,193 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>C++11标准化内存模型的含义及影响</title>
-    <link href="https://119291.xyz/posts/2025-05-19.c11-standardized-memory-model-meaning-and-impact/"/>
-    <id>https://119291.xyz/posts/2025-05-19.c11-standardized-memory-model-meaning-and-impact/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.569Z</updated>
+    <title>Activepieces：开源AI自动化工具介绍</title>
+    <link href="https://119291.xyz/posts/2025-05-20.activepieces-open-source-ai-automation-tool-introduction/"/>
+    <id>https://119291.xyz/posts/2025-05-20.activepieces-open-source-ai-automation-tool-introduction/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:04.154Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;C-11标准化内存模型的含义及影响&quot;&gt;&lt;a href=&quot;#C-11标准化内存模型的含义及影响&quot; class=&quot;headerlink&quot; title=&quot;C++11标准化内存模型的含义及影响&quot;&gt;&lt;/a&gt;C++11标准化内存模型的含义及影响&lt;/h1&gt;&lt;h2</summary>
+    <summary type="html">&lt;h1 id=&quot;Activepieces：开源AI自动化工具介绍&quot;&gt;&lt;a href=&quot;#Activepieces：开源AI自动化工具介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="自动化工具" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Activepieces" scheme="https://119291.xyz/tags/Activepieces/"/>
+    
+    <category term="AI自动化" scheme="https://119291.xyz/tags/AI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anime.js：强大的JavaScript动画引擎</title>
+    <link href="https://119291.xyz/posts/2025-05-20.animejs-powerful-javascript-animation-engine/"/>
+    <id>https://119291.xyz/posts/2025-05-20.animejs-powerful-javascript-animation-engine/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:04.114Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Anime-js：强大的JavaScript动画引擎&quot;&gt;&lt;a href=&quot;#Anime-js：强大的JavaScript动画引擎&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="动画效果实现" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C%E5%AE%9E%E7%8E%B0/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="Anime.js" scheme="https://119291.xyz/tags/Anime-js/"/>
+    
+    <category term="动画库使用" scheme="https://119291.xyz/tags/%E5%8A%A8%E7%94%BB%E5%BA%93%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="动画开发" scheme="https://119291.xyz/tags/%E5%8A%A8%E7%94%BB%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>能否删除（或撤销）Git 提交但保留更改？</title>
+    <link href="https://119291.xyz/posts/2025-05-20.can-i-delete-or-undo-a-git-commit-but-keep-the-changes/"/>
+    <id>https://119291.xyz/posts/2025-05-20.can-i-delete-or-undo-a-git-commit-but-keep-the-changes/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.877Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;能否删除（或撤销）Git-提交但保留更改？&quot;&gt;&lt;a href=&quot;#能否删除（或撤销）Git-提交但保留更改？&quot; class=&quot;headerlink&quot; title=&quot;能否删除（或撤销）Git 提交但保留更改？&quot;&gt;&lt;/a&gt;能否删除（或撤销）Git</summary>
+        
+      
+    
+    
+    
+    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="Git使用" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
+    
+    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="提交合并" scheme="https://119291.xyz/tags/%E6%8F%90%E4%BA%A4%E5%90%88%E5%B9%B6/"/>
+    
+    <category term="提交撤销" scheme="https://119291.xyz/tags/%E6%8F%90%E4%BA%A4%E6%92%A4%E9%94%80/"/>
+    
+    <category term="暂存更改" scheme="https://119291.xyz/tags/%E6%9A%82%E5%AD%98%E6%9B%B4%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BetterGI：更好的原神自动化工具</title>
+    <link href="https://119291.xyz/posts/2025-05-20.bettergi-genshin-impact-automation-tool/"/>
+    <id>https://119291.xyz/posts/2025-05-20.bettergi-genshin-impact-automation-tool/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.914Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;BetterGI：更好的原神自动化工具&quot;&gt;&lt;a href=&quot;#BetterGI：更好的原神自动化工具&quot; class=&quot;headerlink&quot; title=&quot;BetterGI：更好的原神自动化工具&quot;&gt;&lt;/a&gt;BetterGI：更好的原神自动化工具&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="游戏辅助开发" scheme="https://119291.xyz/categories/%E6%B8%B8%E6%88%8F%E8%BE%85%E5%8A%A9%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="计算机视觉应用" scheme="https://119291.xyz/categories/%E6%B8%B8%E6%88%8F%E8%BE%85%E5%8A%A9%E5%BC%80%E5%8F%91/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="BetterGI" scheme="https://119291.xyz/tags/BetterGI/"/>
+    
+    <category term="原神自动化" scheme="https://119291.xyz/tags/%E5%8E%9F%E7%A5%9E%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    <category term="计算机视觉技术" scheme="https://119291.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="游戏辅助" scheme="https://119291.xyz/tags/%E6%B8%B8%E6%88%8F%E8%BE%85%E5%8A%A9/"/>
+    
+    <category term="Python（推测，计算机视觉常用）" scheme="https://119291.xyz/tags/Python%EF%BC%88%E6%8E%A8%E6%B5%8B%EF%BC%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E5%B8%B8%E7%94%A8%EF%BC%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>将Supabase连接到AI助手</title>
+    <link href="https://119291.xyz/posts/2025-05-20.connect-supabase-to-ai-assistants/"/>
+    <id>https://119291.xyz/posts/2025-05-20.connect-supabase-to-ai-assistants/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:04.054Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;将Supabase连接到AI助手&quot;&gt;&lt;a href=&quot;#将Supabase连接到AI助手&quot; class=&quot;headerlink&quot; title=&quot;将Supabase连接到AI助手&quot;&gt;&lt;/a&gt;将Supabase连接到AI助手&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="数据库连接与集成" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E4%B8%8E%E9%9B%86%E6%88%90/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Node.js" scheme="https://119291.xyz/tags/Node-js/"/>
+    
+    <category term="Supabase" scheme="https://119291.xyz/tags/Supabase/"/>
+    
+    <category term="AI助手集成" scheme="https://119291.xyz/tags/AI%E5%8A%A9%E6%89%8B%E9%9B%86%E6%88%90/"/>
+    
+    <category term="Model Context Protocol" scheme="https://119291.xyz/tags/Model-Context-Protocol/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++中整数转换为字符串的方法</title>
+    <link href="https://119291.xyz/posts/2025-05-20.cpp-int-to-string-conversion/"/>
+    <id>https://119291.xyz/posts/2025-05-20.cpp-int-to-string-conversion/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.774Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;C-中整数转换为字符串的方法&quot;&gt;&lt;a href=&quot;#C-中整数转换为字符串的方法&quot; class=&quot;headerlink&quot; title=&quot;C++中整数转换为字符串的方法&quot;&gt;&lt;/a&gt;C++中整数转换为字符串的方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
         
       
     
@@ -41,29 +216,27 @@
     
     <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
+    <category term="数据类型转换" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/"/>
+    
     <category term="C++" scheme="https://119291.xyz/tags/C/"/>
     
-    <category term="多线程编程" scheme="https://119291.xyz/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="C++11" scheme="https://119291.xyz/tags/C-11/"/>
-    
-    <category term="内存模型" scheme="https://119291.xyz/tags/%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/"/>
+    <category term="整数转字符串" scheme="https://119291.xyz/tags/%E6%95%B4%E6%95%B0%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
   </entry>
   
   <entry>
-    <title>基于DateTime类型生日计算某人年龄的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-19.calculate-age-based-on-datetime-birthday/"/>
-    <id>https://119291.xyz/posts/2025-05-19.calculate-age-based-on-datetime-birthday/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.258Z</updated>
+    <title>在不安装Microsoft Office的情况下用C#创建Excel（.XLS和.XLSX）文件</title>
+    <link href="https://119291.xyz/posts/2025-05-20.create-excel-files-in-csharp-without-office/"/>
+    <id>https://119291.xyz/posts/2025-05-20.create-excel-files-in-csharp-without-office/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.734Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;基于DateTime类型生日计算某人年龄的方法&quot;&gt;&lt;a href=&quot;#基于DateTime类型生日计算某人年龄的方法&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;在不安装Microsoft-Office的情况下用C-创建Excel（-XLS和-XLSX）文件&quot;&gt;&lt;a href=&quot;#在不安装Microsoft-Office的情况下用C-创建Excel（-XLS和-XLSX）文件&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -71,69 +244,141 @@
     
     <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="编程语言实践" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/"/>
-    
-    <category term="C#开发技巧" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/C-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/"/>
+    <category term="数据处理" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
     
     
     <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     <category term="C#" scheme="https://119291.xyz/tags/C/"/>
     
-    <category term="DateTime类型" scheme="https://119291.xyz/tags/DateTime%E7%B1%BB%E5%9E%8B/"/>
+    <category term="ExcelLibrary" scheme="https://119291.xyz/tags/ExcelLibrary/"/>
     
-    <category term="年龄计算" scheme="https://119291.xyz/tags/%E5%B9%B4%E9%BE%84%E8%AE%A1%E7%AE%97/"/>
+    <category term="EPPlus" scheme="https://119291.xyz/tags/EPPlus/"/>
+    
+    <category term="NPOI" scheme="https://119291.xyz/tags/NPOI/"/>
     
   </entry>
   
   <entry>
-    <title>Daylight saving time and time zone best practices</title>
-    <link href="https://119291.xyz/posts/2025-05-19.daylight-saving-time-and-time-zone-best-practices/"/>
-    <id>https://119291.xyz/posts/2025-05-19.daylight-saving-time-and-time-zone-best-practices/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.733Z</updated>
+    <title>函数与方法的区别</title>
+    <link href="https://119291.xyz/posts/2025-05-20.difference-between-method-and-function/"/>
+    <id>https://119291.xyz/posts/2025-05-20.difference-between-method-and-function/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.797Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Daylight-saving-time-and-time-zone-best-practices&quot;&gt;&lt;a href=&quot;#Daylight-saving-time-and-time-zone-best-practices&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;函数与方法的区别&quot;&gt;&lt;a href=&quot;#函数与方法的区别&quot; class=&quot;headerlink&quot; title=&quot;函数与方法的区别&quot;&gt;&lt;/a&gt;函数与方法的区别&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    <category term="编程基础" scheme="https://119291.xyz/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/"/>
     
-    <category term="时间处理" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86/"/>
+    <category term="概念辨析" scheme="https://119291.xyz/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90/"/>
     
     
     <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
     
     <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
     
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    <category term="面向对象编程" scheme="https://119291.xyz/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/"/>
     
-    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    <category term="编程开发" scheme="https://119291.xyz/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
     
-    <category term="夏令时处理" scheme="https://119291.xyz/tags/%E5%A4%8F%E4%BB%A4%E6%97%B6%E5%A4%84%E7%90%86/"/>
+    <category term="函数与方法" scheme="https://119291.xyz/tags/%E5%87%BD%E6%95%B0%E4%B8%8E%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
   <entry>
-    <title>创建隔离环境：Vagrant 还是 Docker？</title>
-    <link href="https://119291.xyz/posts/2025-05-19.choosing-between-vagrant-and-docker-for-isolated-environment/"/>
-    <id>https://119291.xyz/posts/2025-05-19.choosing-between-vagrant-and-docker-for-isolated-environment/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.799Z</updated>
+    <title>DeepSeek LLM：先进语言模型的介绍与应用</title>
+    <link href="https://119291.xyz/posts/2025-05-20.deepseek-llm-introduction-and-application/"/>
+    <id>https://119291.xyz/posts/2025-05-20.deepseek-llm-introduction-and-application/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.994Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;创建隔离环境：Vagrant-还是-Docker？&quot;&gt;&lt;a href=&quot;#创建隔离环境：Vagrant-还是-Docker？&quot; class=&quot;headerlink&quot; title=&quot;创建隔离环境：Vagrant 还是</summary>
+    <summary type="html">&lt;h1 id=&quot;DeepSeek-LLM：先进语言模型的介绍与应用&quot;&gt;&lt;a href=&quot;#DeepSeek-LLM：先进语言模型的介绍与应用&quot; class=&quot;headerlink&quot; title=&quot;DeepSeek LLM：先进语言模型的介绍与应用&quot;&gt;&lt;/a&gt;DeepSeek</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="自然语言处理" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+    <category term="语言模型研究" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%A0%94%E7%A9%B6/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="自然语言处理" scheme="https://119291.xyz/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+    <category term="模型评估" scheme="https://119291.xyz/tags/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/"/>
+    
+    <category term="DeepSeek LLM" scheme="https://119291.xyz/tags/DeepSeek-LLM/"/>
+    
+    <category term="模型推理" scheme="https://119291.xyz/tags/%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端开发面试题大收集与经验分享</title>
+    <link href="https://119291.xyz/posts/2025-05-20.front-end-development-interview-questions-collection/"/>
+    <id>https://119291.xyz/posts/2025-05-20.front-end-development-interview-questions-collection/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.954Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前端开发面试题大收集与经验分享&quot;&gt;&lt;a href=&quot;#前端开发面试题大收集与经验分享&quot; class=&quot;headerlink&quot; title=&quot;前端开发面试题大收集与经验分享&quot;&gt;&lt;/a&gt;前端开发面试题大收集与经验分享&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="面试准备" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    
+    <category term="CSS" scheme="https://119291.xyz/tags/CSS/"/>
+    
+    <category term="前端面试" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单例模式的缺点有哪些？</title>
+    <link href="https://119291.xyz/posts/2025-05-20.disadvantages-of-singleton-pattern/"/>
+    <id>https://119291.xyz/posts/2025-05-20.disadvantages-of-singleton-pattern/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.754Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;单例模式的缺点有哪些？&quot;&gt;&lt;a href=&quot;#单例模式的缺点有哪些？&quot; class=&quot;headerlink&quot; title=&quot;单例模式的缺点有哪些？&quot;&gt;&lt;/a&gt;单例模式的缺点有哪些？&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
         
       
     
@@ -141,139 +386,34 @@
     
     <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
     
-    <category term="环境管理工具" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    <category term="设计模式" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-    <category term="Docker" scheme="https://119291.xyz/tags/Docker/"/>
+    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
+    
+    <category term="单例模式" scheme="https://119291.xyz/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="单元测试" scheme="https://119291.xyz/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
     
     <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
     
-    <category term="Vagrant" scheme="https://119291.xyz/tags/Vagrant/"/>
-    
-    <category term="隔离环境创建" scheme="https://119291.xyz/tags/%E9%9A%94%E7%A6%BB%E7%8E%AF%E5%A2%83%E5%88%9B%E5%BB%BA/"/>
-    
-    <category term="Ruby" scheme="https://119291.xyz/tags/Ruby/"/>
+    <category term="设计模式缺点" scheme="https://119291.xyz/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%BC%BA%E7%82%B9/"/>
     
   </entry>
   
   <entry>
-    <title>从字典中删除元素的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-19.delete-an-element-from-a-dictionary/"/>
-    <id>https://119291.xyz/posts/2025-05-19.delete-an-element-from-a-dictionary/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.526Z</updated>
+    <title>GitHub仓库中前端/设计相关电子书资源汇总</title>
+    <link href="https://119291.xyz/posts/2025-05-20.github-frontend-design-books-resources-summary/"/>
+    <id>https://119291.xyz/posts/2025-05-20.github-frontend-design-books-resources-summary/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.974Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;从字典中删除元素的方法&quot;&gt;&lt;a href=&quot;#从字典中删除元素的方法&quot; class=&quot;headerlink&quot; title=&quot;从字典中删除元素的方法&quot;&gt;&lt;/a&gt;从字典中删除元素的方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="字典操作" scheme="https://119291.xyz/tags/%E5%AD%97%E5%85%B8%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="元素删除" scheme="https://119291.xyz/tags/%E5%85%83%E7%B4%A0%E5%88%A0%E9%99%A4/"/>
-    
-    <category term="数据结构" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SQL中INNER JOIN、LEFT JOIN、RIGHT JOIN和FULL JOIN的区别</title>
-    <link href="https://119291.xyz/posts/2025-05-19.difference-between-inner-left-right-and-full-join/"/>
-    <id>https://119291.xyz/posts/2025-05-19.difference-between-inner-left-right-and-full-join/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.775Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;SQL中INNER-JOIN、LEFT-JOIN、RIGHT-JOIN和FULL-JOIN的区别&quot;&gt;&lt;a href=&quot;#SQL中INNER-JOIN、LEFT-JOIN、RIGHT-JOIN和FULL-JOIN的区别&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="数据库开发" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="SQL查询" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/SQL%E6%9F%A5%E8%AF%A2/"/>
-    
-    
-    <category term="SQL" scheme="https://119291.xyz/tags/SQL/"/>
-    
-    <category term="数据库开发" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="数据库查询" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2/"/>
-    
-    <category term="JOIN操作" scheme="https://119291.xyz/tags/JOIN%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="表连接" scheme="https://119291.xyz/tags/%E8%A1%A8%E8%BF%9E%E6%8E%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python虚拟环境和包管理工具的差异解析</title>
-    <link href="https://119291.xyz/posts/2025-05-19.differences-between-python-virtual-environment-tools/"/>
-    <id>https://119291.xyz/posts/2025-05-19.differences-between-python-virtual-environment-tools/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.546Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Python虚拟环境和包管理工具的差异解析&quot;&gt;&lt;a href=&quot;#Python虚拟环境和包管理工具的差异解析&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python环境管理" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="venv" scheme="https://119291.xyz/tags/venv/"/>
-    
-    <category term="virtualenv" scheme="https://119291.xyz/tags/virtualenv/"/>
-    
-    <category term="pipenv" scheme="https://119291.xyz/tags/pipenv/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在 Chrome 中禁用同源策略</title>
-    <link href="https://119291.xyz/posts/2025-05-19.disable-same-origin-policy-in-chrome/"/>
-    <id>https://119291.xyz/posts/2025-05-19.disable-same-origin-policy-in-chrome/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.840Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;在-Chrome-中禁用同源策略&quot;&gt;&lt;a href=&quot;#在-Chrome-中禁用同源策略&quot; class=&quot;headerlink&quot; title=&quot;在 Chrome 中禁用同源策略&quot;&gt;&lt;/a&gt;在 Chrome 中禁用同源策略&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;GitHub仓库中前端-设计相关电子书资源汇总&quot;&gt;&lt;a href=&quot;#GitHub仓库中前端-设计相关电子书资源汇总&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -281,67 +421,34 @@
     
     <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="浏览器配置" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%B5%8F%E8%A7%88%E5%99%A8%E9%85%8D%E7%BD%AE/"/>
+    <category term="资源分享" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
     
     
     <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
     <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
     
-    <category term="CORS" scheme="https://119291.xyz/tags/CORS/"/>
+    <category term="Node.js" scheme="https://119291.xyz/tags/Node-js/"/>
     
-    <category term="Chrome" scheme="https://119291.xyz/tags/Chrome/"/>
+    <category term="前端书籍" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E4%B9%A6%E7%B1%8D/"/>
     
-    <category term="同源策略禁用" scheme="https://119291.xyz/tags/%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5%E7%A6%81%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一次性删除所有Git暂存的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-19.git-stash-delete-guide/"/>
-    <id>https://119291.xyz/posts/2025-05-19.git-stash-delete-guide/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.615Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;一次性删除所有Git暂存的方法&quot;&gt;&lt;a href=&quot;#一次性删除所有Git暂存的方法&quot; class=&quot;headerlink&quot; title=&quot;一次性删除所有Git暂存的方法&quot;&gt;&lt;/a&gt;一次性删除所有Git暂存的方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    
-    
-    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
-    
-    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="暂存管理" scheme="https://119291.xyz/tags/%E6%9A%82%E5%AD%98%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="暂存删除" scheme="https://119291.xyz/tags/%E6%9A%82%E5%AD%98%E5%88%A0%E9%99%A4/"/>
+    <category term="设计书籍" scheme="https://119291.xyz/tags/%E8%AE%BE%E8%AE%A1%E4%B9%A6%E7%B1%8D/"/>
     
   </entry>
   
   <entry>
-    <title>如何检查 SQL Server 表中是否存在某列</title>
-    <link href="https://119291.xyz/posts/2025-05-19.how-to-check-if-a-column-exists-in-a-sql-server-table/"/>
-    <id>https://119291.xyz/posts/2025-05-19.how-to-check-if-a-column-exists-in-a-sql-server-table/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.879Z</updated>
+    <title>GitHub - clockworklabs/SpacetimeDB: Multiplayer at the speed of light</title>
+    <link href="https://119291.xyz/posts/2025-05-20.github-clockworklabs-spacetimedb-multiplayer-at-the-speed-of-light/"/>
+    <id>https://119291.xyz/posts/2025-05-20.github-clockworklabs-spacetimedb-multiplayer-at-the-speed-of-light/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:04.074Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;如何检查-SQL-Server-表中是否存在某列&quot;&gt;&lt;a href=&quot;#如何检查-SQL-Server-表中是否存在某列&quot; class=&quot;headerlink&quot; title=&quot;如何检查 SQL Server 表中是否存在某列&quot;&gt;&lt;/a&gt;如何检查 SQL</summary>
+    <summary type="html">&lt;h1 id=&quot;GitHub-clockworklabs-SpacetimeDB-Multiplayer-at-the-speed-of-light&quot;&gt;&lt;a</summary>
         
       
     
@@ -349,102 +456,139 @@
     
     <category term="数据库开发" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
     
-    <category term="SQL Server" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/SQL-Server/"/>
+    <category term="实时应用开发" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/%E5%AE%9E%E6%97%B6%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="SQL" scheme="https://119291.xyz/tags/SQL/"/>
+    <category term="数据库安装" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85/"/>
     
     <category term="数据库开发" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
     
-    <category term="SQL Server" scheme="https://119291.xyz/tags/SQL-Server/"/>
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
     
-    <category term="列存在性检查" scheme="https://119291.xyz/tags/%E5%88%97%E5%AD%98%E5%9C%A8%E6%80%A7%E6%A3%80%E6%9F%A5/"/>
+    <category term="SpacetimeDB" scheme="https://119291.xyz/tags/SpacetimeDB/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Linux 中如何创建文件符号链接</title>
-    <link href="https://119291.xyz/posts/2025-05-19.how-to-create-file-symbolic-links-in-linux/"/>
-    <id>https://119291.xyz/posts/2025-05-19.how-to-create-file-symbolic-links-in-linux/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.279Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Linux-中如何创建文件符号链接&quot;&gt;&lt;a href=&quot;#Linux-中如何创建文件符号链接&quot; class=&quot;headerlink&quot; title=&quot;Linux 中如何创建文件符号链接&quot;&gt;&lt;/a&gt;Linux 中如何创建文件符号链接&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="系统运维" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/"/>
-    
-    <category term="Linux操作" scheme="https://119291.xyz/categories/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/Linux%E6%93%8D%E4%BD%9C/"/>
-    
-    
-    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
-    
-    <category term="系统运维" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4/"/>
-    
-    <category term="符号链接" scheme="https://119291.xyz/tags/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5/"/>
-    
-    <category term="Perl" scheme="https://119291.xyz/tags/Perl/"/>
-    
-    <category term="C" scheme="https://119291.xyz/tags/C/"/>
+    <category term="实时应用" scheme="https://119291.xyz/tags/%E5%AE%9E%E6%97%B6%E5%BA%94%E7%94%A8/"/>
     
   </entry>
   
   <entry>
-    <title>从主机获取Docker容器的IP地址的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-19.how-to-get-docker-container-ip-address-from-host/"/>
-    <id>https://119291.xyz/posts/2025-05-19.how-to-get-docker-container-ip-address-from-host/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.344Z</updated>
+    <title>GitHub - funstory-ai/BabelDOC: 又一文档翻译工具</title>
+    <link href="https://119291.xyz/posts/2025-05-20.github-funstory-ai-babeldoc-document-translator/"/>
+    <id>https://119291.xyz/posts/2025-05-20.github-funstory-ai-babeldoc-document-translator/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:04.034Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;从主机获取Docker容器的IP地址的方法&quot;&gt;&lt;a href=&quot;#从主机获取Docker容器的IP地址的方法&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;GitHub-funstory-ai-BabelDOC-又一文档翻译工具&quot;&gt;&lt;a href=&quot;#GitHub-funstory-ai-BabelDOC-又一文档翻译工具&quot; class=&quot;headerlink&quot; title=&quot;GitHub -</summary>
         
       
     
     
     
-    <category term="容器技术" scheme="https://119291.xyz/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
+    <category term="文档处理" scheme="https://119291.xyz/categories/%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86/"/>
     
-    <category term="Docker实践" scheme="https://119291.xyz/categories/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/Docker%E5%AE%9E%E8%B7%B5/"/>
+    <category term="翻译工具" scheme="https://119291.xyz/categories/%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86/%E7%BF%BB%E8%AF%91%E5%B7%A5%E5%85%B7/"/>
     
     
     <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
     
-    <category term="Docker" scheme="https://119291.xyz/tags/Docker/"/>
+    <category term="文档翻译" scheme="https://119291.xyz/tags/%E6%96%87%E6%A1%A3%E7%BF%BB%E8%AF%91/"/>
     
-    <category term="容器技术" scheme="https://119291.xyz/tags/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
+    <category term="BabelDOC" scheme="https://119291.xyz/tags/BabelDOC/"/>
     
-    <category term="容器IP获取" scheme="https://119291.xyz/tags/%E5%AE%B9%E5%99%A8IP%E8%8E%B7%E5%8F%96/"/>
+    <category term="文档处理" scheme="https://119291.xyz/tags/%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86/"/>
     
-    <category term="脚本自动化" scheme="https://119291.xyz/tags/%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="PDF处理" scheme="https://119291.xyz/tags/PDF%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
   <entry>
-    <title>如何在不注销并重新登录的情况下重新加载 .bashrc 设置</title>
-    <link href="https://119291.xyz/posts/2025-05-19.how-to-reload-bashrc-settings-without-logging-out/"/>
-    <id>https://119291.xyz/posts/2025-05-19.how-to-reload-bashrc-settings-without-logging-out/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.326Z</updated>
+    <title>GitHub - datawhalechina/llm - cookbook：面向开发者的LLM入门教程，吴恩达大模型系列课程中文版</title>
+    <link href="https://119291.xyz/posts/2025-05-20.github-datawhalechina-llm-cookbook-llm-tutorial/"/>
+    <id>https://119291.xyz/posts/2025-05-20.github-datawhalechina-llm-cookbook-llm-tutorial/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:04.180Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;如何在不注销并重新登录的情况下重新加载-bashrc-设置&quot;&gt;&lt;a href=&quot;#如何在不注销并重新登录的情况下重新加载-bashrc-设置&quot; class=&quot;headerlink&quot; title=&quot;如何在不注销并重新登录的情况下重新加载 .bashrc</summary>
+    <summary type="html">&lt;h1 id=&quot;GitHub-datawhalechina-llm-cookbook：面向开发者的LLM入门教程，吴恩达大模型系列课程中文版&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能开发" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="大语言模型入门" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%85%A5%E9%97%A8/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="人工智能开发" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="LangChain" scheme="https://119291.xyz/tags/LangChain/"/>
+    
+    <category term="大语言模型入门" scheme="https://119291.xyz/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%85%A5%E9%97%A8/"/>
+    
+    <category term="Prompt工程" scheme="https://119291.xyz/tags/Prompt%E5%B7%A5%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub - meta-llama/llama-models：Llama模型实用指南</title>
+    <link href="https://119291.xyz/posts/2025-05-20.github-meta-llama-llama-models-guide/"/>
+    <id>https://119291.xyz/posts/2025-05-20.github-meta-llama-llama-models-guide/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:04.014Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GitHub-meta-llama-llama-models：Llama模型实用指南&quot;&gt;&lt;a href=&quot;#GitHub-meta-llama-llama-models：Llama模型实用指南&quot; class=&quot;headerlink&quot; title=&quot;GitHub</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="大语言模型应用" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="人工智能" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="Llama" scheme="https://119291.xyz/tags/Llama/"/>
+    
+    <category term="模型推理" scheme="https://119291.xyz/tags/%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86/"/>
+    
+    <category term="模型下载" scheme="https://119291.xyz/tags/%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何决定何时使用Node.js</title>
+    <link href="https://119291.xyz/posts/2025-05-20.how-to-decide-when-to-use-nodejs/"/>
+    <id>https://119291.xyz/posts/2025-05-20.how-to-decide-when-to-use-nodejs/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何决定何时使用Node-js&quot;&gt;&lt;a href=&quot;#如何决定何时使用Node-js&quot; class=&quot;headerlink&quot; title=&quot;如何决定何时使用Node.js&quot;&gt;&lt;/a&gt;如何决定何时使用Node.js&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
         
       
     
@@ -452,139 +596,34 @@
     
     <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="系统配置" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/"/>
+    <category term="Node.js应用" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Node-js%E5%BA%94%E7%94%A8/"/>
     
     
     <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     
-    <category term="Linux" scheme="https://119291.xyz/tags/Linux/"/>
-    
-    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
-    
-    <category term=".bashrc 配置" scheme="https://119291.xyz/tags/bashrc-%E9%85%8D%E7%BD%AE/"/>
-    
-    <category term="配置重新加载" scheme="https://119291.xyz/tags/%E9%85%8D%E7%BD%AE%E9%87%8D%E6%96%B0%E5%8A%A0%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从 SQL Server DateTime 数据类型中仅返回日期的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-19.how-to-return-only-date-from-sql-server-datetime/"/>
-    <id>https://119291.xyz/posts/2025-05-19.how-to-return-only-date-from-sql-server-datetime/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.640Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;从-SQL-Server-DateTime-数据类型中仅返回日期的方法&quot;&gt;&lt;a href=&quot;#从-SQL-Server-DateTime-数据类型中仅返回日期的方法&quot; class=&quot;headerlink&quot; title=&quot;从 SQL Server DateTime</summary>
-        
-      
-    
-    
-    
-    <category term="数据库开发" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="SQL Server 日期处理" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/SQL-Server-%E6%97%A5%E6%9C%9F%E5%A4%84%E7%90%86/"/>
-    
-    
-    <category term="数据类型转换" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/"/>
-    
-    <category term="SQL" scheme="https://119291.xyz/tags/SQL/"/>
-    
-    <category term="数据库开发" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="SQL Server" scheme="https://119291.xyz/tags/SQL-Server/"/>
-    
-    <category term="日期处理" scheme="https://119291.xyz/tags/%E6%97%A5%E6%9C%9F%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何将Node.js和npm更新到最新版本</title>
-    <link href="https://119291.xyz/posts/2025-05-19.how-to-update-nodejs-and-npm-to-latest-versions/"/>
-    <id>https://119291.xyz/posts/2025-05-19.how-to-update-nodejs-and-npm-to-latest-versions/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.436Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何将Node-js和npm更新到最新版本&quot;&gt;&lt;a href=&quot;#如何将Node-js和npm更新到最新版本&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Node.js管理" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Node-js%E7%AE%A1%E7%90%86/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
     
     <category term="Node.js" scheme="https://119291.xyz/tags/Node-js/"/>
     
-    <category term="npm" scheme="https://119291.xyz/tags/npm/"/>
+    <category term="实时应用开发" scheme="https://119291.xyz/tags/%E5%AE%9E%E6%97%B6%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"/>
     
-    <category term="版本更新" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0/"/>
-    
-    <category term="版本管理工具" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    <category term="应用选型" scheme="https://119291.xyz/tags/%E5%BA%94%E7%94%A8%E9%80%89%E5%9E%8B/"/>
     
   </entry>
   
   <entry>
-    <title>HTML 5中&amp;lt;br&amp;gt;、&amp;lt;br/&amp;gt;和&amp;lt;br /&amp;gt;的使用区别</title>
-    <link href="https://119291.xyz/posts/2025-05-19.html5-br-tag-usage-differences/"/>
-    <id>https://119291.xyz/posts/2025-05-19.html5-br-tag-usage-differences/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.859Z</updated>
+    <title>Java是否支持默认参数值</title>
+    <link href="https://119291.xyz/posts/2025-05-20.java-support-for-default-parameter-values/"/>
+    <id>https://119291.xyz/posts/2025-05-20.java-support-for-default-parameter-values/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.836Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;HTML-5中、和的使用区别&quot;&gt;&lt;a href=&quot;#HTML-5中、和的使用区别&quot; class=&quot;headerlink&quot; title=&quot;HTML 5中&lt;br&gt;、&lt;br/&gt;和&lt;br /&gt;的使用区别&quot;&gt;&lt;/a&gt;HTML</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="HTML技术" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/HTML%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
-    
-    <category term="HTML5" scheme="https://119291.xyz/tags/HTML5/"/>
-    
-    <category term="标签使用" scheme="https://119291.xyz/tags/%E6%A0%87%E7%AD%BE%E4%BD%BF%E7%94%A8/"/>
-    
-    <category term="兼容性" scheme="https://119291.xyz/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java枚举成员比较：使用==还是equals()?</title>
-    <link href="https://119291.xyz/posts/2025-05-19.java-enum-comparison-using-equal-or-equals/"/>
-    <id>https://119291.xyz/posts/2025-05-19.java-enum-comparison-using-equal-or-equals/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.661Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Java枚举成员比较：使用-还是equals&quot;&gt;&lt;a href=&quot;#Java枚举成员比较：使用-还是equals&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;Java是否支持默认参数值&quot;&gt;&lt;a href=&quot;#Java是否支持默认参数值&quot; class=&quot;headerlink&quot; title=&quot;Java是否支持默认参数值&quot;&gt;&lt;/a&gt;Java是否支持默认参数值&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
         
       
     
@@ -599,116 +638,81 @@
     
     <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
     
-    <category term="比较运算符" scheme="https://119291.xyz/tags/%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    <category term="方法重载" scheme="https://119291.xyz/tags/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/"/>
     
-    <category term="枚举类型" scheme="https://119291.xyz/tags/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B/"/>
+    <category term="构建器模式" scheme="https://119291.xyz/tags/%E6%9E%84%E5%BB%BA%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
     
-    <category term="代码安全" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E5%AE%89%E5%85%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript中检测无效日期实例的方法</title>
-    <link href="https://119291.xyz/posts/2025-05-19.javascript-invalid-date-instance-detection/"/>
-    <id>https://119291.xyz/posts/2025-05-19.javascript-invalid-date-instance-detection/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.820Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JavaScript中检测无效日期实例的方法&quot;&gt;&lt;a href=&quot;#JavaScript中检测无效日期实例的方法&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="日期处理" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%97%A5%E6%9C%9F%E5%A4%84%E7%90%86/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="moment.js" scheme="https://119291.xyz/tags/moment-js/"/>
-    
-    <category term="jQuery UI" scheme="https://119291.xyz/tags/jQuery-UI/"/>
-    
-    <category term="日期验证" scheme="https://119291.xyz/tags/%E6%97%A5%E6%9C%9F%E9%AA%8C%E8%AF%81/"/>
+    <category term="默认参数模拟" scheme="https://119291.xyz/tags/%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
   <entry>
-    <title>PostgreSQL &quot;DESCRIBE TABLE&quot;</title>
-    <link href="https://119291.xyz/posts/2025-05-19.postgresql-describe-table/"/>
-    <id>https://119291.xyz/posts/2025-05-19.postgresql-describe-table/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.482Z</updated>
+    <title>Hydra Launcher：开源游戏平台介绍</title>
+    <link href="https://119291.xyz/posts/2025-05-20.hydra-launcher-open-source-gaming-platform-introduction/"/>
+    <id>https://119291.xyz/posts/2025-05-20.hydra-launcher-open-source-gaming-platform-introduction/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:04.220Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;PostgreSQL-“DESCRIBE-TABLE”&quot;&gt;&lt;a href=&quot;#PostgreSQL-“DESCRIBE-TABLE”&quot; class=&quot;headerlink&quot; title=&quot;PostgreSQL “DESCRIBE</summary>
+    <summary type="html">&lt;h1 id=&quot;Hydra-Launcher：开源游戏平台介绍&quot;&gt;&lt;a href=&quot;#Hydra-Launcher：开源游戏平台介绍&quot; class=&quot;headerlink&quot; title=&quot;Hydra Launcher：开源游戏平台介绍&quot;&gt;&lt;/a&gt;Hydra</summary>
         
       
     
     
     
-    <category term="数据库管理" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/"/>
+    <category term="游戏开发" scheme="https://119291.xyz/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
     
-    <category term="PostgreSQL操作" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/PostgreSQL%E6%93%8D%E4%BD%9C/"/>
-    
-    
-    <category term="SQL" scheme="https://119291.xyz/tags/SQL/"/>
-    
-    <category term="数据库管理" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="PostgreSQL" scheme="https://119291.xyz/tags/PostgreSQL/"/>
-    
-    <category term="表结构描述" scheme="https://119291.xyz/tags/%E8%A1%A8%E7%BB%93%E6%9E%84%E6%8F%8F%E8%BF%B0/"/>
-    
-    <category term="元命令" scheme="https://119291.xyz/tags/%E5%85%83%E5%91%BD%E4%BB%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python列表元素计数方法详解</title>
-    <link href="https://119291.xyz/posts/2025-05-19.python-list-element-counting-methods/"/>
-    <id>https://119291.xyz/posts/2025-05-19.python-list-element-counting-methods/</id>
-    <published>2025-05-19T00:00:00.000Z</published>
-    <updated>2025-05-19T00:29:48.683Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Python列表元素计数方法详解&quot;&gt;&lt;a href=&quot;#Python列表元素计数方法详解&quot; class=&quot;headerlink&quot; title=&quot;Python列表元素计数方法详解&quot;&gt;&lt;/a&gt;Python列表元素计数方法详解&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python编程" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
     
     <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
     
-    <category term="collections模块" scheme="https://119291.xyz/tags/collections%E6%A8%A1%E5%9D%97/"/>
+    <category term="Node.js" scheme="https://119291.xyz/tags/Node-js/"/>
     
-    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    <category term="游戏开发" scheme="https://119291.xyz/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
     
-    <category term="性能比较" scheme="https://119291.xyz/tags/%E6%80%A7%E8%83%BD%E6%AF%94%E8%BE%83/"/>
+    <category term="Hydra Launcher" scheme="https://119291.xyz/tags/Hydra-Launcher/"/>
     
-    <category term="列表元素计数" scheme="https://119291.xyz/tags/%E5%88%97%E8%A1%A8%E5%85%83%E7%B4%A0%E8%AE%A1%E6%95%B0/"/>
+    <category term="开源游戏平台" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何修复Git中的分离头指针问题</title>
+    <link href="https://119291.xyz/posts/2025-05-20.how-to-fix-git-detached-head/"/>
+    <id>https://119291.xyz/posts/2025-05-20.how-to-fix-git-detached-head/</id>
+    <published>2025-05-20T00:00:00.000Z</published>
+    <updated>2025-05-20T01:28:03.856Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何修复Git中的分离头指针问题&quot;&gt;&lt;a href=&quot;#如何修复Git中的分离头指针问题&quot; class=&quot;headerlink&quot; title=&quot;如何修复Git中的分离头指针问题&quot;&gt;&lt;/a&gt;如何修复Git中的分离头指针问题&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
+    
+    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="分支操作" scheme="https://119291.xyz/tags/%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C/"/>
+    
+    <category term="分离头指针修复" scheme="https://119291.xyz/tags/%E5%88%86%E7%A6%BB%E5%A4%B4%E6%8C%87%E9%92%88%E4%BF%AE%E5%A4%8D/"/>
+    
+    <category term="提交管理" scheme="https://119291.xyz/tags/%E6%8F%90%E4%BA%A4%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
