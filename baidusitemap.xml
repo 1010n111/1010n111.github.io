@@ -1,19 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-check-for-nan-values/</loc>
+    <loc>https://119291.xyz/posts/2025-05-28.vim-comment-uncomment-techniques/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-debug-nodejs-applications/</loc>
+    <loc>https://119291.xyz/posts/2025-05-28.difference-between-concurrency-and-parallelism/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-view-git-log-of-one-users-commits/</loc>
+    <loc>https://119291.xyz/posts/2025-05-28.java-transient-fields-usage/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-27.python-switch-statement-alternatives/</loc>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-redirect-output-to-a-file-and-stdout/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.importance-of-overriding-gethashcode-when-equals-overridden/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.meta-charset-vs-meta-http-equiv-content-type/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-sort-a-list-t-by-a-property-in-the-object/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.event-binding-on-dynamically-created-elements/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.difference-between-git-stash-pop-and-git-stash-apply/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.echo-outputs-to-stderr/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-change-the-order-of-dataframe-columns/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-find-focused-dom-element/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.why-changing-01f-to-0-slows-down-performance/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.why-do-we-need-virtual-functions-in-cpp/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.git-branch-recovery-after-deletion/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.sql-select-rows-with-max-column-value/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.sql-server-update-statement-with-join-guide/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-add-local-jar-files-to-a-maven-project/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.determine-whether-two-date-ranges-overlap/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-vertically-center-a-div-element-in-all-browsers-using-css/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.convert-unix-timestamp-to-time-in-javascript/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-drop-all-tables-in-postgresql-database/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.what-is-the-best-algorithm-for-overriding-gethashcode/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-force-docker-for-a-clean-build-of-an-image/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.get-element-id-using-jquery/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.find-when-a-file-was-deleted-in-git/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-directly-initialize-a-hashmap-in-a-literal-way/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-fully-delete-a-git-repository-created-with-init/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.python-string-reversal-methods/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-convert-string-to-number-in-typescript/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.bash-script-preferred-shebang-discussion/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-undo-git-reset-hard-head-1/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.what-is-a-monad/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.php-str-starts-with-and-str-ends-with-functions/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.application-x-www-form-urlencoded-or-multipart-form-data/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.why-python-classes-inherit-object/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.difference-between-double-and-triple-equals-in-javascript/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-force-a-favicon-refresh/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-28.how-to-put-the-legend-outside-the-plot/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
@@ -21,91 +165,7 @@
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-27.difference-between-const-and-readonly-in-csharp/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.difference-between-union-and-union-all/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-add-html-and-css-into-pdf/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-remove-directory-from-git-repository/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.difference-between-null-and-undefined-in-javascript/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.changing-git-commit-message-after-push/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.lodash-vs-underscorejs-differences/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.difference-between-abstract-and-virtual-methods/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.if-else-in-a-list-comprehension/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.java-for-each-loop-working-principle/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.get-size-of-all-tables-in-database/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/2025-05-27.why-not-inherit-from-list-t/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-profile-a-python-script/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.javascript-set-object-key-by-variable/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.javascript-range-function-implementation/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-add-a-class-to-a-given-element/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.difference-between-varchar-and-nvarchar/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-vertically-align-an-image-inside-a-div/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.disabling-chrome-cache-for-website-development/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-convert-stack-trace-to-string/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.http-post-parameters-passing-method/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-revert-multiple-git-commits/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
@@ -113,27 +173,7 @@
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-27.create-a-branch-in-git-from-another-branch/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-generate-git-patch-for-specific-commit/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.get-values-from-get-parameters-javascript/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-fix-java-lang-unsupportedclassversionerror/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.difference-between-stringbuilder-and-stringbuffer/</loc>
-    <lastmod>2025-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/2025-05-27.android-8-cleartext-http-traffic-not-permitted/</loc>
+    <loc>https://119291.xyz/posts/2025-05-27.python-switch-statement-alternatives/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
@@ -141,11 +181,27 @@
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
+    <loc>https://119291.xyz/posts/2025-05-27.javascript-post-request-like-a-form-submit/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.javascript-set-object-key-by-variable/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.lodash-vs-underscorejs-differences/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.javascript-range-function-implementation/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
     <loc>https://119291.xyz/posts/2025-05-27.javascript-regexp-matched-groups-access/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-27.how-to-reconcile-detached-head-with-master-origin/</loc>
+    <loc>https://119291.xyz/posts/2025-05-27.java-for-each-loop-working-principle/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
@@ -153,11 +209,115 @@
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
+    <loc>https://119291.xyz/posts/2025-05-27.if-else-in-a-list-comprehension/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.http-post-parameters-passing-method/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-view-git-log-of-one-users-commits/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-reconcile-detached-head-with-master-origin/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-vertically-align-an-image-inside-a-div/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-revert-multiple-git-commits/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-profile-a-python-script/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-remove-directory-from-git-repository/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-fix-java-lang-unsupportedclassversionerror/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-generate-git-patch-for-specific-commit/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-debug-nodejs-applications/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-convert-stack-trace-to-string/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-check-for-nan-values/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-add-html-and-css-into-pdf/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
     <loc>https://119291.xyz/posts/2025-05-27.gitignore-is-ignored-by-git/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/2025-05-27.javascript-post-request-like-a-form-submit/</loc>
+    <loc>https://119291.xyz/posts/2025-05-27.how-to-add-a-class-to-a-given-element/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.get-values-from-get-parameters-javascript/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.disabling-chrome-cache-for-website-development/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.get-size-of-all-tables-in-database/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.difference-between-varchar-and-nvarchar/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.difference-between-null-and-undefined-in-javascript/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.difference-between-stringbuilder-and-stringbuffer/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.difference-between-union-and-union-all/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.difference-between-const-and-readonly-in-csharp/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.difference-between-abstract-and-virtual-methods/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.changing-git-commit-message-after-push/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.create-a-branch-in-git-from-another-branch/</loc>
+    <lastmod>2025-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/2025-05-27.android-8-cleartext-http-traffic-not-permitted/</loc>
     <lastmod>2025-05-27</lastmod>
   </url>
   <url>
