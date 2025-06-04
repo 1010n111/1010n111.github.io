@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://119291.xyz/posts/python3-string-to-bytes-conversion/</loc>
-    <lastmod>2025-06-03</lastmod>
+    <loc>https://119291.xyz/posts/difference-between-constructor-and-ngoninit/</loc>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-use-threading-in-python/</loc>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/proper-mime-media-type-for-pdf-files/</loc>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-kill-a-process-running-on-particular-port-in-linux/</loc>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/gitignore-exclude-folder-but-include-specific-subfolder/</loc>
+    <lastmod>2025-06-04</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/why-dont-self-closing-script-elements-work/</loc>
-    <lastmod>2025-06-03</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/python-object-attributes-printing/</loc>
-    <lastmod>2025-06-03</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/get-random-item-from-javascript-array/</loc>
-    <lastmod>2025-06-03</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/how-to-use-grep-to-show-filenames-on-linux/</loc>
-    <lastmod>2025-06-03</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/how-to-manually-send-http-post-requests-from-firefox-or-chrome-browser/</loc>
-    <lastmod>2025-06-03</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/how-to-rename-a-git-tag/</loc>
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
@@ -33,15 +29,11 @@
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/c-language-function-pointer-working-principle/</loc>
+    <loc>https://119291.xyz/posts/remove-a-git-commit-which-has-not-been-pushed/</loc>
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/how-to-declare-and-use-boolean-variables-in-shell-script/</loc>
-    <lastmod>2025-06-03</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/how-to-copy-a-dictionary-and-only-edit-the-copy/</loc>
+    <loc>https://119291.xyz/posts/python-object-attributes-printing/</loc>
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
@@ -49,11 +41,11 @@
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/how-to-manage-redirect-request-after-jquery-ajax-call/</loc>
+    <loc>https://119291.xyz/posts/passing-data-between-activities-in-android/</loc>
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/passing-data-between-activities-in-android/</loc>
+    <loc>https://119291.xyz/posts/passing-parameters-to-a-bash-function/</loc>
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
@@ -61,15 +53,7 @@
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/how-to-check-if-a-value-exists-in-an-array-in-ruby/</loc>
-    <lastmod>2025-06-03</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/remove-a-git-commit-which-has-not-been-pushed/</loc>
-    <lastmod>2025-06-03</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/get-full-object-in-nodejs-console-log/</loc>
+    <loc>https://119291.xyz/posts/how-to-use-grep-to-show-filenames-on-linux/</loc>
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
@@ -77,7 +61,43 @@
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/passing-parameters-to-a-bash-function/</loc>
+    <loc>https://119291.xyz/posts/how-to-manage-redirect-request-after-jquery-ajax-call/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-rename-a-git-tag/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-manually-send-http-post-requests-from-firefox-or-chrome-browser/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-copy-a-dictionary-and-only-edit-the-copy/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-declare-and-use-boolean-variables-in-shell-script/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-check-if-a-value-exists-in-an-array-in-ruby/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/get-random-item-from-javascript-array/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/get-full-object-in-nodejs-console-log/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/c-language-function-pointer-working-principle/</loc>
+    <lastmod>2025-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/python3-string-to-bytes-conversion/</loc>
     <lastmod>2025-06-03</lastmod>
   </url>
   <url>
