@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://119291.xyz/posts/difference-between-constructor-and-ngoninit/</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://119291.xyz/posts/how-to-fix-npm-throwing-error-without-sudo/</loc>
+    <lastmod>2025-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/git-two-ways-to-unstage-file/</loc>
+    <lastmod>2025-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/check-file-directory-existence-in-nodejs/</loc>
+    <lastmod>2025-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-extend-existing-javascript-array-without-new-array/</loc>
+    <lastmod>2025-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/javascript-date-formatting-guide/</loc>
+    <lastmod>2025-06-05</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/how-to-use-threading-in-python/</loc>
@@ -14,6 +30,10 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/how-to-kill-a-process-running-on-particular-port-in-linux/</loc>
+    <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/difference-between-constructor-and-ngoninit/</loc>
     <lastmod>2025-06-04</lastmod>
   </url>
   <url>
