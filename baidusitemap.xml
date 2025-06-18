@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://119291.xyz/posts/safely-turning-a-json-string-into-an-object/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <loc>https://119291.xyz/posts/jvm-xms-xmx-parameters-explanation/</loc>
+    <lastmod>2025-06-18</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/python-assert-usage/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <loc>https://119291.xyz/posts/python-exception-printing-methods/</loc>
+    <lastmod>2025-06-18</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/null-object-in-python/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <loc>https://119291.xyz/posts/virtual-member-call-in-a-constructor/</loc>
+    <lastmod>2025-06-18</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/how-to-check-if-branch-is-merged-into-master/</loc>
+    <loc>https://119291.xyz/posts/unix-linux-directory-copy-guide/</loc>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/removing-duplicates-in-lists/</loc>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/sort-data-frame-rows-by-multiple-columns/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -21,24 +29,36 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/how-to-get-full-path-of-current-files-directory/</loc>
-    <lastmod>2025-06-09</lastmod>
+    <loc>https://119291.xyz/posts/safely-turning-a-json-string-into-an-object/</loc>
+    <lastmod>2025-06-17</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/object-comparison-in-javascript/</loc>
-    <lastmod>2025-06-09</lastmod>
+    <lastmod>2025-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/null-object-in-python/</loc>
+    <lastmod>2025-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-get-full-path-of-current-files-directory/</loc>
+    <lastmod>2025-06-17</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/how-to-compare-a-local-git-branch-with-its-remote-branch/</loc>
-    <lastmod>2025-06-09</lastmod>
+    <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/sort-data-frame-rows-by-multiple-columns/</loc>
-    <lastmod>2025-06-09</lastmod>
+    <loc>https://119291.xyz/posts/python-assert-usage/</loc>
+    <lastmod>2025-06-17</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-check-if-branch-is-merged-into-master/</loc>
+    <lastmod>2025-06-17</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/how-to-pass-environment-variables-to-docker-containers/</loc>
-    <lastmod>2025-06-09</lastmod>
+    <lastmod>2025-06-17</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/when-to-use-escape-instead-of-encodeuri-or-encodeuricomponent/</loc>
@@ -630,10 +650,6 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/unsupervised-clustering-with-unknown-number-of-clusters/</loc>
-    <lastmod>2025-05-30</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/unix-linux-directory-copy-guide/</loc>
     <lastmod>2025-05-30</lastmod>
   </url>
   <url>
@@ -1701,10 +1717,6 @@
     <lastmod>2025-05-30</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/python-exception-printing-methods/</loc>
-    <lastmod>2025-05-30</lastmod>
-  </url>
-  <url>
     <loc>https://119291.xyz/posts/python-dynamic-module-import-by-full-path/</loc>
     <lastmod>2025-05-30</lastmod>
   </url>
@@ -2330,10 +2342,6 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/junit-exception-assertion-guide/</loc>
-    <lastmod>2025-05-30</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/jvm-xms-xmx-parameters-explanation/</loc>
     <lastmod>2025-05-30</lastmod>
   </url>
   <url>
