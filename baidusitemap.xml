@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://119291.xyz/posts/jvm-xms-xmx-parameters-explanation/</loc>
-    <lastmod>2025-06-18</lastmod>
+    <loc>https://119291.xyz/posts/methods-to-get-source-code-from-apk-file/</loc>
+    <lastmod>2025-06-19</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/python-exception-printing-methods/</loc>
-    <lastmod>2025-06-18</lastmod>
+    <loc>https://119291.xyz/posts/compare-file-differences-between-two-commits/</loc>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/local-storage-vs-cookies/</loc>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/passing-data-between-view-controllers/</loc>
+    <lastmod>2025-06-19</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/python-json-data-parsing-issue/</loc>
+    <lastmod>2025-06-19</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/virtual-member-call-in-a-constructor/</loc>
@@ -18,6 +30,14 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/removing-duplicates-in-lists/</loc>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/python-exception-printing-methods/</loc>
+    <lastmod>2025-06-18</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/jvm-xms-xmx-parameters-explanation/</loc>
     <lastmod>2025-06-18</lastmod>
   </url>
   <url>
