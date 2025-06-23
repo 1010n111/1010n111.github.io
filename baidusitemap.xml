@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://119291.xyz/posts/make-class-json-serializable-guide/</loc>
+    <lastmod>2025-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/best-way-to-add-options-to-select-from-js-object-with-jquery/</loc>
+    <lastmod>2025-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/calculate-difference-between-two-dates/</loc>
+    <lastmod>2025-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/what-are-three-dots-in-react-doing/</loc>
+    <lastmod>2025-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-remove-old-docker-containers/</loc>
+    <lastmod>2025-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/javascript-this-keyword-explanation/</loc>
+    <lastmod>2025-06-20</lastmod>
+  </url>
+  <url>
     <loc>https://119291.xyz/posts/send-http-post-request-in-dotnet/</loc>
     <lastmod>2025-06-20</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/javascript-this-keyword-explanation/</loc>
+    <loc>https://119291.xyz/posts/can-i-concatenate-multiple-mysql-rows-into-one-field/</loc>
     <lastmod>2025-06-20</lastmod>
   </url>
   <url>
@@ -14,10 +38,6 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/how-to-check-python-version-running-script/</loc>
-    <lastmod>2025-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/can-i-concatenate-multiple-mysql-rows-into-one-field/</loc>
     <lastmod>2025-06-20</lastmod>
   </url>
   <url>
@@ -3246,10 +3266,6 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/how-to-remove-property-from-javascript-object/</loc>
-    <lastmod>2025-05-30</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/how-to-remove-old-docker-containers/</loc>
     <lastmod>2025-05-30</lastmod>
   </url>
   <url>
