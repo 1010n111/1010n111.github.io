@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://119291.xyz/posts/difference-between-mvc-and-mvvm/</loc>
+    <loc>https://119291.xyz/posts/github-popular-repositories/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-deal-with-settingwithcopywarning-in-pandas/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/escape-single-quotes-in-single-quoted-strings/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/javascript-case-insensitive-string-comparison/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/recursively-search-content-in-files-with-specific-extensions/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-avoid-calling-everything-a-what-ever-manager/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/undo-git-pull-bring-repositories-to-old-state/</loc>
+    <lastmod>2025-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/offsetting-an-html-anchor-to-adjust-for-fixed-header/</loc>
     <lastmod>2025-06-23</lastmod>
   </url>
   <url>
@@ -13,11 +41,7 @@
     <lastmod>2025-06-23</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/offsetting-an-html-anchor-to-adjust-for-fixed-header/</loc>
-    <lastmod>2025-06-23</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/undo-git-pull-bring-repositories-to-old-state/</loc>
+    <loc>https://119291.xyz/posts/difference-between-mvc-and-mvvm/</loc>
     <lastmod>2025-06-23</lastmod>
   </url>
   <url>
@@ -3774,10 +3798,6 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/how-to-decide-when-to-use-nodejs/</loc>
-    <lastmod>2025-05-30</lastmod>
-  </url>
-  <url>
-    <loc>https://119291.xyz/posts/how-to-deal-with-settingwithcopywarning-in-pandas/</loc>
     <lastmod>2025-05-30</lastmod>
   </url>
   <url>
