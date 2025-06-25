@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://119291.xyz/posts/github-popular-repositories/</loc>
-    <lastmod>2025-06-24</lastmod>
+    <loc>https://119291.xyz/posts/2025-06-25-github-re-men-cang-ku/</loc>
+    <lastmod>2025-06-25</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/how-to-deal-with-settingwithcopywarning-in-pandas/</loc>
-    <lastmod>2025-06-24</lastmod>
+    <loc>https://119291.xyz/posts/how-to-fold-code-in-vscode/</loc>
+    <lastmod>2025-06-25</lastmod>
   </url>
   <url>
-    <loc>https://119291.xyz/posts/escape-single-quotes-in-single-quoted-strings/</loc>
-    <lastmod>2025-06-24</lastmod>
+    <loc>https://119291.xyz/posts/differences-between-np-np-complete-and-np-hard/</loc>
+    <lastmod>2025-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-remove-a-single-file-from-the-staging-area/</loc>
+    <lastmod>2025-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-drop-rows-of-pandas-dataframe-whose-value-in-a-certain-column-is-nan/</loc>
+    <lastmod>2025-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/difference-between-match-parent-and-fill-parent/</loc>
+    <lastmod>2025-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/running-shell-command-and-capturing-output/</loc>
+    <lastmod>2025-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/yaml-block-comments-guide/</loc>
+    <lastmod>2025-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/automatically-create-file-requirements-txt/</loc>
+    <lastmod>2025-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-add-existing-frameworks-in-xcode-4/</loc>
+    <lastmod>2025-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/memcached-vs-redis/</loc>
+    <lastmod>2025-06-25</lastmod>
   </url>
   <url>
     <loc>https://119291.xyz/posts/javascript-case-insensitive-string-comparison/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/github-popular-repositories/</loc>
     <lastmod>2025-06-24</lastmod>
   </url>
   <url>
@@ -22,6 +58,14 @@
   </url>
   <url>
     <loc>https://119291.xyz/posts/how-to-avoid-calling-everything-a-what-ever-manager/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/escape-single-quotes-in-single-quoted-strings/</loc>
+    <lastmod>2025-06-24</lastmod>
+  </url>
+  <url>
+    <loc>https://119291.xyz/posts/how-to-deal-with-settingwithcopywarning-in-pandas/</loc>
     <lastmod>2025-06-24</lastmod>
   </url>
   <url>
