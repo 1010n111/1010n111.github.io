@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-06-27T06:29:06.430Z</updated>
+  <updated>2025-06-30T00:25:45.970Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -17,11 +17,186 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vim中remap、noremap、nnoremap和vnoremap映射命令的区别</title>
+    <link href="https://119291.xyz/posts/difference-between-vim-mapping-commands/"/>
+    <id>https://119291.xyz/posts/difference-between-vim-mapping-commands/</id>
+    <published>2025-06-30T00:00:00.000Z</published>
+    <updated>2025-06-30T00:25:45.970Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Vim中remap、noremap、nnoremap和vnoremap映射命令的区别&quot;&gt;&lt;a href=&quot;#Vim中remap、noremap、nnoremap和vnoremap映射命令的区别&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="开发工具使用" scheme="https://119291.xyz/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    <category term="Vim配置与使用" scheme="https://119291.xyz/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Vim%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="Vim" scheme="https://119291.xyz/tags/Vim/"/>
+    
+    <category term="开发工具" scheme="https://119291.xyz/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="Vimscript" scheme="https://119291.xyz/tags/Vimscript/"/>
+    
+    <category term="按键映射" scheme="https://119291.xyz/tags/%E6%8C%89%E9%94%AE%E6%98%A0%E5%B0%84/"/>
+    
+    <category term="递归映射" scheme="https://119291.xyz/tags/%E9%80%92%E5%BD%92%E6%98%A0%E5%B0%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Display number with leading zeros</title>
+    <link href="https://119291.xyz/posts/display-number-with-leading-zeros/"/>
+    <id>https://119291.xyz/posts/display-number-with-leading-zeros/</id>
+    <published>2025-06-30T00:00:00.000Z</published>
+    <updated>2025-06-30T00:25:45.938Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Display-number-with-leading-zeros&quot;&gt;&lt;a href=&quot;#Display-number-with-leading-zeros&quot; class=&quot;headerlink&quot; title=&quot;Display number with</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="字符串格式化" scheme="https://119291.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
+    
+    <category term="前导零显示" scheme="https://119291.xyz/tags/%E5%89%8D%E5%AF%BC%E9%9B%B6%E6%98%BE%E7%A4%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScriptSerializer - JSON serialization of enum as string</title>
+    <link href="https://119291.xyz/posts/javascriptserializer-json-serialization-of-enum-as-string/"/>
+    <id>https://119291.xyz/posts/javascriptserializer-json-serialization-of-enum-as-string/</id>
+    <published>2025-06-30T00:00:00.000Z</published>
+    <updated>2025-06-30T00:25:45.900Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScriptSerializer-JSON-serialization-of-enum-as-string&quot;&gt;&lt;a href=&quot;#JavaScriptSerializer-JSON-serialization-of-enum-as-string&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="序列化与反序列化" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C#" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term="Newtonsoft.Json" scheme="https://119291.xyz/tags/Newtonsoft-Json/"/>
+    
+    <category term="枚举序列化" scheme="https://119291.xyz/tags/%E6%9E%9A%E4%B8%BE%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+    <category term="System.Text.Json" scheme="https://119291.xyz/tags/System-Text-Json/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何查找Python site-packages目录的位置</title>
+    <link href="https://119291.xyz/posts/how-to-find-python-site-packages-directory/"/>
+    <id>https://119291.xyz/posts/how-to-find-python-site-packages-directory/</id>
+    <published>2025-06-30T00:00:00.000Z</published>
+    <updated>2025-06-30T00:25:46.018Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何查找Python-site-packages目录的位置&quot;&gt;&lt;a href=&quot;#如何查找Python-site-packages目录的位置&quot; class=&quot;headerlink&quot; title=&quot;如何查找Python</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python应用实践" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E5%BA%94%E7%94%A8%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="virtualenv" scheme="https://119291.xyz/tags/virtualenv/"/>
+    
+    <category term="sysconfig" scheme="https://119291.xyz/tags/sysconfig/"/>
+    
+    <category term="site-packages目录查找" scheme="https://119291.xyz/tags/site-packages%E7%9B%AE%E5%BD%95%E6%9F%A5%E6%89%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>String formatting: % vs. .format vs. f-string literal</title>
+    <link href="https://119291.xyz/posts/string-formatting-comparison/"/>
+    <id>https://119291.xyz/posts/string-formatting-comparison/</id>
+    <published>2025-06-30T00:00:00.000Z</published>
+    <updated>2025-06-30T00:25:45.866Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;String-formatting-vs-format-vs-f-string-literal&quot;&gt;&lt;a href=&quot;#String-formatting-vs-format-vs-f-string-literal&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="字符串格式化" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="字符串格式化" scheme="https://119291.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
+    
+    <category term="f-string" scheme="https://119291.xyz/tags/f-string/"/>
+    
+    <category term="format函数" scheme="https://119291.xyz/tags/format%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2025-06-27 Github热门仓库</title>
     <link href="https://119291.xyz/posts/2025-06-27-github-re-men-cang-ku/"/>
     <id>https://119291.xyz/posts/2025-06-27-github-re-men-cang-ku/</id>
     <published>2025-06-27T00:00:00.000Z</published>
-    <updated>2025-06-27T06:29:06.430Z</updated>
+    <updated>2025-06-27T06:36:28.768Z</updated>
     
     
       
@@ -56,7 +231,7 @@
     <link href="https://119291.xyz/posts/how-to-align-content-of-a-div-to-the-bottom/"/>
     <id>https://119291.xyz/posts/how-to-align-content-of-a-div-to-the-bottom/</id>
     <published>2025-06-27T00:00:00.000Z</published>
-    <updated>2025-06-27T06:29:06.391Z</updated>
+    <updated>2025-06-27T06:36:28.770Z</updated>
     
     
       
@@ -91,7 +266,7 @@
     <link href="https://119291.xyz/posts/how-to-change-the-href-attribute-for-a-hyperlink-using-jquery/"/>
     <id>https://119291.xyz/posts/how-to-change-the-href-attribute-for-a-hyperlink-using-jquery/</id>
     <published>2025-06-27T00:00:00.000Z</published>
-    <updated>2025-06-27T06:29:06.322Z</updated>
+    <updated>2025-06-27T06:36:28.771Z</updated>
     
     
       
@@ -126,7 +301,7 @@
     <link href="https://119291.xyz/posts/how-to-rebase-local-branch-onto-remote-master/"/>
     <id>https://119291.xyz/posts/how-to-rebase-local-branch-onto-remote-master/</id>
     <published>2025-06-27T00:00:00.000Z</published>
-    <updated>2025-06-27T06:29:06.288Z</updated>
+    <updated>2025-06-27T06:36:28.772Z</updated>
     
     
       
@@ -161,7 +336,7 @@
     <link href="https://119291.xyz/posts/maintain-the-aspect-ratio-of-a-div-with-css/"/>
     <id>https://119291.xyz/posts/maintain-the-aspect-ratio-of-a-div-with-css/</id>
     <published>2025-06-27T00:00:00.000Z</published>
-    <updated>2025-06-27T06:29:06.357Z</updated>
+    <updated>2025-06-27T06:36:28.773Z</updated>
     
     
       
@@ -196,7 +371,7 @@
     <link href="https://119291.xyz/posts/what-is-the-difference-between-gravity-and-layout-gravity-in-android/"/>
     <id>https://119291.xyz/posts/what-is-the-difference-between-gravity-and-layout-gravity-in-android/</id>
     <published>2025-06-27T00:00:00.000Z</published>
-    <updated>2025-06-27T06:29:06.252Z</updated>
+    <updated>2025-06-27T06:36:28.775Z</updated>
     
     
       
@@ -540,181 +715,6 @@
     <category term="match_parent" scheme="https://119291.xyz/tags/match-parent/"/>
     
     <category term="fill_parent" scheme="https://119291.xyz/tags/fill-parent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NP、NP-Complete和NP-Hard的区别</title>
-    <link href="https://119291.xyz/posts/differences-between-np-np-complete-and-np-hard/"/>
-    <id>https://119291.xyz/posts/differences-between-np-np-complete-and-np-hard/</id>
-    <published>2025-06-25T00:00:00.000Z</published>
-    <updated>2025-06-25T00:42:33.168Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;NP、NP-Complete和NP-Hard的区别&quot;&gt;&lt;a href=&quot;#NP、NP-Complete和NP-Hard的区别&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="计算机科学" scheme="https://119291.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="算法复杂度理论" scheme="https://119291.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%90%86%E8%AE%BA/"/>
-    
-    
-    <category term="计算机科学" scheme="https://119291.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/"/>
-    
-    <category term="算法复杂度理论" scheme="https://119291.xyz/tags/%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%90%86%E8%AE%BA/"/>
-    
-    <category term="NP" scheme="https://119291.xyz/tags/NP/"/>
-    
-    <category term="NP-Complete" scheme="https://119291.xyz/tags/NP-Complete/"/>
-    
-    <category term="NP-Hard" scheme="https://119291.xyz/tags/NP-Hard/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在Xcode 4中如何添加现有框架</title>
-    <link href="https://119291.xyz/posts/how-to-add-existing-frameworks-in-xcode-4/"/>
-    <id>https://119291.xyz/posts/how-to-add-existing-frameworks-in-xcode-4/</id>
-    <published>2025-06-25T00:00:00.000Z</published>
-    <updated>2025-06-25T00:42:33.169Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;在Xcode-4中如何添加现有框架&quot;&gt;&lt;a href=&quot;#在Xcode-4中如何添加现有框架&quot; class=&quot;headerlink&quot; title=&quot;在Xcode 4中如何添加现有框架&quot;&gt;&lt;/a&gt;在Xcode 4中如何添加现有框架&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="移动开发" scheme="https://119291.xyz/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Xcode使用" scheme="https://119291.xyz/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/Xcode%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="移动开发" scheme="https://119291.xyz/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="项目配置" scheme="https://119291.xyz/tags/%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE/"/>
-    
-    <category term="Objective-C" scheme="https://119291.xyz/tags/Objective-C/"/>
-    
-    <category term="Xcode" scheme="https://119291.xyz/tags/Xcode/"/>
-    
-    <category term="框架添加" scheme="https://119291.xyz/tags/%E6%A1%86%E6%9E%B6%E6%B7%BB%E5%8A%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何删除Pandas DataFrame中某列值为NaN的行</title>
-    <link href="https://119291.xyz/posts/how-to-drop-rows-of-pandas-dataframe-whose-value-in-a-certain-column-is-nan/"/>
-    <id>https://119291.xyz/posts/how-to-drop-rows-of-pandas-dataframe-whose-value-in-a-certain-column-is-nan/</id>
-    <published>2025-06-25T00:00:00.000Z</published>
-    <updated>2025-06-25T00:42:33.170Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何删除Pandas-DataFrame中某列值为NaN的行&quot;&gt;&lt;a href=&quot;#如何删除Pandas-DataFrame中某列值为NaN的行&quot; class=&quot;headerlink&quot; title=&quot;如何删除Pandas</summary>
-        
-      
-    
-    
-    
-    <category term="数据处理" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    <category term="Pandas数据处理" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/Pandas%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="Pandas" scheme="https://119291.xyz/tags/Pandas/"/>
-    
-    <category term="数据处理" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    <category term="DataFrame操作" scheme="https://119291.xyz/tags/DataFrame%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="缺失值处理" scheme="https://119291.xyz/tags/%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在Visual Studio Code中折叠/隐藏代码段的方法</title>
-    <link href="https://119291.xyz/posts/how-to-fold-code-in-vscode/"/>
-    <id>https://119291.xyz/posts/how-to-fold-code-in-vscode/</id>
-    <published>2025-06-25T00:00:00.000Z</published>
-    <updated>2025-06-25T00:42:33.171Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;在Visual-Studio-Code中折叠-隐藏代码段的方法&quot;&gt;&lt;a href=&quot;#在Visual-Studio-Code中折叠-隐藏代码段的方法&quot; class=&quot;headerlink&quot; title=&quot;在Visual Studio</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="代码编辑器使用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="代码折叠" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E6%8A%98%E5%8F%A0/"/>
-    
-    <category term="Visual Studio Code" scheme="https://119291.xyz/tags/Visual-Studio-Code/"/>
-    
-    <category term="快捷键设置" scheme="https://119291.xyz/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何从暂存区移除单个文件（撤销git add操作）</title>
-    <link href="https://119291.xyz/posts/how-to-remove-a-single-file-from-the-staging-area/"/>
-    <id>https://119291.xyz/posts/how-to-remove-a-single-file-from-the-staging-area/</id>
-    <published>2025-06-25T00:00:00.000Z</published>
-    <updated>2025-06-25T00:42:33.172Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何从暂存区移除单个文件（撤销git-add操作）&quot;&gt;&lt;a href=&quot;#如何从暂存区移除单个文件（撤销git-add操作）&quot; class=&quot;headerlink&quot; title=&quot;如何从暂存区移除单个文件（撤销git</summary>
-        
-      
-    
-    
-    
-    <category term="版本控制" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="Git使用技巧" scheme="https://119291.xyz/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/Git%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    
-    
-    <category term="Git" scheme="https://119291.xyz/tags/Git/"/>
-    
-    <category term="版本控制" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
-    
-    <category term="撤销git add" scheme="https://119291.xyz/tags/%E6%92%A4%E9%94%80git-add/"/>
-    
-    <category term="版本管理工具" scheme="https://119291.xyz/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="暂存区操作" scheme="https://119291.xyz/tags/%E6%9A%82%E5%AD%98%E5%8C%BA%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
