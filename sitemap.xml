@@ -2,25 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://119291.xyz/posts/how-to-find-python-site-packages-directory/</loc>
-    
-    <lastmod>2025-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://119291.xyz/posts/difference-between-vim-mapping-commands/</loc>
-    
-    <lastmod>2025-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://119291.xyz/posts/display-number-with-leading-zeros/</loc>
+    <loc>https://119291.xyz/posts/string-formatting-comparison/</loc>
     
     <lastmod>2025-06-30</lastmod>
     
@@ -38,7 +20,25 @@
   </url>
   
   <url>
-    <loc>https://119291.xyz/posts/string-formatting-comparison/</loc>
+    <loc>https://119291.xyz/posts/how-to-find-python-site-packages-directory/</loc>
+    
+    <lastmod>2025-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://119291.xyz/posts/display-number-with-leading-zeros/</loc>
+    
+    <lastmod>2025-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://119291.xyz/posts/difference-between-vim-mapping-commands/</loc>
     
     <lastmod>2025-06-30</lastmod>
     
