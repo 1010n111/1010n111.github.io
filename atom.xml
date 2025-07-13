@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-06-30T00:33:46.463Z</updated>
+  <updated>2025-07-13T02:13:21.183Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -15,6 +15,214 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2025-07-13 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2025-07-13-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2025-07-13-github-re-men-cang-ku/</id>
+    <published>2025-07-13T00:00:00.000Z</published>
+    <updated>2025-07-13T02:13:21.183Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2025-07-13-Github热门仓库&quot;&gt;&lt;a href=&quot;#2025-07-13-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2025-07-13 Github热门仓库&quot;&gt;&lt;/a&gt;2025-07-13</summary>
+        
+      
+    
+    
+    
+    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="C++" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
+    
+    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="开源仓库" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E4%BB%93%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Activity restart on rotation Android</title>
+    <link href="https://119291.xyz/posts/activity-restart-on-rotation-android/"/>
+    <id>https://119291.xyz/posts/activity-restart-on-rotation-android/</id>
+    <published>2025-07-13T00:00:00.000Z</published>
+    <updated>2025-07-13T02:13:21.102Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Activity-restart-on-rotation-Android&quot;&gt;&lt;a href=&quot;#Activity-restart-on-rotation-Android&quot; class=&quot;headerlink&quot; title=&quot;Activity restart on</summary>
+        
+      
+    
+    
+    
+    <category term="移动开发" scheme="https://119291.xyz/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Android开发" scheme="https://119291.xyz/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/Android%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
+    
+    <category term="移动开发" scheme="https://119291.xyz/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Android" scheme="https://119291.xyz/tags/Android/"/>
+    
+    <category term="Kotlin" scheme="https://119291.xyz/tags/Kotlin/"/>
+    
+    <category term="Activity重启" scheme="https://119291.xyz/tags/Activity%E9%87%8D%E5%90%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Check if table exists in SQL Server</title>
+    <link href="https://119291.xyz/posts/check-if-table-exists-in-sql-server/"/>
+    <id>https://119291.xyz/posts/check-if-table-exists-in-sql-server/</id>
+    <published>2025-07-13T00:00:00.000Z</published>
+    <updated>2025-07-13T02:13:21.076Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Check-if-table-exists-in-SQL-Server&quot;&gt;&lt;a href=&quot;#Check-if-table-exists-in-SQL-Server&quot; class=&quot;headerlink&quot; title=&quot;Check if table exists</summary>
+        
+      
+    
+    
+    
+    <category term="数据库开发" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="SQL Server应用" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/SQL-Server%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="SQL" scheme="https://119291.xyz/tags/SQL/"/>
+    
+    <category term="数据库开发" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="SQL Server" scheme="https://119291.xyz/tags/SQL-Server/"/>
+    
+    <category term="表存在性检查" scheme="https://119291.xyz/tags/%E8%A1%A8%E5%AD%98%E5%9C%A8%E6%80%A7%E6%A3%80%E6%9F%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何向 {this.props.children} 传递 props</title>
+    <link href="https://119291.xyz/posts/how-to-pass-props-to-this-props-children/"/>
+    <id>https://119291.xyz/posts/how-to-pass-props-to-this-props-children/</id>
+    <published>2025-07-13T00:00:00.000Z</published>
+    <updated>2025-07-13T02:13:21.131Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何向-this-props-children-传递-props&quot;&gt;&lt;a href=&quot;#如何向-this-props-children-传递-props&quot; class=&quot;headerlink&quot; title=&quot;如何向 {this.props.children}</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="React开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="React" scheme="https://119291.xyz/tags/React/"/>
+    
+    <category term="组件props传递" scheme="https://119291.xyz/tags/%E7%BB%84%E4%BB%B6props%E4%BC%A0%E9%80%92/"/>
+    
+    <category term="React.cloneElement" scheme="https://119291.xyz/tags/React-cloneElement/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中如何判断一个对象是否可迭代</title>
+    <link href="https://119291.xyz/posts/python-how-to-determine-if-an-object-is-iterable/"/>
+    <id>https://119291.xyz/posts/python-how-to-determine-if-an-object-is-iterable/</id>
+    <published>2025-07-13T00:00:00.000Z</published>
+    <updated>2025-07-13T02:13:21.157Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python中如何判断一个对象是否可迭代&quot;&gt;&lt;a href=&quot;#Python中如何判断一个对象是否可迭代&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="可迭代对象" scheme="https://119291.xyz/tags/%E5%8F%AF%E8%BF%AD%E4%BB%A3%E5%AF%B9%E8%B1%A1/"/>
+    
+    <category term="判断方法" scheme="https://119291.xyz/tags/%E5%88%A4%E6%96%AD%E6%96%B9%E6%B3%95/"/>
+    
+    <category term="迭代协议" scheme="https://119291.xyz/tags/%E8%BF%AD%E4%BB%A3%E5%8D%8F%E8%AE%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中创建多行注释的方法</title>
+    <link href="https://119291.xyz/posts/python-multiline-comments-guide/"/>
+    <id>https://119291.xyz/posts/python-multiline-comments-guide/</id>
+    <published>2025-07-13T00:00:00.000Z</published>
+    <updated>2025-07-13T02:13:21.048Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python中创建多行注释的方法&quot;&gt;&lt;a href=&quot;#Python中创建多行注释的方法&quot; class=&quot;headerlink&quot; title=&quot;Python中创建多行注释的方法&quot;&gt;&lt;/a&gt;Python中创建多行注释的方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="代码注释" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A/"/>
+    
+    <category term="多行注释" scheme="https://119291.xyz/tags/%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A/"/>
+    
+    <category term="PEP8规范" scheme="https://119291.xyz/tags/PEP8%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
   
   <entry>
     <title>Vim中remap、noremap、nnoremap和vnoremap映射命令的区别</title>
@@ -503,218 +711,6 @@
     <category term="数据库查询" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2/"/>
     
     <category term="JOIN" scheme="https://119291.xyz/tags/JOIN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>函数前的感叹号有什么作用？</title>
-    <link href="https://119291.xyz/posts/exclamation-mark-before-function/"/>
-    <id>https://119291.xyz/posts/exclamation-mark-before-function/</id>
-    <published>2025-06-26T00:00:00.000Z</published>
-    <updated>2025-06-26T01:26:15.188Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;函数前的感叹号有什么作用？&quot;&gt;&lt;a href=&quot;#函数前的感叹号有什么作用？&quot; class=&quot;headerlink&quot; title=&quot;函数前的感叹号有什么作用？&quot;&gt;&lt;/a&gt;函数前的感叹号有什么作用？&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript 语法" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript-%E8%AF%AD%E6%B3%95/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="语法特性" scheme="https://119291.xyz/tags/%E8%AF%AD%E6%B3%95%E7%89%B9%E6%80%A7/"/>
-    
-    <category term="立即执行函数表达式" scheme="https://119291.xyz/tags/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-    <category term="代码压缩" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决“datetime.datetime not JSON serializable”问题</title>
-    <link href="https://119291.xyz/posts/solve-datetime-json-serialization-issue/"/>
-    <id>https://119291.xyz/posts/solve-datetime-json-serialization-issue/</id>
-    <published>2025-06-26T00:00:00.000Z</published>
-    <updated>2025-06-26T01:26:15.189Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;解决“datetime-datetime-not-JSON-serializable”问题&quot;&gt;&lt;a href=&quot;#解决“datetime-datetime-not-JSON-serializable”问题&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JSON序列化" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E5%BC%80%E5%8F%91/JSON%E5%BA%8F%E5%88%97%E5%8C%96/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="数据处理" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    <category term="JSON" scheme="https://119291.xyz/tags/JSON/"/>
-    
-    <category term="日期序列化" scheme="https://119291.xyz/tags/%E6%97%A5%E6%9C%9F%E5%BA%8F%E5%88%97%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在文本框中使用JavaScript通过回车键触发按钮点击</title>
-    <link href="https://119291.xyz/posts/trigger-button-click-with-javascript-on-enter-key/"/>
-    <id>https://119291.xyz/posts/trigger-button-click-with-javascript-on-enter-key/</id>
-    <published>2025-06-26T00:00:00.000Z</published>
-    <updated>2025-06-26T01:26:15.190Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;在文本框中使用JavaScript通过回车键触发按钮点击&quot;&gt;&lt;a href=&quot;#在文本框中使用JavaScript通过回车键触发按钮点击&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="事件处理" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="jQuery" scheme="https://119291.xyz/tags/jQuery/"/>
-    
-    <category term="回车键事件" scheme="https://119291.xyz/tags/%E5%9B%9E%E8%BD%A6%E9%94%AE%E4%BA%8B%E4%BB%B6/"/>
-    
-    <category term="按钮点击触发" scheme="https://119291.xyz/tags/%E6%8C%89%E9%92%AE%E7%82%B9%E5%87%BB%E8%A7%A6%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Automatically create file &#39;requirements.txt&#39;</title>
-    <link href="https://119291.xyz/posts/automatically-create-file-requirements-txt/"/>
-    <id>https://119291.xyz/posts/automatically-create-file-requirements-txt/</id>
-    <published>2025-06-25T00:00:00.000Z</published>
-    <updated>2025-06-25T00:42:33.165Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Automatically-create-file-‘requirements-txt’&quot;&gt;&lt;a href=&quot;#Automatically-create-file-‘requirements-txt’&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python依赖管理" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="pipreqs" scheme="https://119291.xyz/tags/pipreqs/"/>
-    
-    <category term="pip-tools" scheme="https://119291.xyz/tags/pip-tools/"/>
-    
-    <category term="requirements.txt生成" scheme="https://119291.xyz/tags/requirements-txt%E7%94%9F%E6%88%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2025-06-25 Github热门仓库</title>
-    <link href="https://119291.xyz/posts/2025-06-25-github-re-men-cang-ku/"/>
-    <id>https://119291.xyz/posts/2025-06-25-github-re-men-cang-ku/</id>
-    <published>2025-06-25T00:00:00.000Z</published>
-    <updated>2025-06-25T00:42:33.166Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;2025-06-25-Github热门仓库&quot;&gt;&lt;a href=&quot;#2025-06-25-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2025-06-25 Github热门仓库&quot;&gt;&lt;/a&gt;2025-06-25</summary>
-        
-      
-    
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="开源项目" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
-    
-    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
-    
-    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
-    
-    <category term="Jupyter Notebook" scheme="https://119291.xyz/tags/Jupyter-Notebook/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>match_parent和fill_parent的区别</title>
-    <link href="https://119291.xyz/posts/difference-between-match-parent-and-fill-parent/"/>
-    <id>https://119291.xyz/posts/difference-between-match-parent-and-fill-parent/</id>
-    <published>2025-06-25T00:00:00.000Z</published>
-    <updated>2025-06-25T00:42:33.167Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;match-parent和fill-parent的区别&quot;&gt;&lt;a href=&quot;#match-parent和fill-parent的区别&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="移动开发" scheme="https://119291.xyz/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Android布局属性" scheme="https://119291.xyz/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/Android%E5%B8%83%E5%B1%80%E5%B1%9E%E6%80%A7/"/>
-    
-    
-    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
-    
-    <category term="移动开发" scheme="https://119291.xyz/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Android" scheme="https://119291.xyz/tags/Android/"/>
-    
-    <category term="match_parent" scheme="https://119291.xyz/tags/match-parent/"/>
-    
-    <category term="fill_parent" scheme="https://119291.xyz/tags/fill-parent/"/>
     
   </entry>
   
