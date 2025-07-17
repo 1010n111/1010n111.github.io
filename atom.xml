@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-07-16T00:52:28.150Z</updated>
+  <updated>2025-07-17T00:54:00.045Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -17,11 +17,219 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2025-07-17 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2025-07-17-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2025-07-17-github-re-men-cang-ku/</id>
+    <published>2025-07-17T00:00:00.000Z</published>
+    <updated>2025-07-17T00:54:00.045Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2025-07-17-Github热门仓库&quot;&gt;&lt;a href=&quot;#2025-07-17-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2025-07-17 Github热门仓库&quot;&gt;&lt;/a&gt;2025-07-17</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Bash中用单个命令为shell变量分配默认值</title>
+    <link href="https://119291.xyz/posts/assigning-default-values-to-shell-variables-in-bash/"/>
+    <id>https://119291.xyz/posts/assigning-default-values-to-shell-variables-in-bash/</id>
+    <published>2025-07-17T00:00:00.000Z</published>
+    <updated>2025-07-17T00:53:59.953Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在Bash中用单个命令为shell变量分配默认值&quot;&gt;&lt;a href=&quot;#在Bash中用单个命令为shell变量分配默认值&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell脚本编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Shell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="Bash" scheme="https://119291.xyz/tags/Bash/"/>
+    
+    <category term="参数扩展" scheme="https://119291.xyz/tags/%E5%8F%82%E6%95%B0%E6%89%A9%E5%B1%95/"/>
+    
+    <category term="变量默认值分配" scheme="https://119291.xyz/tags/%E5%8F%98%E9%87%8F%E9%BB%98%E8%AE%A4%E5%80%BC%E5%88%86%E9%85%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在Vim中移动到行尾</title>
+    <link href="https://119291.xyz/posts/how-to-move-to-end-of-line-in-vim/"/>
+    <id>https://119291.xyz/posts/how-to-move-to-end-of-line-in-vim/</id>
+    <published>2025-07-17T00:00:00.000Z</published>
+    <updated>2025-07-17T00:54:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何在Vim中移动到行尾&quot;&gt;&lt;a href=&quot;#如何在Vim中移动到行尾&quot; class=&quot;headerlink&quot; title=&quot;如何在Vim中移动到行尾&quot;&gt;&lt;/a&gt;如何在Vim中移动到行尾&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="开发工具" scheme="https://119291.xyz/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="Vim使用技巧" scheme="https://119291.xyz/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="Vim" scheme="https://119291.xyz/tags/Vim/"/>
+    
+    <category term="文本编辑" scheme="https://119291.xyz/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91/"/>
+    
+    <category term="开发工具" scheme="https://119291.xyz/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="光标移动" scheme="https://119291.xyz/tags/%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hex transparency in colors</title>
+    <link href="https://119291.xyz/posts/hex-transparency-in-colors/"/>
+    <id>https://119291.xyz/posts/hex-transparency-in-colors/</id>
+    <published>2025-07-17T00:00:00.000Z</published>
+    <updated>2025-07-17T00:53:59.975Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Hex-transparency-in-colors&quot;&gt;&lt;a href=&quot;#Hex-transparency-in-colors&quot; class=&quot;headerlink&quot; title=&quot;Hex transparency in colors&quot;&gt;&lt;/a&gt;Hex</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="颜色编码" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E9%A2%9C%E8%89%B2%E7%BC%96%E7%A0%81/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript（虽然代码有多种语言，但前端常用）" scheme="https://119291.xyz/tags/JavaScript%EF%BC%88%E8%99%BD%E7%84%B6%E4%BB%A3%E7%A0%81%E6%9C%89%E5%A4%9A%E7%A7%8D%E8%AF%AD%E8%A8%80%EF%BC%8C%E4%BD%86%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%EF%BC%89/"/>
+    
+    <category term="SASS" scheme="https://119291.xyz/tags/SASS/"/>
+    
+    <category term="颜色透明度转换" scheme="https://119291.xyz/tags/%E9%A2%9C%E8%89%B2%E9%80%8F%E6%98%8E%E5%BA%A6%E8%BD%AC%E6%8D%A2/"/>
+    
+    <category term="十六进制颜色编码" scheme="https://119291.xyz/tags/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E9%A2%9C%E8%89%B2%E7%BC%96%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python字符串前&#39;b&#39;字符的作用解析</title>
+    <link href="https://119291.xyz/posts/python-string-b-prefix-explanation/"/>
+    <id>https://119291.xyz/posts/python-string-b-prefix-explanation/</id>
+    <published>2025-07-17T00:00:00.000Z</published>
+    <updated>2025-07-17T00:53:59.928Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Python字符串前’b’字符的作用解析&quot;&gt;&lt;a href=&quot;#Python字符串前’b’字符的作用解析&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="字符串处理" scheme="https://119291.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/"/>
+    
+    <category term="字节类型" scheme="https://119291.xyz/tags/%E5%AD%97%E8%8A%82%E7%B1%BB%E5%9E%8B/"/>
+    
+    <category term="编码解码" scheme="https://119291.xyz/tags/%E7%BC%96%E7%A0%81%E8%A7%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C语言中`static`关键字的含义</title>
+    <link href="https://119291.xyz/posts/the-meaning-of-static-in-c/"/>
+    <id>https://119291.xyz/posts/the-meaning-of-static-in-c/</id>
+    <published>2025-07-17T00:00:00.000Z</published>
+    <updated>2025-07-17T00:54:00.022Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;C语言中static关键字的含义&quot;&gt;&lt;a href=&quot;#C语言中static关键字的含义&quot; class=&quot;headerlink&quot; title=&quot;C语言中static关键字的含义&quot;&gt;&lt;/a&gt;C语言中&lt;code&gt;static&lt;/code&gt;关键字的含义&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C语言编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C语言" scheme="https://119291.xyz/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="关键字" scheme="https://119291.xyz/tags/%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    
+    <category term="静态变量" scheme="https://119291.xyz/tags/%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F/"/>
+    
+    <category term="函数作用域" scheme="https://119291.xyz/tags/%E5%87%BD%E6%95%B0%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2025-07-16 Github热门仓库</title>
     <link href="https://119291.xyz/posts/2025-07-16-github-re-men-cang-ku/"/>
     <id>https://119291.xyz/posts/2025-07-16-github-re-men-cang-ku/</id>
     <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:52:28.150Z</updated>
+    <updated>2025-07-16T00:53:54.296Z</updated>
     
     
       
@@ -56,7 +264,7 @@
     <link href="https://119291.xyz/posts/git-uncommit-last-commit-guide/"/>
     <id>https://119291.xyz/posts/git-uncommit-last-commit-guide/</id>
     <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:52:28.050Z</updated>
+    <updated>2025-07-16T00:53:54.298Z</updated>
     
     
       
@@ -91,7 +299,7 @@
     <link href="https://119291.xyz/posts/how-to-output-mysql-query-results-in-csv-format/"/>
     <id>https://119291.xyz/posts/how-to-output-mysql-query-results-in-csv-format/</id>
     <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:52:28.123Z</updated>
+    <updated>2025-07-16T00:53:54.299Z</updated>
     
     
       
@@ -126,7 +334,7 @@
     <link href="https://119291.xyz/posts/how-to-pass-arguments-to-a-batch-file/"/>
     <id>https://119291.xyz/posts/how-to-pass-arguments-to-a-batch-file/</id>
     <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:52:28.072Z</updated>
+    <updated>2025-07-16T00:53:54.300Z</updated>
     
     
       
@@ -161,7 +369,7 @@
     <link href="https://119291.xyz/posts/how-to-sort-an-array-of-integers/"/>
     <id>https://119291.xyz/posts/how-to-sort-an-array-of-integers/</id>
     <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:52:28.099Z</updated>
+    <updated>2025-07-16T00:53:54.301Z</updated>
     
     
       
@@ -196,7 +404,7 @@
     <link href="https://119291.xyz/posts/javascript-array-element-deletion-delete-vs-splice/"/>
     <id>https://119291.xyz/posts/javascript-array-element-deletion-delete-vs-splice/</id>
     <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:52:28.022Z</updated>
+    <updated>2025-07-16T00:53:54.301Z</updated>
     
     
       
@@ -507,212 +715,6 @@
     <category term="Kotlin" scheme="https://119291.xyz/tags/Kotlin/"/>
     
     <category term="Activity重启" scheme="https://119291.xyz/tags/Activity%E9%87%8D%E5%90%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Check if table exists in SQL Server</title>
-    <link href="https://119291.xyz/posts/check-if-table-exists-in-sql-server/"/>
-    <id>https://119291.xyz/posts/check-if-table-exists-in-sql-server/</id>
-    <published>2025-07-13T00:00:00.000Z</published>
-    <updated>2025-07-13T02:18:26.460Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Check-if-table-exists-in-SQL-Server&quot;&gt;&lt;a href=&quot;#Check-if-table-exists-in-SQL-Server&quot; class=&quot;headerlink&quot; title=&quot;Check if table exists</summary>
-        
-      
-    
-    
-    
-    <category term="数据库开发" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="SQL Server应用" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/SQL-Server%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="SQL" scheme="https://119291.xyz/tags/SQL/"/>
-    
-    <category term="数据库开发" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="SQL Server" scheme="https://119291.xyz/tags/SQL-Server/"/>
-    
-    <category term="表存在性检查" scheme="https://119291.xyz/tags/%E8%A1%A8%E5%AD%98%E5%9C%A8%E6%80%A7%E6%A3%80%E6%9F%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何向 {this.props.children} 传递 props</title>
-    <link href="https://119291.xyz/posts/how-to-pass-props-to-this-props-children/"/>
-    <id>https://119291.xyz/posts/how-to-pass-props-to-this-props-children/</id>
-    <published>2025-07-13T00:00:00.000Z</published>
-    <updated>2025-07-13T02:18:26.460Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何向-this-props-children-传递-props&quot;&gt;&lt;a href=&quot;#如何向-this-props-children-传递-props&quot; class=&quot;headerlink&quot; title=&quot;如何向 {this.props.children}</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="React开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/React%E5%BC%80%E5%8F%91/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="React" scheme="https://119291.xyz/tags/React/"/>
-    
-    <category term="组件props传递" scheme="https://119291.xyz/tags/%E7%BB%84%E4%BB%B6props%E4%BC%A0%E9%80%92/"/>
-    
-    <category term="React.cloneElement" scheme="https://119291.xyz/tags/React-cloneElement/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python中如何判断一个对象是否可迭代</title>
-    <link href="https://119291.xyz/posts/python-how-to-determine-if-an-object-is-iterable/"/>
-    <id>https://119291.xyz/posts/python-how-to-determine-if-an-object-is-iterable/</id>
-    <published>2025-07-13T00:00:00.000Z</published>
-    <updated>2025-07-13T02:18:26.462Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Python中如何判断一个对象是否可迭代&quot;&gt;&lt;a href=&quot;#Python中如何判断一个对象是否可迭代&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="可迭代对象" scheme="https://119291.xyz/tags/%E5%8F%AF%E8%BF%AD%E4%BB%A3%E5%AF%B9%E8%B1%A1/"/>
-    
-    <category term="判断方法" scheme="https://119291.xyz/tags/%E5%88%A4%E6%96%AD%E6%96%B9%E6%B3%95/"/>
-    
-    <category term="迭代协议" scheme="https://119291.xyz/tags/%E8%BF%AD%E4%BB%A3%E5%8D%8F%E8%AE%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python中创建多行注释的方法</title>
-    <link href="https://119291.xyz/posts/python-multiline-comments-guide/"/>
-    <id>https://119291.xyz/posts/python-multiline-comments-guide/</id>
-    <published>2025-07-13T00:00:00.000Z</published>
-    <updated>2025-07-13T02:18:26.463Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Python中创建多行注释的方法&quot;&gt;&lt;a href=&quot;#Python中创建多行注释的方法&quot; class=&quot;headerlink&quot; title=&quot;Python中创建多行注释的方法&quot;&gt;&lt;/a&gt;Python中创建多行注释的方法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="代码注释" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A/"/>
-    
-    <category term="多行注释" scheme="https://119291.xyz/tags/%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A/"/>
-    
-    <category term="PEP8规范" scheme="https://119291.xyz/tags/PEP8%E8%A7%84%E8%8C%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vim中remap、noremap、nnoremap和vnoremap映射命令的区别</title>
-    <link href="https://119291.xyz/posts/difference-between-vim-mapping-commands/"/>
-    <id>https://119291.xyz/posts/difference-between-vim-mapping-commands/</id>
-    <published>2025-06-30T00:00:00.000Z</published>
-    <updated>2025-06-30T00:33:46.463Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Vim中remap、noremap、nnoremap和vnoremap映射命令的区别&quot;&gt;&lt;a href=&quot;#Vim中remap、noremap、nnoremap和vnoremap映射命令的区别&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="开发工具使用" scheme="https://119291.xyz/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    <category term="Vim配置与使用" scheme="https://119291.xyz/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/Vim%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="Vim" scheme="https://119291.xyz/tags/Vim/"/>
-    
-    <category term="开发工具" scheme="https://119291.xyz/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    <category term="Vimscript" scheme="https://119291.xyz/tags/Vimscript/"/>
-    
-    <category term="按键映射" scheme="https://119291.xyz/tags/%E6%8C%89%E9%94%AE%E6%98%A0%E5%B0%84/"/>
-    
-    <category term="递归映射" scheme="https://119291.xyz/tags/%E9%80%92%E5%BD%92%E6%98%A0%E5%B0%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Display number with leading zeros</title>
-    <link href="https://119291.xyz/posts/display-number-with-leading-zeros/"/>
-    <id>https://119291.xyz/posts/display-number-with-leading-zeros/</id>
-    <published>2025-06-30T00:00:00.000Z</published>
-    <updated>2025-06-30T00:33:46.464Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Display-number-with-leading-zeros&quot;&gt;&lt;a href=&quot;#Display-number-with-leading-zeros&quot; class=&quot;headerlink&quot; title=&quot;Display number with</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/Python%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="字符串格式化" scheme="https://119291.xyz/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
-    
-    <category term="前导零显示" scheme="https://119291.xyz/tags/%E5%89%8D%E5%AF%BC%E9%9B%B6%E6%98%BE%E7%A4%BA/"/>
     
   </entry>
   
