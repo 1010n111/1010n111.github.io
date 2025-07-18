@@ -4,6 +4,216 @@
   
   
   <entry>
+    <title>2025-07-18 Github热门仓库</title>
+    <link href="/posts/2025-07-18-github-re-men-cang-ku/"/>
+    <url>/posts/2025-07-18-github-re-men-cang-ku/</url>
+    
+    <content type="html"><![CDATA[<h1 id="2025-07-18-Github热门仓库"><a href="#2025-07-18-Github热门仓库" class="headerlink" title="2025-07-18 Github热门仓库"></a>2025-07-18 Github热门仓库</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>GitHub 作为全球最大的开源代码托管平台，每天都会涌现出许多热门的仓库。这些仓库涵盖了各种不同的开发语言和应用场景，为开发者们提供了丰富的学习和参考资源。了解这些热门仓库有助于开发者紧跟技术潮流，学习到最新的技术和开发方法。</p><h2 id="实现步骤（了解热门仓库）"><a href="#实现步骤（了解热门仓库）" class="headerlink" title="实现步骤（了解热门仓库）"></a>实现步骤（了解热门仓库）</h2><ol><li><strong>访问 GitHub</strong>：打开浏览器，访问 GitHub 的官方网站（<a href="https://github.com/%EF%BC%89%E3%80%82">https://github.com/）。</a></li><li><strong>筛选热门仓库</strong>：可以通过 GitHub 的搜索功能，结合热门排序等方式，找到当天的热门仓库。也可以使用第三方的 GitHub 热门仓库聚合网站来快速获取相关信息。</li></ol><h2 id="热门仓库列表"><a href="#热门仓库列表" class="headerlink" title="热门仓库列表"></a>热门仓库列表</h2><h3 id="1-microsoft-markitdown"><a href="#1-microsoft-markitdown" class="headerlink" title="1. microsoft / markitdown"></a>1. microsoft / markitdown</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/microsoft/markitdown">https://github.com/microsoft/markitdown</a></li><li><strong>简介</strong>：Python tool for converting files and office documents to Markdown.</li><li><strong>开发语言</strong>：Python</li></ul><h3 id="2-gitleaks-gitleaks"><a href="#2-gitleaks-gitleaks" class="headerlink" title="2. gitleaks / gitleaks"></a>2. gitleaks / gitleaks</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/gitleaks/gitleaks">https://github.com/gitleaks/gitleaks</a></li><li><strong>简介</strong>：Find secrets with Gitleaks 🔑</li><li><strong>开发语言</strong>：Go</li></ul><h3 id="3-soxoj-maigret"><a href="#3-soxoj-maigret" class="headerlink" title="3. soxoj / maigret"></a>3. soxoj / maigret</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/soxoj/maigret">https://github.com/soxoj/maigret</a></li><li><strong>简介</strong>：🕵️‍♂️ Collect a dossier on a person by username from thousands of sites</li><li><strong>开发语言</strong>：Python</li></ul><h3 id="4-maotoumao-MusicFree"><a href="#4-maotoumao-MusicFree" class="headerlink" title="4. maotoumao / MusicFree"></a>4. maotoumao / MusicFree</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/maotoumao/MusicFree">https://github.com/maotoumao/MusicFree</a></li><li><strong>简介</strong>：插件化、定制化、无广告的免费音乐播放器</li><li><strong>开发语言</strong>：TypeScript</li></ul><h3 id="5-PromtEngineer-localGPT"><a href="#5-PromtEngineer-localGPT" class="headerlink" title="5. PromtEngineer / localGPT"></a>5. PromtEngineer / localGPT</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/PromtEngineer/localGPT">https://github.com/PromtEngineer/localGPT</a></li><li><strong>简介</strong>：Chat with your documents on your local device using GPT models. No data leaves your device and 100% private.</li><li><strong>开发语言</strong>：Python</li></ul><h3 id="6-vanna-ai-vanna"><a href="#6-vanna-ai-vanna" class="headerlink" title="6. vanna-ai / vanna"></a>6. vanna-ai / vanna</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/vanna-ai/vanna">https://github.com/vanna-ai/vanna</a></li><li><strong>简介</strong>：🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using RAG 🔄.</li><li><strong>开发语言</strong>：Python</li></ul><h3 id="7-AykutSarac-jsoncrack-com"><a href="#7-AykutSarac-jsoncrack-com" class="headerlink" title="7. AykutSarac / jsoncrack.com"></a>7. AykutSarac / jsoncrack.com</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/AykutSarac/jsoncrack.com">https://github.com/AykutSarac/jsoncrack.com</a></li><li><strong>简介</strong>：✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML, CSV and more, into interactive graphs.</li><li><strong>开发语言</strong>：TypeScript</li></ul><h3 id="8-musistudio-claude-code-router"><a href="#8-musistudio-claude-code-router" class="headerlink" title="8. musistudio / claude-code-router"></a>8. musistudio / claude-code-router</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/musistudio/claude-code-router">https://github.com/musistudio/claude-code-router</a></li><li><strong>简介</strong>：Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.</li><li><strong>开发语言</strong>：TypeScript</li></ul><h3 id="9-WasmEdge-WasmEdge"><a href="#9-WasmEdge-WasmEdge" class="headerlink" title="9. WasmEdge / WasmEdge"></a>9. WasmEdge / WasmEdge</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/WasmEdge/WasmEdge">https://github.com/WasmEdge/WasmEdge</a></li><li><strong>简介</strong>：WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices.</li><li><strong>开发语言</strong>：C++</li></ul><h3 id="10-strapi-strapi"><a href="#10-strapi-strapi" class="headerlink" title="10. strapi / strapi"></a>10. strapi / strapi</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/strapi/strapi">https://github.com/strapi/strapi</a></li><li><strong>简介</strong>：🚀 Strapi is the leading open-source headless CMS. It’s 100% JavaScript/TypeScript, fully customizable, and developer-first.</li><li><strong>开发语言</strong>：TypeScript</li></ul><h3 id="11-langchain-ai-open-deep-research"><a href="#11-langchain-ai-open-deep-research" class="headerlink" title="11. langchain-ai / open_deep_research"></a>11. langchain-ai / open_deep_research</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/langchain-ai/open_deep_research">https://github.com/langchain-ai/open_deep_research</a></li><li><strong>简介</strong>：无</li><li><strong>开发语言</strong>：Python</li></ul><h3 id="12-helix-editor-helix"><a href="#12-helix-editor-helix" class="headerlink" title="12. helix-editor / helix"></a>12. helix-editor / helix</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/helix-editor/helix">https://github.com/helix-editor/helix</a></li><li><strong>简介</strong>：A post-modern modal text editor.</li><li><strong>开发语言</strong>：Rust</li></ul><h3 id="13-freeCodeCamp-devdocs"><a href="#13-freeCodeCamp-devdocs" class="headerlink" title="13. freeCodeCamp / devdocs"></a>13. freeCodeCamp / devdocs</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/freeCodeCamp/devdocs">https://github.com/freeCodeCamp/devdocs</a></li><li><strong>简介</strong>：API Documentation Browser</li><li><strong>开发语言</strong>：Ruby</li></ul><h3 id="14-cloudcommunity-Free-Certifications"><a href="#14-cloudcommunity-Free-Certifications" class="headerlink" title="14. cloudcommunity / Free-Certifications"></a>14. cloudcommunity / Free-Certifications</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/cloudcommunity/Free-Certifications">https://github.com/cloudcommunity/Free-Certifications</a></li><li><strong>简介</strong>：A curated list of free courses with certifications. Also available at <a href="https://free-certifications.com/">https://free-certifications.com/</a></li><li><strong>开发语言</strong>：Built by</li></ul><h3 id="15-Kyome22-RunCat365"><a href="#15-Kyome22-RunCat365" class="headerlink" title="15. Kyome22 / RunCat365"></a>15. Kyome22 / RunCat365</h3><ul><li><strong>仓库URL</strong>：<a href="https://github.com/Kyome22/RunCat365">https://github.com/Kyome22/RunCat365</a></li><li><strong>简介</strong>：A cute running cat animation on your windows taskbar.</li><li><strong>开发语言</strong>：C#</li></ul><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li><strong>学习借鉴</strong>：对于感兴趣的仓库，可以深入研究其代码结构、实现思路和设计模式，从中学习到优秀的编程实践。</li><li><strong>参与贡献</strong>：如果有能力和时间，可以参与到开源项目的开发中，为项目贡献自己的代码和想法，同时也能提高自己的开发能力。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="1-无法访问某些仓库"><a href="#1-无法访问某些仓库" class="headerlink" title="1. 无法访问某些仓库"></a>1. 无法访问某些仓库</h3><p>可能是由于网络问题或者仓库设置了访问权限。可以检查网络连接，或者尝试联系仓库的所有者获取访问权限。</p><h3 id="2-对仓库代码理解困难"><a href="#2-对仓库代码理解困难" class="headerlink" title="2. 对仓库代码理解困难"></a>2. 对仓库代码理解困难</h3><p>可以查看仓库的文档、README 文件等，了解项目的基本信息和使用方法。也可以在相关的技术社区或者论坛上寻求帮助。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件开发</category>
+      
+      <category>开源项目</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+      <tag>软件开发</tag>
+      
+      <tag>TypeScript</tag>
+      
+      <tag>开源仓库</tag>
+      
+      <tag>Github</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>AI工程中心仓库介绍</title>
+    <link href="/posts/ai-engineering-hub-introduction/"/>
+    <url>/posts/ai-engineering-hub-introduction/</url>
+    
+    <content type="html"><![CDATA[<h1 id="AI工程中心仓库介绍"><a href="#AI工程中心仓库介绍" class="headerlink" title="AI工程中心仓库介绍"></a>AI工程中心仓库介绍</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>AI工程领域发展迅速，要想处于前沿位置，既需要深入理解相关知识，也需要具备实践经验。GitHub上的<code>patchy631/ai-engineering-hub</code>仓库就是为满足这一需求而创建的，它为不同技能水平的人员提供了在AI工程领域进行实验和取得成功的资源。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="利用仓库资源"><a href="#利用仓库资源" class="headerlink" title="利用仓库资源"></a>利用仓库资源</h3><ol><li><strong>学习教程</strong>：仓库中包含关于大语言模型（LLMs）和检索增强生成（RAGs）的深入教程，可通过阅读这些教程来学习相关知识。</li><li><strong>参考应用示例</strong>：查看真实世界的AI智能体应用示例，可将这些示例应用到自己的项目中，进行实现、调整和扩展。</li></ol><h3 id="订阅时事通讯"><a href="#订阅时事通讯" class="headerlink" title="订阅时事通讯"></a>订阅时事通讯</h3><p>订阅时事通讯可免费获得一本包含150多个数据科学重要课程的电子书，同时还能及时了解最新教程、见解和独家资源。</p><h3 id="参与贡献"><a href="#参与贡献" class="headerlink" title="参与贡献"></a>参与贡献</h3><ol><li><strong>Fork仓库</strong>：将仓库Fork到自己的GitHub账户下。</li><li><strong>创建新分支</strong>：为自己的贡献创建一个新的分支。</li><li><strong>提交Pull Request</strong>：描述所做的改进并提交Pull Request。</li></ol><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>仓库中并未直接给出核心代码示例，但可以根据其提供的教程和示例，在自己的项目中实现相关代码。例如，使用Python实现大语言模型的简单调用：</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> openai<br><br><span class="hljs-comment"># 设置API密钥</span><br>openai.api_key = <span class="hljs-string">"your_api_key"</span><br><br><span class="hljs-comment"># 调用大语言模型</span><br>response = openai.Completion.create(<br>    engine=<span class="hljs-string">"text-davinci-003"</span>,<br>    prompt=<span class="hljs-string">"你的提示信息"</span>,<br>    max_tokens=<span class="hljs-number">100</span><br>)<br><br><span class="hljs-built_in">print</span>(response.choices[<span class="hljs-number">0</span>].text)<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li>对于初学者，可以先从简单的示例开始学习，逐步深入理解教程内容。</li><li>参与贡献时，要确保自己的代码符合规范，并详细描述所做的改进，以便审核通过。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="如何获取API密钥？"><a href="#如何获取API密钥？" class="headerlink" title="如何获取API密钥？"></a>如何获取API密钥？</h3><p>对于不同的大语言模型服务提供商，获取API密钥的方式不同。以OpenAI为例，需要在OpenAI官网注册并创建API密钥。</p><h3 id="提交的Pull-Request未通过审核怎么办？"><a href="#提交的Pull-Request未通过审核怎么办？" class="headerlink" title="提交的Pull Request未通过审核怎么办？"></a>提交的Pull Request未通过审核怎么办？</h3><p>仔细阅读审核反馈，根据反馈意见对代码或内容进行修改，再次提交Pull Request。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>人工智能开发</category>
+      
+      <category>技术资源分享</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>GitHub</tag>
+      
+      <tag>人工智能开发</tag>
+      
+      <tag>Python（AI常用）</tag>
+      
+      <tag>大语言模型教程</tag>
+      
+      <tag>AI应用示例</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GitHub泄露系统提示集合仓库介绍</title>
+    <link href="/posts/collection-of-leaked-system-prompts-introduction/"/>
+    <url>/posts/collection-of-leaked-system-prompts-introduction/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub泄露系统提示集合仓库介绍"><a href="#GitHub泄露系统提示集合仓库介绍" class="headerlink" title="GitHub泄露系统提示集合仓库介绍"></a>GitHub泄露系统提示集合仓库介绍</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在当前人工智能领域，基于大语言模型（LLM）的服务广泛应用。这些服务背后的系统提示是其运行的关键部分。而这个名为<code>leaked-system-prompts</code>的GitHub仓库就收集了来自广泛使用的基于LLM服务的泄露系统提示。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="提交PR"><a href="#提交PR" class="headerlink" title="提交PR"></a>提交PR</h3><p>如果你想向该仓库提交PR，需要匹配其他文档的格式。必须包含可验证的来源或可复现的提示。</p><h3 id="简单提交"><a href="#简单提交" class="headerlink" title="简单提交"></a>简单提交</h3><p>若上述提交PR的过程过于繁琐，你可以在Issues部分简单地发布一个链接。如果有可验证的来源或可复现的提示，仓库维护者会进行验证，然后进行合并操作。</p><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>此仓库主要是收集文档，暂未涉及特定的代码。但可以用以下Python代码示例模拟验证可复现提示的过程：</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">verify_prompt</span>(<span class="hljs-params">prompt</span>):<br>    <span class="hljs-comment"># 这里可以添加具体的验证逻辑</span><br>    <span class="hljs-comment"># 例如检查提示是否符合某种格式，是否能在本地环境复现等</span><br>    <span class="hljs-keyword">if</span> <span class="hljs-built_in">isinstance</span>(prompt, <span class="hljs-built_in">str</span>) <span class="hljs-keyword">and</span> <span class="hljs-built_in">len</span>(prompt) &gt; <span class="hljs-number">0</span>:<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">True</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-literal">False</span><br><br>prompt = <span class="hljs-string">"这是一个示例提示"</span><br><span class="hljs-keyword">if</span> verify_prompt(prompt):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">"提示可验证"</span>)<br><span class="hljs-keyword">else</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">"提示不可验证"</span>)<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><p>在提交内容时，尽量提供详细的来源信息，以方便仓库维护者进行验证。同时，要确保提交的内容不包含敏感商业源代码，以防止因DMCA警告导致仓库被下架。</p><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="仓库为何禁止包含敏感商业源代码？"><a href="#仓库为何禁止包含敏感商业源代码？" class="headerlink" title="仓库为何禁止包含敏感商业源代码？"></a>仓库为何禁止包含敏感商业源代码？</h3><p>为了防止因DMCA警告导致仓库被下架，所以要求不包含敏感商业源代码。</p><h3 id="提交的提示需要满足什么条件？"><a href="#提交的提示需要满足什么条件？" class="headerlink" title="提交的提示需要满足什么条件？"></a>提交的提示需要满足什么条件？</h3><p>需要匹配其他文档的格式，并且必须包含可验证的来源或可复现的提示。 </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>人工智能</category>
+      
+      <category>开源项目</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>人工智能</tag>
+      
+      <tag>GitHub</tag>
+      
+      <tag>开源</tag>
+      
+      <tag>系统提示收集</tag>
+      
+      <tag>LLM服务</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GitHub - microsoft/edit 编辑器介绍与安装使用指南</title>
+    <link href="/posts/github-microsoft-edit-introduction-and-guide/"/>
+    <url>/posts/github-microsoft-edit-introduction-and-guide/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub-microsoft-edit-编辑器介绍与安装使用指南"><a href="#GitHub-microsoft-edit-编辑器介绍与安装使用指南" class="headerlink" title="GitHub - microsoft/edit 编辑器介绍与安装使用指南"></a>GitHub - microsoft/edit 编辑器介绍与安装使用指南</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p><code>GitHub - microsoft/edit</code> 是一款简单的编辑器，旨在满足基本的编辑需求。它致敬经典的 MS - DOS 编辑器，同时拥有现代的界面以及类似于 VS Code 的输入控件。其目标是提供一款易于使用的编辑器，即使是不太熟悉终端的用户也能轻松上手。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li><strong>下载二进制文件</strong>：可以从 Releases 页面下载二进制文件。</li><li><strong>Windows 系统安装</strong>：可以使用 WinGet 安装最新版本：</li></ol><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">winget install Microsoft.Edit<br></code></pre></td></tr></tbody></table></figure><h3 id="构建说明"><a href="#构建说明" class="headerlink" title="构建说明"></a>构建说明</h3><ol><li><strong>安装 Rust</strong>：安装 nightly 工具链：</li></ol><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">rustup install nightly<br></code></pre></td></tr></tbody></table></figure><p>也可以设置环境变量 <code>RUSTC_BOOTSTRAP = 1</code>。<br>2. <strong>克隆仓库</strong>：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">git clone &lt;仓库地址&gt;<br></code></pre></td></tr></tbody></table></figure><ol start="3"><li><strong>发布版本构建</strong>：</li></ol><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cargo build --config .cargo/release.toml --release<br></code></pre></td></tr></tbody></table></figure><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>以下是使用 WinGet 安装的代码示例：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">winget install Microsoft.Edit<br></code></pre></td></tr></tbody></table></figure><p>构建发布版本的代码：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cargo build --config .cargo/release.toml --release<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h3 id="包维护者注意事项"><a href="#包维护者注意事项" class="headerlink" title="包维护者注意事项"></a>包维护者注意事项</h3><ol><li><strong>包命名</strong>：规范的可执行文件名为 “edit”，替代名称为 “msedit”。由于 “edit” 可能与现有命令冲突，建议将包和可执行文件命名为 “msedit”，避免使用 “ms - edit” 等名称。如果可能，推荐分配 “edit” 别名。</li><li><strong>ICU 库名称（SONAME）</strong>：该项目的搜索和替换功能可选依赖于 ICU 库。默认情况下，项目会查找无版本后缀的 SONAME：<ul><li>Windows：<code>icuuc.dll</code></li><li>macOS：<code>libicuuc.dylib</code></li><li>UNIX 及其他操作系统：<code>libicuuc.so</code><br>如果安装使用不同的 SONAME，请在构建时设置以下环境变量：</li></ul></li></ol><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">EDIT_CFG_ICUUC_SONAME: 例如，libicuuc.so.76<br>EDIT_CFG_ICUI18N_SONAME: 例如，libicui18n.so.76<br></code></pre></td></tr></tbody></table></figure><p>此外，如果安装使用带版本的导出，请设置：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">EDIT_CFG_ICU_CPP_EXPORTS: 如果设置为 true，将查找 C++ 符号，如 _u_errorName。macOS 上默认启用。<br>EDIT_CFG_ICU_RENAMING_VERSION: 如果设置为版本号，如 76，将查找符号，如 u_errorName_76。<br></code></pre></td></tr></tbody></table></figure><p>最后，可以设置以下环境变量：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">EDIT_CFG_ICU_RENAMING_AUTO_DETECT: 如果设置为 true，可执行文件将在运行时尝试检测 EDIT_CFG_ICU_RENAMING_VERSION 值。不建议依赖此方法，因为它未得到 ICU 的官方支持。如果没有设置其他选项，UNIX（不包括 macOS）上默认启用。<br></code></pre></td></tr></tbody></table></figure><h3 id="测试设置"><a href="#测试设置" class="headerlink" title="测试设置"></a>测试设置</h3><p>要测试设置，使用 <code>--ignored</code> 标志再次运行 <code>cargo test</code>：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cargo test -- --ignored<br></code></pre></td></tr></tbody></table></figure><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ol><li><strong>命名冲突</strong>：”edit” 可能与现有命令冲突，可按建议将包和可执行文件命名为 “msedit”。</li><li><strong>ICU 库问题</strong>：如果安装使用不同的 ICU 库 SONAME 或带版本的导出，需要按上述说明设置相应的环境变量。</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件开发</category>
+      
+      <category>代码编辑器</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>GitHub</tag>
+      
+      <tag>软件开发</tag>
+      
+      <tag>Rust</tag>
+      
+      <tag>代码编辑器</tag>
+      
+      <tag>软件安装</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GitHub - HarbourMasters/SpaghettiKart项目介绍与使用指南</title>
+    <link href="/posts/github-harbourmasters-spaghettikart-project-guide/"/>
+    <url>/posts/github-harbourmasters-spaghettikart-project-guide/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub-HarbourMasters-SpaghettiKart项目介绍与使用指南"><a href="#GitHub-HarbourMasters-SpaghettiKart项目介绍与使用指南" class="headerlink" title="GitHub - HarbourMasters/SpaghettiKart项目介绍与使用指南"></a>GitHub - HarbourMasters/SpaghettiKart项目介绍与使用指南</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>HarbourMasters/SpaghettiKart项目正在寻找对制作可滚动菜单感兴趣的C或C++程序员，该项目目前需要构建能容纳大量条目的可滚动菜单，虽然已有自定义菜单的 tick/render 系统，但缺少显示自定义内容的方法。同时需要注意，该项目不支持盗版，且不包含任何受版权保护的资产，用户需自行提供支持的游戏副本。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="1-验证ROM转储"><a href="#1-验证ROM转储" class="headerlink" title="1. 验证ROM转储"></a>1. 验证ROM转储</h3><p>仅支持美国版本的ROM，可通过在线工具<a href="https://www.romhacking.net/hash/">https://www.romhacking.net/hash/</a> 验证已转储的游戏副本。美国ROM的SHA - 1哈希值为：579C48E211AE952530FFC8738709F078D5DD215E。</p><h3 id="2-验证ROM格式"><a href="#2-验证ROM格式" class="headerlink" title="2. 验证ROM格式"></a>2. 验证ROM格式</h3><p>ROM需要为 .z64 格式。若为 .n64 格式，可使用<a href="https://hack64.net/tools/swapper.php">https://hack64.net/tools/swapper.php</a> 进行转换。</p><h3 id="3-下载SpaghettiKart"><a href="#3-下载SpaghettiKart" class="headerlink" title="3. 下载SpaghettiKart"></a>3. 下载SpaghettiKart</h3><p>从 Releases 中下载SpaghettiKart。</p><h3 id="4-从ROM生成O2R"><a href="#4-从ROM生成O2R" class="headerlink" title="4. 从ROM生成O2R"></a>4. 从ROM生成O2R</h3><ul><li><strong>Windows</strong>：将zip文件中的所有文件解压到选定的文件夹，运行 “Spaghettify.exe” 并选择美国ROM。</li><li><strong>Linux</strong>：将zip文件中的所有文件解压到选定的文件夹，运行 “spaghetti.appimage” 并选择美国ROM，可能需要通过终端执行 <code>chmod +x</code> 命令赋予执行权限。</li><li><strong>Nintendo Switch</strong>：运行PC版本生成 mk64.o2r 文件，启动PC版游戏后，在 Spaghettify.exe 或 spaghetti.appimage 所在目录找到这些文件，然后复制到SD卡。</li></ul><h3 id="5-开始游戏"><a href="#5-开始游戏" class="headerlink" title="5. 开始游戏"></a>5. 开始游戏</h3><p>启动 Spaghettify.exe 即可开始游戏。</p><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>文档中未提及核心代码相关内容。</p><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ul><li><p><strong>默认键盘配置</strong>：</p><table><thead><tr><th>N64按键</th><th>键盘按键</th></tr></thead><tbody><tr><td>A</td><td>Shift</td></tr><tr><td>B</td><td>Ctrl</td></tr><tr><td>Z</td><td>Z</td></tr><tr><td>Start</td><td>Enter</td></tr><tr><td>模拟摇杆</td><td>方向键</td></tr><tr><td>C按钮</td><td>TGFH (↑ ↓ ← →)</td></tr><tr><td>D - Pad</td><td>Num 8 2 4 6</td></tr></tbody></table></li><li><p><strong>其他快捷键</strong>：</p><table><thead><tr><th>按键</th><th>操作</th></tr></thead><tbody><tr><td>F11</td><td>全屏</td></tr><tr><td>Tab</td><td>切换备用资源</td></tr><tr><td>Ctrl + R</td><td>重置</td></tr><tr><td>Esc</td><td>设置</td></tr></tbody></table></li></ul><h3 id="图形后端"><a href="#图形后端" class="headerlink" title="图形后端"></a>图形后端</h3><p>目前支持三种渲染API：DirectX11（Windows）、OpenGL（所有平台）和 Metal（macOS）。可在菜单栏的设置菜单中更改使用的API，更改后需要重启。若遇到崩溃问题，可在 spaghettify.cfg.json 文件中找到 <code>"Backend":{...</code> 行，将 id 值更改为 3 并将 Name 设置为 OpenGL。Windows默认使用 id 为 2 的 DirectX 11，macOS默认使用 id 为 4 的 Metal。</p><h3 id="自定义资产"><a href="#自定义资产" class="headerlink" title="自定义资产"></a>自定义资产</h3><p>自定义资产以 .o2r 或存储的 .zip 文件形式打包，将其放置在 mods 文件夹中即可使用。若想创建和打包自己的自定义资产 .o2r 文件，可使用 retro - O2R generator 和 fast64 - Blender plugin 工具。注意，SpaghettiKart 不支持 .otr 存档。</p><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul><li><strong>遇到问题如何求助</strong>：若阅读README后仍有问题，可在 SpaghettiKart 支持文本频道寻求帮助，官方Discord链接为：<a href="https://discord.com/invite/shipofharkinian%E3%80%82">https://discord.com/invite/shipofharkinian。</a></li><li><strong>版权问题</strong>：项目不支持盗版，必须提供支持的游戏副本。</li><li><strong>ROM版本和格式</strong>：仅支持美国ROM版本，且ROM需为 .z64 格式。</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>游戏开发</category>
+      
+      <category>开源项目实践</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>C++</tag>
+      
+      <tag>GitHub</tag>
+      
+      <tag>游戏开发</tag>
+      
+      <tag>游戏配置</tag>
+      
+      <tag>游戏运行</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Telegram安卓版源码使用指南</title>
+    <link href="/posts/telegram-android-source-code-guide/"/>
+    <url>/posts/telegram-android-source-code-guide/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Telegram安卓版源码使用指南"><a href="#Telegram安卓版源码使用指南" class="headerlink" title="Telegram安卓版源码使用指南"></a>Telegram安卓版源码使用指南</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>Telegram 是一款专注于速度和安全的即时通讯应用，它具有快速、简单且免费的特点。该仓库包含了 Telegram 安卓应用的官方源代码，开发者可以利用其 API 和源代码在 Telegram 平台上创建应用。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="创建-Telegram-应用"><a href="#创建-Telegram-应用" class="headerlink" title="创建 Telegram 应用"></a>创建 Telegram 应用</h3><ol><li>为你的应用获取自己的 <code>api_id</code>。</li><li>不要在你的应用中使用 “Telegram” 这个名称，或者确保你的用户明白这是非官方应用。</li><li>不要使用 Telegram 的标准 logo（蓝色圆圈中的白色纸飞机）作为你的应用 logo。</li><li>研究 Telegram 的安全指南，保护好用户的数据和隐私。</li><li>为了符合许可证要求，记得发布你的代码。</li></ol><h3 id="编译指南"><a href="#编译指南" class="headerlink" title="编译指南"></a>编译指南</h3><ol><li>为了支持可重复构建，该仓库包含了虚拟的 <code>release.keystore</code>、<code>google-services.json</code> 以及 <code>BuildVars.java</code> 中的填充变量。在发布自己的 APK 之前，请确保用你自己的文件替换这些文件。</li><li>你需要 Android Studio 3.4、Android NDK rev. 20 和 Android SDK 8.1。</li><li>从 <code>https://github.com/DrKLO/Telegram</code> 下载 Telegram 源代码：</li></ol><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/DrKLO/Telegram.git<br></code></pre></td></tr></tbody></table></figure><ol start="4"><li>将你的 <code>release.keystore</code> 复制到 <code>TMessagesProj/config</code> 目录。</li><li>在 <code>gradle.properties</code> 中填写 <code>RELEASE_KEY_PASSWORD</code>、<code>RELEASE_KEY_ALIAS</code>、<code>RELEASE_STORE_PASSWORD</code> 以访问你的 <code>release.keystore</code>。</li><li>访问 <code>https://console.firebase.google.com/</code>，创建两个 Android 应用，应用 ID 分别为 <code>org.telegram.messenger</code> 和 <code>org.telegram.messenger.beta</code>，开启 Firebase 消息传递功能并下载 <code>google-services.json</code>，将其复制到 <code>TMessagesProj</code> 所在的同一目录。</li><li>在 Android Studio 中打开项目（注意是打开，而不是导入）。</li><li>在 <code>TMessagesProj/src/main/java/org/telegram/messenger/BuildVars.java</code> 中填写值，每个变量都有链接显示从哪里获取以及获取哪些数据。</li><li>完成以上步骤后，你就可以编译 Telegram 了。</li></ol><h3 id="本地化"><a href="#本地化" class="headerlink" title="本地化"></a>本地化</h3><p>所有翻译文件已移至 <code>https://translations.telegram.org/en/android/</code>，请使用该链接进行本地化操作。</p><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>代码主要涉及 Java 语言，以下是部分关键代码所在位置：</p><ul><li><code>TMessagesProj/src/main/java/org/telegram/messenger/BuildVars.java</code>：包含编译所需的变量。</li><li><code>gradle.properties</code>：包含访问 <code>release.keystore</code> 的密码和别名等信息。</li></ul><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li>在开发之前，仔细阅读 Telegram 的 API 手册（<code>https://core.telegram.org/api</code>）和 MTproto 协议手册（<code>https://core.telegram.org/mtproto</code>），了解 Telegram 的技术架构和协议规范。</li><li>严格遵守 Telegram 对开发者的要求，确保应用的合法性和规范性。</li><li>在编译过程中，按照步骤逐步操作，确保每个文件和变量都正确配置。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul><li><strong>编译失败</strong>：检查是否按照编译指南正确替换了 <code>release.keystore</code>、<code>google-services.json</code> 等文件，以及是否在 <code>gradle.properties</code> 和 <code>BuildVars.java</code> 中正确填写了相关信息。</li><li><strong>API 使用问题</strong>：参考 Telegram 的 API 手册和 MTproto 协议手册，或者在 Telegram 的开发者社区寻求帮助。</li><li><strong>本地化问题</strong>：确保使用 <code>https://translations.telegram.org/en/android/</code> 进行翻译，遵循其翻译规范。</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>移动开发</category>
+      
+      <category>即时通讯应用开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>移动开发</tag>
+      
+      <tag>Telegram</tag>
+      
+      <tag>应用开发</tag>
+      
+      <tag>代码编译</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2025-07-17 Github热门仓库</title>
     <link href="/posts/2025-07-17-github-re-men-cang-ku/"/>
     <url>/posts/2025-07-17-github-re-men-cang-ku/</url>
