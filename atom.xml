@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-07-18T00:50:24.251Z</updated>
+  <updated>2025-07-19T01:40:11.850Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -17,11 +17,221 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2025-07-19 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2025-07-19-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2025-07-19-github-re-men-cang-ku/</id>
+    <published>2025-07-19T00:00:00.000Z</published>
+    <updated>2025-07-19T01:40:11.850Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2025-07-19-Github热门仓库&quot;&gt;&lt;a href=&quot;#2025-07-19-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2025-07-19 Github热门仓库&quot;&gt;&lt;/a&gt;2025-07-19</summary>
+        
+      
+    
+    
+    
+    <category term="代码托管" scheme="https://119291.xyz/categories/%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1/"/>
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源项目" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="代码托管" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Effect-TS在TypeScript中构建生产就绪应用</title>
+    <link href="https://119291.xyz/posts/build-production-ready-applications-with-effect-ts-in-typescript/"/>
+    <id>https://119291.xyz/posts/build-production-ready-applications-with-effect-ts-in-typescript/</id>
+    <published>2025-07-19T00:00:00.000Z</published>
+    <updated>2025-07-19T01:40:11.793Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用Effect-TS在TypeScript中构建生产就绪应用&quot;&gt;&lt;a href=&quot;#使用Effect-TS在TypeScript中构建生产就绪应用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="框架使用" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Effect-TS" scheme="https://119291.xyz/tags/Effect-TS/"/>
+    
+    <category term="应用构建" scheme="https://119291.xyz/tags/%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA/"/>
+    
+    <category term="框架贡献" scheme="https://119291.xyz/tags/%E6%A1%86%E6%9E%B6%E8%B4%A1%E7%8C%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Claude Code Router工具使用指南</title>
+    <link href="https://119291.xyz/posts/claude-code-router-usage-guide/"/>
+    <id>https://119291.xyz/posts/claude-code-router-usage-guide/</id>
+    <published>2025-07-19T00:00:00.000Z</published>
+    <updated>2025-07-19T01:40:11.708Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Claude-Code-Router工具使用指南&quot;&gt;&lt;a href=&quot;#Claude-Code-Router工具使用指南&quot; class=&quot;headerlink&quot; title=&quot;Claude Code Router工具使用指南&quot;&gt;&lt;/a&gt;Claude Code</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能开发" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="模型调用工具" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="人工智能开发" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="@musistudio/claude-code-router" scheme="https://119291.xyz/tags/musistudio-claude-code-router/"/>
+    
+    <category term="模型路由" scheme="https://119291.xyz/tags/%E6%A8%A1%E5%9E%8B%E8%B7%AF%E7%94%B1/"/>
+    
+    <category term="GitHub Actions" scheme="https://119291.xyz/tags/GitHub-Actions/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Playwright：Web测试与自动化框架介绍</title>
+    <link href="https://119291.xyz/posts/playwright-web-testing-and-automation-introduction/"/>
+    <id>https://119291.xyz/posts/playwright-web-testing-and-automation-introduction/</id>
+    <published>2025-07-19T00:00:00.000Z</published>
+    <updated>2025-07-19T01:40:11.821Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Playwright：Web测试与自动化框架介绍&quot;&gt;&lt;a href=&quot;#Playwright：Web测试与自动化框架介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="自动化测试" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="Playwright" scheme="https://119291.xyz/tags/Playwright/"/>
+    
+    <category term="自动化测试" scheme="https://119291.xyz/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="Web测试" scheme="https://119291.xyz/tags/Web%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LEGO Island 便携版项目介绍</title>
+    <link href="https://119291.xyz/posts/lego-island-portable-project-introduction/"/>
+    <id>https://119291.xyz/posts/lego-island-portable-project-introduction/</id>
+    <published>2025-07-19T00:00:00.000Z</published>
+    <updated>2025-07-19T01:40:11.737Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;LEGO-Island-便携版项目介绍&quot;&gt;&lt;a href=&quot;#LEGO-Island-便携版项目介绍&quot; class=&quot;headerlink&quot; title=&quot;LEGO Island 便携版项目介绍&quot;&gt;&lt;/a&gt;LEGO Island 便携版项目介绍&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="游戏开发" scheme="https://119291.xyz/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="游戏移植" scheme="https://119291.xyz/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E6%B8%B8%E6%88%8F%E7%A7%BB%E6%A4%8D/"/>
+    
+    
+    <category term="游戏开发" scheme="https://119291.xyz/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term="CMake" scheme="https://119291.xyz/tags/CMake/"/>
+    
+    <category term="游戏移植" scheme="https://119291.xyz/tags/%E6%B8%B8%E6%88%8F%E7%A7%BB%E6%A4%8D/"/>
+    
+    <category term="平台独立" scheme="https://119291.xyz/tags/%E5%B9%B3%E5%8F%B0%E7%8B%AC%E7%AB%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typst：强大且易上手的排版系统</title>
+    <link href="https://119291.xyz/posts/typst-powerful-and-easy-typesetting-system/"/>
+    <id>https://119291.xyz/posts/typst-powerful-and-easy-typesetting-system/</id>
+    <published>2025-07-19T00:00:00.000Z</published>
+    <updated>2025-07-19T01:40:11.764Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Typst：强大且易上手的排版系统&quot;&gt;&lt;a href=&quot;#Typst：强大且易上手的排版系统&quot; class=&quot;headerlink&quot; title=&quot;Typst：强大且易上手的排版系统&quot;&gt;&lt;/a&gt;Typst：强大且易上手的排版系统&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="文档排版" scheme="https://119291.xyz/categories/%E6%96%87%E6%A1%A3%E6%8E%92%E7%89%88/"/>
+    
+    <category term="排版工具实践" scheme="https://119291.xyz/categories/%E6%96%87%E6%A1%A3%E6%8E%92%E7%89%88/%E6%8E%92%E7%89%88%E5%B7%A5%E5%85%B7%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="代码编译" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/"/>
+    
+    <category term="文档排版" scheme="https://119291.xyz/tags/%E6%96%87%E6%A1%A3%E6%8E%92%E7%89%88/"/>
+    
+    <category term="Typst" scheme="https://119291.xyz/tags/Typst/"/>
+    
+    <category term="排版系统使用" scheme="https://119291.xyz/tags/%E6%8E%92%E7%89%88%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2025-07-18 Github热门仓库</title>
     <link href="https://119291.xyz/posts/2025-07-18-github-re-men-cang-ku/"/>
     <id>https://119291.xyz/posts/2025-07-18-github-re-men-cang-ku/</id>
     <published>2025-07-18T00:00:00.000Z</published>
-    <updated>2025-07-18T00:50:24.251Z</updated>
+    <updated>2025-07-18T00:51:38.815Z</updated>
     
     
       
@@ -56,7 +266,7 @@
     <link href="https://119291.xyz/posts/ai-engineering-hub-introduction/"/>
     <id>https://119291.xyz/posts/ai-engineering-hub-introduction/</id>
     <published>2025-07-18T00:00:00.000Z</published>
-    <updated>2025-07-18T00:50:24.118Z</updated>
+    <updated>2025-07-18T00:51:38.817Z</updated>
     
     
       
@@ -91,7 +301,7 @@
     <link href="https://119291.xyz/posts/collection-of-leaked-system-prompts-introduction/"/>
     <id>https://119291.xyz/posts/collection-of-leaked-system-prompts-introduction/</id>
     <published>2025-07-18T00:00:00.000Z</published>
-    <updated>2025-07-18T00:50:24.216Z</updated>
+    <updated>2025-07-18T00:51:38.818Z</updated>
     
     
       
@@ -126,7 +336,7 @@
     <link href="https://119291.xyz/posts/github-microsoft-edit-introduction-and-guide/"/>
     <id>https://119291.xyz/posts/github-microsoft-edit-introduction-and-guide/</id>
     <published>2025-07-18T00:00:00.000Z</published>
-    <updated>2025-07-18T00:50:24.151Z</updated>
+    <updated>2025-07-18T00:51:38.819Z</updated>
     
     
       
@@ -161,7 +371,7 @@
     <link href="https://119291.xyz/posts/github-harbourmasters-spaghettikart-project-guide/"/>
     <id>https://119291.xyz/posts/github-harbourmasters-spaghettikart-project-guide/</id>
     <published>2025-07-18T00:00:00.000Z</published>
-    <updated>2025-07-18T00:50:24.180Z</updated>
+    <updated>2025-07-18T00:51:38.820Z</updated>
     
     
       
@@ -196,7 +406,7 @@
     <link href="https://119291.xyz/posts/telegram-android-source-code-guide/"/>
     <id>https://119291.xyz/posts/telegram-android-source-code-guide/</id>
     <published>2025-07-18T00:00:00.000Z</published>
-    <updated>2025-07-18T00:50:24.085Z</updated>
+    <updated>2025-07-18T00:51:38.821Z</updated>
     
     
       
@@ -501,218 +711,6 @@
     <category term="分支管理" scheme="https://119291.xyz/tags/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/"/>
     
     <category term="提交撤销" scheme="https://119291.xyz/tags/%E6%8F%90%E4%BA%A4%E6%92%A4%E9%94%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何将MySQL查询结果输出为CSV格式</title>
-    <link href="https://119291.xyz/posts/how-to-output-mysql-query-results-in-csv-format/"/>
-    <id>https://119291.xyz/posts/how-to-output-mysql-query-results-in-csv-format/</id>
-    <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:53:54.299Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何将MySQL查询结果输出为CSV格式&quot;&gt;&lt;a href=&quot;#如何将MySQL查询结果输出为CSV格式&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="数据库开发" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="MySQL应用" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/MySQL%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="MySQL" scheme="https://119291.xyz/tags/MySQL/"/>
-    
-    <category term="SQL" scheme="https://119291.xyz/tags/SQL/"/>
-    
-    <category term="数据库开发" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="CSV输出" scheme="https://119291.xyz/tags/CSV%E8%BE%93%E5%87%BA/"/>
-    
-    <category term="数据导出" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何向批处理文件传递参数</title>
-    <link href="https://119291.xyz/posts/how-to-pass-arguments-to-a-batch-file/"/>
-    <id>https://119291.xyz/posts/how-to-pass-arguments-to-a-batch-file/</id>
-    <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:53:54.300Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何向批处理文件传递参数&quot;&gt;&lt;a href=&quot;#如何向批处理文件传递参数&quot; class=&quot;headerlink&quot; title=&quot;如何向批处理文件传递参数&quot;&gt;&lt;/a&gt;如何向批处理文件传递参数&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="批处理编程" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%89%B9%E5%A4%84%E7%90%86%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="参数传递" scheme="https://119291.xyz/tags/%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92/"/>
-    
-    <category term="Batch" scheme="https://119291.xyz/tags/Batch/"/>
-    
-    <category term="批处理文件" scheme="https://119291.xyz/tags/%E6%89%B9%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6/"/>
-    
-    <category term="命令行参数" scheme="https://119291.xyz/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何对整数数组进行排序</title>
-    <link href="https://119291.xyz/posts/how-to-sort-an-array-of-integers/"/>
-    <id>https://119291.xyz/posts/how-to-sort-an-array-of-integers/</id>
-    <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:53:54.301Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;如何对整数数组进行排序&quot;&gt;&lt;a href=&quot;#如何对整数数组进行排序&quot; class=&quot;headerlink&quot; title=&quot;如何对整数数组进行排序&quot;&gt;&lt;/a&gt;如何对整数数组进行排序&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="数组操作" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="Array.prototype.sort" scheme="https://119291.xyz/tags/Array-prototype-sort/"/>
-    
-    <category term="数组排序" scheme="https://119291.xyz/tags/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/"/>
-    
-    <category term="整数排序" scheme="https://119291.xyz/tags/%E6%95%B4%E6%95%B0%E6%8E%92%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript中删除数组元素：delete与splice的对比</title>
-    <link href="https://119291.xyz/posts/javascript-array-element-deletion-delete-vs-splice/"/>
-    <id>https://119291.xyz/posts/javascript-array-element-deletion-delete-vs-splice/</id>
-    <published>2025-07-16T00:00:00.000Z</published>
-    <updated>2025-07-16T00:53:54.301Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JavaScript中删除数组元素：delete与splice的对比&quot;&gt;&lt;a href=&quot;#JavaScript中删除数组元素：delete与splice的对比&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript数组操作" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/JavaScript%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/"/>
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="数组操作" scheme="https://119291.xyz/tags/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="splice方法" scheme="https://119291.xyz/tags/splice%E6%96%B9%E6%B3%95/"/>
-    
-    <category term="delete操作符" scheme="https://119291.xyz/tags/delete%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2025-07-15 Github热门仓库</title>
-    <link href="https://119291.xyz/posts/2025-07-15-github-re-men-cang-ku/"/>
-    <id>https://119291.xyz/posts/2025-07-15-github-re-men-cang-ku/</id>
-    <published>2025-07-15T00:00:00.000Z</published>
-    <updated>2025-07-15T07:12:35.041Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;2025-07-15-Github热门仓库&quot;&gt;&lt;a href=&quot;#2025-07-15-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2025-07-15 Github热门仓库&quot;&gt;&lt;/a&gt;2025-07-15</summary>
-        
-      
-    
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="开源项目" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="PowerShell" scheme="https://119291.xyz/tags/PowerShell/"/>
-    
-    <category term="GitHub热门仓库" scheme="https://119291.xyz/tags/GitHub%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>创建泛型方法将 T 约束为枚举类型</title>
-    <link href="https://119291.xyz/posts/create-generic-method-constraining-t-to-an-enum/"/>
-    <id>https://119291.xyz/posts/create-generic-method-constraining-t-to-an-enum/</id>
-    <published>2025-07-15T00:00:00.000Z</published>
-    <updated>2025-07-15T07:12:35.043Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;创建泛型方法将-T-约束为枚举类型&quot;&gt;&lt;a href=&quot;#创建泛型方法将-T-约束为枚举类型&quot; class=&quot;headerlink&quot; title=&quot;创建泛型方法将 T 约束为枚举类型&quot;&gt;&lt;/a&gt;创建泛型方法将 T 约束为枚举类型&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="编程语言实践" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/"/>
-    
-    <category term="C#开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AE%9E%E8%B7%B5/C-%E5%BC%80%E5%8F%91/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="C#" scheme="https://119291.xyz/tags/C/"/>
-    
-    <category term="Visual Studio" scheme="https://119291.xyz/tags/Visual-Studio/"/>
-    
-    <category term="泛型方法" scheme="https://119291.xyz/tags/%E6%B3%9B%E5%9E%8B%E6%96%B9%E6%B3%95/"/>
-    
-    <category term="枚举约束" scheme="https://119291.xyz/tags/%E6%9E%9A%E4%B8%BE%E7%BA%A6%E6%9D%9F/"/>
     
   </entry>
   
