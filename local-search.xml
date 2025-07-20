@@ -4,6 +4,214 @@
   
   
   <entry>
+    <title>不采用白板面试的公司汇总</title>
+    <link href="/posts/companies-without-whiteboard-interviews/"/>
+    <url>/posts/companies-without-whiteboard-interviews/</url>
+    
+    <content type="html"><![CDATA[<h3 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h3><p>传统的白板面试往往侧重于考察求职者对计算机科学 trivia 问题的掌握，这类问题与日常工作关联不大，不能很好地反映求职者的实际工作能力。而“不采用白板面试”则强调使用与日常工作相似的面试技术和问题，如解决实际问题、参与真实项目等，能更准确地评估求职者的能力和适应性。</p><h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><ol><li><strong>明确目标</strong>：求职者首先要确定自己感兴趣的公司或岗位，然后在该列表中查找对应的公司。</li><li><strong>了解面试流程</strong>：对于列表中的公司，仔细阅读其面试流程的描述，包括面试的阶段、形式和重点考察内容。</li><li><strong>针对性准备</strong>：根据不同公司的面试要求，准备相应的技能和知识。例如，如果公司注重实际项目经验，求职者可以准备相关的项目案例和解决方案。</li><li><strong>申请职位</strong>：按照公司的招聘流程，提交申请并参加面试。</li></ol><h3 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h3><p>此文档主要是公司信息的汇总，不涉及具体的代码内容。但如果要对这些信息进行筛选、排序等操作，可以使用编程语言来实现。以下是一个使用 Python 读取 CSV 文件并筛选特定地区公司的示例代码：</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> csv<br><br><span class="hljs-comment"># 假设数据存储在 CSV 文件中</span><br>file_path = <span class="hljs-string">'companies.csv'</span><br><br><span class="hljs-comment"># 筛选特定地区的公司</span><br>target_location = <span class="hljs-string">'San Francisco, CA'</span><br>selected_companies = []<br><br><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(file_path, <span class="hljs-string">'r'</span>, newline=<span class="hljs-string">''</span>) <span class="hljs-keyword">as</span> csvfile:<br>    reader = csv.DictReader(csvfile)<br>    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> reader:<br>        <span class="hljs-keyword">if</span> row[<span class="hljs-string">'Location'</span>] == target_location:<br>            selected_companies.append(row)<br><br><span class="hljs-comment"># 打印筛选结果</span><br><span class="hljs-keyword">for</span> company <span class="hljs-keyword">in</span> selected_companies:<br>    <span class="hljs-built_in">print</span>(company[<span class="hljs-string">'Company'</span>])<br></code></pre></td></tr></tbody></table></figure><h3 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h3><ol><li><strong>提前研究</strong>：在申请职位之前，充分了解公司的业务、文化和技术栈，以便更好地适应面试要求。</li><li><strong>展示实际能力</strong>：在面试过程中，注重展示自己的实际工作能力和解决问题的能力，而不仅仅是理论知识。</li><li><strong>积极沟通</strong>：与面试官保持良好的沟通，表达自己的想法和思路，同时认真听取面试官的反馈。</li><li><strong>持续学习</strong>：不断提升自己的技能和知识，以适应不同公司的面试要求。</li></ol><h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><ol><li><strong>公司信息不准确</strong>：如果发现列表中的公司信息与实际面试情况不符，可以通过提交 PR 的方式进行修正。</li><li><strong>筛选功能不足</strong>：如果需要对公司信息进行更复杂的筛选、排序或分组操作，可以使用 Airtable 或相关的 API 来实现。</li><li><strong>面试难度差异</strong>：不同公司的面试难度和要求可能存在差异，求职者需要根据自己的实际情况进行准备。</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>求职招聘</category>
+      
+      <category>面试技巧</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>面试技巧</tag>
+      
+      <tag>求职招聘</tag>
+      
+      <tag>白板面试</tag>
+      
+      <tag>非白板面试公司</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2025-07-20 Github热门仓库</title>
+    <link href="/posts/2025-07-20-github-re-men-cang-ku/"/>
+    <url>/posts/2025-07-20-github-re-men-cang-ku/</url>
+    
+    <content type="html"><![CDATA[<h1 id="2025-07-20-Github热门仓库"><a href="#2025-07-20-Github热门仓库" class="headerlink" title="2025-07-20 Github热门仓库"></a>2025-07-20 Github热门仓库</h1><p>以下是2025年7月20日GitHub上的热门仓库信息：</p><h2 id="1-hyprwm-Hyprland"><a href="#1-hyprwm-Hyprland" class="headerlink" title="1. hyprwm / Hyprland"></a>1. hyprwm / Hyprland</h2><ul><li>仓库URL: <a href="https://github.com/hyprwm/Hyprland">https://github.com/hyprwm/Hyprland</a></li><li>简介: Hyprland 是一个独立的、高度可定制的动态平铺式 Wayland 合成器，且外观精美。</li><li>开发语言: C++</li></ul><h2 id="2-langchain-ai-open-deep-research"><a href="#2-langchain-ai-open-deep-research" class="headerlink" title="2. langchain-ai / open_deep_research"></a>2. langchain-ai / open_deep_research</h2><ul><li>仓库URL: <a href="https://github.com/langchain-ai/open_deep_research">https://github.com/langchain-ai/open_deep_research</a></li><li>简介: 暂无详细介绍</li><li>开发语言: Python</li></ul><h2 id="3-bluenviron-mediamtx"><a href="#3-bluenviron-mediamtx" class="headerlink" title="3. bluenviron / mediamtx"></a>3. bluenviron / mediamtx</h2><ul><li>仓库URL: <a href="https://github.com/bluenviron/mediamtx">https://github.com/bluenviron/mediamtx</a></li><li>简介: 一个现成可用的 SRT / WebRTC / RTSP / RTMP / LL - HLS 媒体服务器和媒体代理，可用于读取、发布、代理、记录和播放视频及音频流。</li><li>开发语言: Go</li></ul><h2 id="4-shadps4-emu-shadPS4"><a href="#4-shadps4-emu-shadPS4" class="headerlink" title="4. shadps4-emu / shadPS4"></a>4. shadps4-emu / shadPS4</h2><ul><li>仓库URL: <a href="https://github.com/shadps4-emu/shadPS4">https://github.com/shadps4-emu/shadPS4</a></li><li>简介: 一个用 C++ 编写的适用于 Windows、Linux 和 macOS 的 PlayStation 4 模拟器。</li><li>开发语言: C++</li></ul><h2 id="5-soxoj-maigret"><a href="#5-soxoj-maigret" class="headerlink" title="5. soxoj / maigret"></a>5. soxoj / maigret</h2><ul><li>仓库URL: <a href="https://github.com/soxoj/maigret">https://github.com/soxoj/maigret</a></li><li>简介: 通过用户名从数千个网站收集个人资料。</li><li>开发语言: Python</li></ul><h2 id="6-github-github-mcp-server"><a href="#6-github-github-mcp-server" class="headerlink" title="6. github / github-mcp-server"></a>6. github / github-mcp-server</h2><ul><li>仓库URL: <a href="https://github.com/github/github-mcp-server">https://github.com/github/github-mcp-server</a></li><li>简介: GitHub 的官方 MCP 服务器。</li><li>开发语言: Go</li></ul><h2 id="7-remoteintech-remote-jobs"><a href="#7-remoteintech-remote-jobs" class="headerlink" title="7. remoteintech / remote-jobs"></a>7. remoteintech / remote-jobs</h2><ul><li>仓库URL: <a href="https://github.com/remoteintech/remote-jobs">https://github.com/remoteintech/remote-jobs</a></li><li>简介: 一份科技领域部分或完全支持远程工作的公司（职位）列表。</li><li>开发语言: JavaScript</li></ul><h2 id="8-bknd-io-bknd"><a href="#8-bknd-io-bknd" class="headerlink" title="8. bknd-io / bknd"></a>8. bknd-io / bknd</h2><ul><li>仓库URL: <a href="https://github.com/bknd-io/bknd">https://github.com/bknd-io/bknd</a></li><li>简介: 轻量级的 Firebase/Supabase 替代方案，可在任何地方运行，包括 Next.js、Remix、Astro、Cloudflare、Bun、Node、AWS Lambda 等。</li><li>开发语言: TypeScript</li></ul><h2 id="9-mrdbourke-pytorch-deep-learning"><a href="#9-mrdbourke-pytorch-deep-learning" class="headerlink" title="9. mrdbourke / pytorch-deep-learning"></a>9. mrdbourke / pytorch-deep-learning</h2><ul><li>仓库URL: <a href="https://github.com/mrdbourke/pytorch-deep-learning">https://github.com/mrdbourke/pytorch-deep-learning</a></li><li>简介: “Learn PyTorch for Deep Learning: Zero to Mastery” 课程的学习资料。</li><li>开发语言: Jupyter Notebook</li></ul><h2 id="10-n8n-io-n8n"><a href="#10-n8n-io-n8n" class="headerlink" title="10. n8n-io / n8n"></a>10. n8n-io / n8n</h2><ul><li>仓库URL: <a href="https://github.com/n8n-io/n8n">https://github.com/n8n-io/n8n</a></li><li>简介: 具有原生 AI 功能的公平代码工作流自动化平台。结合可视化构建与自定义代码，支持自托管或云部署，有 400 多个集成。</li><li>开发语言: TypeScript</li></ul><h2 id="11-gitleaks-gitleaks"><a href="#11-gitleaks-gitleaks" class="headerlink" title="11. gitleaks / gitleaks"></a>11. gitleaks / gitleaks</h2><ul><li>仓库URL: <a href="https://github.com/gitleaks/gitleaks">https://github.com/gitleaks/gitleaks</a></li><li>简介: 使用 Gitleaks 查找机密信息。</li><li>开发语言: Go</li></ul><h2 id="12-Kyome22-RunCat365"><a href="#12-Kyome22-RunCat365" class="headerlink" title="12. Kyome22 / RunCat365"></a>12. Kyome22 / RunCat365</h2><ul><li>仓库URL: <a href="https://github.com/Kyome22/RunCat365">https://github.com/Kyome22/RunCat365</a></li><li>简介: 在 Windows 任务栏上显示可爱的跑步猫动画。</li><li>开发语言: C#</li></ul><h2 id="13-Lightricks-LTX-Video"><a href="#13-Lightricks-LTX-Video" class="headerlink" title="13. Lightricks / LTX-Video"></a>13. Lightricks / LTX-Video</h2><ul><li>仓库URL: <a href="https://github.com/Lightricks/LTX-Video">https://github.com/Lightricks/LTX-Video</a></li><li>简介: LTX - Video 的官方仓库。</li><li>开发语言: Python</li></ul><h2 id="14-strapi-strapi"><a href="#14-strapi-strapi" class="headerlink" title="14. strapi / strapi"></a>14. strapi / strapi</h2><ul><li>仓库URL: <a href="https://github.com/strapi/strapi">https://github.com/strapi/strapi</a></li><li>简介: Strapi 是领先的开源无头 CMS。它 100% 使用 JavaScript/TypeScript 编写，完全可定制，以开发者为中心。</li><li>开发语言: TypeScript</li></ul><h2 id="15-influxdata-telegraf"><a href="#15-influxdata-telegraf" class="headerlink" title="15. influxdata / telegraf"></a>15. influxdata / telegraf</h2><ul><li>仓库URL: <a href="https://github.com/influxdata/telegraf">https://github.com/influxdata/telegraf</a></li><li>简介: 用于收集、处理、聚合和写入指标、日志及其他任意数据的代理。</li><li>开发语言: Go</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>开源项目</category>
+      
+      <category>代码仓库</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+      <tag>C++</tag>
+      
+      <tag>Go</tag>
+      
+      <tag>GitHub热门仓库</tag>
+      
+      <tag>开源开发</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Dioxus：全栈应用框架介绍</title>
+    <link href="/posts/dioxus-fullstack-app-framework-introduction/"/>
+    <url>/posts/dioxus-fullstack-app-framework-introduction/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Dioxus：全栈应用框架介绍"><a href="#Dioxus：全栈应用框架介绍" class="headerlink" title="Dioxus：全栈应用框架介绍"></a>Dioxus：全栈应用框架介绍</h1><h2 id="一、Dioxus概述"><a href="#一、Dioxus概述" class="headerlink" title="一、Dioxus概述"></a>一、Dioxus概述</h2><p>Dioxus 0.7 目前处于 alpha 测试阶段。它是一个全栈应用框架，支持使用单一代码库构建适用于 Web、桌面、移动等多平台的应用。具备零配置设置、集成热重载和基于信号的状态管理等特性。借助 Server Functions 可添加后端功能，并通过 CLI 进行打包。</p><h3 id="（一）独特特性"><a href="#（一）独特特性" class="headerlink" title="（一）独特特性"></a>（一）独特特性</h3><ol><li><strong>跨平台开发</strong>：只需三行代码即可构建跨平台应用（Web、桌面、移动、服务器等）。</li><li><strong>高效状态管理</strong>：融合了 React、Solid 和 Svelte 等框架的优势。</li><li><strong>内置全栈框架</strong>：自带功能丰富、类型安全的全栈 Web 框架。</li><li><strong>集成打包工具</strong>：具备用于部署到 Web、macOS、Linux 和 Windows 的集成打包工具。</li><li><strong>亚秒级热重载</strong>：支持 Rust 代码的亚秒级热补丁和资源热重载。</li></ol><h3 id="（二）即时热重载"><a href="#（二）即时热重载" class="headerlink" title="（二）即时热重载"></a>（二）即时热重载</h3><p>通过 <code>dx serve</code> 命令可启动应用，编辑标记、样式甚至 Rust 代码，能在毫秒内看到更改。</p><h3 id="（三）全栈-Web-框架"><a href="#（三）全栈-Web-框架" class="headerlink" title="（三）全栈 Web 框架"></a>（三）全栈 Web 框架</h3><p>可通过内置的类型安全 RPC（<code>server_fn</code>）直接从前端调用后端，支持流式传输、悬念加载、代码分割、WebSocket 等功能。</p><h3 id="（四）丰富原生组件"><a href="#（四）丰富原生组件" class="headerlink" title="（四）丰富原生组件"></a>（四）丰富原生组件</h3><p>拥有一套完整的原语组件，仿照 shadcn/ui 和 Radix - Primitives 设计，可快速上手。</p><h3 id="（五）多平台支持"><a href="#（五）多平台支持" class="headerlink" title="（五）多平台支持"></a>（五）多平台支持</h3><p>对 Android 和 iOS 提供一流支持，使用 <code>dx serve --platform android</code> 命令，应用可在模拟器或设备上秒级启动，还能直接调用 JNI 和原生 API。</p><h3 id="（六）便捷打包部署"><a href="#（六）便捷打包部署" class="headerlink" title="（六）便捷打包部署"></a>（六）便捷打包部署</h3><p>使用 <code>dx bundle</code> 命令，应用将完成构建和打包，支持 Web、桌面和移动等多平台，且具备最大化优化。在 Web 端，可利用 .avif 生成、.wasm 压缩、代码压缩等功能，能构建小于 50kb 的 Web 应用和小于 5mb 的桌面/移动应用。</p><h3 id="（七）完善文档资料"><a href="#（七）完善文档资料" class="headerlink" title="（七）完善文档资料"></a>（七）完善文档资料</h3><p>拥有简洁、易读且全面的文档，所有 HTML 元素和监听器都有 MDN 文档，文档还与 Dioxus 进行持续集成，确保文档始终保持最新状态。</p><h2 id="二、运行示例"><a href="#二、运行示例" class="headerlink" title="二、运行示例"></a>二、运行示例</h2><h3 id="（一）示例分支说明"><a href="#（一）示例分支说明" class="headerlink" title="（一）示例分支说明"></a>（一）示例分支说明</h3><p>此仓库主分支的示例针对 Dioxus 的 git 版本和 CLI。若需适用于 Dioxus 最新稳定版本的示例，可查看 0.6 分支。</p><h3 id="（二）运行命令"><a href="#（二）运行命令" class="headerlink" title="（二）运行命令"></a>（二）运行命令</h3><ol><li>使用 <code>cargo run --example &lt;example&gt;</code> 可运行仓库顶级目录的示例。</li><li>推荐下载 <code>dioxus - cli</code>。若使用 Dioxus 的 git 版本，可通过 <code>cargo install --git https://github.com/DioxusLabs/dioxus dioxus - cli --locked</code> 安装匹配版本的 CLI。</li><li>使用 CLI 还能运行 Web 平台的示例，使用 <code>dx serve --example &lt;example&gt; --platform web -- --no - default - features</code> 命令，禁用默认桌面特性并启用 Web 特性。</li></ol><h2 id="三、Dioxus-与其他框架对比"><a href="#三、Dioxus-与其他框架对比" class="headerlink" title="三、Dioxus 与其他框架对比"></a>三、Dioxus 与其他框架对比</h2><h3 id="（一）Dioxus-与其他框架共性"><a href="#（一）Dioxus-与其他框架共性" class="headerlink" title="（一）Dioxus 与其他框架共性"></a>（一）Dioxus 与其他框架共性</h3><p>Dioxus 尊重 Rust 生态系统中的所有框架，也欣赏 Rust 生态系统的创新。例如，其 flex - box 库 Taffy 被 Bevy、Zed、Lapce、Iced 等多个框架使用。</p><h3 id="（二）Dioxus-与其他框架差异"><a href="#（二）Dioxus-与其他框架差异" class="headerlink" title="（二）Dioxus 与其他框架差异"></a>（二）Dioxus 与其他框架差异</h3><ol><li><strong>与 Tauri 对比</strong><ul><li><strong>原生 Rust 运行</strong>：Tauri 架构使 UI 限于 JavaScript 或 WebAssembly，而 Dioxus 的 Rust 代码在用户机器上原生运行，可直接进行线程生成、文件系统访问等操作，无需 IPC 桥接，简化应用架构。也可将 Dioxus - Web 作为前端构建 Tauri 应用。</li><li><strong>功能范围不同</strong>：Tauri 需支持 JavaScript 及其复杂构建工具，功能受限；Dioxus 专注于 Rust，能提供 Server Functions、高级打包和原生渲染器等额外工具。</li><li><strong>共享库</strong>：Tauri 和 Dioxus 共享 Tao 和 Wry 等库。</li></ul></li><li><strong>与 Leptos 对比</strong><ul><li><strong>响应式模型</strong>：Leptos 使用信号驱动反应性和渲染，Dioxus 仅用信号实现反应性，使用高度优化的 VirtualDOM 管理重渲染，二者速度都极快。</li><li><strong>功能范围</strong>：Dioxus 提供 Web、桌面、移动、LiveView 等渲染器，维护社区库和跨平台 SDK；Leptos 专注于全栈 Web，有岛屿、<code>&lt;Form /&gt;</code> 组件等 Web 特定功能。</li><li><strong>DSL 语法</strong>：Dioxus 使用自定义 Rust 类 DSL 构建 UI，Leptos 使用类 HTML 语法。Dioxus 的 DSL 有更多“魔法”，包括字符串自动格式化和简单 Rust 表达式热重载。</li></ul></li><li><strong>与 Yew 对比</strong><ul><li><strong>应用范围</strong>：Yew 构建单页 Web 应用，Dioxus 是全栈跨平台框架，适用于 Web、桌面、移动和服务器等多平台应用构建。</li><li><strong>开发工具</strong>：Dioxus 有自动格式化和热重载等开发工具，Yew 无这些特性。</li></ul></li><li><strong>与 Egui 对比</strong><ul><li><strong>渲染模式</strong>：Egui 每帧重新渲染，Dioxus 构建一次 UI 后修改；Egui 依赖全局状态对象管理状态，Dioxus 用组件和 props 封装状态，使组件更易复用。</li><li><strong>样式与定制</strong>：Egui 有自己的样式和布局方案，Dioxus 可使用任何 CSS 库，如 Tailwind 或 Material UI。</li></ul></li><li><strong>与 Iced 对比</strong><ul><li><strong>状态管理</strong>：Iced 使用 Elm 状态管理模型（消息传递和归约器），与 Dioxus 不同，有时较冗长。</li><li><strong>原生特性</strong>：Dioxus 使用 WebView 渲染，有原生文本输入、粘贴处理等原生特性；Iced 渲染器未实现这些，原生感不足。</li><li><strong>WGPU 成熟度</strong>：Iced 的 WGPU 渲染器更成熟，适用于需要 GPU 访问的应用；Dioxus 的 WGPU 渲染器尚不成熟。</li></ul></li><li><strong>与 Electron 对比</strong><ul><li><strong>项目性质</strong>：Dioxus 和 Electron 是不同项目。Electron 允许开发者用 Web 技术构建跨平台桌面应用。</li><li><strong>轻量级</strong>：Dioxus 使用系统原生 WebView 渲染，典型应用约 15mb（macOS），远小于 Electron 的 100mb。</li><li><strong>成熟度</strong>：Electron 更成熟，Dioxus 较新，部分功能（如深度链接）实现需额外工作。</li></ul></li></ol><h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2><p>Dioxus 是一个功能强大的全栈应用框架，具备跨平台开发能力、高效状态管理、即时热重载和便捷的打包部署等特性。与其他框架相比，Dioxus 在应用场景、状态管理、开发语法等方面存在差异，开发者可根据项目需求合理选择框架。 </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>前端开发</category>
+      
+      <category>全栈框架</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>前端开发</tag>
+      
+      <tag>Rust</tag>
+      
+      <tag>跨平台开发</tag>
+      
+      <tag>Dioxus</tag>
+      
+      <tag>全栈框架</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GitHub - microsoft/Web - Dev - For - Beginners课程介绍</title>
+    <link href="/posts/github-microsoft-web-dev-for-beginners-course-introduction/"/>
+    <url>/posts/github-microsoft-web-dev-for-beginners-course-introduction/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub-microsoft-Web-Dev-For-Beginners课程介绍"><a href="#GitHub-microsoft-Web-Dev-For-Beginners课程介绍" class="headerlink" title="GitHub - microsoft/Web - Dev - For - Beginners课程介绍"></a>GitHub - microsoft/Web - Dev - For - Beginners课程介绍</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>该课程由Microsoft Cloud Advocates推出，是一个为期12周的综合课程，旨在帮助初学者掌握Web开发的基础知识。课程包含24个课程，通过实践项目，如建造在线生态瓶、开发打字游戏、太空游戏等，深入学习JavaScript、CSS和HTML。同时，课程还包括测验、讨论和实践作业，采用基于项目的教学方法，帮助学习者提高技能和知识保留率。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h3><ul><li><strong>环境选择</strong>：课程提供了现成的开发环境，可选择在Codespace（基于浏览器，无需安装）中运行，或使用如Visual Studio Code等文本编辑器在本地计算机上运行。</li><li><strong>创建仓库</strong>：为方便保存工作，建议创建自己的仓库。点击页面顶部的“Use this template”按钮，在GitHub账户中创建包含课程副本的新仓库。也可点击右上角的“Fork”按钮进行仓库复刻，然后使用<code>git clone</code>命令将仓库克隆到本地。</li></ul><h3 id="学习流程"><a href="#学习流程" class="headerlink" title="学习流程"></a>学习流程</h3><ul><li><strong>教师</strong>：课程包含了使用该课程的建议，欢迎在讨论论坛提供反馈。</li><li><strong>学习者</strong>：每节课先进行课前测验，然后阅读课程材料，完成各项活动，最后通过课后测验检查理解程度。为增强学习体验，可与同行一起合作项目，也可在讨论论坛进行讨论，论坛有管理员团队解答问题。此外，建议探索Microsoft Learn获取更多学习材料。</li></ul><h2 id="课程内容"><a href="#课程内容" class="headerlink" title="课程内容"></a>课程内容</h2><h3 id="24节课的详细内容"><a href="#24节课的详细内容" class="headerlink" title="24节课的详细内容"></a>24节课的详细内容</h3><table><thead><tr><th>课程序号</th><th>课程阶段</th><th>课程名称</th><th>概念教学</th><th>学习目标</th><th>关联课程</th><th>作者</th></tr></thead><tbody><tr><td>01</td><td>入门</td><td>编程和工具介绍</td><td>学习大多数编程语言的基本原理以及专业开发人员使用的软件</td><td>编程语言和工具入门</td><td>无</td><td>Jasmine</td></tr><tr><td>02</td><td>入门</td><td>GitHub基础</td><td>如何在项目中使用GitHub，如何在代码库上与他人协作</td><td>GitHub入门</td><td>无</td><td>Floor</td></tr><tr><td>03</td><td>入门</td><td>可访问性</td><td>学习Web可访问性的基础知识</td><td>可访问性基础</td><td>无</td><td>Christopher</td></tr><tr><td>04</td><td>JavaScript基础</td><td>JavaScript数据类型</td><td>JavaScript数据类型的基础知识</td><td>数据类型</td><td>无</td><td>Jasmine</td></tr><tr><td>05</td><td>JavaScript基础</td><td>函数和方法</td><td>学习函数和方法来管理应用程序的逻辑流程</td><td>函数和方法</td><td>无</td><td>Jasmine和Christopher</td></tr><tr><td>06</td><td>JavaScript基础</td><td>用JavaScript做决策</td><td>学习如何使用决策方法在代码中创建条件</td><td>决策</td><td>无</td><td>Jasmine</td></tr><tr><td>07</td><td>JavaScript基础</td><td>数组和循环</td><td>在JavaScript中使用数组和循环处理数据</td><td>数组和循环</td><td>无</td><td>Jasmine</td></tr><tr><td>08</td><td>生态瓶</td><td>HTML实践</td><td>构建HTML以创建在线生态瓶，重点是构建布局</td><td>HTML介绍</td><td>无</td><td>Jen</td></tr><tr><td>09</td><td>生态瓶</td><td>CSS实践</td><td>构建CSS以设计在线生态瓶的样式，重点是CSS的基础知识，包括使页面响应式</td><td>CSS介绍</td><td>无</td><td>Jen</td></tr><tr><td>10</td><td>生态瓶</td><td>JavaScript闭包和DOM操作</td><td>构建JavaScript使生态瓶作为拖放界面运行，重点是闭包和DOM操作</td><td>JavaScript闭包和DOM操作</td><td>无</td><td>Jen</td></tr><tr><td>11</td><td>打字游戏</td><td>构建打字游戏</td><td>学习如何使用键盘事件驱动JavaScript应用程序的逻辑</td><td>事件驱动编程</td><td>无</td><td>Christopher</td></tr><tr><td>12</td><td>绿色浏览器扩展</td><td>与浏览器协作</td><td>学习浏览器的工作原理、历史以及如何搭建浏览器扩展的第一个元素</td><td>关于浏览器</td><td>无</td><td>Jen</td></tr><tr><td>13</td><td>绿色浏览器扩展</td><td>构建表单、调用API和在本地存储变量</td><td>构建浏览器扩展的JavaScript元素，使用本地存储的变量调用API</td><td>API、表单和本地存储</td><td>无</td><td>Jen</td></tr><tr><td>14</td><td>绿色浏览器扩展</td><td>浏览器中的后台进程和Web性能</td><td>使用浏览器的后台进程管理扩展的图标；学习Web性能和一些优化方法</td><td>后台任务和性能</td><td>无</td><td>Jen</td></tr><tr><td>15</td><td>太空游戏</td><td>使用JavaScript进行更高级的游戏开发</td><td>学习使用类和组合以及发布/订阅模式进行继承，为构建游戏做准备</td><td>高级游戏开发介绍</td><td>无</td><td>Chris</td></tr><tr><td>16</td><td>太空游戏</td><td>在画布上绘图</td><td>学习用于在屏幕上绘制元素的Canvas API</td><td>在画布上绘图</td><td>无</td><td>Chris</td></tr><tr><td>17</td><td>太空游戏</td><td>在屏幕上移动元素</td><td>了解如何使用笛卡尔坐标和Canvas API使元素移动</td><td>在屏幕上移动元素</td><td>无</td><td>Chris</td></tr><tr><td>18</td><td>太空游戏</td><td>碰撞检测</td><td>使元素碰撞并相互反应，使用按键并提供冷却功能以确保游戏性能</td><td>碰撞检测</td><td>无</td><td>Chris</td></tr><tr><td>19</td><td>太空游戏</td><td>计分</td><td>根据游戏的状态和性能进行数学计算</td><td>计分</td><td>无</td><td>Chris</td></tr><tr><td>20</td><td>太空游戏</td><td>结束和重新开始游戏</td><td>学习结束和重新开始游戏，包括清理资产和重置变量值</td><td>结束条件</td><td>无</td><td>Chris</td></tr><tr><td>21</td><td>银行应用</td><td>Web应用中的HTML模板和路由</td><td>学习如何使用路由和HTML模板创建多页网站架构的框架</td><td>HTML模板和路由</td><td>无</td><td>Yohan</td></tr><tr><td>22</td><td>银行应用</td><td>构建登录和注册表单</td><td>学习构建表单并处理验证例程</td><td>表单</td><td>无</td><td>Yohan</td></tr><tr><td>23</td><td>银行应用</td><td>获取和使用数据的方法</td><td>了解数据如何流入和流出应用程序，如何获取、存储和处理数据</td><td>数据</td><td>无</td><td>Yohan</td></tr><tr><td>24</td><td>银行应用</td><td>状态管理概念</td><td>学习应用程序如何保留状态以及如何以编程方式管理它</td><td>状态管理</td><td>无</td><td>Yohan</td></tr></tbody></table><h3 id="生成式AI新课程"><a href="#生成式AI新课程" class="headerlink" title="生成式AI新课程"></a>生成式AI新课程</h3><p>新发布了关于JavaScript的生成式AI新课程，涵盖从基础到检索增强生成（RAG）的所有内容。可访问[<a href="https://aka.ms/genai">https://aka.ms/genai</a> - js - course](<a href="https://aka.ms/genai">https://aka.ms/genai</a> - js - course)开始学习，课程包括使用生成式AI与历史人物互动等有趣内容，每节课都有作业、知识检查和挑战。</p><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>文档中未提及具体核心代码，但在课程的实践项目中，会涉及到大量的JavaScript、CSS和HTML代码。例如在构建在线生态瓶项目中，HTML代码用于构建布局：</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Online Terrarium<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"styles.css"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-comment">&lt;!-- 生态瓶布局 --&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"terrarium"</span>&gt;</span><br>        <span class="hljs-comment">&lt;!-- 生态瓶内容 --&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"script.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></tbody></table></figure><p>CSS代码用于样式设计：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.terrarium</span> {<br>    <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;<br>    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;<br>    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#ccc</span>;<br>    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;<br>    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f9f9f9</span>;<br>}<br></code></pre></td></tr></tbody></table></figure><p>JavaScript代码用于实现功能：</p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 示例：处理拖放事件</span><br><span class="hljs-keyword">const</span> terrarium = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'.terrarium'</span>);<br>terrarium.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'dragover'</span>, <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {<br>    e.<span class="hljs-title function_">preventDefault</span>();<br>});<br>terrarium.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'drop'</span>, <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {<br>    e.<span class="hljs-title function_">preventDefault</span>();<br>    <span class="hljs-comment">// 处理拖放逻辑</span><br>});<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li><strong>团队协作</strong>：与同行一起合作项目，在讨论论坛积极讨论，有助于加深对知识的理解。</li><li><strong>多做测验</strong>：通过课前和课后测验，检查自己的知识掌握程度，及时发现问题并解决。</li><li><strong>探索更多资源</strong>：利用Microsoft Learn等平台获取更多学习材料，巩固所学知识。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="环境搭建问题"><a href="#环境搭建问题" class="headerlink" title="环境搭建问题"></a>环境搭建问题</h3><p>若在运行课程环境时遇到问题，可选择在Codespace中运行，避免本地环境配置的复杂性。若选择本地运行，确保已正确安装文本编辑器（如Visual Studio Code），并掌握基本的<code>git</code>命令。</p><h3 id="课程难度问题"><a href="#课程难度问题" class="headerlink" title="课程难度问题"></a>课程难度问题</h3><p>课程从基础开始，逐步增加难度。若遇到较难的课程内容，可先复习前面的基础知识，也可在讨论论坛寻求帮助。</p><h3 id="离线访问问题"><a href="#离线访问问题" class="headerlink" title="离线访问问题"></a>离线访问问题</h3><p>若需要离线访问文档，可使用Docsify。先复刻仓库，在本地安装Docsify，然后在仓库根目录下运行<code>docsify serve</code>命令，即可在本地访问。 </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>前端开发</category>
+      
+      <category>在线课程学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>前端开发</tag>
+      
+      <tag>JavaScript</tag>
+      
+      <tag>HTML</tag>
+      
+      <tag>CSS</tag>
+      
+      <tag>在线课程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GitHub - ml-tooling/best-of-ml-python 项目介绍：优秀机器学习 Python 库排名列表</title>
+    <link href="/posts/github-ml-tooling-best-of-ml-python-project-introduction/"/>
+    <url>/posts/github-ml-tooling-best-of-ml-python-project-introduction/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub-ml-tooling-best-of-ml-python-项目介绍：优秀机器学习-Python-库排名列表"><a href="#GitHub-ml-tooling-best-of-ml-python-项目介绍：优秀机器学习-Python-库排名列表" class="headerlink" title="GitHub - ml-tooling/best-of-ml-python 项目介绍：优秀机器学习 Python 库排名列表"></a>GitHub - ml-tooling/best-of-ml-python 项目介绍：优秀机器学习 Python 库排名列表</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在机器学习领域，Python 凭借其丰富的库和简洁的语法，成为了最受欢迎的编程语言之一。然而，随着开源项目的不断涌现，开发者很难快速找到适合自己需求的优质库。<code>ml-tooling/best-of-ml-python</code> 项目应运而生，它每周更新一份优秀机器学习 Python 库的排名列表，为开发者提供了一个便捷的参考。该列表包含了 920 个优秀的开源项目，总星数达 500 万，分为 34 个类别，所有项目都根据项目质量得分进行排名。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="项目获取"><a href="#项目获取" class="headerlink" title="项目获取"></a>项目获取</h3><p>可以通过访问项目的 GitHub 仓库（<a href="https://github.com/ml-tooling/best-of-ml-python%EF%BC%89%E6%9D%A5%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E7%9A%84%E6%8E%92%E5%90%8D%E5%88%97%E8%A1%A8%E3%80%82">https://github.com/ml-tooling/best-of-ml-python）来获取最新的排名列表。</a></p><h3 id="项目评估"><a href="#项目评估" class="headerlink" title="项目评估"></a>项目评估</h3><p>项目的质量得分是基于从 GitHub 和不同包管理器自动收集的各种指标计算得出的，这些指标包括星数、贡献者数量、分支数量、问题数量、更新时间、下载次数等。</p><h3 id="项目筛选与使用"><a href="#项目筛选与使用" class="headerlink" title="项目筛选与使用"></a>项目筛选与使用</h3><p>根据自己的需求，从列表中筛选出合适的库。例如，如果需要进行数据可视化，可以查看“Data Visualization”类别下的库；如果需要进行自然语言处理，可以查看“Text Data &amp; NLP”类别下的库。</p><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>以下是一些常见库的安装代码示例：</p><h3 id="机器学习框架-TensorFlow"><a href="#机器学习框架-TensorFlow" class="headerlink" title="机器学习框架 - TensorFlow"></a>机器学习框架 - TensorFlow</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 从 GitHub 克隆项目</span><br>git <span class="hljs-built_in">clone</span> https://github.com/tensorflow/tensorflow<br><span class="hljs-comment"># 使用 pip 安装</span><br>pip install tensorflow<br><span class="hljs-comment"># 使用 conda 安装</span><br>conda install -c conda-forge tensorflow<br></code></pre></td></tr></tbody></table></figure><h3 id="数据可视化-Matplotlib"><a href="#数据可视化-Matplotlib" class="headerlink" title="数据可视化 - Matplotlib"></a>数据可视化 - Matplotlib</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 从 GitHub 克隆项目</span><br>git <span class="hljs-built_in">clone</span> https://github.com/matplotlib/matplotlib<br><span class="hljs-comment"># 使用 pip 安装</span><br>pip install matplotlib<br><span class="hljs-comment"># 使用 conda 安装</span><br>conda install -c conda-forge matplotlib<br></code></pre></td></tr></tbody></table></figure><h3 id="自然语言处理-Transformers"><a href="#自然语言处理-Transformers" class="headerlink" title="自然语言处理 - Transformers"></a>自然语言处理 - Transformers</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 从 GitHub 克隆项目</span><br>git <span class="hljs-built_in">clone</span> https://github.com/huggingface/transformers<br><span class="hljs-comment"># 使用 pip 安装</span><br>pip install transformers<br><span class="hljs-comment"># 使用 conda 安装</span><br>conda install -c conda-forge transformers<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h3 id="选择合适的库"><a href="#选择合适的库" class="headerlink" title="选择合适的库"></a>选择合适的库</h3><p>在选择库时，不仅要考虑库的排名，还要考虑其功能、性能、社区支持等因素。例如，对于深度学习任务，TensorFlow 和 PyTorch 是非常流行的选择；对于数据可视化，Matplotlib 和 Plotly 是不错的选择。</p><h3 id="关注项目状态"><a href="#关注项目状态" class="headerlink" title="关注项目状态"></a>关注项目状态</h3><p>注意项目的状态，如是否活跃、是否有更新等。一些项目可能已经停止维护，使用这些项目可能会遇到兼容性问题或安全隐患。</p><h3 id="参考文档和示例"><a href="#参考文档和示例" class="headerlink" title="参考文档和示例"></a>参考文档和示例</h3><p>在使用库之前，仔细阅读其文档和示例代码，了解其使用方法和注意事项。大多数库都提供了详细的文档和示例，这有助于快速上手。</p><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="项目质量得分是如何计算的？"><a href="#项目质量得分是如何计算的？" class="headerlink" title="项目质量得分是如何计算的？"></a>项目质量得分是如何计算的？</h3><p>项目质量得分是基于从 GitHub 和不同包管理器自动收集的各种指标计算得出的，但具体的计算方法并未公开。</p><h3 id="列表中的库是否都适用于我的项目？"><a href="#列表中的库是否都适用于我的项目？" class="headerlink" title="列表中的库是否都适用于我的项目？"></a>列表中的库是否都适用于我的项目？</h3><p>不一定。列表中的库涵盖了各种不同的领域和任务，需要根据自己的项目需求进行筛选。</p><h3 id="如何为列表添加或更新项目？"><a href="#如何为列表添加或更新项目？" class="headerlink" title="如何为列表添加或更新项目？"></a>如何为列表添加或更新项目？</h3><p>可以通过打开问题、提交拉取请求或直接编辑 <code>projects.yaml</code> 文件来添加或更新项目。项目维护者欢迎社区的贡献。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>机器学习</category>
+      
+      <category>Python库推荐</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+      <tag>机器学习</tag>
+      
+      <tag>best-of-ml-python</tag>
+      
+      <tag>开源库</tag>
+      
+      <tag>排名列表</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Vite：下一代前端工具</title>
+    <link href="/posts/vite-next-generation-frontend-tooling/"/>
+    <url>/posts/vite-next-generation-frontend-tooling/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Vite：下一代前端工具"><a href="#Vite：下一代前端工具" class="headerlink" title="Vite：下一代前端工具"></a>Vite：下一代前端工具</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在前端开发中，构建工具起着至关重要的作用。传统的构建工具在处理大型项目时，启动时间长、热更新速度慢等问题逐渐凸显，影响了开发效率。Vite作为新一代的前端构建工具应运而生，它显著提升了前端开发体验。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h3><p>使用 npm 或 yarn 进行安装：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install --save-dev vite<br><span class="hljs-comment"># 或者</span><br>yarn add --dev vite<br></code></pre></td></tr></tbody></table></figure><h3 id="2-初始化项目"><a href="#2-初始化项目" class="headerlink" title="2. 初始化项目"></a>2. 初始化项目</h3><p>可以使用 <code>create-vite</code> 快速初始化一个项目：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm init vite@latest my-vue-app -- --template vue<br><span class="hljs-comment"># 或者</span><br>yarn create vite my-vue-app --template vue<br></code></pre></td></tr></tbody></table></figure><h3 id="3-启动开发服务器"><a href="#3-启动开发服务器" class="headerlink" title="3. 启动开发服务器"></a>3. 启动开发服务器</h3><p>在项目根目录下运行以下命令启动开发服务器：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm run dev<br><span class="hljs-comment"># 或者</span><br>yarn dev<br></code></pre></td></tr></tbody></table></figure><h3 id="4-构建项目"><a href="#4-构建项目" class="headerlink" title="4. 构建项目"></a>4. 构建项目</h3><p>使用以下命令进行项目构建：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm run build<br><span class="hljs-comment"># 或者</span><br>yarn build<br></code></pre></td></tr></tbody></table></figure><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>以下是一个简单的 Vite 项目示例：</p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// main.js</span><br><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span><br><span class="hljs-keyword">import</span> <span class="hljs-title class_">App</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span><br><br><span class="hljs-title function_">createApp</span>(<span class="hljs-title class_">App</span>).<span class="hljs-title function_">mount</span>(<span class="hljs-string">'#app'</span>)<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li><strong>插件使用</strong>：Vite 具有丰富的插件生态，例如 <code>@vitejs/plugin-legacy</code> 可以为旧版本浏览器提供支持。</li><li><strong>配置优化</strong>：根据项目需求，合理配置 <code>vite.config.js</code> 文件，例如调整端口、代理等。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul><li><strong>HMR 不生效</strong>：检查代码中是否存在语法错误，或者尝试重启开发服务器。</li><li><strong>构建产物体积过大</strong>：可以通过配置 Rollup 插件进行代码分割和压缩。</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>前端开发</category>
+      
+      <category>前端构建工具</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>前端开发</tag>
+      
+      <tag>JavaScript</tag>
+      
+      <tag>Vite</tag>
+      
+      <tag>前端构建</tag>
+      
+      <tag>热更新</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2025-07-19 Github热门仓库</title>
     <link href="/posts/2025-07-19-github-re-men-cang-ku/"/>
     <url>/posts/2025-07-19-github-re-men-cang-ku/</url>
