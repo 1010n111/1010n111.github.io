@@ -4,6 +4,183 @@
   
   
   <entry>
+    <title>GitHub - 面向初学者的生成式AI入门课程介绍</title>
+    <link href="/posts/github-generative-ai-beginners-course-introduction/"/>
+    <url>/posts/github-generative-ai-beginners-course-introduction/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub-面向初学者的生成式AI入门课程介绍"><a href="#GitHub-面向初学者的生成式AI入门课程介绍" class="headerlink" title="GitHub - 面向初学者的生成式AI入门课程介绍"></a>GitHub - 面向初学者的生成式AI入门课程介绍</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>生成式AI在当今科技领域发展迅猛，其应用场景广泛。微软云倡导者推出了一门涵盖21节课的综合课程“面向初学者的生成式AI（第3版）”，旨在帮助学习者掌握构建生成式AI应用程序的基础知识。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="课程内容"><a href="#课程内容" class="headerlink" title="课程内容"></a>课程内容</h3><p>该课程共有21节课，每节课都有独立的主题，你可以从任意一节开始学习。课程分为“学习”类课程（解释生成式AI概念）和“构建”类课程（解释概念并提供Python和TypeScript代码示例）。对于.NET开发者，还有专门的.NET版本课程。每节课还包含“持续学习”部分，提供额外的学习工具。</p><h3 id="运行代码所需条件"><a href="#运行代码所需条件" class="headerlink" title="运行代码所需条件"></a>运行代码所需条件</h3><ul><li><strong>模型服务选择</strong>：可以使用Azure OpenAI服务（对应“aoai - assignment”课程）、GitHub Marketplace模型目录（对应“githubmodels”课程）或OpenAI API（对应“oai - assignment”课程）。</li><li><strong>知识储备</strong>：具备Python或TypeScript的基础知识会有帮助，对于完全的初学者，可以查看相关的Python和TypeScript课程。</li><li><strong>GitHub账户</strong>：需要一个GitHub账户，将整个仓库复刻到自己的GitHub账户。</li><li><strong>开发环境搭建</strong>：课程专门设置了“课程设置”这节课，帮助你搭建开发环境。</li></ul><h3 id="多语言支持"><a href="#多语言支持" class="headerlink" title="多语言支持"></a>多语言支持</h3><p>该课程通过GitHub Action实现多语言支持，包括法语、西班牙语、德语等众多语言。</p><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>课程在可能的情况下，会提供Python和TypeScript的代码示例，用于解释概念和构建应用。例如，在“构建”类课程中，会有代码示例展示如何使用Azure OpenAI或OpenAI API构建不同类型的应用，如文本生成应用、聊天应用等。但文档中未给出具体代码，你可以根据课程的指引，使用对应的模型服务和编程语言进行开发。</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 示例代码框架，实际代码需根据课程具体内容编写</span><br><span class="hljs-keyword">import</span> openai<br><br><span class="hljs-comment"># 设置API密钥</span><br>openai.api_key = <span class="hljs-string">"your_api_key"</span><br><br><span class="hljs-comment"># 调用API进行文本生成</span><br>response = openai.Completion.create(<br>    engine=<span class="hljs-string">"text - davinci - 003"</span>,<br>    prompt=<span class="hljs-string">"Your prompt here"</span>,<br>    max_tokens=<span class="hljs-number">100</span><br>)<br><br><span class="hljs-built_in">print</span>(response.choices[<span class="hljs-number">0</span>].text)<br></code></pre></td></tr></tbody></table></figure><figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-comment">// 示例代码框架，实际代码需根据课程具体内容编写</span><br><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Configuration</span>, <span class="hljs-title class_">OpenAIApi</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">"openai"</span>;<br><br><span class="hljs-keyword">const</span> configuration = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Configuration</span>({<br>    <span class="hljs-attr">apiKey</span>: <span class="hljs-string">"your_api_key"</span>,<br>});<br><span class="hljs-keyword">const</span> openai = <span class="hljs-keyword">new</span> <span class="hljs-title class_">OpenAIApi</span>(configuration);<br><br><span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">generateText</span>(<span class="hljs-params"></span>) {<br>    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> openai.<span class="hljs-title function_">createCompletion</span>({<br>        <span class="hljs-attr">engine</span>: <span class="hljs-string">"text - davinci - 003"</span>,<br>        <span class="hljs-attr">prompt</span>: <span class="hljs-string">"Your prompt here"</span>,<br>        <span class="hljs-attr">max_tokens</span>: <span class="hljs-number">100</span><br>    });<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(response.<span class="hljs-property">data</span>.<span class="hljs-property">choices</span>[<span class="hljs-number">0</span>].<span class="hljs-property">text</span>);<br>}<br><br><span class="hljs-title function_">generateText</span>();<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li><strong>选择合适的学习起点</strong>：由于每节课都有独立的主题，你可以根据自己的兴趣和基础选择从任意一节课开始学习。</li><li><strong>利用“持续学习”部分</strong>：每节课的“持续学习”部分提供了额外的学习工具，有助于你深入学习相关知识。</li><li><strong>参与交流</strong>：加入官方的Azure AI Foundry Discord服务器，与其他学习者交流并获得支持；在Azure AI Foundry开发者论坛上提问或分享产品反馈。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="没有Python或TypeScript基础怎么办？"><a href="#没有Python或TypeScript基础怎么办？" class="headerlink" title="没有Python或TypeScript基础怎么办？"></a>没有Python或TypeScript基础怎么办？</h3><p>对于完全的初学者，可以查看相关的Python和TypeScript课程，先掌握基础知识。</p><h3 id="如何找到该课程的相关资源？"><a href="#如何找到该课程的相关资源？" class="headerlink" title="如何找到该课程的相关资源？"></a>如何找到该课程的相关资源？</h3><p>不要忘记给该仓库加星（🌟），这样以后更容易找到。同时，按照课程的指引，在对应的GitHub仓库中查找相关代码和文档。</p><h3 id="有更高级的代码示例吗？"><a href="#有更高级的代码示例吗？" class="headerlink" title="有更高级的代码示例吗？"></a>有更高级的代码示例吗？</h3><p>如果你需要更高级的代码示例，可以查看生成式AI代码示例集合，其中包含Python和TypeScript的示例。 </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>人工智能开发</category>
+      
+      <category>生成式AI课程学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>TypeScript</tag>
+      
+      <tag>Python</tag>
+      
+      <tag>人工智能开发</tag>
+      
+      <tag>生成式AI课程</tag>
+      
+      <tag>微软课程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GitHub - microsoft/ML - For - Beginners课程介绍与使用指南</title>
+    <link href="/posts/github-microsoft-ml-for-beginners-course-guide/"/>
+    <url>/posts/github-microsoft-ml-for-beginners-course-guide/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub-microsoft-ML-For-Beginners课程介绍与使用指南"><a href="#GitHub-microsoft-ML-For-Beginners课程介绍与使用指南" class="headerlink" title="GitHub - microsoft/ML - For - Beginners课程介绍与使用指南"></a>GitHub - microsoft/ML - For - Beginners课程介绍与使用指南</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>微软的云倡导者们推出了一个为期12周、包含26节课的机器学习课程。该课程主要聚焦于所谓的经典机器学习，主要使用Scikit - learn库，避免涉及深度学习（深度学习内容在他们的“AI for Beginners”课程中涵盖）。课程还可以与“Data Science for Beginners”课程搭配学习。每节课都包含课前和课后测验、书面指导、解决方案、作业等，采用基于项目的教学法，让学习者在实践中学习。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="开始学习"><a href="#开始学习" class="headerlink" title="开始学习"></a>开始学习</h3><ol><li><strong>分叉仓库</strong>：点击页面右上角的“Fork”按钮。</li><li><strong>克隆仓库</strong>：使用命令<code>git clone https://github.com/microsoft/ML-For-Beginners.git</code>。可以在微软学习集合中找到本课程的所有额外资源。</li></ol><h3 id="学生学习流程"><a href="#学生学习流程" class="headerlink" title="学生学习流程"></a>学生学习流程</h3><ol><li>将整个仓库分叉到自己的GitHub账户，可独自或分组完成练习。</li><li>从课前测验开始。</li><li>阅读课程内容并完成活动，在每个知识检查点暂停并思考。</li><li>尝试通过理解课程内容来创建项目，而不是直接运行解决方案代码（解决方案代码在每个以项目为导向的课程的<code>/solution</code>文件夹中）。</li><li>完成课后测验。</li><li>完成挑战和作业。</li><li>完成一组课程后，访问讨论板，通过填写适当的PAT评分表“大声学习”。也可以对其他PAT进行反馈，共同学习。</li></ol><h3 id="教师使用建议"><a href="#教师使用建议" class="headerlink" title="教师使用建议"></a>教师使用建议</h3><p>课程中包含了一些关于如何使用该课程的建议。</p><h3 id="视频教程"><a href="#视频教程" class="headerlink" title="视频教程"></a>视频教程</h3><p>部分课程有简短的视频形式，可以在课程内或微软开发者YouTube频道的“ML for Beginners”播放列表中找到。</p><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/microsoft/ML-For-Beginners.git<br></code></pre></td></tr></tbody></table></figure><h3 id="离线访问"><a href="#离线访问" class="headerlink" title="离线访问"></a>离线访问</h3><p>使用Docsify可以离线运行文档，步骤如下：</p><ol><li>分叉此仓库。</li><li>在本地机器上安装Docsify。</li><li>在仓库的根文件夹中，输入<code>docsify serve</code>。网站将在本地主机的3000端口上提供服务：<code>localhost:3000</code>。</li></ol><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li>按照课程顺序逐步学习，从简单项目开始，随着课程推进，项目会逐渐复杂。</li><li>充分利用课前和课后测验，巩固知识。</li><li>在完成项目时，尽量自己思考和实现，而不是依赖解决方案代码。</li><li>参与讨论板，与其他学习者交流，填写PAT评分表，促进学习。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="语言问题"><a href="#语言问题" class="headerlink" title="语言问题"></a>语言问题</h3><p>课程主要用Python编写，但很多课程也有R语言版本。要完成R语言课程，前往<code>/solution</code>文件夹查找R课程，其文件扩展名为<code>.rmd</code>，代表R Markdown文件。</p><h3 id="测验问题"><a href="#测验问题" class="headerlink" title="测验问题"></a>测验问题</h3><p>所有测验都包含在<code>Quiz App</code>文件夹中，共有52个测验，每个测验有三个问题。它们在课程中被链接，但测验应用程序可以本地运行，按照<code>quiz - app</code>文件夹中的说明在本地托管或部署到Azure。 </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>人工智能</category>
+      
+      <category>机器学习</category>
+      
+      <category>课程学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+      <tag>人工智能</tag>
+      
+      <tag>Scikit - learn</tag>
+      
+      <tag>机器学习课程</tag>
+      
+      <tag>项目式学习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Graphite：融合传统与现代的2D内容创作工具</title>
+    <link href="/posts/graphite-2d-content-creation-tool/"/>
+    <url>/posts/graphite-2d-content-creation-tool/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Graphite：融合传统与现代的2D内容创作工具"><a href="#Graphite：融合传统与现代的2D内容创作工具" class="headerlink" title="Graphite：融合传统与现代的2D内容创作工具"></a>Graphite：融合传统与现代的2D内容创作工具</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在2D内容创作领域，传统的图形编辑工具往往基于图层和工具的操作方式，而现代的创作理念则倾向于基于节点的非破坏性、程序性工作流程。Graphite正是这样一款融合了传统与现代的2D矢量和光栅图形引擎，它以免费开源的形式提供给用户，目前处于Alpha版本。它最初是一个矢量编辑器，现在正逐渐发展成为一个通用的一体化图形工具箱，其构建方式更类似于游戏引擎，而非传统的创意应用程序。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="了解功能"><a href="#了解功能" class="headerlink" title="了解功能"></a>了解功能</h3><p>Graphite提供了完全非破坏性的编辑工作流程，结合了基于图层的合成和基于节点的生成式设计。它不仅可以进行矢量和光栅图形的编辑，还具备照片编辑、动态图形、数字绘画、桌面出版和VFX合成等功能。</p><h3 id="参与贡献"><a href="#参与贡献" class="headerlink" title="参与贡献"></a>参与贡献</h3><p>如果你是图形程序员或Rust开发者，可以参与到Graphite的开发中。具体步骤如下：</p><ol><li>按照项目提供的说明设置项目并开始开发。</li><li>提交代码时，你需要同意将你的更改按照Apache 2.0许可证进行授权，并且你有权这样做。某些目录可能有其他许可证，如双重许可的MIT/Apache 2.0，向这些目录提交代码意味着你同意适用的许可证。</li></ol><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>由于文章未提供具体的核心代码，这里无法展示。但在参与项目开发时，你会接触到使用Rust语言编写的代码，因为Graphite项目是基于Rust开发的。例如，以下是一个简单的Rust代码示例：</p><figure class="highlight rust"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs rust"><span class="hljs-keyword">fn</span> <span class="hljs-title function_">main</span>() {<br>    <span class="hljs-built_in">println!</span>(<span class="hljs-string">"Hello, Graphite!"</span>);<br>}<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><h3 id="创作内容"><a href="#创作内容" class="headerlink" title="创作内容"></a>创作内容</h3><p>利用Graphite的非破坏性编辑工作流程，结合图层和节点的优势，进行创意内容的创作。例如，在进行图形合成时，可以通过节点来控制图形的生成和变换，同时利用图层进行布局和组织。</p><h3 id="参与社区"><a href="#参与社区" class="headerlink" title="参与社区"></a>参与社区</h3><p>Graphite是一个完全由社区构建和资助的项目。你可以通过订阅新闻通讯、参与志愿工作或进行捐赠等方式支持项目的发展。同时，在社区中与其他开发者和创作者交流经验，共同推动Graphite的发展。</p><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="许可证问题"><a href="#许可证问题" class="headerlink" title="许可证问题"></a>许可证问题</h3><p>在提交代码时，需要注意不同目录可能有不同的许可证。确保你了解并同意适用的许可证。</p><h3 id="项目状态"><a href="#项目状态" class="headerlink" title="项目状态"></a>项目状态</h3><p>目前Graphite处于Alpha版本，可能存在一些不稳定或功能不完善的情况。在使用过程中遇到问题可以向社区反馈。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>前端开发</category>
+      
+      <category>图形编辑工具</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Rust</tag>
+      
+      <tag>开源项目</tag>
+      
+      <tag>前端开发</tag>
+      
+      <tag>Graphite</tag>
+      
+      <tag>2D内容创作</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Octra钱包生成器快速上手指南</title>
+    <link href="/posts/octra-wallet-generator-quick-start-guide/"/>
+    <url>/posts/octra-wallet-generator-quick-start-guide/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Octra钱包生成器快速上手指南"><a href="#Octra钱包生成器快速上手指南" class="headerlink" title="Octra钱包生成器快速上手指南"></a>Octra钱包生成器快速上手指南</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>Octra Wallet Generator 是一个为 Octra 区块链设计的安全钱包生成器，能帮助用户便捷地生成 Octra 区块链钱包，提供查看助记词、公私钥和地址等功能，还能测试签名功能，支持为不同网络类型派生地址，并自动将钱包文件保存到磁盘。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><p>首先，需要将项目仓库克隆到本地。打开终端，执行以下命令：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/octra-labs/wallet-gen.git<br><span class="hljs-built_in">cd</span> wallet-gen<br></code></pre></td></tr></tbody></table></figure><h3 id="运行钱包生成器-Web-服务器"><a href="#运行钱包生成器-Web-服务器" class="headerlink" title="运行钱包生成器 Web 服务器"></a>运行钱包生成器 Web 服务器</h3><p>根据不同的操作系统，使用相应的命令来启动服务器。</p><h4 id="Linux-macOS"><a href="#Linux-macOS" class="headerlink" title="Linux/macOS"></a>Linux/macOS</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">chmod</span> +x ./start.sh<br>./start.sh<br></code></pre></td></tr></tbody></table></figure><h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">start.bat<br></code></pre></td></tr></tbody></table></figure><h3 id="打开浏览器"><a href="#打开浏览器" class="headerlink" title="打开浏览器"></a>打开浏览器</h3><p>在服务器启动后，打开浏览器，访问 <code>http://localhost:8888</code>。</p><h3 id="生成钱包"><a href="#生成钱包" class="headerlink" title="生成钱包"></a>生成钱包</h3><p>在浏览器页面中，点击 “GENERATE NEW WALLET” 按钮，即可开始生成钱包，并可实时查看生成进度。</p><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>以下是在 Linux/macOS 系统中启动服务器的核心脚本代码：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># start.sh</span><br><span class="hljs-comment">#!/bin/bash</span><br><span class="hljs-comment"># 这里可以是启动服务器的具体逻辑代码</span><br></code></pre></td></tr></tbody></table></figure><p>在 Windows 系统中使用的 <code>start.bat</code> 文件内容可能类似如下：</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs batch">@echo off<br>rem 这里可以是启动服务器的具体逻辑代码<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li>在生成钱包后，妥善保存助记词和私钥，避免泄露导致资产损失。</li><li>定期备份钱包文件，以防止数据丢失。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul><li><strong>服务器启动失败</strong>：检查脚本文件的权限（Linux/macOS）或脚本内容是否正确（Windows）。</li><li><strong>浏览器无法访问</strong>：确保服务器已成功启动，检查端口号是否被占用。</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>区块链开发</category>
+      
+      <category>钱包工具使用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>GitHub</tag>
+      
+      <tag>Shell</tag>
+      
+      <tag>区块链开发</tag>
+      
+      <tag>钱包生成</tag>
+      
+      <tag>Octra区块链</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Portkey AI Gateway：快速可靠的AI路由解决方案</title>
+    <link href="/posts/portkey-ai-gateway-route-solution/"/>
+    <url>/posts/portkey-ai-gateway-route-solution/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Portkey-AI-Gateway：快速可靠的AI路由解决方案"><a href="#Portkey-AI-Gateway：快速可靠的AI路由解决方案" class="headerlink" title="Portkey AI Gateway：快速可靠的AI路由解决方案"></a>Portkey AI Gateway：快速可靠的AI路由解决方案</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在人工智能领域，开发者常常需要与多种语言、视觉、音频和图像模型进行交互。然而，不同模型提供商的API各不相同，这给开发和维护带来了很大的挑战。Portkey AI Gateway应运而生，它提供了一个统一、快速且友好的API，可将请求路由到250多个大型语言模型（LLMs），同时具备安全防护和多模态能力，是一个轻量级、开源且适用于企业的解决方案。</p><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="1-搭建AI网关"><a href="#1-搭建AI网关" class="headerlink" title="1. 搭建AI网关"></a>1. 搭建AI网关</h3><p>可以在本地运行网关，这需要安装Node.js和npm：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npx @portkey-ai/gateway<br></code></pre></td></tr></tbody></table></figure><p>网关将运行在 <code>http://localhost:8787/v1</code>，网关控制台运行在 <code>http://localhost:8787/public/</code>。此外，还提供了多种部署方式，如Portkey Cloud（推荐）、Docker、Node.js、Cloudflare、Replit等。</p><h3 id="2-发起第一个请求"><a href="#2-发起第一个请求" class="headerlink" title="2. 发起第一个请求"></a>2. 发起第一个请求</h3><p>首先安装 <code>portkey-ai</code> 库：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip install -qU portkey-ai<br></code></pre></td></tr></tbody></table></figure><p>然后使用以下Python代码发起请求：</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> portkey_ai <span class="hljs-keyword">import</span> Portkey<br><br><span class="hljs-comment"># OpenAI兼容客户端</span><br>client = Portkey(<br>    provider=<span class="hljs-string">"openai"</span>,  <span class="hljs-comment"># 也可以是 'anthropic', 'bedrock', 'groq' 等</span><br>    Authorization=<span class="hljs-string">"sk-***"</span>  <span class="hljs-comment"># 提供商的API密钥</span><br>)<br><br><span class="hljs-comment"># 通过AI网关发起请求</span><br>client.chat.completions.create(<br>    messages=[{<span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-string">"What's the weather like?"</span>}],<br>    model=<span class="hljs-string">"gpt-4o-mini"</span><br>)<br></code></pre></td></tr></tbody></table></figure><h3 id="3-配置路由和防护"><a href="#3-配置路由和防护" class="headerlink" title="3. 配置路由和防护"></a>3. 配置路由和防护</h3><p>可以在LLM网关中配置路由规则、添加可靠性设置和设置防护栏：</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs python">config = {<br>    <span class="hljs-string">"retry"</span>: {<span class="hljs-string">"attempts"</span>: <span class="hljs-number">5</span>},<br>    <span class="hljs-string">"output_guardrails"</span>: [{<br>        <span class="hljs-string">"default.contains"</span>: {<span class="hljs-string">"operator"</span>: <span class="hljs-string">"none"</span>, <span class="hljs-string">"words"</span>: [<span class="hljs-string">"Apple"</span>]},<br>        <span class="hljs-string">"deny"</span>: <span class="hljs-literal">True</span><br>    }]<br>}<br><br><span class="hljs-comment"># 将配置附加到客户端</span><br>client = client.with_options(config=config)<br><br>client.chat.completions.create(<br>    model=<span class="hljs-string">"gpt-4o-mini"</span>,<br>    messages=[{<span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-string">"Reply randomly with Apple or Bat"</span>}]<br>)<br></code></pre></td></tr></tbody></table></figure><h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><h3 id="Python代码示例"><a href="#Python代码示例" class="headerlink" title="Python代码示例"></a>Python代码示例</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> portkey_ai <span class="hljs-keyword">import</span> Portkey<br><br><span class="hljs-comment"># 初始化客户端</span><br>client = Portkey(provider=<span class="hljs-string">"openai"</span>, Authorization=<span class="hljs-string">"sk-***"</span>)<br><br><span class="hljs-comment"># 发起请求</span><br>response = client.chat.completions.create(<br>    messages=[{<span class="hljs-string">"role"</span>: <span class="hljs-string">"user"</span>, <span class="hljs-string">"content"</span>: <span class="hljs-string">"What's the weather like?"</span>}],<br>    model=<span class="hljs-string">"gpt-4o-mini"</span><br>)<br><br><span class="hljs-built_in">print</span>(response)<br></code></pre></td></tr></tbody></table></figure><h3 id="配置示例"><a href="#配置示例" class="headerlink" title="配置示例"></a>配置示例</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python">config = {<br>    <span class="hljs-string">"retry"</span>: {<span class="hljs-string">"attempts"</span>: <span class="hljs-number">5</span>},<br>    <span class="hljs-string">"output_guardrails"</span>: [{<br>        <span class="hljs-string">"default.contains"</span>: {<span class="hljs-string">"operator"</span>: <span class="hljs-string">"none"</span>, <span class="hljs-string">"words"</span>: [<span class="hljs-string">"Apple"</span>]},<br>        <span class="hljs-string">"deny"</span>: <span class="hljs-literal">True</span><br>    }]<br>}<br><br>client = client.with_options(config=config)<br></code></pre></td></tr></tbody></table></figure><h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul><li><strong>可靠性设置</strong>：使用自动重试和回退机制，确保请求的可靠性。</li><li><strong>负载均衡</strong>：通过负载均衡和条件路由扩展AI应用。</li><li><strong>安全防护</strong>：使用防护栏验证LLM的输入和输出，确保符合安全和准确性标准。</li><li><strong>成本管理</strong>：使用智能缓存和提供商优化功能，降低成本。</li></ul><h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul><li><strong>请求失败</strong>：可以通过自动重试机制解决，最多重试5次。</li><li><strong>安全合规</strong>：AI网关符合SOC2、HIPAA、GDPR和CCPA等合规标准。</li><li><strong>性能问题</strong>：网关具有快速的响应时间（&lt;1ms延迟）和小的占用空间（122kb），可以有效解决性能问题。</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>人工智能开发</category>
+      
+      <category>AI网关应用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+      <tag>人工智能开发</tag>
+      
+      <tag>安全防护</tag>
+      
+      <tag>Portkey-AI/gateway</tag>
+      
+      <tag>AI路由</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>GitHub mui/base - ui：构建可访问 Web 应用和设计系统的无样式 UI 组件</title>
     <link href="/posts/github-mui-base-ui-unstyled-ui-components/"/>
     <url>/posts/github-mui-base-ui-unstyled-ui-components/</url>
