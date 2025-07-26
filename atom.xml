@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-07-24T03:28:29.193Z</updated>
+  <updated>2025-07-26T02:02:02.039Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -17,11 +17,365 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>BookLore：个人数字图书馆管理神器</title>
+    <link href="https://119291.xyz/posts/booklore-digital-library-management-app/"/>
+    <id>https://119291.xyz/posts/booklore-digital-library-management-app/</id>
+    <published>2025-07-26T00:00:00.000Z</published>
+    <updated>2025-07-26T02:02:02.039Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;BookLore：个人数字图书馆管理神器&quot;&gt;&lt;a href=&quot;#BookLore：个人数字图书馆管理神器&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="数字图书馆管理" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E5%AD%97%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="Web应用搭建" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E5%AD%97%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86/Web%E5%BA%94%E7%94%A8%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Docker" scheme="https://119291.xyz/tags/Docker/"/>
+    
+    <category term="数字图书馆管理" scheme="https://119291.xyz/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="Web应用部署" scheme="https://119291.xyz/tags/Web%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub - mikumifa/biliTickerBuy: b站会员购购票辅助工具</title>
+    <link href="https://119291.xyz/posts/github-mikumifa-bilitickerbuy-bilibili-membership-ticket-buying-assistant/"/>
+    <id>https://119291.xyz/posts/github-mikumifa-bilitickerbuy-bilibili-membership-ticket-buying-assistant/</id>
+    <published>2025-07-26T00:00:00.000Z</published>
+    <updated>2025-07-26T02:02:02.096Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GitHub-mikumifa-biliTickerBuy-b站会员购购票辅助工具&quot;&gt;&lt;a href=&quot;#GitHub-mikumifa-biliTickerBuy-b站会员购购票辅助工具&quot; class=&quot;headerlink&quot; title=&quot;GitHub -</summary>
+        
+      
+    
+    
+    
+    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="工具开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源工具" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="biliTickerBuy" scheme="https://119291.xyz/tags/biliTickerBuy/"/>
+    
+    <category term="B站会员购辅助" scheme="https://119291.xyz/tags/B%E7%AB%99%E4%BC%9A%E5%91%98%E8%B4%AD%E8%BE%85%E5%8A%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub PayloadsAllTheThings项目介绍</title>
+    <link href="https://119291.xyz/posts/github-payloadsallthethings-project-introduction/"/>
+    <id>https://119291.xyz/posts/github-payloadsallthethings-project-introduction/</id>
+    <published>2025-07-26T00:00:00.000Z</published>
+    <updated>2025-07-26T02:02:02.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GitHub-PayloadsAllTheThings项目介绍&quot;&gt;&lt;a href=&quot;#GitHub-PayloadsAllTheThings项目介绍&quot; class=&quot;headerlink&quot; title=&quot;GitHub</summary>
+        
+      
+    
+    
+    
+    <category term="网络安全" scheme="https://119291.xyz/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="渗透测试" scheme="https://119291.xyz/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="GitHub" scheme="https://119291.xyz/tags/GitHub/"/>
+    
+    <category term="Markdown" scheme="https://119291.xyz/tags/Markdown/"/>
+    
+    <category term="网络安全" scheme="https://119291.xyz/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="Web应用安全" scheme="https://119291.xyz/tags/Web%E5%BA%94%E7%94%A8%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="渗透测试" scheme="https://119291.xyz/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Neko：基于Docker和WebRTC的自托管虚拟浏览器</title>
+    <link href="https://119291.xyz/posts/neko-self-hosted-virtual-browser/"/>
+    <id>https://119291.xyz/posts/neko-self-hosted-virtual-browser/</id>
+    <published>2025-07-26T00:00:00.000Z</published>
+    <updated>2025-07-26T02:02:02.124Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Neko：基于Docker和WebRTC的自托管虚拟浏览器&quot;&gt;&lt;a href=&quot;#Neko：基于Docker和WebRTC的自托管虚拟浏览器&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="容器化技术" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%AE%B9%E5%99%A8%E5%8C%96%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="虚拟浏览器应用" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%AE%B9%E5%99%A8%E5%8C%96%E6%8A%80%E6%9C%AF/%E8%99%9A%E6%8B%9F%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Docker" scheme="https://119291.xyz/tags/Docker/"/>
+    
+    <category term="WebRTC" scheme="https://119291.xyz/tags/WebRTC/"/>
+    
+    <category term="虚拟浏览器" scheme="https://119291.xyz/tags/%E8%99%9A%E6%8B%9F%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="多用户协作" scheme="https://119291.xyz/tags/%E5%A4%9A%E7%94%A8%E6%88%B7%E5%8D%8F%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Perplexica：开源AI搜索引擎的使用与部署</title>
+    <link href="https://119291.xyz/posts/perplexica-open-source-ai-search-engine-guide/"/>
+    <id>https://119291.xyz/posts/perplexica-open-source-ai-search-engine-guide/</id>
+    <published>2025-07-26T00:00:00.000Z</published>
+    <updated>2025-07-26T02:02:02.002Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Perplexica：开源AI搜索引擎的使用与部署&quot;&gt;&lt;a href=&quot;#Perplexica：开源AI搜索引擎的使用与部署&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="搜索引擎开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="Docker" scheme="https://119291.xyz/tags/Docker/"/>
+    
+    <category term="搜索引擎部署" scheme="https://119291.xyz/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="AI搜索技术" scheme="https://119291.xyz/tags/AI%E6%90%9C%E7%B4%A2%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AI工具系统提示和模型资源汇总</title>
+    <link href="https://119291.xyz/posts/ai-tools-system-prompts-and-models-summary/"/>
+    <id>https://119291.xyz/posts/ai-tools-system-prompts-and-models-summary/</id>
+    <published>2025-07-25T00:00:00.000Z</published>
+    <updated>2025-07-25T03:16:52.395Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;AI工具系统提示和模型资源汇总&quot;&gt;&lt;a href=&quot;#AI工具系统提示和模型资源汇总&quot; class=&quot;headerlink&quot; title=&quot;AI工具系统提示和模型资源汇总&quot;&gt;&lt;/a&gt;AI工具系统提示和模型资源汇总&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="工具资源" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%B7%A5%E5%85%B7%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="GitHub" scheme="https://119291.xyz/tags/GitHub/"/>
+    
+    <category term="开源项目" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="人工智能" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="系统提示" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA/"/>
+    
+    <category term="AI模型" scheme="https://119291.xyz/tags/AI%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A visual no - code theme editor for shadcn/ui components</title>
+    <link href="https://119291.xyz/posts/a-visual-no-code-theme-editor-for-shadcn-ui-components/"/>
+    <id>https://119291.xyz/posts/a-visual-no-code-theme-editor-for-shadcn-ui-components/</id>
+    <published>2025-07-25T00:00:00.000Z</published>
+    <updated>2025-07-25T03:16:52.481Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;A-visual-no-code-theme-editor-for-shadcn-ui-components&quot;&gt;&lt;a href=&quot;#A-visual-no-code-theme-editor-for-shadcn-ui-components&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="组件主题定制" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E7%BB%84%E4%BB%B6%E4%B8%BB%E9%A2%98%E5%AE%9A%E5%88%B6/"/>
+    
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Node.js" scheme="https://119291.xyz/tags/Node-js/"/>
+    
+    <category term="shadcn/ui" scheme="https://119291.xyz/tags/shadcn-ui/"/>
+    
+    <category term="可视化主题编辑器" scheme="https://119291.xyz/tags/%E5%8F%AF%E8%A7%86%E5%8C%96%E4%B8%BB%E9%A2%98%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Firecrawl：将网站转换为LLM就绪数据的API服务</title>
+    <link href="https://119291.xyz/posts/firecrawl-transforming-websites-into-llm-ready-data/"/>
+    <id>https://119291.xyz/posts/firecrawl-transforming-websites-into-llm-ready-data/</id>
+    <published>2025-07-25T00:00:00.000Z</published>
+    <updated>2025-07-25T03:16:52.506Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Firecrawl：将网站转换为LLM就绪数据的API服务&quot;&gt;&lt;a href=&quot;#Firecrawl：将网站转换为LLM就绪数据的API服务&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数据处理" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+    <category term="网络爬虫" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="数据处理" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
+    
+    <category term="Python/Node.js" scheme="https://119291.xyz/tags/Python-Node-js/"/>
+    
+    <category term="Firecrawl" scheme="https://119291.xyz/tags/Firecrawl/"/>
+    
+    <category term="网站数据抓取" scheme="https://119291.xyz/tags/%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8F%96/"/>
+    
+    <category term="LLM数据转换" scheme="https://119291.xyz/tags/LLM%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>oTTomator Live Agent Studio平台开源AI智能体介绍</title>
+    <link href="https://119291.xyz/posts/ottomator-live-agent-studio-open-source-ai-agents-introduction/"/>
+    <id>https://119291.xyz/posts/ottomator-live-agent-studio-open-source-ai-agents-introduction/</id>
+    <published>2025-07-25T00:00:00.000Z</published>
+    <updated>2025-07-25T03:16:52.426Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;oTTomator-Live-Agent-Studio平台开源AI智能体介绍&quot;&gt;&lt;a href=&quot;#oTTomator-Live-Agent-Studio平台开源AI智能体介绍&quot; class=&quot;headerlink&quot; title=&quot;oTTomator Live</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="人工智能" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="oTTomator Live Agent Studio" scheme="https://119291.xyz/tags/oTTomator-Live-Agent-Studio/"/>
+    
+    <category term="开源AI智能体" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90AI%E6%99%BA%E8%83%BD%E4%BD%93/"/>
+    
+    <category term="技术平台" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E5%B9%B3%E5%8F%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STORM与Co - STORM：基于大语言模型的知识策展系统</title>
+    <link href="https://119291.xyz/posts/storm-and-co-storm-knowledge-curation-system/"/>
+    <id>https://119291.xyz/posts/storm-and-co-storm-knowledge-curation-system/</id>
+    <published>2025-07-25T00:00:00.000Z</published>
+    <updated>2025-07-25T03:16:52.453Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;STORM与Co-STORM：基于大语言模型的知识策展系统&quot;&gt;&lt;a href=&quot;#STORM与Co-STORM：基于大语言模型的知识策展系统&quot; class=&quot;headerlink&quot; title=&quot;STORM与Co -</summary>
+        
+      
+    
+    
+    
+    <category term="自然语言处理" scheme="https://119291.xyz/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+    <category term="知识策展系统开发" scheme="https://119291.xyz/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E7%9F%A5%E8%AF%86%E7%AD%96%E5%B1%95%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="自然语言处理" scheme="https://119291.xyz/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
+    
+    <category term="STORM" scheme="https://119291.xyz/tags/STORM/"/>
+    
+    <category term="Co - STORM" scheme="https://119291.xyz/tags/Co-STORM/"/>
+    
+    <category term="知识策展" scheme="https://119291.xyz/tags/%E7%9F%A5%E8%AF%86%E7%AD%96%E5%B1%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitHub - 面向初学者的生成式AI入门课程介绍</title>
     <link href="https://119291.xyz/posts/github-generative-ai-beginners-course-introduction/"/>
     <id>https://119291.xyz/posts/github-generative-ai-beginners-course-introduction/</id>
     <published>2025-07-24T00:00:00.000Z</published>
-    <updated>2025-07-24T03:28:29.193Z</updated>
+    <updated>2025-07-24T03:29:48.074Z</updated>
     
     
       
@@ -56,7 +410,7 @@
     <link href="https://119291.xyz/posts/github-microsoft-ml-for-beginners-course-guide/"/>
     <id>https://119291.xyz/posts/github-microsoft-ml-for-beginners-course-guide/</id>
     <published>2025-07-24T00:00:00.000Z</published>
-    <updated>2025-07-24T03:28:29.171Z</updated>
+    <updated>2025-07-24T03:29:48.076Z</updated>
     
     
       
@@ -93,7 +447,7 @@
     <link href="https://119291.xyz/posts/graphite-2d-content-creation-tool/"/>
     <id>https://119291.xyz/posts/graphite-2d-content-creation-tool/</id>
     <published>2025-07-24T00:00:00.000Z</published>
-    <updated>2025-07-24T03:28:29.217Z</updated>
+    <updated>2025-07-24T03:29:48.077Z</updated>
     
     
       
@@ -128,7 +482,7 @@
     <link href="https://119291.xyz/posts/octra-wallet-generator-quick-start-guide/"/>
     <id>https://119291.xyz/posts/octra-wallet-generator-quick-start-guide/</id>
     <published>2025-07-24T00:00:00.000Z</published>
-    <updated>2025-07-24T03:28:29.241Z</updated>
+    <updated>2025-07-24T03:29:48.078Z</updated>
     
     
       
@@ -163,7 +517,7 @@
     <link href="https://119291.xyz/posts/portkey-ai-gateway-route-solution/"/>
     <id>https://119291.xyz/posts/portkey-ai-gateway-route-solution/</id>
     <published>2025-07-24T00:00:00.000Z</published>
-    <updated>2025-07-24T03:28:29.142Z</updated>
+    <updated>2025-07-24T03:29:48.078Z</updated>
     
     
       
@@ -365,362 +719,6 @@
     <category term="MCP Registry" scheme="https://119291.xyz/tags/MCP-Registry/"/>
     
     <category term="服务开发" scheme="https://119291.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从零开始构建各类技术的指南汇总</title>
-    <link href="https://119291.xyz/posts/build-your-own-x-guide/"/>
-    <id>https://119291.xyz/posts/build-your-own-x-guide/</id>
-    <published>2025-07-22T00:00:00.000Z</published>
-    <updated>2025-07-22T02:32:51.726Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;从零开始构建各类技术的指南汇总&quot;&gt;&lt;a href=&quot;#从零开始构建各类技术的指南汇总&quot; class=&quot;headerlink&quot; title=&quot;从零开始构建各类技术的指南汇总&quot;&gt;&lt;/a&gt;从零开始构建各类技术的指南汇总&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="技术学习指南" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="GitHub" scheme="https://119291.xyz/tags/GitHub/"/>
-    
-    <category term="多语言（C、C++、Python等）" scheme="https://119291.xyz/tags/%E5%A4%9A%E8%AF%AD%E8%A8%80%EF%BC%88C%E3%80%81C-%E3%80%81Python%E7%AD%89%EF%BC%89/"/>
-    
-    <category term="技术复现" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E5%A4%8D%E7%8E%B0/"/>
-    
-    <category term="学习资源" scheme="https://119291.xyz/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub - kilimchoi/engineering-blogs：精选软件工程博客列表</title>
-    <link href="https://119291.xyz/posts/github-kilimchoi-engineering-blogs/"/>
-    <id>https://119291.xyz/posts/github-kilimchoi-engineering-blogs/</id>
-    <published>2025-07-22T00:00:00.000Z</published>
-    <updated>2025-07-22T02:32:51.727Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GitHub-kilimchoi-engineering-blogs：精选软件工程博客列表&quot;&gt;&lt;a href=&quot;#GitHub-kilimchoi-engineering-blogs：精选软件工程博客列表&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="技术资源" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="GitHub" scheme="https://119291.xyz/tags/GitHub/"/>
-    
-    <category term="Markdown" scheme="https://119291.xyz/tags/Markdown/"/>
-    
-    <category term="软件工程博客" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="技术资源" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub - sindresorhus/awesome 中的技术资源汇总</title>
-    <link href="https://119291.xyz/posts/github-sindresorhus-awesome-resource-summary/"/>
-    <id>https://119291.xyz/posts/github-sindresorhus-awesome-resource-summary/</id>
-    <published>2025-07-22T00:00:00.000Z</published>
-    <updated>2025-07-22T02:32:51.729Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GitHub-sindresorhus-awesome-中的技术资源汇总&quot;&gt;&lt;a href=&quot;#GitHub-sindresorhus-awesome-中的技术资源汇总&quot; class=&quot;headerlink&quot; title=&quot;GitHub -</summary>
-        
-      
-    
-    
-    
-    <category term="技术资源" scheme="https://119291.xyz/categories/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90/"/>
-    
-    <category term="开源项目" scheme="https://119291.xyz/categories/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="GitHub" scheme="https://119291.xyz/tags/GitHub/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="开源项目" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
-    <category term="技术资源" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90/"/>
-    
-    <category term="技术汇总" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E6%B1%87%E6%80%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Gitleaks检测代码库中的敏感信息</title>
-    <link href="https://119291.xyz/posts/gitleaks-sensitive-information-detection/"/>
-    <id>https://119291.xyz/posts/gitleaks-sensitive-information-detection/</id>
-    <published>2025-07-22T00:00:00.000Z</published>
-    <updated>2025-07-22T02:32:51.728Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;使用Gitleaks检测代码库中的敏感信息&quot;&gt;&lt;a href=&quot;#使用Gitleaks检测代码库中的敏感信息&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="代码安全" scheme="https://119291.xyz/categories/%E4%BB%A3%E7%A0%81%E5%AE%89%E5%85%A8/"/>
-    
-    <category term="敏感信息检测" scheme="https://119291.xyz/categories/%E4%BB%A3%E7%A0%81%E5%AE%89%E5%85%A8/%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF%E6%A3%80%E6%B5%8B/"/>
-    
-    
-    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
-    
-    <category term="代码安全" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E5%AE%89%E5%85%A8/"/>
-    
-    <category term="Gitleaks" scheme="https://119291.xyz/tags/Gitleaks/"/>
-    
-    <category term="敏感信息检测" scheme="https://119291.xyz/tags/%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF%E6%A3%80%E6%B5%8B/"/>
-    
-    <category term="代码扫描" scheme="https://119291.xyz/tags/%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从零开始实现机器学习算法</title>
-    <link href="https://119291.xyz/posts/machine-learning-algorithms-implementation-from-scratch/"/>
-    <id>https://119291.xyz/posts/machine-learning-algorithms-implementation-from-scratch/</id>
-    <published>2025-07-22T00:00:00.000Z</published>
-    <updated>2025-07-22T02:32:51.730Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;从零开始实现机器学习算法&quot;&gt;&lt;a href=&quot;#从零开始实现机器学习算法&quot; class=&quot;headerlink&quot; title=&quot;从零开始实现机器学习算法&quot;&gt;&lt;/a&gt;从零开始实现机器学习算法&lt;/h1&gt;&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="机器学习" scheme="https://119291.xyz/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="算法实现" scheme="https://119291.xyz/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0/"/>
-    
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="机器学习" scheme="https://119291.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="NumPy" scheme="https://119291.xyz/tags/NumPy/"/>
-    
-    <category term="算法实现" scheme="https://119291.xyz/tags/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0/"/>
-    
-    <category term="深度学习" scheme="https://119291.xyz/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2025-07-21 Github热门仓库</title>
-    <link href="https://119291.xyz/posts/2025-07-21-github-re-men-cang-ku/"/>
-    <id>https://119291.xyz/posts/2025-07-21-github-re-men-cang-ku/</id>
-    <published>2025-07-21T00:00:00.000Z</published>
-    <updated>2025-07-21T06:14:38.607Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;2025-07-21-Github热门仓库&quot;&gt;&lt;a href=&quot;#2025-07-21-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2025-07-21 Github热门仓库&quot;&gt;&lt;/a&gt;2025-07-21</summary>
-        
-      
-    
-    
-    
-    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
-    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
-    
-    
-    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="C++" scheme="https://119291.xyz/tags/C/"/>
-    
-    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
-    
-    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>免费开发者资源汇总：SaaS、PaaS 和 IaaS 免费套餐一览</title>
-    <link href="https://119291.xyz/posts/free-dev-resources-summary/"/>
-    <id>https://119291.xyz/posts/free-dev-resources-summary/</id>
-    <published>2025-07-21T00:00:00.000Z</published>
-    <updated>2025-07-21T06:14:38.608Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;免费开发者资源汇总：SaaS、PaaS-和-IaaS-免费套餐一览&quot;&gt;&lt;a href=&quot;#免费开发者资源汇总：SaaS、PaaS-和-IaaS-免费套餐一览&quot; class=&quot;headerlink&quot; title=&quot;免费开发者资源汇总：SaaS、PaaS 和</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="云计算" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
-    
-    <category term="工具资源" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E4%BA%91%E8%AE%A1%E7%AE%97/%E5%B7%A5%E5%85%B7%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="云计算" scheme="https://119291.xyz/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"/>
-    
-    <category term="免费资源" scheme="https://119291.xyz/tags/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/"/>
-    
-    <category term="开发者工具" scheme="https://119291.xyz/tags/%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub - AykutSarac/jsoncrack.com：数据格式可视化工具介绍</title>
-    <link href="https://119291.xyz/posts/github-aykutsarac-jsoncrack-com-introduction/"/>
-    <id>https://119291.xyz/posts/github-aykutsarac-jsoncrack-com-introduction/</id>
-    <published>2025-07-21T00:00:00.000Z</published>
-    <updated>2025-07-21T06:14:38.609Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GitHub-AykutSarac-jsoncrack-com：数据格式可视化工具介绍&quot;&gt;&lt;a href=&quot;#GitHub-AykutSarac-jsoncrack-com：数据格式可视化工具介绍&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="数据可视化工具" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Next.js" scheme="https://119291.xyz/tags/Next-js/"/>
-    
-    <category term="React.js" scheme="https://119291.xyz/tags/React-js/"/>
-    
-    <category term="数据格式可视化" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Self-Hosting Guide：本地托管和管理软件应用的综合指南</title>
-    <link href="https://119291.xyz/posts/self-hosting-guide-comprehensive-tutorial/"/>
-    <id>https://119291.xyz/posts/self-hosting-guide-comprehensive-tutorial/</id>
-    <published>2025-07-21T00:00:00.000Z</published>
-    <updated>2025-07-21T06:14:38.609Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="静态站点搭建" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E9%9D%99%E6%80%81%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="工具实践" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E9%9D%99%E6%80%81%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA/%E5%B7%A5%E5%85%B7%E5%AE%9E%E8%B7%B5/"/>
-    
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="工具实践" scheme="https://119291.xyz/tags/%E5%B7%A5%E5%85%B7%E5%AE%9E%E8%B7%B5/"/>
-    
-    <category term="Hexo" scheme="https://119291.xyz/tags/Hexo/"/>
-    
-    <category term="静态站点搭建" scheme="https://119291.xyz/tags/%E9%9D%99%E6%80%81%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程序员值得访问的实用网站推荐</title>
-    <link href="https://119291.xyz/posts/useful-websites-for-programmers/"/>
-    <id>https://119291.xyz/posts/useful-websites-for-programmers/</id>
-    <published>2025-07-21T00:00:00.000Z</published>
-    <updated>2025-07-21T06:14:38.611Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;程序员值得访问的实用网站推荐&quot;&gt;&lt;a href=&quot;#程序员值得访问的实用网站推荐&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="资源推荐" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90/"/>
-    
-    
-    <category term="GitHub" scheme="https://119291.xyz/tags/GitHub/"/>
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="实用网站" scheme="https://119291.xyz/tags/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="编程学习" scheme="https://119291.xyz/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
