@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-07-26T02:02:02.039Z</updated>
+  <updated>2025-07-27T03:44:17.845Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -17,11 +17,186 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GitHub googleapis/genai - toolbox数据库MCP工具包介绍</title>
+    <link href="https://119291.xyz/posts/github-googleapis-genai-toolbox-introduction/"/>
+    <id>https://119291.xyz/posts/github-googleapis-genai-toolbox-introduction/</id>
+    <published>2025-07-27T00:00:00.000Z</published>
+    <updated>2025-07-27T03:44:17.845Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GitHub-googleapis-genai-toolbox数据库MCP工具包介绍&quot;&gt;&lt;a href=&quot;#GitHub-googleapis-genai-toolbox数据库MCP工具包介绍&quot; class=&quot;headerlink&quot; title=&quot;GitHub</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="数据库工具" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="googleapis/genai - toolbox" scheme="https://119291.xyz/tags/googleapis-genai-toolbox/"/>
+    
+    <category term="数据库MCP工具" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93MCP%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="工具集成" scheme="https://119291.xyz/tags/%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Supercharge Your LLM with the Fastest KV Cache Layer</title>
+    <link href="https://119291.xyz/posts/supercharge-your-llm-with-the-fastest-kv-cache-layer/"/>
+    <id>https://119291.xyz/posts/supercharge-your-llm-with-the-fastest-kv-cache-layer/</id>
+    <published>2025-07-27T00:00:00.000Z</published>
+    <updated>2025-07-27T03:44:17.774Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Supercharge-Your-LLM-with-the-Fastest-KV-Cache-Layer&quot;&gt;&lt;a href=&quot;#Supercharge-Your-LLM-with-the-Fastest-KV-Cache-Layer&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="人工智能" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="大语言模型加速" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%8A%A0%E9%80%9F/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="人工智能" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="LMCache" scheme="https://119291.xyz/tags/LMCache/"/>
+    
+    <category term="大语言模型服务" scheme="https://119291.xyz/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="KV缓存" scheme="https://119291.xyz/tags/KV%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Biomni: 通用生物医学AI智能体介绍</title>
+    <link href="https://119291.xyz/posts/biomni-general-purpose-biomedical-ai-agent-introduction/"/>
+    <id>https://119291.xyz/posts/biomni-general-purpose-biomedical-ai-agent-introduction/</id>
+    <published>2025-07-27T00:00:00.000Z</published>
+    <updated>2025-07-27T03:44:17.799Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Biomni-通用生物医学AI智能体介绍&quot;&gt;&lt;a href=&quot;#Biomni-通用生物医学AI智能体介绍&quot; class=&quot;headerlink&quot; title=&quot;Biomni: 通用生物医学AI智能体介绍&quot;&gt;&lt;/a&gt;Biomni:</summary>
+        
+      
+    
+    
+    
+    <category term="生物医学" scheme="https://119291.xyz/categories/%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6/"/>
+    
+    <category term="人工智能应用" scheme="https://119291.xyz/categories/%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="生物医学" scheme="https://119291.xyz/tags/%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6/"/>
+    
+    <category term="Biomni" scheme="https://119291.xyz/tags/Biomni/"/>
+    
+    <category term="生物医学研究工具" scheme="https://119291.xyz/tags/%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6%E7%A0%94%E7%A9%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="大语言模型应用" scheme="https://119291.xyz/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OpenTelemetry Go API 和 SDK 介绍</title>
+    <link href="https://119291.xyz/posts/opentelemetry-go-api-and-sdk-introduction/"/>
+    <id>https://119291.xyz/posts/opentelemetry-go-api-and-sdk-introduction/</id>
+    <published>2025-07-27T00:00:00.000Z</published>
+    <updated>2025-07-27T03:44:17.821Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;OpenTelemetry-Go-API-和-SDK-介绍&quot;&gt;&lt;a href=&quot;#OpenTelemetry-Go-API-和-SDK-介绍&quot; class=&quot;headerlink&quot; title=&quot;OpenTelemetry Go API 和 SDK</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="可观测性工具实践" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7%E5%B7%A5%E5%85%B7%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="OpenTelemetry" scheme="https://119291.xyz/tags/OpenTelemetry/"/>
+    
+    <category term="性能监测" scheme="https://119291.xyz/tags/%E6%80%A7%E8%83%BD%E7%9B%91%E6%B5%8B/"/>
+    
+    <category term="可观测性" scheme="https://119291.xyz/tags/%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Protocol Buffers介绍与安装指南</title>
+    <link href="https://119291.xyz/posts/protocol-buffers-introduction-and-installation-guide/"/>
+    <id>https://119291.xyz/posts/protocol-buffers-introduction-and-installation-guide/</id>
+    <published>2025-07-27T00:00:00.000Z</published>
+    <updated>2025-07-27T03:44:17.866Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Protocol-Buffers介绍与安装指南&quot;&gt;&lt;a href=&quot;#Protocol-Buffers介绍与安装指南&quot; class=&quot;headerlink&quot; title=&quot;Protocol Buffers介绍与安装指南&quot;&gt;&lt;/a&gt;Protocol</summary>
+        
+      
+    
+    
+    
+    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="数据交换格式" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8F/"/>
+    
+    
+    <category term="C++" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="数据序列化" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%8F%E5%88%97%E5%8C%96/"/>
+    
+    <category term="Protocol Buffers" scheme="https://119291.xyz/tags/Protocol-Buffers/"/>
+    
+    <category term="安装指南" scheme="https://119291.xyz/tags/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97/"/>
+    
+  </entry>
+  
+  <entry>
     <title>BookLore：个人数字图书馆管理神器</title>
     <link href="https://119291.xyz/posts/booklore-digital-library-management-app/"/>
     <id>https://119291.xyz/posts/booklore-digital-library-management-app/</id>
     <published>2025-07-26T00:00:00.000Z</published>
-    <updated>2025-07-26T02:02:02.039Z</updated>
+    <updated>2025-07-26T02:02:43.578Z</updated>
     
     
       
@@ -58,7 +233,7 @@
     <link href="https://119291.xyz/posts/github-mikumifa-bilitickerbuy-bilibili-membership-ticket-buying-assistant/"/>
     <id>https://119291.xyz/posts/github-mikumifa-bilitickerbuy-bilibili-membership-ticket-buying-assistant/</id>
     <published>2025-07-26T00:00:00.000Z</published>
-    <updated>2025-07-26T02:02:02.096Z</updated>
+    <updated>2025-07-26T02:02:43.580Z</updated>
     
     
       
@@ -93,7 +268,7 @@
     <link href="https://119291.xyz/posts/github-payloadsallthethings-project-introduction/"/>
     <id>https://119291.xyz/posts/github-payloadsallthethings-project-introduction/</id>
     <published>2025-07-26T00:00:00.000Z</published>
-    <updated>2025-07-26T02:02:02.070Z</updated>
+    <updated>2025-07-26T02:02:43.581Z</updated>
     
     
       
@@ -128,7 +303,7 @@
     <link href="https://119291.xyz/posts/neko-self-hosted-virtual-browser/"/>
     <id>https://119291.xyz/posts/neko-self-hosted-virtual-browser/</id>
     <published>2025-07-26T00:00:00.000Z</published>
-    <updated>2025-07-26T02:02:02.124Z</updated>
+    <updated>2025-07-26T02:02:43.583Z</updated>
     
     
       
@@ -165,7 +340,7 @@
     <link href="https://119291.xyz/posts/perplexica-open-source-ai-search-engine-guide/"/>
     <id>https://119291.xyz/posts/perplexica-open-source-ai-search-engine-guide/</id>
     <published>2025-07-26T00:00:00.000Z</published>
-    <updated>2025-07-26T02:02:02.002Z</updated>
+    <updated>2025-07-26T02:02:43.584Z</updated>
     
     
       
@@ -200,7 +375,7 @@
     <link href="https://119291.xyz/posts/ai-tools-system-prompts-and-models-summary/"/>
     <id>https://119291.xyz/posts/ai-tools-system-prompts-and-models-summary/</id>
     <published>2025-07-25T00:00:00.000Z</published>
-    <updated>2025-07-25T03:16:52.395Z</updated>
+    <updated>2025-07-26T02:02:43.575Z</updated>
     
     
       
@@ -235,7 +410,7 @@
     <link href="https://119291.xyz/posts/a-visual-no-code-theme-editor-for-shadcn-ui-components/"/>
     <id>https://119291.xyz/posts/a-visual-no-code-theme-editor-for-shadcn-ui-components/</id>
     <published>2025-07-25T00:00:00.000Z</published>
-    <updated>2025-07-25T03:16:52.481Z</updated>
+    <updated>2025-07-26T02:02:43.577Z</updated>
     
     
       
@@ -270,7 +445,7 @@
     <link href="https://119291.xyz/posts/firecrawl-transforming-websites-into-llm-ready-data/"/>
     <id>https://119291.xyz/posts/firecrawl-transforming-websites-into-llm-ready-data/</id>
     <published>2025-07-25T00:00:00.000Z</published>
-    <updated>2025-07-25T03:16:52.506Z</updated>
+    <updated>2025-07-26T02:02:43.578Z</updated>
     
     
       
@@ -305,7 +480,7 @@
     <link href="https://119291.xyz/posts/ottomator-live-agent-studio-open-source-ai-agents-introduction/"/>
     <id>https://119291.xyz/posts/ottomator-live-agent-studio-open-source-ai-agents-introduction/</id>
     <published>2025-07-25T00:00:00.000Z</published>
-    <updated>2025-07-25T03:16:52.426Z</updated>
+    <updated>2025-07-26T02:02:43.582Z</updated>
     
     
       
@@ -340,7 +515,7 @@
     <link href="https://119291.xyz/posts/storm-and-co-storm-knowledge-curation-system/"/>
     <id>https://119291.xyz/posts/storm-and-co-storm-knowledge-curation-system/</id>
     <published>2025-07-25T00:00:00.000Z</published>
-    <updated>2025-07-25T03:16:52.453Z</updated>
+    <updated>2025-07-26T02:02:43.585Z</updated>
     
     
       
@@ -544,181 +719,6 @@
     <category term="Portkey-AI/gateway" scheme="https://119291.xyz/tags/Portkey-AI-gateway/"/>
     
     <category term="AI路由" scheme="https://119291.xyz/tags/AI%E8%B7%AF%E7%94%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub mui/base - ui：构建可访问 Web 应用和设计系统的无样式 UI 组件</title>
-    <link href="https://119291.xyz/posts/github-mui-base-ui-unstyled-ui-components/"/>
-    <id>https://119291.xyz/posts/github-mui-base-ui-unstyled-ui-components/</id>
-    <published>2025-07-23T00:00:00.000Z</published>
-    <updated>2025-07-23T01:17:05.297Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GitHub-mui-base-ui：构建可访问-Web-应用和设计系统的无样式-UI-组件&quot;&gt;&lt;a href=&quot;#GitHub-mui-base-ui：构建可访问-Web-应用和设计系统的无样式-UI-组件&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端开发" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="UI组件库" scheme="https://119291.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/UI%E7%BB%84%E4%BB%B6%E5%BA%93/"/>
-    
-    
-    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
-    
-    <category term="前端开发" scheme="https://119291.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="mui/base - ui" scheme="https://119291.xyz/tags/mui-base-ui/"/>
-    
-    <category term="可访问性设计" scheme="https://119291.xyz/tags/%E5%8F%AF%E8%AE%BF%E9%97%AE%E6%80%A7%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="无样式UI组件" scheme="https://119291.xyz/tags/%E6%97%A0%E6%A0%B7%E5%BC%8FUI%E7%BB%84%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Awesome MCP Servers：MCP 服务器精选列表</title>
-    <link href="https://119291.xyz/posts/awesome-mcp-servers-collection/"/>
-    <id>https://119291.xyz/posts/awesome-mcp-servers-collection/</id>
-    <published>2025-07-23T00:00:00.000Z</published>
-    <updated>2025-07-23T01:17:05.299Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot; class=&quot;headerlink&quot; title=&quot;技术背景&quot;&gt;&lt;/a&gt;技术背景&lt;/h2&gt;&lt;p&gt;Model Context</summary>
-        
-      
-    
-    
-    
-    <category term="人工智能" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="模型协议" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%A8%A1%E5%9E%8B%E5%8D%8F%E8%AE%AE/"/>
-    
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="人工智能" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="Model Context Protocol (MCP)" scheme="https://119291.xyz/tags/Model-Context-Protocol-MCP/"/>
-    
-    <category term="MCP服务器" scheme="https://119291.xyz/tags/MCP%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    <category term="资源整合" scheme="https://119291.xyz/tags/%E8%B5%84%E6%BA%90%E6%95%B4%E5%90%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub twentyhq/twenty：构建现代Salesforce替代方案</title>
-    <link href="https://119291.xyz/posts/github-twentyhq-twenty-open-source-crm/"/>
-    <id>https://119291.xyz/posts/github-twentyhq-twenty-open-source-crm/</id>
-    <published>2025-07-23T00:00:00.000Z</published>
-    <updated>2025-07-23T01:17:05.300Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GitHub-twentyhq-twenty：构建现代Salesforce替代方案&quot;&gt;&lt;a href=&quot;#GitHub-twentyhq-twenty：构建现代Salesforce替代方案&quot; class=&quot;headerlink&quot; title=&quot;GitHub</summary>
-        
-      
-    
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="开源项目" scheme="https://119291.xyz/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="软件开发" scheme="https://119291.xyz/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
-    
-    <category term="GitHub" scheme="https://119291.xyz/tags/GitHub/"/>
-    
-    <category term="开源CRM" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90CRM/"/>
-    
-    <category term="项目开发" scheme="https://119291.xyz/tags/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nexus CLI：向Nexus网络提供证明的命令行工具</title>
-    <link href="https://119291.xyz/posts/nexus-cli-guide-for-nexus-network/"/>
-    <id>https://119291.xyz/posts/nexus-cli-guide-for-nexus-network/</id>
-    <published>2025-07-23T00:00:00.000Z</published>
-    <updated>2025-07-23T01:17:05.301Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Nexus-CLI：向Nexus网络提供证明的命令行工具&quot;&gt;&lt;a href=&quot;#Nexus-CLI：向Nexus网络提供证明的命令行工具&quot; class=&quot;headerlink&quot; title=&quot;Nexus</summary>
-        
-      
-    
-    
-    
-    <category term="区块链开发" scheme="https://119291.xyz/categories/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="分布式网络工具" scheme="https://119291.xyz/categories/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%BC%80%E5%8F%91/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"/>
-    
-    
-    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
-    
-    <category term="区块链开发" scheme="https://119291.xyz/tags/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="Nexus CLI" scheme="https://119291.xyz/tags/Nexus-CLI/"/>
-    
-    <category term="分布式证明网络" scheme="https://119291.xyz/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AF%81%E6%98%8E%E7%BD%91%E7%BB%9C/"/>
-    
-    <category term="命令行工具使用" scheme="https://119291.xyz/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Model Context Protocol (MCP) Registry服务介绍与使用指南</title>
-    <link href="https://119291.xyz/posts/model-context-protocol-registry-service-guide/"/>
-    <id>https://119291.xyz/posts/model-context-protocol-registry-service-guide/</id>
-    <published>2025-07-23T00:00:00.000Z</published>
-    <updated>2025-07-23T01:17:05.302Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Model-Context-Protocol-MCP-Registry服务介绍与使用指南&quot;&gt;&lt;a href=&quot;#Model-Context-Protocol-MCP-Registry服务介绍与使用指南&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端开发" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="服务注册与发现" scheme="https://119291.xyz/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/"/>
-    
-    
-    <category term="GitHub" scheme="https://119291.xyz/tags/GitHub/"/>
-    
-    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
-    
-    <category term="后端开发" scheme="https://119291.xyz/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="MCP Registry" scheme="https://119291.xyz/tags/MCP-Registry/"/>
-    
-    <category term="服务开发" scheme="https://119291.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
