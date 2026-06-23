@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>如何使用无密码账户登入远程桌面 - Microsoft Q&amp;A</title>
+    <link href="/posts/ru-he-shi-yong-wu-mi-ma-zhang-hu-deng-ru-yuan-cheng-zhuo-mian-microsoft-q-a/"/>
+    <url>/posts/ru-he-shi-yong-wu-mi-ma-zhang-hu-deng-ru-yuan-cheng-zhuo-mian-microsoft-q-a/</url>
+    
+    <content type="html"><![CDATA[<h1 id="要点摘要"><a href="#要点摘要" class="headerlink" title="要点摘要"></a>要点摘要</h1><ul><li>Microsoft无密码账户暂不支持RDP、网络文件共享、任务计划等需要验证凭据的场景</li><li>若需使用无密码账户进行上述操作，可选择关闭无密码账户，或通过缓存密码的方式临时解决RDP登录问题</li></ul><h1 id="关键内容"><a href="#关键内容" class="headerlink" title="关键内容"></a>关键内容</h1><h2 id="限制说明"><a href="#限制说明" class="headerlink" title="限制说明"></a>限制说明</h2><ol><li>Microsoft无密码账户不支持RDP、网络文件共享、任务计划等需要用户名和密码的操作</li><li>若需进行上述操作，需关闭无密码账户，或创建本地/未开启无密码的Microsoft账户</li></ol><h2 id="临时缓存密码方案（RDP可用）"><a href="#临时缓存密码方案（RDP可用）" class="headerlink" title="临时缓存密码方案（RDP可用）"></a>临时缓存密码方案（RDP可用）</h2><h3 id="方案1"><a href="#方案1" class="headerlink" title="方案1"></a>方案1</h3><ol><li>在远程电脑上，通过CMD运行指定指令</li></ol><figure class="highlight cmd"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">runas /u:MicrosoftAccount\username@example.com winver<br></code></pre></td></tr></tbody></table></figure><ol start="2"><li>将<code>username@example.com</code>替换为实际的Microsoft账户邮箱</li><li>输入对应的Microsoft账户密码，完成凭据缓存</li></ol><h3 id="方案2"><a href="#方案2" class="headerlink" title="方案2"></a>方案2</h3><ol><li>在远程设备上重启电脑</li><li>进入登录界面后选择「忘记PIN」选项</li><li>按提示输入Microsoft账户密码</li><li>到达更改PIN页面时直接关闭该窗口，完成密码缓存</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术教程</category>
+      
+      <category>Windows操作</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>远程桌面</tag>
+      
+      <tag>无密码账户</tag>
+      
+      <tag>RDP登录</tag>
+      
+      <tag>Microsoft账户</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>GitHub googleapis/genai - toolbox数据库MCP工具包介绍</title>
     <link href="/posts/github-googleapis-genai-toolbox-introduction/"/>
     <url>/posts/github-googleapis-genai-toolbox-introduction/</url>

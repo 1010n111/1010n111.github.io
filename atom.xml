@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2025-07-27T03:44:17.845Z</updated>
+  <updated>2026-06-23T01:25:43.000Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何使用无密码账户登入远程桌面 - Microsoft Q&amp;A</title>
+    <link href="https://119291.xyz/posts/ru-he-shi-yong-wu-mi-ma-zhang-hu-deng-ru-yuan-cheng-zhuo-mian-microsoft-q-a/"/>
+    <id>https://119291.xyz/posts/ru-he-shi-yong-wu-mi-ma-zhang-hu-deng-ru-yuan-cheng-zhuo-mian-microsoft-q-a/</id>
+    <published>2026-06-23T01:25:43.000Z</published>
+    <updated>2026-06-23T01:25:43.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;要点摘要&quot;&gt;&lt;a href=&quot;#要点摘要&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术教程" scheme="https://119291.xyz/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Windows操作" scheme="https://119291.xyz/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/Windows%E6%93%8D%E4%BD%9C/"/>
+    
+    
+    <category term="远程桌面" scheme="https://119291.xyz/tags/%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/"/>
+    
+    <category term="无密码账户" scheme="https://119291.xyz/tags/%E6%97%A0%E5%AF%86%E7%A0%81%E8%B4%A6%E6%88%B7/"/>
+    
+    <category term="RDP登录" scheme="https://119291.xyz/tags/RDP%E7%99%BB%E5%BD%95/"/>
+    
+    <category term="Microsoft账户" scheme="https://119291.xyz/tags/Microsoft%E8%B4%A6%E6%88%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitHub googleapis/genai - toolbox数据库MCP工具包介绍</title>
     <link href="https://119291.xyz/posts/github-googleapis-genai-toolbox-introduction/"/>
     <id>https://119291.xyz/posts/github-googleapis-genai-toolbox-introduction/</id>
     <published>2025-07-27T00:00:00.000Z</published>
-    <updated>2025-07-27T03:44:17.845Z</updated>
+    <updated>2025-07-27T03:45:27.531Z</updated>
     
     
       
@@ -56,7 +89,7 @@
     <link href="https://119291.xyz/posts/supercharge-your-llm-with-the-fastest-kv-cache-layer/"/>
     <id>https://119291.xyz/posts/supercharge-your-llm-with-the-fastest-kv-cache-layer/</id>
     <published>2025-07-27T00:00:00.000Z</published>
-    <updated>2025-07-27T03:44:17.774Z</updated>
+    <updated>2025-07-27T03:45:27.533Z</updated>
     
     
       
@@ -91,7 +124,7 @@
     <link href="https://119291.xyz/posts/biomni-general-purpose-biomedical-ai-agent-introduction/"/>
     <id>https://119291.xyz/posts/biomni-general-purpose-biomedical-ai-agent-introduction/</id>
     <published>2025-07-27T00:00:00.000Z</published>
-    <updated>2025-07-27T03:44:17.799Z</updated>
+    <updated>2025-07-27T03:45:27.534Z</updated>
     
     
       
@@ -126,7 +159,7 @@
     <link href="https://119291.xyz/posts/opentelemetry-go-api-and-sdk-introduction/"/>
     <id>https://119291.xyz/posts/opentelemetry-go-api-and-sdk-introduction/</id>
     <published>2025-07-27T00:00:00.000Z</published>
-    <updated>2025-07-27T03:44:17.821Z</updated>
+    <updated>2025-07-27T03:45:27.534Z</updated>
     
     
       
@@ -161,7 +194,7 @@
     <link href="https://119291.xyz/posts/protocol-buffers-introduction-and-installation-guide/"/>
     <id>https://119291.xyz/posts/protocol-buffers-introduction-and-installation-guide/</id>
     <published>2025-07-27T00:00:00.000Z</published>
-    <updated>2025-07-27T03:44:17.866Z</updated>
+    <updated>2025-07-27T03:45:27.535Z</updated>
     
     
       
@@ -684,41 +717,6 @@
     <category term="钱包生成" scheme="https://119291.xyz/tags/%E9%92%B1%E5%8C%85%E7%94%9F%E6%88%90/"/>
     
     <category term="Octra区块链" scheme="https://119291.xyz/tags/Octra%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Portkey AI Gateway：快速可靠的AI路由解决方案</title>
-    <link href="https://119291.xyz/posts/portkey-ai-gateway-route-solution/"/>
-    <id>https://119291.xyz/posts/portkey-ai-gateway-route-solution/</id>
-    <published>2025-07-24T00:00:00.000Z</published>
-    <updated>2025-07-24T03:29:48.078Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Portkey-AI-Gateway：快速可靠的AI路由解决方案&quot;&gt;&lt;a href=&quot;#Portkey-AI-Gateway：快速可靠的AI路由解决方案&quot; class=&quot;headerlink&quot; title=&quot;Portkey AI</summary>
-        
-      
-    
-    
-    
-    <category term="人工智能开发" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="AI网关应用" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/AI%E7%BD%91%E5%85%B3%E5%BA%94%E7%94%A8/"/>
-    
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="人工智能开发" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="安全防护" scheme="https://119291.xyz/tags/%E5%AE%89%E5%85%A8%E9%98%B2%E6%8A%A4/"/>
-    
-    <category term="Portkey-AI/gateway" scheme="https://119291.xyz/tags/Portkey-AI-gateway/"/>
-    
-    <category term="AI路由" scheme="https://119291.xyz/tags/AI%E8%B7%AF%E7%94%B1/"/>
     
   </entry>
   
