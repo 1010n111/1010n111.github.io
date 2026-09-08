@@ -4,6 +4,43 @@
   
   
   <entry>
+    <title>2026-09-08 Github热门仓库</title>
+    <link href="/posts/2026-09-08-github-re-men-cang-ku/"/>
+    <url>/posts/2026-09-08-github-re-men-cang-ku/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>🔥 本周 GitHub 热榜：让 AI 当基金经理？这波开源项目也太卷了！(2026-09-08)</p></blockquote><p>又到了每周吃瓜 GitHub Trending 的时间！今天榜单上不仅有微软官方出品的文件转换神器，还有能让 AI 帮你操盘对冲基金的野心之作，快来一起看看有没有你的菜～</p><h2 id="🔥-今日精选"><a href="#🔥-今日精选" class="headerlink" title="🔥 今日精选"></a>🔥 今日精选</h2><h3 id="1-microsoft-markitdown"><a href="#1-microsoft-markitdown" class="headerlink" title="1. microsoft/markitdown"></a>1. microsoft/markitdown</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/microsoft/markitdown">https://github.com/microsoft/markitdown</a></li><li><strong>简介</strong>：微软出品的文件转 Markdown 神器，PDF、Word、Excel 一把梭</li><li><strong>亮点</strong>：✨ 微软官方开源的 Python 工具，能把 PDF、Word、Excel、PPT、图片等几乎所有常见文件一键转成 Markdown 格式，180k+ star 的含金量不言而喻。对经常要喂文档给 LLM 的开发者来说，它就是把电子文档变成模型能直接读懂的语言的万能翻译官，堪称 RAG 和 Agent 工作流的必备神器！</li></ul><h3 id="2-The-Swarm-Corporation-AutoHedge"><a href="#2-The-Swarm-Corporation-AutoHedge" class="headerlink" title="2. The-Swarm-Corporation/AutoHedge"></a>2. The-Swarm-Corporation/AutoHedge</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/The-Swarm-Corporation/AutoHedge">https://github.com/The-Swarm-Corporation/AutoHedge</a></li><li><strong>简介</strong>：开箱即用的 AI 自主对冲基金，几分钟搭建你的量化交易帝国</li><li><strong>亮点</strong>：🤑 这就是传说中的「AI 帮我炒股」！AutoHedge 用群智能（swarm intelligence）+ AI Agent 实现市场分析、风险管理到下单执行的全自动闭环，5k+ star 且今日暴涨 517。不管你是想探索量化交易还是单纯好奇 AI 能不能赚钱，它都能让你在几分钟内搭建起自己的自动化对冲基金。不过友情提示：投资有风险，入市需谨慎哦！</li></ul><h3 id="3-bytedance-deer-flow"><a href="#3-bytedance-deer-flow" class="headerlink" title="3. bytedance/deer-flow"></a>3. bytedance/deer-flow</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/bytedance/deer-flow">https://github.com/bytedance/deer-flow</a></li><li><strong>简介</strong>：字节开源的超长任务 SuperAgent 框架，让 AI 一口气完成数小时的工作</li><li><strong>亮点</strong>：🦌 字节跳动开源的长期任务 Agent 框架，通过沙箱、记忆、工具、技能、子代理和消息网关的组合，让 AI 能够处理从几分钟到几小时的复杂任务。它不只是调个 API 那么简单，而是真正把「研究→写代码→创作」串成一条龙，81k+ star 证明了开发者对「真·自动化」有多渴望——是搭建个人 AI 助手的神级底座！</li></ul><h2 id="⚡-快速浏览"><a href="#⚡-快速浏览" class="headerlink" title="⚡ 快速浏览"></a>⚡ 快速浏览</h2><h3 id="4-heygen-com-hyperframes"><a href="#4-heygen-com-hyperframes" class="headerlink" title="4. heygen-com/hyperframes"></a>4. heygen-com/hyperframes</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/heygen-com/hyperframes">https://github.com/heygen-com/hyperframes</a></li><li><strong>简介</strong>：写 HTML 就能渲染视频，为 AI Agent 量身定制的视频生成方案 🎬</li></ul><h3 id="5-mksglu-context-mode"><a href="#5-mksglu-context-mode" class="headerlink" title="5. mksglu/context-mode"></a>5. mksglu/context-mode</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/mksglu/context-mode">https://github.com/mksglu/context-mode</a></li><li><strong>简介</strong>：AI 编程 Agent 的上下文优化神器，沙箱输出缩减 98% + 跨平台记忆 🧠</li></ul><h3 id="6-jo-inc-camofox-browser"><a href="#6-jo-inc-camofox-browser" class="headerlink" title="6. jo-inc/camofox-browser"></a>6. jo-inc/camofox-browser</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/jo-inc/camofox-browser">https://github.com/jo-inc/camofox-browser</a></li><li><strong>简介</strong>：能绕过 Cloudflare 和反爬虫检测的隐形无头浏览器，Puppeteer 平替 🦊</li></ul><h3 id="7-MoonTechLab-LunaTV"><a href="#7-MoonTechLab-LunaTV" class="headerlink" title="7. MoonTechLab/LunaTV"></a>7. MoonTechLab/LunaTV</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/MoonTechLab/LunaTV">https://github.com/MoonTechLab/LunaTV</a></li><li><strong>简介</strong>：非商业化的开源项目，具体内容值得自己去探索一下 📺</li></ul><h3 id="8-affaan-m-ECC"><a href="#8-affaan-m-ECC" class="headerlink" title="8. affaan-m/ECC"></a>8. affaan-m/ECC</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/affaan-m/ECC">https://github.com/affaan-m/ECC</a></li><li><strong>简介</strong>：Agent 性能优化系统，技能、本能、记忆、安全全都要，252k+ star 的超级大炸弹 💣</li></ul><h3 id="9-coreyhaines31-marketingskills"><a href="#9-coreyhaines31-marketingskills" class="headerlink" title="9. coreyhaines31/marketingskills"></a>9. coreyhaines31/marketingskills</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/coreyhaines31/marketingskills">https://github.com/coreyhaines31/marketingskills</a></li><li><strong>简介</strong>：给 Claude 和 AI Agent 装的营销大脑：CRO、文案、SEO 一条龙 📈</li></ul><h3 id="10-BraveOPotato-FckSignups"><a href="#10-BraveOPotato-FckSignups" class="headerlink" title="10. BraveOPotato/FckSignups"></a>10. BraveOPotato/FckSignups</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/BraveOPotato/FckSignups">https://github.com/BraveOPotato/FckSignups</a></li><li><strong>简介</strong>：拒绝注册！整理了一批开源、浏览器即用、免登录的工具清单 🚫</li></ul><h3 id="11-openai-skills"><a href="#11-openai-skills" class="headerlink" title="11. openai/skills"></a>11. openai/skills</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/openai/skills">https://github.com/openai/skills</a></li><li><strong>简介</strong>：OpenAI 官方出品的 Codex Skills 目录，给 AI 配置各种正确姿势 📘</li></ul><h3 id="12-lightpanda-io-browser"><a href="#12-lightpanda-io-browser" class="headerlink" title="12. lightpanda-io/browser"></a>12. lightpanda-io/browser</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/lightpanda-io/browser">https://github.com/lightpanda-io/browser</a></li><li><strong>简介</strong>：用 Zig 写的为 AI 和自动化设计的无头浏览器，轻快到飞起 🐼</li></ul><h3 id="13-pascalorg-editor"><a href="#13-pascalorg-editor" class="headerlink" title="13. pascalorg/editor"></a>13. pascalorg/editor</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/pascalorg/editor">https://github.com/pascalorg/editor</a></li><li><strong>简介</strong>：创建和分享 3D 建筑项目的编辑器，小白也能当建筑师 🏗️</li></ul><h3 id="14-ruvnet-ruflo"><a href="#14-ruvnet-ruflo" class="headerlink" title="14. ruvnet/ruflo"></a>14. ruvnet/ruflo</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/ruvnet/ruflo">https://github.com/ruvnet/ruflo</a></li><li><strong>简介</strong>：Agent 元框架鼻祖，多玩家智能体群 + RAG + 自适应记忆，71k+ star 🌊</li></ul><hr><p>今天的榜单告诉我们：AI 时代已经卷到能自动写代码、炒股、做视频了，趁早 Star 起来，跟着开源大佬们一起上车！🚀</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开源项目</category>
+      
+      <category>代码仓库推荐</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>TypeScript</tag>
+      
+      <tag>Python</tag>
+      
+      <tag>JavaScript</tag>
+      
+      <tag>Github热门仓库</tag>
+      
+      <tag>开源开发</tag>
+      
+      <tag>Zig</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-09-07 Github热门仓库</title>
     <link href="/posts/2026-09-07-github-re-men-cang-ku/"/>
     <url>/posts/2026-09-07-github-re-men-cang-ku/</url>

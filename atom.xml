@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2026-09-07T09:11:22.512Z</updated>
+  <updated>2026-09-08T00:00:39.295Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2026-09-08 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-09-08-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-09-08-github-re-men-cang-ku/</id>
+    <published>2026-09-08T00:00:00.000Z</published>
+    <updated>2026-09-08T00:00:39.295Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;🔥 本周 GitHub 热榜：让 AI 当基金经理？这波开源项目也太卷了！(2026-09-08)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;又到了每周吃瓜 GitHub Trending</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Zig" scheme="https://119291.xyz/tags/Zig/"/>
+    
+  </entry>
   
   <entry>
     <title>2026-09-07 Github热门仓库</title>
@@ -693,43 +733,6 @@
     <category term="生成式AI课程" scheme="https://119291.xyz/tags/%E7%94%9F%E6%88%90%E5%BC%8FAI%E8%AF%BE%E7%A8%8B/"/>
     
     <category term="微软课程" scheme="https://119291.xyz/tags/%E5%BE%AE%E8%BD%AF%E8%AF%BE%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub - microsoft/ML - For - Beginners课程介绍与使用指南</title>
-    <link href="https://119291.xyz/posts/github-microsoft-ml-for-beginners-course-guide/"/>
-    <id>https://119291.xyz/posts/github-microsoft-ml-for-beginners-course-guide/</id>
-    <published>2025-07-24T00:00:00.000Z</published>
-    <updated>2025-07-24T03:29:48.076Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GitHub-microsoft-ML-For-Beginners课程介绍与使用指南&quot;&gt;&lt;a href=&quot;#GitHub-microsoft-ML-For-Beginners课程介绍与使用指南&quot; class=&quot;headerlink&quot; title=&quot;GitHub</summary>
-        
-      
-    
-    
-    
-    <category term="人工智能" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="机器学习" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="课程学习" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="人工智能" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="Scikit - learn" scheme="https://119291.xyz/tags/Scikit-learn/"/>
-    
-    <category term="机器学习课程" scheme="https://119291.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/"/>
-    
-    <category term="项目式学习" scheme="https://119291.xyz/tags/%E9%A1%B9%E7%9B%AE%E5%BC%8F%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
