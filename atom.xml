@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2026-09-09T01:16:25.994Z</updated>
+  <updated>2026-09-10T00:02:17.297Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2026-09-10 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-09-10-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-09-10-github-re-men-cang-ku/</id>
+    <published>2026-09-10T00:00:00.000Z</published>
+    <updated>2026-09-10T00:02:17.297Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;今天炸场了！5 分钟星标暴涨 4650 的「ADHD 友好」编程神器，还有让代码说话的交易框架｜GitHub Trending 日报（2026-09-10）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今天的 GitHub Trending 简直是</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>2026-09-09 Github热门仓库</title>
@@ -705,41 +747,6 @@
     <category term="开源AI智能体" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90AI%E6%99%BA%E8%83%BD%E4%BD%93/"/>
     
     <category term="技术平台" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E5%B9%B3%E5%8F%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>STORM与Co - STORM：基于大语言模型的知识策展系统</title>
-    <link href="https://119291.xyz/posts/storm-and-co-storm-knowledge-curation-system/"/>
-    <id>https://119291.xyz/posts/storm-and-co-storm-knowledge-curation-system/</id>
-    <published>2025-07-25T00:00:00.000Z</published>
-    <updated>2025-07-26T02:02:43.585Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;STORM与Co-STORM：基于大语言模型的知识策展系统&quot;&gt;&lt;a href=&quot;#STORM与Co-STORM：基于大语言模型的知识策展系统&quot; class=&quot;headerlink&quot; title=&quot;STORM与Co -</summary>
-        
-      
-    
-    
-    
-    <category term="自然语言处理" scheme="https://119291.xyz/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-    
-    <category term="知识策展系统开发" scheme="https://119291.xyz/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E7%9F%A5%E8%AF%86%E7%AD%96%E5%B1%95%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91/"/>
-    
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="自然语言处理" scheme="https://119291.xyz/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/"/>
-    
-    <category term="STORM" scheme="https://119291.xyz/tags/STORM/"/>
-    
-    <category term="Co - STORM" scheme="https://119291.xyz/tags/Co-STORM/"/>
-    
-    <category term="知识策展" scheme="https://119291.xyz/tags/%E7%9F%A5%E8%AF%86%E7%AD%96%E5%B1%95/"/>
     
   </entry>
   
