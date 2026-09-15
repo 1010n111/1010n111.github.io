@@ -6,7 +6,7 @@
   <link href="https://119291.xyz/atom.xml" rel="self"/>
   
   <link href="https://119291.xyz/"/>
-  <updated>2026-09-10T00:02:17.297Z</updated>
+  <updated>2026-09-15T00:00:44.518Z</updated>
   <id>https://119291.xyz/</id>
   
   <author>
@@ -15,6 +15,102 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2026-09-15 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-09-15-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-09-15-github-re-men-cang-ku/</id>
+    <published>2026-09-15T00:00:00.000Z</published>
+    <updated>2026-09-15T00:00:44.518Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;🔥 今日份 GitHub 神仙项目，个个都想立刻 Star！(2026-09-15)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;开工日，GitHub Trending 又上新了一波硬核项目，从纯 C</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term="Dart" scheme="https://119291.xyz/tags/Dart/"/>
+    
+    <category term="Swift" scheme="https://119291.xyz/tags/Swift/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-09-13 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-09-13-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-09-13-github-re-men-cang-ku/</id>
+    <published>2026-09-13T00:00:00.000Z</published>
+    <updated>2026-09-13T00:02:30.079Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;🔥 今日 GitHub 爆款盘点（2026年9月13日）：当你能从浏览器”发射”间谍卫星，世界突然变得有点酷&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;周末的 GitHub Trending</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C#" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term="C" scheme="https://119291.xyz/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>2026-09-10 Github热门仓库</title>
@@ -677,76 +773,6 @@
     <category term="系统提示" scheme="https://119291.xyz/tags/%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA/"/>
     
     <category term="AI模型" scheme="https://119291.xyz/tags/AI%E6%A8%A1%E5%9E%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Firecrawl：将网站转换为LLM就绪数据的API服务</title>
-    <link href="https://119291.xyz/posts/firecrawl-transforming-websites-into-llm-ready-data/"/>
-    <id>https://119291.xyz/posts/firecrawl-transforming-websites-into-llm-ready-data/</id>
-    <published>2025-07-25T00:00:00.000Z</published>
-    <updated>2025-07-26T02:02:43.578Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Firecrawl：将网站转换为LLM就绪数据的API服务&quot;&gt;&lt;a href=&quot;#Firecrawl：将网站转换为LLM就绪数据的API服务&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="数据处理" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    <category term="网络爬虫" scheme="https://119291.xyz/categories/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/"/>
-    
-    
-    <category term="数据处理" scheme="https://119291.xyz/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/"/>
-    
-    <category term="Python/Node.js" scheme="https://119291.xyz/tags/Python-Node-js/"/>
-    
-    <category term="Firecrawl" scheme="https://119291.xyz/tags/Firecrawl/"/>
-    
-    <category term="网站数据抓取" scheme="https://119291.xyz/tags/%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8F%96/"/>
-    
-    <category term="LLM数据转换" scheme="https://119291.xyz/tags/LLM%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>oTTomator Live Agent Studio平台开源AI智能体介绍</title>
-    <link href="https://119291.xyz/posts/ottomator-live-agent-studio-open-source-ai-agents-introduction/"/>
-    <id>https://119291.xyz/posts/ottomator-live-agent-studio-open-source-ai-agents-introduction/</id>
-    <published>2025-07-25T00:00:00.000Z</published>
-    <updated>2025-07-26T02:02:43.582Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;oTTomator-Live-Agent-Studio平台开源AI智能体介绍&quot;&gt;&lt;a href=&quot;#oTTomator-Live-Agent-Studio平台开源AI智能体介绍&quot; class=&quot;headerlink&quot; title=&quot;oTTomator Live</summary>
-        
-      
-    
-    
-    
-    <category term="人工智能" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="开源项目" scheme="https://119291.xyz/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
-    
-    <category term="人工智能" scheme="https://119291.xyz/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="oTTomator Live Agent Studio" scheme="https://119291.xyz/tags/oTTomator-Live-Agent-Studio/"/>
-    
-    <category term="开源AI智能体" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90AI%E6%99%BA%E8%83%BD%E4%BD%93/"/>
-    
-    <category term="技术平台" scheme="https://119291.xyz/tags/%E6%8A%80%E6%9C%AF%E5%B9%B3%E5%8F%B0/"/>
     
   </entry>
   

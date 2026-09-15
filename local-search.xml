@@ -4,6 +4,96 @@
   
   
   <entry>
+    <title>2026-09-15 Github热门仓库</title>
+    <link href="/posts/2026-09-15-github-re-men-cang-ku/"/>
+    <url>/posts/2026-09-15-github-re-men-cang-ku/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>🔥 今日份 GitHub 神仙项目，个个都想立刻 Star！(2026-09-15)</p></blockquote><p>开工日，GitHub Trending 又上新了一波硬核项目，从纯 C 跑大模型到本地克隆声音，今天这一单，保证让你忍不住点进仓库。💻</p><h2 id="🔥-今日精选"><a href="#🔥-今日精选" class="headerlink" title="🔥 今日精选"></a>🔥 今日精选</h2><h3 id="1-JustVugg-colibri"><a href="#1-JustVugg-colibri" class="headerlink" title="1. JustVugg/colibri"></a>1. JustVugg/colibri</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/JustVugg/colibri">https://github.com/JustVugg/colibri</a></li><li><strong>简介</strong>：纯 C 写的前沿 MoE 大模型推理引擎，零依赖，还能流式从硬盘加载专家 🐦</li><li><strong>亮点</strong>：colibri 用纯 C 实现、零外部依赖，把原本需要超大显存的前沿 MoE 模型搬到你现有的硬件上跑。它把模型专家按需从磁盘流式取用，相当于给设备加了个「外挂硬盘大脑」——模型很大，引擎很小。对想本地离线跑大模型、又不想折腾重型依赖的同学来说，这简直是一键上手的福音，开源老炮的风格扑面而来。</li></ul><h3 id="2-debpalash-VoiceStudio"><a href="#2-debpalash-VoiceStudio" class="headerlink" title="2. debpalash/VoiceStudio"></a>2. debpalash/VoiceStudio</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/debpalash/VoiceStudio">https://github.com/debpalash/VoiceStudio</a></li><li><strong>简介</strong>：开源本地版 ElevenLabs，声音克隆、配音、转写六百多种语言 🎙️</li><li><strong>亮点</strong>：VoiceStudio 是 ElevenLabs 的完全开源、全本地替代品：声音克隆、声音设计、视频配音、听写、转写甚至有声书制作，一口气支持 646 种语言。数据全部本地处理，隐私和价格都握在自己手里。无论是做自媒体配音还是给视频加多语言旁白，装上它一秒变成你的专属语音工作室，两天涨近两千 Star 真不是没道理。</li></ul><h3 id="3-asgeirtj-system-prompts-leaks"><a href="#3-asgeirtj-system-prompts-leaks" class="headerlink" title="3. asgeirtj/system_prompts_leaks"></a>3. asgeirtj/system_prompts_leaks</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/asgeirtj/system_prompts_leaks">https://github.com/asgeirtj/system_prompts_leaks</a></li><li><strong>简介</strong>：汇总各大 AI 厂商泄露的系统提示词，你的「幕后黑手」全在这 🔍</li><li><strong>亮点</strong>：这个仓库专门搜集各类大模型被挖出来的系统提示词，包括 Claude 系、ChatGPT、Gemini、Grok 等一大批主流产品，并且持续更新。想研究提示词工程、理解模型厂商潜藏的规则与「人格设定」，这里就是最直观的第一手资料库。对想抄作业调优自己 Agent 的开发者来说，读一读官方提示词可比自己瞎调强太多了。</li></ul><h2 id="⚡-快速浏览"><a href="#⚡-快速浏览" class="headerlink" title="⚡ 快速浏览"></a>⚡ 快速浏览</h2><h3 id="4-alibaba-open-code-review"><a href="#4-alibaba-open-code-review" class="headerlink" title="4. alibaba/open-code-review"></a>4. alibaba/open-code-review</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/alibaba/open-code-review">https://github.com/alibaba/open-code-review</a></li><li><strong>简介</strong>：阿里出品的混合架构代码评审工具，确定性流水线 + LLM Agent，能给出精确到行的审查意见 🧐</li></ul><h3 id="5-multimodal-art-projection-YuE"><a href="#5-multimodal-art-projection-YuE" class="headerlink" title="5. multimodal-art-projection/YuE"></a>5. multimodal-art-projection/YuE</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/multimodal-art-projection/YuE">https://github.com/multimodal-art-projection/YuE</a></li><li><strong>简介</strong>：YuE2 前沿音乐生成模型，支持乐谱规划、零样本翻唱和智能音乐剪辑 🎵</li></ul><h3 id="6-666ghj-MiroFish"><a href="#6-666ghj-MiroFish" class="headerlink" title="6. 666ghj/MiroFish"></a>6. 666ghj/MiroFish</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/666ghj/MiroFish">https://github.com/666ghj/MiroFish</a></li><li><strong>简介</strong>：一套简洁通用的群体智能引擎，号称「预测万物」🐟</li></ul><h3 id="7-Panniantong-Agent-Reach"><a href="#7-Panniantong-Agent-Reach" class="headerlink" title="7. Panniantong/Agent-Reach"></a>7. Panniantong/Agent-Reach</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Panniantong/Agent-Reach">https://github.com/Panniantong/Agent-Reach</a></li><li><strong>简介</strong>：一个 CLI 让 AI 读取搜索全网，Twitter、小红书、GitHub 全覆盖且零 API 费用 👀</li></ul><h3 id="8-rlaope-oh-my-hermes"><a href="#8-rlaope-oh-my-hermes" class="headerlink" title="8. rlaope/oh-my-hermes"></a>8. rlaope/oh-my-hermes</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/rlaope/oh-my-hermes">https://github.com/rlaope/oh-my-hermes</a></li><li><strong>简介</strong>：Hermes Agent 的一体化插件包，内置长期记忆系统与模型优化工作流 ⚚</li></ul><h3 id="9-localsend-localsend"><a href="#9-localsend-localsend" class="headerlink" title="9. localsend/localsend"></a>9. localsend/localsend</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/localsend/localsend">https://github.com/localsend/localsend</a></li><li><strong>简介</strong>：开源跨平台 AirDrop 替代品，换设备传文件再也不用看果子脸色 📱</li></ul><h3 id="10-dani-garcia-vaultwarden"><a href="#10-dani-garcia-vaultwarden" class="headerlink" title="10. dani-garcia/vaultwarden"></a>10. dani-garcia/vaultwarden</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/dani-garcia/vaultwarden">https://github.com/dani-garcia/vaultwarden</a></li><li><strong>简介</strong>：用 Rust 写的 Bitwarden 兼容服务器，自托管密码库首选 🦀</li></ul><h3 id="11-TauricResearch-TradingAgents"><a href="#11-TauricResearch-TradingAgents" class="headerlink" title="11. TauricResearch/TradingAgents"></a>11. TauricResearch/TradingAgents</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/TauricResearch/TradingAgents">https://github.com/TauricResearch/TradingAgents</a></li><li><strong>简介</strong>：多智能体 LLM 金融交易框架，让你体验 AI 组团炒股的快乐 📈</li></ul><h3 id="12-ruvnet-RuView"><a href="#12-ruvnet-RuView" class="headerlink" title="12. ruvnet/RuView"></a>12. ruvnet/RuView</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/ruvnet/RuView">https://github.com/ruvnet/RuView</a></li><li><strong>简介</strong>：把 WiFi 信号变成空间感知与生命体征监测，一个摄像头都不用装 🍃</li></ul><h3 id="13-tech-leads-club-agent-skills"><a href="#13-tech-leads-club-agent-skills" class="headerlink" title="13. tech-leads-club/agent-skills"></a>13. tech-leads-club/agent-skills</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/tech-leads-club/agent-skills">https://github.com/tech-leads-club/agent-skills</a></li><li><strong>简介</strong>：面向专业 AI 编码 Agent 的安全技能注册表，Claude Code、Cursor 都能放心扩展 🛡️</li></ul><h3 id="14-OpenBMB-VoxCPM"><a href="#14-OpenBMB-VoxCPM" class="headerlink" title="14. OpenBMB/VoxCPM"></a>14. OpenBMB/VoxCPM</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/OpenBMB/VoxCPM">https://github.com/OpenBMB/VoxCPM</a></li><li><strong>简介</strong>：VoxCPM2 免分词器的多语种 TTS，创意音色设计与真实感声音克隆一步到位 🗣️</li></ul><h3 id="15-huggingface-transformers"><a href="#15-huggingface-transformers" class="headerlink" title="15. huggingface/transformers"></a>15. huggingface/transformers</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/huggingface/transformers">https://github.com/huggingface/transformers</a></li><li><strong>简介</strong>：🤗 全家桶老祖宗，文本、视觉、语音、多模态模型一网打尽</li></ul><h3 id="16-ever-co-ever-gauzy"><a href="#16-ever-co-ever-gauzy" class="headerlink" title="16. ever-co/ever-gauzy"></a>16. ever-co/ever-gauzy</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/ever-co/ever-gauzy">https://github.com/ever-co/ever-gauzy</a></li><li><strong>简介</strong>：开源企业经营管理平台，ERP/CRM/HRM 一条龙，中小团队自托管福音 🏢</li></ul><h3 id="17-Crosstalk-Solutions-project-nomad"><a href="#17-Crosstalk-Solutions-project-nomad" class="headerlink" title="17. Crosstalk-Solutions/project-nomad"></a>17. Crosstalk-Solutions/project-nomad</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Crosstalk-Solutions/project-nomad">https://github.com/Crosstalk-Solutions/project-nomad</a></li><li><strong>简介</strong>：离线优先的知识与教育服务器，维基百科、书籍课程加本地 AI 全装进你的硬盘 🎒</li></ul><h3 id="18-reconurge-flowsint"><a href="#18-reconurge-flowsint" class="headerlink" title="18. reconurge/flowsint"></a>18. reconurge/flowsint</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/reconurge/flowsint">https://github.com/reconurge/flowsint</a></li><li><strong>简介</strong>：面向安全分析与调查人员的可视化图表化侦察平台 🕵️</li></ul><h3 id="19-peetzweg-opendisplay"><a href="#19-peetzweg-opendisplay" class="headerlink" title="19. peetzweg/opendisplay"></a>19. peetzweg/opendisplay</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/peetzweg/opendisplay">https://github.com/peetzweg/opendisplay</a></li><li><strong>简介</strong>：免费开源 Sidecar 平替，让 iPhone/iPad 秒变 Mac 第二屏幕，支持触控 🖥️</li></ul><h3 id="20-SnailSploit-Claude-Red"><a href="#20-SnailSploit-Claude-Red" class="headerlink" title="20. SnailSploit/Claude-Red"></a>20. SnailSploit/Claude-Red</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/SnailSploit/Claude-Red">https://github.com/SnailSploit/Claude-Red</a></li><li><strong>简介</strong>：面向 Claude 技能系统的攻防安全技能库，从注入到免杀一应俱全 🥷</li></ul><hr><p>今天的榜单既有本地跑大模型的硬核引擎，也有语音克隆和 AI 联网的神器，挑几个适合你的冲进仓库 Star 就完事了，明天继续云逛 GitHub！✨</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开源项目</category>
+      
+      <category>代码仓库推荐</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Rust</tag>
+      
+      <tag>TypeScript</tag>
+      
+      <tag>Python</tag>
+      
+      <tag>Go</tag>
+      
+      <tag>JavaScript</tag>
+      
+      <tag>Github热门仓库</tag>
+      
+      <tag>开源开发</tag>
+      
+      <tag>C</tag>
+      
+      <tag>Dart</tag>
+      
+      <tag>Swift</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>2026-09-13 Github热门仓库</title>
+    <link href="/posts/2026-09-13-github-re-men-cang-ku/"/>
+    <url>/posts/2026-09-13-github-re-men-cang-ku/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>🔥 今日 GitHub 爆款盘点（2026年9月13日）：当你能从浏览器”发射”间谍卫星，世界突然变得有点酷</p></blockquote><p>周末的 GitHub Trending 从不让人失望，今天有”上帝视角”的间谍卫星模拟器、数学建模的作弊神器，还有会写歌的 AI。准备好一口气看完这场开源盛宴了吗？🚀</p><h2 id="🔥-今日精选"><a href="#🔥-今日精选" class="headerlink" title="🔥 今日精选"></a>🔥 今日精选</h2><h3 id="1-bilawalsidhu-gods-eye-view"><a href="#1-bilawalsidhu-gods-eye-view" class="headerlink" title="1. bilawalsidhu/gods-eye-view"></a>1. bilawalsidhu/gods-eye-view</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/bilawalsidhu/gods-eye-view">https://github.com/bilawalsidhu/gods-eye-view</a></li><li><strong>简介</strong>：浏览器里的间谍卫星模拟器，数据却是真实的🛰️</li><li><strong>亮点</strong>：想在浏览器里体验一把真正的”上帝视角”吗？这个项目把照片级真实的 3D 地球搬进网页，让你模拟间谍卫星实时俯瞰地表，而所有数据都来自真实的开源情报。今天一天就涨了 2200+ 星，热度断崖式领先。无需安装任何客户端，打开网址即可”发射卫星”，无论你是地理迷、卫星控还是情报爱好者，这都是一次教科书级别的开源脑洞体验。</li></ul><h3 id="2-jihe520-MathModelAgent"><a href="#2-jihe520-MathModelAgent" class="headerlink" title="2. jihe520/MathModelAgent"></a>2. jihe520/MathModelAgent</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/jihe520/MathModelAgent">https://github.com/jihe520/MathModelAgent</a></li><li><strong>简介</strong>：数学建模界的”一键外挂”，自动生成可直接提交的论文🤖</li><li><strong>亮点</strong>：数学建模比赛的时间有多紧，懂的都懂。这个 Agent 就是为此而生：从读题、建模、求解到最后自动生成一份结构完整的论文，全程自动化，堪比请了个 24 小时不睡觉的队友。📐 内置数学建模所需的 skills 和工具链，今天涨了 260+ 星。对准备参加数模竞赛的本科生和研究生来说，这几乎是”保姆级”的开源福利。</li></ul><h3 id="3-multimodal-art-projection-YuE"><a href="#3-multimodal-art-projection-YuE" class="headerlink" title="3. multimodal-art-projection/YuE"></a>3. multimodal-art-projection/YuE</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/multimodal-art-projection/YuE">https://github.com/multimodal-art-projection/YuE</a></li><li><strong>简介</strong>：能做零样本翻唱、还能”导演”式编辑音乐的生成式 AI 作曲模型🎵</li><li><strong>亮点</strong>：想要旋律里有歌单之外的惊喜？YuE2 是目前前沿的音乐生成模型，支持符号化规划、零样本翻唱和”智能体式”音乐编辑——你可以像导演一样指挥 AI 生成、修改并混排一段完整歌曲。今天新增 210 星，说明”让 AI 写歌”这件事终于跨过了玩具阶段。对于音乐创作者和播客玩家，这个仓库值得好好蹲一下。</li></ul><h2 id="⚡-快速浏览"><a href="#⚡-快速浏览" class="headerlink" title="⚡ 快速浏览"></a>⚡ 快速浏览</h2><h3 id="4-melgarafael-DeskcommCRM"><a href="#4-melgarafael-DeskcommCRM" class="headerlink" title="4. melgarafael/DeskcommCRM"></a>4. melgarafael/DeskcommCRM</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/melgarafael/DeskcommCRM">https://github.com/melgarafael/DeskcommCRM</a></li><li><strong>简介</strong>：自带 AI 代理和 WhatsApp 集成的开源销售 CRM，主打聊天买卖场景。</li></ul><h3 id="5-asgeirtj-system-prompts-leaks"><a href="#5-asgeirtj-system-prompts-leaks" class="headerlink" title="5. asgeirtj/system_prompts_leaks"></a>5. asgeirtj/system_prompts_leaks</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/asgeirtj/system_prompts_leaks">https://github.com/asgeirtj/system_prompts_leaks</a></li><li><strong>简介</strong>：各大模型（Claude、GPT、Gemini、Grok）系统提示词泄露合集，模型研究者的宝藏。</li></ul><h3 id="6-nab138-iloader"><a href="#6-nab138-iloader" class="headerlink" title="6. nab138/iloader"></a>6. nab138/iloader</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/nab138/iloader">https://github.com/nab138/iloader</a></li><li><strong>简介</strong>：超友好的 iOS 侧载工具，一键安装更省心。</li></ul><h3 id="7-Flowseal-zapret-discord-youtube"><a href="#7-Flowseal-zapret-discord-youtube" class="headerlink" title="7. Flowseal/zapret-discord-youtube"></a>7. Flowseal/zapret-discord-youtube</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Flowseal/zapret-discord-youtube">https://github.com/Flowseal/zapret-discord-youtube</a></li><li><strong>简介</strong>：让 Discord 和 YouTube 流畅访问的批处理工具，追剧党的福音。</li></ul><h3 id="8-Sonarr-Sonarr"><a href="#8-Sonarr-Sonarr" class="headerlink" title="8. Sonarr/Sonarr"></a>8. Sonarr/Sonarr</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Sonarr/Sonarr">https://github.com/Sonarr/Sonarr</a></li><li><strong>简介</strong>：面向新闻组和 BT 用户的智能 PVR 管理神器，自动追剧靠它了。</li></ul><h3 id="9-alsk1992-CloddsBot"><a href="#9-alsk1992-CloddsBot" class="headerlink" title="9. alsk1992/CloddsBot"></a>9. alsk1992/CloddsBot</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/alsk1992/CloddsBot">https://github.com/alsk1992/CloddsBot</a></li><li><strong>简介</strong>：覆盖 1000+ 市场的全自动 AI 交易代理，主打”你睡觉它搬砖”。</li></ul><h3 id="10-yuliskov-SmartTube"><a href="#10-yuliskov-SmartTube" class="headerlink" title="10. yuliskov/SmartTube"></a>10. yuliskov/SmartTube</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/yuliskov/SmartTube">https://github.com/yuliskov/SmartTube</a></li><li><strong>简介</strong>：Android TV 上的观影神器，内容怎么刷由你说了算。</li></ul><h3 id="11-Shubhamsaboo-awesome-llm-apps"><a href="#11-Shubhamsaboo-awesome-llm-apps" class="headerlink" title="11. Shubhamsaboo/awesome-llm-apps"></a>11. Shubhamsaboo/awesome-llm-apps</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Shubhamsaboo/awesome-llm-apps">https://github.com/Shubhamsaboo/awesome-llm-apps</a></li><li><strong>简介</strong>：100+ AI Agent、技能和 RAG 应用集合，17 万星级别的 LLM 工具箱。</li></ul><h3 id="12-p1neappleXpress-OpenFlux"><a href="#12-p1neappleXpress-OpenFlux" class="headerlink" title="12. p1neappleXpress/OpenFlux"></a>12. p1neappleXpress/OpenFlux</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/p1neappleXpress/OpenFlux">https://github.com/p1neappleXpress/OpenFlux</a></li><li><strong>简介</strong>：带可插拔传输层的 TCP 隧道研究工具，网络栈折腾党狂喜。</li></ul><h3 id="13-armory3d-armorpaint"><a href="#13-armory3d-armorpaint" class="headerlink" title="13. armory3d/armorpaint"></a>13. armory3d/armorpaint</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/armory3d/armorpaint">https://github.com/armory3d/armorpaint</a></li><li><strong>简介</strong>：开源 3D 绘图创作工具，给 IBL 和材质上色一把梭。</li></ul><h3 id="14-SnailSploit-Claude-Red"><a href="#14-SnailSploit-Claude-Red" class="headerlink" title="14. SnailSploit/Claude-Red"></a>14. SnailSploit/Claude-Red</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/SnailSploit/Claude-Red">https://github.com/SnailSploit/Claude-Red</a></li><li><strong>简介</strong>：为 Claude 技能系统定制的渗透测试方法论库，红队手册式仓库。</li></ul><h3 id="15-max-sixty-worktrunk"><a href="#15-max-sixty-worktrunk" class="headerlink" title="15. max-sixty/worktrunk"></a>15. max-sixty/worktrunk</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/max-sixty/worktrunk">https://github.com/max-sixty/worktrunk</a></li><li><strong>简介</strong>：为并行 AI Agent 工作流打造的 Git worktree 管理 CLI。</li></ul><h3 id="16-vxcontrol-pentagi"><a href="#16-vxcontrol-pentagi" class="headerlink" title="16. vxcontrol/pentagi"></a>16. vxcontrol/pentagi</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/vxcontrol/pentagi">https://github.com/vxcontrol/pentagi</a></li><li><strong>简介</strong>：全自主 AI 渗透测试系统，复杂攻击面交给它来啃。</li></ul><hr><p>从”上帝视角”看地球到一键生成数学建模论文，再到 AI 创作音乐，今天的榜单告诉我们——开源世界正在把科幻片里的能力，一个个变成每个人都能试玩的现实。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开源项目</category>
+      
+      <category>代码仓库推荐</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>Rust</tag>
+      
+      <tag>TypeScript</tag>
+      
+      <tag>Python</tag>
+      
+      <tag>Go</tag>
+      
+      <tag>JavaScript</tag>
+      
+      <tag>Github热门仓库</tag>
+      
+      <tag>开源开发</tag>
+      
+      <tag>C#</tag>
+      
+      <tag>C</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-09-10 Github热门仓库</title>
     <link href="/posts/2026-09-10-github-re-men-cang-ku/"/>
     <url>/posts/2026-09-10-github-re-men-cang-ku/</url>
