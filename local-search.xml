@@ -4,6 +4,51 @@
   
   
   <entry>
+    <title>2026-09-17 Github热门仓库</title>
+    <link href="/posts/2026-09-17-github-re-men-cang-ku/"/>
+    <url>/posts/2026-09-17-github-re-men-cang-ku/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>🔥 今日 GitHub 爆款盘点 2026-09-17：AI 编程、模型跑本地，一个比一个能打！</p></blockquote><p>今天的 GitHub Trending 又是一场硬核盛宴——从 AI 代码审查到把千亿大模型塞进你家电脑，开源社区永不让人失望。话不多说，赶紧上车看看今天最值得关注的仓库。🚀</p><h2 id="🔥-今日精选"><a href="#🔥-今日精选" class="headerlink" title="🔥 今日精选"></a>🔥 今日精选</h2><h3 id="1-alibaba-open-code-review"><a href="#1-alibaba-open-code-review" class="headerlink" title="1. alibaba/open-code-review"></a>1. alibaba/open-code-review</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/alibaba/open-code-review">https://github.com/alibaba/open-code-review</a></li><li><strong>简介</strong>：阿里开源的代码审查工具，确定性流水线 + LLM Agent 混合架构</li><li><strong>亮点</strong>：这是阿里一线生产环境的“老司机”代码审查神器，采用确定性流水线 + LLM Agent 的混合架构，天生就是为“靠谱”两个字生的。它内置了覆盖 NPE、线程安全、XSS、SQL 注入等常见坑位的多语言规则集，能给出精确到行级别的评审意见，还兼容 OpenAI 和 Anthropic 接口。昨天狂涨 3000+ star，今天 3 万+ Stars 的它绝对值得你本地部署试一把，让 AI 帮你把代码质量把关到底。</li></ul><h3 id="2-JustVugg-colibri"><a href="#2-JustVugg-colibri" class="headerlink" title="2. JustVugg/colibri"></a>2. JustVugg/colibri</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/JustVugg/colibri">https://github.com/JustVugg/colibri</a></li><li><strong>简介</strong>：纯 C 实现、零依赖，在现有硬件上流式运行前沿 MoE 大模型</li><li><strong>亮点</strong>：如果你的显卡不够“钞能力”，colibri 就是你的救星。它用纯 C 语言、零外部依赖写就，通过把专家（experts）从磁盘流式加载，让你在已经拥有的硬件上跑起前沿 MoE 模型！引擎极小、模型极强，真正做到“小身躯，大能量”。🐦 3.5 万 Stars 且热度持续飙升，堪称平民玩家玩转大模型的最优解，硬件党们冲就完事了。</li></ul><h3 id="3-Tencent-WeKnora"><a href="#3-Tencent-WeKnora" class="headerlink" title="3. Tencent/WeKnora"></a>3. Tencent/WeKnora</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Tencent/WeKnora">https://github.com/Tencent/WeKnora</a></li><li><strong>简介</strong>：腾讯开源 LLM 知识平台：把文档变成可查询的 RAG、自主推理 Agent 和自维护 Wiki</li><li><strong>亮点</strong>：腾讯放出的 WeKnora 是知识工作者的“核弹级”工具箱。它能把你堆积如山的原始文档一键变成可查询的 RAG 知识库，还能升级成自主推理的 Agent，甚至自动长成一个自我维护的百科 Wiki。单日新增近 1200 star，2.5 万 Stars，全 Go 实现性能拉满。无论你是构建企业知识库还是个人第二大脑，它都能让你少写一半代码，多出一倍效率。</li></ul><h2 id="⚡-快速浏览"><a href="#⚡-快速浏览" class="headerlink" title="⚡ 快速浏览"></a>⚡ 快速浏览</h2><h3 id="4-cloudflare-security-audit-skill"><a href="#4-cloudflare-security-audit-skill" class="headerlink" title="4. cloudflare/security-audit-skill"></a>4. cloudflare/security-audit-skill</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/cloudflare/security-audit-skill">https://github.com/cloudflare/security-audit-skill</a></li><li><strong>简介</strong>：🔒 Cloudflare 出品的多阶段安全审计编码 Agent 技能，产出机器可验证的安全结论</li></ul><h3 id="5-abue-ammar-tinycast"><a href="#5-abue-ammar-tinycast" class="headerlink" title="5. abue-ammar/tinycast"></a>5. abue-ammar/tinycast</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/abue-ammar/tinycast">https://github.com/abue-ammar/tinycast</a></li><li><strong>简介</strong>：⌨️ 一个迷你到极致的原生 macOS 启动器，自带快捷键和剪贴板历史，颜值与实用并存</li></ul><h3 id="6-jamiepine-voicebox"><a href="#6-jamiepine-voicebox" class="headerlink" title="6. jamiepine/voicebox"></a>6. jamiepine/voicebox</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/jamiepine/voicebox">https://github.com/jamiepine/voicebox</a></li><li><strong>简介</strong>：🎙️ 开源的 AI 语音工作室，克隆、听写、创作一站式搞定</li></ul><h3 id="7-Lakr233-vphone-cli"><a href="#7-Lakr233-vphone-cli" class="headerlink" title="7. Lakr233/vphone-cli"></a>7. Lakr233/vphone-cli</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Lakr233/vphone-cli">https://github.com/Lakr233/vphone-cli</a></li><li><strong>简介</strong>：📱 云端虚拟 iPhone，命令行直接操控，开发者福音</li></ul><h3 id="8-anthropics-knowledge-work-plugins"><a href="#8-anthropics-knowledge-work-plugins" class="headerlink" title="8. anthropics/knowledge-work-plugins"></a>8. anthropics/knowledge-work-plugins</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/anthropics/knowledge-work-plugins">https://github.com/anthropics/knowledge-work-plugins</a></li><li><strong>简介</strong>：📚 Anthropic 官方的知识工作者插件仓库，专为 Claude Cowork 打造</li></ul><h3 id="9-ever-co-ever-gauzy"><a href="#9-ever-co-ever-gauzy" class="headerlink" title="9. ever-co/ever-gauzy"></a>9. ever-co/ever-gauzy</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/ever-co/ever-gauzy">https://github.com/ever-co/ever-gauzy</a></li><li><strong>简介</strong>：🏢 开源的企业经营管理平台，ERP/CRM/HRM 一把梭</li></ul><h3 id="10-ankitects-anki"><a href="#10-ankitects-anki" class="headerlink" title="10. ankitects/anki"></a>10. ankitects/anki</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/ankitects/anki">https://github.com/ankitects/anki</a></li><li><strong>简介</strong>：🧠 智能间隔重复记忆卡片神器，学习党的终极外挂</li></ul><h3 id="11-NationalSecurityAgency-ghidra"><a href="#11-NationalSecurityAgency-ghidra" class="headerlink" title="11. NationalSecurityAgency/ghidra"></a>11. NationalSecurityAgency/ghidra</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/NationalSecurityAgency/ghidra">https://github.com/NationalSecurityAgency/ghidra</a></li><li><strong>简介</strong>：🕵️ 国安局开源的软件逆向工程框架，安全研究必备の黑科技</li></ul><h3 id="12-anthropics-claude-code"><a href="#12-anthropics-claude-code" class="headerlink" title="12. anthropics/claude-code"></a>12. anthropics/claude-code</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/anthropics/claude-code">https://github.com/anthropics/claude-code</a></li><li><strong>简介</strong>：🤖 生活在终端里的 Agent 化编码工具，自然语言指挥它干活</li></ul><h3 id="13-roboflow-supervision"><a href="#13-roboflow-supervision" class="headerlink" title="13. roboflow/supervision"></a>13. roboflow/supervision</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/roboflow/supervision">https://github.com/roboflow/supervision</a></li><li><strong>简介</strong>：👀 帮你重写可复用计算机视觉工具的库，CV 开发者的贴心小棉袄</li></ul><h3 id="14-alphaXiv-OpenResearch"><a href="#14-alphaXiv-OpenResearch" class="headerlink" title="14. alphaXiv/OpenResearch"></a>14. alphaXiv/OpenResearch</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/alphaXiv/OpenResearch">https://github.com/alphaXiv/OpenResearch</a></li><li><strong>简介</strong>：🔬 把编码 Agent 变成研究 Agent，写论文查资料全能选手</li></ul><h3 id="15-supabase-supabase"><a href="#15-supabase-supabase" class="headerlink" title="15. supabase/supabase"></a>15. supabase/supabase</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/supabase/supabase">https://github.com/supabase/supabase</a></li><li><strong>简介</strong>：🗄️ Postgres 开发平台，数据库、后端一条龙，火遍全球的 Firebase 平替</li></ul><h3 id="16-rlaope-oh-my-hermes"><a href="#16-rlaope-oh-my-hermes" class="headerlink" title="16. rlaope/oh-my-hermes"></a>16. rlaope/oh-my-hermes</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/rlaope/oh-my-hermes">https://github.com/rlaope/oh-my-hermes</a></li><li><strong>简介</strong>：⚚ Hermes Agent 全家桶插件，长时记忆 + 模型优化工作流一步到位</li></ul><h3 id="17-SnailSploit-Claude-Red"><a href="#17-SnailSploit-Claude-Red" class="headerlink" title="17. SnailSploit/Claude-Red"></a>17. SnailSploit/Claude-Red</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/SnailSploit/Claude-Red">https://github.com/SnailSploit/Claude-Red</a></li><li><strong>简介</strong>：🐍 面向 Claude 技能系统的攻防安全技能库，SQLi 到 shellcode 一应俱全</li></ul><h3 id="18-multimodal-art-projection-YuE"><a href="#18-multimodal-art-projection-YuE" class="headerlink" title="18. multimodal-art-projection/YuE"></a>18. multimodal-art-projection/YuE</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/multimodal-art-projection/YuE">https://github.com/multimodal-art-projection/YuE</a></li><li><strong>简介</strong>：🎵 YuE2 前沿音乐生成，符号规划 + 零样本翻唱 + 智能音乐编辑</li></ul><h3 id="19-addyosmani-agent-skills"><a href="#19-addyosmani-agent-skills" class="headerlink" title="19. addyosmani/agent-skills"></a>19. addyosmani/agent-skills</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/addyosmani/agent-skills">https://github.com/addyosmani/agent-skills</a></li><li><strong>简介</strong>：🏗️ 生产级品质的 AI 编码 Agent 工程技能合集，来自大佬 Addy Osmani</li></ul><h3 id="20-cline-cline"><a href="#20-cline-cline" class="headerlink" title="20. cline/cline"></a>20. cline/cline</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/cline/cline">https://github.com/cline/cline</a></li><li><strong>简介</strong>：🛠️ 既可作 SDK、又可作 IDE 插件或 CLI 助手的自主编码 Agent</li></ul><h3 id="21-affaan-m-ECC"><a href="#21-affaan-m-ECC" class="headerlink" title="21. affaan-m/ECC"></a>21. affaan-m/ECC</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/affaan-m/ECC">https://github.com/affaan-m/ECC</a></li><li><strong>简介</strong>：⚡ Agent 性能优化引擎，技能、直觉、记忆、安全全面武装 Claude Code、Cursor 等工具</li></ul><hr><p>今天的榜单一如既往地精彩——AI 代码审查、本地大模型、知识平台三巨头领跑，加上一堆安全、语音、音乐生成的实力选手，总有一样能戳中你的需求，赶紧去给心动的仓库点个 Star 吧！⭐</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开源项目</category>
+      
+      <category>代码仓库推荐</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>Rust</tag>
+      
+      <tag>TypeScript</tag>
+      
+      <tag>Python</tag>
+      
+      <tag>Go</tag>
+      
+      <tag>JavaScript</tag>
+      
+      <tag>Github热门仓库</tag>
+      
+      <tag>开源开发</tag>
+      
+      <tag>C</tag>
+      
+      <tag>Swift</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-09-15 Github热门仓库</title>
     <link href="/posts/2026-09-15-github-re-men-cang-ku/"/>
     <url>/posts/2026-09-15-github-re-men-cang-ku/</url>
