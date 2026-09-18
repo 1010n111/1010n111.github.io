@@ -4,6 +4,51 @@
   
   
   <entry>
+    <title>2026-09-18 Github热门仓库</title>
+    <link href="/posts/2026-09-18-github-re-men-cang-ku/"/>
+    <url>/posts/2026-09-18-github-re-men-cang-ku/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>GitHub 今日热榜 | 2026-09-18：把 261K ⭐ 的 Agent 改装车间搬回家，还让老爷机跑起前沿大模型？</p></blockquote><p>今天的 GitHub Trending 依旧是 AI 含量爆表的一天 🔥 从 Agent 性能特调到零依赖大模型引擎，个个都是能直接上手的硬货，快来看看有没有你的菜。</p><h2 id="🔥-今日精选"><a href="#🔥-今日精选" class="headerlink" title="🔥 今日精选"></a>🔥 今日精选</h2><h3 id="1-affaan-m-ECC"><a href="#1-affaan-m-ECC" class="headerlink" title="1. affaan-m/ECC"></a>1. affaan-m/ECC</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/affaan-m/ECC">https://github.com/affaan-m/ECC</a></li><li><strong>简介</strong>：Agent 性能优化系统，为各种 AI 编码 Agent 加装技能、记忆与安全防护</li><li><strong>亮点</strong>：爆改 AI 编码 Agent 的优化系统，把“技能、本能、记忆、安全、研究型开发”整套武装进 Claude Code、Codex、Opencode、Cursor 等主流 Agent，直接冲上 261K ⭐。它本质是给 Agent 做性能调优的“改装车间”：既有系统工程,又有第一性原理的研究驱动开发思路，适合所有想把 Agent 用得又稳又骚的开发者，堪称下一代开发工作流的终极外挂。</li></ul><h3 id="2-JustVugg-colibri"><a href="#2-JustVugg-colibri" class="headerlink" title="2. JustVugg/colibri"></a>2. JustVugg/colibri</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/JustVugg/colibri">https://github.com/JustVugg/colibri</a></li><li><strong>简介</strong>：纯 C 零依赖，在现有硬件上流式运行前沿 MoE 大模型</li><li><strong>亮点</strong>：平时想跑前沿 MoE 大模型总被显卡卡脖子？colibri 让你在自己已有的硬件上就能跑起来——纯 C 实现、零依赖，专家权重直接从磁盘流式加载，引擎极小、模型却庞大无比。相当于给普通电脑配了一台“借来的算力”，极致轻量还完全开源，让“小马拉大车”成为现实，硬件折腾党看到直接走不动道 🐦</li></ul><h3 id="3-alibaba-open-code-review"><a href="#3-alibaba-open-code-review" class="headerlink" title="3. alibaba/open-code-review"></a>3. alibaba/open-code-review</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/alibaba/open-code-review">https://github.com/alibaba/open-code-review</a></li><li><strong>简介</strong>：阿里开源的混合架构代码评审工具，行级注释 + 多语言规则集</li><li><strong>亮点</strong>：阿里开源的代码评审工具，用“确定性流水线 + LLM Agent”的混合架构，在阿里内部大规模实战中打磨过。它能直接把评审精确到行级注释，内置 NPE、线程安全、XSS、SQL 注入等多语言规则集，还同时兼容 OpenAI 和 Anthropic 两套接口。评审既有硬规则又有 AI 理解，团队接入成本低，堪称代码质量的钢铁守门员 🛡️</li></ul><h2 id="⚡-快速浏览"><a href="#⚡-快速浏览" class="headerlink" title="⚡ 快速浏览"></a>⚡ 快速浏览</h2><h3 id="4-cloudflare-security-audit-skill"><a href="#4-cloudflare-security-audit-skill" class="headerlink" title="4. cloudflare/security-audit-skill"></a>4. cloudflare/security-audit-skill</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/cloudflare/security-audit-skill">https://github.com/cloudflare/security-audit-skill</a></li><li><strong>简介</strong>：多阶段安全审计的编码 Agent 技能，产出可机器验证的审计结论</li></ul><h3 id="5-addyosmani-agent-skills"><a href="#5-addyosmani-agent-skills" class="headerlink" title="5. addyosmani/agent-skills"></a>5. addyosmani/agent-skills</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/addyosmani/agent-skills">https://github.com/addyosmani/agent-skills</a></li><li><strong>简介</strong>：生产级工程技能集，给你的 AI 编码 Agent 叠 Buff</li></ul><h3 id="6-Tencent-BrowserSkill"><a href="#6-Tencent-BrowserSkill" class="headerlink" title="6. Tencent/BrowserSkill"></a>6. Tencent/BrowserSkill</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Tencent/BrowserSkill">https://github.com/Tencent/BrowserSkill</a></li><li><strong>简介</strong>：让 AI 直接操控你已登录的真实浏览器干活，不打断你的工作 🤖</li></ul><h3 id="7-alphaXiv-OpenResearch"><a href="#7-alphaXiv-OpenResearch" class="headerlink" title="7. alphaXiv/OpenResearch"></a>7. alphaXiv/OpenResearch</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/alphaXiv/OpenResearch">https://github.com/alphaXiv/OpenResearch</a></li><li><strong>简介</strong>：把写代码的 Agent 变成能查论文做研究的科研助手</li></ul><h3 id="8-anthropics-claude-code"><a href="#8-anthropics-claude-code" class="headerlink" title="8. anthropics/claude-code"></a>8. anthropics/claude-code</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/anthropics/claude-code">https://github.com/anthropics/claude-code</a></li><li><strong>简介</strong>：终端里的智能编码体，自然语言指挥 + 深度理解代码库</li></ul><h3 id="9-NationalSecurityAgency-ghidra"><a href="#9-NationalSecurityAgency-ghidra" class="headerlink" title="9. NationalSecurityAgency/ghidra"></a>9. NationalSecurityAgency/ghidra</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/NationalSecurityAgency/ghidra">https://github.com/NationalSecurityAgency/ghidra</a></li><li><strong>简介</strong>：NSA 开源的软件逆向工程框架，逆向分析神器 🕵️</li></ul><h3 id="10-anthropics-knowledge-work-plugins"><a href="#10-anthropics-knowledge-work-plugins" class="headerlink" title="10. anthropics/knowledge-work-plugins"></a>10. anthropics/knowledge-work-plugins</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/anthropics/knowledge-work-plugins">https://github.com/anthropics/knowledge-work-plugins</a></li><li><strong>简介</strong>：面向知识工作者的 Claude Cowork 官方插件库</li></ul><h3 id="11-Tencent-WeKnora"><a href="#11-Tencent-WeKnora" class="headerlink" title="11. Tencent/WeKnora"></a>11. Tencent/WeKnora</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/Tencent/WeKnora">https://github.com/Tencent/WeKnora</a></li><li><strong>简介</strong>：一站式开源 LLM 知识平台：RAG 检索 + 自主推理 + 自维护 Wiki</li></ul><h3 id="12-abue-ammar-tinycast"><a href="#12-abue-ammar-tinycast" class="headerlink" title="12. abue-ammar/tinycast"></a>12. abue-ammar/tinycast</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/abue-ammar/tinycast">https://github.com/abue-ammar/tinycast</a></li><li><strong>简介</strong>：极简原生 macOS 启动器，集热键与剪贴板历史于一身</li></ul><h3 id="13-cilium-cilium"><a href="#13-cilium-cilium" class="headerlink" title="13. cilium/cilium"></a>13. cilium/cilium</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/cilium/cilium">https://github.com/cilium/cilium</a></li><li><strong>简介</strong>：基于 eBPF 的云原生网络、安全与可观测性一站式方案</li></ul><h3 id="14-jamiepine-voicebox"><a href="#14-jamiepine-voicebox" class="headerlink" title="14. jamiepine/voicebox"></a>14. jamiepine/voicebox</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/jamiepine/voicebox">https://github.com/jamiepine/voicebox</a></li><li><strong>简介</strong>：开源 AI 语音工作室：声音克隆、听写、创作一条龙 🎙️</li></ul><h3 id="15-roboflow-supervision"><a href="#15-roboflow-supervision" class="headerlink" title="15. roboflow/supervision"></a>15. roboflow/supervision</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/roboflow/supervision">https://github.com/roboflow/supervision</a></li><li><strong>简介</strong>：帮你把可复用的计算机视觉工具一次写好的库 💜</li></ul><h3 id="16-TencentCloud-Octop"><a href="#16-TencentCloud-Octop" class="headerlink" title="16. TencentCloud/Octop"></a>16. TencentCloud/Octop</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/TencentCloud/Octop">https://github.com/TencentCloud/Octop</a></li><li><strong>简介</strong>：更聪明的可自助托管 AI 助手，多用户多 Agent 齐上阵</li></ul><h3 id="17-ever-co-ever-gauzy"><a href="#17-ever-co-ever-gauzy" class="headerlink" title="17. ever-co/ever-gauzy"></a>17. ever-co/ever-gauzy</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/ever-co/ever-gauzy">https://github.com/ever-co/ever-gauzy</a></li><li><strong>简介</strong>：开源商业管理平台，ERP/CRM/HRM/ATS/PM 全家桶</li></ul><h3 id="18-cline-cline"><a href="#18-cline-cline" class="headerlink" title="18. cline/cline"></a>18. cline/cline</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/cline/cline">https://github.com/cline/cline</a></li><li><strong>简介</strong>：以 SDK、IDE 插件或 CLI 形式存在的自主编码 Agent</li></ul><h3 id="19-coder-coder"><a href="#19-coder-coder" class="headerlink" title="19. coder/coder"></a>19. coder/coder</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/coder/coder">https://github.com/coder/coder</a></li><li><strong>简介</strong>：为开发者和他们的 Agent 提供安全隔离的云端开发环境</li></ul><h3 id="20-n8n-io-n8n"><a href="#20-n8n-io-n8n" class="headerlink" title="20. n8n-io/n8n"></a>20. n8n-io/n8n</h3><ul><li><strong>仓库 URL</strong>：<a href="https://github.com/n8n-io/n8n">https://github.com/n8n-io/n8n</a></li><li><strong>简介</strong>：自带原生 AI 能力的可视化工作流自动化平台，400+ 集成</li></ul><hr><p>今天的榜单依旧是 AI 时代军备竞赛的缩影——有人把 Agent 能力上限一路拉高，有人把大模型算力门槛一路打低，随便挑一个收藏，明天上班第一件事就是上手开用 🎯</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开源项目</category>
+      
+      <category>代码仓库推荐</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>Rust</tag>
+      
+      <tag>TypeScript</tag>
+      
+      <tag>Python</tag>
+      
+      <tag>Go</tag>
+      
+      <tag>JavaScript</tag>
+      
+      <tag>Github热门仓库</tag>
+      
+      <tag>开源开发</tag>
+      
+      <tag>C</tag>
+      
+      <tag>Swift</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2026-09-17 Github热门仓库</title>
     <link href="/posts/2026-09-17-github-re-men-cang-ku/"/>
     <url>/posts/2026-09-17-github-re-men-cang-ku/</url>
