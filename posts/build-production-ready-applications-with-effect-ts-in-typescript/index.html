@@ -1,0 +1,914 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+    <link rel="canonical" href="https://119291.xyz/posts/build-production-ready-applications-with-effect-ts-in-typescript/"/>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="Java 编程、Python 教程、前端开发框架、运维工具、技术学习笔记、程序员资源">
+  
+    <meta name="description" content="使用Effect-TS在TypeScript中构建生产就绪应用技术背景Effect是一个强大的TypeScript框架，它提供了一个成熟的函数式效果系统以及丰富的标准库。该框架由多个包组成，这些包协同工作，助力开发者构建健壮的TypeScript应用程序。核心包effect是框架的基础，提供了管理副作用、确保类型安全和支持并发的原语。 实现步骤1. 了解仓库结构Effect的单仓库（Monorep">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Effect-TS在TypeScript中构建生产就绪应用">
+<meta property="og:url" content="https://119291.xyz/posts/build-production-ready-applications-with-effect-ts-in-typescript/">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="使用Effect-TS在TypeScript中构建生产就绪应用技术背景Effect是一个强大的TypeScript框架，它提供了一个成熟的函数式效果系统以及丰富的标准库。该框架由多个包组成，这些包协同工作，助力开发者构建健壮的TypeScript应用程序。核心包effect是框架的基础，提供了管理副作用、确保类型安全和支持并发的原语。 实现步骤1. 了解仓库结构Effect的单仓库（Monorep">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-07-19T00:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-17T01:23:07.959Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="TypeScript">
+<meta property="article:tag" content="前端开发">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />  
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843507635528842" crossorigin="anonymous"></script> 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BWT1XBMWZ7');
+</script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "rdsapt5j41");
+</script>
+
+
+   
+
+  
+  <title>使用Effect-TS在TypeScript中构建生产就绪应用 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"119291.xyz","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小破站" type="application/atom+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"使用Effect-TS在TypeScript中构建生产就绪应用","url":"https://119291.xyz/posts/build-production-ready-applications-with-effect-ts-in-typescript/","mainEntityOfPage":{"@type":"WebPage","@id":"https://119291.xyz/posts/build-production-ready-applications-with-effect-ts-in-typescript/"},"datePublished":"2025-07-19T00:00:00.000Z","dateModified":"2025-07-19T00:00:00.000Z","inLanguage":"zh-CN","author":{"@type":"Person","name":"ww"},"publisher":{"@type":"Organization","name":"小破站","url":"https://119291.xyz/"},"description":"使用Effect-TS在TypeScript中构建生产就绪应用技术背景Effect是一个强大的TypeScript框架，它提供了一个成熟的函数式效果系统以及丰富的标准库。该框架由多个包组成，这些包协同工作，助力开发者构建健壮的TypeScript应用程序。核心包effect是框架的基础，提供了管理副作用、确保类型安全和支持并发的原语。 实现步骤1. 了解仓库结构Effect的单仓库（Monorep","keywords":"TypeScript, 前端开发"}</script></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="使用Effect-TS在TypeScript中构建生产就绪应用"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-07-19 08:00" pubdate>
+          2025年7月19日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          12 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">使用Effect-TS在TypeScript中构建生产就绪应用</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="使用Effect-TS在TypeScript中构建生产就绪应用"><a href="#使用Effect-TS在TypeScript中构建生产就绪应用" class="headerlink" title="使用Effect-TS在TypeScript中构建生产就绪应用"></a>使用Effect-TS在TypeScript中构建生产就绪应用</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>Effect是一个强大的TypeScript框架，它提供了一个成熟的函数式效果系统以及丰富的标准库。该框架由多个包组成，这些包协同工作，助力开发者构建健壮的TypeScript应用程序。核心包<code>effect</code>是框架的基础，提供了管理副作用、确保类型安全和支持并发的原语。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="1-了解仓库结构"><a href="#1-了解仓库结构" class="headerlink" title="1. 了解仓库结构"></a>1. 了解仓库结构</h3><p>Effect的单仓库（Monorepo）被组织成多个包，每个包都扩展了核心功能。以下是包含的包概述：</p>
+<table>
+<thead>
+<tr>
+<th>包名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>effect</td>
+<td>核心包</td>
+</tr>
+<tr>
+<td>@effect&#x2F;ai</td>
+<td>AI工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;ai-openai</td>
+<td>OpenAI工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;ai-anthropic</td>
+<td>Anthropic工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;cli</td>
+<td>CLI工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;cluster</td>
+<td>分布式计算工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;cluster-browser</td>
+<td>浏览器集群工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;cluster-node</td>
+<td>Node.js集群工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;cluster-workflow</td>
+<td>集群工作流管理</td>
+</tr>
+<tr>
+<td>@effect&#x2F;experimental</td>
+<td>实验性功能和API</td>
+</tr>
+<tr>
+<td>@effect&#x2F;opentelemetry</td>
+<td>OpenTelemetry集成</td>
+</tr>
+<tr>
+<td>@effect&#x2F;platform</td>
+<td>跨平台运行时工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;platform-browser</td>
+<td>浏览器平台工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;platform-bun</td>
+<td>Bun平台工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;platform-node</td>
+<td>Node.js平台工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;platform-node-shared</td>
+<td>Node.js共享工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;printer</td>
+<td>通用打印工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;printer-ansi</td>
+<td>ANSI兼容打印工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;rpc</td>
+<td>远程过程调用（RPC）工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;rpc-http</td>
+<td>基于HTTP的RPC工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql</td>
+<td>SQL数据库工具</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-clickhouse</td>
+<td>ClickHouse的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-d1</td>
+<td>Cloudflare D1的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-drizzle</td>
+<td>Drizzle的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-kysely</td>
+<td>Kysely的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-libsql</td>
+<td>使用@libsql&#x2F;client库的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-mssql</td>
+<td>使用mssql tedious库的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-mysql2</td>
+<td>使用mysql2库的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-pg</td>
+<td>使用postgres.js库的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-sqlite-bun</td>
+<td>使用bun:sqlite库的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-sqlite-do</td>
+<td>Cloudflare Durable Objects sqlite存储的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-sqlite-node</td>
+<td>使用better-sqlite3库的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-sqlite-react-native</td>
+<td>使用react-native-quick-sqlite库的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;sql-sqlite-wasm</td>
+<td>使用@sqlite.org&#x2F;sqlite-wasm库的@effect&#x2F;sql实现</td>
+</tr>
+<tr>
+<td>@effect&#x2F;typeclass</td>
+<td>函数式编程类型类</td>
+</tr>
+<tr>
+<td>@effect&#x2F;vitest</td>
+<td>Vitest测试工具</td>
+</tr>
+</tbody></table>
+<h3 id="2-贡献代码"><a href="#2-贡献代码" class="headerlink" title="2. 贡献代码"></a>2. 贡献代码</h3><h4 id="2-1-设置环境"><a href="#2-1-设置环境" class="headerlink" title="2.1 设置环境"></a>2.1 设置环境</h4><p>首先，fork仓库并克隆到本地。进入克隆的仓库并创建一个新分支：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git checkout -b my-branch<br></code></pre></td></tr></table></figure>
+<p>运行以下命令安装所有依赖：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pnpm install  <span class="hljs-comment"># Requires pnpm version 10.4.0</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="2-2-进行更改"><a href="#2-2-进行更改" class="headerlink" title="2.2 进行更改"></a>2.2 进行更改</h4><ul>
+<li><strong>实现更改</strong>：对代码库进行所需的更改。如果更改影响功能，请添加相应的测试以验证更新。</li>
+<li><strong>验证更改</strong>：运行以下命令确保更改不会引入任何问题：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">pnpm codegen (可选): 如果更改了包结构或引入了新模块，重新生成包入口点。<br>pnpm check: 确认代码编译无错误。<br>pnpm <span class="hljs-built_in">test</span>: 执行所有单元测试，确保更改未破坏现有功能。<br>pnpm circular: 检查导入中是否存在循环依赖。<br>pnpm lint: 确保代码符合编码标准。如果遇到样式问题，使用pnpm lint-fix自动纠正。<br>pnpm test-types: 运行类型级测试。测试使用tstyche编写。<br>pnpm docgen: 确保文档正确生成并反映所做的更改。<br></code></pre></td></tr></table></figure>
+
+<h4 id="2-3-文档记录"><a href="#2-3-文档记录" class="headerlink" title="2.3 文档记录"></a>2.3 文档记录</h4><ul>
+<li><strong>JSDoc注释</strong>：添加新功能时，使用JSDoc注释记录代码。至少包含以下内容：<ul>
+<li>简短描述：总结功能的目的和用途。</li>
+<li>示例：在<code>@example</code>标签下提供使用示例。</li>
+<li>版本：使用<code>@since</code>标签指示功能引入的版本。</li>
+<li>类别（可选）：使用<code>@category</code>标签对功能进行分类。</li>
+</ul>
+</li>
+<li><strong>变更集文档</strong>：在提交更改之前，使用变更集记录更改：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pnpm changeset<br></code></pre></td></tr></table></figure>
+<p>在创建变更集过程中，选择适合更改的级别：</p>
+<ul>
+<li>patch：用于小修复或不影响库整体功能的小更改。</li>
+<li>minor：用于增强功能但不破坏现有功能的新特性。</li>
+<li>major：用于引入向后不兼容更改的任何更改。</li>
+</ul>
+<h4 id="2-4-提交更改"><a href="#2-4-提交更改" class="headerlink" title="2.4 提交更改"></a>2.4 提交更改</h4><ul>
+<li><strong>提交到仓库</strong>：使用清晰描述的提交消息将更改提交到仓库：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git commit -am <span class="hljs-string">&#x27;Add some feature&#x27;</span><br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>关联问题</strong>：如果提交解决了一个开放问题，在提交消息中直接引用问题编号。如果提交解决了问题，可以添加<code>, closes #&lt;issue-number&gt;</code>：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git commit -am <span class="hljs-string">&#x27;Add some feature, closes #123&#x27;</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="2-5-推送到Fork"><a href="#2-5-推送到Fork" class="headerlink" title="2.5 推送到Fork"></a>2.5 推送到Fork</h4><p>将更改推送到GitHub的fork：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git push origin my-branch<br></code></pre></td></tr></table></figure>
+
+<h4 id="2-6-创建拉取请求"><a href="#2-6-创建拉取请求" class="headerlink" title="2.6 创建拉取请求"></a>2.6 创建拉取请求</h4><p>根据更改类型，针对原始仓库的相应分支创建拉取请求：</p>
+<ul>
+<li>main分支：用于小补丁或错误修复。</li>
+<li>next-minor分支：用于非破坏性的新功能。</li>
+<li>next-major分支：用于引入破坏性更改的变更。</li>
+</ul>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>以下是一个简单的使用Effect的示例：</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">import</span> &#123; <span class="hljs-title class_">Effect</span> &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;effect&quot;</span><br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">Effect</span>.<span class="hljs-title function_">runSyncExit</span>(<span class="hljs-title class_">Effect</span>.<span class="hljs-title function_">succeed</span>(<span class="hljs-number">1</span>)))<br><span class="hljs-comment">/*</span><br><span class="hljs-comment">Output:</span><br><span class="hljs-comment">&#123;</span><br><span class="hljs-comment">  _id: &quot;Exit&quot;,</span><br><span class="hljs-comment">  _tag: &quot;Success&quot;,</span><br><span class="hljs-comment">  value: 1</span><br><span class="hljs-comment">&#125;</span><br><span class="hljs-comment">*/</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li>在开发过程中，及时更新文档，确保代码和文档的一致性。</li>
+<li>编写清晰、可维护的代码，并添加足够的注释。</li>
+<li>在提交更改之前，确保所有测试通过，避免引入新的问题。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li><strong>依赖安装问题</strong>：确保使用的pnpm版本为10.4.0或更高。</li>
+<li><strong>测试失败</strong>：检查更改是否影响了现有功能，添加或修改相应的测试用例。</li>
+<li><strong>提交被拒绝</strong>：检查提交消息是否清晰，是否正确关联了问题，以及拉取请求是否针对正确的分支。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">前端开发</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/TypeScript/" class="print-no-link">#TypeScript</a>
+      
+        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#前端开发</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>使用Effect-TS在TypeScript中构建生产就绪应用</div>
+      <div>https://119291.xyz/posts/build-production-ready-applications-with-effect-ts-in-typescript/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年7月19日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/2025-07-19-github-re-men-cang-ku/" title="2025-07-19 Github热门仓库">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2025-07-19 Github热门仓库</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/claude-code-router-usage-guide/" title="Claude Code Router工具使用指南">
+                        <span class="hidden-mobile">Claude Code Router工具使用指南</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
