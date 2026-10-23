@@ -1,0 +1,731 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+    <link rel="canonical" href="https://119291.xyz/posts/gitleaks-sensitive-information-detection/"/>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="Java 编程、Python 教程、前端开发框架、运维工具、技术学习笔记、程序员资源">
+  
+    <meta name="description" content="使用Gitleaks检测代码库中的敏感信息技术背景在软件开发过程中，代码库中可能会意外包含敏感信息，如密码、API密钥和令牌等。这些信息的泄露可能会导致严重的安全问题。Gitleaks是一个用于检测Git仓库、文件以及通过标准输入传递的任何内容中敏感信息的工具。 实现步骤安装Gitleaks可以通过多种方式安装：  Homebrew（MacOS）：  1brew install gitleaks">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用Gitleaks检测代码库中的敏感信息">
+<meta property="og:url" content="https://119291.xyz/posts/gitleaks-sensitive-information-detection/">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="使用Gitleaks检测代码库中的敏感信息技术背景在软件开发过程中，代码库中可能会意外包含敏感信息，如密码、API密钥和令牌等。这些信息的泄露可能会导致严重的安全问题。Gitleaks是一个用于检测Git仓库、文件以及通过标准输入传递的任何内容中敏感信息的工具。 实现步骤安装Gitleaks可以通过多种方式安装：  Homebrew（MacOS）：  1brew install gitleaks">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-07-22T00:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-23T23:16:19.886Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="Go">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />  
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843507635528842" crossorigin="anonymous"></script> 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BWT1XBMWZ7');
+</script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "rdsapt5j41");
+</script>
+
+
+   
+
+  
+  <title>使用Gitleaks检测代码库中的敏感信息 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"119291.xyz","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小破站" type="application/atom+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"使用Gitleaks检测代码库中的敏感信息","url":"https://119291.xyz/posts/gitleaks-sensitive-information-detection/","mainEntityOfPage":{"@type":"WebPage","@id":"https://119291.xyz/posts/gitleaks-sensitive-information-detection/"},"datePublished":"2025-07-22T00:00:00.000Z","dateModified":"2025-07-22T00:00:00.000Z","inLanguage":"zh-CN","author":{"@type":"Person","name":"ww"},"publisher":{"@type":"Organization","name":"小破站","url":"https://119291.xyz/"},"description":"使用Gitleaks检测代码库中的敏感信息技术背景在软件开发过程中，代码库中可能会意外包含敏感信息，如密码、API密钥和令牌等。这些信息的泄露可能会导致严重的安全问题。Gitleaks是一个用于检测Git仓库、文件以及通过标准输入传递的任何内容中敏感信息的工具。 实现步骤安装Gitleaks可以通过多种方式安装：  Homebrew（MacOS）：  1brew install gitleaks","keywords":"Go"}</script></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="使用Gitleaks检测代码库中的敏感信息"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-07-22 08:00" pubdate>
+          2025年7月22日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          10 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">使用Gitleaks检测代码库中的敏感信息</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="使用Gitleaks检测代码库中的敏感信息"><a href="#使用Gitleaks检测代码库中的敏感信息" class="headerlink" title="使用Gitleaks检测代码库中的敏感信息"></a>使用Gitleaks检测代码库中的敏感信息</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在软件开发过程中，代码库中可能会意外包含敏感信息，如密码、API密钥和令牌等。这些信息的泄露可能会导致严重的安全问题。Gitleaks是一个用于检测Git仓库、文件以及通过标准输入传递的任何内容中敏感信息的工具。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>Gitleaks可以通过多种方式安装：</p>
+<ol>
+<li><strong>Homebrew（MacOS）</strong>：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">brew install gitleaks<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>Docker（DockerHub）</strong>：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker pull zricethezav/gitleaks:latest<br>docker run -v <span class="hljs-variable">$&#123;path_to_host_folder_to_scan&#125;</span>:/path zricethezav/gitleaks:latest [COMMAND] [OPTIONS] [SOURCE_PATH]<br></code></pre></td></tr></table></figure>
+<ol start="3">
+<li><strong>Docker（ghcr.io）</strong>：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker pull ghcr.io/gitleaks/gitleaks:latest<br>docker run -v <span class="hljs-variable">$&#123;path_to_host_folder_to_scan&#125;</span>:/path ghcr.io/gitleaks/gitleaks:latest [COMMAND] [OPTIONS] [SOURCE_PATH]<br></code></pre></td></tr></table></figure>
+<ol start="4">
+<li><strong>从源代码安装（需安装Go）</strong>：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/gitleaks/gitleaks.git<br><span class="hljs-built_in">cd</span> gitleaks<br>make build<br></code></pre></td></tr></table></figure>
+
+<h3 id="作为GitHub-Action使用"><a href="#作为GitHub-Action使用" class="headerlink" title="作为GitHub Action使用"></a>作为GitHub Action使用</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">gitleaks</span><br><span class="hljs-attr">on:</span> [<span class="hljs-string">pull_request</span>, <span class="hljs-string">push</span>, <span class="hljs-string">workflow_dispatch</span>]<br><span class="hljs-attr">jobs:</span><br>  <span class="hljs-attr">scan:</span><br>    <span class="hljs-attr">name:</span> <span class="hljs-string">gitleaks</span><br>    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>    <span class="hljs-attr">steps:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v3</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-attr">fetch-depth:</span> <span class="hljs-number">0</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">gitleaks/gitleaks-action@v2</span><br>        <span class="hljs-attr">env:</span><br>          <span class="hljs-attr">GITHUB_TOKEN:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.GITHUB_TOKEN</span> <span class="hljs-string">&#125;&#125;</span><br>          <span class="hljs-attr">GITLEAKS_LICENSE:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.GITLEAKS_LICENSE&#125;&#125;</span> <span class="hljs-comment"># 仅组织账户需要，个人账户不需要</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="作为pre-commit钩子使用"><a href="#作为pre-commit钩子使用" class="headerlink" title="作为pre-commit钩子使用"></a>作为pre-commit钩子使用</h3><ol>
+<li>从<a target="_blank" rel="noopener" href="https://pre-commit.com/#install">https://pre-commit.com/#install</a>安装pre-commit。</li>
+<li>在仓库根目录创建<code>.pre-commit-config.yaml</code>文件，内容如下：</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">repos:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">repo:</span> <span class="hljs-string">https://github.com/gitleaks/gitleaks</span><br>    <span class="hljs-attr">rev:</span> <span class="hljs-string">v8.24.2</span><br>    <span class="hljs-attr">hooks:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">gitleaks</span><br></code></pre></td></tr></table></figure>
+<ol start="3">
+<li>执行<code>pre-commit autoupdate</code>自动更新配置到最新版本。</li>
+<li>执行<code>pre-commit install</code>进行安装。</li>
+</ol>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><h3 id="配置文件示例"><a href="#配置文件示例" class="headerlink" title="配置文件示例"></a>配置文件示例</h3><figure class="highlight toml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><code class="hljs toml"><span class="hljs-attr">title</span> = <span class="hljs-string">&quot;Custom Gitleaks configuration&quot;</span><br><br><span class="hljs-section">[extend]</span><br><span class="hljs-attr">useDefault</span> = <span class="hljs-literal">true</span><br><span class="hljs-attr">disabledRules</span> = [ <span class="hljs-string">&quot;generic-api-key&quot;</span>]<br><br><span class="hljs-section">[[rules]]</span><br><span class="hljs-attr">id</span> = <span class="hljs-string">&quot;awesome-rule-1&quot;</span><br><span class="hljs-attr">description</span> = <span class="hljs-string">&quot;awesome rule 1&quot;</span><br><span class="hljs-attr">regex</span> = <span class="hljs-string">&#x27;&#x27;&#x27;one-go-style-regex-for-this-rule&#x27;&#x27;&#x27;</span><br><span class="hljs-attr">secretGroup</span> = <span class="hljs-number">3</span><br><span class="hljs-attr">entropy</span> = <span class="hljs-number">3.5</span><br><span class="hljs-attr">path</span> = <span class="hljs-string">&#x27;&#x27;&#x27;a-file-path-regex&#x27;&#x27;&#x27;</span><br><span class="hljs-attr">keywords</span> = [<br>  <span class="hljs-string">&quot;auth&quot;</span>,<br>  <span class="hljs-string">&quot;password&quot;</span>,<br>  <span class="hljs-string">&quot;token&quot;</span>,<br>]<br><span class="hljs-attr">tags</span> = [<span class="hljs-string">&quot;tag&quot;</span>,<span class="hljs-string">&quot;another tag&quot;</span>]<br><br><span class="hljs-section">[[rules.allowlists]]</span><br><span class="hljs-attr">description</span> = <span class="hljs-string">&quot;ignore commit A&quot;</span><br><span class="hljs-attr">condition</span> = <span class="hljs-string">&quot;OR&quot;</span><br><span class="hljs-attr">commits</span> = [ <span class="hljs-string">&quot;commit-A&quot;</span>, <span class="hljs-string">&quot;commit-B&quot;</span>]<br><span class="hljs-attr">paths</span> = [<br>  <span class="hljs-string">&#x27;&#x27;&#x27;go\.mod&#x27;&#x27;&#x27;</span>,<br>  <span class="hljs-string">&#x27;&#x27;&#x27;go\.sum&#x27;&#x27;&#x27;</span><br>]<br><span class="hljs-attr">stopwords</span> = [<br>  <span class="hljs-string">&#x27;&#x27;&#x27;client&#x27;&#x27;&#x27;</span>,<br>  <span class="hljs-string">&#x27;&#x27;&#x27;endpoint&#x27;&#x27;&#x27;</span>,<br>]<br><br><span class="hljs-section">[[rules.allowlists]]</span><br><span class="hljs-attr">condition</span> = <span class="hljs-string">&quot;AND&quot;</span><br><span class="hljs-attr">regexTarget</span> = <span class="hljs-string">&quot;match&quot;</span><br><span class="hljs-attr">regexes</span> = [ <span class="hljs-string">&#x27;&#x27;&#x27;(?i)parseur[il]&#x27;&#x27;&#x27;</span> ]<br><span class="hljs-attr">paths</span> = [ <span class="hljs-string">&#x27;&#x27;&#x27;package-lock\.json&#x27;&#x27;&#x27;</span> ]<br><br><span class="hljs-section">[[allowlists]]</span><br><span class="hljs-attr">description</span> = <span class="hljs-string">&quot;global allow list&quot;</span><br><span class="hljs-attr">commits</span> = [ <span class="hljs-string">&quot;commit-A&quot;</span>, <span class="hljs-string">&quot;commit-B&quot;</span>, <span class="hljs-string">&quot;commit-C&quot;</span>]<br><span class="hljs-attr">paths</span> = [<br>  <span class="hljs-string">&#x27;&#x27;&#x27;gitleaks\.toml&#x27;&#x27;&#x27;</span>,<br>  <span class="hljs-string">&#x27;&#x27;&#x27;(.*?)(jpg|gif|doc)&#x27;&#x27;&#x27;</span><br>]<br><span class="hljs-attr">regexTarget</span> = <span class="hljs-string">&quot;match&quot;</span><br><span class="hljs-attr">regexes</span> = [<br>  <span class="hljs-string">&#x27;&#x27;&#x27;219-09-9999&#x27;&#x27;&#x27;</span>,<br>  <span class="hljs-string">&#x27;&#x27;&#x27;078-05-1120&#x27;&#x27;&#x27;</span>,<br>  <span class="hljs-string">&#x27;&#x27;&#x27;(9[0-9]&#123;2&#125;|666)-\d&#123;2&#125;-\d&#123;4&#125;&#x27;&#x27;&#x27;</span>,<br>]<br><span class="hljs-attr">stopwords</span> = [<br>  <span class="hljs-string">&#x27;&#x27;&#x27;client&#x27;&#x27;&#x27;</span>,<br>  <span class="hljs-string">&#x27;&#x27;&#x27;endpoint&#x27;&#x27;&#x27;</span>,<br>]<br><br><span class="hljs-section">[[allowlists]]</span><br><span class="hljs-attr">targetRules</span> = [<span class="hljs-string">&quot;awesome-rule-1&quot;</span>, <span class="hljs-string">&quot;awesome-rule-2&quot;</span>]<br><span class="hljs-attr">description</span> = <span class="hljs-string">&quot;Our test assets trigger false-positives in a couple rules.&quot;</span><br><span class="hljs-attr">paths</span> = [<span class="hljs-string">&#x27;&#x27;&#x27;tests/expected/._\.json$&#x27;&#x27;&#x27;</span>]<br></code></pre></td></tr></table></figure>
+
+<h3 id="自定义报告模板示例（jsonextra-tmpl）"><a href="#自定义报告模板示例（jsonextra-tmpl）" class="headerlink" title="自定义报告模板示例（jsonextra.tmpl）"></a>自定义报告模板示例（jsonextra.tmpl）</h3><figure class="highlight handlebars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs handlebars"><span class="language-xml">[</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">$lastFinding</span> <span class="hljs-attr">:</span>= (<span class="hljs-name">sub</span> (<span class="hljs-name">len</span> . ) <span class="hljs-number">1</span>) &#125;&#125;</span><span class="language-xml"></span><br><span class="language-xml"></span><span class="hljs-template-variable">&#123;&#123;<span class="hljs-name">-</span> range $i, $finding <span class="hljs-attr">:</span>= . &#125;&#125;</span><span class="hljs-template-variable">&#123;&#123;<span class="hljs-name"><span class="hljs-built_in">with</span></span> $finding&#125;&#125;</span><span class="language-xml"></span><br><span class="language-xml">    &#123;</span><br><span class="language-xml">        &quot;Description&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Description &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;StartLine&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">.StartLine</span> &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;EndLine&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">.EndLine</span> &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;StartColumn&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">.StartColumn</span> &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;EndColumn&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">.EndColumn</span> &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Line&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Line &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Match&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Match &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Secret&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Secret &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;File&quot;: &quot;</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">.File</span> &#125;&#125;</span><span class="language-xml">&quot;,</span><br><span class="language-xml">        &quot;SymlinkFile&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .SymlinkFile &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Commit&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Commit &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Entropy&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">.Entropy</span> &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Author&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Author &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Email&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Email &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Date&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Date &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Message&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Message &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Tags&quot;: [</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">$lastTag</span> <span class="hljs-attr">:</span>= (<span class="hljs-name">sub</span> (<span class="hljs-name">len</span> .Tags ) <span class="hljs-number">1</span>) &#125;&#125;</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">range</span> $j, $tag <span class="hljs-attr">:</span>= .Tags &#125;&#125;</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> . &#125;&#125;</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name"><span class="hljs-built_in">if</span></span> ne $j $lastTag &#125;&#125;</span><span class="language-xml">,</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">end</span> &#125;&#125;</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">end</span> &#125;&#125;</span><span class="language-xml">],</span><br><span class="language-xml">        &quot;RuleID&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .RuleID &#125;&#125;</span><span class="language-xml">,</span><br><span class="language-xml">        &quot;Fingerprint&quot;: </span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">quote</span> .Fingerprint &#125;&#125;</span><span class="language-xml"></span><br><span class="language-xml">    &#125;</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name"><span class="hljs-built_in">if</span></span> ne $i $lastFinding &#125;&#125;</span><span class="language-xml">,</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">end</span> &#125;&#125;</span><span class="language-xml"></span><br><span class="language-xml"></span><span class="hljs-template-variable">&#123;&#123;<span class="hljs-name">-</span> end&#125;&#125;</span><span class="hljs-template-variable">&#123;&#123; <span class="hljs-name">end</span> &#125;&#125;</span><span class="language-xml"></span><br><span class="language-xml">]</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>创建基线</strong>：对于大型仓库或历史较长的仓库，使用基线可以忽略旧的检测结果。通过<code>--report-path</code>参数生成报告作为基线，再次检测时使用<code>--baseline-path</code>应用基线。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">gitleaks git --report-path gitleaks-report.json<br>gitleaks git --baseline-path gitleaks-report.json --report-path findings.json<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>自定义规则</strong>：根据项目需求自定义检测规则，可参考默认配置文件<a target="_blank" rel="noopener" href="https://github.com/gitleaks/gitleaks/blob/master/config/gitleaks.toml">https://github.com/gitleaks/gitleaks/blob/master/config/gitleaks.toml</a>。</li>
+<li><strong>使用报告模板</strong>：如果内置报告格式不满足需求，可使用<code>--report-template</code>创建自定义报告。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="v8-19-0版本变更"><a href="#v8-19-0版本变更" class="headerlink" title="v8.19.0版本变更"></a>v8.19.0版本变更</h3><p>v8.19.0引入了变更，弃用了<code>detect</code>和<code>protect</code>命令，这些命令仍可用但在<code>--help</code>菜单中隐藏。可参考<a target="_blank" rel="noopener" href="https://gist.github.com/your-gist-url">此gist</a>进行命令转换。</p>
+<h3 id="忽略特定检测结果"><a href="#忽略特定检测结果" class="headerlink" title="忽略特定检测结果"></a>忽略特定检测结果</h3><ul>
+<li><strong>gitleaks:allow注释</strong>：在代码中添加<code>gitleaks:allow</code>注释可让Gitleaks忽略该敏感信息。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CustomClass</span>:<br>    discord_client_secret = <span class="hljs-string">&#x27;8dyfuiRyq=vVc3RRr_edRk-fK__JItpZ&#x27;</span>  <span class="hljs-comment">#gitleaks:allow</span><br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>.gitleaksignore文件</strong>：在仓库根目录创建<code>.gitleaksignore</code>文件，添加泄漏信息的指纹可忽略特定敏感信息。</li>
+</ul>
+<h3 id="解码和归档扫描"><a href="#解码和归档扫描" class="headerlink" title="解码和归档扫描"></a>解码和归档扫描</h3><ul>
+<li><strong>解码</strong>：使用<code>--max-decode-depth</code>标志开启自动解码功能，支持递归解码。</li>
+<li><strong>归档扫描</strong>：使用<code>--max-archive-depth</code>标志开启自动提取和扫描归档文件内容的功能，支持递归扫描。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Go/" class="print-no-link">#Go</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>使用Gitleaks检测代码库中的敏感信息</div>
+      <div>https://119291.xyz/posts/gitleaks-sensitive-information-detection/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年7月22日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/github-sindresorhus-awesome-resource-summary/" title="GitHub - sindresorhus/awesome 中的技术资源汇总">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">GitHub - sindresorhus/awesome 中的技术资源汇总</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/machine-learning-algorithms-implementation-from-scratch/" title="从零开始实现机器学习算法">
+                        <span class="hidden-mobile">从零开始实现机器学习算法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,709 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+    <link rel="canonical" href="https://119291.xyz/posts/how-to-generate-self-signed-ssl-certificate-using-openssl/"/>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="Java 编程、Python 教程、前端开发框架、运维工具、技术学习笔记、程序员资源">
+  
+    <meta name="description" content="如何使用OpenSSL生成自签名SSL证书技术背景在网络通信中，SSL（Secure Sockets Layer）证书用于加密数据传输，确保通信的安全性和完整性。自签名SSL证书是由用户自己创建和签名的证书，不依赖于第三方证书颁发机构（CA）。自签名证书常用于测试环境、内部网络或个人项目，因为它们不需要付费，但在公共互联网上，自签名证书通常不被浏览器等客户端信任。OpenSSL是一个强大的开源工具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何使用OpenSSL生成自签名SSL证书">
+<meta property="og:url" content="https://119291.xyz/posts/how-to-generate-self-signed-ssl-certificate-using-openssl/">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="如何使用OpenSSL生成自签名SSL证书技术背景在网络通信中，SSL（Secure Sockets Layer）证书用于加密数据传输，确保通信的安全性和完整性。自签名SSL证书是由用户自己创建和签名的证书，不依赖于第三方证书颁发机构（CA）。自签名证书常用于测试环境、内部网络或个人项目，因为它们不需要付费，但在公共互联网上，自签名证书通常不被浏览器等客户端信任。OpenSSL是一个强大的开源工具">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-05-22T00:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-23T23:16:19.895Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="Java 编程、Python 教程、前端开发框架、运维工具、技术学习笔记、程序员资源">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />  
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843507635528842" crossorigin="anonymous"></script> 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BWT1XBMWZ7');
+</script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "rdsapt5j41");
+</script>
+
+
+   
+
+  
+  <title>如何使用OpenSSL生成自签名SSL证书 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"119291.xyz","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小破站" type="application/atom+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"如何使用OpenSSL生成自签名SSL证书","url":"https://119291.xyz/posts/how-to-generate-self-signed-ssl-certificate-using-openssl/","mainEntityOfPage":{"@type":"WebPage","@id":"https://119291.xyz/posts/how-to-generate-self-signed-ssl-certificate-using-openssl/"},"datePublished":"2025-05-22T00:00:00.000Z","dateModified":"2025-05-22T00:00:00.000Z","inLanguage":"zh-CN","author":{"@type":"Person","name":"ww"},"publisher":{"@type":"Organization","name":"小破站","url":"https://119291.xyz/"},"description":"如何使用OpenSSL生成自签名SSL证书技术背景在网络通信中，SSL（Secure Sockets Layer）证书用于加密数据传输，确保通信的安全性和完整性。自签名SSL证书是由用户自己创建和签名的证书，不依赖于第三方证书颁发机构（CA）。自签名证书常用于测试环境、内部网络或个人项目，因为它们不需要付费，但在公共互联网上，自签名证书通常不被浏览器等客户端信任。OpenSSL是一个强大的开源工具","keywords":"Java 编程、Python 教程、前端开发框架、运维工具、技术学习笔记、程序员资源"}</script></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="如何使用OpenSSL生成自签名SSL证书"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-22 08:00" pubdate>
+          2025年5月22日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          12 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">如何使用OpenSSL生成自签名SSL证书</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="如何使用OpenSSL生成自签名SSL证书"><a href="#如何使用OpenSSL生成自签名SSL证书" class="headerlink" title="如何使用OpenSSL生成自签名SSL证书"></a>如何使用OpenSSL生成自签名SSL证书</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在网络通信中，SSL（Secure Sockets Layer）证书用于加密数据传输，确保通信的安全性和完整性。自签名SSL证书是由用户自己创建和签名的证书，不依赖于第三方证书颁发机构（CA）。自签名证书常用于测试环境、内部网络或个人项目，因为它们不需要付费，但在公共互联网上，自签名证书通常不被浏览器等客户端信任。OpenSSL是一个强大的开源工具包，提供了生成自签名SSL证书的功能。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="单命令生成自签名证书"><a href="#单命令生成自签名证书" class="headerlink" title="单命令生成自签名证书"></a>单命令生成自签名证书</h3><p>可以使用以下命令生成自签名证书：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">交互式方式</span><br>openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">非交互式方式，有效期10年</span><br>openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj &quot;/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=CommonNameOrHostname&quot;<br></code></pre></td></tr></table></figure>
+<ul>
+<li><code>-nodes</code> 选项表示不使用密码保护私钥。</li>
+<li><code>days</code> 参数指定证书的有效期。</li>
+</ul>
+<h3 id="包含Subject-Alternate-Name（SAN）的证书生成"><a href="#包含Subject-Alternate-Name（SAN）的证书生成" class="headerlink" title="包含Subject Alternate Name（SAN）的证书生成"></a>包含Subject Alternate Name（SAN）的证书生成</h3><p>自OpenSSL ≥ 1.1.1版本起，可以使用以下命令生成包含SAN的证书：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 \<br>  -nodes -keyout example.com.key -out example.com.crt -subj &quot;/CN=example.com&quot; \<br>  -addext &quot;subjectAltName=DNS:example.com,DNS:*.example.com,IP:10.0.0.1&quot;<br></code></pre></td></tr></table></figure>
+<p>对于旧版本的OpenSSL（≤ 1.1.0），如Debian ≤ 9或CentOS ≤ 7，需要使用更长的命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell">openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 \<br>  -nodes -keyout example.com.key -out example.com.crt -extensions san -config \<br>  &lt;(echo &quot;[req]&quot;; <br>    echo distinguished_name=req; <br>    echo &quot;[san]&quot;; <br>    echo subjectAltName=DNS:example.com,DNS:*.example.com,IP:10.0.0.1<br>    ) \<br>  -subj &quot;/CN=example.com&quot;<br></code></pre></td></tr></table></figure>
+
+<h3 id="通过配置文件生成证书"><a href="#通过配置文件生成证书" class="headerlink" title="通过配置文件生成证书"></a>通过配置文件生成证书</h3><p>创建一个配置文件 <code>example-com.conf</code>：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-section">[ req ]</span><br><span class="hljs-attr">default_bits</span>        = <span class="hljs-number">2048</span><br><span class="hljs-attr">default_keyfile</span>     = server-key.pem<br><span class="hljs-attr">distinguished_name</span>  = subject<br><span class="hljs-attr">req_extensions</span>      = req_ext<br><span class="hljs-attr">x509_extensions</span>     = x509_ext<br><span class="hljs-attr">string_mask</span>         = utf8only<br><br><span class="hljs-section">[ subject ]</span><br><span class="hljs-attr">countryName</span>         = Country Name (<span class="hljs-number">2</span> letter code)<br><span class="hljs-attr">countryName_default</span>     = US<br><br><span class="hljs-attr">stateOrProvinceName</span>     = State or Province Name (full name)<br><span class="hljs-attr">stateOrProvinceName_default</span> = NY<br><br><span class="hljs-attr">localityName</span>            = Locality Name (eg, city)<br><span class="hljs-attr">localityName_default</span>        = New York<br><br><span class="hljs-attr">organizationName</span>         = Organization Name (eg, company)<br><span class="hljs-attr">organizationName_default</span>    = Example, LLC<br><br><span class="hljs-attr">commonName</span>          = Common Name (e.g. server FQDN or YOUR name)<br><span class="hljs-attr">commonName_default</span>      = Example Company<br><br><span class="hljs-attr">emailAddress</span>            = Email Address<br><span class="hljs-attr">emailAddress_default</span>        = test@example.com<br><br><span class="hljs-section">[ x509_ext ]</span><br><span class="hljs-attr">subjectKeyIdentifier</span>        = hash<br><span class="hljs-attr">authorityKeyIdentifier</span>    = keyid,issuer<br><span class="hljs-attr">basicConstraints</span>        = CA:<span class="hljs-literal">FALSE</span><br><span class="hljs-attr">keyUsage</span>            = digitalSignature, keyEncipherment<br><span class="hljs-attr">subjectAltName</span>          = @alternate_names<br><span class="hljs-attr">nsComment</span>           = <span class="hljs-string">&quot;OpenSSL Generated Certificate&quot;</span><br><br><span class="hljs-section">[ req_ext ]</span><br><span class="hljs-attr">subjectKeyIdentifier</span>        = hash<br><span class="hljs-attr">basicConstraints</span>        = CA:<span class="hljs-literal">FALSE</span><br><span class="hljs-attr">keyUsage</span>            = digitalSignature, keyEncipherment<br><span class="hljs-attr">subjectAltName</span>          = @alternate_names<br><span class="hljs-attr">nsComment</span>           = <span class="hljs-string">&quot;OpenSSL Generated Certificate&quot;</span><br><br><span class="hljs-section">[ alternate_names ]</span><br><span class="hljs-attr">DNS.1</span>       = example.com<br><span class="hljs-attr">DNS.2</span>       = www.example.com<br><span class="hljs-attr">DNS.3</span>       = mail.example.com<br><span class="hljs-attr">DNS.4</span>       = ftp.example.com<br></code></pre></td></tr></table></figure>
+<p>使用配置文件生成自签名证书：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">openssl req -config example-com.conf -new -x509 -sha256 -newkey rsa:2048 -nodes \<br>    -keyout example-com.key.pem -days 365 -out example-com.cert.pem<br></code></pre></td></tr></table></figure>
+<p>生成签名请求：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">openssl req -config example-com.conf -new -sha256 -newkey rsa:2048 -nodes \<br>    -keyout example-com.key.pem -days 365 -out example-com.req.pem<br></code></pre></td></tr></table></figure>
+
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><h3 id="Python脚本生成自签名证书"><a href="#Python脚本生成自签名证书" class="headerlink" title="Python脚本生成自签名证书"></a>Python脚本生成自签名证书</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> OpenSSL <span class="hljs-keyword">import</span> crypto, SSL<br><span class="hljs-keyword">from</span> secrets <span class="hljs-keyword">import</span> randbelow<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">cert_gen</span>(<span class="hljs-params"></span><br><span class="hljs-params">    emailAddress=<span class="hljs-built_in">input</span>(<span class="hljs-params"><span class="hljs-string">&quot;Enter Email Address: &quot;</span></span>),</span><br><span class="hljs-params">    commonName=<span class="hljs-built_in">input</span>(<span class="hljs-params"><span class="hljs-string">&quot;Enter Common Name: &quot;</span></span>),</span><br><span class="hljs-params">    countryName=<span class="hljs-built_in">input</span>(<span class="hljs-params"><span class="hljs-string">&quot;Enter Country Name (2 characters): &quot;</span></span>),</span><br><span class="hljs-params">    localityName=<span class="hljs-built_in">input</span>(<span class="hljs-params"><span class="hljs-string">&quot;Enter Locality Name: &quot;</span></span>),</span><br><span class="hljs-params">    stateOrProvinceName=<span class="hljs-built_in">input</span>(<span class="hljs-params"><span class="hljs-string">&quot;Enter State of Province Name: &quot;</span></span>),</span><br><span class="hljs-params">    organizationName=<span class="hljs-built_in">input</span>(<span class="hljs-params"><span class="hljs-string">&quot;Enter Organization Name: &quot;</span></span>),</span><br><span class="hljs-params">    organizationUnitName=<span class="hljs-built_in">input</span>(<span class="hljs-params"><span class="hljs-string">&quot;Enter Organization Unit Name: &quot;</span></span>),</span><br><span class="hljs-params">    serialNumber=randbelow(<span class="hljs-params"><span class="hljs-number">1000000</span></span>),</span><br><span class="hljs-params">    validityStartInSeconds=<span class="hljs-number">0</span>,</span><br><span class="hljs-params">    validityEndInSeconds=<span class="hljs-number">10</span>*<span class="hljs-number">365</span>*<span class="hljs-number">24</span>*<span class="hljs-number">60</span>*<span class="hljs-number">60</span>,</span><br><span class="hljs-params">    KEY_FILE = <span class="hljs-string">&quot;private.key&quot;</span>,</span><br><span class="hljs-params">    CERT_FILE=<span class="hljs-string">&quot;selfsigned.crt&quot;</span></span><br><span class="hljs-params"></span>):<br>    k = crypto.PKey()<br>    k.generate_key(crypto.TYPE_RSA, <span class="hljs-number">4096</span>)<br><br>    cert = crypto.X509()<br>    cert.get_subject().C = countryName<br>    cert.get_subject().ST = stateOrProvinceName<br>    cert.get_subject().L = localityName<br>    cert.get_subject().O = organizationName<br>    cert.get_subject().OU = organizationUnitName<br>    cert.get_subject().CN = commonName<br>    cert.get_subject().emailAddress = emailAddress<br>    cert.set_serial_number(serialNumber)<br>    cert.gmtime_adj_notBefore(<span class="hljs-number">0</span>)<br>    cert.gmtime_adj_notAfter(validityEndInSeconds)<br>    cert.set_issuer(cert.get_subject())<br>    cert.set_pubkey(k)<br>    cert.sign(k, <span class="hljs-string">&#x27;sha512&#x27;</span>)<br><br>    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(CERT_FILE, <span class="hljs-string">&quot;wt&quot;</span>) <span class="hljs-keyword">as</span> f:<br>        f.write(crypto.dump_certificate(crypto.FILETYPE_PEM, cert).decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br>    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(KEY_FILE, <span class="hljs-string">&quot;wt&quot;</span>) <span class="hljs-keyword">as</span> f:<br>        f.write(crypto.dump_privatekey(crypto.FILETYPE_PEM, k).decode(<span class="hljs-string">&quot;utf-8&quot;</span>))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;GENERATED&quot;</span>)<br>    <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Press enter to close program.&quot;</span>)<br><br>cert_gen()<br></code></pre></td></tr></table></figure>
+
+<h3 id="Bash脚本生成自签名证书"><a href="#Bash脚本生成自签名证书" class="headerlink" title="Bash脚本生成自签名证书"></a>Bash脚本生成自签名证书</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br><br>subj=<span class="hljs-string">&#x27;//SKIP=skip/C=IN/ST=Country/L=City/O=MyCompany/OU=Technology&#x27;</span><br>red=<span class="hljs-string">&#x27;\033[31m&#x27;</span>     <span class="hljs-comment"># Red</span><br>yellow=<span class="hljs-string">&#x27;\033[33m&#x27;</span>  <span class="hljs-comment"># Yellow</span><br>green=<span class="hljs-string">&#x27;\033[32m&#x27;</span>   <span class="hljs-comment"># Green</span><br>blue=<span class="hljs-string">&#x27;\033[34m&#x27;</span>    <span class="hljs-comment"># Blue</span><br>purple=<span class="hljs-string">&#x27;\033[35m&#x27;</span>  <span class="hljs-comment"># Purple</span><br>cyan=<span class="hljs-string">&#x27;\033[36m&#x27;</span>    <span class="hljs-comment"># Cyan</span><br>white=<span class="hljs-string">&#x27;\033[37m&#x27;</span>   <span class="hljs-comment"># White</span><br><br><span class="hljs-function"><span class="hljs-title">gencerts</span></span>()&#123;<br>    certname=<span class="hljs-variable">$1</span><br>    pkname=<span class="hljs-variable">$2</span><br>    <span class="hljs-built_in">alias</span>=<span class="hljs-variable">$3</span><br>    $(openssl genrsa -out <span class="hljs-variable">$pkname</span><span class="hljs-string">&#x27;pem.pem&#x27;</span> 4096)<br>    $(openssl req -new -sha256 -key <span class="hljs-variable">$pkname</span><span class="hljs-string">&#x27;pem.pem&#x27;</span> -out <span class="hljs-variable">$certname</span><span class="hljs-string">&#x27;csr.csr&#x27;</span> -subj <span class="hljs-variable">$subj</span>)<br>    $(openssl x509 -req -sha256 -days 3650 -<span class="hljs-keyword">in</span> <span class="hljs-variable">$certname</span><span class="hljs-string">&#x27;csr.csr&#x27;</span> -signkey <span class="hljs-variable">$pkname</span><span class="hljs-string">&#x27;pem.pem&#x27;</span> -out <span class="hljs-variable">$certname</span><span class="hljs-string">&#x27;.crt&#x27;</span>)<br>    $(openssl pkcs12 -<span class="hljs-built_in">export</span> -out <span class="hljs-variable">$pkname</span><span class="hljs-string">&#x27;.p12&#x27;</span> -name <span class="hljs-variable">$alias</span> -inkey <span class="hljs-variable">$pkname</span><span class="hljs-string">&#x27;pem.pem&#x27;</span> -<span class="hljs-keyword">in</span> <span class="hljs-variable">$certname</span><span class="hljs-string">&#x27;.crt&#x27;</span>)<br>&#125;<br><br><span class="hljs-function"><span class="hljs-title">verify</span></span>()&#123;<br>    pkname=<span class="hljs-variable">$1</span><br>    keytool -v -list -storetype pkcs12 -keystore <span class="hljs-variable">$pkname</span><span class="hljs-string">&#x27;.p12&#x27;</span><br>&#125;<br><br><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;purple&#125;</span>WELCOME TO KEY PAIR GENERATOR&quot;</span><br><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;yellow&#125;</span> Please enter the name of the certificate required: &quot;</span><br><span class="hljs-built_in">read</span> certname<br><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;green&#125;</span>Please enter the name of the Private Key p12 file required: &quot;</span><br><span class="hljs-built_in">read</span> pkname<br><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;cyan&#125;</span>Please enter the ALIAS of the Private Key p12 file : &quot;</span><br><span class="hljs-built_in">read</span> pkalias<br><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;white&#125;</span>Please wait while we generate your Key Pair&quot;</span><br><br>gencerts <span class="hljs-variable">$certname</span> <span class="hljs-variable">$pkname</span> <span class="hljs-variable">$pkalias</span><br><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;white&#125;</span>Now lets verify the private key :)&quot;</span><br><br>tput bel     <span class="hljs-comment"># Play a bell</span><br><br>verify <span class="hljs-variable">$pkname</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>使用强加密算法</strong>：建议使用至少2048位的RSA密钥和SHA-256哈希算法，以提高证书的安全性。</li>
+<li><strong>包含Subject Alternate Name（SAN）</strong>：现代浏览器要求证书包含SAN，以支持多个域名或IP地址。</li>
+<li><strong>设置合理的有效期</strong>：根据实际需求设置证书的有效期，避免过长或过短。</li>
+<li><strong>成为自己的证书颁发机构（CA）</strong>：如果需要在多个设备或客户端上信任自签名证书，可以创建自己的CA，并使用CA签名服务器证书。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="浏览器提示证书不受信任"><a href="#浏览器提示证书不受信任" class="headerlink" title="浏览器提示证书不受信任"></a>浏览器提示证书不受信任</h3><p>这是因为自签名证书没有经过第三方CA的验证，浏览器无法将其与已知的信任锚链接起来。解决方法有：</p>
+<ul>
+<li><strong>导入证书</strong>：手动将自签名证书导入到浏览器的信任存储中。</li>
+<li><strong>成为自己的CA</strong>：创建自己的CA，并使用CA签名服务器证书，然后将CA证书导入到客户端的信任存储中。</li>
+</ul>
+<h3 id="证书验证失败"><a href="#证书验证失败" class="headerlink" title="证书验证失败"></a>证书验证失败</h3><p>可能是由于证书配置不正确或缺少必要的扩展字段（如SAN）导致的。确保在生成证书时包含所有必要的信息，并遵循相关的标准和规范。</p>
+<h3 id="MySQL-SSL连接问题"><a href="#MySQL-SSL连接问题" class="headerlink" title="MySQL SSL连接问题"></a>MySQL SSL连接问题</h3><ul>
+<li><strong>无法获取证书</strong>：可能是由于MySQL没有读取证书文件的权限，可以将证书文件保存到AppArmor或SELinux允许访问的目录中。</li>
+<li><strong>无法获取私钥</strong>：可能是由于MySQL版本不支持默认的<code>rsa:2048</code>格式，可以使用<code>openssl rsa</code>命令将私钥转换为普通的RSA格式。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>如何使用OpenSSL生成自签名SSL证书</div>
+      <div>https://119291.xyz/posts/how-to-generate-self-signed-ssl-certificate-using-openssl/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年5月22日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/how-to-create-placeholder-for-select-box/" title="如何为select框创建占位符">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">如何为select框创建占位符</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/how-to-get-git-branches-sorted-by-recent-commit/" title="如何获取按最近提交排序的Git分支列表">
+                        <span class="hidden-mobile">如何获取按最近提交排序的Git分支列表</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

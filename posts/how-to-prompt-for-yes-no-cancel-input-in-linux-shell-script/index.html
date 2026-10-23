@@ -1,0 +1,749 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+    <link rel="canonical" href="https://119291.xyz/posts/how-to-prompt-for-yes-no-cancel-input-in-linux-shell-script/"/>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ww">
+  <meta name="keywords" content="Java 编程、Python 教程、前端开发框架、运维工具、技术学习笔记、程序员资源">
+  
+    <meta name="description" content="在Linux shell脚本中如何提示用户输入Yes&#x2F;No&#x2F;Cancel选项技术背景在Linux shell脚本编写过程中，经常需要与用户进行交互，提示用户输入Yes&#x2F;No&#x2F;Cancel选项以决定脚本的后续操作。不同的场景和需求可能需要不同的实现方式，因此掌握多种提示用户输入的方法是很有必要的。 实现步骤1. 使用read命令12345678while tr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Linux shell脚本中如何提示用户输入Yes&#x2F;No&#x2F;Cancel选项">
+<meta property="og:url" content="https://119291.xyz/posts/how-to-prompt-for-yes-no-cancel-input-in-linux-shell-script/">
+<meta property="og:site_name" content="小破站">
+<meta property="og:description" content="在Linux shell脚本中如何提示用户输入Yes&#x2F;No&#x2F;Cancel选项技术背景在Linux shell脚本编写过程中，经常需要与用户进行交互，提示用户输入Yes&#x2F;No&#x2F;Cancel选项以决定脚本的后续操作。不同的场景和需求可能需要不同的实现方式，因此掌握多种提示用户输入的方法是很有必要的。 实现步骤1. 使用read命令12345678while tr">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-05-26T00:00:00.000Z">
+<meta property="article:modified_time" content="2026-10-23T23:16:19.899Z">
+<meta property="article:author" content="ww">
+<meta property="article:tag" content="Shell">
+<meta property="article:tag" content="后端开发">
+<meta property="article:tag" content="Bash">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="6acLMWbwfWZ0NgLy4cvDBDvmPcJtkf_PNpYLYghLTAs" />  
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843507635528842" crossorigin="anonymous"></script> 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BWT1XBMWZ7');
+</script>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "rdsapt5j41");
+</script>
+
+
+   
+
+  
+  <title>在Linux shell脚本中如何提示用户输入Yes/No/Cancel选项 - 小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"119291.xyz","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-BWT1XBMWZ7"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=G-BWT1XBMWZ7", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-BWT1XBMWZ7');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="小破站" type="application/atom+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"在Linux shell脚本中如何提示用户输入Yes/No/Cancel选项","url":"https://119291.xyz/posts/how-to-prompt-for-yes-no-cancel-input-in-linux-shell-script/","mainEntityOfPage":{"@type":"WebPage","@id":"https://119291.xyz/posts/how-to-prompt-for-yes-no-cancel-input-in-linux-shell-script/"},"datePublished":"2025-05-26T00:00:00.000Z","dateModified":"2025-05-26T00:00:00.000Z","inLanguage":"zh-CN","author":{"@type":"Person","name":"ww"},"publisher":{"@type":"Organization","name":"小破站","url":"https://119291.xyz/"},"description":"在Linux shell脚本中如何提示用户输入Yes/No/Cancel选项技术背景在Linux shell脚本编写过程中，经常需要与用户进行交互，提示用户输入Yes/No/Cancel选项以决定脚本的后续操作。不同的场景和需求可能需要不同的实现方式，因此掌握多种提示用户输入的方法是很有必要的。 实现步骤1. 使用read命令12345678while tr","keywords":"Shell, 后端开发, Bash"}</script></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 30vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>小破站</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="在Linux shell脚本中如何提示用户输入Yes/No/Cancel选项"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-26 08:00" pubdate>
+          2025年5月26日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          10 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">在Linux shell脚本中如何提示用户输入Yes/No/Cancel选项</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="在Linux-shell脚本中如何提示用户输入Yes-No-Cancel选项"><a href="#在Linux-shell脚本中如何提示用户输入Yes-No-Cancel选项" class="headerlink" title="在Linux shell脚本中如何提示用户输入Yes&#x2F;No&#x2F;Cancel选项"></a>在Linux shell脚本中如何提示用户输入Yes&#x2F;No&#x2F;Cancel选项</h1><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>在Linux shell脚本编写过程中，经常需要与用户进行交互，提示用户输入Yes&#x2F;No&#x2F;Cancel选项以决定脚本的后续操作。不同的场景和需求可能需要不同的实现方式，因此掌握多种提示用户输入的方法是很有必要的。</p>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="1-使用read命令"><a href="#1-使用read命令" class="headerlink" title="1. 使用read命令"></a>1. 使用<code>read</code>命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">while</span> <span class="hljs-literal">true</span>; <span class="hljs-keyword">do</span><br>    <span class="hljs-built_in">read</span> -p <span class="hljs-string">&quot;Do you wish to install this program? &quot;</span> yn<br>    <span class="hljs-keyword">case</span> <span class="hljs-variable">$yn</span> <span class="hljs-keyword">in</span><br>        [Yy]* ) make install; <span class="hljs-built_in">break</span>;;<br>        [Nn]* ) <span class="hljs-built_in">exit</span>;;<br>        * ) <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Please answer yes or no.&quot;</span>;;;<br>    <span class="hljs-keyword">esac</span><br><span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+<p>上述代码通过<code>read</code>命令提示用户输入，使用<code>case</code>语句对用户输入进行判断，根据不同的输入执行相应的操作。</p>
+<h3 id="2-使用Bash的select命令"><a href="#2-使用Bash的select命令" class="headerlink" title="2. 使用Bash的select命令"></a>2. 使用Bash的<code>select</code>命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Do you wish to install this program?&quot;</span><br><span class="hljs-keyword">select</span> yn <span class="hljs-keyword">in</span> <span class="hljs-string">&quot;Yes&quot;</span> <span class="hljs-string">&quot;No&quot;</span>; <span class="hljs-keyword">do</span><br>    <span class="hljs-keyword">case</span> <span class="hljs-variable">$yn</span> <span class="hljs-keyword">in</span><br>        Yes ) make install; <span class="hljs-built_in">break</span>;;<br>        No ) <span class="hljs-built_in">exit</span>;;<br>    <span class="hljs-keyword">esac</span><br><span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+<p><code>select</code>命令会显示可用的选项，用户只需输入对应的数字即可选择，无需手动输入选项内容，并且会自动循环处理无效输入。</p>
+<h3 id="3-实现国际化支持"><a href="#3-实现国际化支持" class="headerlink" title="3. 实现国际化支持"></a>3. 实现国际化支持</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">set</span> -- $(locale LC_MESSAGES)<br>yesexpr=<span class="hljs-string">&quot;<span class="hljs-variable">$1</span>&quot;</span>; noexpr=<span class="hljs-string">&quot;<span class="hljs-variable">$2</span>&quot;</span>; yesword=<span class="hljs-string">&quot;<span class="hljs-variable">$3</span>&quot;</span>; noword=<span class="hljs-string">&quot;<span class="hljs-variable">$4</span>&quot;</span><br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">true</span>; <span class="hljs-keyword">do</span><br>    <span class="hljs-built_in">read</span> -p <span class="hljs-string">&quot;Install (<span class="hljs-variable">$&#123;yesword&#125;</span> / <span class="hljs-variable">$&#123;noword&#125;</span>)? &quot;</span> yn<br>    <span class="hljs-keyword">if</span> [[ <span class="hljs-string">&quot;<span class="hljs-variable">$yn</span>&quot;</span> =~ <span class="hljs-variable">$yesexpr</span> ]]; <span class="hljs-keyword">then</span> make install; <span class="hljs-built_in">exit</span>; <span class="hljs-keyword">fi</span><br>    <span class="hljs-keyword">if</span> [[ <span class="hljs-string">&quot;<span class="hljs-variable">$yn</span>&quot;</span> =~ <span class="hljs-variable">$noexpr</span> ]]; <span class="hljs-keyword">then</span> <span class="hljs-built_in">exit</span>; <span class="hljs-keyword">fi</span><br>    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Answer <span class="hljs-variable">$&#123;yesword&#125;</span> / <span class="hljs-variable">$&#123;noword&#125;</span>.&quot;</span><br><span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+<p>通过<code>locale</code>命令获取当前语言环境下的Yes和No的表达式和字符串，实现脚本的国际化支持。</p>
+<h3 id="4-POSIX通用解决方案"><a href="#4-POSIX通用解决方案" class="headerlink" title="4. POSIX通用解决方案"></a>4. POSIX通用解决方案</h3><h4 id="4-1-基本read和if-then-else组合"><a href="#4-1-基本read和if-then-else组合" class="headerlink" title="4.1 基本read和if...then...else组合"></a>4.1 基本<code>read</code>和<code>if...then...else</code>组合</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br><span class="hljs-built_in">printf</span> <span class="hljs-string">&#x27;Is this a good question (y/n)? &#x27;</span><br><span class="hljs-built_in">read</span> answer<br><br><span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$answer</span>&quot;</span> != <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer#[Yy]&#125;</span>&quot;</span> ] ;<span class="hljs-keyword">then</span> <br>    <span class="hljs-built_in">echo</span> Yes<br><span class="hljs-keyword">else</span><br>    <span class="hljs-built_in">echo</span> No<br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
+<h4 id="4-2-单键输入功能"><a href="#4-2-单键输入功能" class="headerlink" title="4.2 单键输入功能"></a>4.2 单键输入功能</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br><span class="hljs-built_in">printf</span> <span class="hljs-string">&#x27;Is this a good question (y/n)? &#x27;</span><br>old_stty_cfg=$(<span class="hljs-built_in">stty</span> -g)<br><span class="hljs-built_in">stty</span> raw -<span class="hljs-built_in">echo</span> ; answer=$(<span class="hljs-built_in">head</span> -c 1) ; <span class="hljs-built_in">stty</span> <span class="hljs-variable">$old_stty_cfg</span><br><span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$answer</span>&quot;</span> != <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer#[Yy]&#125;</span>&quot;</span> ];<span class="hljs-keyword">then</span><br>    <span class="hljs-built_in">echo</span> Yes<br><span class="hljs-keyword">else</span><br>    <span class="hljs-built_in">echo</span> No<br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
+<h4 id="4-3-单键输入功能并支持国际化"><a href="#4-3-单键输入功能并支持国际化" class="headerlink" title="4.3 单键输入功能并支持国际化"></a>4.3 单键输入功能并支持国际化</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br>yExpr=$(locale yesexpr) <br><span class="hljs-built_in">printf</span> <span class="hljs-string">&#x27;Is this a good question (y/n)? &#x27;</span><br>old_stty_cfg=$(<span class="hljs-built_in">stty</span> -g)<br><span class="hljs-built_in">stty</span> raw -<span class="hljs-built_in">echo</span> ; answer=$(<span class="hljs-built_in">head</span> -c 1) ; <span class="hljs-built_in">stty</span> <span class="hljs-variable">$old_stty_cfg</span><br><span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$answer</span>&quot;</span> != <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer#<span class="hljs-variable">$&#123;yExpr#^&#125;</span>&#125;</span>&quot;</span> ];<span class="hljs-keyword">then</span><br>    <span class="hljs-built_in">echo</span> Yes<br><span class="hljs-keyword">else</span><br>    <span class="hljs-built_in">echo</span> No<br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
+<h4 id="4-4-封装成函数"><a href="#4-4-封装成函数" class="headerlink" title="4.4 封装成函数"></a>4.4 封装成函数</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br><span class="hljs-function"><span class="hljs-title">askFor</span></span>() &#123;<br>    __aF_yExpr=<span class="hljs-string">&quot;<span class="hljs-subst">$(locale yesexpr)</span>&quot;</span> __aF_nExpr=<span class="hljs-string">&quot;<span class="hljs-subst">$(locale noexpr)</span>&quot;</span><br>    <span class="hljs-built_in">printf</span> <span class="hljs-string">&#x27;%s? &#x27;</span> <span class="hljs-string">&quot;$*&quot;</span><br>    __aF_oStty=$(<span class="hljs-built_in">stty</span> -g)<br>    <span class="hljs-built_in">stty</span> raw -<span class="hljs-built_in">echo</span><br>    __aF_key=$( <span class="hljs-keyword">while</span> ! <span class="hljs-built_in">head</span> -c 1| grep <span class="hljs-string">&quot;<span class="hljs-variable">$__aF_yExpr</span>\|<span class="hljs-variable">$__aF_nExpr</span>&quot;</span>; <span class="hljs-keyword">do</span> :;<span class="hljs-keyword">done</span> )<br>    <span class="hljs-built_in">stty</span> <span class="hljs-variable">$__aF_oStty</span><br>    <span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$__aF_key</span>&quot;</span> != <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;__aF_key#<span class="hljs-variable">$&#123;__aF_yExpr#^&#125;</span>&#125;</span>&quot;</span> ]; <span class="hljs-keyword">then</span> <span class="hljs-built_in">echo</span> Yes<br>    <span class="hljs-keyword">else</span> <span class="hljs-built_in">echo</span> No; <span class="hljs-built_in">return</span> 1<br>    <span class="hljs-keyword">fi</span><br>&#125;<br><br><span class="hljs-function"><span class="hljs-title">verbEcho</span></span>() &#123; [ <span class="hljs-string">&quot;<span class="hljs-variable">$quietMode</span>&quot;</span> -gt 0 ] || <span class="hljs-built_in">echo</span> $*;&#125;<br>askFor Enable verbose mode<br>quietMode=$?<br><br>verbEcho Ask <span class="hljs-keyword">for</span> continuing<br>askFor Do you want to <span class="hljs-built_in">continue</span> this demonstration || <span class="hljs-built_in">exit</span><br><br>toInstall=<span class="hljs-string">&#x27;&#x27;</span><br><span class="hljs-keyword">for</span> package <span class="hljs-keyword">in</span> moon-buggy pacman4console junior-games-text; <span class="hljs-keyword">do</span><br>    verbEcho Ask <span class="hljs-keyword">for</span> Installation of <span class="hljs-variable">$package</span><br>    <span class="hljs-keyword">if</span> askFor Do I install full <span class="hljs-string">&quot;<span class="hljs-variable">$package</span>&quot;</span>; <span class="hljs-keyword">then</span><br>        verbEcho <span class="hljs-string">&quot;Add <span class="hljs-variable">$package</span> to list&quot;</span><br>        toInstall=<span class="hljs-string">&quot;<span class="hljs-variable">$toInstall</span> <span class="hljs-variable">$package</span>&quot;</span><br>    <span class="hljs-keyword">fi</span><br><span class="hljs-keyword">done</span><br><span class="hljs-keyword">if</span> [ -z <span class="hljs-string">&quot;<span class="hljs-variable">$toInstall</span>&quot;</span> ]; <span class="hljs-keyword">then</span><br>    <span class="hljs-built_in">echo</span> Nothing to <span class="hljs-keyword">do</span>.<br><span class="hljs-keyword">elif</span> askFor Do you really want to install <span class="hljs-variable">$toInstall</span>; <span class="hljs-keyword">then</span><br>    verbEcho Proceed installation of <span class="hljs-variable">$toInstall</span><br>    <span class="hljs-built_in">echo</span> <span class="hljs-built_in">sudo</span> apt install <span class="hljs-variable">$toInstall</span>  <span class="hljs-comment"># Drop `echo` for real installation</span><br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="5-使用专用工具"><a href="#5-使用专用工具" class="headerlink" title="5. 使用专用工具"></a>5. 使用专用工具</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">if</span> whiptail --yesno <span class="hljs-string">&quot;Is this a good question&quot;</span> 20 60 ;<span class="hljs-keyword">then</span><br>    <span class="hljs-built_in">echo</span> Yes<br><span class="hljs-keyword">else</span><br>    <span class="hljs-built_in">echo</span> No<br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
+<p>可以使用<code>whiptail</code>、<code>dialog</code>、<code>gdialog</code>、<code>kdialog</code>等工具创建更美观的交互界面。</p>
+<h3 id="6-Bash特定解决方案"><a href="#6-Bash特定解决方案" class="headerlink" title="6. Bash特定解决方案"></a>6. Bash特定解决方案</h3><h4 id="6-1-基本的行内方法"><a href="#6-1-基本的行内方法" class="headerlink" title="6.1 基本的行内方法"></a>6.1 基本的行内方法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">read</span> -p <span class="hljs-string">&quot;Is this a good question (y/n)? &quot;</span> answer<br><span class="hljs-keyword">case</span> <span class="hljs-variable">$&#123;answer:0:1&#125;</span> <span class="hljs-keyword">in</span><br>    y|Y )<br>        <span class="hljs-built_in">echo</span> Yes<br>    ;;<br>    * )<br>        <span class="hljs-built_in">echo</span> No<br>    ;;<br><span class="hljs-keyword">esac</span><br></code></pre></td></tr></table></figure>
+<h4 id="6-2-单键输入功能"><a href="#6-2-单键输入功能" class="headerlink" title="6.2 单键输入功能"></a>6.2 单键输入功能</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">read</span> -n 1 -p <span class="hljs-string">&quot;Is this a good question (y/n)? &quot;</span> answer<br></code></pre></td></tr></table></figure>
+<h4 id="6-3-带超时和倒计时功能"><a href="#6-3-带超时和倒计时功能" class="headerlink" title="6.3 带超时和倒计时功能"></a>6.3 带超时和倒计时功能</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">i=6 ;<span class="hljs-keyword">while</span> ((i--&gt;<span class="hljs-number">1</span>)) &amp;&amp;<br>! <span class="hljs-built_in">read</span> -sn 1 -t 1 -p $<span class="hljs-string">&#x27;\rIs this a good question (Y/n)? &#x27;</span>$i$<span class="hljs-string">&#x27;..\e[3D&#x27;</span> answer;<span class="hljs-keyword">do</span><br>  :;<span class="hljs-keyword">done</span> ;[[ <span class="hljs-variable">$answer</span> == [nN] ]] &amp;&amp; answer=No || answer=Yes ;<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span class="hljs-variable">$answer</span> &quot;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="7-专用工具的高级用法"><a href="#7-专用工具的高级用法" class="headerlink" title="7. 专用工具的高级用法"></a>7. 专用工具的高级用法</h3><h4 id="7-1-菜单选择"><a href="#7-1-菜单选择" class="headerlink" title="7.1 菜单选择"></a>7.1 菜单选择</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">dialog --menu <span class="hljs-string">&quot;Is this a good question&quot;</span> 20 60 12 y Yes n No m Maybe<br></code></pre></td></tr></table></figure>
+<h4 id="7-2-进度条"><a href="#7-2-进度条" class="headerlink" title="7.2 进度条"></a>7.2 进度条</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">dialog --gauge <span class="hljs-string">&quot;Filling the tank&quot;</span> 20 60 0 &lt; &lt;(<br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> &#123;1..100&#125;;<span class="hljs-keyword">do</span><br>        <span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;XXX\n%d\n%(%a %b %T)T progress: %d\nXXX\n&quot;</span> <span class="hljs-variable">$i</span> -1 <span class="hljs-variable">$i</span><br>        <span class="hljs-built_in">sleep</span> .033<br>    <span class="hljs-keyword">done</span><br>) <br></code></pre></td></tr></table></figure>
+
+<h3 id="8-使用readline的历史记录功能"><a href="#8-使用readline的历史记录功能" class="headerlink" title="8. 使用readline的历史记录功能"></a>8. 使用<code>readline</code>的历史记录功能</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br><br><span class="hljs-built_in">set</span> -i<br>HISTFILE=~/.myscript.history<br><span class="hljs-built_in">history</span> -c<br><span class="hljs-built_in">history</span> -r<br><br><span class="hljs-function"><span class="hljs-title">myread</span></span>() &#123;<br>    <span class="hljs-built_in">read</span> -e -p <span class="hljs-string">&#x27;&gt; &#x27;</span> <span class="hljs-variable">$1</span><br>    <span class="hljs-built_in">history</span> -s <span class="hljs-variable">$&#123;!1&#125;</span><br>&#125;<br><span class="hljs-built_in">trap</span> <span class="hljs-string">&#x27;history -a;exit&#x27;</span> 0 1 2 3 6<br><br><span class="hljs-keyword">while</span> myread line;<span class="hljs-keyword">do</span><br>    <span class="hljs-keyword">case</span> <span class="hljs-variable">$&#123;line%% *&#125;</span> <span class="hljs-keyword">in</span><br>        <span class="hljs-built_in">exit</span> )  <span class="hljs-built_in">break</span> ;;<br>        *    )  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Doing something with &#x27;<span class="hljs-variable">$line</span>&#x27;&quot;</span> ;;<br>    <span class="hljs-keyword">esac</span><br><span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="9-使用fzf工具"><a href="#9-使用fzf工具" class="headerlink" title="9. 使用fzf工具"></a>9. 使用<code>fzf</code>工具</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">if</span> [[ $(fzf --header=<span class="hljs-string">&#x27;Delete current directory?&#x27;</span> --<span class="hljs-built_in">tac</span> &lt;&lt;&lt;$<span class="hljs-string">&#x27;Yes\nNo&#x27;</span>) == Yes ]]; <span class="hljs-keyword">then</span><br>   <span class="hljs-built_in">echo</span> <span class="hljs-built_in">rm</span> .<br><span class="hljs-keyword">fi</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><p>以下是一个封装好的Yes&#x2F;No&#x2F;Cancel提示函数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/usr/bin/env bash</span><br>@<span class="hljs-function"><span class="hljs-title">confirm</span></span>() &#123;<br>    <span class="hljs-built_in">local</span> message=<span class="hljs-string">&quot;$*&quot;</span><br>    <span class="hljs-built_in">local</span> result=<span class="hljs-string">&#x27;&#x27;</span><br><br>    <span class="hljs-built_in">echo</span> -n <span class="hljs-string">&quot;&gt; <span class="hljs-variable">$message</span> (Yes/No/Cancel) &quot;</span> &gt;&amp;2<br><br>    <span class="hljs-keyword">while</span> [ -z <span class="hljs-string">&quot;<span class="hljs-variable">$result</span>&quot;</span> ] ; <span class="hljs-keyword">do</span><br>        <span class="hljs-built_in">read</span> -s -n 1 choice<br>        <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;<span class="hljs-variable">$choice</span>&quot;</span> <span class="hljs-keyword">in</span><br>            y|Y ) result=<span class="hljs-string">&#x27;Y&#x27;</span> ;;<br>            n|N ) result=<span class="hljs-string">&#x27;N&#x27;</span> ;;<br>            c|C ) result=<span class="hljs-string">&#x27;C&#x27;</span> ;;<br>        <span class="hljs-keyword">esac</span><br>    <span class="hljs-keyword">done</span><br><br>    <span class="hljs-built_in">echo</span> <span class="hljs-variable">$result</span><br>&#125;<br><br><span class="hljs-keyword">case</span> $(@confirm <span class="hljs-string">&#x27;Confirm?&#x27;</span>) <span class="hljs-keyword">in</span><br>    Y ) <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Yes&quot;</span> ;;<br>    N ) <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;No&quot;</span> ;;<br>    C ) <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Cancel&quot;</span> ;;<br><span class="hljs-keyword">esac</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><strong>封装函数</strong>：将常用的提示逻辑封装成函数，提高代码的复用性。</li>
+<li><strong>支持国际化</strong>：使用<code>locale</code>命令获取当前语言环境下的Yes和No的表达式和字符串，使脚本支持多语言。</li>
+<li><strong>错误处理</strong>：对用户的无效输入进行处理，确保脚本的健壮性。</li>
+</ul>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
+<li><strong>输入验证问题</strong>：用户可能输入无效的选项，需要在脚本中进行验证和提示用户重新输入。</li>
+<li><strong>国际化支持问题</strong>：不同的系统和语言环境可能对<code>locale</code>命令的支持不同，需要进行充分的测试。</li>
+<li><strong>工具兼容性问题</strong>：使用专用工具（如<code>whiptail</code>、<code>dialog</code>等）时，不同的系统可能没有安装这些工具，需要进行兼容性检查。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="category-chain-item">后端开发</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B/" class="category-chain-item">脚本编程</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Shell/" class="print-no-link">#Shell</a>
+      
+        <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#后端开发</a>
+      
+        <a href="/tags/Bash/" class="print-no-link">#Bash</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>在Linux shell脚本中如何提示用户输入Yes/No/Cancel选项</div>
+      <div>https://119291.xyz/posts/how-to-prompt-for-yes-no-cancel-input-in-linux-shell-script/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>ww</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年5月26日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/how-to-perform-if-then-in-sql-select/" title="在SQL SELECT中执行IF...THEN的方法">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">在SQL SELECT中执行IF...THEN的方法</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/how-to-properly-force-a-git-push/" title="如何正确强制执行 Git Push">
+                        <span class="hidden-mobile">如何正确强制执行 Git Push</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
