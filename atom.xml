@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小破站</title>
+  
+  <subtitle>个人学习与分享笔记</subtitle>
+  <link href="https://119291.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://119291.xyz/"/>
+  <updated>2026-10-30T23:56:23.402Z</updated>
+  <id>https://119291.xyz/</id>
+  
+  <author>
+    <name>ww</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2026-10-31 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-31-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-31-github-re-men-cang-ku/</id>
+    <published>2026-10-31T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:23.402Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-31-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-31-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-31 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-31</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="Zig" scheme="https://119291.xyz/tags/Zig/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-30 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-30-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-30-github-re-men-cang-ku/</id>
+    <published>2026-10-30T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-30-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-30-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-30 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-30</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-29 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-29-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-29-github-re-men-cang-ku/</id>
+    <published>2026-10-29T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-29-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-29-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-29 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-29</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="Jupyter Notebook" scheme="https://119291.xyz/tags/Jupyter-Notebook/"/>
+    
+    <category term="CSS" scheme="https://119291.xyz/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-28 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-28-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-28-github-re-men-cang-ku/</id>
+    <published>2026-10-28T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-28-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-28-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-28 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-28</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="CSS" scheme="https://119291.xyz/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-27 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-27-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-27-github-re-men-cang-ku/</id>
+    <published>2026-10-27T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-27-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-27-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-27 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-27</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    
+    <category term="CSS" scheme="https://119291.xyz/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-26 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-26-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-26-github-re-men-cang-ku/</id>
+    <published>2026-10-26T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-26-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-26-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-26 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-26</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="CSS" scheme="https://119291.xyz/tags/CSS/"/>
+    
+    <category term="PHP" scheme="https://119291.xyz/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-25 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-25-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-25-github-re-men-cang-ku/</id>
+    <published>2026-10-25T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-25-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-25-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-25 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-25</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="CSS" scheme="https://119291.xyz/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-24 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-24-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-24-github-re-men-cang-ku/</id>
+    <published>2026-10-24T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-24-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-24-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-24 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-24</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C" scheme="https://119291.xyz/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-23 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-23-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-23-github-re-men-cang-ku/</id>
+    <published>2026-10-23T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-23-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-23-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-23 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-23</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="C" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term="Visual Basic .NET" scheme="https://119291.xyz/tags/Visual-Basic-NET/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-22 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-22-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-22-github-re-men-cang-ku/</id>
+    <published>2026-10-22T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-22-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-22-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-22 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-22</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-21 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-21-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-21-github-re-men-cang-ku/</id>
+    <published>2026-10-21T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-21-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-21-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-21 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-21</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-20 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-20-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-20-github-re-men-cang-ku/</id>
+    <published>2026-10-20T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-20-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-20-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-20 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-20</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-19 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-19-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-19-github-re-men-cang-ku/</id>
+    <published>2026-10-19T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-19-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-19-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-19 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-19</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-18 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-18-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-18-github-re-men-cang-ku/</id>
+    <published>2026-10-18T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-18-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-18-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-18 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-18</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-17 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-17-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-17-github-re-men-cang-ku/</id>
+    <published>2026-10-17T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-17-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-17-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-17 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-17</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-16 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-16-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-16-github-re-men-cang-ku/</id>
+    <published>2026-10-16T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-16-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-16-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-16 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-16</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-15 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-15-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-15-github-re-men-cang-ku/</id>
+    <published>2026-10-15T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-15-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-15-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-15 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-15</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Java" scheme="https://119291.xyz/tags/Java/"/>
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="C#" scheme="https://119291.xyz/tags/C/"/>
+    
+    <category term="Swift" scheme="https://119291.xyz/tags/Swift/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-14 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-14-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-14-github-re-men-cang-ku/</id>
+    <published>2026-10-14T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-14-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-14-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-14 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-14</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    
+    <category term="Swift" scheme="https://119291.xyz/tags/Swift/"/>
+    
+    <category term="Jupyter Notebook" scheme="https://119291.xyz/tags/Jupyter-Notebook/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-13 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-13-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-13-github-re-men-cang-ku/</id>
+    <published>2026-10-13T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-13-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-13-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-13 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-13</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="C/C++" scheme="https://119291.xyz/tags/C-C/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026-10-10 Github热门仓库</title>
+    <link href="https://119291.xyz/posts/2026-10-10-github-re-men-cang-ku/"/>
+    <id>https://119291.xyz/posts/2026-10-10-github-re-men-cang-ku/</id>
+    <published>2026-10-10T00:00:00.000Z</published>
+    <updated>2026-10-30T23:56:10.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;2026-10-10-Github热门仓库&quot;&gt;&lt;a href=&quot;#2026-10-10-Github热门仓库&quot; class=&quot;headerlink&quot; title=&quot;2026-10-10 Github热门仓库&quot;&gt;&lt;/a&gt;2026-10-10</summary>
+        
+      
+    
+    
+    
+    <category term="开源项目" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="代码仓库推荐" scheme="https://119291.xyz/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="Rust" scheme="https://119291.xyz/tags/Rust/"/>
+    
+    <category term="TypeScript" scheme="https://119291.xyz/tags/TypeScript/"/>
+    
+    <category term="Go" scheme="https://119291.xyz/tags/Go/"/>
+    
+    <category term="Github热门仓库" scheme="https://119291.xyz/tags/Github%E7%83%AD%E9%97%A8%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="Python" scheme="https://119291.xyz/tags/Python/"/>
+    
+    <category term="JavaScript" scheme="https://119291.xyz/tags/JavaScript/"/>
+    
+    <category term="C/C++" scheme="https://119291.xyz/tags/C-C/"/>
+    
+    <category term="开源开发" scheme="https://119291.xyz/tags/%E5%BC%80%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Shell" scheme="https://119291.xyz/tags/Shell/"/>
+    
+    <category term="HTML" scheme="https://119291.xyz/tags/HTML/"/>
+    
+  </entry>
+  
+</feed>
