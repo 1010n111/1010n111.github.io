@@ -1,0 +1,14 @@
+User-agent: *
+
+Allow: /
+Allow: /sitemap.xml
+Allow: /baidusitemap.xml
+Allow: /categories/
+Allow: /archives/
+Allow: /page/
+Allow: /schedule/
+Allow: /tags/
+
+
+Sitemap: https://119291.xyz/sitemap.xml
+Sitemap: https://119291.xyz/baidusitemap.xml
